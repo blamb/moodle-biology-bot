@@ -2,6 +2,7 @@
   "name": "moodle-biology-bot",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "description": "LTI 1.3 tool for BIOL 1592/1692 — AI tutor and practice-question generator for Human A&P at TRU",
   "scripts": {
     "ingest:pptx": "python3 scripts/ingest/extract_pptx.py",

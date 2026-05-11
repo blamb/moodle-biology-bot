@@ -1,5 +1,8 @@
 # Local development stack:
-#   moodle    : Bitnami Moodle 4.x  → http://localhost:8080  (admin: user/bitnami)
+#   moodle    : Bitnami Moodle (via bitnamilegacy registry — bitnami/moodle was
+#               retired by Bitnami in late 2025; bitnamilegacy/ hosts the same
+#               images for free use)  → http://localhost:8080
+#               admin: user/bitnami
 #   moodle-db : MariaDB backing Moodle (private to docker network)
 #   postgres  : Postgres for the LTI tool app  → localhost:5432  (postgres/postgres)
 #
@@ -12,7 +15,7 @@
 
 services:
   moodle-db:
-    image: bitnami/mariadb:11.4
+    image: bitnamilegacy/mariadb:latest
     environment:
       MARIADB_ROOT_PASSWORD: bitnami
       MARIADB_USER: bn_moodle
@@ -24,13 +27,16 @@ services:
       - moodle_db_data:/bitnami/mariadb
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      # mariadb-admin ping returns exit 0 once the server accepts TCP connections.
+      # No credentials required for the ping check.
+      test: ["CMD-SHELL", "mariadb-admin ping -h 127.0.0.1 --silent || exit 1"]
       interval: 10s
       timeout: 5s
       retries: 10
+      start_period: 30s
 
   moodle:
-    image: bitnami/moodle:4.5
+    image: bitnamilegacy/moodle:latest
     depends_on:
       moodle-db:
         condition: service_healthy

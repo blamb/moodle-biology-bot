@@ -37,7 +37,15 @@ Outputs land in `content/`.
 
 ## Setup
 
+See [docs/dev-setup.md](docs/dev-setup.md) for the full local-dev walkthrough (Docker, migrations, Moodle tool registration, etc.).
+
+Quick version:
 ```
 pip3 install -r requirements.txt
 npm install
+cp .env.example .env       # then edit and set LTI_COOKIE_SECRET + ANTHROPIC_API_KEY
+docker compose up -d
+npm run db:migrate
+npm run dev                # window 1
+npm run tunnel             # window 2 (ngrok)
 ```

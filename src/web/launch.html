@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology Bot</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --accent: #0f6cbd;
+    --border: #e5e5e5;
+    --card: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 2rem;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.5;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header h1 { margin: 0 0 .25rem; font-size: 1.5rem; }
+  header .sub { color: var(--muted); font-size: .9rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .card h2 { margin-top: 0; font-size: 1.05rem; }
+  .meta { color: var(--muted); font-size: .85rem; }
+  ul.units { list-style: none; padding-left: 0; }
+  ul.units li { padding: .3rem 0; border-bottom: 1px solid var(--border); }
+  ul.units li:last-child { border-bottom: none; }
+  .placeholder { color: var(--muted); font-style: italic; }
+  .debug {
+    margin-top: 1rem; padding: .75rem 1rem; background: #f0f0f0;
+    border-left: 3px solid var(--accent); font-size: .85rem;
+    font-family: ui-monospace, SFMono-Regular, monospace;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Biology Bot</h1>
+    <div class="sub">Hi <strong>{{DISPLAY_NAME}}</strong> — launched from {{PLATFORM_NAME}}{{CONTEXT_TITLE_SEP}}{{CONTEXT_TITLE}}.</div>
+  </header>
+
+  <div class="card">
+    <h2>Available units ({{UNIT_COUNT}})</h2>
+    <ul class="units">
+{{UNITS_LIST}}
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>What's next</h2>
+    <p class="placeholder">
+      The menu (Socratic tutor, MC / TF / FITB practice, free-response, practice exam, progress)
+      will plug in here. This page is the LTI-handshake confirmation that we're talking to Moodle.
+    </p>
+  </div>
+
+  <div class="debug">
+    Roles: {{ROLES}}
+  </div>
+</div>
+</body>
+</html>
