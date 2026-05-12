@@ -19,6 +19,9 @@ export interface KindStats {
   correct: number;
   pct: number | null;
   last_at: string | null;
+  // FR-only: average score across all FR attempts in this unit. For MC/TF/FITB
+  // this is null because those are binary right/wrong — pct already captures it.
+  avg_score: number | null;
 }
 
 export interface TutorStats {
@@ -57,7 +60,7 @@ const WEAK_PCT_THRESHOLD = 70;
 const WEAK_MIN_ATTEMPTS = 4;
 
 function emptyKindStats(): KindStats {
-  return { attempts: 0, correct: 0, pct: null, last_at: null };
+  return { attempts: 0, correct: 0, pct: null, last_at: null, avg_score: null };
 }
 
 export async function getStudentProgress(studentId: number): Promise<ProgressBundle> {
@@ -118,9 +121,27 @@ export async function getStudentProgress(studentId: number): Promise<ProgressBun
       correct: row.correct,
       pct: row.attempts > 0 ? Math.round((row.correct / row.attempts) * 100) : null,
       last_at: row.last_at,
+      avg_score: null,
     };
     up.by_kind[row.kind] = stats;
     if (row.attempts > 0) up.any_activity = true;
+  }
+
+  // FR: pull the actual avg score (partial credit) from quiz_attempt, since
+  // progress_summary.correct just counts attempts ≥80%, which is misleading
+  // for free-response. We overlay it on the FR stat row.
+  const frAvg = await query<{ unit_no: number; avg_score: number; count: number }>(
+    `select qa.unit_no, round(avg(qa.scored_score))::int as avg_score, count(*)::int as count
+     from quiz_attempt qa
+     join session sess on sess.id = qa.session_id
+     where sess.student_id = $1 and qa.kind = 'fr' and qa.scored_score is not null
+     group by qa.unit_no`,
+    [studentId]
+  );
+  for (const row of frAvg) {
+    const up = unitMap.get(row.unit_no);
+    if (!up) continue;
+    up.by_kind.fr.avg_score = row.avg_score;
   }
 
   for (const row of tutorRows) {

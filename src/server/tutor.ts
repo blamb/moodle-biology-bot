@@ -63,8 +63,17 @@ function unitGroundingBlock(unit: UnitContent): string {
 
 export async function getOrCreateActiveSession(
   studentId: number,
-  unitNo: number
+  unitNo: number,
+  options: { forceFresh?: boolean } = {}
 ): Promise<Session> {
+  if (options.forceFresh) {
+    // End any open tutor session for this (student, unit) so we start clean.
+    await query(
+      `update session set ended_at = now()
+       where student_id = $1 and unit_no = $2 and kind = 'tutor' and ended_at is null`,
+      [studentId, unitNo]
+    );
+  }
   const existing = await query<Session>(
     `select * from session
      where student_id=$1 and unit_no=$2 and kind='tutor' and ended_at is null

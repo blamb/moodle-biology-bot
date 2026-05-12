@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Biology Bot</title>
+<script src="https://cdn.jsdelivr.net/npm/marked@14/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
 <style>
   :root {
     --bg: #fafafa;
@@ -51,7 +53,15 @@
   .view { display: none; }
   .view.active { display: block; }
 
-  /* Unit-view header (back + title + tabs) */
+  /* Unit-view header (back + title + tabs) — sticks to viewport top so
+     long chat conversations don't bury the back button & tabs */
+  .sticky-bar {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--card);
+    margin: -1rem -1.25rem 1rem;
+    padding: .85rem 1.25rem 0;
+    border-bottom: 1px solid var(--border);
+  }
   .unit-header {
     display: flex; justify-content: space-between; align-items: baseline;
     margin-bottom: .5rem;
@@ -65,7 +75,7 @@
 
   .tabs {
     display: flex; gap: .25rem; border-bottom: 1px solid var(--border);
-    margin: .25rem 0 1rem;
+    margin: .25rem 0 0;
   }
   .tab {
     padding: .45rem .9rem; cursor: pointer; border: 1px solid transparent;
@@ -256,6 +266,35 @@
   .debug { margin-top: 1rem; padding: .5rem .75rem; background: #f0f0f0;
     border-left: 3px solid var(--accent); font-size: .78rem; color: var(--muted);
     font-family: ui-monospace, SFMono-Regular, monospace; }
+  /* Debug bar is only useful for instructors / admin troubleshooting */
+  body[data-role="student"] .debug { display: none; }
+
+  /* Spinner used during slow generation */
+  .spinner {
+    display: inline-block;
+    width: .9em; height: .9em;
+    border: 2px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+    vertical-align: -.1em;
+    margin-right: .4em;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .gen-note { color: var(--muted); font-size: .85rem; margin-top: .5rem; }
+
+  /* Rendered Markdown — keep tight inside chat bubbles + result blocks */
+  .md p:first-child { margin-top: 0; }
+  .md p:last-child { margin-bottom: 0; }
+  .md p { margin: .4rem 0; }
+  .md ul, .md ol { margin: .4rem 0; padding-left: 1.25rem; }
+  .md li { margin: .15rem 0; }
+  .md code { background: rgba(0,0,0,.06); padding: .05em .3em; border-radius: 3px;
+    font-family: ui-monospace, SFMono-Regular, monospace; font-size: .92em; }
+  .md a { color: inherit; text-decoration: underline; }
+  .md h1, .md h2, .md h3, .md h4 { margin: .6rem 0 .25rem; font-size: 1em; }
+  /* Inside the user/assistant bubble, contrast for inline code */
+  .turn.user .bubble.md code { background: rgba(255,255,255,.18); }
 
   /* Header actions */
   .header-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem; }
@@ -337,6 +376,27 @@
   .tot-cards .num { font-size: 1.5rem; font-weight: 600; font-variant-numeric: tabular-nums; }
   .tot-cards .lbl { color: var(--muted); font-size: .8rem; }
 
+  /* Practice exam unit checkboxes — clear 2-column layout with the checkbox
+     immediately preceding its label text. */
+  .exam-units {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: .35rem 1.25rem;
+    font-size: .9rem;
+    margin-top: .4rem;
+  }
+  .exam-units label {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    cursor: pointer;
+    padding: .25rem .35rem;
+    border-radius: 4px;
+  }
+  .exam-units label:hover { background: #f5f5f5; }
+  .exam-units input[type="checkbox"] { flex: 0 0 auto; margin: 0; }
+  .exam-units label > span { flex: 1; min-width: 0; }
+
   .roster-table { width: 100%; }
   .roster-table tr.clickable { cursor: pointer; }
   .roster-table tr.clickable:hover { background: #f5f5f5; }
@@ -412,7 +472,8 @@
         <label>Fill in the blank
           <input type="number" id="exam-count-fitb" min="0" max="30" value="10">
         </label>
-        <label>Free response (slow!)
+        <label title="Free-response questions take longer because the AI generates a per-mark rubric for each, and then grades student answers against that rubric (~15s/question on each side).">
+          Free response (slow — ~15s/question to generate and again to grade)
           <input type="number" id="exam-count-fr" min="0" max="5" value="2">
         </label>
         <label style="justify-content:flex-start;gap:.5rem;cursor:pointer">
@@ -424,7 +485,7 @@
           <button type="button" class="link-btn" id="exam-units-all">All</button>
           <button type="button" class="link-btn" id="exam-units-none">None</button>
         </div>
-        <div id="exam-units-list" style="display:grid;grid-template-columns:repeat(2,1fr);gap:.25rem .75rem;font-size:.9rem"></div>
+        <div id="exam-units-list" class="exam-units"></div>
         <div style="margin-top:.75rem">
           <button class="btn" id="exam-generate">Generate exam</button>
         </div>
@@ -538,20 +599,25 @@
 
   <!-- ───── Unit view ───── -->
   <div class="view card" id="view-unit">
-    <div class="unit-header">
-      <h2 id="unit-title">Unit X: …</h2>
-      <button class="back-btn" id="back-btn" type="button">← Back to units</button>
-    </div>
-    <div class="tabs" role="tablist">
-      <div class="tab active" data-tab="tutor">Tutor</div>
-      <div class="tab" data-tab="mc">MC quiz</div>
-      <div class="tab" data-tab="tf">TF quiz</div>
-      <div class="tab" data-tab="fitb">FITB quiz</div>
-      <div class="tab" data-tab="fr">Free response</div>
+    <div class="sticky-bar">
+      <div class="unit-header">
+        <h2 id="unit-title">Unit X: …</h2>
+        <button class="back-btn" id="back-btn" type="button">← Back to units</button>
+      </div>
+      <div class="tabs" role="tablist">
+        <div class="tab active" data-tab="tutor">Tutor</div>
+        <div class="tab" data-tab="mc">MC quiz</div>
+        <div class="tab" data-tab="tf">TF quiz</div>
+        <div class="tab" data-tab="fitb">FITB quiz</div>
+        <div class="tab" data-tab="fr">Free response</div>
+      </div>
     </div>
 
     <!-- Tutor panel -->
     <div class="tab-panel active" data-panel="tutor">
+      <div style="display:flex;justify-content:flex-end;margin-bottom:.4rem">
+        <button class="link-btn" id="tutor-new" type="button" title="End this conversation and start a fresh one. Past turns stay in your progress data but are no longer in the tutor's context.">↻ New conversation</button>
+      </div>
       <div class="turns" id="turns"></div>
       <form class="compose" id="compose-form" autocomplete="off">
         <textarea id="compose-input" placeholder="Type a message…" rows="2"></textarea>
@@ -606,6 +672,26 @@
   }
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+  // Render a Markdown string to safe HTML for display in AI-response surfaces.
+  // marked.js handles the markdown; DOMPurify trims anything dangerous.
+  function mdToHtml(text) {
+    if (text == null) return '';
+    const raw = String(text);
+    try {
+      const html = window.marked
+        ? window.marked.parse(raw, { breaks: true, gfm: true })
+        : raw.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      return window.DOMPurify ? window.DOMPurify.sanitize(html) : html;
+    } catch (e) {
+      // Fallback: escape and preserve newlines
+      return raw.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
+    }
+  }
+  function setMd(el, text) {
+    el.classList.add('md');
+    el.innerHTML = mdToHtml(text);
+  }
 
   // ───── View routing ─────
   const viewPicker = $('#view-picker');
@@ -738,12 +824,36 @@
     div.className = 'turn ' + role;
     const bub = document.createElement('div');
     bub.className = 'bubble';
-    bub.textContent = content;
+    bub._raw = content || '';
+    // User messages don't need markdown rendering (their own text is plain),
+    // and the seed message we send after a quiz is intentionally readable.
+    // But rendering them as md is harmless and keeps formatting consistent.
+    setMd(bub, bub._raw);
     div.appendChild(bub);
     turnsEl.appendChild(div);
     turnsEl.scrollTop = turnsEl.scrollHeight;
     return bub;
   }
+
+  $('#tutor-new').addEventListener('click', async () => {
+    if (!currentUnit) return;
+    if (!confirm('Start a fresh tutor conversation for this unit? Your past turns are kept in your progress data, but the tutor won\'t see them anymore.')) return;
+    tutorErr.textContent = '';
+    turnsEl.innerHTML = '<div class="empty-state">Resetting…</div>';
+    try {
+      const resp = await fetch(apiUrl('/api/tutor/session'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ unit_no: currentUnit.no, fresh: true }),
+      });
+      if (!resp.ok) throw new Error('Server returned ' + resp.status);
+      const data = await resp.json();
+      currentTutor.sessionId = data.session.id;
+      renderTurns(data.turns);
+    } catch (e) {
+      tutorErr.textContent = 'Reset failed: ' + e.message;
+    }
+  });
 
   composeForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -791,7 +901,8 @@
           buf = buf.slice(idx + 2);
           const evt = parseSSE(raw);
           if (evt.event === 'chunk') {
-            assistantBubble.textContent += evt.data.text;
+            assistantBubble._raw = (assistantBubble._raw || '') + (evt.data.text || '');
+            setMd(assistantBubble, assistantBubble._raw);
             turnsEl.scrollTop = turnsEl.scrollHeight;
           } else if (evt.event === 'error') {
             tutorErr.textContent = 'Tutor error: ' + evt.data.message;
@@ -852,7 +963,14 @@
     const btn = panel.querySelector('[data-action="generate"]');
     errEl.textContent = '';
     btn.disabled = true;
-    btn.textContent = 'Generating…';
+    btn.innerHTML = '<span class="spinner"></span>Generating…';
+    const noteEl = document.createElement('div');
+    noteEl.className = 'gen-note';
+    noteEl.textContent =
+      kind === 'fr'
+        ? 'Generating free-response questions takes ~15 seconds each (the AI also drafts the rubric).'
+        : 'This usually takes 10–30 seconds. Subsequent quizzes on the same unit are faster (the unit content is cached).';
+    panel.querySelector('.quiz-config').appendChild(noteEl);
 
     try {
       const resp = await fetch(apiUrl('/api/quiz/generate'), {
@@ -984,11 +1102,13 @@
     submitBtn.addEventListener('click', async () => {
       const response = getResponse();
       if (response === null || response === '' || response === undefined) {
-        errEl.textContent = 'Pick an answer first.';
+        errEl.textContent = (kind === 'fitb' || kind === 'fr')
+          ? 'Type an answer first.'
+          : 'Pick an answer first.';
         return;
       }
       submitBtn.disabled = true;
-      submitBtn.textContent = kind === 'fr' ? 'Grading…' : 'Checking…';
+      submitBtn.innerHTML = '<span class="spinner"></span>' + (kind === 'fr' ? 'Grading…' : 'Checking…');
       errEl.textContent = '';
       try {
         const resp = await fetch(apiUrl('/api/quiz/answer'), {
@@ -1031,11 +1151,9 @@
       renderFrGrade(panel, q, response, data);
       // Track score progress: count partial credit
       s.scoreSum = (s.scoreSum || 0) + (data.score_pct ?? 0);
-      // "Want to know more?" routes through the per-quiz explain endpoint.
       const qBox = panel.querySelector('.quiz-question');
       addExplainButton(qBox, s.sessionId, s.idx);
-      // Replace the submit button with a Next button.
-      replaceSubmitWithNext(panel);
+      moveNextButtonToBottom(panel);
       return;
     }
 
@@ -1071,30 +1189,33 @@
     }
     const exp = document.createElement('p');
     exp.className = 'quiz-explanation';
-    exp.textContent = data.explanation;
+    setMd(exp, data.explanation);
     result.appendChild(exp);
 
-    replaceSubmitWithNext(panel);
     const qBox = panel.querySelector('.quiz-question');
     qBox.appendChild(result);
     addExplainButton(qBox, s.sessionId, s.idx);
+    moveNextButtonToBottom(panel);
   }
 
-  function replaceSubmitWithNext(panel) {
-    // Find any quiz panel's "Submit" button and turn it into "Next" / "See results".
-    const submitBtn = panel.querySelector('.btn');
+  function moveNextButtonToBottom(panel) {
+    // Remove the existing Submit/Next button and append a fresh "Next" at the
+    // end of the question box — below the result AND the "Want to know more"
+    // expansion. Keeps the reading flow top-to-bottom.
+    const qBox = panel.querySelector('.quiz-question');
+    const old = qBox.querySelector('.btn');
+    if (old) old.remove();
     const panelKind = panel.dataset.panel;
     const s = quizState[panelKind];
-    submitBtn.replaceWith((function () {
-      const next = document.createElement('button');
-      next.className = 'btn';
-      next.textContent = s.idx + 1 < s.questions.length ? 'Next question →' : 'See results →';
-      next.addEventListener('click', () => {
-        s.idx += 1;
-        renderQuizQuestion(panelKind, panel);
-      });
-      return next;
-    })());
+    const next = document.createElement('button');
+    next.className = 'btn';
+    next.style.marginTop = '.85rem';
+    next.textContent = s.idx + 1 < s.questions.length ? 'Next question →' : 'See results →';
+    next.addEventListener('click', () => {
+      s.idx += 1;
+      renderQuizQuestion(panelKind, panel);
+    });
+    qBox.appendChild(next);
   }
 
   function renderFrGrade(panel, q, response, data) {
@@ -1127,7 +1248,7 @@
       const main = document.createElement('div');
       main.textContent = c.criterion;
       const small = document.createElement('small');
-      small.textContent = c.rationale;
+      setMd(small, c.rationale);
       txt.appendChild(main);
       txt.appendChild(small);
       li.appendChild(pts);
@@ -1140,7 +1261,7 @@
       const div = document.createElement('div');
       div.className = 'fr-meta-block';
       if (!value || !value.trim()) div.classList.add('empty');
-      div.innerHTML = `<strong>${label}:</strong> ` + escapeHtml(value || '');
+      div.innerHTML = `<strong>${label}:</strong> <span class="md">${mdToHtml(value || '')}</span>`;
       return div;
     }
     wrap.appendChild(metaBlock('What you did well', grade.strong));
@@ -1234,10 +1355,14 @@
         const s = u.by_kind[k];
         const b = document.createElement('span');
         b.className = 'badge';
+        const isFr = k === 'fr' && s.avg_score !== null;
+        const headlinePct = isFr ? s.avg_score : s.pct;
         if (s.attempts > 0) b.classList.add('has-data');
-        if (s.attempts >= 4 && s.pct !== null && s.pct < 70) b.classList.add('weak');
-        b.innerHTML = `<span class="b-kind">${KIND_LABELS[k]}</span> ` +
-          (s.attempts > 0 ? `${s.pct}% (${s.attempts})` : '—');
+        if (s.attempts >= (isFr ? 2 : 4) && headlinePct !== null && headlinePct < 70) b.classList.add('weak');
+        const display = s.attempts > 0
+          ? (isFr ? `${headlinePct}% avg (${s.attempts})` : `${headlinePct}% (${s.attempts})`)
+          : '—';
+        b.innerHTML = `<span class="b-kind">${KIND_LABELS[k]}</span> ${display}`;
         badges.appendChild(b);
       }
       if (u.tutor.turns > 0) {
@@ -1310,13 +1435,7 @@
       for (const k of PROGRESS_KINDS) {
         const td = document.createElement('td');
         td.className = 'num';
-        const s = u.by_kind[k];
-        if (s.attempts === 0) {
-          td.textContent = '—';
-        } else {
-          const cls = s.pct >= 70 ? 'good' : (s.attempts >= 4 ? 'weak' : '');
-          td.innerHTML = `${s.correct}/${s.attempts} <span class="cell-pct ${cls}">${s.pct}%</span>`;
-        }
+        td.innerHTML = formatKindCell(k, u.by_kind[k]);
         tr.appendChild(td);
       }
       const tdT = document.createElement('td');
@@ -1326,6 +1445,19 @@
       tr.appendChild(tdT);
       tbody.appendChild(tr);
     }
+  }
+
+  // Format a single (kind, KindStats) cell. FR special-cases avg score because
+  // partial credit doesn't fit the binary "correct/attempts" notation.
+  function formatKindCell(k, s) {
+    if (!s || s.attempts === 0) return '—';
+    if (k === 'fr' && s.avg_score !== null) {
+      const cls = s.avg_score >= 70 ? 'good' : (s.attempts >= 2 ? 'weak' : '');
+      return `<span class="cell-pct ${cls}">${s.avg_score}% avg</span> ` +
+        `<span style="color:var(--muted)">(${s.attempts})</span>`;
+    }
+    const cls = s.pct >= 70 ? 'good' : (s.attempts >= 4 ? 'weak' : '');
+    return `${s.correct}/${s.attempts} <span class="cell-pct ${cls}">${s.pct}%</span>`;
   }
 
   function escapeHtml(s) {
@@ -1511,12 +1643,7 @@
         for (const k of PROGRESS_KINDS) {
           const td = document.createElement('td');
           td.className = 'num';
-          const s = u.by_kind[k];
-          if (s.attempts === 0) td.textContent = '—';
-          else {
-            const cls = s.pct >= 70 ? 'good' : (s.attempts >= 4 ? 'weak' : '');
-            td.innerHTML = `${s.correct}/${s.attempts} <span class="cell-pct ${cls}">${s.pct}%</span>`;
-          }
+          td.innerHTML = formatKindCell(k, u.by_kind[k]);
           tr.appendChild(td);
         }
         const tdT = document.createElement('td');
@@ -1554,7 +1681,7 @@
       out.innerHTML = '';
       const block = document.createElement('div');
       block.className = 'concept-analysis-output';
-      block.textContent = data.analysis;
+      setMd(block, data.analysis);
       out.appendChild(block);
     } catch (e) {
       out.innerHTML = `<div class="err">${e.message}</div>`;
@@ -1584,7 +1711,6 @@
     wrap.innerHTML = '';
     for (const u of lastProgress.units) {
       const label = document.createElement('label');
-      label.style.cssText = 'display:flex;gap:.4rem;align-items:center';
       const cb = document.createElement('input');
       cb.type = 'checkbox';
       cb.checked = true;
@@ -1631,7 +1757,9 @@
     }
 
     btn.disabled = true;
-    btn.textContent = `Generating ~${total} questions…`;
+    btn.innerHTML = `<span class="spinner"></span>Generating ~${total} questions…`;
+    const noteHtml = '<div class="gen-note">This usually takes 30–90 seconds depending on how many free-response questions are in the mix.</div>';
+    errEl.insertAdjacentHTML('beforebegin', noteHtml);
     try {
       const resp = await fetch(apiUrl('/api/exam/generate'), {
         method: 'POST',
@@ -1757,12 +1885,14 @@
     submitBtn.addEventListener('click', async () => {
       const response = getResponse();
       if (response === null || response === '' || response === undefined) {
-        $('#exam-taking-err').textContent = 'Pick an answer first.';
+        $('#exam-taking-err').textContent = (item.kind === 'fitb' || item.kind === 'fr')
+          ? 'Type an answer first.'
+          : 'Pick an answer first.';
         return;
       }
       $('#exam-taking-err').textContent = '';
       submitBtn.disabled = true;
-      submitBtn.textContent = item.kind === 'fr' ? 'Grading…' : 'Checking…';
+      submitBtn.innerHTML = '<span class="spinner"></span>' + (item.kind === 'fr' ? 'Grading…' : 'Checking…');
       try {
         const resp = await fetch(apiUrl('/api/exam/answer'), {
           method: 'POST',
@@ -2139,7 +2269,7 @@
           return;
         }
         body.classList.remove('none');
-        body.textContent = data.summary || '(no synthesis returned)';
+        setMd(body, data.summary || '(no synthesis returned)');
       })
       .catch((e) => {
         body.textContent = 'Could not generate synthesis: ' + e.message;
@@ -2154,7 +2284,7 @@
     btn.addEventListener('click', async () => {
       btn.disabled = true;
       const orig = btn.textContent;
-      btn.textContent = 'Thinking…';
+      btn.innerHTML = '<span class="spinner"></span>Thinking…';
       try {
         const resp = await fetch(apiUrl('/api/quiz/explain'), {
           method: 'POST',
@@ -2173,7 +2303,7 @@
         lbl.textContent = 'Deeper walkthrough';
         block.appendChild(lbl);
         const txt = document.createElement('div');
-        txt.textContent = data.explanation;
+        setMd(txt, data.explanation);
         block.appendChild(txt);
         btn.replaceWith(block);
       } catch (e) {
@@ -2344,6 +2474,12 @@
       }
     });
     actions.appendChild(tutor);
+
+    const backToUnits = document.createElement('button');
+    backToUnits.className = 'btn btn-ghost';
+    backToUnits.textContent = '← Back to units';
+    backToUnits.addEventListener('click', () => $('#back-btn').click());
+    actions.appendChild(backToUnits);
 
     box.appendChild(actions);
     panel.appendChild(box);

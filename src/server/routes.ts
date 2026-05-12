@@ -166,10 +166,11 @@ lti.app.post('/api/tutor/session', async (req: Request, res: Response) => {
     const token = tokenOf(res);
     const student = await studentFromToken(token);
     const unitNo = parseInt(String(req.body?.unit_no ?? ''), 10);
+    const fresh = req.body?.fresh === true;
     if (!Number.isInteger(unitNo) || unitNo < 1 || unitNo > 17) {
       return res.status(400).json({ error: 'unit_no must be an integer 1–17' });
     }
-    const session = await getOrCreateActiveSession(student.id, unitNo);
+    const session = await getOrCreateActiveSession(student.id, unitNo, { forceFresh: fresh });
     const turns = await getTurns(session.id);
     res.json({ session, turns });
   } catch (e) {
