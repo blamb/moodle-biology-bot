@@ -24,16 +24,26 @@ import {
   generateMC,
   generateTF,
   generateFITB,
+  generateFR,
   gradeMC,
   gradeTF,
   gradeFITB,
+  gradeFR,
   type Difficulty,
   type QuizKind,
   type McQuestion,
   type TfQuestion,
   type FitbQuestion,
+  type FrQuestion,
+  type FrGrade,
 } from './quiz.js';
+import { getUnit } from './content.js';
 import { getStudentProgress } from './progress.js';
+import {
+  synthesizeQuiz,
+  explainAttempt,
+  type AttemptForCoaching,
+} from './coach.js';
 
 // ltijs doesn't install a JSON body parser globally; do it for our routes.
 lti.app.use('/api', express.json({ limit: '256kb' }));
@@ -91,7 +101,7 @@ lti.app.post('/api/tutor/session', async (req: Request, res: Response) => {
 
 // ─── Quiz: generate ─────────────────────────────────────────────────────────
 
-const VALID_KINDS: QuizKind[] = ['mc', 'tf', 'fitb'];
+const VALID_KINDS: QuizKind[] = ['mc', 'tf', 'fitb', 'fr'];
 const VALID_DIFFICULTIES: Difficulty[] = ['introductory', 'intermediate', 'advanced'];
 
 lti.app.post('/api/quiz/generate', async (req: Request, res: Response) => {
@@ -114,10 +124,11 @@ lti.app.post('/api/quiz/generate', async (req: Request, res: Response) => {
       return res.status(400).json({ error: `difficulty must be one of: ${VALID_DIFFICULTIES.join(', ')}` });
     }
 
-    let questions: McQuestion[] | TfQuestion[] | FitbQuestion[];
+    let questions: McQuestion[] | TfQuestion[] | FitbQuestion[] | FrQuestion[];
     if (kind === 'mc') questions = await generateMC(unitNo, count, difficulty);
     else if (kind === 'tf') questions = await generateTF(unitNo, count, difficulty);
-    else questions = await generateFITB(unitNo, count, difficulty);
+    else if (kind === 'fitb') questions = await generateFITB(unitNo, count, difficulty);
+    else questions = await generateFR(unitNo, count, difficulty);
 
     // Create a session and stash the generated questions in summary so the
     // student can come back to the same set without re-generating.
@@ -169,36 +180,50 @@ lti.app.post('/api/quiz/answer', async (req: Request, res: Response) => {
 
     let correct = false;
     let normalized: string | null = null;
-    let q: McQuestion | TfQuestion | FitbQuestion;
+    let scoredScore: number | null = null;
+    let feedbackText: string;
+    let frGrade: FrGrade | null = null;
 
     if (kind === 'mc') {
-      q = question as McQuestion;
+      const q = question as McQuestion;
       correct = gradeMC(q, parseInt(String(response), 10));
+      feedbackText = q.explanation;
     } else if (kind === 'tf') {
-      q = question as TfQuestion;
+      const q = question as TfQuestion;
       correct = gradeTF(q, response === true || response === 'true');
-    } else {
-      q = question as FitbQuestion;
+      feedbackText = q.explanation;
+    } else if (kind === 'fitb') {
+      const q = question as FitbQuestion;
       const r = gradeFITB(q, String(response ?? ''));
       correct = r.correct;
       normalized = r.normalized_response;
+      feedbackText = q.explanation;
+    } else {
+      // Free response — LLM-graded against the rubric.
+      const q = question as FrQuestion;
+      const unit = getUnit(session.unit_no);
+      frGrade = await gradeFR(unit, q, String(response ?? ''));
+      scoredScore = Math.round((frGrade.total_awarded / frGrade.total_possible) * 100);
+      // Count as "correct" for progress purposes if ≥ 80% of total marks.
+      correct = scoredScore >= 80;
+      feedbackText = JSON.stringify(frGrade);
     }
 
     await query(
-      `insert into quiz_attempt (session_id, unit_no, kind, question, response, scored_correct, feedback)
-       values ($1, $2, $3, $4, $5, $6, $7)`,
+      `insert into quiz_attempt (session_id, unit_no, kind, question, response, scored_correct, scored_score, feedback)
+       values ($1, $2, $3, $4, $5, $6, $7, $8)`,
       [
         sessionId,
         session.unit_no,
         kind,
         JSON.stringify(question),
-        String(response ?? ''),
+        typeof response === 'string' ? response : JSON.stringify(response),
         correct,
-        (q as { explanation: string }).explanation,
+        scoredScore,
+        feedbackText,
       ]
     );
 
-    // Update progress_summary upsert
     await query(
       `insert into progress_summary (student_id, unit_no, kind, attempts, correct, last_at)
        values ($1, $2, $3, 1, $4, now())
@@ -209,17 +234,159 @@ lti.app.post('/api/quiz/answer', async (req: Request, res: Response) => {
       [student.id, session.unit_no, kind, correct ? 1 : 0]
     );
 
-    res.json({
-      correct,
-      explanation: (q as { explanation: string }).explanation,
-      ...(kind === 'mc' ? { correct_index: (q as McQuestion).correct_index } : {}),
-      ...(kind === 'tf' ? { correct_answer: (q as TfQuestion).correct } : {}),
-      ...(kind === 'fitb'
-        ? { correct_answer: (q as FitbQuestion).answer, normalized_response: normalized }
-        : {}),
-    });
+    if (kind === 'mc') {
+      const q = question as McQuestion;
+      res.json({ correct, explanation: q.explanation, correct_index: q.correct_index });
+    } else if (kind === 'tf') {
+      const q = question as TfQuestion;
+      res.json({ correct, explanation: q.explanation, correct_answer: q.correct });
+    } else if (kind === 'fitb') {
+      const q = question as FitbQuestion;
+      res.json({
+        correct,
+        explanation: q.explanation,
+        correct_answer: q.answer,
+        normalized_response: normalized,
+      });
+    } else {
+      const q = question as FrQuestion;
+      res.json({
+        correct,
+        score_pct: scoredScore,
+        grade: frGrade,
+        model_answer: q.model_answer,
+      });
+    }
   } catch (e) {
     console.error('POST /api/quiz/answer failed:', e);
+    res.status(500).json({ error: (e as Error).message });
+  }
+});
+
+// ─── Quiz: synthesize patterns across the whole quiz ───────────────────────
+
+lti.app.post('/api/quiz/synthesize', async (req: Request, res: Response) => {
+  try {
+    const token = tokenOf(res);
+    const student = await studentFromToken(token);
+    const sessionId = parseInt(String(req.body?.session_id ?? ''), 10);
+    if (!Number.isInteger(sessionId)) return res.status(400).json({ error: 'session_id required' });
+
+    const sessions = await query<{
+      id: number; student_id: number; kind: string; unit_no: number;
+      summary: { difficulty: Difficulty; questions: unknown[] };
+    }>(
+      `select id, student_id, kind, unit_no, summary from session where id=$1`,
+      [sessionId]
+    );
+    if (!sessions.length || sessions[0]!.student_id !== student.id) {
+      return res.status(404).json({ error: 'session not found' });
+    }
+    const session = sessions[0]!;
+    const kind = session.kind.replace(/^quiz_/, '') as QuizKind;
+
+    const rows = await query<{
+      question: unknown;
+      response: string;
+      scored_correct: boolean;
+      scored_score: number | null;
+      feedback: string | null;
+    }>(
+      `select question, response, scored_correct, scored_score, feedback
+       from quiz_attempt
+       where session_id=$1
+       order by ts asc, id asc`,
+      [sessionId]
+    );
+    if (rows.length === 0) {
+      return res.status(400).json({ error: 'no attempts yet for this session' });
+    }
+
+    const attempts: AttemptForCoaching[] = rows.map((r) => {
+      const a: AttemptForCoaching = {
+        kind,
+        question: r.question as never,
+        response: typeof r.response === 'string' && (kind === 'mc' || kind === 'tf')
+          ? (kind === 'mc' ? parseInt(r.response, 10) : (r.response === 'true'))
+          : r.response,
+        correct: r.scored_correct,
+      };
+      if (kind === 'fr' && r.feedback) {
+        try { a.grade = JSON.parse(r.feedback); } catch {}
+        a.score_pct = r.scored_score ?? undefined;
+      }
+      return a;
+    });
+
+    const summary = await synthesizeQuiz(
+      session.unit_no, kind, session.summary.difficulty, attempts
+    );
+    res.json({ summary });
+  } catch (e) {
+    console.error('POST /api/quiz/synthesize failed:', e);
+    res.status(500).json({ error: (e as Error).message });
+  }
+});
+
+// ─── Quiz: explain one question in depth ────────────────────────────────────
+
+lti.app.post('/api/quiz/explain', async (req: Request, res: Response) => {
+  try {
+    const token = tokenOf(res);
+    const student = await studentFromToken(token);
+    const sessionId = parseInt(String(req.body?.session_id ?? ''), 10);
+    const questionIndex = parseInt(String(req.body?.question_index ?? ''), 10);
+    if (!Number.isInteger(sessionId) || !Number.isInteger(questionIndex)) {
+      return res.status(400).json({ error: 'session_id and question_index required' });
+    }
+
+    const sessions = await query<{
+      id: number; student_id: number; kind: string; unit_no: number;
+    }>(
+      `select id, student_id, kind, unit_no from session where id=$1`,
+      [sessionId]
+    );
+    if (!sessions.length || sessions[0]!.student_id !== student.id) {
+      return res.status(404).json({ error: 'session not found' });
+    }
+    const session = sessions[0]!;
+    const kind = session.kind.replace(/^quiz_/, '') as QuizKind;
+
+    // Pull the attempt at this question_index — attempts are inserted in order.
+    const rows = await query<{
+      question: unknown;
+      response: string;
+      scored_correct: boolean;
+      scored_score: number | null;
+      feedback: string | null;
+    }>(
+      `select question, response, scored_correct, scored_score, feedback
+       from quiz_attempt
+       where session_id=$1
+       order by ts asc, id asc
+       offset $2 limit 1`,
+      [sessionId, questionIndex]
+    );
+    if (!rows.length) return res.status(404).json({ error: 'attempt not found' });
+    const r = rows[0]!;
+
+    const attempt: AttemptForCoaching = {
+      kind,
+      question: r.question as never,
+      response: typeof r.response === 'string' && (kind === 'mc' || kind === 'tf')
+        ? (kind === 'mc' ? parseInt(r.response, 10) : (r.response === 'true'))
+        : r.response,
+      correct: r.scored_correct,
+    };
+    if (kind === 'fr' && r.feedback) {
+      try { attempt.grade = JSON.parse(r.feedback); } catch {}
+      attempt.score_pct = r.scored_score ?? undefined;
+    }
+
+    const explanation = await explainAttempt(session.unit_no, attempt);
+    res.json({ explanation });
+  } catch (e) {
+    console.error('POST /api/quiz/explain failed:', e);
     res.status(500).json({ error: (e as Error).message });
   }
 });

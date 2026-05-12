@@ -169,6 +169,77 @@
   .quiz-summary .score {
     font-size: 1.5rem; font-weight: 600; margin: .5rem 0;
   }
+  .quiz-summary .feedback-section {
+    margin-top: 1rem; padding: .85rem 1rem; border-radius: 8px;
+    background: #fff; border: 1px solid var(--border);
+  }
+  .quiz-summary .feedback-section h3 {
+    margin: 0 0 .5rem; font-size: .9rem; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .04em;
+  }
+  .quiz-summary .feedback-section.good { border-left: 4px solid var(--good); }
+  .quiz-summary .feedback-section.weak { border-left: 4px solid var(--bad); }
+  .quiz-summary .feedback-section.warn { border-left: 4px solid #b07000; }
+  .quiz-summary .feedback-section.synth { border-left: 4px solid var(--accent); white-space: pre-wrap; }
+
+  /* Per-question deep-dive */
+  .explain-block {
+    margin-top: .65rem; padding: .65rem .85rem; border-radius: 8px;
+    background: #eaf3fc; border: 1px solid #cbe2f5;
+    white-space: pre-wrap;
+  }
+  .explain-block .lbl {
+    font-size: .8rem; color: var(--accent); letter-spacing: .04em;
+    text-transform: uppercase; margin-bottom: .25rem;
+  }
+  .quiz-summary .feedback-section ul {
+    margin: 0; padding-left: 1.25rem;
+  }
+  .quiz-summary .feedback-section li { margin: .2rem 0; }
+  .quiz-summary .feedback-section .none {
+    color: var(--muted); font-style: italic;
+  }
+
+  /* Free response */
+  .fr-input {
+    width: 100%; min-height: 160px; max-height: 50vh; resize: vertical;
+    padding: .75rem .85rem; border: 1px solid var(--border); border-radius: 8px;
+    font: inherit;
+  }
+  .fr-grade {
+    margin-top: .75rem;
+    padding: .85rem 1rem; border-radius: 8px; background: #f7f7f7;
+    border-left: 4px solid var(--accent);
+  }
+  .fr-score-line {
+    display: flex; align-items: baseline; gap: .5rem; margin-bottom: .5rem;
+  }
+  .fr-score { font-size: 1.4rem; font-weight: 600; }
+  .fr-score-out { color: var(--muted); }
+  .fr-pct { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .fr-criteria { list-style: none; padding-left: 0; margin: .5rem 0; }
+  .fr-criteria li {
+    padding: .4rem .55rem; margin: .25rem 0; border-radius: 6px;
+    border: 1px solid var(--border); background: #fff;
+    display: flex; gap: .55rem; align-items: flex-start;
+  }
+  .fr-criteria .pts {
+    flex: 0 0 auto; font-variant-numeric: tabular-nums; font-weight: 600;
+    min-width: 2.5em; text-align: right;
+  }
+  .fr-criteria .full .pts { color: var(--good); }
+  .fr-criteria .partial .pts { color: #b07000; }
+  .fr-criteria .missing .pts { color: var(--bad); }
+  .fr-criteria .text { flex: 1; }
+  .fr-criteria .text small { color: var(--muted); display: block; margin-top: .15rem; }
+  .fr-meta-block { margin: .55rem 0 0; }
+  .fr-meta-block strong { color: var(--fg); }
+  .fr-meta-block.empty { display: none; }
+  .fr-model {
+    margin-top: .5rem; padding: .55rem .75rem; border-radius: 6px;
+    background: #eef6f0; border: 1px solid #cfe5d5;
+    white-space: pre-wrap;
+  }
 
   .err { color: var(--bad); font-size: .85rem; margin-top: .5rem; }
   .debug { margin-top: 1rem; padding: .5rem .75rem; background: #f0f0f0;
@@ -288,6 +359,7 @@
             <th class="num">MC</th>
             <th class="num">TF</th>
             <th class="num">FITB</th>
+            <th class="num">FR</th>
             <th class="num">Tutor</th>
           </tr>
         </thead>
@@ -307,6 +379,7 @@
       <div class="tab" data-tab="mc">MC quiz</div>
       <div class="tab" data-tab="tf">TF quiz</div>
       <div class="tab" data-tab="fitb">FITB quiz</div>
+      <div class="tab" data-tab="fr">Free response</div>
     </div>
 
     <!-- Tutor panel -->
@@ -323,6 +396,7 @@
     <div class="tab-panel" data-panel="mc"></div>
     <div class="tab-panel" data-panel="tf"></div>
     <div class="tab-panel" data-panel="fitb"></div>
+    <div class="tab-panel" data-panel="fr"></div>
   </div>
 
   <div class="debug">Roles: {{ROLES}}</div>
@@ -333,7 +407,9 @@
     <h2 style="margin:0">Generate a practice quiz</h2>
     <label>How many questions?
       <select data-field="count">
-        <option value="3">3</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" data-default-fr>3</option>
         <option value="5" selected>5</option>
         <option value="10">10</option>
         <option value="15">15</option>
@@ -410,7 +486,7 @@
   function showTab(name) {
     $$('.tab').forEach((t) => t.classList.toggle('active', t.dataset.tab === name));
     $$('.tab-panel').forEach((p) => p.classList.toggle('active', p.dataset.panel === name));
-    if (name === 'mc' || name === 'tf' || name === 'fitb') {
+    if (name === 'mc' || name === 'tf' || name === 'fitb' || name === 'fr') {
       renderQuizConfig(name);
     }
   }
@@ -544,13 +620,22 @@
 
   function renderQuizConfig(kind) {
     const panel = $(`.tab-panel[data-panel="${kind}"]`);
-    // If the quiz is already in-flight or finished in this session, don't blow it away.
     if (panel.dataset.state === 'quiz' || panel.dataset.state === 'done') return;
 
     panel.innerHTML = '';
     const tpl = $('#tpl-quiz-config').content.cloneNode(true);
     panel.appendChild(tpl);
     panel.dataset.state = 'config';
+
+    // FR is heavy — default to 2 questions, hide higher counts that would take forever.
+    if (kind === 'fr') {
+      const countSel = panel.querySelector('[data-field="count"]');
+      Array.from(countSel.options).forEach((opt) => {
+        const n = parseInt(opt.value, 10);
+        if (n > 3) opt.remove();
+      });
+      countSel.value = '2';
+    }
 
     panel.querySelector('[data-action="generate"]').addEventListener('click', () =>
       quizGenerate(kind, panel)
@@ -584,6 +669,7 @@
         score: 0,
         difficulty,
         kind,
+        results: [],  // populated per question; used to seed the tutor on "Discuss"
       };
       panel.dataset.state = 'quiz';
       renderQuizQuestion(kind, panel);
@@ -610,11 +696,22 @@
 
     const stem = document.createElement('div');
     stem.className = 'quiz-stem';
-    stem.textContent = q.stem;
+    stem.textContent = kind === 'fr' ? q.prompt : q.stem;
     box.appendChild(stem);
 
     let inputEl, getResponse;
-    if (kind === 'mc') {
+    if (kind === 'fr') {
+      const marksLine = document.createElement('div');
+      marksLine.style.cssText = 'color:var(--muted);font-size:.85rem;margin-bottom:.35rem';
+      marksLine.textContent = `Worth ${q.total_marks} mark${q.total_marks === 1 ? '' : 's'}. Take your time — the AI grades against a per-mark rubric.`;
+      box.appendChild(marksLine);
+      const ta = document.createElement('textarea');
+      ta.className = 'fr-input';
+      ta.placeholder = 'Type your full answer here…';
+      box.appendChild(ta);
+      inputEl = ta;
+      getResponse = () => ta.value.trim();
+    } else if (kind === 'mc') {
       const opts = document.createElement('div');
       opts.className = 'quiz-options';
       q.options.forEach((opt, i) => {
@@ -688,7 +785,7 @@
         return;
       }
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Checking…';
+      submitBtn.textContent = kind === 'fr' ? 'Grading…' : 'Checking…';
       errEl.textContent = '';
       try {
         const resp = await fetch(apiUrl('/api/quiz/answer'), {
@@ -706,6 +803,7 @@
         }
         const data = await resp.json();
         if (data.correct) s.score += 1;
+        s.results.push({ question: q, response, data });
         renderQuizResult(kind, panel, q, response, data);
       } catch (e) {
         errEl.textContent = 'Submit failed: ' + e.message;
@@ -725,6 +823,16 @@
 
   function renderQuizResult(kind, panel, q, response, data) {
     const s = quizState[kind];
+
+    if (kind === 'fr') {
+      renderFrGrade(panel, q, response, data);
+      // Track score progress: count partial credit
+      s.scoreSum = (s.scoreSum || 0) + (data.score_pct ?? 0);
+      // Replace the submit button with a Next button.
+      replaceSubmitWithNext(panel);
+      return;
+    }
+
     // Mark options visually
     const optsEl = panel.querySelector('.quiz-options');
     if (optsEl && kind === 'mc') {
@@ -760,23 +868,103 @@
     exp.textContent = data.explanation;
     result.appendChild(exp);
 
+    replaceSubmitWithNext(panel);
+    const qBox = panel.querySelector('.quiz-question');
+    qBox.appendChild(result);
+    addExplainButton(qBox, s.sessionId, s.idx);
+  }
+
+  function replaceSubmitWithNext(panel) {
+    // Find any quiz panel's "Submit" button and turn it into "Next" / "See results".
     const submitBtn = panel.querySelector('.btn');
+    const panelKind = panel.dataset.panel;
+    const s = quizState[panelKind];
     submitBtn.replaceWith((function () {
       const next = document.createElement('button');
       next.className = 'btn';
       next.textContent = s.idx + 1 < s.questions.length ? 'Next question →' : 'See results →';
       next.addEventListener('click', () => {
         s.idx += 1;
-        renderQuizQuestion(kind, panel);
+        renderQuizQuestion(panelKind, panel);
       });
       return next;
     })());
+  }
 
-    panel.querySelector('.quiz-question').appendChild(result);
+  function renderFrGrade(panel, q, response, data) {
+    // Disable the textarea so the student can see what they wrote without editing it.
+    const ta = panel.querySelector('.fr-input');
+    if (ta) ta.readOnly = true;
+
+    const grade = data.grade;
+    const wrap = document.createElement('div');
+    wrap.className = 'fr-grade';
+
+    const scoreLine = document.createElement('div');
+    scoreLine.className = 'fr-score-line';
+    scoreLine.innerHTML =
+      `<span class="fr-score">${grade.total_awarded}</span>` +
+      `<span class="fr-score-out">/ ${grade.total_possible} marks</span>` +
+      `<span class="fr-pct">(${data.score_pct}%)</span>`;
+    wrap.appendChild(scoreLine);
+
+    const list = document.createElement('ul');
+    list.className = 'fr-criteria';
+    for (const c of grade.per_criterion) {
+      const li = document.createElement('li');
+      li.classList.add(c.coverage);
+      const pts = document.createElement('div');
+      pts.className = 'pts';
+      pts.textContent = `${c.awarded}/${c.max_points}`;
+      const txt = document.createElement('div');
+      txt.className = 'text';
+      const main = document.createElement('div');
+      main.textContent = c.criterion;
+      const small = document.createElement('small');
+      small.textContent = c.rationale;
+      txt.appendChild(main);
+      txt.appendChild(small);
+      li.appendChild(pts);
+      li.appendChild(txt);
+      list.appendChild(li);
+    }
+    wrap.appendChild(list);
+
+    function metaBlock(label, value) {
+      const div = document.createElement('div');
+      div.className = 'fr-meta-block';
+      if (!value || !value.trim()) div.classList.add('empty');
+      div.innerHTML = `<strong>${label}:</strong> ` + escapeHtml(value || '');
+      return div;
+    }
+    wrap.appendChild(metaBlock('What you did well', grade.strong));
+    wrap.appendChild(metaBlock("What was missing", grade.missing));
+    wrap.appendChild(metaBlock("What wasn't needed", grade.not_needed));
+
+    // Reveal model answer (collapsible)
+    const details = document.createElement('details');
+    details.style.marginTop = '.5rem';
+    const summary = document.createElement('summary');
+    summary.style.cursor = 'pointer';
+    summary.style.color = 'var(--accent)';
+    summary.textContent = 'Show the model answer';
+    details.appendChild(summary);
+    const model = document.createElement('div');
+    model.className = 'fr-model';
+    model.textContent = data.model_answer;
+    details.appendChild(model);
+    wrap.appendChild(details);
+
+    const qBox = panel.querySelector('.quiz-question');
+    qBox.appendChild(wrap);
+    // Use the current question index — incremented later when "Next" is clicked.
+    const s = quizState[panel.dataset.panel];
+    addExplainButton(qBox, s.sessionId, s.idx);
   }
 
   // ───── Progress ─────
-  const KIND_LABELS = { mc: 'MC', tf: 'TF', fitb: 'FITB' };
+  const KIND_LABELS = { mc: 'MC', tf: 'TF', fitb: 'FITB', fr: 'FR' };
+  const PROGRESS_KINDS = ['mc', 'tf', 'fitb', 'fr'];
   let lastProgress = null;
 
   async function refreshProgress() {
@@ -839,7 +1027,7 @@
         else li.appendChild(badges);
       }
       badges.innerHTML = '';
-      for (const k of ['mc', 'tf', 'fitb']) {
+      for (const k of PROGRESS_KINDS) {
         const s = u.by_kind[k];
         const b = document.createElement('span');
         b.className = 'badge';
@@ -916,7 +1104,7 @@
       const td0 = document.createElement('td');
       td0.innerHTML = `<strong>Unit ${u.unit_no}:</strong> ${escapeHtml(u.title)}`;
       tr.appendChild(td0);
-      for (const k of ['mc', 'tf', 'fitb']) {
+      for (const k of PROGRESS_KINDS) {
         const td = document.createElement('td');
         td.className = 'num';
         const s = u.by_kind[k];
@@ -944,6 +1132,235 @@
   // Initial progress pull on page load.
   refreshProgress();
 
+  function appendSummaryFeedback(box, kind, s) {
+    // Aggregate qualitative feedback from per-question results.
+    const results = s.results || [];
+    if (!results.length) return;
+
+    const correct = results.filter((r) =>
+      kind === 'fr' ? ((r.data.score_pct ?? 0) === 100) : r.data.correct
+    );
+    const partial = kind === 'fr'
+      ? results.filter((r) => (r.data.score_pct ?? 0) > 0 && (r.data.score_pct ?? 0) < 100)
+      : [];
+    const missed = results.filter((r) =>
+      kind === 'fr' ? ((r.data.score_pct ?? 0) === 0) : !r.data.correct
+    );
+
+    if (kind === 'fr') {
+      // Pull strong/missing/not_needed across all FR responses.
+      const strongs = results
+        .map((r) => r.data.grade?.strong)
+        .filter((s) => s && s.trim());
+      const missings = results
+        .map((r) => r.data.grade?.missing)
+        .filter((s) => s && s.trim());
+      const notNeededs = results
+        .map((r) => r.data.grade?.not_needed)
+        .filter((s) => s && s.trim());
+
+      box.appendChild(buildFeedbackBlock('What you did well', 'good', strongs,
+        'Nothing rose to the level of a clear strength this round — keep working on the rubric criteria.'));
+      box.appendChild(buildFeedbackBlock('What to work on', 'weak', missings,
+        'No major gaps noted — solid coverage.'));
+      if (notNeededs.length) {
+        box.appendChild(buildFeedbackBlock("What wasn't needed", 'warn', notNeededs, ''));
+      }
+      return;
+    }
+
+    // MC / TF / FITB: list concepts behind missed questions
+    if (missed.length === 0) {
+      box.appendChild(buildFeedbackBlock('What you did well', 'good',
+        [`You got every question right at ${s.difficulty} difficulty — try the next level up.`], ''));
+      return;
+    }
+
+    const conceptLines = missed.map((r) => {
+      const q = r.question;
+      const stem = (kind === 'fitb' ? q.stem.replace(/_{2,}/g, '___') : q.stem);
+      const exp = r.data.explanation || '';
+      // Truncate aggressively — students don't need the full stem here.
+      const shortStem = stem.length > 110 ? stem.slice(0, 107) + '…' : stem;
+      return `${shortStem}  →  ${exp}`;
+    });
+    box.appendChild(buildFeedbackBlock(
+      `Review these concepts (${missed.length})`, 'weak', conceptLines, ''));
+
+    if (correct.length > 0) {
+      const correctConcepts = correct.slice(0, 3).map((r) => {
+        const stem = r.question.stem || '';
+        return stem.length > 90 ? stem.slice(0, 87) + '…' : stem;
+      });
+      const more = correct.length > 3 ? ` (and ${correct.length - 3} more)` : '';
+      box.appendChild(buildFeedbackBlock('What you got right', 'good',
+        [`${correctConcepts.join(' · ')}${more}`], ''));
+    }
+  }
+
+  function appendSynthesisSection(box, s) {
+    const wrap = document.createElement('div');
+    wrap.className = 'feedback-section synth';
+    const h = document.createElement('h3');
+    h.textContent = 'Pattern synthesis';
+    wrap.appendChild(h);
+    const body = document.createElement('div');
+    body.className = 'none';
+    body.textContent = 'Reading through your answers…';
+    wrap.appendChild(body);
+    box.appendChild(wrap);
+
+    fetch(apiUrl('/api/quiz/synthesize'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ session_id: s.sessionId }),
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.error) {
+          body.textContent = 'Could not generate synthesis: ' + data.error;
+          return;
+        }
+        body.classList.remove('none');
+        body.textContent = data.summary || '(no synthesis returned)';
+      })
+      .catch((e) => {
+        body.textContent = 'Could not generate synthesis: ' + e.message;
+      });
+  }
+
+  function addExplainButton(parentEl, sessionId, questionIndex) {
+    const btn = document.createElement('button');
+    btn.className = 'btn btn-ghost';
+    btn.style.marginTop = '.5rem';
+    btn.textContent = 'Want to know more?';
+    btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      const orig = btn.textContent;
+      btn.textContent = 'Thinking…';
+      try {
+        const resp = await fetch(apiUrl('/api/quiz/explain'), {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ session_id: sessionId, question_index: questionIndex }),
+        });
+        if (!resp.ok) {
+          const body = await resp.json().catch(() => ({}));
+          throw new Error(body.error || `Server returned ${resp.status}`);
+        }
+        const data = await resp.json();
+        const block = document.createElement('div');
+        block.className = 'explain-block';
+        const lbl = document.createElement('div');
+        lbl.className = 'lbl';
+        lbl.textContent = 'Deeper walkthrough';
+        block.appendChild(lbl);
+        const txt = document.createElement('div');
+        txt.textContent = data.explanation;
+        block.appendChild(txt);
+        btn.replaceWith(block);
+      } catch (e) {
+        btn.disabled = false;
+        btn.textContent = orig;
+        const err = document.createElement('div');
+        err.className = 'err';
+        err.textContent = 'Failed: ' + e.message;
+        parentEl.appendChild(err);
+      }
+    });
+    parentEl.appendChild(btn);
+  }
+
+  function buildFeedbackBlock(title, kind, items, emptyText) {
+    const wrap = document.createElement('div');
+    wrap.className = `feedback-section ${kind}`;
+    const h = document.createElement('h3');
+    h.textContent = title;
+    wrap.appendChild(h);
+    if (items.length === 0) {
+      const none = document.createElement('div');
+      none.className = 'none';
+      none.textContent = emptyText || '—';
+      wrap.appendChild(none);
+      return wrap;
+    }
+    const ul = document.createElement('ul');
+    for (const it of items) {
+      const li = document.createElement('li');
+      li.textContent = it;
+      ul.appendChild(li);
+    }
+    wrap.appendChild(ul);
+    return wrap;
+  }
+
+  function buildQuizDiscussionSeed(s) {
+    // Returns a user message that primes the tutor with what the student just did.
+    // Falls back to a "let's go deeper" message if the student aced everything.
+    if (!s.results || s.results.length === 0) return null;
+
+    const total = s.questions.length;
+    const kind = s.kind;
+    let scoreLine;
+    if (kind === 'fr') {
+      const pct = Math.round((s.scoreSum || 0) / total);
+      scoreLine = `${pct}% average across ${total} free-response question${total === 1 ? '' : 's'}`;
+    } else {
+      const pct = Math.round((s.score / total) * 100);
+      scoreLine = `${s.score}/${total} correct (${pct}%) on a ${kind.toUpperCase()} quiz`;
+    }
+
+    const isWeak = (r) => kind === 'fr' ? ((r.data.score_pct ?? 100) < 100) : !r.data.correct;
+    const weak = s.results.filter(isWeak);
+
+    if (weak.length === 0) {
+      return `I just scored ${scoreLine} on this unit. Can we go a level deeper on the concepts I should make sure I have nailed down?`;
+    }
+
+    const cap = Math.min(5, weak.length);
+    const items = weak.slice(0, cap).map((r) => formatResultForSeed(kind, r));
+    const intro = `I just took a ${kind === 'fr' ? 'free-response' : kind.toUpperCase()} quiz on this unit and scored ${scoreLine}. ` +
+      `Let's go over what I had trouble with — here ${cap === 1 ? 'is' : 'are'} ${cap === weak.length ? `all ${cap}` : `the first ${cap} of ${weak.length}`}:\n\n`;
+
+    return intro + items.join('\n\n---\n\n') +
+      '\n\nCan we work through these one at a time?';
+  }
+
+  function formatResultForSeed(kind, r) {
+    const q = r.question;
+    const data = r.data;
+    if (kind === 'mc') {
+      const opts = q.options.map((o, i) => {
+        const tag = (i === data.correct_index ? ' ← correct' : '') +
+                    (i === r.response && !data.correct ? ' ← my choice' : '');
+        return `  ${String.fromCharCode(65 + i)}) ${o}${tag}`;
+      }).join('\n');
+      return `Question: ${q.stem}\n${opts}\nExplanation: ${data.explanation}`;
+    }
+    if (kind === 'tf') {
+      return `Question (True/False): ${q.stem}\n` +
+        `Correct: ${data.correct_answer ? 'True' : 'False'}; my answer: ${r.response ? 'True' : 'False'}\n` +
+        `Explanation: ${data.explanation}`;
+    }
+    if (kind === 'fitb') {
+      return `Question: ${q.stem}\nMy answer: "${r.response}"; expected: "${data.correct_answer}"\nExplanation: ${data.explanation}`;
+    }
+    if (kind === 'fr') {
+      const grade = data.grade;
+      const bullets = grade.per_criterion.map((c) =>
+        `  - ${c.criterion}: ${c.awarded}/${c.max_points} (${c.coverage})` +
+        (c.rationale ? ' — ' + c.rationale : '')
+      ).join('\n');
+      return `Question: ${q.prompt}\n` +
+        `My answer: ${r.response}\n` +
+        `Score: ${grade.total_awarded}/${grade.total_possible}\n` +
+        `Rubric breakdown:\n${bullets}` +
+        (grade.missing ? `\nWhat was missing: ${grade.missing}` : '') +
+        (grade.not_needed ? `\nWhat wasn't needed: ${grade.not_needed}` : '');
+    }
+    return '';
+  }
+
   function renderQuizSummary(kind, panel) {
     const s = quizState[kind];
     panel.dataset.state = 'done';
@@ -958,14 +1375,31 @@
 
     const score = document.createElement('div');
     score.className = 'score';
-    score.textContent = `${s.score} / ${s.questions.length} correct`;
+    let pct;
+    if (kind === 'fr') {
+      pct = Math.round((s.scoreSum || 0) / s.questions.length);
+      score.textContent = `${pct}% average`;
+    } else {
+      score.textContent = `${s.score} / ${s.questions.length} correct`;
+      pct = Math.round((s.score / s.questions.length) * 100);
+    }
     box.appendChild(score);
 
-    const pct = Math.round((s.score / s.questions.length) * 100);
+    const labelMap = { mc: 'MC', tf: 'TF', fitb: 'FITB', fr: 'free-response' };
     const sub = document.createElement('div');
     sub.style.color = 'var(--muted)';
-    sub.textContent = `${pct}% · ${s.questions.length} ${kind.toUpperCase()} questions at ${s.difficulty} difficulty.`;
+    if (kind !== 'fr') {
+      sub.textContent = `${pct}% · ${s.questions.length} ${labelMap[kind]} questions at ${s.difficulty} difficulty.`;
+    } else {
+      sub.textContent = `${s.questions.length} ${labelMap[kind]} question(s) at ${s.difficulty} difficulty.`;
+    }
     box.appendChild(sub);
+
+    // Build aggregated qualitative feedback below the score.
+    appendSummaryFeedback(box, kind, s);
+
+    // Then fire an LLM call to synthesize patterns. Renders into a placeholder.
+    appendSynthesisSection(box, s);
 
     const actions = document.createElement('div');
     actions.style.marginTop = '1rem';
@@ -984,7 +1418,14 @@
     const tutor = document.createElement('button');
     tutor.className = 'btn btn-ghost';
     tutor.textContent = 'Discuss with tutor';
-    tutor.addEventListener('click', () => showTab('tutor'));
+    tutor.addEventListener('click', () => {
+      const seed = buildQuizDiscussionSeed(s);
+      showTab('tutor');
+      if (seed && currentTutor.sessionId) {
+        // Send as a real user message so the conversation has visible context.
+        tutorSend(seed);
+      }
+    });
     actions.appendChild(tutor);
 
     box.appendChild(actions);

@@ -11,8 +11,8 @@
 import { query } from './db.js';
 import { listUnits, type UnitSummary } from './content.js';
 
-export type QuizKind = 'mc' | 'tf' | 'fitb';
-export const QUIZ_KINDS: QuizKind[] = ['mc', 'tf', 'fitb'];
+export type QuizKind = 'mc' | 'tf' | 'fitb' | 'fr';
+export const QUIZ_KINDS: QuizKind[] = ['mc', 'tf', 'fitb', 'fr'];
 
 export interface KindStats {
   attempts: number;
@@ -103,6 +103,7 @@ export async function getStudentProgress(studentId: number): Promise<ProgressBun
         mc: emptyKindStats(),
         tf: emptyKindStats(),
         fitb: emptyKindStats(),
+        fr: emptyKindStats(),
       },
       tutor: { sessions: 0, turns: 0, last_at: null },
       any_activity: false,

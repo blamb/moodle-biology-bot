@@ -21,7 +21,8 @@
  */
 
 import { z } from 'zod';
-import { getAnthropic, GEN_MODEL } from './anthropic.js';
+import type Anthropic from '@anthropic-ai/sdk';
+import { getAnthropic, GEN_MODEL, TUTOR_MODEL } from './anthropic.js';
 import { getUnit, type UnitContent } from './content.js';
 
 // ─── Question schemas ───────────────────────────────────────────────────────
@@ -49,8 +50,41 @@ export const FitbQuestion = z.object({
 });
 export type FitbQuestion = z.infer<typeof FitbQuestion>;
 
+export const FrRubricItem = z.object({
+  points: z.number().int().min(1).max(3),
+  criterion: z.string().min(8),
+});
+export type FrRubricItem = z.infer<typeof FrRubricItem>;
+
+export const FrQuestion = z.object({
+  prompt: z.string().min(10),
+  total_marks: z.number().int().min(3).max(8),
+  rubric: z.array(FrRubricItem).min(2).max(8),
+  model_answer: z.string().min(20),
+});
+export type FrQuestion = z.infer<typeof FrQuestion>;
+
+export const FrCriterionGrade = z.object({
+  criterion: z.string(),
+  max_points: z.number().int(),
+  awarded: z.number().int().min(0),
+  coverage: z.enum(['full', 'partial', 'missing']),
+  rationale: z.string().min(1),
+});
+export type FrCriterionGrade = z.infer<typeof FrCriterionGrade>;
+
+export const FrGrade = z.object({
+  total_awarded: z.number().int().min(0),
+  total_possible: z.number().int().min(1),
+  per_criterion: z.array(FrCriterionGrade).min(1),
+  strong: z.string(),
+  missing: z.string(),
+  not_needed: z.string(),
+});
+export type FrGrade = z.infer<typeof FrGrade>;
+
 export type Difficulty = 'introductory' | 'intermediate' | 'advanced';
-export type QuizKind = 'mc' | 'tf' | 'fitb';
+export type QuizKind = 'mc' | 'tf' | 'fitb' | 'fr';
 
 // ─── Prompt building ────────────────────────────────────────────────────────
 
@@ -120,6 +154,34 @@ Output JSON shape (a single array):
     "stem": "Statement, written as a positive declaration.",
     "correct": true,
     "explanation": "Why."
+  }
+]`;
+
+const FR_USER = (count: number, difficulty: Difficulty) => `Generate ${count} free-response question(s) at ${difficulty} difficulty.
+
+${DIFFICULTY_NOTES[difficulty]}
+
+Each question is worth 5–6 marks total. The rubric breaks the marks down into specific, atomic criteria the grader can score independently — exactly how the professor's example exam does it (e.g. "Both involve ribose, phosphorous groups and adenine — 1 mark").
+
+The model_answer should be a complete answer that would earn full marks. Keep it concise but with enough detail that a student could see where each mark was earned.
+
+Rules:
+- Each rubric item is worth 1–3 marks; the rubric points must SUM to the total_marks.
+- Each rubric item describes ONE atomic concept/claim. Don't bundle.
+- The question prompt should require synthesis or comparison — not just recall (that's what FITB is for).
+- Anchor in this unit's content; questions that span multiple units are out of scope.
+
+Output JSON shape (a single array):
+[
+  {
+    "prompt": "Compare and contrast …",
+    "total_marks": 5,
+    "rubric": [
+      { "points": 1, "criterion": "Identifies both X and Y as having structural feature Z." },
+      { "points": 2, "criterion": "Explains the mechanism by which …" },
+      { "points": 2, "criterion": "Distinguishes how they differ in …" }
+    ],
+    "model_answer": "Both X and Y share … but differ in …"
   }
 ]`;
 
@@ -216,9 +278,6 @@ async function callGenerator(
   }
 }
 
-// Anthropic type fix — the SDK exports TextBlock via the namespace.
-import type Anthropic from '@anthropic-ai/sdk';
-
 export async function generateMC(
   unitNo: number,
   count: number,
@@ -238,6 +297,25 @@ export async function generateTF(
   const unit = getUnit(unitNo);
   const raw = await callGenerator(unit, TF_USER(count, difficulty));
   const parsed = z.array(TfQuestion).parse(raw);
+  return parsed.slice(0, count);
+}
+
+export async function generateFR(
+  unitNo: number,
+  count: number,
+  difficulty: Difficulty
+): Promise<FrQuestion[]> {
+  const unit = getUnit(unitNo);
+  const raw = await callGenerator(unit, FR_USER(count, difficulty));
+  const parsed = z.array(FrQuestion).parse(raw);
+  // Enforce rubric-points-sum-to-total-marks (LLMs sometimes drift).
+  for (const q of parsed) {
+    const sum = q.rubric.reduce((acc, r) => acc + r.points, 0);
+    if (sum !== q.total_marks) {
+      // Trust the rubric, override total_marks to match.
+      q.total_marks = sum;
+    }
+  }
   return parsed.slice(0, count);
 }
 
@@ -323,3 +401,80 @@ export function gradeMC(q: McQuestion, chosenIndex: number): boolean {
 export function gradeTF(q: TfQuestion, chosenBool: boolean): boolean {
   return chosenBool === q.correct;
 }
+
+// ─── FR grading (LLM call) ──────────────────────────────────────────────────
+
+const FR_GRADER_SYSTEM = `You are an experienced TA grading free-response answers for an undergraduate Human Anatomy & Physiology course (BIOL 1592). You grade strictly against the provided rubric — not against your own impression of completeness.
+
+Rules:
+1. Award points only for criteria the student's response actually addresses. Be neither generous nor stingy — match the rubric.
+2. For each rubric item, choose coverage:
+   - "full"   = student fully addressed the criterion. Award full points.
+   - "partial"= student addressed part of the criterion or got close but missed a detail. Award 1 point fewer than max if max ≥ 2, else 0.
+   - "missing"= student didn't address this criterion. Award 0.
+3. The rationale for each criterion must point to specific phrases in the student's response when awarding points, and name what was missing when not.
+4. "Missing" describes what the student's response did NOT include that the rubric required.
+5. "Not_needed" describes content in the student's response that's biology-related but outside the question's scope (off-topic detail). Empty string if the response was tight.
+6. "Strong" names 1–2 things the student clearly nailed. Empty string if nothing rose to that bar.
+7. Be encouraging but factual. The student will read this.
+
+Output STRICTLY valid JSON. No markdown, no preamble.`;
+
+const FR_GRADER_USER = (q: FrQuestion, response: string) => `Question (worth ${q.total_marks} marks):
+${q.prompt}
+
+Rubric:
+${q.rubric.map((r, i) => `  ${i + 1}. (${r.points} mark${r.points === 1 ? '' : 's'}) ${r.criterion}`).join('\n')}
+
+Model answer (for reference — do NOT show this in your output):
+${q.model_answer}
+
+Student's response:
+"""
+${response}
+"""
+
+Grade this response against the rubric. Output JSON in this shape:
+{
+  "total_awarded": <int>,
+  "total_possible": ${q.total_marks},
+  "per_criterion": [
+    { "criterion": "<exact rubric criterion text>", "max_points": <int>, "awarded": <int>, "coverage": "full"|"partial"|"missing", "rationale": "<one sentence>" }
+  ],
+  "strong": "<1-sentence summary, or empty string>",
+  "missing": "<1-2 sentences on what was required but absent>",
+  "not_needed": "<1-2 sentences on irrelevant content, or empty string>"
+}`;
+
+export async function gradeFR(
+  unit: UnitContent,
+  question: FrQuestion,
+  response: string
+): Promise<FrGrade> {
+  const client = getAnthropic();
+  const res = await client.messages.create({
+    model: TUTOR_MODEL, // Opus for grading — higher fidelity matters more than speed here
+    max_tokens: 2048,
+    system: [
+      { type: 'text', text: FR_GRADER_SYSTEM },
+      {
+        type: 'text',
+        text: unitGrounding(unit),
+        cache_control: { type: 'ephemeral' },
+      },
+    ],
+    messages: [{ role: 'user', content: FR_GRADER_USER(question, response) }],
+  });
+
+  const text = res.content
+    .filter((b): b is Anthropic.TextBlock => b.type === 'text')
+    .map((b) => b.text)
+    .join('\n');
+  const raw = JSON.parse(stripCodeFences(text));
+  const grade = FrGrade.parse(raw);
+  // Defensive: clamp total against rubric items.
+  const sumAwarded = grade.per_criterion.reduce((a, c) => a + c.awarded, 0);
+  if (sumAwarded !== grade.total_awarded) grade.total_awarded = sumAwarded;
+  return grade;
+}
+
