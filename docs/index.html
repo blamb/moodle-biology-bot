@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moodle Biology Bot — AI tutor & practice questions for Human A&P at TRU</title>
-<meta name="description" content="An LTI 1.3 tool that pairs a Socratic tutor with AI-generated practice questions for Human Anatomy & Physiology, grounded in the instructor's own materials and the TRU Pressbooks open textbooks.">
+<title>Biology Bot — How to use</title>
+<meta name="description" content="An LTI 1.3 tool for Human Anatomy & Physiology at TRU. Pairs a Socratic tutor with AI-generated practice questions, grounded in the instructor's own materials. This page is a usage guide for students and instructors.">
 <style>
   :root {
     --bg: #fafafa;
@@ -18,26 +18,19 @@
     --border: #e2e2e2;
     --card: #ffffff;
     --code-bg: #f4f4f4;
+    --hl-bg: #f4f9fe;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    line-height: 1.6;
-    font-size: 16px;
+    margin: 0; background: var(--bg); color: var(--fg);
+    line-height: 1.6; font-size: 16px;
   }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  code, pre {
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
-    font-size: .92em;
-  }
-  code {
-    background: var(--code-bg); padding: .12em .35em; border-radius: 3px;
-  }
+  code, pre { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace; font-size: .92em; }
+  code { background: var(--code-bg); padding: .12em .35em; border-radius: 3px; }
   pre {
     background: var(--code-bg); padding: .85rem 1rem; border-radius: 6px;
     overflow-x: auto; line-height: 1.5;
@@ -45,34 +38,24 @@
   }
   pre code { background: transparent; padding: 0; }
 
-  /* Top bar */
   .topbar {
-    background: var(--card);
-    border-bottom: 1px solid var(--border);
-    padding: .75rem 1.25rem;
-    position: sticky; top: 0; z-index: 10;
+    background: var(--card); border-bottom: 1px solid var(--border);
+    padding: .75rem 1.25rem; position: sticky; top: 0; z-index: 10;
     backdrop-filter: blur(6px);
   }
   .topbar-inner {
     max-width: 920px; margin: 0 auto;
     display: flex; justify-content: space-between; align-items: center; gap: 1rem;
   }
-  .brand {
-    font-weight: 600; font-size: 1rem;
-    color: var(--fg);
-  }
+  .brand { font-weight: 600; font-size: 1rem; color: var(--fg); }
   .brand .dot { color: var(--accent); margin-right: .3em; }
-  .topbar nav {
-    display: flex; gap: 1.1rem; font-size: .92rem; flex-wrap: wrap;
-  }
+  .topbar nav { display: flex; gap: 1.1rem; font-size: .92rem; flex-wrap: wrap; }
   .topbar nav a { color: var(--muted); }
   .topbar nav a:hover { color: var(--accent); }
 
-  /* Hero */
   .hero {
-    padding: 3.5rem 1.25rem 2.5rem;
-    text-align: center;
-    background: linear-gradient(180deg, #f4f9fe 0%, var(--bg) 100%);
+    padding: 3rem 1.25rem 2rem;
+    background: linear-gradient(180deg, var(--hl-bg) 0%, var(--bg) 100%);
     border-bottom: 1px solid var(--border);
   }
   .hero-inner { max-width: 760px; margin: 0 auto; }
@@ -80,133 +63,80 @@
     color: var(--accent); font-weight: 600; font-size: .85rem;
     letter-spacing: .08em; text-transform: uppercase; margin-bottom: .5rem;
   }
-  .hero h1 {
-    margin: 0 0 .75rem; font-size: 2.4rem; line-height: 1.15;
-    letter-spacing: -.01em;
-  }
-  .hero p.tagline {
-    margin: 0 auto 1.5rem; max-width: 600px;
-    font-size: 1.15rem; color: var(--muted);
-  }
-  .hero .meta {
-    display: inline-flex; gap: .5rem; flex-wrap: wrap; justify-content: center;
-    font-size: .85rem;
-  }
+  .hero h1 { margin: 0 0 .5rem; font-size: 1.9rem; line-height: 1.2; letter-spacing: -.005em; }
+  .hero p { margin: 0 0 .75rem; color: var(--muted); max-width: 640px; }
   .pill {
     display: inline-block; padding: .25rem .65rem; border-radius: 999px;
     background: var(--card); border: 1px solid var(--border);
-    color: var(--muted);
+    color: var(--muted); font-size: .8rem;
   }
   .pill.live { color: var(--good); border-color: #cfe5d5; background: #f1f9f3; }
 
-  /* Content */
   main {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 2.5rem 1.25rem 4rem;
+    max-width: 800px; margin: 0 auto; padding: 2rem 1.25rem 4rem;
   }
-  section { margin-bottom: 3rem; scroll-margin-top: 4rem; }
-  section h2 {
-    font-size: 1.4rem; letter-spacing: -.005em;
-    margin: 0 0 1rem; padding-bottom: .4rem;
+  section { margin-bottom: 2.5rem; scroll-margin-top: 4rem; }
+  section > h2 {
+    font-size: 1.3rem; margin: 0 0 1rem; padding-bottom: .4rem;
     border-bottom: 1px solid var(--border);
   }
-  section h3 {
-    font-size: 1.05rem; margin: 1.5rem 0 .5rem; color: var(--fg);
-  }
-  p { margin: .5rem 0 .9rem; color: var(--fg); }
+  section h3 { font-size: 1.05rem; margin: 1.5rem 0 .5rem; }
+  section h4 { font-size: .95rem; margin: 1rem 0 .35rem; color: var(--accent-deep); }
+  p { margin: .5rem 0 .9rem; }
   ul, ol { margin: .25rem 0 .9rem; padding-left: 1.5rem; }
-  li { margin: .25rem 0; }
+  li { margin: .35rem 0; }
 
-  /* Feature grid */
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: .9rem; margin: 1rem 0;
-  }
-  .feature {
-    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
-    padding: 1rem 1.1rem;
-  }
-  .feature .icon {
-    font-size: 1.5rem; line-height: 1; display: block; margin-bottom: .4rem;
-  }
-  .feature h4 { margin: 0 0 .25rem; font-size: 1rem; }
-  .feature p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.5; }
-
-  /* Audience split */
-  .audience {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem; margin: 1rem 0;
-  }
-  .audience .card-aud {
-    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
-    padding: 1.1rem 1.25rem;
-  }
-  .audience h3 { margin-top: 0; }
-  .audience.student .card-aud { border-top: 3px solid var(--accent); }
-  .audience.teacher .card-aud { border-top: 3px solid #a6192e; }
-
-  /* How it works */
   .steps {
-    display: grid; gap: .8rem; margin: 1rem 0;
-    counter-reset: step;
+    list-style: none; padding-left: 0; counter-reset: step;
+    margin: 1rem 0;
   }
-  .step {
-    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
-    padding: .85rem 1rem .85rem 3rem;
-    position: relative;
-  }
-  .step::before {
+  .steps > li {
+    position: relative; padding-left: 2.25rem; margin: .75rem 0;
     counter-increment: step;
+  }
+  .steps > li::before {
     content: counter(step);
-    position: absolute; left: 1rem; top: 1rem;
-    width: 1.6rem; height: 1.6rem; border-radius: 50%;
+    position: absolute; left: 0; top: .1rem;
+    width: 1.5rem; height: 1.5rem; border-radius: 50%;
     background: var(--accent); color: white;
     display: flex; align-items: center; justify-content: center;
-    font-weight: 600; font-size: .9rem;
+    font-size: .85rem; font-weight: 600;
   }
-  .step h4 { margin: 0 0 .15rem; font-size: 1rem; }
-  .step p { margin: 0; color: var(--muted); font-size: .92rem; }
+  .steps li strong { color: var(--fg); }
 
-  /* Architecture sketch */
-  .arch {
-    background: var(--code-bg); border-radius: 6px; padding: 1rem 1.25rem;
-    overflow-x: auto;
-    border-left: 3px solid var(--accent);
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
-    font-size: .85rem; line-height: 1.7;
-    color: var(--fg); white-space: pre;
+  .tab-list {
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: .75rem 1rem; margin: .75rem 0;
   }
+  .tab-list dl { margin: 0; }
+  .tab-list dt { font-weight: 600; margin-top: .55rem; }
+  .tab-list dt:first-child { margin-top: 0; }
+  .tab-list dd { margin: .15rem 0 .35rem; color: var(--muted); padding-left: 0; }
+  .tab-list .emoji { width: 1.3em; display: inline-block; }
 
-  /* Two-column layout for some sections */
-  .two-col {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;
-  }
-  @media (max-width: 720px) {
-    .two-col { grid-template-columns: 1fr; }
-  }
-
-  /* Callouts */
   .callout {
-    background: #f4f9fe; border-left: 3px solid var(--accent);
+    background: var(--hl-bg); border-left: 3px solid var(--accent);
     padding: .8rem 1rem; border-radius: 0 6px 6px 0; margin: 1rem 0;
-    color: var(--fg); font-size: .94rem;
+    font-size: .94rem;
   }
+  .callout.note { background: #fffaf0; border-left-color: #b07000; }
 
-  /* Footer */
+  .grounding-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+  .grounding-table th, .grounding-table td {
+    text-align: left; padding: .45rem .65rem;
+    border-bottom: 1px solid var(--border); vertical-align: top;
+  }
+  .grounding-table th { color: var(--muted); font-weight: 500; font-size: .8rem; }
+
   footer {
-    border-top: 1px solid var(--border);
-    padding: 2rem 1.25rem;
-    color: var(--muted-2); font-size: .85rem;
-    text-align: center;
+    border-top: 1px solid var(--border); padding: 2rem 1.25rem;
+    color: var(--muted-2); font-size: .85rem; text-align: center;
   }
   footer p { margin: .25rem 0; color: var(--muted-2); }
 
-  /* Mobile */
   @media (max-width: 600px) {
-    .hero h1 { font-size: 1.8rem; }
-    .hero p.tagline { font-size: 1rem; }
-    section h2 { font-size: 1.2rem; }
+    .hero h1 { font-size: 1.55rem; }
+    section > h2 { font-size: 1.1rem; }
   }
 </style>
 </head>
@@ -214,265 +144,224 @@
 
 <header class="topbar">
   <div class="topbar-inner">
-    <div class="brand"><span class="dot">●</span>Moodle Biology Bot</div>
+    <div class="brand"><span class="dot">●</span>Biology Bot</div>
     <nav>
-      <a href="#what">What it does</a>
-      <a href="#how">How it works</a>
-      <a href="#audience">Students & instructors</a>
-      <a href="#tech">Architecture</a>
-      <a href="#status">Status</a>
+      <a href="#students">For students</a>
+      <a href="#instructors">For instructors</a>
+      <a href="#grounding">What it knows</a>
+      <a href="#more">More info</a>
     </nav>
   </div>
 </header>
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="label">An OER tool for Human Anatomy &amp; Physiology</div>
-    <h1>An AI tutor that actually knows your course.</h1>
-    <p class="tagline">
-      A Moodle-integrated LTI tool that pairs a Socratic tutor with AI-generated practice
-      questions — grounded in the instructor's own slides, terms list, and the TRU
-      Pressbooks open textbooks.
+    <div class="label">A study tool for BIOL 1592 / 1692 at TRU</div>
+    <h1>How to use Biology Bot</h1>
+    <p>
+      A Moodle-integrated AI study tool for Human Anatomy & Physiology. Provides
+      a Socratic tutor, multiple kinds of practice questions, a personal progress
+      view, and (for instructors) a class dashboard. Grounded in the instructor's
+      own course materials and the TRU Pressbooks open textbooks — not generic
+      web sources.
     </p>
-    <div class="meta">
-      <span class="pill live">● v1.5 deployed</span>
-      <span class="pill">LTI 1.3</span>
-      <span class="pill">Built for BIOL 1592 / 1692 at TRU</span>
-      <span class="pill">Open source</span>
-    </div>
+    <p>
+      <span class="pill live">● Live</span>
+      <span class="pill">Open source on <a href="https://github.com/blamb/moodle-biology-bot">GitHub</a></span>
+    </p>
   </div>
 </div>
 
 <main>
 
-<section id="what">
-  <h2>What it does</h2>
-  <p>
-    The tool launches inside a Moodle course as an external activity. Students see a per-unit
-    interface offering a Socratic tutor and four kinds of practice questions, all generated by
-    Claude (Anthropic) and grounded in the instructor's actual course materials — not generic
-    web sources.
-  </p>
+<section id="students">
+  <h2>For students 👩‍🎓</h2>
 
-  <div class="features">
-    <div class="feature">
-      <span class="icon">💬</span>
-      <h4>Socratic tutor</h4>
-      <p>Asks rather than lectures. Stays anchored in the unit's PPTs, speaker notes, terms, and matched textbook chapter.</p>
-    </div>
-    <div class="feature">
-      <span class="icon">✅</span>
-      <h4>MC quizzes</h4>
-      <p>Five options, with "two of the above" and "None of the above" meta-answers appearing only at intermediate / advanced difficulty.</p>
-    </div>
-    <div class="feature">
-      <span class="icon">🔘</span>
-      <h4>True / False</h4>
-      <p>Each statement comes with a clear explanation — and for false ones, what the correct version would be.</p>
-    </div>
-    <div class="feature">
-      <span class="icon">📝</span>
-      <h4>Fill in the blank</h4>
-      <p>Drawn from the unit's terms list, with singular / plural and hyphen-variant tolerance done server-side.</p>
-    </div>
-    <div class="feature">
-      <span class="icon">✍️</span>
-      <h4>Free-response with rubric grading</h4>
-      <p>Per-mark rubric breakdown, then what you got right, what was missing, what wasn't needed, and a model answer.</p>
-    </div>
-    <div class="feature">
-      <span class="icon">📋</span>
-      <h4>Practice exams</h4>
-      <p>Mixed question types across selected units. Optional "exam-realistic" mode hides feedback during the exam and shows everything at the end.</p>
-    </div>
-    <div class="feature">
-      <span class="icon">📊</span>
-      <h4>Progress tracking</h4>
-      <p>Per-unit-per-kind accuracy with weak-spot detection. "Continue where you left off" on the picker.</p>
-    </div>
-    <div class="feature">
-      <span class="icon">🔍</span>
-      <h4>Per-question deep-dives</h4>
-      <p>"Want to know more?" on any result for a richer walkthrough — with citations to specific slides or textbook sections.</p>
-    </div>
-    <div class="feature">
-      <span class="icon">💡</span>
-      <h4>Tutor seeding</h4>
-      <p>Clicking "Discuss with tutor" after a quiz primes the chat with the student's actual gaps, so the tutor jumps straight to the weak concepts.</p>
-    </div>
-  </div>
-</section>
+  <h3>Getting in</h3>
+  <ol class="steps">
+    <li><strong>Open your Moodle course</strong> in the usual way.</li>
+    <li><strong>Click the "Biology Bot" activity</strong> wherever your instructor has placed it. The tool will open inside Moodle.</li>
+    <li><strong>You'll see a list of units</strong>. Click any unit to start working.</li>
+  </ol>
 
-<section id="how">
-  <h2>How it works</h2>
+  <h3>What each tab does</h3>
+  <p>Once you're inside a unit, you'll see five tabs across the top:</p>
 
-  <p>
-    The instructor's materials are ingested once into a per-unit content store. At runtime, the
-    server combines that content with a tightly engineered Socratic system prompt and Claude's
-    response, with the per-unit block cached for cost and speed.
-  </p>
+  <div class="tab-list">
+    <dl>
+      <dt><span class="emoji">💬</span> Tutor</dt>
+      <dd>A Socratic chat — the tutor asks questions rather than lecturing. Type what you're trying to understand, and it'll probe your thinking. Click "↻ New conversation" anytime to clear context and start fresh.</dd>
 
-  <div class="steps">
-    <div class="step">
-      <h4>Ingest course materials</h4>
-      <p>Python extractors pull text from the instructor's PPTs (slides + speaker notes), the key-terms XLSX, and the example exam DOCX. A separate script fetches the matched chapter from the TRU Pressbooks open textbook via its REST API.</p>
-    </div>
-    <div class="step">
-      <h4>Match by unit</h4>
-      <p>Each unit's PPT, key terms, and Pressbooks chapter are stitched into one content blob. Mapping is automatic by unit number — Pressbooks "Unit N" lines up with PPT "Unit N".</p>
-    </div>
-    <div class="step">
-      <h4>Launch from Moodle</h4>
-      <p>A student clicks the Biology Bot activity. LTI 1.3 hands the launch off to our tool, which finds-or-creates the student record and renders the per-unit picker.</p>
-    </div>
-    <div class="step">
-      <h4>Pick a mode, pick a unit</h4>
-      <p>The student picks Tutor / MC / TF / FITB / Free-response — or jumps to a mixed practice exam. Counts and difficulty are student-chosen.</p>
-    </div>
-    <div class="step">
-      <h4>Generate, grade, persist</h4>
-      <p>Claude generates questions or grades a response against a rubric. Every attempt is saved to a Postgres row keyed on the student's LTI identity.</p>
-    </div>
-    <div class="step">
-      <h4>Synthesize and review</h4>
-      <p>After each quiz, the tool surfaces pattern feedback ("you're solid on X, slipping on Y"). The instructor dashboard rolls these patterns up across the cohort and identifies where extra review would help most.</p>
-    </div>
-  </div>
-</section>
+      <dt><span class="emoji">✅</span> MC quiz</dt>
+      <dd>Multiple choice with five options, ranging from introductory to advanced difficulty. After each answer, you'll see why the right answer is right and why the wrong ones were tempting.</dd>
 
-<section id="audience">
-  <h2>For students and instructors</h2>
+      <dt><span class="emoji">🔘</span> TF quiz</dt>
+      <dd>True / false statements with explanations of <em>why</em> — particularly important for the false ones.</dd>
 
-  <div class="audience student">
-    <div class="card-aud">
-      <h3>For students 👩‍🎓</h3>
-      <ul>
-        <li><strong>Practice on your own terms.</strong> Choose unit, type, difficulty, and number of questions.</li>
-        <li><strong>Get more than a grade.</strong> Per-question explanations, per-rubric-item breakdowns on free response, and a "Want to know more?" deep dive on anything you're not sure about.</li>
-        <li><strong>Pick up where you left off.</strong> The launch page shows your weak spots and a one-click resume to the unit + activity you were last using.</li>
-        <li><strong>Talk it through.</strong> The Socratic tutor probes rather than lectures — and you can jump from a missed quiz question straight into a conversation about that specific concept.</li>
-      </ul>
-    </div>
+      <dt><span class="emoji">📝</span> FITB quiz</dt>
+      <dd>Fill in the blank. Drawn from your unit's terms list. Don't worry about plural vs singular or hyphen vs no-hyphen — those variations are accepted.</dd>
+
+      <dt><span class="emoji">✍️</span> Free response</dt>
+      <dd>Longer-answer questions worth several marks each. The AI grades against a rubric and tells you what you got right, what was missing, and what wasn't needed — followed by a model answer.</dd>
+    </dl>
   </div>
 
-  <div class="audience teacher">
-    <div class="card-aud">
-      <h3>For instructors 👩‍🏫</h3>
-      <ul>
-        <li><strong>See what your class is doing.</strong> Roster view with per-student totals, accuracy, time-since-last-seen, and flagged weak units.</li>
-        <li><strong>Find the concepts the class is struggling with.</strong> An LLM analysis reads through the wrong answers across your students and writes a short study guide of recurring gaps — with citations to specific slides or textbook sections.</li>
-        <li><strong>Drill into any student.</strong> Click a roster row for their full per-unit / per-kind breakdown.</li>
-        <li><strong>Trust the grounding.</strong> The AI works from <em>your</em> slides, <em>your</em> terms list, and the matched Pressbooks textbook chapter — not generic web sources or model knowledge.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section id="tech">
-  <h2>Architecture</h2>
-
-  <p>
-    A thin TypeScript LTI 1.3 server fronting Postgres for app data, with Claude as the AI
-    backend. Per-unit content is pre-extracted at deploy time and held in a static content
-    store that the server prompt-caches on every Claude call.
-  </p>
-
-  <pre class="arch">
-   Moodle (LTI 1.3)
-        │
-        │  launch / API calls
-        ▼
-   ┌─────────────────────────────────────────────────┐
-   │ TypeScript LTI server (ltijs + Express)         │
-   │  ┌────────┐  ┌──────┐  ┌──────┐  ┌──────────┐   │
-   │  │ tutor  │  │ quiz │  │ exam │  │ teacher  │   │   ← API surface
-   │  └────────┘  └──────┘  └──────┘  └──────────┘   │
-   │                  │                              │
-   │              prompt cache                       │
-   └──────────────────┼──────────────────────────────┘
-                      │
-       ┌──────────────┴──────────────┐
-       ▼                             ▼
-   Postgres                  Anthropic Claude
-   (students, sessions,      (prompt-cached unit
-    attempts, progress)        content + rules)
-  </pre>
-
-  <h3>Stack at a glance</h3>
-  <div class="two-col">
-    <div>
-      <ul>
-        <li><strong>LTI 1.3:</strong> <a href="https://github.com/Cvmcosta/ltijs">ltijs</a></li>
-        <li><strong>Backend:</strong> TypeScript, Node 20+, Express</li>
-        <li><strong>Database:</strong> Postgres</li>
-        <li><strong>Frontend:</strong> Single HTML/CSS/JS file, no build step</li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <li><strong>AI:</strong> Anthropic Claude (Opus + Sonnet) with prompt caching</li>
-        <li><strong>Ingestion:</strong> Python (python-pptx, openpyxl, BeautifulSoup)</li>
-        <li><strong>Validation:</strong> Zod for all LLM-generated question shapes</li>
-        <li><strong>Deployment:</strong> Railway production / Docker Compose local dev</li>
-      </ul>
-    </div>
-  </div>
-
-  <h3>Grounding sources</h3>
+  <h3>While you're answering</h3>
   <ul>
-    <li>Instructor's PowerPoint slides (text + speaker notes, slide-by-slide)</li>
-    <li>Instructor's course terms list (one column per unit)</li>
-    <li>Instructor's example exam DOCX (style anchor for question voice and difficulty)</li>
-    <li><a href="https://human-anatomy-i.pressbooks.tru.ca/">Human Anatomy &amp; Physiology I</a> and
-        <a href="https://human-anatomy-ii.pressbooks.tru.ca/">II</a> open Pressbooks textbooks
-        (Thompson Rivers University, CC BY 4.0)</li>
-  </ul>
-</section>
-
-<section id="status">
-  <h2>Status &amp; roadmap</h2>
-
-  <p>
-    v1.5 is deployed to production infrastructure and awaiting registration on TRU's Moodle
-    sandbox for end-to-end validation with the instructor.
-  </p>
-
-  <h3>What's built</h3>
-  <ul>
-    <li>Socratic tutor, MC / TF / FITB / FR quizzes, practice exam</li>
-    <li>FITB synonym tolerance, FR LLM rubric grading</li>
-    <li>Per-student progress tracking with weak-spot detection</li>
-    <li>LLM-driven pattern synthesis and per-question deep-dives</li>
-    <li>Instructor class dashboard with concept-gap analysis</li>
-    <li>Source citations to specific slides and textbook sections</li>
-    <li>Production deployment on Railway</li>
+    <li><strong>"Want to know more?"</strong> button on any result gives a deeper plain-English walkthrough with citations to specific slides or textbook sections.</li>
+    <li><strong>"Discuss with tutor"</strong> at the end of a quiz drops your wrong answers into the Tutor tab as conversation context — the tutor will probe the specific concepts you missed.</li>
+    <li><strong>Pattern synthesis</strong> shows up at the end of each quiz: a short summary of what you're solid on and what to revisit, with concrete next steps.</li>
   </ul>
 
-  <h3>What's next</h3>
-  <ul>
-    <li>Pre-production polish: error handling, mobile responsiveness, Anthropic cost tracking</li>
-    <li>Markdown rendering in tutor responses</li>
-    <li>Printable practice exam with answer key</li>
-    <li>CSV export of class data</li>
-    <li>Gradebook integration via LTI Assignment &amp; Grade Services</li>
-    <li>1692 (A&amp;P II) materials integration once those are in hand</li>
-    <li>Drawing / image identification (a longer-term goal)</li>
-  </ul>
+  <h3>Practice exam mode</h3>
+  <ol>
+    <li>Click <strong>📝 Practice exam</strong> in the top-right header.</li>
+    <li>Choose how many of each question type (MC, TF, FITB, free-response), pick difficulty, and pick which units to draw from.</li>
+    <li>Two output paths:
+      <ul>
+        <li><strong>Generate exam (online)</strong> — take the exam interactively in the browser. Optional toggle to hide feedback during (exam-realistic mode).</li>
+        <li><strong>📄 Generate printable</strong> — produces a print-friendly page. Use your browser's "Print / save as PDF" to get a paper version. Toggle to include or exclude the answer key.</li>
+      </ul>
+    </li>
+  </ol>
 
-  <div class="callout">
-    <strong>Open source.</strong> The codebase is at
+  <h3>Tracking your progress</h3>
+  <p>
+    Click <strong>📊 Your progress</strong> in the header. You'll see your
+    overall accuracy, units you're weak on, and a per-unit-per-kind breakdown.
+    Each unit in the picker also shows small badges with your accuracy so far.
+  </p>
+  <p>
+    The picker also shows a <strong>"Continue where you left off"</strong>
+    card when you've used the tool before — one click resumes the unit and
+    activity you were last using.
+  </p>
+</section>
+
+<section id="instructors">
+  <h2>For instructors 👩‍🏫</h2>
+
+  <h3>Adding Biology Bot to a course</h3>
+  <ol class="steps">
+    <li><strong>Confirm the tool is registered with your Moodle.</strong> If "Biology Bot" already appears as a preconfigured tool when you go to <em>Add an activity or resource</em>, skip to step 3. If not, your Moodle admin needs to register it once site-wide using dynamic registration with URL <code>https://moodle-biology-bot-production.up.railway.app/register</code>.</li>
+    <li><strong>If the tool is registered but not appearing in the activity chooser</strong>, an admin needs to edit it under <em>Site administration → Plugins → External tool → Manage tools</em> and set <em>Tool configuration usage</em> to "Show in activity chooser and as a preconfigured tool".</li>
+    <li><strong>In your course</strong>, turn editing on, then <em>Add an activity or resource</em> → <em>Biology Bot</em>. Save.</li>
+    <li><strong>That's it.</strong> Enrolled students will see and use it. Your launch (as instructor) shows you a different view than students see.</li>
+  </ol>
+
+  <h3>What the instructor dashboard shows</h3>
+  <p>
+    When you launch Biology Bot as an instructor (anyone with the Instructor,
+    Administrator, or Teaching Assistant role in the course), you'll see a
+    <strong>👩‍🏫 Instructor view</strong> button in the header alongside the
+    student-facing options. Clicking it opens the class dashboard.
+  </p>
+
+  <h3>Sections of the dashboard</h3>
+
+  <h4>Class totals</h4>
+  <p>Headline cards: how many students have used the tool, how many quiz attempts, class-wide accuracy, total tutor turns, tutor sessions. A first-glance pulse check on engagement.</p>
+
+  <h4>Class weak spots</h4>
+  <p>Lists the units where the class as a whole is under 70% accuracy across at least 4 attempts. Sorted worst-first. Use this to flag content that may need a re-explanation in lecture.</p>
+
+  <h4>Per-unit performance</h4>
+  <p>For every unit: how many students have engaged, total attempts, class accuracy. Helps spot units that are either consistently easy or consistently hard, vs. units no one is touching.</p>
+
+  <h4>Roster</h4>
+  <p>One row per student in the course: total attempts, accuracy, tutor turn count, flagged weak units, and time since last seen. Click any student to drill into their per-unit-per-kind breakdown — same view they see for themselves.</p>
+
+  <h4>Concept-gap analysis (AI-generated)</h4>
+  <p>
+    Click <strong>Run analysis (class-wide)</strong>. Takes 15–30 seconds. The AI
+    samples the wrong answers across all your students and writes a short
+    summary of recurring concept gaps, with citations to specific slides or
+    textbook sections, plus suggested instructor actions ("re-explain in
+    lecture", "share a worked example", "direct students to the textbook section
+    on X").
+  </p>
+  <p>
+    This is most useful after a meaningful amount of student activity has
+    accumulated. Empty courses produce empty analyses.
+  </p>
+
+  <div class="callout note">
+    <strong>What's <em>not</em> in the instructor dashboard:</strong>
+    AI API costs, raw conversation logs, or anything operational. Those are
+    handled separately by the project operator and aren't surfaced to the
+    instructor or student UI.
+  </div>
+</section>
+
+<section id="grounding">
+  <h2>What Biology Bot knows about 📚</h2>
+
+  <p>
+    The AI's responses, questions, and grading are grounded in the instructor's
+    actual course materials — not the model's general knowledge of biology.
+    Specifically:
+  </p>
+
+  <table class="grounding-table">
+    <thead>
+      <tr><th>Source</th><th>How it's used</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Lecture PPTs</strong><br><span style="color:var(--muted);font-size:.85em">17 unit decks, slides + speaker notes</span></td>
+        <td>Primary grounding for tutor dialogue, question generation, and citations. The bot references "Unit N, slide M" when pointing students to a source.</td>
+      </tr>
+      <tr>
+        <td><strong>Course terms list</strong><br><span style="color:var(--muted);font-size:.85em">Per-unit key terms</span></td>
+        <td>Drives fill-in-the-blank questions and informs vocabulary the tutor expects students to know per unit.</td>
+      </tr>
+      <tr>
+        <td><strong>Example exam</strong><br><span style="color:var(--muted);font-size:.85em">Worked exam with answer key</span></td>
+        <td>Style anchor — generated questions match the instructor's voice and difficulty calibration.</td>
+      </tr>
+      <tr>
+        <td><strong>Open textbooks</strong><br><span style="color:var(--muted);font-size:.85em">TRU Pressbooks A&P I &amp; II, CC BY 4.0</span></td>
+        <td>Matched chapter per unit. Cited as "(Unit N textbook)" when the bot points students to the textbook.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="margin-top: 1rem">
+    All source-material grounding is loaded once at deploy time. To update,
+    the instructor shares new files and the operator re-runs the ingestion
+    pipeline.
+  </p>
+</section>
+
+<section id="more">
+  <h2>Behind the scenes</h2>
+
+  <p>
+    Biology Bot is an LTI 1.3 tool — the same standard Moodle uses to embed
+    other external activities. Built in TypeScript on Node, with Postgres for
+    student / session / progress data and Anthropic Claude for the AI calls.
+    Source on GitHub:
     <a href="https://github.com/blamb/moodle-biology-bot">github.com/blamb/moodle-biology-bot</a>.
-    Built in collaboration with a biology colleague at Thompson Rivers University. Borrows
-    prompt patterns from the earlier <a href="https://github.com/blamb/open-margins">open-margins</a> project.
-  </div>
+  </p>
+
+  <p>
+    Built by <a href="https://github.com/blamb">Brian Lamb</a> at Thompson Rivers
+    University, in collaboration with the BIOL 1592 / 1692 instructor.
+    Borrows prompt patterns from the earlier
+    <a href="https://github.com/blamb/open-margins">open-margins</a> project.
+    Grounding includes the open
+    <a href="https://human-anatomy-i.pressbooks.tru.ca/">A&amp;P I</a> and
+    <a href="https://human-anatomy-ii.pressbooks.tru.ca/">A&amp;P II</a>
+    Pressbooks textbooks (Thompson Rivers University, CC BY 4.0).
+  </p>
 </section>
 
 </main>
 
 <footer>
-  <p>Built by <a href="https://github.com/blamb">Brian Lamb</a> at Thompson Rivers University.</p>
-  <p>Grounding content from the TRU Pressbooks <a href="https://human-anatomy-i.pressbooks.tru.ca/">A&P I</a> and
-     <a href="https://human-anatomy-ii.pressbooks.tru.ca/">A&P II</a> textbooks, CC BY 4.0.</p>
+  <p>For questions, issues, or feature requests: open an issue on
+     <a href="https://github.com/blamb/moodle-biology-bot/issues">GitHub</a>
+     or contact Brian Lamb directly.</p>
 </footer>
 
 </body>
