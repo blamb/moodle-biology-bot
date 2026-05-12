@@ -1,0 +1,107 @@
+# Auto-generated mapping table — review with the professor.
+# Each unit pairs the PPT with the matched Pressbooks A&P I chapter.
+# Source: build_units.py against content/textbooks/anatomy-i/index.json
+
+mapping:
+  - unit_no: 1
+    ppt_title: 'Atoms and Molecules'
+    textbook_title: 'Unit 1: Atoms and Molecules'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-1-atoms-and-molecules/'
+    terms_count: 22
+    chars_total: 55094
+  - unit_no: 2
+    ppt_title: 'The Chemistry of Water'
+    textbook_title: 'Unit 2: The Chemistry of Water'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-2-the-chemistry-of-water/'
+    terms_count: 15
+    chars_total: 44652
+  - unit_no: 3
+    ppt_title: 'Biochemistry'
+    textbook_title: 'Unit 3: Biochemistry'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-3-biochemistry/'
+    terms_count: 38
+    chars_total: 60789
+  - unit_no: 4
+    ppt_title: 'Cell Structure and Function'
+    textbook_title: 'Unit 4: Cell Structure and Function'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-4-cell-structure-and-function/'
+    terms_count: 29
+    chars_total: 66491
+  - unit_no: 5
+    ppt_title: 'Membrane Structure and Function'
+    textbook_title: 'Unit 5: Membrane Structure and Function'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-5-cell-biology-membrane-transport/'
+    terms_count: 25
+    chars_total: 50638
+  - unit_no: 6
+    ppt_title: 'Tissue Structure and Functions'
+    textbook_title: 'Unit 6: Tissue Structure and Functions'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-6-tissue-structure-and-functions/'
+    terms_count: 60
+    chars_total: 76448
+  - unit_no: 7
+    ppt_title: 'Body Structures'
+    textbook_title: 'Unit 7: Body Structure'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-7-body-structure/'
+    terms_count: 47
+    chars_total: 34484
+  - unit_no: 8
+    ppt_title: 'Homeostasis'
+    textbook_title: 'Unit 8: Homeostasis'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-8-homeostasis/'
+    terms_count: 5
+    chars_total: 33310
+  - unit_no: 9
+    ppt_title: 'The Integumentary System'
+    textbook_title: 'Unit 9: The Integumentary System'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-9-the-integumentary-system/'
+    terms_count: 33
+    chars_total: 68279
+  - unit_no: 10
+    ppt_title: 'Skeletal System'
+    textbook_title: 'Unit 10: The Skeletal System'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-10-skeletal-system/'
+    terms_count: 58
+    chars_total: 131086
+  - unit_no: 11
+    ppt_title: 'Joints'
+    textbook_title: 'Unit 11: Joints'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-11-joints/'
+    terms_count: 45
+    chars_total: 104113
+  - unit_no: 12
+    ppt_title: 'Biomechanics'
+    textbook_title: 'Unit 12: Biomechanics'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-12-biomechanics/'
+    terms_count: 15
+    chars_total: 26867
+  - unit_no: 13
+    ppt_title: 'Muscle Anatomy'
+    textbook_title: 'Unit 13: Muscle Anatomy'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-13-muscle-anatomy-and-movement/'
+    terms_count: 35
+    chars_total: 62755
+  - unit_no: 14
+    ppt_title: 'Muscle Physiology'
+    textbook_title: 'Unit 14: Muscle Physiology'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-14-muscle-physiology/'
+    terms_count: 49
+    chars_total: 111127
+  - unit_no: 15
+    ppt_title: 'The Nervous System'
+    textbook_title: 'Unit 15: The Nervous System'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-15-nervous-system/'
+    terms_count: 66
+    chars_total: 112618
+  - unit_no: 16
+    ppt_title: 'The Peripheral Nervous System'
+    textbook_title: 'Unit 16: The Peripheral Nervous System'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-16-the-peripheral-nervous-system/'
+    terms_count: 32
+    chars_total: 72321
+  - unit_no: 17
+    ppt_title: 'Neuronal Signalling'
+    textbook_title: 'Unit 17: Neuronal Signalling'
+    textbook_url: 'https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-17-neuronal-signalling/'
+    terms_count: 63
+    chars_total: 86094

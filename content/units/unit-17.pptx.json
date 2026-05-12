@@ -1,0 +1,372 @@
+{
+  "unit_id": 17,
+  "title": "Neuronal Signalling",
+  "source_file": "materials/17 Neuronal Signalling - 2025.pptx",
+  "slide_count": 52,
+  "slides": [
+    {
+      "slide_no": 1,
+      "title": "Unit 17:Neuronal Signalling",
+      "body": "Unit 17:Neuronal Signalling\n\nNeural signalling. Credit: 7mike5000, CC BY-SA 3.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "THESE NOTES IN THE COURSE PPT FILES ARE SOLELY BACKUP INFORMATION FOR YOU, IN CASE YOU MISS CLASS AND WANT TO KNOW APPROXIMATELY WHAT WAS SAID ABOUT EACH SLIDE. THESE NOTES ARE LARGELY REDUNDANT WITH THE TEXTBOOK, AND THEY ARE NOT REQUIRED READING FOR THE COURSE. \n______________________________________________________\n\nWe now turn to Unit 17: Neuronal Signalling.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 2,
+      "title": "Unit Outline",
+      "body": "Unit Outline\n\nPart 1: Neuronal Signalling\nPart 2: Ion Channels and the Resting Membrane Potential\nPart 3: Generation of an Action Potential\nPart 4: Propagation of Action Potentials\nPart 5: Neurotransmission\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "In this unit, we will begin by discussing neural signalling in general, and then we will turn to discussions of membrane potentials – the voltage differences across the membrane. Within those parts, we will look at how resting membrane potentials are generated and maintained, and then we will turn to the generation, and then propagation, of action potentials. Finally, we will conclude with a section on neurotransmission.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 3,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Okay, let’s begin with Part 1: Neuronal Signalling.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 4,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\nBefore diving into detail, let’s examine a scenario that both reviews and introduces some new terms:\n1. Sensory neurons in the skin sense a stimulus – here, water temperature. The strength of the neural signal that starts here is dependent on the strength of the stimulus.\n\nTesting the Water.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Before diving into detail, let’s examine a scenario that both reviews concepts and introduces some new terms:\n1. Sensory neurons in the skin sense a stimulus – here, water temperature. The strength of the neural signal that starts here is dependent on the strength of the stimulus.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 5,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\n2. The graded potential from the sensory endings, if strong enough, will initiate an action potential at the initial segment of the axon (which is immediately adjacent to the sensory endings in the skin).\n\nTesting the Water.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "2. The graded potential from the sensory endings, if strong enough, will initiate an action potential at the initial segment of the axon (which is immediately adjacent to the sensory endings in the skin).",
+      "image_alts": []
+    },
+    {
+      "slide_no": 6,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\n3. The axon of the peripheral sensory neuron enters the spinal cord and contacts another neuron in the grey matter. The contact is a synapse where another graded potential is caused by the release of a chemical signal from the axon terminals.\n\nTesting the Water.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "3. The axon of the peripheral sensory neuron enters the spinal cord and contacts another neuron in the grey matter. The contact is a synapse where another graded potential is caused by the release of a chemical signal from the axon terminals.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 7,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\n4. An action potential is initiated at the axon hillock of this neuron and travels up the sensory pathway to a region of the brain called the thalamus (relay station). Another synapse passes the information along to the next neuron.\n\nTesting the Water.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "4. An action potential is initiated at the axon hillock of this neuron and travels up the sensory pathway to a region of the brain called the thalamus, the part of the central nervous system that acts as a relay for sensory information. Another synapse passes the information along to the next neuron.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 8,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\n5. The sensory pathway ends when the signal reaches the cerebral cortex. \nconscious perception now possible\ninformation here is processed among many neurons, integrating the stimulus of the water temperature with your emotional state, memories, etc.\n\nTesting the Water.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "5. The thalamus then sends the sensory information to the cerebral cortex, the outermost layer of grey matter in the brain, where conscious perception of that water temperature begins. Within the cerebral cortex, information is processed among many neurons, integrating the stimulus of the water temperature with other sensory stimuli, with your emotional state (you are sleepy and a cold shower could help wake you up), memories (cold showers can be a bit rough). Finally, a plan is developed about what to do, whether that is to turn the temperature up or down. To do any of these things, the cerebral cortex has to send a command out to your body to move muscles. The sensory pathway ends when the signal reaches the cerebral cortex.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 9,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\n6. After integration with neurons in other parts of the cerebral cortex, a motor command is sent from the precentral gyrus of the frontal cortex (primary motor cortex).\n\nTesting the Water.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "6. After integration with neurons in other parts of the cerebral cortex, a motor command is sent from the precentral gyrus of the frontal cortex.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 10,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\n7. The upper motor neuron sends an action potential down to the spinal cord. The target of the upper motor neuron is the dendrites of the lower motor neuron in the grey matter of the spinal cord.\n\nTesting the Water.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "7. The upper motor neurons in the primary motor cortex have axons that extend all the way down the spinal cord. At the level of the spinal cord at which these axons makes synapses, a graded potential occurs in the cell membrane of a lower motor neuron. This second motor neuron is responsible for causing muscle fibres to contract. In the manner described in the unit on muscle tissue, an action potential travels along the motor neuron axon into the periphery.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 11,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\n8. The axon of the lower motor neuron emerges from the spinal cord in a nerve and connects to a muscle through a neuromuscular junction to cause contraction of the target muscle.\nmuscles can then turn temperature warmer or colder or withdraw hand\n\nTesting the Water.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "8. The axon of the lower motor neuron emerges from the spinal cord in a nerve and connects to a muscle through a neuromuscular junction to cause contraction of the target muscle. Acetylcholine is released at this specialized synapse.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 12,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\nOkay, now let’s look at some more details…\nthermal stimuli were transduced by thermoreceptors into electrical signals\nthe cell membrane of the thermoreceptors changes its electrical state (voltage).\namount of change depends on strength of stimulus (how hot the water is) – this is a graded potential \na sufficient stimulus changes the voltage of the cell membrane enough to meet a threshold and generate an action potential that will travel (propagate) down the axon\n\nThe Sensory Input. Receptors in the skin sense the temperature of the water.\n\nGraded potentials.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Okay, let’s look at some of these components in more detail. The initial sensory stimulus of temperature was transduced by a thermoreceptor into an electrical signal. The cell membrane of the thermoreceptors changes its electrical state (that is, its voltage). The amount of change is dependent on the strength of the stimulus (how hot the water is). This is called a graded potential. If the stimulus is strong, the voltage of the cell membrane will change enough to meet a threshold and generate an action potential that will travel (propagate) down the axon.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 13,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\nAction potential propagates along axon \nfrom the axon hillock to the axon terminals and into the synaptic end bulbs \nit causes the release of neurotransmitters into synapse - diffuse to receptors on postsynaptic neuron\nnew graded potential begins in postsynaptic neuron – if sufficient, can generate action potential\n\nChemical synapse. Credit: user:Looie496 created file; Illustrator: Christy Krames, MA, CMI, for US National Institutes of Health, National Institute on Aging, Public domain, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "The action potential propagates along the axon from the axon hillock to the axon terminals and into the synaptic end bulbs. When this signal reaches the end bulbs, it causes the release of neurotransmitters into a synapse.\n\nThe neurotransmitter diffuses across the short distance of the synapse and binds to a receptor protein of the postsynaptic neuron. When the molecular signal binds to the receptor, the cell membrane of the target neuron changes its electrical state and a new graded potential begins. If that graded potential is strong enough to reach threshold, the second neuron generates an action potential at its own axon hillock.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 14,
+      "title": "Part 1: Neuronal Signalling",
+      "body": "Part 1: Neuronal Signalling\n\nLower motor neurons release ACh onto motor end plate at the neuromuscular junction\nOpening of nicotinic receptor channels causes end plate potential \nlarge depolarization of voltage due to neuromuscular junction being very large synapse\ncauses muscle fibres contract\nRegular synapses are much smaller and require multiple neurotransmitter release events to cause sufficient depolarization to reach an action potential threshold\n\nRegular synapse. Credit: Laboratoires Servier, CC BY-SA 3.0, via Wikimedia Commons\n\nNeuromuscular junction. Credit: Laboratoires Servier, CC BY-SA 3.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Opening of nicotinic receptor channels by acetylcholine causes a large potential known as an end plate potential. This change in voltage is extra large, due to the neuromuscular junction being a very large synapse. When the lower motor neuron excites the muscle fibre, it contracts. All of this occurs in a fraction of a second. \n\nOkay, now let’s move on and look at some of these steps at a cellular and molecular level.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 15,
+      "title": "Part 2: Ion Channels and the Resting Membrane Potential",
+      "body": "Part 2: Ion Channels and the Resting Membrane Potential\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "So on to Part 2: Ion Channels and the Resting Membrane Potential.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 16,
+      "title": "Part 2: Ion Channels and the Resting Membrane Potential",
+      "body": "Part 2: Ion Channels and the Resting Membrane Potential\n\nAn excitable membrane is basis of graded and action potentials\nmost body cells use ions to build up charge across cell membrane\nions are charged and thus need ion channels or transport pumps to pass through phospholipid bilayer of membrane\n\nCell Membrane and Transmembrane Proteins. The cell membrane is composed of a phospholipid bilayer and has many transmembrane proteins, including different types of channel proteins that serve as ion channels.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "We now need to discuss the role of the excitable membrane in generating the graded and action potentials that we just discussed. We will use an action potential as the model for our discussion.\n\nMost cells in the body make use of charged particles (ions) to build up a charge across the cell membrane. Cells make use of the cell membrane to regulate ion movement between the extracellular fluid and cytosol. As you learned in the unit on cell membranes, the cell membrane is primarily responsible for regulating what can cross the membrane and what stays on only one side. The cell membrane is a phospholipid bilayer, so only substances that can pass directly through the hydrophobic core can diffuse through unaided. Charged particles, which are hydrophilic by definition, cannot pass through the cell membrane without assistance. Transmembrane proteins, specifically channel proteins, make this possible. Several passive ion channels, as well as active transport pumps, are necessary to generate a transmembrane potential and an action potential. Ion channels are pores that allow specific charged particles to cross the membrane in response to an existing concentration gradient.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 17,
+      "title": "Part 2: Ion Channels and the Resting Membrane Potential",
+      "body": "Part 2: Ion Channels and the Resting Membrane Potential\n\nSodium-potassium pump (ATPase) uses ATP hydrolysis to move Na+ out and K+ into cell\nNa+ ion channels allow Na+ to diffuse in, depolarizing cell\nK+ ion channels allow K+ to diffuse out, hyperpolarizing cell\n\nSodium-potassium pump and ion channels. Credit: Blausen.com staff (2014). \"Medical gallery of Blausen Medical 2014\". WikiJournal of Medicine 1 (2). DOI:10.15347/wjm/2014.010. ISSN 2002-4436.Derivative by Mikael Häggström, CC BY 3.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Recall that the sodium/potassium pump moves sodium ions out of a cell and potassium ions into a cell, thus regulating ion concentration on both sides of the cell membrane. The sodium/potassium pump requires energy in the form of adenosine triphosphate (ATP), so it is also referred to as an ATPase. As was explained in the cell chapter, the concentration of sodium ions is higher outside the cell than inside, and the concentration of potassium ions is higher inside the cell than outside. That means that this pump is moving the ions against the concentration gradients for sodium and potassium, which is why it requires energy. In fact, the pump basically maintains those concentration gradients.\n\nIf open, Na+ ion channels allow Na+ to diffuse in, depolarizing the cell, while K+ ions channels allow K+ to diffuse out, hyperpolarizing the cell.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 18,
+      "title": "Part 2: Ion Channels and the Resting Membrane Potential",
+      "body": "Part 2: Ion Channels and the Resting Membrane Potential\n\nMost ion channels are gated\nligand-gated channel opens when particular molecule (a ligand) binds to receptor on extracellular region of the channel\nalso known as ionotropic receptor because allows ions to cross the membrane, changing its charge\n\nLigand-Gated Channels. When the ligand, in this case the neurotransmitter acetylcholine, binds to a specific location on the extracellular surface of the channel protein, the pore opens to allow select ions through. The ions, in this case, are cations of sodium, calcium, and potassium.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "However, most ion channels are gated and thus do not always freely allow ions to diffuse across the membrane. \n\nA ligand-gated channel opens because a signaling molecule, a ligand, binds to a receptor on the extracellular region of the channel. This type of channel is also known as an ionotropic receptor because when the ligand, known as a neurotransmitter in the nervous system, binds to the protein, ions cross the membrane changing its charge.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 19,
+      "title": "Part 2: Ion Channels and the Resting Membrane Potential",
+      "body": "Part 2: Ion Channels and the Resting Membrane Potential\n\nMost ion channels are gated\na mechanoreceptor opens with a physical distortion of the cell membrane\ne.g., touch receptors\nthermoreceptors work in a similar way, as temperature changes affect the protein structure, which physically opens the channel\n\nMechanically Gated Channels. When a mechanical change occurs in the surrounding tissue, such as pressure or touch, the channel is physically opened. Thermoreceptors work on a similar principle. When the local tissue temperature changes, the protein reacts by physically opening the channel.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "A mechanoreceptor is a mechanically gated channel that opens because of a physical distortion of the cell membrane. Many channels associated with the sense of touch are mechanically gated. For example, as pressure is applied to the skin, these channels open and allow ions to enter the cell. \n\nThermoreceptors work in a similar way, as when the local tissue temperature changes, the protein reacts by physically opening the channel.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 20,
+      "title": "Part 2: Ion Channels and the Resting Membrane Potential",
+      "body": "Part 2: Ion Channels and the Resting Membrane Potential\n\nMost ion channels are gated\na voltage-gated channel responds to voltage changes in the membrane\nnormally inside is negative relative to outside (a negative voltage)\nmost voltage-gated channels open when inside becomes less negative, or even positive, relative to the outside\n\n+\n\n+\n\n+\n\n+\n\n+\n\n+\n\n+\n\n+\n\nVoltage-Gated Potassium Channels. Voltage-gated channels open when the transmembrane voltage changes around them. Amino acids in the structure of the protein are sensitive to charge and cause the pore to open to the selected ion. Adapted from OpenStax by David Kabelik.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "A voltage-gated channel is a channel that responds to changes in the electrical properties of the membrane in which it is embedded. Normally, the inner portion of the membrane is at a negative voltage. When that voltage becomes less negative, the channel begins to allow ions to cross the membrane.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 21,
+      "title": "Part 2: Ion Channels and the Resting Membrane Potential",
+      "body": "Part 2: Ion Channels and the Resting Membrane Potential\n\nHowever, a leakage channel (or leak channel) is randomly gated – it opens and closes at random, hence allowing a steady leakage of ions across\nleaky K+ channels contribute to resting membrane potential (voltage)\n\nLeakage Channels. In certain situations, ions need to move across the membrane randomly. The particular electrical properties of certain cells are modified by the presence of this type of channel.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "A leakage channel (or leak channel) is randomly gated, meaning that it opens and closes at random, hence allowing a steady leakage of ions across the membrane. There is no actual event that opens the channel; instead, it has an intrinsic rate of switching between the open and closed states. Leakage channels contribute to the resting transmembrane voltage of the excitable membrane.\n\nThe primary leak channel in cells is a leaky potassium channel. When the positively charged potassium cations leave the cell, they make the area outside of the membrane more positive with their charge, and leave the inside more negative then when they were present. Hence, the inside of a cell is usually more negative than the outside.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 22,
+      "title": "Part 2: Ion Channels and the Resting Membrane Potential",
+      "body": "Part 2: Ion Channels and the Resting Membrane Potential\n\nMembrane Potential\nmeasure inside relative to outside, in mV\ncells vary, but on average, resting membrane voltage is -70 mV\nprimarily driven by K+ leaking out, slightly opposed by tiny trickle of Na+ leaking in\n\nMeasuring Charge across a Membrane with a Voltmeter. A recording electrode is inserted into the cell and a reference electrode is outside the cell. By comparing the charge measured by these two electrodes, the transmembrane voltage is determined. It is conventional to express that value for the cytosol relative to the outside.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "The membrane potential, or distribution of charge across the cell membrane, is measured in millivolts. The standard is to compare the inside of the cell relative to the outside, so the membrane potential is a value representing the charge on the intracellular side relative to the outside.\n\nWith the ions distributed across the membrane at these concentrations, the difference in charge is measured at -70 mV, the value described as the resting membrane potential. The exact value measured for the resting membrane potential varies between cells, but -70 mV is the most commonly recorded value. This voltage is driven by some important proteins in the membrane. Potassium leakage channels allow K+ to slowly move out of the cells. To a much lesser extent, sodium leakage channels allow Na+ to slowly move into the cell. The constant activity of the Na+/K+ pump maintains the ion gradients. This may appear to be a waste of energy, but each has a role in maintaining the membrane potential.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 23,
+      "title": "Part 2: Ion Channels and the Resting Membrane Potential",
+      "body": "Part 2: Ion Channels and the Resting Membrane Potential\n\nThe concentration of ions in extracellular and intracellular fluids is largely balanced, with a net neutral charge\nat rest, a slight difference solely exists right at the membrane surface due to K+ leak channels\n\nElectrical charges across cell membrane. Credit: David Kabelik, CC BY-NC-SA 4.0\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Note that the concentration of ions in extracellular and intracellular fluids is largely balanced, with a net neutral charge. It is solely a slight difference in charge that occurs right at the membrane surface, both internally and externally, which we detect as a voltage difference – hence, we refer to it as “at the membrane”. It is the difference in this very limited region that has all the power in neurons (and muscle cells) to generate electrical signals, including action potentials.\n\nWhen the cell is at rest, and the ion channels are closed (except for leakage channels), ions are distributed across the membrane in a very predictable way. The concentration of Na+ outside the cell is 10 times greater than the concentration inside. Also, the concentration of K+ inside the cell is greater than outside. The cytosol contains a high concentration of anions, in the form of phosphate ions and negatively charged proteins. Large anions are also a component of the inner cell membrane. Meanwhile, the extracellular fluid also has a high concentration of Cl-, which helps to balance the extracellular charge.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 24,
+      "title": "Part 2. Review",
+      "body": "Part 2. Review\n\nThe resting membrane voltage is ___________ due to a __________ of ________.\n\n-70, efflux, Na+\n\n-70, influx, K+\n\n+70, influx, Na+\n\n-70, efflux, K+\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Okay, let’s review.\n\nThe resting membrane voltage is ___________ due to a __________ of ________.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 25,
+      "title": "Part 3: Generation of an Action Potential",
+      "body": "Part 3: Generation of an Action Potential\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Now let’s turn to Part 3: Generation of an Action Potential.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 26,
+      "title": "Part 3: Generation of an Action Potential",
+      "body": "Part 3: Generation of an Action Potential\n\nTo generate an electrical signal, membrane potential (V) must change\ngraded potentials (usually in dendrites of neuron) are changes in membrane V whose size depends on intensity of stimulus (e.g., was the shower warm or hot)\ndepolarizing stimuli bring V higher (usually via Na+ or Ca2+ influx)\nhyperpolarizing stimuli bring V lower (usually via Cl- influx or K+ efflux)\n\nGraded Potentials. Graded potentials are temporary changes in the membrane voltage, the characteristics of which depend on the size of the stimulus. Some types of stimuli cause depolarization of the membrane, whereas others cause hyperpolarization. It depends on the specific ion channels that are activated in the cell membrane.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "A resting membrane potential describes the steady state of the cell, which is a dynamic process that is balanced by ion leakage and ion pumping. Without any outside influence, it will not change. To get an electrical signal started, the membrane potential thus has to change.\n\nAs mentioned earlier, local changes in the membrane potential are called graded potentials and these are usually associated with the dendrites of a neuron. The amount of change in the membrane potential is determined by the size of the stimulus that causes it. In the example of testing the temperature of the shower, slightly warm water would only initiate a small change in a thermoreceptor, whereas hot water would cause a large amount of change in the membrane potential.\n\nGraded potentials can be of two sorts, either they are depolarizing or hyperpolarizing. For a membrane at the resting potential, a graded potential represents a change in that voltage either above or below -70 mV. Depolarizing graded potentials are often the result of Na+ or Ca2+ entering the cell. Both of these ions have higher concentrations outside the cell than inside and are driven inward by those concentration gradients, as well as due to their attraction to the negative charge near the inner membrane. Because Na+ or Ca2+ have a positive charge, when they move into the cell, they cause the inside to become somewhat less negative relative to the outside. Hyperpolarizing graded potentials can be caused by K+ leaving the cell, taking their positive charge out of the cell, or Cl– entering the cell, bringing in a negative charge. Thus, if a positive charge moves out of a cell, the cell becomes more negative; if a negative charge enters the cell, the same thing happens.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 27,
+      "title": "Part 3: Generation of an Action Potential",
+      "body": "Part 3: Generation of an Action Potential\n\nAction potentials are “all or none” because they either occur and change the membrane voltage a given amount (not graded), or they do not occur at all\n\nAction potential spikes. Adapted from: William M. Connelly, Vincenzo Crunelli, and Adam C. Errington, CC BY-SA 4.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Action potentials, on the other hand are described as “all or none” because they either occur and change the membrane voltage a given amount (not graded), or they do not occur at all.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 28,
+      "title": "Part 3: Generation of an Action Potential",
+      "body": "Part 3: Generation of an Action Potential\n\nAction potentials are “all or none” \nstronger stimuli will affect frequency, not amplitude\nwill initiate multiple action potentials more quickly, but the individual signals are not bigger\n\nAction potential frequency. Adapted from: Drpaulineneveu, CC BY-SA 4.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Action potentials are “all or none.” Either the membrane reaches the threshold and everything occurs as described above, or the membrane does not reach the threshold and nothing else happens. All action potentials peak at the same voltage (+30 mV), so one action potential is not bigger than another. Stronger stimuli will initiate multiple action potentials more quickly, but the individual signals are not bigger. Thus, for example, you will not feel a greater sensation of pain, or have a stronger muscle contraction, because of the size of the action potential because they are not different sizes.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 29,
+      "title": "Part 3: Generation of an Action Potential",
+      "body": "Part 3: Generation of an Action Potential\n\nAction potential begins at axon hillock if graded potential from dendrites & soma if of sufficient depolarizing magnitude\nopens voltage-gated Na+ channels\nNa+ ions enter, due to concentration gradient, and electrical gradient (attraction to inner negative charge)\ndepolarization from Na+ influx spreads to adjacent axonal segments, opens channels there, etc.\n\nAction potential initiation. Adapted from: Helixitta, CC BY-SA 4.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Action potentials start at a neuron’s axon hillock, or near the motor end plate of a skeletal muscle, with sodium channels opening in the membrane. This occurs if the graded potential arriving from the dendrites and cell soma is of sufficient depolarizing magnitude to open these voltage-gated sodium channels. The graded potential itself started at other types of channels, usually ligand-gated channels that were opened by neurotransmitters binding to those receptor-channels at the dendrites.\n\nBecause the concentration of Na+ is higher outside the cell than inside the cell by a factor of 10, ions will rush into the cell, driven largely by the concentration gradient, but again, also by the electrical gradient across the membrane. Because sodium is a positively charged ion, it will change the relative voltage immediately inside the cell relative to immediately outside. The resting potential is the state of the membrane at a voltage of -70 mV, so the sodium cation entering the cell will cause it to become less negative. This is known as depolarization, meaning the membrane potential moves toward zero.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 30,
+      "title": "Part 3: Generation of an Action Potential",
+      "body": "Part 3: Generation of an Action Potential\n\nConcentration gradient for Na+ is so strong that it will continue to enter the cell even after the membrane potential has become zero, so that the voltage immediately around the pore begins to become positive\n\ndepolarization due to Na+ influx\n\ndepolarization due to graded potential\nfrom dendrites & cell soma\n\nAP threshold   \n     (opens V-gated \n     Na+ channels)\n\nGraph of Action Potential. Plotting voltage measured across the cell membrane against time, the action potential begins with depolarization, followed by repolarization, which goes past the resting potential into hyperpolarization, and finally the membrane returns to rest.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "You can see a depolarization on this figure. The concentration gradient for Na+ is so strong that it will continue to enter the cell even after the membrane potential has become zero, so that the voltage immediately around the pore begins to become positive. The electrical gradient also plays a role, as negative proteins below the membrane attract the sodium ion. The membrane potential will reach +30 mV by the time sodium ions have fully entered the cell.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 31,
+      "title": "Part 3: Generation of an Action Potential",
+      "body": "Part 3: Generation of an Action Potential\n\nNa+ channels become inactivated at positive membrane voltage, preventing further depolarization \n(at that segment of membrane – remember that the depolarization does spread)\nresets to just regular “closed” at resting membrane voltage\n\nthese become inactivated\n\nthese open next\n\nSodium channels open then inactivate. Credit: Tryptofish, adapted by David Kabelik, CC BY-SA 4.0, via Wikimedia Commons\n\nAction potential initiation. Adapted from: Helixitta, CC BY-SA 4.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "As the membrane potential reaches +30 mV, the sodium channels become inactivated, preventing further entry of sodium ions. These channels will stop being inactivated later, when the cell is back at it’s resting membrane voltage, at which time they will again be closed and ready to reopen following the arrival of the next graded potential. However, until the cell membrane’s voltage drops, these channels remain inactivated (rather than closed), and thus cannot be used to allow any more sodium ions to enter the cell, even if another depolarizing graded potential arrives.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 32,
+      "title": "Part 3: Generation of an Action Potential",
+      "body": "Part 3: Generation of an Action Potential\n\nK+ leak channels are always active and thus not shown here\n\nK+ channels open\nK+ ions leave (repolarization) cell according to concentration gradient and electrical gradient (inner positivity repels them)\nrestores inner voltage to negative value\nsometimes even undershoot, before K+ channels close and balance restored\n\nV-gated  Na+ channel\n\nNa+\n\nK+\n\nV-gated  K+ channel\n\nTHOMPSON RIVERS UNIVERSITY | 2024\n\nAction potential channels. Credit: CThompson02, adapted by David Kabelik, CC BY-SA 4.0, via Wikimedia Commons",
+      "notes": "Next, potassium channels open. A concentration gradient drives the K+ outward, and now that the inside of the cell is temporarily more positive than the outside (at +30 mV), an electrical gradient drives them outward as well. As K+ start to leave the cell, taking their positive charges with them, the membrane potential begins to move back toward its resting voltage. This is called repolarization, meaning that the membrane voltage moves back toward the -70 mV value of the resting membrane potential.\n\nRepolarization returns the membrane potential to the -70 mV value that indicates the resting potential, but it actually overshoots that value. Potassium ions reach equilibrium when the membrane voltage is below -70 mV, so a period of hyperpolarization occurs while the K+ channels are open. Those K+ channels are slightly delayed in closing, accounting for this undershoot (of voltage).",
+      "image_alts": []
+    },
+    {
+      "slide_no": 33,
+      "title": "Part 3. Review",
+      "body": "Part 3. Review\n\nAfter Na+ channels open during an action potential, they then become:\n\nclosed\n\ninactivated\n\npermeable to K+\n\npermeable to Ca2+\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Okay, let’s review part 3.\n\nAfter Na+ channels open during an action potential, they then become:",
+      "image_alts": []
+    },
+    {
+      "slide_no": 34,
+      "title": "Part 4: Propagation of Action Potentials",
+      "body": "Part 4: Propagation of Action Potentials\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Now let’s move on to Part 4: Propagation of Action Potentials.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 35,
+      "title": "Part 4: Propagation of Action Potentials",
+      "body": "Part 4: Propagation of Action Potentials\n\nAction potential starts at axon hillock – possesses high density of voltage-gated Na+ channels\ndepolarization from Na+ influx spreads to next segment, opening more V-gated Na+ channels\nNa+ channels of initial segment then inactivated - until repolarized and closed, these channels are blocked\nthis initial segment of membrane is thus in a refractory period – depolarization flowing backward from next segment fizzles out (no backward-spreading APs!)\nK+ channels then open to repolarize this initial segment\n\nPropagation of an Action Potential Along an Unmyelinated Axon.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "The action potential is initiated at the beginning of the axon, at the axon hillock. There is a high density of voltage-gated Na+ channels so that rapid depolarization can take place here. Going down the length of the axon, the action potential is propagated because more voltage-gated Na+ channels are opened as the depolarization spreads. This spreading occurs because Na+ enters through the channel and moves along the inside of the cell membrane. As the depolarization spreads, new voltage-gated Na+ channels open and more ions rush into the cell, spreading the depolarization a little farther.\n\nBecause voltage-gated Na+ channels are inactivated at the peak of the depolarization (by the inactivation gate), they cannot be opened again for a brief time—the absolute refractory period. Because of this, depolarization spreading back toward previously opened channels has no effect. The action potential must propagate toward the axon terminals; as a result, the polarity of the neuron is maintained, as mentioned above.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 36,
+      "title": "Part 4: Propagation of Action Potentials",
+      "body": "Part 4: Propagation of Action Potentials\n\nUnmyelinated neurons – APs spread from segment to adjacent segment to adjacent segment\ndepolarization regenerated at each segment\nthis process is slow:\nopening up channels in each segment takes time\nion influx and spread takes time\nBut without regeneration, the signal would fade – this type of “wire” isn’t “insulated”\n\nAction potential would spread as graded potential, and thus fade, without continuous regeneration\n\nFading of graded potential if action potential was not regenerated. Adapted by: David Kabelik, CC BY-NC-SA 4.0\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Note that that last neuron was unmyelinated, so the action potential spread from segment to adjacent segment to adjacent segment, all the way down to axon terminus. Opening up channels in each segment takes time, as does waiting for cations to flow in across the membrane, and spread their charge. This process can be sped up via myelination.\n\nHowever, without regeneration at each adjacent segment of membrane, the depolarization would fade. You can think of unmyelinated neurons as uninsulated wires, where the signal fades over distance, and thus needs to keep being regenerated. A way to speed up action potentials is thus to “insulate” the axon of the neuron—and this is where myelin comes in.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 37,
+      "title": "Part 4: Propagation of Action Potentials",
+      "body": "Part 4: Propagation of Action Potentials\n\nMyelinated neurons – depolarization spreads through myelinated segments without fading too much (“insulated”)\ndoes not need to regenerate the signal until next Node of Ranvier (where next set of Na+ channels are present)\ninfrequent regenerations = greater speed\n\nPropagation of an Action Potential Along a Myelinated Axon. Nodes of Ranvier are gaps in myelin coverage along axons. Nodes contain voltage-gated K+ and Na+ channels. Action potentials travel down the axon by jumping from one node to the next. This diagram shows the nodes of Ranvier and the internodal (myelinated) segments with approximately the same length. This is not accurate: in real axons, the segments with myelin are about one thousand times longer than the nodes!\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "When myelination is present, the action potential propagates differently. Sodium ions that enter the cell at the initial segment start to spread along the length of the axon segment, but there are no voltage-gated Na+ channels until the first node of Ranvier. Because there is not constant opening of these channels along the axon segment, the depolarization spreads at a much faster speed. The distance between nodes (1-3 mm) means that the membrane is still sufficiently depolarized (above threshold) by the time it reaches the next node. As Na+ spreads along the inside of the membrane of the axon segment, the charge starts to dissipate, but the myelin “insulation” keeps it from dissipating too quickly. If the node were any farther down the axon, that depolarization may have fallen off too much for voltage-gated Na+ channels to be activated at the next node of Ranvier.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 38,
+      "title": "Part 4: Propagation of Action Potentials",
+      "body": "Part 4: Propagation of Action Potentials\n\nMyelinated segments are ~1000X longer than nodes of Ranvier\n“jumping over” these myelinated segments is called saltatory conduction\ndramatically increases speed of action potential over unmyelinated continuous conduction\n\nAction potential speed in unmyelinated and myelinated neurons. Credit: Dr. Jana, CC BY 4.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Propagation along an unmyelinated axon is referred to as continuous conduction; along the length of a myelinated axon, it is saltatory conduction. Continuous conduction is slow because there are always voltage-gated Na+ channels opening, and more and more Na+ are rushing into the cell. Saltatory conduction is faster because the action potential basically jumps from one node to the next (saltare means “to leap”), and the new influx of Na+ renews the depolarized membrane.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 39,
+      "title": "Part 4: Propagation of Action Potentials",
+      "body": "Part 4: Propagation of Action Potentials\n\nDiameter of axon also influences speed of action potential\nwider axons encounter less resistance to spread of charge down axon\n\nPropagation of an action potential along an unmyelinated axons of varying diameters. Adapted by: David Kabelik, CC BY-NC-SA 4.0\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Along with the myelination of the axon, the diameter of the axon can influence the speed of conduction. Much as water runs faster in a wide river than in a narrow creek, Na+-based depolarization spreads faster down a wide axon than down a narrow one. This concept is known as resistance and is generally true for electrical wires or plumbing, just as it is true for axons, although the specific conditions are different at the scales of electrons or ions versus water in a river.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 40,
+      "title": "Part 5: Neurotransmission",
+      "body": "Part 5: Neurotransmission\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Now let’s finish up with Part 5: Neurotransmission.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 41,
+      "title": "Part 5: Neurotransmission",
+      "body": "Part 5: Neurotransmission\n\nDepolarization spreads, from synapse to axon hillock, as a graded potential\ndecreases in magnitude as it spreads, so only sufficient (or combined = summation) depolarizations reach action potential threshold\n\nChemical synapse. Credit: user:Looie496 created file; Illustrator: Christy Krames, MA, CMI, for US National Institutes of Health, National Institute on Aging, Public domain, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "As we said previously, action potentials are all or none. Once they are initiated via a depolarization meeting the threshold voltage of sodium channels at the axon hillock, they run on their own, regenerating down the axon. The question is thus, “What causes the depolarization that triggers these action potentials?” \n\nTemporary changes to the cell membrane voltage can result from neurons receiving information from the environment, or from the action of one neuron on another. These special types of potentials influence a neuron and determine whether an action potential will occur or not. Many of these transient signals originate at the synapse, the connection between electrically active cells, and then travel to the axon hillock as a graded potential. Because the magnitude of graded potentials decreases as they spread, only sufficient (or combined) depolarizations reach the action potential threshold by the time the signal reaches the axon hillock.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 42,
+      "title": "Part 5: Neurotransmission",
+      "body": "Part 5: Neurotransmission\n\nChemical synapses\nneurotransmitter carries signal between neurons\nElectrical synapses\ngraded potential passes via gap junctions from neuron to neuron\n\nChemical synapse. Credit: vectorization: Mouagip (talk)Synapse_diag1.png: Drawn by fr:Utilisateur:DakeCorrections of original PNG by en:User:Nrets This W3C-unspecified vector image was created with Adobe Illustrator., CC BY-SA 3.0, via Wikimedia Commons\n\nElectrical synapse. Credit: Drawn by  DakeCorrections, CC BY-SA 3.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "There are two types of synapses: chemical synapses and electrical synapses. In a chemical synapse, a chemical signal—namely, a neurotransmitter—is released from one cell and it affects the other cell. In an electrical synapse, there is a direct connection between the two cells so that ions can pass directly from one cell to the next. If one cell is depolarized in an electrical synapse, the joined cell also depolarizes because the ions pass between the cells. Chemical synapses involve the transmission of chemical information from one cell to the next. This section will concentrate on the chemical type of synapse.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 43,
+      "title": "Part 5: Neurotransmission",
+      "body": "Part 5: Neurotransmission\n\nChemical synaptic transmission:\naction potential reaches axon terminal\ndepolarization causes voltage-gated Ca2+ channels in the membrane of the synaptic end bulb to open\nCa2+ ions associate with proteins of vesicles facilitating their merging with presynaptic membrane\nneurotransmitter released through exocytosis into synaptic cleft\nneurotransmitter diffuses to postsynaptic membrane – binds to its specific receptor\nopens channels causing depolarization or hyperpolarization of postsynaptic cell membrane\nleads to excitation of postsynaptic cell (and possibly generation of action potential) or inhibition\nneurotransmitter is removed from synaptic cleft by diffusion, by enzymes that break it down chemically, or by transporters in presynaptic cell membrane\n\nTHOMPSON RIVERS UNIVERSITY | 2024\n\nSynaptic Transmission. The pre-synaptic neuron signals a postsynaptic neuron by releasing neurotransmitter across the synaptic cleft.",
+      "notes": "Chemical synaptic transmission (or neurotransmission) takes place through the following steps:\n\nAn action potential reaches the axon terminal.\nThe change in voltage causes voltage-gated Ca2+ channels in the membrane of the synaptic end bulb to open.\nThe concentration of Ca2+ increases inside the end bulb, and Ca2+ associate with proteins in the outer surface of neurotransmitter vesicles facilitating the merging of the vesicle with the presynaptic membrane. The neurotransmitter is then released through exocytosis into the small gap between the cells, known as the synaptic cleft.\nOnce in the synaptic cleft, the neurotransmitter diffuses the short distance to the postsynaptic membrane and can interact with neurotransmitter receptors. Receptors are specific for the neurotransmitter, and the two fit together like a key and lock. One neurotransmitter binds to its receptor and will not bind to receptors for other neurotransmitters, making the binding a specific chemical event.\nThe interaction of the neurotransmitter with the receptor can result in depolarization or hyperpolarization of the postsynaptic cell membrane, leading to excitation of the postsynaptic cell (and possibly the generation of a new action potential) or inhibition, respectively.\nThe neurotransmitter is removed from the synaptic cleft by diffusion, due to the action of enzymes that break it down chemically, or by transporters in the presynaptic cell membrane.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 44,
+      "title": "Part 5: Neurotransmission",
+      "body": "Part 5: Neurotransmission\n\nNeurotransmitter systems\namino acids: \nglutamate (excitatory)\nGABA (gamma-aminobutyric acid, inhibitory, in brain)\nglycine (inhibitory, in spinal cord)\nbiogenic amines (made from amino acids):\nserotonin (made from tryptophan)\ndopamine, norepinephrine, and epinephrine (the catecholamines, made from tyrosine)\ncholinergic system: \nacetylcholine (neuromuscular junction, autonomic nervous system, throughout the brain)\nneuropeptides (often released at synapses in combination with another neurotransmitter):\nmet-enkephalin and beta-endorphin (endogenous opioids – analgesic and pleasure-inducing)\noxytocin, vasopressin (anti-diuretic hormone)\n\nExamples of Neurotransmitters. Shown are some examples of major transmitters, their chemical structures and some of their functions.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "There are several systems of neurotransmitters that are found at various synapses in the nervous system. Some important examples include the following:\n\nAmino acids: This includes glutamate, the main excitatory neurotransmitter in the central nervous system, GABA (gamma-aminobutyric acid), the main inhibitory neurotransmitter in the brain and glycine, the main inhibitory neurotransmitter in the spinal cord.\n\nBiogenic amines: This is a group of neurotransmitters that are enzymatically made from amino acids. For example, the neurotransmitter serotonin is made from tryptophan. Other biogenic amines are made from tyrosine, and include the catecholamines dopamine, norepinephrine, and epinephrine. The chemical epinephrine (epi- = “on”; “-nephrine” = kidney) is also known as adrenaline (renal = “kidney”), and norepinephrine is sometimes referred to as noradrenaline. The adrenal gland also produces epinephrine and norepinephrine to be released into the blood stream as hormones, so they can act either as hormones or neurotransmitters.\n\nCholinergic system: This is the system based on acetylcholine. This includes the neuromuscular junction as an example of a cholinergic synapse, but cholinergic synapses are also found in other parts of the nervous system. They are in the autonomic nervous system, as well as distributed throughout the brain.\n\nNeuropeptides: These are neurotransmitter molecules made up of short chains of amino acids connected by peptide bonds. Some neuropeptides are quite short, such as met-enkephalin, which is five amino acids long. Others are long, such as beta-endorphin, which is 31 amino acids long. Both of these are endorphins (endogenous opioids that have analgesic and pleasure-inducing effects). Neuropeptides are often released at synapses in combination with another neurotransmitter, and they also often act as hormones in other systems of the body. Two important neuropeptides that are released by the posterior pituitary gland, and act as hormones in the body, are oxytocin and vasopressin (the latter is also known as anti-diuretic hormone).",
+      "image_alts": []
+    },
+    {
+      "slide_no": 45,
+      "title": "Part 5: Neurotransmission",
+      "body": "Part 5: Neurotransmission\n\nEffect of neurotransmitters is entirely dependent on type of receptors\ne.g., epinephrine and norepinephrine\ncause smooth muscle contraction when binding to α adrenergic receptors\nreduced blood flow to regions such as GI tract\ncause smooth muscle dilation when binding to β adrenergic receptors\nincreases blood flow to regions such as skeletal muscles and the liver\n\nAdrenergic receptors. Credit: TheCenci786, CC BY-SA 4.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "The effect of a neurotransmitter on the postsynaptic element is entirely dependent on the receptor protein. First, if there is no receptor protein in the membrane of the postsynaptic element, then the neurotransmitter has no effect. Second, the depolarizing or hyperpolarizing effect is also dependent on the receptor. \n\nFor example, epinephrine and norepinephrine, which I mentioned are also called adrenaline and noradrenaline (as in this figure), can trigger completely opposite responses in tissues, based on which receptor type is present. As you see, alpha adrenergic receptors cause smooth muscle contraction, while beta adrenergic receptors cause smooth muscle relaxation. This makes sense – when you are in a fight or flight situation, and releasing these hormones, you want to constrict smooth muscle around blood vessels leading to your gastrointestinal system (it is not time to rest and digest). At the same time, you want to dilate blood vessels leading to skeletal muscles (which enable you to either fight or flee) and to the liver (where glycogen is being broken down into glucose for release into the bloodstream, through which it is carried to the brain and skeletal muscles.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 46,
+      "title": "Part 5: Neurotransmission",
+      "body": "Part 5: Neurotransmission\n\nIonotropic receptors\ne.g., nicotinic receptor (acetylcholine) allows an influx of Na+ cations\ne.g., glycine receptor allows an influx of Cl- anions\n\nReceptor Types (a) An ionotropic receptor is a channel that opens when the neurotransmitter binds to it. (b) A metabotropic receptor is a complex that causes metabolic changes in the cell when the neurotransmitter binds to it (1). After binding, the G protein hydrolyzes ATP and moves to the effector protein (2). When the G protein contacts the effector protein, the latter is activated. In the case shown, the effector protein then acts on ATP to generate a second messenger, cAMP (3). The second messenger can then go on to cause changes in the neuron, such as opening or closing ion channels, metabolic changes, and changes in gene transcription.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Neurotransmitters bind to one of two classes of receptors at the cell surface, ionotropic or metabotropic. \n\nIonotropic receptors are ligand-gated ion channels, such as the nicotinic receptor for acetylcholine, which allows an influx of Na+ cations, or the glycine receptor, which allows an influx of Cl- anions.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 47,
+      "title": "Part 5: Neurotransmission",
+      "body": "Part 5: Neurotransmission\n\nMetabotropic receptor:\nG protein-coupled receptor \n(transmembrane receptor protein)\nbinds NT (the first messenger)\nG protein\nGTP hydrolase (splits GTP via hydrolysis)\nenergy used to move to and stimulate/inhibit effector\neffector protein\nusually an enzyme that catalyzes the generation of a new molecule – a second messenger\n\nReceptor Types (a) An ionotropic receptor is a channel that opens when the neurotransmitter binds to it. (b) A metabotropic receptor is a complex that causes metabolic changes in the cell when the neurotransmitter binds to it (1). After binding, the G protein hydrolyzes ATP and moves to the effector protein (2). When the G protein contacts the effector protein, the latter is activated. In the case shown, the effector protein then acts on ATP to generate a second messenger, cAMP (3). The second messenger can then go on to cause changes in the neuron, such as opening or closing ion channels, metabolic changes, and changes in gene transcription.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "A metabotropic receptor involves a complex of proteins that result in metabolic changes within the cell. The receptor complex includes the transmembrane receptor protein (a G protein-coupled receptor), a G protein itself, and an effector protein. The neurotransmitter, referred to as the first messenger, binds to the receptor protein on the extracellular surface of the cell, and the intracellular side of the protein initiates activity of the G protein. The G protein is a guanosine triphosphate (GTP) hydrolase that physically moves from the receptor protein to the effector protein to activate the latter. An effector protein is usually an enzyme that catalyzes the generation of a new molecule, which acts as the intracellular mediator of the signal that binds to the receptor. This intracellular mediator is called the second messenger.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 48,
+      "title": "Part 5: Neurotransmission",
+      "body": "Part 5: Neurotransmission\n\nTwo main types of second messengers are produced by metabotropic receptors\ncAMP by adenylyl cyclase\nIP3 and DAG by phospholipase C\n\nGs-associated G protein-coupled receptor and adenylyl cyclase. Credit: Takanori Nakane, CC BY-SA 3.0, via Wikimedia Commons\n\nGq-associated G protein-coupled receptor and adenylyl cyclase. Credit: Yikrazuul, CC BY-SA 3.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Different receptors use different second messengers. Two common examples of second messengers are cyclic adenosine monophosphate (cAMP) and inositol triphosphate (IP3). The enzyme adenylyl cyclase (an example of an effector protein) makes cAMP; it is stimulated to do so by a Gs (stimulatory) type of G protein. Phospholipase C is the enzyme that makes the second messengers IP3 and DAG; it is stimulated to do so by the Gq category of G protein.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 49,
+      "title": "Part 5: Neurotransmission",
+      "body": "Part 5: Neurotransmission\n\nVarious receptor types lead to changes in activation of cell’s enzymes, especially kinases\nsuch activation alters the cell’s metabolic activity & can alter gene transcription\nresulting protein changes can alter cell’s function, connection to other cells, and serve as a basis for learning & memory\n\nTHOMPSON RIVERS UNIVERSITY | 2024\n\nDNA transcription regulation. Credit: Evrae8, CC BY-SA 4.0, via Wikimedia Commons",
+      "notes": "Second messengers, after they are produced by the effector protein, cause metabolic changes within the cell. These changes are most likely the activation of other enzymes in the cell. In neurons, they often modify ion channels, either opening or closing them. \n\nThese enzymes, as well as those activated by the influx of ions or other receptor types, can also cause changes in the cell, such as the alteration of gene expression in the nucleus, and therefore the increased or decreased synthesis of proteins. In neurons, these kinds of changes are often the basis of stronger connections between cells at the synapse and may be the basis of learning and memory.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 50,
+      "title": "Part 5. Review",
+      "body": "Part 5. Review\n\nWhich of the following is NOT a biogenic amine?\n\ndopamine\n\nserotonin\n\nepinephrine\n\nglycine\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Okay, let’s review again.\n\nWhich of the following is NOT a biogenic amine?",
+      "image_alts": []
+    },
+    {
+      "slide_no": 51,
+      "title": "Part 5. Review",
+      "body": "Part 5. Review\n\nWhich of the following is produced by Gs-associated G protein-coupled receptors?\n\ncAMP\n\ncGMP\n\nIP3\n\nDAG\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "And one final time.\n\nWhich of the following is produced by Gs-associated G protein-coupled receptors?",
+      "image_alts": []
+    },
+    {
+      "slide_no": 52,
+      "title": "End of Unit 17",
+      "body": "End of Unit 17\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "And that is the conclusion of Unit 17.",
+      "image_alts": []
+    }
+  ]
+}

@@ -4,12 +4,11 @@ dist/
 .env.*
 !.env.example
 
-# Source materials — copyrighted course content, not committed
+# Source materials — original copyrighted course files, not committed
 materials/
 
-# Extracted content — derivative of materials, not committed for v1
-# (revisit if/when we move content storage to the repo for deployment)
-content/
+# content/ IS committed (private repo only) so deploys have the per-unit JSON
+# the server needs at runtime. The raw PPTs in materials/ stay out.
 
 # OS
 .DS_Store

@@ -19,6 +19,7 @@ import { URL } from 'node:url';
 import { env } from './env.js';
 import { findOrCreateStudent } from './students.js';
 import { listUnits } from './content.js';
+import { isTeacher } from './auth.js';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LAUNCH_HTML_PATH = join(HERE, '..', 'web', 'launch.html');
@@ -98,12 +99,14 @@ lti.onConnect(async (token: IdToken, req, res) => {
     .join('\n');
 
   const ctxTitle = token.platformContext.context?.title || '';
+  const role = isTeacher(token) ? 'teacher' : 'student';
   const html = loadLaunchHtml()
     .replace('{{DISPLAY_NAME}}', escapeHtml(student.display_name))
     .replace('{{PLATFORM_NAME}}', escapeHtml(token.platformInfo.name || 'Unknown platform'))
     .replace('{{CONTEXT_TITLE_SEP}}', ctxTitle ? ' — ' : '')
     .replace('{{CONTEXT_TITLE}}', escapeHtml(ctxTitle))
     .replace('{{ROLES}}', escapeHtml((token.platformContext.roles || []).join(', ')))
+    .replace('{{ROLE}}', role)
     .replace('{{UNITS_LIST}}', unitsList)
     .replace('{{UNIT_COUNT}}', String(units.length));
 

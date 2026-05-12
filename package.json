@@ -13,8 +13,8 @@
     "ingest:all": "npm run ingest:pptx && npm run ingest:terms && npm run ingest:exam && npm run ingest:textbooks && npm run ingest:build",
     "db:migrate": "tsx src/server/migrate.ts",
     "dev": "tsx watch src/server/index.ts",
-    "build": "tsc -p .",
-    "start": "node dist/server/index.js",
+    "build": "tsc -p . && cp -r src/server/migrations dist/server/migrations && cp -r src/web dist/web",
+    "start": "node dist/server/migrate.js && node dist/server/index.js",
     "tunnel": "~/Downloads/ngrok http --domain=flashcard-rebuilt-junction.ngrok-free.dev 3000",
     "typecheck": "tsc --noEmit"
   },

@@ -1,0 +1,120 @@
+{
+  "unit_id": 8,
+  "title": "Homeostasis",
+  "source_file": "materials/08 Homeostasis - 2025.pptx",
+  "slide_count": 16,
+  "slides": [
+    {
+      "slide_no": 1,
+      "title": "Unit 8:Homeostasis",
+      "body": "Unit 8:Homeostasis\n\nHomeostasis keeps the body’s parameters in balance. Adapted from: free svg, CC BY-SA 2.5, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "THESE NOTES IN THE COURSE PPT FILES ARE SOLELY BACKUP INFORMATION FOR YOU, IN CASE YOU MISS CLASS AND WANT TO KNOW APPROXIMATELY WHAT WAS SAID ABOUT EACH SLIDE. THESE NOTES ARE LARGELY REDUNDANT WITH THE TEXTBOOK, AND THEY ARE NOT REQUIRED READING FOR THE COURSE. \n______________________________________________________\n\nOkay, let’s now move on to Unit 8: Homeostasis.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 2,
+      "title": "Unit Outline",
+      "body": "Unit Outline\n\nPart 1. Homeostasis\nPart 2. Feedback Loops\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "In this unit, we will first examine the concept of homeostasis itself, and then we will cover the feedback loops that your body uses to maintain homeostasis.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 3,
+      "title": "Part 1. Homeostasis",
+      "body": "Part 1. Homeostasis\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Let’s begin with Part 1. Homeostasis.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 4,
+      "title": "Part 1. Homeostasis",
+      "body": "Part 1. Homeostasis\n\nRegulation:\ngas, nutrient, water and salt concentrations\nO2 uses in cellular respiration for ATP production\nCO2 is waste product that makes body fluids acidic\nnutrients provide reactants, enzymes, cofactors & energy\nwater & salts help determine fluid & electrolyte balance, and pH of body fluids\ntemperature\n~37°C needed for proteins to retain shape, and temperature determines speeds of chemical reactions\npressure (e.g., blood)\nconcentrations and rates at which substances move through body are dependent on blood pressure\npressure is influenced by blood volume, diameter of blood vessels, and strength of cardiac muscle contraction\n\nHomeostasis keeps the body’s parameters in balance. Credit: HTGS, CC BY-SA 4.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Homeostasis refers to a relatively stable set of conditions within an organism’s internal environment. Within the human body, maintaining a healthy environment for living cells requires maintaining appropriate conditions in the extracellular fluids for each living cell to be able to function properly. The constancy of an internal environment, with parameters not too low or too high, is important for allowing chemical reactions to take place at rates necessary to maintain the body.\n\nThere are three important conditions that must be met in order for the chemical reactions in the body to occur at the rates necessary for homeostasis. The first condition is that there must be a proper concentration of gases, nutrients, water and salts. The gases involved are oxygen, which is necessary for the process of cellular respiration which produces ATP, and carbon dioxide, which is a waste product of this process, but which must be present in certain amounts for other processes to occur normally, mostly because carbon dioxide makes body fluids more acidic. Nutrients provide reactants, enzymes, cofactors and energy for chemical reactions, while water and salts help determine the fluid balance, electrolyte balance, and the pH of the body.\n\nThe second important condition for homeostasis is an optimum temperature that is about 37°C. The rates of chemical reactions are temperature-dependent, occurring slower at cooler temperatures and faster at warmer temperatures. Additionally, the shapes of proteins (including muscle proteins, enzymes, receptors, and many others) are temperature dependent – if they overheat, they may dissociate and be rendered non-functional.\n\nThe third and final condition is an optimum pressure, for example, blood pressure. The concentrations of various substances in the body and the rates at which these substances move through the body are both dependent on blood pressure. Blood pressure is influenced by the volume of blood in the cardiovascular system, the diameter of the blood vessels and the strength of cardiac muscle contraction.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 5,
+      "title": "Part 1. Homeostasis",
+      "body": "Part 1. Homeostasis\n\nInternal environment of body is the extracellular fluids surrounding cells\nthus, must maintain stable extracellular environment so cells can maintain stable internal one\n\nExtracellular fluid is primarily interstitial fluid, plasma, and lymph. Credit: SEER, Public domain, via Wikimedia Commons\n\nProportions of Total Body Fluid in Each of the Body’s Fluid Compartments. Most of the water in the body is intracellular fluid. The second largest volume is the interstitial fluid, which surrounds cells that are not blood cells.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Homeostasis is maintained within the internal environment of the body. The internal environment is the environment in which cells are found and is thus defined as the fluid inside the body, but outside of cells. The cells of the body are responsible for controlling the composition of the materials that surround them. \n\nIf you recall from earlier units, the three main fluid types within the extracellular compartment are plasma, interstitial fluid, and lymph. Although the extracellular and intracellular compartments are distinct from one another, there is a continual exchange of materials between them. Cells must receive nutrients, have waste materials taken away and exchange gases. Therefore, maintaining a stable extracellular environment also allows for cells to maintain a stable intracellular environment.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 6,
+      "title": "Part 1. Homeostasis",
+      "body": "Part 1. Homeostasis\n\nStressors cause imbalance of internal environment\nexternal\nphysical: e.g., oxygen, temperature, nutrients\ninternal \npsychological: e.g., anger, fear\nphysical: e.g., blood pressure, blood glucose levels\n\nInternal stressors like anger can regulate blood pressure. Credit: Google, Apache License 2.0, via Wikimedia Commons\n\nHigh external temperatures are stressors to homeostasis. Credit: Baluchi5, CC BY-SA 3.0, via Wikimedia Commons.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "A constant internal environment is not easily maintained. The internal environment is continually subjected to disturbances that unless counteracted, would quickly cause a new set of conditions in the body to arise, which could result in illness or death. A stressor is thus any stimulus that causes an imbalance in the internal environment. Stressors may be factors external to the body or from within the body itself.\n\nExamples of external stressors are a lack of oxygen in the environment, which can occur at high altitudes. Or external stressors can include extreme environmental temperatures, such as excessive heat in a desert or excessive cold in the Arctic. With climate change exacerbating the former, both humans and other organisms are experiencing greater temperature stress, which is negatively impacting health.\n\nExamples of internal stressors include rapid changes in blood pressure. For example, hemorrhaging can cause a drop in pressure while anger may raise blood pressure. Similarly, fear can cause mobilization of extra blood glucose, preparing your body for a fight-or-flight situation.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 7,
+      "title": "Part 1. Review",
+      "body": "Part 1. Review\n\nFor the purposes of homeostasis, your internal environment is defined as all of the following, except:\n\nLymph\n\nPlasma\n\nInterstitial Fluid\n\nIntracellular Fluid\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Okay, let’s review.\n\nFor the purposes of homeostasis, your internal environment is defined as all of the following, except:",
+      "image_alts": []
+    },
+    {
+      "slide_no": 8,
+      "title": "Part 2. Feedback Loops",
+      "body": "Part 2. Feedback Loops\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Okay, now on to Part 2: Feedback loops.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 9,
+      "title": "Part 2. Feedback Loops",
+      "body": "Part 2. Feedback Loops\n\nPhysiological parameters have set point\nMaintained by negative feedback loops\nstimulus\nsensor / receptor\ncontrol centre\neffector\nresponse\n\nNegative Feedback Loop. In a negative feedback loop, a stimulus—a deviation from a set point—is resisted through a physiological process that returns the body to homeostasis. (a) A typical negative feedback loop in the body has four basic anatomical parts. (b) Body temperature is regulated by negative feedback.\n\nControl centres in our body function much like a thermostat. Credit: Vincent de Groot - http://www.videgro.net, CC BY-SA 4.0, via Wikimedia Commons.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Maintaining homeostasis requires that the body continuously monitor its internal conditions. From body temperature to blood pressure to levels of certain nutrients, each physiological condition has a particular set point. A set point is the physiological value around which the normal, healthy range fluctuates. For example, the set point for normal human body temperature is approximately 37°C; however, physiological body temperature tends to fluctuate within a few degrees above and below this set point depending on factors such as activity, digestive function, stress, etc. Control centres in the brain and other parts of the body monitor and react to deviations from homeostasis using negative feedback. The control centres act much like a thermostat in your home.\n\nNegative feedback is a mechanism that reverses a deviation from the set point. Thus, if the body (or room) are too warm, negative feedback makes them less warm—that is cools them. Likewise, if the body (or room) are too cold, negative feedback makes them less cold—that is, warms them up.\n\nTherefore, negative feedback maintains body parameters within their normal range. The maintenance of homeostasis by negative feedback goes on throughout the body at all times, and an understanding of negative feedback is thus fundamental to an understanding of human physiology.\n\nFeedback systems have five basic components. A sensor, also referred to a receptor, detects when the stimulus produces a deviation in a physiological value away from the set point. This change in value is reported to the control centre. The control centre is the component in a feedback system that compares the value to the normal range. If the value deviates too much from the set point, then the control centre activates an effector. An effector is the component in a feedback system that produces a response, which in the case of a negative feedback loop causes a return of the physiological value to its normal range.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 10,
+      "title": "Part 2. Feedback Loops",
+      "body": "Part 2. Feedback Loops\n\nNegative feedback examples:\nstimulus: high blood glucose\nsensor & control centre are the same in this example: pancreatic beta cells release insulin\neffector: skeletal muscle, adipocytes, and liver cells\nresponse: effector cells take up the excess glucose, dropping blood glucose to normal levels\nstimulus: low blood glucose\nsensor & control centre: pancreatic alpha cells release glucagon\neffector: liver \nresponse: glycogen broken into glucose, and released into blood\n\nGlucose Homeostasis. Credit: Carogonz11, CC BY-SA 4.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "For example, in the control of blood glucose, specific endocrine cells (the receptors) in the pancreas detect excess glucose (the stimulus) in the bloodstream. The pancreatic beta cells (the control centre) respond to the increased level of blood glucose by releasing the hormone insulin into the bloodstream. The insulin signals skeletal muscle fibres, adipocytes, and liver cells (the effectors) to take up the excess glucose (the response), removing it from the bloodstream. As glucose concentration in the bloodstream drops, the decrease in concentration — the actual negative feedback (outcome) — is detected by pancreatic beta cells, and insulin release stops. This helps to prevent blood sugar levels from continuing to drop below the normal range.\n\nA similar but reverse process occurs when blood sugar is too low, this one involving the hormone glucagon, instead of insulin, released from pancreatic alpha cells.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 11,
+      "title": "Part 2. Feedback Loops",
+      "body": "Part 2. Feedback Loops\n\nNegative feedback examples:\nstimulus: body temperature too high\nsensor: thermoreceptor cells\ncontrol centre: hypothalamus\neffectors: blood vessels, sweat glands, respiratory system\nresponses: \nblood vessels in skin dilate\nsweat glands activated (diaphoresis)\nrespiration depth increases & person may breathe through open mouth – expelling air from core, and increasing evaporation\nstimulus: body temperature too low\nsensor: thermoreceptor cells\ncontrol centre: hypothalamus\neffectors: blood vessels, muscles, thyroid gland, adrenal gland\nresponses:\nblood vessels in skin constrict, reducing flow\nbrain sends random signals to skeletal muscles, causing shivering\nthyroid hormone released, increasing metabolic activity \nadrenal glands release epinephrine, causing glycogen breakdown into glucose – releases metabolic heat and provides energy source for other metabolic processes\n\nTemperature Homeostasis. Adapted from: http://commons.wikimedia.org/w/index.php?title=User:ChancroVet&action=edit&redlink=1, CC0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Humans have a similar temperature regulation feedback system that works by promoting either heat loss or heat gain. \n\nFor instance, when the brain’s temperature regulation centre (in a brain region called the hypothalamus) receives data from the sensors indicating that the body’s temperature exceeds its normal range, it stimulates a cluster of brain cells referred to as the thermoregulatory centre. This stimulation has three major effects:\n\n1. Blood vessels in the skin begin to dilate allowing more blood from the body core to flow to the surface of the skin allowing the heat to radiate into the environment.\n\n2. As blood flow to the skin increases, sweat glands are activated to increase their output—a process known as diaphoresis. As the sweat evaporates from the skin surface into the surrounding air, it takes heat with it.\n\n3. Not shown in the figure, but also a response to excessive heat, is that the depth of respiration increases, and a person may breathe through an open mouth instead of through the nasal passageways. This further increases heat loss from the lungs.\n\nIn contrast to excess heat, activation of the thermoregulatory centre by exposure to cold causes several opposing changes:\n\nBlood flow to the skin is reduced via vasoconstriction, and blood returning from the limbs is diverted into a network of deep veins. This arrangement traps heat closer to the body core and restricts heat loss. \n\nIf heat loss is severe, the hypothalamus triggers an increase in random signals to skeletal muscles, causing them to contract and producing shivering. The muscle contractions of shivering release heat while hydrolyzing ATP. \n\nThe brain triggers the thyroid gland of the endocrine system to release thyroid hormone, which increases metabolic activity and heat production in cells throughout the body. \n\nThe hypothalamus signals to the adrenal glands to release epinephrine (also called adrenaline), a hormone that causes the breakdown of glycogen into glucose, which can be used as an energy source. The breakdown of glycogen into glucose also results in increased metabolic heat production.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 12,
+      "title": "Part 2. Feedback Loops",
+      "body": "Part 2. Feedback Loops\n\nPositive feedback loops do not maintain homeostasis – instead, exacerbate changes\ne.g., childbirth, blood clotting\nin childbirth: \nstimulus: contractions push baby toward cervix (lowest part of uterus)\nsensor: stretch-sensitive nerve cells send messages to the brain\ncontrol centre: brain—causes pituitary gland to release oxytocin into bloodstream\neffectors: uterine myometrium\nresponse: stronger contractions of the smooth muscles in the uterus, causing even greater stretching of the cervix\nagain, stimulates the sensors, even more… etc… etc.. \nstops only when the baby is born\n\nPositive Feedback Loop. Normal childbirth is driven by a positive feedback loop. A positive feedback loop results in a change in the body’s status, rather than a return to homeostasis.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "All of those changes, which brought conditions back toward a set point, were via negative feedback processes. However, the body also exhibits positive feedback—though positive feedback is not used to achieve homeostasis. Quite the reverse, in fact, it exacerbates small changes into larger ones. Why would you want such drastic deviations from a set point? Although this process does not happen often, a few important instances of positive feedback provide important functions. The most famous of these is the process of childbirth.\n\nAs mentioned earlier, positive feedback intensifies a change in the body’s physiological condition rather than reversing it. Positive feedback loops employ the same five basic components as negative feedback loops, with the difference that a deviation from the normal range results in more change, and the system moves farther away from the normal range. Positive feedback in the body is normal only when there is a definite end point. Childbirth, blood clotting and micturition (the act of urinating) are some examples of physiological positive feedback loops. Others include aspects of immunity, in female reproductive cycles, and at the level of cellular function.\n\nChildbirth at full term is an example of a situation in which the maintenance of the existing body state is not desired. Enormous changes in the mother’s body are required to expel the baby at the end of pregnancy. And the events of childbirth, once begun, must progress rapidly to a conclusion or the life of the mother and the baby are at risk. The extreme muscular work of labor and delivery are the result of a positive feedback system.\n\nThe first contractions of labor (the stimulus) push the baby toward the cervix (the lowest part of the uterus). The cervix contains stretch-sensitive nerve cells that monitor the degree of stretching (the sensors). These nerve cells send messages to the brain, which in turn causes the pituitary gland at the base of the brain (the control centre) to release the hormone oxytocin into the bloodstream. Oxytocin causes stronger contractions of the smooth muscles in the uterus (the effectors), pushing the baby further down the birth canal. This causes even greater stretching of the cervix (the response), which again stimulates the sensors, even more this second time. The cycle of stretching, oxytocin release, and increasingly more forceful contractions stops only when the baby is born. At this point, the stretching of the cervix halts, stopping the release of oxytocin.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 13,
+      "title": "Part 2. Feedback Loops",
+      "body": "Part 2. Feedback Loops\n\nPositive feedback example: blood clotting in response to penetrating wound\nstarts when endothelial cells release signaling ligands that recruit and activate platelets\nstimulus: signaling ligands\nsensor: platelet cell receptors\ncontrol centre: platelets\neffectors: vesicles\nresponse: platelets release clotting substances that recruit and activate even more platelets\netc.\n\nPlatelet Response Animation. Credit: Bbowen23, CC BY-SA 4.0, via Wikimedia Commons\n\nin animation, the signaling ligands (L) signal for platelets (P) to migrate towards wound (Site A) – as more P gather, they produce more L, attracting more P, etc.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "A second example of positive feedback centres on reversing extreme damage to the body. Following a penetrating wound, the most immediate threat is excessive blood loss. Less blood circulating means reduced blood pressure and reduced perfusion of blood to the brain and other vital organs. If perfusion is severely reduced, vital organs will shut down and the person will die. The body responds to this potential catastrophe by releasing substances in the injured blood vessel wall that begin the process of blood clotting. As each step of clotting occurs, it stimulates the release of more clotting substances. This accelerates the processes of clotting and sealing off the damaged area. Clotting is contained in a local area based on the tightly controlled availability of clotting proteins. This is an adaptive, life-saving cascade of events.\n\u000bIn this animation, the signaling ligands, denoted by the letter L, signal for platelets (P) to migrate towards the wound (which is Site A). As more platelets gather around the opening, they produce more ligands to amplify the response. The platelets congregate around the wound in order to create a cap to stop blood flow out of the tissue.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 14,
+      "title": "Part 2. Feedback Loops",
+      "body": "Part 2. Feedback Loops\n\nFeed-forward mechanisms also exist, where the setpoint is changed in anticipation of a future event where homeostasis must be maintained\ne.g., saliva, HCl, and insulin are released early, in anticipation of a meal\ne.g., bear increases caloric intake, in anticipation of winter\n\nTesting Pizza Napoletana after baked. Credit: Enricomariacosta.75, CC BY-SA 4.0, via Wikimedia Commons\n\nBear 128 'Grazer’. Credit: Katmai National Park and Preserve, Public domain, via Wikimedia Commons",
+      "notes": "Feed-forward mechanisms also exist, where the setpoint for a given physiological parameter is changed in anticipation of a future event. An example of this is the early release of saliva, hydrochloric acid, and insulin, in anticipation of a meal. On a longer time-scale, a bear will increase caloric intake during the late fall, to add fat stores, in anticipation of winter.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 15,
+      "title": "Part 2. Review",
+      "body": "Part 2. Review\n\nWhich of the following is an example of positive feedback?\n\nShivering when cold, thus raising the body temperature.\n\nBreaking down glycogen when blood sugar is low, thus increasing blood sugar.\n\nReleasing more milk from the breast when a child suckles, thus causing more suckling.\n\nReducing thyroid hormone release when the body is warm, thus lowering metabolism.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Let’s review again.\n\nWhich of the following is an example of positive feedback?",
+      "image_alts": []
+    },
+    {
+      "slide_no": 16,
+      "title": "End of Unit 8",
+      "body": "End of Unit 8\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "And that is the conclusion of Unit 8.",
+      "image_alts": []
+    }
+  ]
+}

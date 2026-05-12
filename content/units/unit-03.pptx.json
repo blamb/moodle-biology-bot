@@ -1,0 +1,260 @@
+{
+  "unit_id": 3,
+  "title": "Biochemistry",
+  "source_file": "materials/03 Biochemistry - 2025.pptx",
+  "slide_count": 36,
+  "slides": [
+    {
+      "slide_no": 1,
+      "title": "Unit 3:Biochemistry",
+      "body": "Unit 3:Biochemistry\n\nBiochemistry. Friedrich Wöhler observes the synthesis of urea. Credit: Bensaccount, Public domain, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "THESE NOTES IN THE COURSE PPT FILES ARE SOLELY BACKUP INFORMATION FOR YOU, IN CASE YOU MISS CLASS AND WANT TO KNOW APPROXIMATELY WHAT WAS SAID ABOUT EACH SLIDE. THESE NOTES ARE LARGELY REDUNDANT WITH THE TEXTBOOK, AND THEY ARE NOT REQUIRED READING FOR THE COURSE. \n______________________________________________________\n\nWe now move on to Unit 3: Biochemistry.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 2,
+      "title": "Unit Outline",
+      "body": "Unit Outline\n\nPart 1. Chemistry of carbon\nPart 2. Carbohydrates\nPart 3. Lipids\nPart 4. Proteins\nPart 5. Nucleotides and nucleic acids\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "In this unit, we will begin by examining the chemistry of carbon, and we will then move on to an examination of carbohydrates, lipids, proteins, and finally nucleotides and nucleic acids.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 3,
+      "title": "Part 1. Chemistry of Carbon",
+      "body": "Part 1. Chemistry of Carbon\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Let’s start with Part 1. Chemistry of Carbon.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 4,
+      "title": "Part 1. Chemistry of Carbon",
+      "body": "Part 1. Chemistry of Carbon\n\nCarbon forms the backbone of many organic compounds\ncarbon skeleton: covalently bonded carbon atom chains\ncovalent bonds (with H, O, N, etc.) allow carbon to complete valence shell\n\nUnit 1, Figure 3b. Electron Shells. Electrons orbit the atomic nucleus at distinct levels of energy called electron shells. The electrons of carbon completely fill its first electron shell, but only half-fills its second.\n\nFischer projection of D-glucose. Credit: Hmxhmx at English Wikipedia, Public domain, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "If you recall, carbon forms the backbone of many organic compounds. Before we can move on to our discussion of these molecules, we need to first understand the chemistry of carbon.\n\nRecall that carbon atoms have four electrons in their valence shell, and that the octet rule dictates that atoms tend to react in such a way as to complete their valence shell with eight electrons. Carbon atoms do not complete their valence shells by donating or accepting four electrons. Instead, they readily share electrons via covalent bonds.\n\nWhen carbon atoms share electrons with other carbon atoms, they can form long carbon chains referred to as a carbon skeleton. In organic compounds, at least some of these carbons also share electrons with hydrogen atoms. Carbons are often also covalently bonded with oxygen and nitrogen atoms.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 5,
+      "title": "Part 1. Chemistry of Carbon",
+      "body": "Part 1. Chemistry of Carbon\n\nFunctional group:\ncovalently bonded atoms that act as a single unit in chemical reactions\n5 important functional groups in human physiology are shown here:\n\nTable 1: Functional Groups Important in Human Physiology\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Sometimes, these groups of covalently bonded atoms form what is known as a functional group. A functional group, as its name implies, tends to function as a single unit within chemical reactions.\n\nThe five important functional groups in human physiology are shown here, in Table 1.\n\nHydroxyl groups (-OH) are components of all four major classes of organic compounds that we will discuss in this unit. Note that you have seen these already. If you add another hydrogen to a hydroxyl group, you get water, H20. As such, hydroxyl groups are part of dehydration synthesis and hydrolysis reactions. Hydroxyl groups are also polar, as is water, and can thus be involved in hydrogen bonding.\n\nCarboxyl groups (-COOH) are components of acids, as we shall discuss. Amino groups (NH2) are components of amino acids—the individual units that compose proteins.  Methyl groups (-CH3) are components of fatty acids. And finally, phosphate groups (-PO42-) are components of all phospholipids and nucleotides. We will discuss all of these in turn.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 6,
+      "title": "Part 1. Chemistry of Carbon",
+      "body": "Part 1. Chemistry of Carbon\n\nCarbon often forms macromolecules: covalently bonded large molecules\nmonomers can be linked to form polymers (repeating strings; a subset of macromolecules)\n\nUnit 2, Figure 1: Dehydration Synthesis and Hydrolysis. Monomers, the basic units for building larger molecules, form polymers (two or more chemically-bonded monomers). (a) In dehydration synthesis, two monomers are covalently bonded in a reaction in which one gives up a hydroxyl group and the other a hydrogen atom. A molecule of water is released as a byproduct during dehydration reactions. (b) In hydrolysis, the covalent bond between two monomers is split by the addition of a hydrogen atom to one and a hydroxyl group to the other, which requires the contribution of one molecule of water.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Carbon’s affinity for covalent bonding tends to lead to its formation of large, complex molecules. We refer to these large molecules as macromolecules.\n\nSome macromolecules are also referred to as polymers. Poly means many. Polymers are thus longs strings of repeating single units, or monomers. Monomers are joined together by dehydration synthesis, which gives off water as a byproduct. On the flip side, hydrolysis involves splitting a polymer into individual monomers. You will recall this figure from Unit 2. Part (a) shows monomers being linked into a polymer via dehydration synthesis. Part (b) shows a polymer being hydrolyzed to two monomers.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 7,
+      "title": "Part 1. Review",
+      "body": "Part 1. Review\n\nWhich of the following is the chemical formula of a methyl group?\n\n-OH\n\n-COOH\n\n-NH2\n\n-CH3\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Okay, let’s review. \n\nWhich of the following is the chemical formula of a methyl group?",
+      "image_alts": []
+    },
+    {
+      "slide_no": 8,
+      "title": "Part 1. Review",
+      "body": "Part 1. Review\n\nWhich of the following is the chemical formula of an amino group?\n\n-OH\n\n-COOH\n\n-NH2\n\n-CH3\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "And one more.\n\nWhich of the following is the chemical formula of an amino group?",
+      "image_alts": []
+    },
+    {
+      "slide_no": 9,
+      "title": "Part 2. Carbohydrates",
+      "body": "Part 2. Carbohydrates\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Okay, now on to Part 2. Carbohydrates",
+      "image_alts": []
+    },
+    {
+      "slide_no": 10,
+      "title": "Part 2. Carbohydrates",
+      "body": "Part 2. Carbohydrates\n\nCarbohydrate:\ncarbon and water (“hydrate”)\n(CH20)n with some modification\npresence of -OH groups makes them polar\ndissolve in water\ndue to water bonding, heavy to store (fat is more efficient)\nMonosaccharides\nindividual sugar units\nhexose sugars: glucose, fructose, galactose\npentose sugars: deoxyribose, ribose\n\nFigure 1. Five Important Monosaccharides. Different groups of monosaccharides are defined by the number of carbon atoms in their molecular structure. In the examples shown, the hexoses each contain six carbon atoms in their molecular structure, whereas the pentoses each contain five carbon atoms. Please note that you do not have to draw or memorize the exact structures of these carbohydrates—just know that they are 5- or 6-carbon ring molecules composed of carbon, hydrogen, and oxygen.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "As you can guess from its name, a carbohydrate is a molecule composed of carbon (the carbo part of the name), and hydrogen, as well as oxygen (the hydrate, or water, part of the name). Most “generic” carbohydrates contain two hydrogens for every oxygen, just like we see in water, H20. In fact, we can denote a “generic” carbohydrate as repeating units of (CH20). Like water, the presence of polar hydroxyl groups makes these carbohydrates polar molecules. And because they are polar, they can interact with, and thus dissolve in water. Note that these carbohydrates are all sugars, or more officially saccharides, and we know that sugar can dissolve in water.\n\nMonosaccharides are the monomers of carbohydrates. Disaccharides (di- = “two”) are made up of two monomers. Polysaccharides are the polymers, and can consist of hundreds to thousands of monomers. \n\nYou have likely heard of glucose, a monosaccharide that can be used to generate ATP in your body. You often obtain glucose from foods you eat, including plants. Fructose is a similar molecule that is also often found in plants—have you heard of high fructose corn syrup? Galactose is another monosaccharide. It is part of the disaccharide lactose, which is found in milk and milk products. \n\nGlucose, fructose, and galactose are all hexose sugars, meaning that they contain six carbon atoms. The other two monosaccharides that you see in this figure, deoxyribose and ribose—constituents of your DNA and RNA respectively—are pentose sugars, containing five carbons each.\n\nPlease note that you do not have to draw or memorize the exact structures of these carbohydrates—just know that they are 5- or 6-carbon ring molecules composed of carbon, hydrogen, and oxygen.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 11,
+      "title": "Part 2. Carbohydrates",
+      "body": "Part 2. Carbohydrates\n\nDisaccharides:\ntwo monosaccharides linked by a glycosidic bond\nlactose combines galactose and glucose\nsucrose—or table sugar—is glucose and fructose\nmaltose (or malt sugar) is a linkage of two glucose molecules\n\nFigure 2. Three Important Disaccharides. All three important disaccharides are formed by dehydration synthesis.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "So here is an image of the two disaccharides that I mentioned on the last slide, plus one more: sucrose, lactose, and maltose. \n\nLactose is produced by a condensation reaction (remember that this is the other term for dehydration synthesis), which combines galactose and glucose. Likewise, sucrose—or table sugar—is formed by a condensation reaction involving glucose and fructose. Maltose (or malt sugar, for all you Ovaltine fans) is a linkage of two glucose molecules. The bonds between these pairs of monosaccharides is called a glycosidic bond, since glycol means sugar. You can remember this by thinking of a sugar (“glyco”) on each side.\n\nYour body cannot use these sugars in their disaccharide forms, and must thus split them into their component monosaccharides via hydrolysis.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 12,
+      "title": "Part 2. Carbohydrates",
+      "body": "Part 2. Carbohydrates\n\nPolysaccharides:\nthree or more monosaccharides linked by a glycosidic bond\nstarches – easy to digest plant sugar polymers\ncellulose – indigestible plant sugar polymers\nglycogen – body’s store of excess glucose; little obtained from diet\ncarbs mainly provide energy; also structural elements of DNA, RNA; also help form glycocalyx - coating on cells’ membranes that ID cells as own and not pathogen/diseased\n\nFigure 3. Three Important Polysaccharides. Three important polysaccharides made of glucose are starches, glycogen, and fibre.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Polysaccharides can contain a few to a thousand or more monosaccharides.\n\nHere you see three polysaccharides that are important to your body.\n\nStarches are polymers of glucose that are relatively easy for you to digest. We obtain starches from plants in our diet. Cellulose is another polysaccharide that plants produce, and it is also an important part of our diets. However, unlike with starches, our bodies are incapable of digesting cellulose. Hence, cellulose passes right through us—this is the reason why cellulose is often referred to as dietary fibre, and why it is important to eat fibre to stay regular (bathroom-wise). Additionally, fibre in your diet helps you feel full, and promotes the growth of beneficial microbiota in your gut.\n\nThe third polysaccharide on this list is glycogen. You do not gain much glycogen through your dietary intake. Instead, your body stores its own excess glucose in long polymers of glycogen – primarily within the liver, and within your muscle cells.\n\nAs you may have already gleaned from our discussion, the main functions of carbohydrates in the body are as molecules that provide energy, as well as structural elements of your deoxyribonucleic acids, or DNA, and your ribonucleic acids, or RNA. Short carbohydrate chains also form the glycocalyx, a coating of carbohydrates found on your cells’ membranes; these carbohydrates are part of your cells’ identification mechanisms, which allows your immune system to distinguish your own cells from cells of pathogenic invaders, as well as healthy cells apart from diseased cells.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 13,
+      "title": "Part 2. Review",
+      "body": "Part 2. Review\n\nWhich of the following is covalently linked with glucose to form sucrose, a.k.a., table sugar?\n\nGlucose\n\nFructose\n\nGalactose\n\nRibose\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Let’s review. \n\nWhich of the following is covalently linked with glucose to form sucrose, a.k.a., table sugar?",
+      "image_alts": []
+    },
+    {
+      "slide_no": 14,
+      "title": "Part 2. Review",
+      "body": "Part 2. Review\n\nWhich of the following is the primary polymer of stored carbohydrates in the body?\n\nGlycogen\n\nStarch\n\nGlucose\n\nCellulose\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "And one more.\n\nWhich of the following is the primary polymer of stored carbohydrates in the body?",
+      "image_alts": []
+    },
+    {
+      "slide_no": 15,
+      "title": "Part 3. Lipids",
+      "body": "Part 3. Lipids\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Now on to Part 3. Lipids",
+      "image_alts": []
+    },
+    {
+      "slide_no": 16,
+      "title": "Part 3. Lipids",
+      "body": "Part 3. Lipids\n\nLipids\nNonpolar organic compounds made primarily of hydrocarbons\ndo not dissolve in water, though emulsions (suspended droplets) are possible (e.g., milk)\nTriglycerides\nA glycerol backbone, with three fatty acid chains attached via dehydration synthesis\n\nFigure 4. Triglycerides. Triglycerides are composed of three fatty acids attached to glycerol via dehydration synthesis. Notice that glycerol gives up individual hydrogen atoms, and the carboxyl groups on each fatty acid give up a hydroxyl group.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Lipids are nonpolar organic compounds that are made up primarily of hydrocarbons. Because they are nonpolar, they do not bond with and thus dissolve in water. However, if you sufficiently mix lipids with water, it can form an emulsion—a mixture where tiny droplets of one liquid are dispersed within the other liquid. For example, milk is an emulsion whereby tiny droplets of milk fat are dispersed in water.\n\nOne of the most common types of dietary lipid is a triglyceride. Triglycerides are what one usually refers to when they mention “fat”. Triglycerides are composed of two types of molecules, covalently bonded to one another. First, there is a glycerol backbone. Attached to the glycerol are three fatty acids—long, hydrophobic chains of hydrocarbons. The fatty acids are attached via dehydration synthesis.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 17,
+      "title": "Part 3. Lipids",
+      "body": "Part 3. Lipids\n\nSaturated fatty acids\nNo double bonds; solid at room temperature\nMono- and Polyunsaturated fatty acids\nOne and more than one double bond, respectively; liquid at room temperature\nRoles of fat: energy storage, absorbs fat-soluble vitamins, insulation, cushioning\n\nBear 128 'Grazer’. Credit: Katmai National Park and Preserve, Public domain, via Wikimedia Commons\n\nFigure 5. Fatty Acid Shapes. The level of saturation of a fatty acid affects its shape. (a) Saturated fatty acid chains are straight. (b) Unsaturated fatty acid chains are kinked.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Fatty acid chains that have no double carbon bonds are called saturated fatty acids. These straight, rigid chains pack tightly together and are solid or semi-solid at room temperature—think butter or fat on cuts of meat.\n\nFatty acids with one double carbon bond are kinked at that bond. These structures are called monounsaturated fatty acids. If they contain more than one double bond, they are called polyunsaturated fatty acids. Both monounsaturated and polyunsaturated fatty acids are kinked in structure and thus unable to pack together tightly; they are thus liquid at room temperature—think olive oil; these oils are usually mixtures of both mono- and polyunsaturated fatty acids.\n\nTriglycerides are a major fuel source for the body and are used when glucose stores are low, during extended fasting conditions, or during prolonged exercise. Much of our caloric intake is converted to triglycerides for storage as body fat; fat is a more efficient form of energy storage than carbohydrates or proteins because is it not water soluble and is thus stored “pure”, without bonded water molecules. Storing the same amount of nutrients within, let’s say, glycogen would be less efficient as the glycogen would be bonded to water and would be heavier to carry around in your body. Thus, we only maintain limited amounts of glycogen, which can be quickly broken down to glucose, and store the rest of our calories as fat.\n\nFat also aids our bodies in two other ways. It facilitates the absorption and transport of fat-soluble vitamins (A, D, E, and K), it acts as insulation to retain body heat, and it helps to cushion the body’s bones and internal organs from trauma.\n\nTriglycerides are thus very important compounds in our bodies, as well as the bodies of animals around us. For instance, bears will add body fat before overwintering, as it will provide nutrient stores during times of fasting, as well as insulation against the cold.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 18,
+      "title": "Part 3. Lipids",
+      "body": "Part 3. Lipids\n\nPhospholipids\na polar phosphate “head”\nglycerol\na nonpolar “tail” of two fatty acid chains\nSelf-assemble into bilayers (cells, vesicles)\nForm outer layer of lipoproteins\n\nPhospholipid bilayer. Credit: Ties van Brussel, Copyrighted free use\n\nLipoprotein. Credit: AntiSense, CC BY-SA 3.0, via Wikimedia Commons\n\nFigure 6. Other Important Lipids. (a) Phospholipids are composed of two fatty acids, glycerol, and a phosphate group.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Phospholipids are similar to triglycerides, however instead of having three fatty acids attached to a glycerol molecule, phospholipids have a glycerol bound to only two fatty acids, and the glycerol is bonded to a phosphate group. The phosphate group makes up the polar—and thus hydrophilic—“head” of the phospholipid, while the fatty acid chains form the nonpolar, hydrophobic “tail”. The functional result of this structure is that phospholipids assemble into bilayers, such as around a cell, forming the basis of the cell’s membrane; the polar heads interact with the intracellular and interstitial fluids, on the inside and outside of the cell, respectively, while the nonpolar tails interact with one another, forming the inside of the bilayer.\n\nPhospholipids also form the membranes around a cell’s vesicles and its nucleus. Phospholipids also act as the outer layer of a lipoprotein. The polar heads of the phospholipids allows the lipoprotein to travel within the water-based plasma of the blood, while the hydrophobic tails interact with the packaged triglycerides and cholesterol found on the inside.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 19,
+      "title": "Part 3. Lipids",
+      "body": "Part 3. Lipids\n\nGlycolipid\nsugar-fat compounds found in the cell membrane\nalong with glycoproteins are part of glycocalyx\naid in cellular recognition\nLipoproteins\npackages that transport triglycerides\nsubtypes referred to as “good” and “bad” cholesterol\n\nDiagram of ABO blood groups. Credit: InvictaHOG, Public domain, via Wikimedia Commons\n\nA glycolipid. Credit: Wpcrosson, CC BY-SA 4.0, via Wikimedia Commons\n\nLipoprotein particles are composed of a lipid core containing cholesteryl esters and triglycerides, and a surface coat of phospholipids, unesterified cholesterol and apolipoproteins. Credit: AntiSense, CC BY-SA 3.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Fatty acids are also components of glycolipids, which are sugar-fat compounds found in the cell membrane. These are part of the glycocalyx mentioned earlier in our discussion of carbohydrates. The glycolipids and glycoproteins play a role in immune surveylance. For instance, when transfusing blood, you must match donor and recipient blood types, as you do not want to introduce blood cells with the wrong glycolipids and glycoproteins sugar residue (labelled as A or B) to a recipient, or the blood may be rejected by the recipient’s immune system.\n\nAnother class of lipid compounds, lipoproteins, are particles in which triglycerides and cholesterol are packaged in phospholipid and protein envelopes for transport in body fluids—the triglycerides and other lipids are hydrophobic, so they cannot just dissolve in the blood—they have to be transported. We’ll talk more about these later, but for now I’ll just mention that certain types of lipoproteins are what people colloquially refer to as “good” or “bad” cholesterol.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 20,
+      "title": "Part 3. Lipids",
+      "body": "Part 3. Lipids\n\nSteroids\nreferred to as sterols\ncholesterol has polar hear, nonpolar body\ncholesterol is the basis for:\nbile acids\nsteroid hormones:\nprogesterone\ntestosterone\nestradiol\ncortisol\netc.\n“good” and “bad” cholesterol are not actually forms of cholesterol but are lipoproteins\n\nFigure 6. Other Important Lipids. (b) Sterols are ring-shaped lipids. Shown here is cholesterol.\n\nLipoprotein particles are composed of a lipid core containing cholesteryl esters and triglycerides, and a surface coat of phospholipids, unesterified cholesterol and apolipoproteins. Credit: AntiSense, CC BY-SA 3.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "A steroid compound (referred to as a sterol) has as its foundation a set of four hydrocarbon rings bonded to a variety of other atoms and molecules. The most important contribution to human structure and function is the sterol cholesterol, which is synthesized by the liver and is also present in most animal-based foods. Like other lipids, cholesterol’s hydrocarbons make it hydrophobic; however, it has a polar hydroxyl head that is hydrophilic. Cholesterol is an important component of bile acids, compounds that help emulsify dietary fats to prepare them for digestion—that is, break up large globules into small droplets. Cholesterol is also a building block of many hormones, including ones that you have likely heard of, such as progesterone, estradiol, testosterone, and cortisol.\n\nAs you can see here, cholesterol is packaged—along with triglycerides—for transport within lipoproteins. Hence, “good” and “bad” cholesterol are not actually forms of cholesterol. Cholesterol is just cholesterol, while good and bad cholesterol lipoproteins differ in their composition and thus effects on the body. We will cover topics such as nutrients and bile acids in more detail, within the second course in this two-course sequence.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 21,
+      "title": "Part 3. Lipids",
+      "body": "Part 3. Lipids\n\nProstaglandins\nlipid molecules derived from fatty acid chains that are also hydrophobic\nact as hormone-like signaling molecules (act locally, not via blood)\ne.g., omega-3 fatty acids found in fish\nhelp regulate aspects of blood pressure and inflammation\nothers sensitize nerves to pain, so nonsteroidal anti-inflammatory drugs (NSAIDs) like ibuprofin works by reducing the effects of prostaglandins\n\nFigure 6. Other Important Lipids. (c) Prostaglandins.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Finally, prostaglandins are lipid molecules derived from fatty acid chains that are also hydrophobic, and act as hormone-like signaling molecules. We often say hormone-like, because they tend to act locally at sites of release, whereas hormones like steroids travel through the bloodstream to distant parts of your body. One reason that the omega-3 fatty acids found in fish are beneficial is that they stimulate the production of certain prostaglandins that help regulate aspects of blood pressure and inflammation, and thereby reduce the risk for heart disease. Prostaglandins also sensitize nerves to pain. One class of pain-relieving medications called nonsteroidal anti-inflammatory drugs (NSAIDs) works by reducing the effects of prostaglandins.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 22,
+      "title": "Part 3. Review",
+      "body": "Part 3. Review\n\nWhich of the following denotes this fatty acid?\n\nCalendic Acid. Credit: Jü, Public domain, via Wikimedia Commons\n\nSaturated\n\nMonounsaturated\n\nTrans-unsaturated\n\nPolyunsaturated\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Let’s review. \n\nWhich of the following denotes this fatty acid?",
+      "image_alts": []
+    },
+    {
+      "slide_no": 23,
+      "title": "Part 3. Review",
+      "body": "Part 3. Review\n\nWhich of the following is a component of cell membranes?\n\nPhospholipid\n\nProstaglandin\n\nLipoprotein\n\nSteroid\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "And one more.\n\nWhich of the following is a component of cell membranes?",
+      "image_alts": []
+    },
+    {
+      "slide_no": 24,
+      "title": "Part 4. Proteins",
+      "body": "Part 4. Proteins\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Let’s now turn to Part 4: Proteins.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 25,
+      "title": "Part 4. Proteins",
+      "body": "Part 4. Proteins\n\nProteins\nchains of amino acids linked by covalent bonds called peptide bonds\nlike carbs and lipids, contain C, H and O, but also contain N\npresent in meat, but also in many other dietary items\npart of muscles, enzymes, antibodies, hormones, etc.\nglycoproteins (proteins attached sugars) are part of your glycocalyx, along with the previously discussed glycolipids\ncan serve as last-measure energy source, but causes body wasting\n\nProtein. Proteins are chains of amino acids, represented here as circles. Credit: David Kabelik, CC0\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Proteins are organic molecule polymers made up of nitrogen-containing monomers called amino acids. Thus, while carbohydrates and lipids are composed of hydrocarbons and oxygen, proteins contain these too, but they also contain nitrogen. \n\nThe amino acids within a protein chain are linked by peptide bonds—this is the term for a covalent bond between amino acids. Some of the amino acids in protein chains can also interact with one another via other types of bonding, causing proteins to deviate from a straight line, and to form complex structures. We’ll get to protein structures shortly.\n\nWhen you think of proteins in your diet, you often think of consuming meat; however, many other dietary items also contain protein. Similarly, you might associate proteins with your own muscle tissues, but in fact, proteins are critical components of all tissues and organs. Proteins not only make up the contractile elements of your muscles, but they also make up your body’s enzymes and receptors, antibodies, many hormones, the keratin in your skin and nails, the collagen in your skin and bones, and so on and so forth.\n\nJust like with glycolipids, glycoproteins (proteins attached sugars) are part of your glycocalyx, and aid in immune function.\n\nThe body can use proteins for energy when carbohydrate and fat intake and storage is inadequate, such as during long fasting periods, or even during marathon runs. However, since there is no storage site for protein except functional tissues, using protein for energy causes tissue breakdown, and results in body wasting.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 26,
+      "title": "Part 4. Proteins",
+      "body": "Part 4. Proteins\n\nAmino acids\namino acids composed of:\na hydrogen atom\nan alkaline (basic) amino group (NH2) \nan acidic carboxyl group, (COOH)\na variable group (a.k.a., side chain / R-group)\ndetermines amino acid identity \ncan be polar or nonpolar\n20 amino acids used to build all proteins in body\nbody can synthesize most amino acids; however, some have to be consumed in the diet: essential amino acids\n\nFigure 7. Structure of an Amino Acid. The side chain, designated “R”, differs between specific amino acids and is composed of one or more hydrogen, carbon, oxygen, nitrogen, and/or sulfur atoms.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Each of the protein’s amino acids is itself a molecule composed of an amino group and a carboxyl group, together with a variable side chain. Just 20 different amino acids contribute to nearly all of the thousands of different proteins important in human structure and function. Body proteins contain unique combinations of these amino acids. \n\nAll 20 of these amino acids share a similar structure, which can be seen in this figure. All consist of a central carbon atom to which the following are bonded:\n-a hydrogen atom\n-an alkaline (otherwise known as basic) amino group, NH2 \n-an acidic carboxyl group, COOH\n-and a variable group\n\nThe variable group—which is also referred to as a side chain or R-group—is what distinguishes one amino acid from another. This group can vary in size and can be polar or nonpolar, giving each amino acid its unique characteristics.\n\nYour body can synthesize most of the amino acids from components of other molecules; however, some cannot be synthesized and have to be consumed in the diet. These are known as the essential amino acids.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 27,
+      "title": "Part 4. Proteins",
+      "body": "Part 4. Proteins\n\nPeptide\n~2-20 amino acids\nPolypeptide\n~20-100 amino acids\nProtein\n~>100 amino acids\n\nFigure 8. Peptide Bond. Different amino acids join together to form peptides, polypeptides, or proteins via dehydration synthesis. The bonds between the amino acids are peptide bonds.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "As with many of the covalent bonds that you have seen to this point, the peptide bonds between amino acids form via dehydration synthesis.\n\nThe term peptide also refers to short chains of amino acids (approximately from 2 to 20 amino acids in length). Longer peptides (from approximately 20 to 100 amino acids) are referred to as polypeptides. Longer chains are called proteins. Please don’t worry about precise length cut-offs. You only have to know their approximate sizes and that all three terms refer to chains of amino acids, and thus share many properties.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 28,
+      "title": "Part 4. Proteins",
+      "body": "Part 4. Proteins\n\nPrimary structure: linear chain\nSecondary structure: α-helices and β-sheets\n(hydrogen bonds; helices are still 2-D ribbons)\nTertiary structure: three-dimensional\n(due to various non-covalent bonds)\nQuaternary structure: >1 tertiary structures\n\nFigure 9. The Shape of Proteins. (a) The primary structure is the sequence of amino acids that make up the polypeptide chain. (b) The secondary structure, which can take the form of an alpha-helix or a beta-pleated sheet, is maintained by hydrogen bonds between amino acids in different regions of the original polypeptide strand. (c) The tertiary structure occurs as a result of further folding and bonding of the secondary structure. (d) The quaternary structure occurs as a result of interactions between two or more tertiary subunits. The example shown here is hemoglobin, a protein in red blood cells which transports oxygen to body tissues.\n\nProtein Secondary Structures. Credit: Thomas Shafee, CC BY-SA 4.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "The sequence of amino acids that comprises a protein also helps to determine its shape and thus its function. \n\nThe amino acid sequence itself is called the primary structure of the protein. It is denoted as a linear chain.\n\nAlthough some short peptides and polypeptides exist as linear chains, most polypeptides and proteins are twisted or folded into more complex secondary structures due to interactions between amino acids with different properties at different regions of the chain. The most common secondary structure is a spiral called an alpha-helix. If you were to take a length of string and simply twist it into a spiral, it would not hold that shape. Similarly, a strand of amino acids could not maintain a stable spiral shape without the help of hydrogen bonds, which create bridges between different regions of the strand. Less commonly, a polypeptide chain can form a flat beta-pleated sheet, usually referred to simply as a beta-sheet.\n\nThe secondary structure of proteins further folds into a compact three-dimensional shape, referred to as the protein’s tertiary structure. For a mnemonic, think 3-dimensional tertiary structure. Note that an alpha-helix may look 3-dimensional, but it is really just a long, flat, 2-dimensional ribbon.\n\nOften, two or more separate polypeptides bond to form an even larger protein with a quaternary structure. To remember this structure type, think fourth dimension: linking multiple 3-dimensional objects together. Hemoglobin, the red blood cell protein that helps to transport oxygen throughout your body, is an example of a quaternary structure, as it is made up of four tertiary polypeptides, called heme groups.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 29,
+      "title": "Part 4. Review",
+      "body": "Part 4. Review\n\nAlpha-helices are what type of structure?\n\nPrimary\n\nSecondary\n\nTertiary\n\nQuaternary\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Let’s review. \n\nAlpha-helices are what type of structure?",
+      "image_alts": []
+    },
+    {
+      "slide_no": 30,
+      "title": "Part 5. Nucleotides and Nucleic Acids",
+      "body": "Part 5. Nucleotides and Nucleic Acids\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "And finally, let’s turn to Part 5: Nucleotides and Nucleic Acids",
+      "image_alts": []
+    },
+    {
+      "slide_no": 31,
+      "title": "Part 5: Nucleotides and Nucleic Acids",
+      "body": "Part 5: Nucleotides and Nucleic Acids\n\nA nucleotides is an organic compound that contains:\n1+ phosphate groups\nPentose sugar (deoxyribose or ribose)\nN-containing base:\nAdenine (in DNA & RNA)\nCytosine (in DNA & RNA)\nGuanine (in DNA & RNA)\nThymine (in DNA)\nUracil (in RNA)\n\nA nucleotide. Credit: RWhitwam, CC BY-SA 4.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Along with carbohydrates, lipids, and proteins, a fourth group of organic compounds important to human structure and function are the nucleotides. \n\nNucleotides can be assembled into nucleic acids (DNA or RNA) or the energy-storing compound adenosine triphosphate (ATP).\n\nA nucleotide is composed of three subunits:\n\n-one or more phosphate groups\n-a pentose sugar: either deoxyribose (in DNA) or ribose (in RNA)\n-a nitrogen-containing base\n\nThese bases are adenine, cytosine, guanine, and thymine in DNA, or adenine, cytosine, guanine, and uracil, which replaces thymine in RNA.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 32,
+      "title": "Part 5: Nucleotides and Nucleic Acids",
+      "body": "Part 5: Nucleotides and Nucleic Acids\n\nRNA/DNA: sugar phosphate backbone/s and nucleotides\nin DNA, bases held together via hydrogen bonds\n~22,000 genes in DNA, within 46 chromosomes\nmRNA created based on DNA sequence, and itself codes for protein sequence\n\nFigure 12. DNA. In the DNA double helix, two strands attach via hydrogen bonds between the bases of the component nucleotides.\n\nFigure 11. Nucleotides. (a) The building blocks of all nucleotides are one or more phosphate groups, a pentose sugar, and a nitrogen-containing base. (b) The nitrogen-containing bases of nucleotides. (c) The two pentose sugars of DNA and RNA.\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "DNA and RNA differ in the type of pentose sugar within their structure.\n\nDeoxyribonucleic acid, or DNA, is a nucleic acid that stores genetic information in its sequence of nucleotides. It is a double-stranded molecule. Ribonucleic acid, or RNA, is a single-stranded molecule that is built upon the basis of its corresponding DNA chain, and itself codes for the corresponding sequence of amino acids that forms a given protein. \n\nBonds formed by dehydration synthesis between the pentose sugar of one nucleic acid monomer and the phosphate group of another form a “backbone,” from which the components’ nitrogen-containing bases protrude. In DNA, two such backbones attach at their protruding bases via hydrogen bonds. These twist to form a shape known as a double helix.\n\nHumans have almost 22,000 genes in their DNA, locked up in the 46 chromosomes inside the nucleus of each cell (except red blood cells which lose their nuclei during development, and gametes which only carry half of one’s DNA). These genes carry the genetic code to build one’s body, and are unique for each individual except identical twins.\n\nIn contrast, RNA consists of a single strand of sugar-phosphate backbone studded with bases. Messenger RNA (mRNA) is created during protein synthesis to carry the genetic instructions from the DNA to the cell’s protein manufacturing plants in the cytoplasm, the ribosomes.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 33,
+      "title": "Part 5: Nucleotides and Nucleic Acids",
+      "body": "Part 5: Nucleotides and Nucleic Acids\n\nAdenosine Triphosphate (ATP)\nnucleotide that stores potential energy in covalent bonds between phosphates\nreversibly broken down to ADP + Pi\nrebuilt by phosphorylation\n\nFigure 10. Structure of Adenosine Triphosphate (ATP). Adenosine is a nucleoside to which can be attached one (mono-), two (di-), or three (tri-) phosphate groups.\n\nATP molecules store energy from metabolism of food molecules, and transfer that energy to other bodily processes when ATP is split to ADP and a phosphate group. Credit: Lisawerner9, CC BY-SA 4.0, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Adenosine triphosphate is also a nucleotide, composed of a ribose sugar (like that in RNA), an adenine base (like that found in DNA and RNA), and three phosphate groups.\n\nATP is classified as a high energy compound because the two covalent bonds linking its three phosphates store a significant amount of potential energy. When these bonds are severed, the energy released helps fuel the body’s activities, whether those be the contraction of muscles, the transport of substances in and out of cells, or anabolic chemical reactions. Anabolic reactions are ones where larger molecules are build from smaller ones. You can easily remember this by thinking of anabolic steroids, which help build muscle.\n\nWhen a phosphate group is cleaved from ATP, the products are adenosine diphosphate (ADP) and inorganic phosphate (Pi). Removal of a second phosphate leaves adenosine monophosphate (AMP) and two phosphate groups.\n\nThese reaction are reversible. So, when ADP undergoes phosphorylation—the addition of a phosphate group to an organic compound—this results in formation of ATP. This reaction requires energy to again power dehydration synthesis.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 34,
+      "title": "Part 5: Nucleotides and Nucleic Acids",
+      "body": "Part 5: Nucleotides and Nucleic Acids\n\nPhosphorylation\nperformed by a kinase – an enzyme that facilitates transfer of phosphate groups\nphosphate can alter function of molecules\ne.g., by changing the size and charge on molecules like glucose\n\nGlucose-6-phosphate synthesis. Credit: Pixeltoo at French Wikipedia, Public domain, via Wikimedia Commons\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Cells can also transfer a phosphate group from ATP to another organic compound. This phosphorylation reaction is achieved with the help of a kinase–an enzyme that catalyzes the transfer of phosphate groups. In the example here, we see a kinase called a hexokinase adding a phosphate group to a glucose molecule. When glucose first enters a cell, a phosphate group is transferred to it from ATP, forming glucose phosphate, a larger molecule which cannot again exit the cell via the same channel through which the glucose originally entered. Once glucose is phosphorylated in this way, it can be stored as glycogen or metabolized for immediate energy.\n\nThe activity of many enzymes is also regulated by whether or not they have a phosphate group attached to them.",
+      "image_alts": []
+    },
+    {
+      "slide_no": 35,
+      "title": "Part 5. Review",
+      "body": "Part 5. Review\n\nWhich of the following is not found in RNA?\n\nRibose\n\nAdenine\n\nThymine\n\nPhosphate group\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "Let’s review. \n\nWhich of the following is not found in RNA?",
+      "image_alts": []
+    },
+    {
+      "slide_no": 36,
+      "title": "End of Unit 3",
+      "body": "End of Unit 3\n\nTHOMPSON RIVERS UNIVERSITY | 2024",
+      "notes": "This concludes Unit 3.",
+      "image_alts": []
+    }
+  ]
+}

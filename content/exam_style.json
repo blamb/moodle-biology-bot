@@ -1,0 +1,125 @@
+{
+  "course": "BIOL 1592",
+  "source": "materials/BIOL1592 Example Exam Questions - Answer Key.docx",
+  "note": "Worked example exam used as a style and difficulty anchor for AI-generated questions. Correct answers extracted from blue-text highlighting in the answer-key DOCX.",
+  "sections": {
+    "multiple_choice": [
+      {
+        "stem": "Which of the following statement is false:",
+        "options": [
+          "Nucleic acids contain carbon, hydrogen, oxygen, nitrogen and phosphorous",
+          "The structure of ATP is similar to that of a nucleic acid",
+          "Deoxyribonucleic nucleotides do not contain oxygen",
+          "RNA does not contain thymine",
+          "Nucleotides are joined by phosphodiester bonds"
+        ],
+        "correct_index": [
+          2
+        ]
+      },
+      {
+        "stem": "You place a red-blood cell in a hypertonic solution, you expect the red-blood cell will:",
+        "options": [
+          "Swell as a result of diffusion of solutes into the cell",
+          "Shrivel as a result of water leaving the cell through osmosis",
+          "Shrivel as a result of water leaving the cell through pinocytosis",
+          "Swell as a result of water entering the cell through osmosis",
+          "Stay the same size"
+        ],
+        "correct_index": [
+          1
+        ]
+      },
+      {
+        "stem": "This/these organ system/s is/are responsible for removing nitrogenous waste from blood:",
+        "options": [
+          "Renal system",
+          "Reproductive system",
+          "Lymphatic system",
+          "Respiratory system",
+          "Both a and b remove wastes from blood"
+        ],
+        "correct_index": [
+          0
+        ]
+      },
+      {
+        "stem": "Which of the following contains both the lungs and the heart:",
+        "options": [
+          "The pleural cavity",
+          "Abdominopelvic cavity",
+          "Pericardial cavity",
+          "Thoracic cavity",
+          "None of the above contain both the lungs and the heart"
+        ],
+        "correct_index": [
+          3
+        ]
+      },
+      {
+        "stem": "The hydrophilic region of a phospholipid molecule is:",
+        "options": [
+          "The fatty acid tail",
+          "The glycerol backbone",
+          "The phosphate head",
+          "The cholesterol molecule",
+          "None of the above are hydrophilic"
+        ],
+        "correct_index": [
+          2
+        ]
+      }
+    ],
+    "true_false": [
+      {
+        "stem": "O2 is a molecule.",
+        "correct": true
+      },
+      {
+        "stem": "Hydrolysis combines two smaller molecules into one larger one.",
+        "correct": false
+      },
+      {
+        "stem": "mRNA is produced by ribosomes.",
+        "correct": false
+      },
+      {
+        "stem": "Lipid-soluble compounds can freely diffuse across a cell’s membrane.",
+        "correct": true
+      },
+      {
+        "stem": "Blood is a form of connective tissue.",
+        "correct": true
+      }
+    ],
+    "fill_in_blank": [
+      {
+        "stem": "A positively charged ion is called a(n) ____________.",
+        "answer": "cation"
+      },
+      {
+        "stem": "Dietary fibre is a carbohydrate polymer called _____________.",
+        "answer": "cellulose"
+      },
+      {
+        "stem": "Proteins are packed into vesicles by the cell organelle known as the ______________.",
+        "answer": "Golgi apparatus"
+      },
+      {
+        "stem": "The movement of water across semi-permeable membranes in relation to solute concentrations is known as ___________.",
+        "answer": "osmosis"
+      },
+      {
+        "stem": "The parts of neurons that usually receive information are called _________.",
+        "answer": "dendrites"
+      }
+    ],
+    "free_response": [
+      {
+        "prompt": "Compare and contrast the structure and synthesis of mRNA and ATP.",
+        "marks": 5,
+        "model_answer": "Both involve ribose, phosphorous groups and adenine (1 mark)\nThey differ in that mRNA is a nucleic acid, made of ribonucleotides, synthesized in the nucleus, and is involved in the transfer of genetic information (2 marks).\nATP is synthesized in the mitochondria, is not made of monomers, and is used to provide chemical energy for chemical reactions and other cellular activities (2 marks)."
+      }
+    ]
+  }
+}

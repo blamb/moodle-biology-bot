@@ -1,0 +1,161 @@
+{
+  "book": "anatomy-i",
+  "course": "BIOL 1592",
+  "base_url": "https://human-anatomy-i.pressbooks.tru.ca",
+  "fetched_at": "2026-05-11T21:44:31.581748+00:00",
+  "chapters": [
+    {
+      "id": 33,
+      "title": "Unit 1: Atoms and Molecules",
+      "slug": "unit-1-atoms-and-molecules",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-1-atoms-and-molecules/",
+      "part": "Levels of Organization",
+      "word_count": 4439,
+      "unit_no": 1
+    },
+    {
+      "id": 40,
+      "title": "Unit 2: The Chemistry of Water",
+      "slug": "unit-2-the-chemistry-of-water",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-2-the-chemistry-of-water/",
+      "part": "Levels of Organization",
+      "word_count": 3942,
+      "unit_no": 2
+    },
+    {
+      "id": 54,
+      "title": "Unit 3: Biochemistry",
+      "slug": "unit-3-biochemistry",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-3-biochemistry/",
+      "part": "Levels of Organization",
+      "word_count": 4335,
+      "unit_no": 3
+    },
+    {
+      "id": 68,
+      "title": "Unit 4: Cell Structure and Function",
+      "slug": "unit-4-cell-structure-and-function",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-4-cell-structure-and-function/",
+      "part": "Levels of Organization",
+      "word_count": 5158,
+      "unit_no": 4
+    },
+    {
+      "id": 83,
+      "title": "Unit 5: Membrane Structure and Function",
+      "slug": "unit-5-cell-biology-membrane-transport",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-5-cell-biology-membrane-transport/",
+      "part": "Levels of Organization",
+      "word_count": 4043,
+      "unit_no": 5
+    },
+    {
+      "id": 98,
+      "title": "Unit 6: Tissue Structure and Functions",
+      "slug": "unit-6-tissue-structure-and-functions",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-6-tissue-structure-and-functions/",
+      "part": "Levels of Organization",
+      "word_count": 5179,
+      "unit_no": 6
+    },
+    {
+      "id": 107,
+      "title": "Unit 7: Body Structure",
+      "slug": "unit-7-body-structure",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-7-body-structure/",
+      "part": "Levels of Organization",
+      "word_count": 2539,
+      "unit_no": 7
+    },
+    {
+      "id": 112,
+      "title": "Unit 8: Homeostasis",
+      "slug": "unit-8-homeostasis",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-8-homeostasis/",
+      "part": "Levels of Organization",
+      "word_count": 1988,
+      "unit_no": 8
+    },
+    {
+      "id": 198,
+      "title": "Unit 9: The Integumentary System",
+      "slug": "unit-9-the-integumentary-system",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-9-the-integumentary-system/",
+      "part": "Support and Movement",
+      "word_count": 4907,
+      "unit_no": 9
+    },
+    {
+      "id": 240,
+      "title": "Unit 10: The Skeletal System",
+      "slug": "unit-10-skeletal-system",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-10-skeletal-system/",
+      "part": "Support and Movement",
+      "word_count": 12165,
+      "unit_no": 10
+    },
+    {
+      "id": 250,
+      "title": "Unit 11: Joints",
+      "slug": "unit-11-joints",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-11-joints/",
+      "part": "Support and Movement",
+      "word_count": 7875,
+      "unit_no": 11
+    },
+    {
+      "id": 260,
+      "title": "Unit 12: Biomechanics",
+      "slug": "unit-12-biomechanics",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-12-biomechanics/",
+      "part": "Support and Movement",
+      "word_count": 2038,
+      "unit_no": 12
+    },
+    {
+      "id": 281,
+      "title": "Unit 13: Muscle Anatomy",
+      "slug": "unit-13-muscle-anatomy-and-movement",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-13-muscle-anatomy-and-movement/",
+      "part": "Support and Movement",
+      "word_count": 6756,
+      "unit_no": 13
+    },
+    {
+      "id": 297,
+      "title": "Unit 14: Muscle Physiology",
+      "slug": "unit-14-muscle-physiology",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-14-muscle-physiology/",
+      "part": "Support and Movement",
+      "word_count": 8824,
+      "unit_no": 14
+    },
+    {
+      "id": 158,
+      "title": "Unit 15: The Nervous System",
+      "slug": "unit-15-nervous-system",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-15-nervous-system/",
+      "part": "Nervous Regulation and Integration",
+      "word_count": 8688,
+      "unit_no": 15
+    },
+    {
+      "id": 1547,
+      "title": "Unit 16: The Peripheral Nervous System",
+      "slug": "unit-16-the-peripheral-nervous-system",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-16-the-peripheral-nervous-system/",
+      "part": "Nervous Regulation and Integration",
+      "word_count": 4188,
+      "unit_no": 16
+    },
+    {
+      "id": 1549,
+      "title": "Unit 17: Neuronal Signalling",
+      "slug": "unit-17-neuronal-signalling",
+      "url": "https://human-anatomy-i.pressbooks.tru.ca/chapter/unit-17-neuronal-signalling/",
+      "part": "Nervous Regulation and Integration",
+      "word_count": 6462,
+      "unit_no": 17
+    }
+  ]
+}

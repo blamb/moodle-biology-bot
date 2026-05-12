@@ -87,6 +87,17 @@
     padding: 1rem; min-height: 320px; max-height: 56vh; overflow-y: auto;
     margin-bottom: .75rem;
   }
+  /* Collapse the chat area when there's no conversation yet, so the compose
+     box is visible above the fold. */
+  .turns.empty {
+    min-height: 0;
+    padding: .55rem .85rem;
+    background: transparent;
+    border-style: dashed;
+  }
+  .turns.empty .empty-state {
+    padding: 0; margin: 0; text-align: left;
+  }
   .turn { margin: .5rem 0; display: flex; }
   .turn.user { justify-content: flex-end; }
   .turn .bubble {
@@ -310,9 +321,40 @@
     cursor: pointer;
   }
   .weak-list li:hover { background: #fde8e8; }
+
+  /* Role-conditional visibility */
+  body[data-role="student"] .teacher-only { display: none !important; }
+
+  /* Teacher dashboard */
+  .tot-cards {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: .75rem; margin: .5rem 0 1rem;
+  }
+  .tot-cards .card-tot {
+    background: #fff; border: 1px solid var(--border); border-radius: 8px;
+    padding: .75rem 1rem;
+  }
+  .tot-cards .num { font-size: 1.5rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .tot-cards .lbl { color: var(--muted); font-size: .8rem; }
+
+  .roster-table { width: 100%; }
+  .roster-table tr.clickable { cursor: pointer; }
+  .roster-table tr.clickable:hover { background: #f5f5f5; }
+  .roster-table .weak-pill {
+    display: inline-block; padding: .05rem .35rem;
+    background: #fce8e8; color: #8b1f1f; border-radius: 999px;
+    font-size: .75rem; margin-left: .2rem;
+  }
+
+  .concept-analysis-output {
+    white-space: pre-wrap; line-height: 1.6;
+    background: #fff; border: 1px solid var(--border); border-radius: 8px;
+    padding: .75rem 1rem; margin-top: .5rem;
+    max-height: 60vh; overflow-y: auto;
+  }
 </style>
 </head>
-<body>
+<body data-role="{{ROLE}}">
 <div class="wrap">
   <header class="header-row">
     <div>
@@ -320,6 +362,8 @@
       <div class="sub">Hi <strong>{{DISPLAY_NAME}}</strong> — launched from {{PLATFORM_NAME}}{{CONTEXT_TITLE_SEP}}{{CONTEXT_TITLE}}.</div>
     </div>
     <div class="header-actions">
+      <button class="link-btn teacher-only" id="nav-teacher" type="button">👩‍🏫 Instructor view</button>
+      <button class="link-btn" id="nav-exam" type="button">📝 Practice exam</button>
       <button class="link-btn" id="nav-progress" type="button">📊 Your progress</button>
     </div>
   </header>
@@ -338,6 +382,130 @@
       <ul class="units" id="units-list">
 {{UNITS_LIST}}
       </ul>
+    </div>
+  </div>
+
+  <!-- ───── Exam view ───── -->
+  <div class="view card" id="view-exam">
+    <div class="unit-header">
+      <h2 id="exam-title">Practice exam</h2>
+      <button class="back-btn" id="exam-back-btn" type="button">← Back to units</button>
+    </div>
+    <div class="exam-panel" data-state="config">
+      <p style="color:var(--muted);margin:.25rem 0 1rem">
+        Mixed practice exam across selected units. Each question is graded as soon as you answer it.
+      </p>
+      <div class="quiz-config" style="max-width:480px">
+        <label>Difficulty
+          <select id="exam-difficulty">
+            <option value="introductory">Introductory</option>
+            <option value="intermediate" selected>Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </label>
+        <label>Multiple choice
+          <input type="number" id="exam-count-mc" min="0" max="30" value="10">
+        </label>
+        <label>True / false
+          <input type="number" id="exam-count-tf" min="0" max="15" value="5">
+        </label>
+        <label>Fill in the blank
+          <input type="number" id="exam-count-fitb" min="0" max="30" value="10">
+        </label>
+        <label>Free response (slow!)
+          <input type="number" id="exam-count-fr" min="0" max="5" value="2">
+        </label>
+        <label style="justify-content:flex-start;gap:.5rem;cursor:pointer">
+          <input type="checkbox" id="exam-show-feedback" checked>
+          <span>Show feedback after each question (like a quiz). Uncheck for exam-realistic conditions — feedback is shown only at the end.</span>
+        </label>
+        <div style="margin-top:.5rem">
+          <strong>Units to draw from:</strong>
+          <button type="button" class="link-btn" id="exam-units-all">All</button>
+          <button type="button" class="link-btn" id="exam-units-none">None</button>
+        </div>
+        <div id="exam-units-list" style="display:grid;grid-template-columns:repeat(2,1fr);gap:.25rem .75rem;font-size:.9rem"></div>
+        <div style="margin-top:.75rem">
+          <button class="btn" id="exam-generate">Generate exam</button>
+        </div>
+        <div class="err" id="exam-config-err"></div>
+      </div>
+    </div>
+    <div class="exam-panel" data-state="taking" hidden>
+      <div class="quiz-q-progress" id="exam-progress" style="margin-bottom:.4rem"></div>
+      <div id="exam-question-area"></div>
+      <div class="err" id="exam-taking-err"></div>
+    </div>
+    <div class="exam-panel" data-state="summary" hidden>
+      <div id="exam-summary-content"></div>
+    </div>
+  </div>
+
+  <!-- ───── Teacher view ───── -->
+  <div class="view card teacher-only" id="view-teacher">
+    <div class="unit-header">
+      <h2 id="teacher-view-title">Class overview</h2>
+      <button class="back-btn" id="teacher-back-btn" type="button">← Back to units</button>
+    </div>
+
+    <div class="teacher-state" data-state="overview">
+      <div class="tot-cards" id="teacher-totals"></div>
+
+      <h3 style="margin: 1.25rem 0 .25rem; font-size: .95rem;">Class weak spots</h3>
+      <div id="teacher-weak"></div>
+
+      <h3 style="margin: 1.25rem 0 .25rem; font-size: .95rem;">Per-unit performance</h3>
+      <div style="overflow-x: auto">
+        <table class="progress-table" id="teacher-unit-table">
+          <thead>
+            <tr>
+              <th>Unit</th>
+              <th class="num">Students</th>
+              <th class="num">Attempts</th>
+              <th class="num">Accuracy</th>
+            </tr>
+          </thead>
+          <tbody id="teacher-unit-tbody"></tbody>
+        </table>
+      </div>
+
+      <h3 style="margin: 1.25rem 0 .25rem; font-size: .95rem;">Roster</h3>
+      <div style="color:var(--muted);font-size:.85rem;margin-bottom:.4rem">
+        Click a student to drill into their detail.
+      </div>
+      <div style="overflow-x: auto">
+        <table class="progress-table roster-table" id="teacher-roster-table">
+          <thead>
+            <tr>
+              <th>Student</th>
+              <th class="num">Attempts</th>
+              <th class="num">Accuracy</th>
+              <th class="num">Tutor turns</th>
+              <th class="num">Weak units</th>
+              <th class="num">Last seen</th>
+            </tr>
+          </thead>
+          <tbody id="teacher-roster-tbody"></tbody>
+        </table>
+      </div>
+
+      <h3 style="margin: 1.25rem 0 .25rem; font-size: .95rem;">Concept-gap analysis</h3>
+      <div style="color:var(--muted);font-size:.85rem;margin-bottom:.4rem">
+        Runs an LLM analysis across your students' wrong answers to identify recurring concept gaps and suggest where to add review.
+      </div>
+      <div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap">
+        <button class="btn" id="teacher-concepts-btn" type="button">Run analysis (class-wide)</button>
+        <span style="color:var(--muted);font-size:.85rem">Takes 15–30 seconds.</span>
+      </div>
+      <div id="teacher-concepts-output"></div>
+    </div>
+
+    <div class="teacher-state" data-state="student" hidden>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem">
+        <h3 id="student-detail-name" style="margin:0;font-size:1rem"></h3>
+        <button class="back-btn" id="student-detail-back" type="button">← Back to roster</button>
+      </div>
+      <div id="student-detail-content"></div>
     </div>
   </div>
 
@@ -443,8 +611,10 @@
   const viewPicker = $('#view-picker');
   const viewUnit = $('#view-unit');
   const viewProgress = $('#view-progress');
+  const viewExam = $('#view-exam');
+  const viewTeacher = $('#view-teacher');
   function showView(name) {
-    [viewPicker, viewUnit, viewProgress].forEach((v) =>
+    [viewPicker, viewUnit, viewProgress, viewExam, viewTeacher].forEach((v) =>
       v.classList.toggle('active', v.id === 'view-' + name)
     );
   }
@@ -467,6 +637,36 @@
     refreshProgress().then(() => showView('progress'));
   });
   $('#progress-back-btn').addEventListener('click', () => showView('picker'));
+
+  $('#nav-exam').addEventListener('click', () => {
+    examShowState('config');
+    populateExamUnitList();
+    showView('exam');
+  });
+
+  // ───── Teacher dashboard wiring ─────
+  const navTeacher = $('#nav-teacher');
+  if (navTeacher) {
+    navTeacher.addEventListener('click', () => {
+      teacherShowState('overview');
+      loadTeacherDashboard();
+      showView('teacher');
+    });
+    $('#teacher-back-btn').addEventListener('click', () => showView('picker'));
+    $('#student-detail-back').addEventListener('click', () => teacherShowState('overview'));
+    $('#teacher-concepts-btn').addEventListener('click', runConceptAnalysis);
+  }
+
+  function teacherShowState(state) {
+    $$('#view-teacher .teacher-state').forEach((p) => {
+      p.hidden = p.dataset.state !== state;
+    });
+  }
+  $('#exam-back-btn').addEventListener('click', () => {
+    examState = null;
+    showView('picker');
+    refreshProgress();
+  });
 
   async function openUnit(unitNo, unitTitle) {
     currentUnit = { no: unitNo, title: unitTitle };
@@ -520,13 +720,15 @@
   function renderTurns(turns) {
     turnsEl.innerHTML = '';
     if (!turns.length) {
+      turnsEl.classList.add('empty');
       const hint = document.createElement('div');
       hint.className = 'empty-state';
       hint.textContent =
-        'Type your first message — describe what you\'re trying to understand, or ask the tutor to quiz you on a concept from this unit.';
+        'Describe what you\'re trying to understand below, or ask the tutor to quiz you on a concept from this unit.';
       turnsEl.appendChild(hint);
       return;
     }
+    turnsEl.classList.remove('empty');
     for (const t of turns) appendTurnElement(t.role, t.content);
     turnsEl.scrollTop = turnsEl.scrollHeight;
   }
@@ -562,6 +764,7 @@
     tutorErr.textContent = '';
     composeSend.disabled = true;
 
+    turnsEl.classList.remove('empty');
     const empty = turnsEl.querySelector('.empty-state');
     if (empty) empty.remove();
     appendTurnElement('user', msg);
@@ -828,6 +1031,9 @@
       renderFrGrade(panel, q, response, data);
       // Track score progress: count partial credit
       s.scoreSum = (s.scoreSum || 0) + (data.score_pct ?? 0);
+      // "Want to know more?" routes through the per-quiz explain endpoint.
+      const qBox = panel.querySelector('.quiz-question');
+      addExplainButton(qBox, s.sessionId, s.idx);
       // Replace the submit button with a Next button.
       replaceSubmitWithNext(panel);
       return;
@@ -957,9 +1163,6 @@
 
     const qBox = panel.querySelector('.quiz-question');
     qBox.appendChild(wrap);
-    // Use the current question index — incremented later when "Next" is clicked.
-    const s = quizState[panel.dataset.panel];
-    addExplainButton(qBox, s.sessionId, s.idx);
   }
 
   // ───── Progress ─────
@@ -1131,6 +1334,720 @@
 
   // Initial progress pull on page load.
   refreshProgress();
+
+  // ───── Teacher: dashboard fetch + render ─────
+  async function loadTeacherDashboard() {
+    const totals = $('#teacher-totals');
+    const weak = $('#teacher-weak');
+    const unitTbody = $('#teacher-unit-tbody');
+    const rosterTbody = $('#teacher-roster-tbody');
+    totals.innerHTML = '<div class="empty-state">Loading…</div>';
+    weak.innerHTML = '';
+    unitTbody.innerHTML = '';
+    rosterTbody.innerHTML = '';
+
+    try {
+      const resp = await fetch(apiUrl('/api/teacher/dashboard'));
+      if (!resp.ok) {
+        if (resp.status === 403) throw new Error('Instructor role required.');
+        throw new Error('Server returned ' + resp.status);
+      }
+      const data = await resp.json();
+      renderTeacherTotals(data.class_totals);
+      renderTeacherWeakSpots(data.weak_units);
+      renderTeacherUnitTable(data.units);
+      renderTeacherRoster(data.roster);
+    } catch (e) {
+      totals.innerHTML = `<div class="err">${e.message}</div>`;
+    }
+  }
+
+  function renderTeacherTotals(t) {
+    const totals = $('#teacher-totals');
+    totals.innerHTML = '';
+    const cards = [
+      { lbl: 'Students', num: t.students },
+      { lbl: 'Quiz attempts', num: t.quiz_attempts },
+      { lbl: 'Class accuracy', num: t.pct !== null ? t.pct + '%' : '—' },
+      { lbl: 'Tutor turns', num: t.tutor_turns },
+      { lbl: 'Tutor sessions', num: t.tutor_sessions },
+    ];
+    for (const c of cards) {
+      const div = document.createElement('div');
+      div.className = 'card-tot';
+      div.innerHTML = `<div class="num">${c.num}</div><div class="lbl">${c.lbl}</div>`;
+      totals.appendChild(div);
+    }
+  }
+
+  function renderTeacherWeakSpots(weakUnits) {
+    const weak = $('#teacher-weak');
+    weak.innerHTML = '';
+    if (!weakUnits.length) {
+      weak.innerHTML = '<div style="color:var(--muted);font-size:.9rem">No class-wide weak spots yet — students need more attempts before patterns surface.</div>';
+      return;
+    }
+    const ul = document.createElement('ul');
+    ul.className = 'weak-list';
+    for (const u of weakUnits) {
+      const li = document.createElement('li');
+      li.innerHTML =
+        `<strong>Unit ${u.unit_no}: ${escapeHtml(u.title)}</strong> — ` +
+        `${u.pct}% accuracy across ${u.total_attempts} attempts by ${u.students_engaged} student${u.students_engaged === 1 ? '' : 's'}`;
+      weak.appendChild(li);
+    }
+    weak.appendChild(ul);
+  }
+
+  function renderTeacherUnitTable(units) {
+    const tbody = $('#teacher-unit-tbody');
+    tbody.innerHTML = '';
+    for (const u of units) {
+      const tr = document.createElement('tr');
+      if (u.total_attempts === 0) tr.classList.add('no-data');
+      const tdU = document.createElement('td');
+      tdU.innerHTML = `<strong>Unit ${u.unit_no}:</strong> ${escapeHtml(u.title)}`;
+      const tdS = document.createElement('td');
+      tdS.className = 'num';
+      tdS.textContent = u.students_engaged === 0 ? '—' : String(u.students_engaged);
+      const tdA = document.createElement('td');
+      tdA.className = 'num';
+      tdA.textContent = u.total_attempts === 0 ? '—' : String(u.total_attempts);
+      const tdP = document.createElement('td');
+      tdP.className = 'num';
+      if (u.pct === null) tdP.textContent = '—';
+      else {
+        const cls = u.pct >= 70 ? 'good' : 'weak';
+        tdP.innerHTML = `${u.total_correct}/${u.total_attempts} <span class="cell-pct ${cls}">${u.pct}%</span>`;
+      }
+      tr.appendChild(tdU); tr.appendChild(tdS); tr.appendChild(tdA); tr.appendChild(tdP);
+      tbody.appendChild(tr);
+    }
+  }
+
+  function renderTeacherRoster(roster) {
+    const tbody = $('#teacher-roster-tbody');
+    tbody.innerHTML = '';
+    if (!roster.length) {
+      const tr = document.createElement('tr');
+      tr.innerHTML = '<td colspan="6" style="color:var(--muted);text-align:center">No student activity in this course yet.</td>';
+      tbody.appendChild(tr);
+      return;
+    }
+    for (const s of roster) {
+      const tr = document.createElement('tr');
+      tr.classList.add('clickable');
+      tr.addEventListener('click', () => loadStudentDetail(s.id, s.display_name));
+      const tdN = document.createElement('td');
+      tdN.textContent = s.display_name;
+      const tdA = document.createElement('td');
+      tdA.className = 'num';
+      tdA.textContent = s.total_attempts === 0 ? '—' : String(s.total_attempts);
+      const tdP = document.createElement('td');
+      tdP.className = 'num';
+      if (s.total_pct === null) tdP.textContent = '—';
+      else {
+        const cls = s.total_pct >= 70 ? 'good' : (s.total_attempts >= 4 ? 'weak' : '');
+        tdP.innerHTML = `<span class="cell-pct ${cls}">${s.total_pct}%</span>`;
+      }
+      const tdT = document.createElement('td');
+      tdT.className = 'num';
+      tdT.textContent = s.tutor_turns === 0 ? '—' : String(s.tutor_turns);
+      const tdW = document.createElement('td');
+      tdW.className = 'num';
+      if (s.weak_units.length === 0) tdW.textContent = '—';
+      else tdW.innerHTML = s.weak_units.map((u) => `<span class="weak-pill">U${u}</span>`).join(' ');
+      const tdLs = document.createElement('td');
+      tdLs.className = 'num';
+      tdLs.style.color = 'var(--muted)';
+      tdLs.textContent = s.last_activity_at ? fmtTime(s.last_activity_at) : '—';
+      tr.appendChild(tdN); tr.appendChild(tdA); tr.appendChild(tdP); tr.appendChild(tdT); tr.appendChild(tdW); tr.appendChild(tdLs);
+      tbody.appendChild(tr);
+    }
+  }
+
+  async function loadStudentDetail(studentId, displayName) {
+    teacherShowState('student');
+    $('#student-detail-name').textContent = displayName;
+    const root = $('#student-detail-content');
+    root.innerHTML = '<div class="empty-state">Loading…</div>';
+    try {
+      const resp = await fetch(apiUrl(`/api/teacher/student/${studentId}`));
+      if (!resp.ok) throw new Error('Server returned ' + resp.status);
+      const { progress } = await resp.json();
+      root.innerHTML = '';
+      // Reuse the progress-view rendering shape: totals + weak spots + table.
+      // Borrow the per-unit table style from the student progress view.
+      const totals = document.createElement('div');
+      totals.className = 'totals-row';
+      const blocks = [
+        { lbl: 'Attempts', num: progress.totals.attempts },
+        { lbl: 'Correct', num: progress.totals.correct },
+        { lbl: 'Accuracy', num: progress.totals.pct !== null ? progress.totals.pct + '%' : '—' },
+        { lbl: 'Weak spots', num: progress.weak_spots.length },
+      ];
+      for (const b of blocks) {
+        const div = document.createElement('div');
+        div.innerHTML = `<div class="num">${b.num}</div><div class="lbl">${b.lbl}</div>`;
+        totals.appendChild(div);
+      }
+      root.appendChild(totals);
+
+      const h = document.createElement('h4');
+      h.style.cssText = 'margin: 1rem 0 .25rem; font-size: .9rem; color: var(--muted)';
+      h.textContent = 'Per-unit breakdown';
+      root.appendChild(h);
+
+      const table = document.createElement('table');
+      table.className = 'progress-table';
+      table.innerHTML = '<thead><tr><th>Unit</th><th class="num">MC</th><th class="num">TF</th><th class="num">FITB</th><th class="num">FR</th><th class="num">Tutor</th></tr></thead>';
+      const tbody = document.createElement('tbody');
+      for (const u of progress.units) {
+        const tr = document.createElement('tr');
+        if (!u.any_activity) tr.classList.add('no-data');
+        const tdU = document.createElement('td');
+        tdU.innerHTML = `<strong>Unit ${u.unit_no}:</strong> ${escapeHtml(u.title)}`;
+        tr.appendChild(tdU);
+        for (const k of PROGRESS_KINDS) {
+          const td = document.createElement('td');
+          td.className = 'num';
+          const s = u.by_kind[k];
+          if (s.attempts === 0) td.textContent = '—';
+          else {
+            const cls = s.pct >= 70 ? 'good' : (s.attempts >= 4 ? 'weak' : '');
+            td.innerHTML = `${s.correct}/${s.attempts} <span class="cell-pct ${cls}">${s.pct}%</span>`;
+          }
+          tr.appendChild(td);
+        }
+        const tdT = document.createElement('td');
+        tdT.className = 'num';
+        if (u.tutor.turns === 0) tdT.textContent = '—';
+        else tdT.innerHTML = `${u.tutor.turns} turns`;
+        tr.appendChild(tdT);
+        tbody.appendChild(tr);
+      }
+      table.appendChild(tbody);
+      root.appendChild(table);
+    } catch (e) {
+      root.innerHTML = `<div class="err">${e.message}</div>`;
+    }
+  }
+
+  async function runConceptAnalysis() {
+    const btn = $('#teacher-concepts-btn');
+    const out = $('#teacher-concepts-output');
+    btn.disabled = true;
+    const orig = btn.textContent;
+    btn.textContent = 'Analyzing…';
+    out.innerHTML = '<div class="empty-state">Reading wrong-answer patterns across your students…</div>';
+    try {
+      const resp = await fetch(apiUrl('/api/teacher/concepts'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({}),
+      });
+      if (!resp.ok) {
+        const body = await resp.json().catch(() => ({}));
+        throw new Error(body.error || `Server returned ${resp.status}`);
+      }
+      const data = await resp.json();
+      out.innerHTML = '';
+      const block = document.createElement('div');
+      block.className = 'concept-analysis-output';
+      block.textContent = data.analysis;
+      out.appendChild(block);
+    } catch (e) {
+      out.innerHTML = `<div class="err">${e.message}</div>`;
+    } finally {
+      btn.disabled = false;
+      btn.textContent = orig;
+    }
+  }
+
+  // ───── Practice exam ─────
+  let examState = null;
+  // shape when active: { sessionId, items, idx, score, scoreSum, results, difficulty }
+
+  function examShowState(state) {
+    $$('#view-exam .exam-panel').forEach((p) => {
+      p.hidden = p.dataset.state !== state;
+    });
+  }
+
+  function populateExamUnitList() {
+    const wrap = $('#exam-units-list');
+    if (wrap.dataset.populated === '1') return;
+    if (!lastProgress) {
+      wrap.innerHTML = '<div style="color:var(--muted)">Loading units…</div>';
+      return;
+    }
+    wrap.innerHTML = '';
+    for (const u of lastProgress.units) {
+      const label = document.createElement('label');
+      label.style.cssText = 'display:flex;gap:.4rem;align-items:center';
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.checked = true;
+      cb.value = String(u.unit_no);
+      cb.className = 'exam-unit-cb';
+      label.appendChild(cb);
+      const span = document.createElement('span');
+      span.textContent = `Unit ${u.unit_no}: ${u.title}`;
+      label.appendChild(span);
+      wrap.appendChild(label);
+    }
+    wrap.dataset.populated = '1';
+  }
+
+  $('#exam-units-all').addEventListener('click', () => {
+    $$('#exam-units-list .exam-unit-cb').forEach((cb) => (cb.checked = true));
+  });
+  $('#exam-units-none').addEventListener('click', () => {
+    $$('#exam-units-list .exam-unit-cb').forEach((cb) => (cb.checked = false));
+  });
+
+  $('#exam-generate').addEventListener('click', async () => {
+    const errEl = $('#exam-config-err');
+    errEl.textContent = '';
+    const btn = $('#exam-generate');
+
+    const unit_nos = $$('#exam-units-list .exam-unit-cb:checked').map((cb) => parseInt(cb.value, 10));
+    if (unit_nos.length === 0) {
+      errEl.textContent = 'Pick at least one unit.';
+      return;
+    }
+    const counts = {
+      mc: parseInt($('#exam-count-mc').value || '0', 10),
+      tf: parseInt($('#exam-count-tf').value || '0', 10),
+      fitb: parseInt($('#exam-count-fitb').value || '0', 10),
+      fr: parseInt($('#exam-count-fr').value || '0', 10),
+    };
+    const difficulty = $('#exam-difficulty').value;
+    const showFeedback = $('#exam-show-feedback').checked;
+    const total = counts.mc + counts.tf + counts.fitb + counts.fr;
+    if (total === 0) {
+      errEl.textContent = 'Pick at least one question.';
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = `Generating ~${total} questions…`;
+    try {
+      const resp = await fetch(apiUrl('/api/exam/generate'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ unit_nos, counts, difficulty }),
+      });
+      if (!resp.ok) {
+        const body = await resp.json().catch(() => ({}));
+        throw new Error(body.error || `Server returned ${resp.status}`);
+      }
+      const data = await resp.json();
+      examState = {
+        sessionId: data.session_id,
+        items: data.items,
+        idx: 0,
+        score: 0,
+        scoreSum: 0,
+        results: [],
+        difficulty: data.difficulty,
+        showFeedback,
+      };
+      examShowState('taking');
+      renderExamQuestion();
+    } catch (e) {
+      errEl.textContent = 'Generate failed: ' + e.message;
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Generate exam';
+    }
+  });
+
+  function renderExamQuestion() {
+    const s = examState;
+    if (s.idx >= s.items.length) return renderExamSummary();
+    const item = s.items[s.idx];
+    const q = item.question;
+    const area = $('#exam-question-area');
+    $('#exam-progress').textContent =
+      `Question ${s.idx + 1} of ${s.items.length} · Unit ${item.unit_no} · ${KIND_LABELS[item.kind]}`;
+    area.innerHTML = '';
+    const box = document.createElement('div');
+    box.className = 'quiz-question';
+    const stem = document.createElement('div');
+    stem.className = 'quiz-stem';
+    stem.textContent = item.kind === 'fr' ? q.prompt : q.stem;
+    box.appendChild(stem);
+
+    let inputEl, getResponse;
+    if (item.kind === 'fr') {
+      const note = document.createElement('div');
+      note.style.cssText = 'color:var(--muted);font-size:.85rem;margin-bottom:.35rem';
+      note.textContent = `Worth ${q.total_marks} mark${q.total_marks === 1 ? '' : 's'}.`;
+      box.appendChild(note);
+      const ta = document.createElement('textarea');
+      ta.className = 'fr-input';
+      ta.placeholder = 'Type your full answer here…';
+      box.appendChild(ta);
+      inputEl = ta;
+      getResponse = () => ta.value.trim();
+    } else if (item.kind === 'mc') {
+      const opts = document.createElement('div');
+      opts.className = 'quiz-options';
+      q.options.forEach((opt, i) => {
+        const label = document.createElement('label');
+        label.dataset.idx = String(i);
+        const r = document.createElement('input');
+        r.type = 'radio'; r.name = 'exam-mc-' + s.idx; r.value = String(i);
+        r.addEventListener('change', () => {
+          opts.querySelectorAll('label').forEach((l) => l.classList.toggle('selected', l.dataset.idx === String(i)));
+        });
+        label.appendChild(r);
+        const span = document.createElement('span');
+        span.textContent = String.fromCharCode(65 + i) + ') ' + opt;
+        label.appendChild(span);
+        opts.appendChild(label);
+      });
+      box.appendChild(opts);
+      getResponse = () => {
+        const checked = opts.querySelector('input[type=radio]:checked');
+        return checked ? parseInt(checked.value, 10) : null;
+      };
+    } else if (item.kind === 'tf') {
+      const opts = document.createElement('div');
+      opts.className = 'quiz-options';
+      ['True', 'False'].forEach((label, i) => {
+        const isTrue = i === 0;
+        const lab = document.createElement('label');
+        lab.dataset.idx = isTrue ? 'true' : 'false';
+        const r = document.createElement('input');
+        r.type = 'radio'; r.name = 'exam-tf-' + s.idx; r.value = isTrue ? 'true' : 'false';
+        r.addEventListener('change', () => {
+          opts.querySelectorAll('label').forEach((l) => l.classList.toggle('selected', l.dataset.idx === r.value));
+        });
+        lab.appendChild(r);
+        const span = document.createElement('span');
+        span.textContent = label;
+        lab.appendChild(span);
+        opts.appendChild(lab);
+      });
+      box.appendChild(opts);
+      getResponse = () => {
+        const checked = opts.querySelector('input[type=radio]:checked');
+        if (!checked) return null;
+        return checked.value === 'true';
+      };
+    } else { // fitb
+      const inp = document.createElement('input');
+      inp.type = 'text';
+      inp.className = 'quiz-fitb-input';
+      inp.placeholder = 'Type your answer';
+      inp.autocomplete = 'off';
+      box.appendChild(inp);
+      inputEl = inp;
+      getResponse = () => inp.value.trim();
+      inp.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') { e.preventDefault(); submitBtn.click(); }
+      });
+    }
+
+    const submitBtn = document.createElement('button');
+    submitBtn.className = 'btn';
+    submitBtn.textContent = 'Submit';
+    submitBtn.addEventListener('click', async () => {
+      const response = getResponse();
+      if (response === null || response === '' || response === undefined) {
+        $('#exam-taking-err').textContent = 'Pick an answer first.';
+        return;
+      }
+      $('#exam-taking-err').textContent = '';
+      submitBtn.disabled = true;
+      submitBtn.textContent = item.kind === 'fr' ? 'Grading…' : 'Checking…';
+      try {
+        const resp = await fetch(apiUrl('/api/exam/answer'), {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ session_id: s.sessionId, item_index: s.idx, response }),
+        });
+        if (!resp.ok) {
+          const body = await resp.json().catch(() => ({}));
+          throw new Error(body.error || `Server returned ${resp.status}`);
+        }
+        const data = await resp.json();
+        if (data.correct) s.score += 1;
+        if (item.kind === 'fr') s.scoreSum += data.score_pct ?? 0;
+        s.results.push({ item, response, data });
+        if (s.showFeedback) {
+          renderExamResult(box, item, response, data);
+        } else {
+          // Suppress per-question feedback — just acknowledge and move on.
+          const ack = document.createElement('div');
+          ack.className = 'quiz-result';
+          ack.textContent = 'Submitted. Feedback will appear at the end of the exam.';
+          ack.style.color = 'var(--muted)';
+          box.appendChild(ack);
+        }
+        replaceExamSubmitWithNext(box);
+      } catch (e) {
+        $('#exam-taking-err').textContent = 'Submit failed: ' + e.message;
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit';
+      }
+    });
+    box.appendChild(submitBtn);
+    area.appendChild(box);
+    if (inputEl) inputEl.focus();
+  }
+
+  function renderExamResult(box, item, response, data) {
+    if (item.kind === 'fr') {
+      // Reuse FR grade renderer with a synthetic panel-like container.
+      const fakePanel = { querySelector: (sel) => box };
+      renderFrGrade(fakePanel, item.question, response, data);
+      return;
+    }
+
+    // For MC / TF, mark options.
+    const optsEl = box.querySelector('.quiz-options');
+    if (optsEl && item.kind === 'mc') {
+      const correctIdx = data.correct_answer;
+      optsEl.querySelectorAll('label').forEach((l) => {
+        const i = parseInt(l.dataset.idx, 10);
+        l.classList.remove('selected');
+        if (i === correctIdx) l.classList.add('correct');
+        else if (i === response && !data.correct) l.classList.add('incorrect');
+      });
+    } else if (optsEl && item.kind === 'tf') {
+      optsEl.querySelectorAll('label').forEach((l) => {
+        l.classList.remove('selected');
+        const isCorrect = (l.dataset.idx === 'true') === data.correct_answer;
+        if (isCorrect) l.classList.add('correct');
+        else if (((l.dataset.idx === 'true') === response) && !data.correct) l.classList.add('incorrect');
+      });
+    }
+
+    const result = document.createElement('div');
+    result.className = 'quiz-result ' + (data.correct ? 'correct' : 'incorrect');
+    const label = document.createElement('span');
+    label.className = 'label';
+    label.textContent = data.correct ? '✓ Correct' : '✗ Not quite';
+    result.appendChild(label);
+    if (item.kind === 'fitb' && !data.correct) {
+      const expected = document.createElement('span');
+      expected.textContent = ` — expected: "${data.correct_answer}"`;
+      result.appendChild(expected);
+    }
+    const exp = document.createElement('p');
+    exp.className = 'quiz-explanation';
+    exp.textContent = data.explanation;
+    result.appendChild(exp);
+    box.appendChild(result);
+  }
+
+  function replaceExamSubmitWithNext(box) {
+    const submitBtn = box.querySelector('.btn');
+    submitBtn.replaceWith((function () {
+      const next = document.createElement('button');
+      next.className = 'btn';
+      const last = examState.idx + 1 >= examState.items.length;
+      next.textContent = last ? 'See exam results →' : 'Next question →';
+      next.addEventListener('click', () => {
+        examState.idx += 1;
+        renderExamQuestion();
+      });
+      return next;
+    })());
+  }
+
+  async function renderExamSummary() {
+    examShowState('summary');
+    const root = $('#exam-summary-content');
+    root.innerHTML = '<div class="empty-state">Tallying results…</div>';
+
+    try {
+      const resp = await fetch(apiUrl('/api/exam/summary'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ session_id: examState.sessionId }),
+      });
+      if (!resp.ok) throw new Error('Server returned ' + resp.status);
+      const data = await resp.json();
+      root.innerHTML = '';
+
+      const score = document.createElement('div');
+      score.className = 'score';
+      score.style.fontSize = '1.5rem';
+      score.style.fontWeight = '600';
+      score.textContent = `${data.total.correct} / ${data.total.attempts} correct (${data.total.pct ?? 0}%)`;
+      root.appendChild(score);
+
+      const sub = document.createElement('div');
+      sub.style.color = 'var(--muted)';
+      sub.style.marginBottom = '1rem';
+      sub.textContent = `${data.total.attempts} questions across ${data.by_unit.length} unit${data.by_unit.length === 1 ? '' : 's'} at ${examState.difficulty} difficulty.`;
+      root.appendChild(sub);
+
+      // By kind
+      const byKindHead = document.createElement('h3');
+      byKindHead.textContent = 'Score by question type';
+      byKindHead.style.cssText = 'margin:.75rem 0 .25rem;font-size:.95rem';
+      root.appendChild(byKindHead);
+      const kindTbl = document.createElement('table');
+      kindTbl.className = 'progress-table';
+      kindTbl.innerHTML = '<thead><tr><th>Kind</th><th class="num">Score</th></tr></thead>';
+      const ktbody = document.createElement('tbody');
+      for (const k of data.by_kind) {
+        const tr = document.createElement('tr');
+        const td0 = document.createElement('td');
+        td0.textContent = KIND_LABELS[k.kind];
+        const td1 = document.createElement('td');
+        td1.className = 'num';
+        const cls = k.pct >= 70 ? 'good' : (k.attempts >= 4 ? 'weak' : '');
+        td1.innerHTML = `${k.correct}/${k.attempts} <span class="cell-pct ${cls}">${k.pct}%</span>`;
+        tr.appendChild(td0);
+        tr.appendChild(td1);
+        ktbody.appendChild(tr);
+      }
+      kindTbl.appendChild(ktbody);
+      root.appendChild(kindTbl);
+
+      // By unit
+      const byUnitHead = document.createElement('h3');
+      byUnitHead.textContent = 'Score by unit';
+      byUnitHead.style.cssText = 'margin:1rem 0 .25rem;font-size:.95rem';
+      root.appendChild(byUnitHead);
+      const unitTbl = document.createElement('table');
+      unitTbl.className = 'progress-table';
+      unitTbl.innerHTML = '<thead><tr><th>Unit</th><th class="num">Score</th></tr></thead>';
+      const utbody = document.createElement('tbody');
+      for (const u of data.by_unit) {
+        const tr = document.createElement('tr');
+        const td0 = document.createElement('td');
+        td0.innerHTML = `<strong>Unit ${u.unit_no}:</strong> ${escapeHtml(u.title)}`;
+        const td1 = document.createElement('td');
+        td1.className = 'num';
+        const cls = u.pct >= 70 ? 'good' : (u.attempts >= 2 ? 'weak' : '');
+        td1.innerHTML = `${u.correct}/${u.attempts} <span class="cell-pct ${cls}">${u.pct}%</span>`;
+        tr.appendChild(td0);
+        tr.appendChild(td1);
+        utbody.appendChild(tr);
+      }
+      unitTbl.appendChild(utbody);
+      root.appendChild(unitTbl);
+
+      // Per-question review (expanded by default when feedback was suppressed during).
+      const reviewWrap = document.createElement('details');
+      reviewWrap.style.cssText = 'margin-top:1.25rem';
+      reviewWrap.open = !examState.showFeedback;
+      const reviewSummary = document.createElement('summary');
+      reviewSummary.style.cssText = 'cursor:pointer;font-weight:500;font-size:.95rem;color:var(--accent)';
+      reviewSummary.textContent = examState.showFeedback
+        ? 'Review individual questions'
+        : 'Review individual questions (feedback was hidden during the exam)';
+      reviewWrap.appendChild(reviewSummary);
+
+      const reviewList = document.createElement('div');
+      reviewList.style.cssText = 'margin-top:.75rem;display:flex;flex-direction:column;gap:.75rem';
+      examState.results.forEach((r, i) => {
+        const card = document.createElement('div');
+        card.className = 'quiz-question';
+        const prog = document.createElement('div');
+        prog.className = 'quiz-q-progress';
+        prog.textContent = `Q${i + 1} · Unit ${r.item.unit_no} · ${KIND_LABELS[r.item.kind]}`;
+        card.appendChild(prog);
+
+        const stem = document.createElement('div');
+        stem.className = 'quiz-stem';
+        stem.textContent = r.item.kind === 'fr' ? r.item.question.prompt : r.item.question.stem;
+        card.appendChild(stem);
+
+        const yours = document.createElement('div');
+        yours.style.cssText = 'margin:.35rem 0;color:var(--muted);font-size:.9rem';
+        if (r.item.kind === 'mc') {
+          const idx = Number(r.response);
+          const opt = r.item.question.options[idx] ?? '(no answer)';
+          yours.textContent = `Your answer: ${String.fromCharCode(65 + idx)}) ${opt}`;
+        } else if (r.item.kind === 'tf') {
+          yours.textContent = `Your answer: ${r.response ? 'True' : 'False'}`;
+        } else if (r.item.kind === 'fitb') {
+          yours.textContent = `Your answer: "${r.response}"`;
+        } else {
+          yours.textContent = `Your answer: ${r.response}`;
+        }
+        card.appendChild(yours);
+
+        // Use the existing renderers for the result block.
+        if (r.item.kind === 'fr') {
+          const fakePanel = { querySelector: () => card };
+          renderFrGrade(fakePanel, r.item.question, r.response, r.data);
+        } else {
+          // Reuse the exam result renderer (it knows how to mark options + show explanation)
+          // Build a fresh option set so we can mark it visually.
+          if (r.item.kind === 'mc') {
+            const opts = document.createElement('div');
+            opts.className = 'quiz-options';
+            r.item.question.options.forEach((opt, i2) => {
+              const lab = document.createElement('label');
+              lab.dataset.idx = String(i2);
+              if (i2 === r.data.correct_answer) lab.classList.add('correct');
+              else if (i2 === r.response && !r.data.correct) lab.classList.add('incorrect');
+              const span = document.createElement('span');
+              span.textContent = String.fromCharCode(65 + i2) + ') ' + opt;
+              lab.appendChild(span);
+              opts.appendChild(lab);
+            });
+            card.appendChild(opts);
+          }
+          const result = document.createElement('div');
+          result.className = 'quiz-result ' + (r.data.correct ? 'correct' : 'incorrect');
+          const label = document.createElement('span');
+          label.className = 'label';
+          label.textContent = r.data.correct ? '✓ Correct' : '✗ Not quite';
+          result.appendChild(label);
+          if (r.item.kind === 'fitb' && !r.data.correct) {
+            const expected = document.createElement('span');
+            expected.textContent = ` — expected: "${r.data.correct_answer}"`;
+            result.appendChild(expected);
+          } else if (r.item.kind === 'tf' && !r.data.correct) {
+            const expected = document.createElement('span');
+            expected.textContent = ` — correct: ${r.data.correct_answer ? 'True' : 'False'}`;
+            result.appendChild(expected);
+          }
+          const exp = document.createElement('p');
+          exp.className = 'quiz-explanation';
+          exp.textContent = r.data.explanation;
+          result.appendChild(exp);
+          card.appendChild(result);
+        }
+        reviewList.appendChild(card);
+      });
+      reviewWrap.appendChild(reviewList);
+      root.appendChild(reviewWrap);
+
+      const actions = document.createElement('div');
+      actions.style.cssText = 'margin-top:1rem;display:flex;gap:.5rem';
+      const again = document.createElement('button');
+      again.className = 'btn';
+      again.textContent = 'Generate another';
+      again.addEventListener('click', () => {
+        examState = null;
+        examShowState('config');
+      });
+      const back = document.createElement('button');
+      back.className = 'btn btn-ghost';
+      back.textContent = 'Back to units';
+      back.addEventListener('click', () => {
+        examState = null;
+        showView('picker');
+        refreshProgress();
+      });
+      actions.appendChild(again);
+      actions.appendChild(back);
+      root.appendChild(actions);
+    } catch (e) {
+      root.innerHTML = `<div class="err">Failed to load summary: ${e.message}</div>`;
+    }
+  }
 
   function appendSummaryFeedback(box, kind, s) {
     // Aggregate qualitative feedback from per-question results.
