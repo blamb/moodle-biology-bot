@@ -174,21 +174,126 @@
   .debug { margin-top: 1rem; padding: .5rem .75rem; background: #f0f0f0;
     border-left: 3px solid var(--accent); font-size: .78rem; color: var(--muted);
     font-family: ui-monospace, SFMono-Regular, monospace; }
+
+  /* Header actions */
+  .header-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem; }
+  .header-actions { display: flex; gap: .5rem; }
+  .link-btn {
+    background: none; border: 1px solid var(--border); border-radius: 6px;
+    padding: .35rem .75rem; cursor: pointer; font: inherit; font-size: .85rem;
+    color: var(--accent);
+  }
+  .link-btn:hover { background: #f5f5f5; }
+
+  /* Continue card */
+  .continue-card {
+    background: #eaf3fc; border: 1px solid #cbe2f5; border-radius: 8px;
+    padding: .75rem 1rem; margin-top: 1rem;
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  }
+  .continue-card .label { font-size: .8rem; color: var(--accent); letter-spacing: .04em; text-transform: uppercase; }
+  .continue-card .what { font-weight: 500; margin-top: .15rem; }
+
+  /* Unit row badges */
+  ul.units li { gap: .75rem; }
+  ul.units .unit-row-left { flex: 1; min-width: 0; }
+  ul.units .unit-badges {
+    display: flex; flex-wrap: wrap; gap: .35rem; align-items: center;
+    font-size: .75rem;
+  }
+  .badge {
+    display: inline-flex; align-items: center; gap: .25rem;
+    padding: .1rem .45rem; border-radius: 999px;
+    background: #f0f0f0; color: var(--muted-2);
+    border: 1px solid var(--border);
+    font-variant-numeric: tabular-nums;
+  }
+  .badge.has-data { color: var(--fg); background: #eef6f0; border-color: #cfe5d5; }
+  .badge.weak { background: #fce8e8; border-color: #f1c4c4; color: #8b1f1f; }
+  .badge .b-kind { color: var(--muted); }
+
+  /* Progress view */
+  .progress-table {
+    width: 100%; border-collapse: collapse; margin: .75rem 0;
+    font-size: .9rem;
+  }
+  .progress-table th, .progress-table td {
+    text-align: left; padding: .4rem .55rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .progress-table th { color: var(--muted); font-weight: 500; font-size: .8rem; }
+  .progress-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .progress-table tr.no-data td { color: var(--muted-2); }
+  .progress-table .cell-pct { color: var(--muted); font-size: .85rem; }
+  .progress-table .cell-pct.good { color: var(--good); }
+  .progress-table .cell-pct.weak { color: var(--bad); }
+
+  .totals-row { display: flex; gap: 2rem; margin-top: .5rem; flex-wrap: wrap; }
+  .totals-row > div .num { font-size: 1.2rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .totals-row > div .lbl { color: var(--muted); font-size: .8rem; }
+
+  .weak-list { list-style: none; padding-left: 0; margin: 0; }
+  .weak-list li {
+    padding: .4rem .6rem; margin: .25rem 0; border-radius: 6px;
+    background: #fcf3f3; border: 1px solid #f1c4c4;
+    cursor: pointer;
+  }
+  .weak-list li:hover { background: #fde8e8; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>Biology Bot</h1>
-    <div class="sub">Hi <strong>{{DISPLAY_NAME}}</strong> — launched from {{PLATFORM_NAME}}{{CONTEXT_TITLE_SEP}}{{CONTEXT_TITLE}}.</div>
+  <header class="header-row">
+    <div>
+      <h1>Biology Bot</h1>
+      <div class="sub">Hi <strong>{{DISPLAY_NAME}}</strong> — launched from {{PLATFORM_NAME}}{{CONTEXT_TITLE_SEP}}{{CONTEXT_TITLE}}.</div>
+    </div>
+    <div class="header-actions">
+      <button class="link-btn" id="nav-progress" type="button">📊 Your progress</button>
+    </div>
   </header>
 
   <!-- ───── Picker view ───── -->
-  <div class="view card active" id="view-picker">
-    <h2>Pick a unit</h2>
-    <ul class="units" id="units-list">
+  <div class="view active" id="view-picker">
+    <div class="continue-card" id="continue-card" style="display:none">
+      <div>
+        <div class="label">Continue where you left off</div>
+        <div class="what" id="continue-what"></div>
+      </div>
+      <button class="btn" id="continue-btn" type="button">Open</button>
+    </div>
+    <div class="card">
+      <h2>Pick a unit</h2>
+      <ul class="units" id="units-list">
 {{UNITS_LIST}}
-    </ul>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ───── Progress view ───── -->
+  <div class="view card" id="view-progress">
+    <div class="unit-header">
+      <h2>Your progress</h2>
+      <button class="back-btn" id="progress-back-btn" type="button">← Back to units</button>
+    </div>
+    <div class="totals-row" id="progress-totals"></div>
+    <h3 style="margin: 1.25rem 0 .25rem; font-size: .95rem;">Weak spots</h3>
+    <div id="progress-weak"></div>
+    <h3 style="margin: 1.25rem 0 .25rem; font-size: .95rem;">Per-unit breakdown</h3>
+    <div style="overflow-x: auto">
+      <table class="progress-table" id="progress-table">
+        <thead>
+          <tr>
+            <th>Unit</th>
+            <th class="num">MC</th>
+            <th class="num">TF</th>
+            <th class="num">FITB</th>
+            <th class="num">Tutor</th>
+          </tr>
+        </thead>
+        <tbody id="progress-tbody"></tbody>
+      </table>
+    </div>
   </div>
 
   <!-- ───── Unit view ───── -->
@@ -261,8 +366,11 @@
   // ───── View routing ─────
   const viewPicker = $('#view-picker');
   const viewUnit = $('#view-unit');
+  const viewProgress = $('#view-progress');
   function showView(name) {
-    [viewPicker, viewUnit].forEach((v) => v.classList.toggle('active', v.id === 'view-' + name));
+    [viewPicker, viewUnit, viewProgress].forEach((v) =>
+      v.classList.toggle('active', v.id === 'view-' + name)
+    );
   }
 
   let currentUnit = null; // { no, title }
@@ -276,7 +384,13 @@
     currentUnit = null;
     currentTutor = { sessionId: null };
     showView('picker');
+    refreshProgress(); // re-pull stats after any quiz / tutor work
   });
+
+  $('#nav-progress').addEventListener('click', () => {
+    refreshProgress().then(() => showView('progress'));
+  });
+  $('#progress-back-btn').addEventListener('click', () => showView('picker'));
 
   async function openUnit(unitNo, unitTitle) {
     currentUnit = { no: unitNo, title: unitTitle };
@@ -660,6 +774,175 @@
 
     panel.querySelector('.quiz-question').appendChild(result);
   }
+
+  // ───── Progress ─────
+  const KIND_LABELS = { mc: 'MC', tf: 'TF', fitb: 'FITB' };
+  let lastProgress = null;
+
+  async function refreshProgress() {
+    try {
+      const resp = await fetch(apiUrl('/api/progress'));
+      if (!resp.ok) throw new Error('Server returned ' + resp.status);
+      lastProgress = await resp.json();
+      renderContinueCard(lastProgress);
+      renderUnitBadges(lastProgress);
+      renderProgressView(lastProgress);
+    } catch (e) {
+      // Progress is enhancement, not blocking. Surface in console only.
+      console.warn('progress fetch failed', e);
+    }
+  }
+
+  function renderContinueCard(progress) {
+    const card = $('#continue-card');
+    const what = $('#continue-what');
+    if (!progress.last_activity) {
+      card.style.display = 'none';
+      return;
+    }
+    const la = progress.last_activity;
+    const kindLabel = la.kind === 'tutor' ? 'Tutor session' : KIND_LABELS[la.kind] + ' quiz';
+    what.textContent = `Unit ${la.unit_no}: ${la.title} — ${kindLabel}`;
+    $('#continue-btn').onclick = () => {
+      openUnit(la.unit_no, la.title);
+      if (la.kind !== 'tutor') showTab(la.kind);
+    };
+    card.style.display = 'flex';
+  }
+
+  function renderUnitBadges(progress) {
+    const byUnit = new Map(progress.units.map((u) => [u.unit_no, u]));
+    $$('#units-list li[data-unit-no]').forEach((li) => {
+      const u = byUnit.get(parseInt(li.dataset.unitNo, 10));
+      if (!u) return;
+      // Convert the row into a two-column layout (left text, right badges)
+      // if we haven't already.
+      if (!li.querySelector('.unit-row-left')) {
+        const left = document.createElement('div');
+        left.className = 'unit-row-left';
+        // Move existing children except .unit-meta into .unit-row-left
+        const children = Array.from(li.childNodes);
+        for (const child of children) {
+          if (child.nodeType === 1 && child.classList.contains('unit-meta')) continue;
+          left.appendChild(child);
+        }
+        li.prepend(left);
+      }
+      // Build the badges row, replacing any prior badges container.
+      let badges = li.querySelector('.unit-badges');
+      if (!badges) {
+        badges = document.createElement('div');
+        badges.className = 'unit-badges';
+        // Replace the meta line with the badges (we still keep meta where useful)
+        const meta = li.querySelector('.unit-meta');
+        if (meta) meta.replaceWith(badges);
+        else li.appendChild(badges);
+      }
+      badges.innerHTML = '';
+      for (const k of ['mc', 'tf', 'fitb']) {
+        const s = u.by_kind[k];
+        const b = document.createElement('span');
+        b.className = 'badge';
+        if (s.attempts > 0) b.classList.add('has-data');
+        if (s.attempts >= 4 && s.pct !== null && s.pct < 70) b.classList.add('weak');
+        b.innerHTML = `<span class="b-kind">${KIND_LABELS[k]}</span> ` +
+          (s.attempts > 0 ? `${s.pct}% (${s.attempts})` : '—');
+        badges.appendChild(b);
+      }
+      if (u.tutor.turns > 0) {
+        const tb = document.createElement('span');
+        tb.className = 'badge has-data';
+        tb.innerHTML = `<span class="b-kind">Tutor</span> ${u.tutor.turns} turns`;
+        badges.appendChild(tb);
+      }
+    });
+  }
+
+  function fmtTime(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    const now = new Date();
+    const diffMs = now - d;
+    const diffMin = Math.floor(diffMs / 60000);
+    if (diffMin < 1) return 'just now';
+    if (diffMin < 60) return diffMin + ' min ago';
+    if (diffMin < 60 * 24) return Math.floor(diffMin / 60) + ' h ago';
+    return d.toLocaleDateString();
+  }
+
+  function renderProgressView(progress) {
+    // Totals
+    const totals = $('#progress-totals');
+    totals.innerHTML = '';
+    const blocks = [
+      { lbl: 'Questions attempted', num: progress.totals.attempts },
+      { lbl: 'Correct', num: progress.totals.correct },
+      { lbl: 'Overall accuracy', num: progress.totals.pct !== null ? progress.totals.pct + '%' : '—' },
+      { lbl: 'Weak spots', num: progress.weak_spots.length },
+    ];
+    for (const b of blocks) {
+      const div = document.createElement('div');
+      div.innerHTML = `<div class="num">${b.num}</div><div class="lbl">${b.lbl}</div>`;
+      totals.appendChild(div);
+    }
+
+    // Weak spots
+    const weak = $('#progress-weak');
+    weak.innerHTML = '';
+    if (!progress.weak_spots.length) {
+      weak.innerHTML = '<div style="color:var(--muted);font-size:.9rem">No weak spots yet — keep practicing across units.</div>';
+    } else {
+      const ul = document.createElement('ul');
+      ul.className = 'weak-list';
+      for (const w of progress.weak_spots) {
+        const li = document.createElement('li');
+        li.textContent = `Unit ${w.unit_no}: ${w.title} — ${KIND_LABELS[w.kind]} ${w.pct}% over ${w.attempts} attempts`;
+        li.addEventListener('click', () => {
+          showView('picker'); // hide progress
+          openUnit(w.unit_no, w.title);
+          showTab(w.kind);
+        });
+        ul.appendChild(li);
+      }
+      weak.appendChild(ul);
+    }
+
+    // Per-unit table
+    const tbody = $('#progress-tbody');
+    tbody.innerHTML = '';
+    for (const u of progress.units) {
+      const tr = document.createElement('tr');
+      if (!u.any_activity) tr.classList.add('no-data');
+      const td0 = document.createElement('td');
+      td0.innerHTML = `<strong>Unit ${u.unit_no}:</strong> ${escapeHtml(u.title)}`;
+      tr.appendChild(td0);
+      for (const k of ['mc', 'tf', 'fitb']) {
+        const td = document.createElement('td');
+        td.className = 'num';
+        const s = u.by_kind[k];
+        if (s.attempts === 0) {
+          td.textContent = '—';
+        } else {
+          const cls = s.pct >= 70 ? 'good' : (s.attempts >= 4 ? 'weak' : '');
+          td.innerHTML = `${s.correct}/${s.attempts} <span class="cell-pct ${cls}">${s.pct}%</span>`;
+        }
+        tr.appendChild(td);
+      }
+      const tdT = document.createElement('td');
+      tdT.className = 'num';
+      if (u.tutor.turns === 0) tdT.textContent = '—';
+      else tdT.innerHTML = `${u.tutor.turns} turns <span class="cell-pct">${fmtTime(u.tutor.last_at)}</span>`;
+      tr.appendChild(tdT);
+      tbody.appendChild(tr);
+    }
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+  }
+
+  // Initial progress pull on page load.
+  refreshProgress();
 
   function renderQuizSummary(kind, panel) {
     const s = quizState[kind];

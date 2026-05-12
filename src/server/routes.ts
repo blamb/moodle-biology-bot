@@ -33,6 +33,7 @@ import {
   type TfQuestion,
   type FitbQuestion,
 } from './quiz.js';
+import { getStudentProgress } from './progress.js';
 
 // ltijs doesn't install a JSON body parser globally; do it for our routes.
 lti.app.use('/api', express.json({ limit: '256kb' }));
@@ -57,6 +58,18 @@ async function studentFromToken(token: IdToken) {
 
 lti.app.get('/api/units', (req: Request, res: Response) => {
   res.json({ units: listUnits() });
+});
+
+lti.app.get('/api/progress', async (req: Request, res: Response) => {
+  try {
+    const token = tokenOf(res);
+    const student = await studentFromToken(token);
+    const progress = await getStudentProgress(student.id);
+    res.json(progress);
+  } catch (e) {
+    console.error('GET /api/progress failed:', e);
+    res.status(500).json({ error: (e as Error).message });
+  }
 });
 
 lti.app.post('/api/tutor/session', async (req: Request, res: Response) => {
