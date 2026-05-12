@@ -24,6 +24,7 @@ import { z } from 'zod';
 import type Anthropic from '@anthropic-ai/sdk';
 import { getAnthropic, GEN_MODEL, TUTOR_MODEL } from './anthropic.js';
 import { getUnit, type UnitContent } from './content.js';
+import { recordApiCall, type Attribution } from './costs.js';
 
 // ─── Question schemas ───────────────────────────────────────────────────────
 
@@ -220,9 +221,11 @@ function stripCodeFences(text: string): string {
 async function callGenerator(
   unit: UnitContent,
   userPrompt: string,
+  attribution: Attribution,
   retryOnBadShape: boolean = true
 ): Promise<unknown> {
   const client = getAnthropic();
+  const t0 = Date.now();
   const res = await client.messages.create({
     model: GEN_MODEL,
     max_tokens: 4096,
@@ -235,6 +238,12 @@ async function callGenerator(
       },
     ],
     messages: [{ role: 'user', content: userPrompt }],
+  });
+  void recordApiCall({
+    ...attribution,
+    model: GEN_MODEL,
+    usage: res.usage,
+    durationMs: Date.now() - t0,
   });
 
   const text = res.content
@@ -249,6 +258,7 @@ async function callGenerator(
   } catch (parseErr) {
     if (!retryOnBadShape) throw parseErr;
     // One retry with a hint about the malformed output.
+    const t1 = Date.now();
     const retry = await client.messages.create({
       model: GEN_MODEL,
       max_tokens: 4096,
@@ -270,6 +280,13 @@ async function callGenerator(
         },
       ],
     });
+    void recordApiCall({
+      ...attribution,
+      endpoint: attribution.endpoint + '.retry',
+      model: GEN_MODEL,
+      usage: retry.usage,
+      durationMs: Date.now() - t1,
+    });
     const retryText = retry.content
       .filter((b): b is Anthropic.TextBlock => b.type === 'text')
       .map((b) => b.text)
@@ -281,10 +298,14 @@ async function callGenerator(
 export async function generateMC(
   unitNo: number,
   count: number,
-  difficulty: Difficulty
+  difficulty: Difficulty,
+  attribution: Attribution = { endpoint: 'quiz.generate.mc' }
 ): Promise<McQuestion[]> {
   const unit = getUnit(unitNo);
-  const raw = await callGenerator(unit, MC_USER(count, difficulty));
+  const raw = await callGenerator(unit, MC_USER(count, difficulty), {
+    ...attribution,
+    endpoint: 'quiz.generate.mc',
+  });
   const parsed = z.array(McQuestion).parse(raw);
   return parsed.slice(0, count);
 }
@@ -292,10 +313,14 @@ export async function generateMC(
 export async function generateTF(
   unitNo: number,
   count: number,
-  difficulty: Difficulty
+  difficulty: Difficulty,
+  attribution: Attribution = { endpoint: 'quiz.generate.tf' }
 ): Promise<TfQuestion[]> {
   const unit = getUnit(unitNo);
-  const raw = await callGenerator(unit, TF_USER(count, difficulty));
+  const raw = await callGenerator(unit, TF_USER(count, difficulty), {
+    ...attribution,
+    endpoint: 'quiz.generate.tf',
+  });
   const parsed = z.array(TfQuestion).parse(raw);
   return parsed.slice(0, count);
 }
@@ -303,10 +328,14 @@ export async function generateTF(
 export async function generateFR(
   unitNo: number,
   count: number,
-  difficulty: Difficulty
+  difficulty: Difficulty,
+  attribution: Attribution = { endpoint: 'quiz.generate.fr' }
 ): Promise<FrQuestion[]> {
   const unit = getUnit(unitNo);
-  const raw = await callGenerator(unit, FR_USER(count, difficulty));
+  const raw = await callGenerator(unit, FR_USER(count, difficulty), {
+    ...attribution,
+    endpoint: 'quiz.generate.fr',
+  });
   const parsed = z.array(FrQuestion).parse(raw);
   // Enforce rubric-points-sum-to-total-marks (LLMs sometimes drift).
   for (const q of parsed) {
@@ -322,13 +351,17 @@ export async function generateFR(
 export async function generateFITB(
   unitNo: number,
   count: number,
-  difficulty: Difficulty
+  difficulty: Difficulty,
+  attribution: Attribution = { endpoint: 'quiz.generate.fitb' }
 ): Promise<FitbQuestion[]> {
   const unit = getUnit(unitNo);
   if (unit.terms.length === 0) {
     throw new Error(`Unit ${unitNo} has no terms list; cannot generate FITB.`);
   }
-  const raw = await callGenerator(unit, FITB_USER(count, difficulty, unit.terms));
+  const raw = await callGenerator(unit, FITB_USER(count, difficulty, unit.terms), {
+    ...attribution,
+    endpoint: 'quiz.generate.fitb',
+  });
   const parsed = z.array(FitbQuestion).parse(raw);
   return parsed.slice(0, count);
 }
@@ -449,9 +482,11 @@ Grade this response against the rubric. Output JSON in this shape:
 export async function gradeFR(
   unit: UnitContent,
   question: FrQuestion,
-  response: string
+  response: string,
+  attribution: Attribution = { endpoint: 'quiz.grade.fr' }
 ): Promise<FrGrade> {
   const client = getAnthropic();
+  const t0 = Date.now();
   const res = await client.messages.create({
     model: TUTOR_MODEL, // Opus for grading — higher fidelity matters more than speed here
     max_tokens: 2048,
@@ -464,6 +499,13 @@ export async function gradeFR(
       },
     ],
     messages: [{ role: 'user', content: FR_GRADER_USER(question, response) }],
+  });
+  void recordApiCall({
+    ...attribution,
+    endpoint: 'quiz.grade.fr',
+    model: TUTOR_MODEL,
+    usage: res.usage,
+    durationMs: Date.now() - t0,
   });
 
   const text = res.content

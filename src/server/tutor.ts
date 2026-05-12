@@ -10,6 +10,7 @@
 import { query } from './db.js';
 import { getUnit, type UnitContent } from './content.js';
 import { getAnthropic, TUTOR_MODEL } from './anthropic.js';
+import { recordApiCall, type Attribution } from './costs.js';
 
 interface Session {
   id: number;
@@ -119,8 +120,9 @@ export async function streamSocraticReply(params: {
   userMessage: string;
   displayName: string;
   onChunk: (text: string) => void;
+  attribution?: Attribution;
 }): Promise<{ assistantText: string }> {
-  const { session, userMessage, displayName, onChunk } = params;
+  const { session, userMessage, displayName, onChunk, attribution } = params;
   const unit = getUnit(session.unit_no);
 
   await appendTurn(session.id, 'user', userMessage);
@@ -144,6 +146,7 @@ export async function streamSocraticReply(params: {
   }
 
   const client = getAnthropic();
+  const t0 = Date.now();
   const stream = client.messages.stream({
     model: TUTOR_MODEL,
     max_tokens: 1024,
@@ -170,5 +173,21 @@ export async function streamSocraticReply(params: {
   }
 
   await appendTurn(session.id, 'assistant', assistantText);
+
+  // Record token usage once the stream completes.
+  try {
+    const final = await stream.finalMessage();
+    void recordApiCall({
+      ...(attribution ?? { endpoint: 'tutor.turn' }),
+      endpoint: 'tutor.turn',
+      sessionId: session.id,
+      model: TUTOR_MODEL,
+      usage: final.usage,
+      durationMs: Date.now() - t0,
+    });
+  } catch {
+    // finalMessage can fail if stream errored mid-flight; don't break the response
+  }
+
   return { assistantText };
 }

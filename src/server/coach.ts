@@ -11,6 +11,7 @@
 import type Anthropic from '@anthropic-ai/sdk';
 import { getAnthropic, GEN_MODEL } from './anthropic.js';
 import { getUnit, type UnitContent } from './content.js';
+import { recordApiCall, type Attribution } from './costs.js';
 import type {
   Difficulty,
   QuizKind,
@@ -113,7 +114,8 @@ export async function synthesizeQuiz(
   unitNo: number,
   kind: QuizKind,
   difficulty: Difficulty,
-  attempts: AttemptForCoaching[]
+  attempts: AttemptForCoaching[],
+  attribution: Attribution = { endpoint: 'coach.synthesize' }
 ): Promise<string> {
   if (attempts.length === 0) return '';
   const unit = getUnit(unitNo);
@@ -127,6 +129,7 @@ export async function synthesizeQuiz(
       `Score: ${correct}/${total} (${Math.round((correct / total) * 100)}%).`;
 
   const client = getAnthropic();
+  const t0 = Date.now();
   const res = await client.messages.create({
     model: GEN_MODEL,
     max_tokens: 384,
@@ -140,6 +143,13 @@ export async function synthesizeQuiz(
         content: `${summary}\n\nPer-question results:\n${body}\n\nWrite the study guidance paragraph now.`,
       },
     ],
+  });
+  void recordApiCall({
+    ...attribution,
+    endpoint: 'coach.synthesize',
+    model: GEN_MODEL,
+    usage: res.usage,
+    durationMs: Date.now() - t0,
   });
   return res.content
     .filter((b): b is Anthropic.TextBlock => b.type === 'text')
@@ -163,12 +173,14 @@ Rules:
 
 export async function explainAttempt(
   unitNo: number,
-  attempt: AttemptForCoaching
+  attempt: AttemptForCoaching,
+  attribution: Attribution = { endpoint: 'coach.explain' }
 ): Promise<string> {
   const unit = getUnit(unitNo);
   const description = describeAttempt(attempt, 0);
 
   const client = getAnthropic();
+  const t0 = Date.now();
   const res = await client.messages.create({
     model: GEN_MODEL,
     max_tokens: 400,
@@ -182,6 +194,13 @@ export async function explainAttempt(
         content: `Question and result:\n${description}\nWrite the richer walkthrough.`,
       },
     ],
+  });
+  void recordApiCall({
+    ...attribution,
+    endpoint: 'coach.explain',
+    model: GEN_MODEL,
+    usage: res.usage,
+    durationMs: Date.now() - t0,
   });
   return res.content
     .filter((b): b is Anthropic.TextBlock => b.type === 'text')

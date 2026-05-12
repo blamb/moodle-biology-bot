@@ -21,6 +21,10 @@ export const env = {
   LTI_COOKIE_SECRET: required('LTI_COOKIE_SECRET'),
   ANTHROPIC_API_KEY: optional('ANTHROPIC_API_KEY', ''),
   NODE_ENV: optional('NODE_ENV', 'development'),
+  // Admin-only access token for /admin/* operational endpoints (e.g. cost
+  // dashboard). When empty, those endpoints are disabled. Generate via:
+  //   openssl rand -hex 32
+  ADMIN_TOKEN: optional('ADMIN_TOKEN', ''),
 } as const;
 
 export const isProd = env.NODE_ENV === 'production';

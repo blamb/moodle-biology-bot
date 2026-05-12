@@ -20,6 +20,7 @@ import { env } from './env.js';
 import { findOrCreateStudent } from './students.js';
 import { listUnits } from './content.js';
 import { isTeacher } from './auth.js';
+import { renderAdminCostsHtml } from './admin.js';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LAUNCH_HTML_PATH = join(HERE, '..', 'web', 'launch.html');
@@ -74,6 +75,30 @@ lti.setup(
         'AI tutor and practice-question generator for Human A&P (BIOL 1592 / 1692)',
       redirectUris: [env.LTI_TOOL_URL],
       autoActivate: true,
+    },
+    // Mounted before ltijs's session validator, so /admin/* routes bypass LTI
+    // auth and use the ADMIN_TOKEN env var for access control instead. Used
+    // for operational dashboards that should NOT be visible to teachers or
+    // students inside Moodle.
+    serverAddon: (server) => {
+      server.get('/admin/costs', async (req, res) => {
+        if (!env.ADMIN_TOKEN) {
+          return res.status(503).type('text').send(
+            'Admin endpoints are disabled. Set ADMIN_TOKEN in environment vars to enable.'
+          );
+        }
+        const supplied = (req.query.token as string) || req.headers['x-admin-token'];
+        if (supplied !== env.ADMIN_TOKEN) {
+          return res.status(401).type('text').send('Unauthorized');
+        }
+        try {
+          const html = await renderAdminCostsHtml();
+          res.type('html').send(html);
+        } catch (e) {
+          console.error('GET /admin/costs failed:', e);
+          res.status(500).type('text').send('Error: ' + (e as Error).message);
+        }
+      });
     },
   }
 );

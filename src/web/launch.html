@@ -203,6 +203,50 @@
   .quiz-summary .feedback-section.warn { border-left: 4px solid #b07000; }
   .quiz-summary .feedback-section.synth { border-left: 4px solid var(--accent); white-space: pre-wrap; }
 
+  /* Printable exam view */
+  .print-exam {
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 1.5rem 1.75rem; margin-top: .5rem;
+    max-width: 760px;
+  }
+  .print-exam h1 { margin: 0 0 .15rem; font-size: 1.3rem; }
+  .print-exam .meta { color: var(--muted); font-size: .9rem; margin-bottom: 1.25rem; }
+  .print-exam .pe-question { margin-bottom: 1.5rem; page-break-inside: avoid; }
+  .print-exam .pe-question h3 { margin: 0 0 .25rem; font-size: .95rem; }
+  .print-exam .pe-q-meta { color: var(--muted); font-size: .8rem; margin-bottom: .25rem; }
+  .print-exam .pe-stem { white-space: pre-wrap; margin-bottom: .5rem; }
+  .print-exam .pe-options { list-style-type: upper-alpha; padding-left: 2rem; margin: .25rem 0; }
+  .print-exam .pe-options li { padding: .15rem 0; }
+  .print-exam .pe-options li.pe-correct { font-weight: 600; color: var(--good); }
+  .print-exam .pe-tf-line { margin: .25rem 0 0 .5rem; }
+  .print-exam .pe-tf-line.pe-correct { font-weight: 600; color: var(--good); }
+  .print-exam .pe-fitb-blank { display: inline-block; min-width: 8em; border-bottom: 1px solid var(--fg); }
+  .print-exam .pe-fitb-answer { font-weight: 600; color: var(--good); }
+  .print-exam .pe-fr-space {
+    border: 1px solid var(--border); border-radius: 4px;
+    min-height: 5em; padding: .5rem; margin: .25rem 0;
+    background: #fcfcfc;
+  }
+  .print-exam .pe-rubric { margin: .35rem 0; padding-left: 1.25rem; font-size: .9rem; color: var(--muted); }
+  .print-exam .pe-rubric li { margin: .15rem 0; }
+  .print-exam .pe-model {
+    background: #f4f9fe; border-left: 3px solid var(--accent); padding: .5rem .75rem;
+    margin: .35rem 0; font-size: .9rem; white-space: pre-wrap;
+  }
+  .print-controls {
+    display: flex; gap: .5rem; align-items: center; margin-bottom: .75rem;
+    flex-wrap: wrap;
+  }
+  /* When the user prints, hide everything but the print-exam content */
+  @media print {
+    body { background: #fff; padding: 0; }
+    body * { visibility: hidden; }
+    .print-exam, .print-exam * { visibility: visible; }
+    .print-exam { position: absolute; left: 0; top: 0; max-width: none;
+                   border: none; padding: 0; margin: 0; }
+    .print-controls, .topbar, header, .header-actions { display: none !important; }
+  }
+
   /* Per-question deep-dive */
   .explain-block {
     margin-top: .65rem; padding: .65rem .85rem; border-radius: 8px;
@@ -486,8 +530,9 @@
           <button type="button" class="link-btn" id="exam-units-none">None</button>
         </div>
         <div id="exam-units-list" class="exam-units"></div>
-        <div style="margin-top:.75rem">
-          <button class="btn" id="exam-generate">Generate exam</button>
+        <div style="margin-top:.75rem;display:flex;gap:.5rem;flex-wrap:wrap">
+          <button class="btn" id="exam-generate">Generate exam (online)</button>
+          <button class="btn btn-ghost" id="exam-generate-print" type="button" title="Generate a printable exam with optional answer key, for paper-based or offline use.">📄 Generate printable</button>
         </div>
         <div class="err" id="exam-config-err"></div>
       </div>
@@ -499,6 +544,17 @@
     </div>
     <div class="exam-panel" data-state="summary" hidden>
       <div id="exam-summary-content"></div>
+    </div>
+    <div class="exam-panel" data-state="print" hidden>
+      <div class="print-controls">
+        <button class="btn" id="print-now">🖨 Print / save as PDF</button>
+        <label style="display:flex;align-items:center;gap:.4rem;cursor:pointer">
+          <input type="checkbox" id="print-answer-key">
+          <span>Include answer key</span>
+        </label>
+        <button class="btn btn-ghost" id="print-back">← Back to config</button>
+      </div>
+      <div id="print-exam-content"></div>
     </div>
   </div>
 
@@ -1515,6 +1571,10 @@
     }
   }
 
+  // (Cost dashboard intentionally NOT in the LTI teacher view — it lives
+  // out-of-band at /admin/costs, gated by ADMIN_TOKEN. Operational data
+  // should not be visible to teachers or students inside Moodle.)
+
   function renderTeacherTotals(t) {
     const totals = $('#teacher-totals');
     totals.innerHTML = '';
@@ -1752,6 +1812,164 @@
   $('#exam-units-none').addEventListener('click', () => {
     $$('#exam-units-list .exam-unit-cb').forEach((cb) => (cb.checked = false));
   });
+
+  // Printable-exam controls
+  $('#exam-generate-print').addEventListener('click', () => generateExamForPrint());
+  $('#print-back').addEventListener('click', () => examShowState('config'));
+  $('#print-now').addEventListener('click', () => window.print());
+  $('#print-answer-key').addEventListener('change', () => {
+    if (examState?.printItems) renderPrintExam(examState.printItems, $('#print-answer-key').checked);
+  });
+
+  async function generateExamForPrint() {
+    const errEl = $('#exam-config-err');
+    errEl.textContent = '';
+    const btn = $('#exam-generate-print');
+    const unit_nos = $$('#exam-units-list .exam-unit-cb:checked').map((cb) => parseInt(cb.value, 10));
+    if (unit_nos.length === 0) { errEl.textContent = 'Pick at least one unit.'; return; }
+    const counts = {
+      mc: parseInt($('#exam-count-mc').value || '0', 10),
+      tf: parseInt($('#exam-count-tf').value || '0', 10),
+      fitb: parseInt($('#exam-count-fitb').value || '0', 10),
+      fr: parseInt($('#exam-count-fr').value || '0', 10),
+    };
+    const difficulty = $('#exam-difficulty').value;
+    const total = counts.mc + counts.tf + counts.fitb + counts.fr;
+    if (total === 0) { errEl.textContent = 'Pick at least one question.'; return; }
+
+    btn.disabled = true;
+    btn.innerHTML = `<span class="spinner"></span>Generating ~${total} questions…`;
+    try {
+      const resp = await fetch(apiUrl('/api/exam/generate'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ unit_nos, counts, difficulty }),
+      });
+      if (!resp.ok) {
+        const body = await resp.json().catch(() => ({}));
+        throw new Error(body.error || `Server returned ${resp.status}`);
+      }
+      const data = await resp.json();
+      // Persist the items on examState so the answer-key toggle can re-render.
+      examState = { printItems: data.items, difficulty };
+      $('#print-answer-key').checked = false;
+      renderPrintExam(data.items, false);
+      examShowState('print');
+    } catch (e) {
+      errEl.textContent = 'Generate failed: ' + friendlyError(e);
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = '📄 Generate printable';
+    }
+  }
+
+  function renderPrintExam(items, withAnswers) {
+    const root = $('#print-exam-content');
+    root.innerHTML = '';
+    const box = document.createElement('div');
+    box.className = 'print-exam';
+
+    const title = document.createElement('h1');
+    title.textContent = 'BIOL 1592 — Practice Exam';
+    box.appendChild(title);
+    const meta = document.createElement('div');
+    meta.className = 'meta';
+    const d = new Date();
+    meta.textContent = `Generated ${d.toLocaleDateString()} · ${items.length} questions · ${examState.difficulty} difficulty` +
+      (withAnswers ? '  — ANSWER KEY' : '');
+    box.appendChild(meta);
+
+    items.forEach((item, idx) => {
+      const q = item.question;
+      const qBox = document.createElement('div');
+      qBox.className = 'pe-question';
+
+      const qMeta = document.createElement('div');
+      qMeta.className = 'pe-q-meta';
+      qMeta.textContent = `Unit ${item.unit_no} · ${KIND_LABELS[item.kind] || item.kind}`;
+      qBox.appendChild(qMeta);
+
+      const header = document.createElement('h3');
+      header.textContent = `Q${idx + 1}.`;
+      qBox.appendChild(header);
+
+      const stem = document.createElement('div');
+      stem.className = 'pe-stem';
+      stem.textContent = item.kind === 'fr' ? q.prompt : q.stem;
+      qBox.appendChild(stem);
+
+      if (item.kind === 'mc') {
+        const ol = document.createElement('ol');
+        ol.className = 'pe-options';
+        q.options.forEach((opt, i) => {
+          const li = document.createElement('li');
+          li.textContent = opt;
+          if (withAnswers && i === q.correct_index) li.classList.add('pe-correct');
+          ol.appendChild(li);
+        });
+        qBox.appendChild(ol);
+      } else if (item.kind === 'tf') {
+        const tDiv = document.createElement('div');
+        tDiv.className = 'pe-tf-line' + (withAnswers && q.correct === true ? ' pe-correct' : '');
+        tDiv.textContent = '☐  True';
+        qBox.appendChild(tDiv);
+        const fDiv = document.createElement('div');
+        fDiv.className = 'pe-tf-line' + (withAnswers && q.correct === false ? ' pe-correct' : '');
+        fDiv.textContent = '☐  False';
+        qBox.appendChild(fDiv);
+      } else if (item.kind === 'fitb') {
+        // Replace ____ in stem with a visible blank line
+        if (!stem.textContent.includes('___')) {
+          const blank = document.createElement('span');
+          blank.className = 'pe-fitb-blank';
+          stem.appendChild(blank);
+        }
+        if (withAnswers) {
+          const ans = document.createElement('div');
+          ans.className = 'pe-fitb-answer';
+          ans.textContent = 'Answer: ' + q.answer;
+          qBox.appendChild(ans);
+        }
+      } else if (item.kind === 'fr') {
+        const marks = document.createElement('div');
+        marks.style.cssText = 'color:var(--muted);font-size:.85rem;margin-bottom:.25rem';
+        marks.textContent = `(${q.total_marks} marks)`;
+        qBox.appendChild(marks);
+        if (!withAnswers) {
+          // Empty answer space
+          const space = document.createElement('div');
+          space.className = 'pe-fr-space';
+          space.style.minHeight = (q.total_marks * 2.5) + 'em';
+          qBox.appendChild(space);
+        } else {
+          const rubricLabel = document.createElement('div');
+          rubricLabel.style.fontWeight = '600';
+          rubricLabel.textContent = 'Rubric:';
+          qBox.appendChild(rubricLabel);
+          const rul = document.createElement('ul');
+          rul.className = 'pe-rubric';
+          q.rubric.forEach((r) => {
+            const li = document.createElement('li');
+            li.textContent = `(${r.points} mark${r.points === 1 ? '' : 's'}) ${r.criterion}`;
+            rul.appendChild(li);
+          });
+          qBox.appendChild(rul);
+          const mLabel = document.createElement('div');
+          mLabel.style.fontWeight = '600';
+          mLabel.style.marginTop = '.35rem';
+          mLabel.textContent = 'Model answer:';
+          qBox.appendChild(mLabel);
+          const model = document.createElement('div');
+          model.className = 'pe-model';
+          model.textContent = q.model_answer;
+          qBox.appendChild(model);
+        }
+      }
+      box.appendChild(qBox);
+    });
+
+    root.appendChild(box);
+  }
 
   $('#exam-generate').addEventListener('click', async () => {
     const errEl = $('#exam-config-err');

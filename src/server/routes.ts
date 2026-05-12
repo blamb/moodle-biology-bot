@@ -52,6 +52,7 @@ import {
 } from './exam.js';
 import { isTeacher, TeacherOnlyError } from './auth.js';
 import { getCourseDashboard, analyzeClassConceptGaps } from './teacher.js';
+import type { Attribution } from './costs.js';
 
 // ltijs doesn't install a JSON body parser globally; do it for our routes.
 lti.app.use('/api', express.json({ limit: '256kb' }));
@@ -73,6 +74,22 @@ async function studentFromToken(token: IdToken) {
       [token.userInfo.given_name, token.userInfo.family_name].filter(Boolean).join(' ') ||
       'Student',
   });
+}
+
+/** Build an Attribution from the launching token + student for cost tracking. */
+function attr(
+  token: IdToken,
+  studentId: number | null,
+  sessionId: number | null,
+  endpoint: string
+): Attribution {
+  return {
+    studentId,
+    sessionId,
+    iss: token.iss,
+    contextId: token.platformContext.context?.id ?? token.platformContext.contextId,
+    endpoint,
+  };
 }
 
 lti.app.get('/api/units', (req: Request, res: Response) => {
@@ -130,6 +147,9 @@ lti.app.get('/api/teacher/student/:id', async (req: Request, res: Response) => {
     res.status(500).json({ error: (e as Error).message });
   }
 });
+
+// NOTE: cost dashboard intentionally lives at /admin/costs (token-gated),
+// NOT here. Operational data shouldn't be visible to LTI instructors.
 
 lti.app.post('/api/teacher/concepts', async (req: Request, res: Response) => {
   try {
@@ -206,11 +226,12 @@ lti.app.post('/api/quiz/generate', async (req: Request, res: Response) => {
       return res.status(400).json({ error: `difficulty must be one of: ${VALID_DIFFICULTIES.join(', ')}` });
     }
 
+    const attribution = attr(token, student.id, null, `quiz.generate.${kind}`);
     let questions: McQuestion[] | TfQuestion[] | FitbQuestion[] | FrQuestion[];
-    if (kind === 'mc') questions = await generateMC(unitNo, count, difficulty);
-    else if (kind === 'tf') questions = await generateTF(unitNo, count, difficulty);
-    else if (kind === 'fitb') questions = await generateFITB(unitNo, count, difficulty);
-    else questions = await generateFR(unitNo, count, difficulty);
+    if (kind === 'mc') questions = await generateMC(unitNo, count, difficulty, attribution);
+    else if (kind === 'tf') questions = await generateTF(unitNo, count, difficulty, attribution);
+    else if (kind === 'fitb') questions = await generateFITB(unitNo, count, difficulty, attribution);
+    else questions = await generateFR(unitNo, count, difficulty, attribution);
 
     // Create a session and stash the generated questions in summary so the
     // student can come back to the same set without re-generating.
@@ -284,7 +305,8 @@ lti.app.post('/api/quiz/answer', async (req: Request, res: Response) => {
       // Free response — LLM-graded against the rubric.
       const q = question as FrQuestion;
       const unit = getUnit(session.unit_no);
-      frGrade = await gradeFR(unit, q, String(response ?? ''));
+      frGrade = await gradeFR(unit, q, String(response ?? ''),
+        attr(token, student.id, sessionId, 'quiz.grade.fr'));
       scoredScore = Math.round((frGrade.total_awarded / frGrade.total_possible) * 100);
       // Count as "correct" for progress purposes if ≥ 80% of total marks.
       correct = scoredScore >= 80;
@@ -620,7 +642,8 @@ lti.app.post('/api/quiz/synthesize', async (req: Request, res: Response) => {
     });
 
     const summary = await synthesizeQuiz(
-      session.unit_no, kind, session.summary.difficulty, attempts
+      session.unit_no, kind, session.summary.difficulty, attempts,
+      attr(token, student.id, sessionId, 'coach.synthesize')
     );
     res.json({ summary });
   } catch (e) {
@@ -684,7 +707,8 @@ lti.app.post('/api/quiz/explain', async (req: Request, res: Response) => {
       attempt.score_pct = r.scored_score ?? undefined;
     }
 
-    const explanation = await explainAttempt(session.unit_no, attempt);
+    const explanation = await explainAttempt(session.unit_no, attempt,
+      attr(token, student.id, sessionId, 'coach.explain'));
     res.json({ explanation });
   } catch (e) {
     console.error('POST /api/quiz/explain failed:', e);
@@ -751,6 +775,7 @@ lti.app.post('/api/tutor/turn', async (req: Request, res: Response) => {
       userMessage: message,
       displayName,
       onChunk: (text) => send('chunk', { text }),
+      attribution: attr(token, student.id, sessionRow.id, 'tutor.turn'),
     });
 
     send('done', {});

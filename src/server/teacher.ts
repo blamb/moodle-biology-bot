@@ -288,6 +288,7 @@ function emptyBundle(iss: string, contextId: string): DashboardBundle {
 
 import { getAnthropic, GEN_MODEL } from './anthropic.js';
 import { getUnit } from './content.js';
+import { recordApiCall } from './costs.js';
 
 interface WrongSample {
   unit_no: number;
@@ -375,6 +376,7 @@ export async function analyzeClassConceptGaps(params: {
   }).join('\n\n---\n\n');
 
   const client = getAnthropic();
+  const t0 = Date.now();
   const res = await client.messages.create({
     model: GEN_MODEL,
     max_tokens: 1200,
@@ -388,6 +390,13 @@ export async function analyzeClassConceptGaps(params: {
         content: `Wrong answers from the class (sampled, ${rows.length} total):\n${bodyParts.join('\n')}\n\nIdentify the recurring concept gaps and write the analysis now.`,
       },
     ],
+  });
+  void recordApiCall({
+    iss, contextId,
+    endpoint: 'teacher.concepts',
+    model: GEN_MODEL,
+    usage: res.usage,
+    durationMs: Date.now() - t0,
   });
   return res.content
     .filter((b) => b.type === 'text')
