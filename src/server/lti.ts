@@ -36,12 +36,25 @@ function loadLaunchHtml(): string {
 
 // One Postgres instance, two logical "uses": ltijs tables get auto-created by
 // ltijs-sequelize; our migrations create the rest.
-const ltiDb = new Database('biology_bot', 'postgres', 'postgres', {
-  host: new URL(env.DATABASE_URL).hostname || 'localhost',
-  port: parseInt(new URL(env.DATABASE_URL).port || '5432', 10),
-  dialect: 'postgres',
-  logging: false,
-});
+// Parse all connection bits from DATABASE_URL so dev (docker-compose) and prod
+// (Railway random creds) both work without code changes.
+const dbUrl = new URL(env.DATABASE_URL);
+const ltiDb = new Database(
+  decodeURIComponent(dbUrl.pathname.replace(/^\//, '')) || 'biology_bot',
+  decodeURIComponent(dbUrl.username || 'postgres'),
+  decodeURIComponent(dbUrl.password || ''),
+  {
+    host: dbUrl.hostname || 'localhost',
+    port: parseInt(dbUrl.port || '5432', 10),
+    dialect: 'postgres',
+    logging: false,
+    // Railway's managed Postgres typically needs SSL; toggle via ?sslmode=
+    // in the URL. For local docker-compose Postgres, leave SSL off.
+    dialectOptions: /sslmode=require/i.test(env.DATABASE_URL)
+      ? { ssl: { require: true, rejectUnauthorized: false } }
+      : undefined,
+  }
+);
 
 lti.setup(
   env.LTI_COOKIE_SECRET,
