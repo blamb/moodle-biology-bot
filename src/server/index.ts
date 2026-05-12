@@ -8,6 +8,7 @@
 import { env } from './env.js';
 import { lti } from './lti.js';
 import { pool } from './db.js';
+import './routes.js'; // side-effect: registers /api/* routes on lti.app
 
 async function main(): Promise<void> {
   // Fail fast if Postgres isn't reachable — easier than debugging a half-up

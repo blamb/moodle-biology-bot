@@ -9,39 +9,99 @@
     --bg: #fafafa;
     --fg: #1a1a1a;
     --muted: #666;
+    --muted-2: #999;
     --accent: #0f6cbd;
+    --accent-fg: #ffffff;
     --border: #e5e5e5;
     --card: #ffffff;
+    --user-bubble: #0f6cbd;
+    --user-bubble-fg: #ffffff;
+    --tutor-bubble: #f0f0f0;
+    --tutor-bubble-fg: #1a1a1a;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
-  body {
-    margin: 0;
-    padding: 2rem;
-    background: var(--bg);
-    color: var(--fg);
-    line-height: 1.5;
-  }
-  .wrap { max-width: 760px; margin: 0 auto; }
-  header h1 { margin: 0 0 .25rem; font-size: 1.5rem; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 1.5rem; background: var(--bg); color: var(--fg); line-height: 1.5; }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  header h1 { margin: 0 0 .25rem; font-size: 1.4rem; }
   header .sub { color: var(--muted); font-size: .9rem; }
+
   .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 1.25rem 1.5rem;
-    margin-top: 1.5rem;
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 1rem 1.25rem; margin-top: 1.25rem;
   }
-  .card h2 { margin-top: 0; font-size: 1.05rem; }
-  .meta { color: var(--muted); font-size: .85rem; }
-  ul.units { list-style: none; padding-left: 0; }
-  ul.units li { padding: .3rem 0; border-bottom: 1px solid var(--border); }
-  ul.units li:last-child { border-bottom: none; }
-  .placeholder { color: var(--muted); font-style: italic; }
-  .debug {
-    margin-top: 1rem; padding: .75rem 1rem; background: #f0f0f0;
-    border-left: 3px solid var(--accent); font-size: .85rem;
-    font-family: ui-monospace, SFMono-Regular, monospace;
+  .card h2 { margin: 0 0 .75rem; font-size: 1rem; }
+
+  /* Unit picker */
+  ul.units { list-style: none; padding-left: 0; margin: 0; }
+  ul.units li {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: .55rem .75rem; border-radius: 6px; cursor: pointer;
+    border: 1px solid transparent;
   }
+  ul.units li:hover { background: #f5f5f5; border-color: var(--border); }
+  ul.units .unit-title { font-weight: 500; }
+  ul.units .unit-no { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 2.5em; }
+  ul.units .unit-meta { color: var(--muted-2); font-size: .8rem; }
+
+  /* Chat view */
+  .chat-view { display: none; }
+  .chat-view.active { display: block; }
+  .picker-view { display: block; }
+  .picker-view.hidden { display: none; }
+
+  .chat-header {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: .75rem;
+  }
+  .chat-header h2 { margin: 0; font-size: 1rem; }
+  .back-btn {
+    background: none; border: 1px solid var(--border); border-radius: 4px;
+    padding: .25rem .6rem; cursor: pointer; font-size: .85rem; color: var(--muted);
+  }
+  .back-btn:hover { background: #f5f5f5; color: var(--fg); }
+
+  .turns {
+    background: #fff; border: 1px solid var(--border); border-radius: 8px;
+    padding: 1rem; min-height: 340px; max-height: 56vh; overflow-y: auto;
+    margin-bottom: .75rem;
+  }
+  .turn { margin: .5rem 0; display: flex; }
+  .turn.user { justify-content: flex-end; }
+  .turn .bubble {
+    max-width: 78%; padding: .55rem .85rem; border-radius: 12px;
+    white-space: pre-wrap; word-wrap: break-word;
+  }
+  .turn.user .bubble {
+    background: var(--user-bubble); color: var(--user-bubble-fg);
+    border-bottom-right-radius: 4px;
+  }
+  .turn.assistant .bubble {
+    background: var(--tutor-bubble); color: var(--tutor-bubble-fg);
+    border-bottom-left-radius: 4px;
+  }
+  .empty-state {
+    color: var(--muted); font-style: italic; padding: 1rem 0; text-align: center;
+  }
+
+  .compose { display: flex; gap: .5rem; }
+  .compose textarea {
+    flex: 1; min-height: 40px; max-height: 160px; resize: vertical;
+    padding: .55rem .75rem; border: 1px solid var(--border); border-radius: 8px;
+    font: inherit;
+  }
+  .compose button {
+    padding: 0 1.2rem; border: none; border-radius: 8px;
+    background: var(--accent); color: var(--accent-fg);
+    font: inherit; font-weight: 500; cursor: pointer;
+  }
+  .compose button:disabled { opacity: .5; cursor: not-allowed; }
+
+  .err { color: #b03030; font-size: .85rem; margin-top: .5rem; }
+  .debug { margin-top: 1rem; padding: .5rem .75rem; background: #f0f0f0;
+    border-left: 3px solid var(--accent); font-size: .78rem; color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, monospace; }
 </style>
 </head>
 <body>
@@ -51,24 +111,199 @@
     <div class="sub">Hi <strong>{{DISPLAY_NAME}}</strong> — launched from {{PLATFORM_NAME}}{{CONTEXT_TITLE_SEP}}{{CONTEXT_TITLE}}.</div>
   </header>
 
-  <div class="card">
-    <h2>Available units ({{UNIT_COUNT}})</h2>
-    <ul class="units">
+  <!-- Unit picker -->
+  <div class="picker-view card" id="picker">
+    <h2>Pick a unit to chat with the tutor</h2>
+    <ul class="units" id="units-list">
 {{UNITS_LIST}}
     </ul>
   </div>
 
-  <div class="card">
-    <h2>What's next</h2>
-    <p class="placeholder">
-      The menu (Socratic tutor, MC / TF / FITB practice, free-response, practice exam, progress)
-      will plug in here. This page is the LTI-handshake confirmation that we're talking to Moodle.
-    </p>
+  <!-- Chat view -->
+  <div class="chat-view card" id="chat">
+    <div class="chat-header">
+      <h2 id="chat-title">Unit X: …</h2>
+      <button class="back-btn" id="back-btn" type="button">← Back to units</button>
+    </div>
+    <div class="turns" id="turns"></div>
+    <form class="compose" id="compose-form" autocomplete="off">
+      <textarea id="compose-input" placeholder="Type a message…" rows="2"></textarea>
+      <button type="submit" id="compose-send">Send</button>
+    </form>
+    <div class="err" id="err"></div>
   </div>
 
-  <div class="debug">
-    Roles: {{ROLES}}
-  </div>
+  <div class="debug">Roles: {{ROLES}}</div>
 </div>
+
+<script type="module">
+  // ltijs puts the ltik token on the URL as ?ltik=... after launch.
+  // We grab it once and use it as a query param on every API call.
+  const params = new URLSearchParams(window.location.search);
+  const LTIK = params.get('ltik') || '';
+  function apiUrl(path) {
+    const sep = path.includes('?') ? '&' : '?';
+    return path + (LTIK ? sep + 'ltik=' + encodeURIComponent(LTIK) : '');
+  }
+
+  const $ = (sel) => document.querySelector(sel);
+  const picker = $('#picker');
+  const chat = $('#chat');
+  const turnsEl = $('#turns');
+  const chatTitle = $('#chat-title');
+  const composeForm = $('#compose-form');
+  const composeInput = $('#compose-input');
+  const composeSend = $('#compose-send');
+  const errEl = $('#err');
+
+  let currentSessionId = null;
+  let currentUnitNo = null;
+
+  // Wire up unit clicks (server-rendered li elements carry data-unit-no).
+  document.querySelectorAll('#units-list li[data-unit-no]').forEach((li) => {
+    li.addEventListener('click', () => openUnit(parseInt(li.dataset.unitNo, 10), li.dataset.unitTitle || ''));
+  });
+
+  $('#back-btn').addEventListener('click', () => {
+    picker.classList.remove('hidden');
+    chat.classList.remove('active');
+    currentSessionId = null;
+    currentUnitNo = null;
+  });
+
+  async function openUnit(unitNo, unitTitle) {
+    errEl.textContent = '';
+    chatTitle.textContent = `Unit ${unitNo}${unitTitle ? ': ' + unitTitle : ''}`;
+    turnsEl.innerHTML = '<div class="empty-state">Loading…</div>';
+    picker.classList.add('hidden');
+    chat.classList.add('active');
+    composeInput.focus();
+
+    try {
+      const resp = await fetch(apiUrl('/api/tutor/session'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ unit_no: unitNo }),
+      });
+      if (!resp.ok) throw new Error('Server returned ' + resp.status);
+      const data = await resp.json();
+      currentSessionId = data.session.id;
+      currentUnitNo = unitNo;
+      renderTurns(data.turns);
+    } catch (e) {
+      turnsEl.innerHTML = '';
+      errEl.textContent = 'Failed to open session: ' + e.message;
+    }
+  }
+
+  function renderTurns(turns) {
+    turnsEl.innerHTML = '';
+    if (!turns.length) {
+      const hint = document.createElement('div');
+      hint.className = 'empty-state';
+      hint.textContent =
+        'Type your first message — describe what you\'re trying to understand, ' +
+        'or ask the tutor to quiz you on a concept from this unit.';
+      turnsEl.appendChild(hint);
+      return;
+    }
+    for (const t of turns) {
+      appendTurnElement(t.role, t.content);
+    }
+    turnsEl.scrollTop = turnsEl.scrollHeight;
+  }
+
+  function appendTurnElement(role, content) {
+    const div = document.createElement('div');
+    div.className = 'turn ' + role;
+    const bub = document.createElement('div');
+    bub.className = 'bubble';
+    bub.textContent = content;
+    div.appendChild(bub);
+    turnsEl.appendChild(div);
+    turnsEl.scrollTop = turnsEl.scrollHeight;
+    return bub;
+  }
+
+  composeForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const msg = composeInput.value.trim();
+    if (!msg) return;
+    composeInput.value = '';
+    await sendMessage(msg);
+  });
+
+  // Submit on Cmd/Ctrl+Enter; allow newlines on plain Enter for accessibility.
+  composeInput.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+      e.preventDefault();
+      composeForm.requestSubmit();
+    }
+  });
+
+  async function sendMessage(msg) {
+    if (!currentSessionId) return;
+    errEl.textContent = '';
+    composeSend.disabled = true;
+
+    // Strip empty-state hint on first send.
+    const empty = turnsEl.querySelector('.empty-state');
+    if (empty) empty.remove();
+
+    appendTurnElement('user', msg);
+    const assistantBubble = appendTurnElement('assistant', '');
+
+    try {
+      const resp = await fetch(apiUrl('/api/tutor/turn'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ session_id: currentSessionId, message: msg }),
+      });
+      if (!resp.ok) throw new Error('Server returned ' + resp.status);
+      if (!resp.body) throw new Error('No response body');
+
+      // Parse SSE chunks: "event: name\ndata: {...}\n\n"
+      const reader = resp.body.getReader();
+      const decoder = new TextDecoder();
+      let buf = '';
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buf += decoder.decode(value, { stream: true });
+        let idx;
+        while ((idx = buf.indexOf('\n\n')) !== -1) {
+          const raw = buf.slice(0, idx);
+          buf = buf.slice(idx + 2);
+          const evt = parseSSE(raw);
+          if (evt.event === 'chunk') {
+            assistantBubble.textContent += evt.data.text;
+            turnsEl.scrollTop = turnsEl.scrollHeight;
+          } else if (evt.event === 'error') {
+            errEl.textContent = 'Tutor error: ' + evt.data.message;
+          } else if (evt.event === 'done') {
+            // nothing
+          }
+        }
+      }
+    } catch (e) {
+      errEl.textContent = 'Send failed: ' + e.message;
+    } finally {
+      composeSend.disabled = false;
+      composeInput.focus();
+    }
+  }
+
+  function parseSSE(raw) {
+    let event = 'message';
+    let dataStr = '';
+    for (const line of raw.split('\n')) {
+      if (line.startsWith('event: ')) event = line.slice(7).trim();
+      else if (line.startsWith('data: ')) dataStr += line.slice(6);
+    }
+    let data = {};
+    try { data = JSON.parse(dataStr || '{}'); } catch {}
+    return { event, data };
+  }
+</script>
 </body>
 </html>

@@ -69,17 +69,22 @@ lti.onConnect(async (token: IdToken, req, res) => {
       'Student',
   });
 
-  // Render a minimal landing page. The template has placeholders we fill in
-  // server-side; the real UI will load through XHR + the ltik token.
+  // Render the unit-picker list. Each <li> carries data-unit-no / data-unit-title
+  // so the client-side JS can wire up click handlers against the rendered DOM.
   const units = listUnits();
   const unitsList = units
-    .map(
-      (u) =>
-        `<li><strong>Unit ${u.unit_no}:</strong> ${escapeHtml(u.title)} ` +
-        `<span class="meta">— ${u.terms_count} terms` +
-        (u.has_textbook ? ', textbook ✓' : '') +
-        `</span></li>`
-    )
+    .map((u) => {
+      const titleAttr = escapeHtml(u.title);
+      const metaParts: string[] = [`${u.terms_count} terms`];
+      if (u.has_textbook) metaParts.push('textbook ✓');
+      return (
+        `<li data-unit-no="${u.unit_no}" data-unit-title="${titleAttr}">` +
+        `<span><span class="unit-no">Unit ${u.unit_no}</span> ` +
+        `<span class="unit-title">${titleAttr}</span></span>` +
+        `<span class="unit-meta">${metaParts.join(' · ')}</span>` +
+        `</li>`
+      );
+    })
     .join('\n');
 
   const ctxTitle = token.platformContext.context?.title || '';
