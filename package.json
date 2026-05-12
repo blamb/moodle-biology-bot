@@ -25,7 +25,8 @@
     "ltijs-sequelize": "^2.4.4",
     "mysql2": "^3.11.0",
     "pg": "^8.13.0",
-    "sequelize": "^6.37.0"
+    "sequelize": "^6.37.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",

@@ -12,6 +12,8 @@
     --muted-2: #999;
     --accent: #0f6cbd;
     --accent-fg: #ffffff;
+    --good: #2a8a3e;
+    --bad: #b03030;
     --border: #e5e5e5;
     --card: #ffffff;
     --user-bubble: #0f6cbd;
@@ -45,26 +47,44 @@
   ul.units .unit-no { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 2.5em; }
   ul.units .unit-meta { color: var(--muted-2); font-size: .8rem; }
 
-  /* Chat view */
-  .chat-view { display: none; }
-  .chat-view.active { display: block; }
-  .picker-view { display: block; }
-  .picker-view.hidden { display: none; }
+  /* View toggling */
+  .view { display: none; }
+  .view.active { display: block; }
 
-  .chat-header {
-    display: flex; justify-content: space-between; align-items: center;
-    margin-bottom: .75rem;
+  /* Unit-view header (back + title + tabs) */
+  .unit-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: .5rem;
   }
-  .chat-header h2 { margin: 0; font-size: 1rem; }
+  .unit-header h2 { margin: 0; font-size: 1rem; }
   .back-btn {
     background: none; border: 1px solid var(--border); border-radius: 4px;
     padding: .25rem .6rem; cursor: pointer; font-size: .85rem; color: var(--muted);
   }
   .back-btn:hover { background: #f5f5f5; color: var(--fg); }
 
+  .tabs {
+    display: flex; gap: .25rem; border-bottom: 1px solid var(--border);
+    margin: .25rem 0 1rem;
+  }
+  .tab {
+    padding: .45rem .9rem; cursor: pointer; border: 1px solid transparent;
+    border-bottom: none; border-radius: 6px 6px 0 0;
+    font-size: .9rem; color: var(--muted);
+  }
+  .tab.active {
+    background: var(--card); border-color: var(--border); color: var(--fg);
+    margin-bottom: -1px; padding-bottom: calc(.45rem + 1px);
+  }
+  .tab:not(.active):hover { color: var(--fg); }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* Chat */
   .turns {
     background: #fff; border: 1px solid var(--border); border-radius: 8px;
-    padding: 1rem; min-height: 340px; max-height: 56vh; overflow-y: auto;
+    padding: 1rem; min-height: 320px; max-height: 56vh; overflow-y: auto;
     margin-bottom: .75rem;
   }
   .turn { margin: .5rem 0; display: flex; }
@@ -84,7 +104,6 @@
   .empty-state {
     color: var(--muted); font-style: italic; padding: 1rem 0; text-align: center;
   }
-
   .compose { display: flex; gap: .5rem; }
   .compose textarea {
     flex: 1; min-height: 40px; max-height: 160px; resize: vertical;
@@ -98,7 +117,60 @@
   }
   .compose button:disabled { opacity: .5; cursor: not-allowed; }
 
-  .err { color: #b03030; font-size: .85rem; margin-top: .5rem; }
+  /* Quiz */
+  .quiz-config { display: flex; flex-direction: column; gap: .75rem; max-width: 360px; }
+  .quiz-config label { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+  .quiz-config select, .quiz-config input {
+    padding: .35rem .5rem; border: 1px solid var(--border); border-radius: 4px;
+    font: inherit; min-width: 9rem;
+  }
+  .btn {
+    padding: .5rem 1.1rem; border: none; border-radius: 6px;
+    background: var(--accent); color: var(--accent-fg);
+    font: inherit; font-weight: 500; cursor: pointer;
+  }
+  .btn:disabled { opacity: .5; cursor: not-allowed; }
+  .btn-ghost {
+    background: none; color: var(--muted); border: 1px solid var(--border);
+  }
+  .btn-ghost:hover { background: #f5f5f5; color: var(--fg); }
+
+  .quiz-question {
+    background: #fff; border: 1px solid var(--border); border-radius: 8px;
+    padding: 1rem 1.25rem; margin-top: .5rem;
+  }
+  .quiz-q-progress { color: var(--muted); font-size: .85rem; margin-bottom: .5rem; }
+  .quiz-stem { font-weight: 500; margin: .25rem 0 .75rem; white-space: pre-wrap; }
+  .quiz-options { display: flex; flex-direction: column; gap: .35rem; margin: .5rem 0; }
+  .quiz-options label {
+    display: flex; align-items: flex-start; gap: .5rem; padding: .4rem .6rem;
+    border: 1px solid var(--border); border-radius: 6px; cursor: pointer;
+  }
+  .quiz-options label:hover { background: #f8f8f8; }
+  .quiz-options label.selected { background: #eaf3fc; border-color: var(--accent); }
+  .quiz-options label.correct { background: #e8f5ec; border-color: var(--good); }
+  .quiz-options label.incorrect { background: #fce8e8; border-color: var(--bad); }
+  .quiz-fitb-input {
+    padding: .45rem .6rem; border: 1px solid var(--border); border-radius: 4px;
+    font: inherit; width: 100%; max-width: 24rem;
+  }
+  .quiz-result {
+    margin-top: .75rem; padding: .6rem .85rem; border-radius: 6px;
+    border-left: 3px solid var(--border); background: #f8f8f8;
+  }
+  .quiz-result.correct { border-left-color: var(--good); background: #f1f9f3; }
+  .quiz-result.incorrect { border-left-color: var(--bad); background: #fcf3f3; }
+  .quiz-result .label { font-weight: 600; }
+  .quiz-result.correct .label { color: var(--good); }
+  .quiz-result.incorrect .label { color: var(--bad); }
+  .quiz-explanation { margin: .35rem 0 0; color: var(--fg); }
+
+  .quiz-summary { padding: 1rem 0; }
+  .quiz-summary .score {
+    font-size: 1.5rem; font-weight: 600; margin: .5rem 0;
+  }
+
+  .err { color: var(--bad); font-size: .85rem; margin-top: .5rem; }
   .debug { margin-top: 1rem; padding: .5rem .75rem; background: #f0f0f0;
     border-left: 3px solid var(--accent); font-size: .78rem; color: var(--muted);
     font-family: ui-monospace, SFMono-Regular, monospace; }
@@ -111,74 +183,134 @@
     <div class="sub">Hi <strong>{{DISPLAY_NAME}}</strong> — launched from {{PLATFORM_NAME}}{{CONTEXT_TITLE_SEP}}{{CONTEXT_TITLE}}.</div>
   </header>
 
-  <!-- Unit picker -->
-  <div class="picker-view card" id="picker">
-    <h2>Pick a unit to chat with the tutor</h2>
+  <!-- ───── Picker view ───── -->
+  <div class="view card active" id="view-picker">
+    <h2>Pick a unit</h2>
     <ul class="units" id="units-list">
 {{UNITS_LIST}}
     </ul>
   </div>
 
-  <!-- Chat view -->
-  <div class="chat-view card" id="chat">
-    <div class="chat-header">
-      <h2 id="chat-title">Unit X: …</h2>
+  <!-- ───── Unit view ───── -->
+  <div class="view card" id="view-unit">
+    <div class="unit-header">
+      <h2 id="unit-title">Unit X: …</h2>
       <button class="back-btn" id="back-btn" type="button">← Back to units</button>
     </div>
-    <div class="turns" id="turns"></div>
-    <form class="compose" id="compose-form" autocomplete="off">
-      <textarea id="compose-input" placeholder="Type a message…" rows="2"></textarea>
-      <button type="submit" id="compose-send">Send</button>
-    </form>
-    <div class="err" id="err"></div>
+    <div class="tabs" role="tablist">
+      <div class="tab active" data-tab="tutor">Tutor</div>
+      <div class="tab" data-tab="mc">MC quiz</div>
+      <div class="tab" data-tab="tf">TF quiz</div>
+      <div class="tab" data-tab="fitb">FITB quiz</div>
+    </div>
+
+    <!-- Tutor panel -->
+    <div class="tab-panel active" data-panel="tutor">
+      <div class="turns" id="turns"></div>
+      <form class="compose" id="compose-form" autocomplete="off">
+        <textarea id="compose-input" placeholder="Type a message…" rows="2"></textarea>
+        <button type="submit" id="compose-send">Send</button>
+      </form>
+      <div class="err" id="tutor-err"></div>
+    </div>
+
+    <!-- Quiz panels (one shared structure, kind set via data-kind) -->
+    <div class="tab-panel" data-panel="mc"></div>
+    <div class="tab-panel" data-panel="tf"></div>
+    <div class="tab-panel" data-panel="fitb"></div>
   </div>
 
   <div class="debug">Roles: {{ROLES}}</div>
 </div>
 
+<template id="tpl-quiz-config">
+  <div class="quiz-config">
+    <h2 style="margin:0">Generate a practice quiz</h2>
+    <label>How many questions?
+      <select data-field="count">
+        <option value="3">3</option>
+        <option value="5" selected>5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+      </select>
+    </label>
+    <label>Difficulty
+      <select data-field="difficulty">
+        <option value="introductory">Introductory</option>
+        <option value="intermediate" selected>Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+    </label>
+    <div>
+      <button class="btn" data-action="generate">Generate</button>
+    </div>
+    <div class="err" data-field="err"></div>
+  </div>
+</template>
+
 <script type="module">
-  // ltijs puts the ltik token on the URL as ?ltik=... after launch.
-  // We grab it once and use it as a query param on every API call.
   const params = new URLSearchParams(window.location.search);
   const LTIK = params.get('ltik') || '';
   function apiUrl(path) {
     const sep = path.includes('?') ? '&' : '?';
     return path + (LTIK ? sep + 'ltik=' + encodeURIComponent(LTIK) : '');
   }
+  const $ = (sel, root = document) => root.querySelector(sel);
+  const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
-  const $ = (sel) => document.querySelector(sel);
-  const picker = $('#picker');
-  const chat = $('#chat');
-  const turnsEl = $('#turns');
-  const chatTitle = $('#chat-title');
-  const composeForm = $('#compose-form');
-  const composeInput = $('#compose-input');
-  const composeSend = $('#compose-send');
-  const errEl = $('#err');
+  // ───── View routing ─────
+  const viewPicker = $('#view-picker');
+  const viewUnit = $('#view-unit');
+  function showView(name) {
+    [viewPicker, viewUnit].forEach((v) => v.classList.toggle('active', v.id === 'view-' + name));
+  }
 
-  let currentSessionId = null;
-  let currentUnitNo = null;
+  let currentUnit = null; // { no, title }
+  let currentTutor = { sessionId: null };
 
-  // Wire up unit clicks (server-rendered li elements carry data-unit-no).
-  document.querySelectorAll('#units-list li[data-unit-no]').forEach((li) => {
+  $$('#units-list li[data-unit-no]').forEach((li) => {
     li.addEventListener('click', () => openUnit(parseInt(li.dataset.unitNo, 10), li.dataset.unitTitle || ''));
   });
 
   $('#back-btn').addEventListener('click', () => {
-    picker.classList.remove('hidden');
-    chat.classList.remove('active');
-    currentSessionId = null;
-    currentUnitNo = null;
+    currentUnit = null;
+    currentTutor = { sessionId: null };
+    showView('picker');
   });
 
   async function openUnit(unitNo, unitTitle) {
-    errEl.textContent = '';
-    chatTitle.textContent = `Unit ${unitNo}${unitTitle ? ': ' + unitTitle : ''}`;
-    turnsEl.innerHTML = '<div class="empty-state">Loading…</div>';
-    picker.classList.add('hidden');
-    chat.classList.add('active');
-    composeInput.focus();
+    currentUnit = { no: unitNo, title: unitTitle };
+    $('#unit-title').textContent = `Unit ${unitNo}: ${unitTitle}`;
+    // Reset all tab panels to their initial state
+    showTab('tutor');
+    // Tutor is the only one that pre-loads; quiz panels render on tab click.
+    await tutorOpen(unitNo);
+    showView('unit');
+  }
 
+  // ───── Tab routing ─────
+  $$('.tab').forEach((tab) => {
+    tab.addEventListener('click', () => showTab(tab.dataset.tab));
+  });
+
+  function showTab(name) {
+    $$('.tab').forEach((t) => t.classList.toggle('active', t.dataset.tab === name));
+    $$('.tab-panel').forEach((p) => p.classList.toggle('active', p.dataset.panel === name));
+    if (name === 'mc' || name === 'tf' || name === 'fitb') {
+      renderQuizConfig(name);
+    }
+  }
+
+  // ───── Tutor ─────
+  const turnsEl = $('#turns');
+  const composeForm = $('#compose-form');
+  const composeInput = $('#compose-input');
+  const composeSend = $('#compose-send');
+  const tutorErr = $('#tutor-err');
+
+  async function tutorOpen(unitNo) {
+    tutorErr.textContent = '';
+    turnsEl.innerHTML = '<div class="empty-state">Loading…</div>';
     try {
       const resp = await fetch(apiUrl('/api/tutor/session'), {
         method: 'POST',
@@ -187,12 +319,11 @@
       });
       if (!resp.ok) throw new Error('Server returned ' + resp.status);
       const data = await resp.json();
-      currentSessionId = data.session.id;
-      currentUnitNo = unitNo;
+      currentTutor.sessionId = data.session.id;
       renderTurns(data.turns);
     } catch (e) {
       turnsEl.innerHTML = '';
-      errEl.textContent = 'Failed to open session: ' + e.message;
+      tutorErr.textContent = 'Failed to open tutor: ' + e.message;
     }
   }
 
@@ -202,14 +333,11 @@
       const hint = document.createElement('div');
       hint.className = 'empty-state';
       hint.textContent =
-        'Type your first message — describe what you\'re trying to understand, ' +
-        'or ask the tutor to quiz you on a concept from this unit.';
+        'Type your first message — describe what you\'re trying to understand, or ask the tutor to quiz you on a concept from this unit.';
       turnsEl.appendChild(hint);
       return;
     }
-    for (const t of turns) {
-      appendTurnElement(t.role, t.content);
-    }
+    for (const t of turns) appendTurnElement(t.role, t.content);
     turnsEl.scrollTop = turnsEl.scrollHeight;
   }
 
@@ -230,10 +358,8 @@
     const msg = composeInput.value.trim();
     if (!msg) return;
     composeInput.value = '';
-    await sendMessage(msg);
+    await tutorSend(msg);
   });
-
-  // Submit on Cmd/Ctrl+Enter; allow newlines on plain Enter for accessibility.
   composeInput.addEventListener('keydown', (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
       e.preventDefault();
@@ -241,15 +367,13 @@
     }
   });
 
-  async function sendMessage(msg) {
-    if (!currentSessionId) return;
-    errEl.textContent = '';
+  async function tutorSend(msg) {
+    if (!currentTutor.sessionId) return;
+    tutorErr.textContent = '';
     composeSend.disabled = true;
 
-    // Strip empty-state hint on first send.
     const empty = turnsEl.querySelector('.empty-state');
     if (empty) empty.remove();
-
     appendTurnElement('user', msg);
     const assistantBubble = appendTurnElement('assistant', '');
 
@@ -257,12 +381,10 @@
       const resp = await fetch(apiUrl('/api/tutor/turn'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ session_id: currentSessionId, message: msg }),
+        body: JSON.stringify({ session_id: currentTutor.sessionId, message: msg }),
       });
       if (!resp.ok) throw new Error('Server returned ' + resp.status);
       if (!resp.body) throw new Error('No response body');
-
-      // Parse SSE chunks: "event: name\ndata: {...}\n\n"
       const reader = resp.body.getReader();
       const decoder = new TextDecoder();
       let buf = '';
@@ -279,14 +401,12 @@
             assistantBubble.textContent += evt.data.text;
             turnsEl.scrollTop = turnsEl.scrollHeight;
           } else if (evt.event === 'error') {
-            errEl.textContent = 'Tutor error: ' + evt.data.message;
-          } else if (evt.event === 'done') {
-            // nothing
+            tutorErr.textContent = 'Tutor error: ' + evt.data.message;
           }
         }
       }
     } catch (e) {
-      errEl.textContent = 'Send failed: ' + e.message;
+      tutorErr.textContent = 'Send failed: ' + e.message;
     } finally {
       composeSend.disabled = false;
       composeInput.focus();
@@ -303,6 +423,289 @@
     let data = {};
     try { data = JSON.parse(dataStr || '{}'); } catch {}
     return { event, data };
+  }
+
+  // ───── Quiz ─────
+  const quizState = { mc: null, tf: null, fitb: null }; // per-kind: {sessionId, questions, idx, score}
+
+  function renderQuizConfig(kind) {
+    const panel = $(`.tab-panel[data-panel="${kind}"]`);
+    // If the quiz is already in-flight or finished in this session, don't blow it away.
+    if (panel.dataset.state === 'quiz' || panel.dataset.state === 'done') return;
+
+    panel.innerHTML = '';
+    const tpl = $('#tpl-quiz-config').content.cloneNode(true);
+    panel.appendChild(tpl);
+    panel.dataset.state = 'config';
+
+    panel.querySelector('[data-action="generate"]').addEventListener('click', () =>
+      quizGenerate(kind, panel)
+    );
+  }
+
+  async function quizGenerate(kind, panel) {
+    const count = parseInt(panel.querySelector('[data-field="count"]').value, 10);
+    const difficulty = panel.querySelector('[data-field="difficulty"]').value;
+    const errEl = panel.querySelector('[data-field="err"]');
+    const btn = panel.querySelector('[data-action="generate"]');
+    errEl.textContent = '';
+    btn.disabled = true;
+    btn.textContent = 'Generating…';
+
+    try {
+      const resp = await fetch(apiUrl('/api/quiz/generate'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ unit_no: currentUnit.no, kind, count, difficulty }),
+      });
+      if (!resp.ok) {
+        const body = await resp.json().catch(() => ({}));
+        throw new Error(body.error || `Server returned ${resp.status}`);
+      }
+      const data = await resp.json();
+      quizState[kind] = {
+        sessionId: data.session_id,
+        questions: data.questions,
+        idx: 0,
+        score: 0,
+        difficulty,
+        kind,
+      };
+      panel.dataset.state = 'quiz';
+      renderQuizQuestion(kind, panel);
+    } catch (e) {
+      errEl.textContent = 'Generate failed: ' + e.message;
+      btn.disabled = false;
+      btn.textContent = 'Generate';
+    }
+  }
+
+  function renderQuizQuestion(kind, panel) {
+    const s = quizState[kind];
+    if (s.idx >= s.questions.length) return renderQuizSummary(kind, panel);
+
+    const q = s.questions[s.idx];
+    panel.innerHTML = '';
+    const box = document.createElement('div');
+    box.className = 'quiz-question';
+
+    const prog = document.createElement('div');
+    prog.className = 'quiz-q-progress';
+    prog.textContent = `Question ${s.idx + 1} of ${s.questions.length} · ${s.difficulty}`;
+    box.appendChild(prog);
+
+    const stem = document.createElement('div');
+    stem.className = 'quiz-stem';
+    stem.textContent = q.stem;
+    box.appendChild(stem);
+
+    let inputEl, getResponse;
+    if (kind === 'mc') {
+      const opts = document.createElement('div');
+      opts.className = 'quiz-options';
+      q.options.forEach((opt, i) => {
+        const label = document.createElement('label');
+        label.dataset.idx = String(i);
+        const r = document.createElement('input');
+        r.type = 'radio'; r.name = 'mc-' + s.idx; r.value = String(i);
+        r.addEventListener('change', () => {
+          opts.querySelectorAll('label').forEach((l) => l.classList.toggle('selected', l.dataset.idx === String(i)));
+        });
+        label.appendChild(r);
+        const span = document.createElement('span');
+        span.textContent = String.fromCharCode(65 + i) + ') ' + opt;
+        label.appendChild(span);
+        opts.appendChild(label);
+      });
+      box.appendChild(opts);
+      getResponse = () => {
+        const checked = opts.querySelector('input[type=radio]:checked');
+        return checked ? parseInt(checked.value, 10) : null;
+      };
+    } else if (kind === 'tf') {
+      const opts = document.createElement('div');
+      opts.className = 'quiz-options';
+      ['True', 'False'].forEach((label, i) => {
+        const isTrue = i === 0;
+        const lab = document.createElement('label');
+        lab.dataset.idx = isTrue ? 'true' : 'false';
+        const r = document.createElement('input');
+        r.type = 'radio'; r.name = 'tf-' + s.idx; r.value = isTrue ? 'true' : 'false';
+        r.addEventListener('change', () => {
+          opts.querySelectorAll('label').forEach((l) => l.classList.toggle('selected', l.dataset.idx === r.value));
+        });
+        lab.appendChild(r);
+        const span = document.createElement('span');
+        span.textContent = label;
+        lab.appendChild(span);
+        opts.appendChild(lab);
+      });
+      box.appendChild(opts);
+      getResponse = () => {
+        const checked = opts.querySelector('input[type=radio]:checked');
+        if (!checked) return null;
+        return checked.value === 'true';
+      };
+    } else { // fitb
+      const inp = document.createElement('input');
+      inp.type = 'text';
+      inp.className = 'quiz-fitb-input';
+      inp.placeholder = 'Type your answer';
+      inp.autocomplete = 'off';
+      box.appendChild(inp);
+      inputEl = inp;
+      getResponse = () => inp.value.trim();
+      // Submit on Enter
+      inp.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          submitBtn.click();
+        }
+      });
+    }
+
+    const submitBtn = document.createElement('button');
+    submitBtn.className = 'btn';
+    submitBtn.textContent = 'Submit';
+    submitBtn.addEventListener('click', async () => {
+      const response = getResponse();
+      if (response === null || response === '' || response === undefined) {
+        errEl.textContent = 'Pick an answer first.';
+        return;
+      }
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Checking…';
+      errEl.textContent = '';
+      try {
+        const resp = await fetch(apiUrl('/api/quiz/answer'), {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            session_id: s.sessionId,
+            question_index: s.idx,
+            response,
+          }),
+        });
+        if (!resp.ok) {
+          const body = await resp.json().catch(() => ({}));
+          throw new Error(body.error || `Server returned ${resp.status}`);
+        }
+        const data = await resp.json();
+        if (data.correct) s.score += 1;
+        renderQuizResult(kind, panel, q, response, data);
+      } catch (e) {
+        errEl.textContent = 'Submit failed: ' + e.message;
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit';
+      }
+    });
+    box.appendChild(submitBtn);
+
+    const errEl = document.createElement('div');
+    errEl.className = 'err';
+    box.appendChild(errEl);
+
+    panel.appendChild(box);
+    if (inputEl) inputEl.focus();
+  }
+
+  function renderQuizResult(kind, panel, q, response, data) {
+    const s = quizState[kind];
+    // Mark options visually
+    const optsEl = panel.querySelector('.quiz-options');
+    if (optsEl && kind === 'mc') {
+      const correctIdx = data.correct_index;
+      optsEl.querySelectorAll('label').forEach((l) => {
+        const i = parseInt(l.dataset.idx, 10);
+        l.classList.remove('selected');
+        if (i === correctIdx) l.classList.add('correct');
+        else if (i === response && !data.correct) l.classList.add('incorrect');
+      });
+    } else if (optsEl && kind === 'tf') {
+      optsEl.querySelectorAll('label').forEach((l) => {
+        l.classList.remove('selected');
+        const isCorrect = (l.dataset.idx === 'true') === data.correct_answer;
+        if (isCorrect) l.classList.add('correct');
+        else if (((l.dataset.idx === 'true') === response) && !data.correct) l.classList.add('incorrect');
+      });
+    }
+
+    const result = document.createElement('div');
+    result.className = 'quiz-result ' + (data.correct ? 'correct' : 'incorrect');
+    const label = document.createElement('span');
+    label.className = 'label';
+    label.textContent = data.correct ? '✓ Correct' : '✗ Not quite';
+    result.appendChild(label);
+    if (kind === 'fitb' && !data.correct) {
+      const expected = document.createElement('span');
+      expected.textContent = ` — expected: "${data.correct_answer}"`;
+      result.appendChild(expected);
+    }
+    const exp = document.createElement('p');
+    exp.className = 'quiz-explanation';
+    exp.textContent = data.explanation;
+    result.appendChild(exp);
+
+    const submitBtn = panel.querySelector('.btn');
+    submitBtn.replaceWith((function () {
+      const next = document.createElement('button');
+      next.className = 'btn';
+      next.textContent = s.idx + 1 < s.questions.length ? 'Next question →' : 'See results →';
+      next.addEventListener('click', () => {
+        s.idx += 1;
+        renderQuizQuestion(kind, panel);
+      });
+      return next;
+    })());
+
+    panel.querySelector('.quiz-question').appendChild(result);
+  }
+
+  function renderQuizSummary(kind, panel) {
+    const s = quizState[kind];
+    panel.dataset.state = 'done';
+    panel.innerHTML = '';
+    const box = document.createElement('div');
+    box.className = 'quiz-summary';
+
+    const h = document.createElement('h2');
+    h.style.margin = '0';
+    h.textContent = `Quiz finished`;
+    box.appendChild(h);
+
+    const score = document.createElement('div');
+    score.className = 'score';
+    score.textContent = `${s.score} / ${s.questions.length} correct`;
+    box.appendChild(score);
+
+    const pct = Math.round((s.score / s.questions.length) * 100);
+    const sub = document.createElement('div');
+    sub.style.color = 'var(--muted)';
+    sub.textContent = `${pct}% · ${s.questions.length} ${kind.toUpperCase()} questions at ${s.difficulty} difficulty.`;
+    box.appendChild(sub);
+
+    const actions = document.createElement('div');
+    actions.style.marginTop = '1rem';
+    actions.style.display = 'flex';
+    actions.style.gap = '.5rem';
+    const again = document.createElement('button');
+    again.className = 'btn';
+    again.textContent = 'Generate another quiz';
+    again.addEventListener('click', () => {
+      quizState[kind] = null;
+      panel.dataset.state = 'config';
+      renderQuizConfig(kind);
+    });
+    actions.appendChild(again);
+
+    const tutor = document.createElement('button');
+    tutor.className = 'btn btn-ghost';
+    tutor.textContent = 'Discuss with tutor';
+    tutor.addEventListener('click', () => showTab('tutor'));
+    actions.appendChild(tutor);
+
+    box.appendChild(actions);
+    panel.appendChild(box);
   }
 </script>
 </body>

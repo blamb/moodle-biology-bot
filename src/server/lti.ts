@@ -21,7 +21,17 @@ import { findOrCreateStudent } from './students.js';
 import { listUnits } from './content.js';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-const LAUNCH_HTML = readFileSync(join(HERE, '..', 'web', 'launch.html'), 'utf8');
+const LAUNCH_HTML_PATH = join(HERE, '..', 'web', 'launch.html');
+
+// In dev we re-read on every launch so HTML edits show up without restarting
+// the Node server. In prod we'd cache.
+const isDev = (process.env.NODE_ENV ?? 'development') !== 'production';
+let _launchHtmlCache: string | null = null;
+function loadLaunchHtml(): string {
+  if (isDev) return readFileSync(LAUNCH_HTML_PATH, 'utf8');
+  if (!_launchHtmlCache) _launchHtmlCache = readFileSync(LAUNCH_HTML_PATH, 'utf8');
+  return _launchHtmlCache;
+}
 
 // One Postgres instance, two logical "uses": ltijs tables get auto-created by
 // ltijs-sequelize; our migrations create the rest.
@@ -88,7 +98,7 @@ lti.onConnect(async (token: IdToken, req, res) => {
     .join('\n');
 
   const ctxTitle = token.platformContext.context?.title || '';
-  const html = LAUNCH_HTML
+  const html = loadLaunchHtml()
     .replace('{{DISPLAY_NAME}}', escapeHtml(student.display_name))
     .replace('{{PLATFORM_NAME}}', escapeHtml(token.platformInfo.name || 'Unknown platform'))
     .replace('{{CONTEXT_TITLE_SEP}}', ctxTitle ? ' — ' : '')
