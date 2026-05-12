@@ -86,7 +86,10 @@ lti.onConnect(async (token: IdToken, req, res) => {
   const student = await findOrCreateStudent({
     sub: token.user,
     iss: token.iss,
-    contextId: token.platformContext.contextId,
+    // Use the pure LTI context.id (course) — NOT ltijs's contextId which mixes
+    // in resource_link_id and hashes, giving a different id per activity instance.
+    // Falls back to ltijs's contextId only if context.id is somehow missing.
+    contextId: token.platformContext.context?.id ?? token.platformContext.contextId,
     displayName:
       token.userInfo.name ||
       [token.userInfo.given_name, token.userInfo.family_name].filter(Boolean).join(' ') ||

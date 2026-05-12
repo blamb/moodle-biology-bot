@@ -66,7 +66,8 @@ async function studentFromToken(token: IdToken) {
   return findOrCreateStudent({
     sub: token.user,
     iss: token.iss,
-    contextId: token.platformContext.contextId,
+    // Pure LTI course id — not ltijs's compound contextId which varies per activity.
+    contextId: token.platformContext.context?.id ?? token.platformContext.contextId,
     displayName:
       token.userInfo.name ||
       [token.userInfo.given_name, token.userInfo.family_name].filter(Boolean).join(' ') ||
