@@ -121,6 +121,19 @@
   }
   .callout.note { background: #fffaf0; border-left-color: #b07000; }
 
+  .screenshot { margin: 1rem 0; }
+  .screenshot img {
+    width: 100%; max-width: 720px; display: block; margin: 0 auto;
+    border: 1px solid var(--border); border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    background: #fff;
+  }
+  .screenshot figcaption {
+    color: var(--muted); font-size: .85rem;
+    margin: .45rem auto 0; text-align: center; font-style: italic;
+    max-width: 720px;
+  }
+
   .grounding-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
   .grounding-table th, .grounding-table td {
     text-align: left; padding: .45rem .65rem;
@@ -184,6 +197,11 @@
     <li><strong>You'll see a list of units</strong>. Click any unit to start working.</li>
   </ol>
 
+  <figure class="screenshot">
+    <img src="screenshots/1-unit-picker.png" alt="The Biology Bot launch page showing 17 units with per-kind progress badges and a 'continue where you left off' card">
+    <figcaption>The launch page. Each unit shows your accuracy badges so far; a "continue where you left off" card resumes your last session.</figcaption>
+  </figure>
+
   <h3>What each tab does</h3>
   <p>Once you're inside a unit, you'll see five tabs across the top:</p>
 
@@ -206,6 +224,16 @@
     </dl>
   </div>
 
+  <figure class="screenshot">
+    <img src="screenshots/2-tutor-chat.png" alt="The Tutor tab mid-conversation. Student asked about interstitial fluid; tutor responds by building intuition from a concrete capillary scenario.">
+    <figcaption>The Tutor tab probes the student's understanding rather than handing over an answer. The "↻ New conversation" button (top right) resets context anytime.</figcaption>
+  </figure>
+
+  <figure class="screenshot">
+    <img src="screenshots/3-mc-question.png" alt="An MC question after submitting an incorrect answer. The chosen option is marked red, the correct answer is green, and a detailed explanation covers why each distractor is wrong.">
+    <figcaption>After every quiz answer you see whether you were right plus a detailed explanation — for MC, why each distractor was wrong. Click "Want to know more?" for an even richer walkthrough with slide citations.</figcaption>
+  </figure>
+
   <h3>While you're answering</h3>
   <ul>
     <li><strong>"Want to know more?"</strong> button on any result gives a deeper plain-English walkthrough with citations to specific slides or textbook sections.</li>
@@ -225,6 +253,11 @@
     </li>
   </ol>
 
+  <figure class="screenshot">
+    <img src="screenshots/4-practice-exam-config.png" alt="Practice exam configuration: difficulty dropdown, count inputs for MC/TF/FITB/FR, feedback-during toggle, and a per-unit checklist with All/None shortcuts.">
+    <figcaption>Practice exam configuration. Uncheck "Show feedback after each question" to simulate real exam conditions.</figcaption>
+  </figure>
+
   <h3>Tracking your progress</h3>
   <p>
     Click <strong>📊 Your progress</strong> in the header. You'll see your
@@ -236,6 +269,11 @@
     card when you've used the tool before — one click resumes the unit and
     activity you were last using.
   </p>
+
+  <figure class="screenshot">
+    <img src="screenshots/5-student-progress.png" alt="Your progress view with overall accuracy, three weak-spot rows highlighted in pink, and a per-unit breakdown table showing MC, TF, FITB, FR, and Tutor activity per unit.">
+    <figcaption>Your progress: overall accuracy, weak spots automatically flagged, and a per-unit-per-kind breakdown showing exactly where you're solid and where you need more work.</figcaption>
+  </figure>
 </section>
 
 <section id="instructors">
@@ -268,6 +306,11 @@
   <h4>Per-unit performance</h4>
   <p>For every unit: how many students have engaged, total attempts, class accuracy. Helps spot units that are either consistently easy or consistently hard, vs. units no one is touching.</p>
 
+  <figure class="screenshot">
+    <img src="screenshots/6-instructor-overview.png" alt="The top of the instructor dashboard: class total cards (students, quiz attempts, class accuracy, tutor turns, tutor sessions), three class weak-spot rows, and the beginning of the per-unit performance table.">
+    <figcaption>Top of the instructor dashboard. Class totals at a glance, then class-wide weak spots — units where the cohort is under 70% across enough attempts to be meaningful.</figcaption>
+  </figure>
+
   <h4>Roster</h4>
   <p>One row per student in the course: total attempts, accuracy, tutor turn count, flagged weak units, and time since last seen. Click any student to drill into their per-unit-per-kind breakdown — same view they see for themselves.</p>
 
@@ -284,6 +327,11 @@
     This is most useful after a meaningful amount of student activity has
     accumulated. Empty courses produce empty analyses.
   </p>
+
+  <figure class="screenshot">
+    <img src="screenshots/7-instructor-roster-concepts.png" alt="The instructor view roster (students with attempts, accuracy, weak unit pills, last-seen time) followed by the AI-generated concept-gap analysis flagging specific misunderstandings with slide citations and suggested instructor actions.">
+    <figcaption>The roster (top) lets you drill into any student. Below it, the AI-generated concept-gap analysis names specific misunderstandings ("smooth ER function: structural feature vs. mechanistic explanation"), cites the slide where it lives, and suggests an instructor action.</figcaption>
+  </figure>
 
   <div class="callout note">
     <strong>What's <em>not</em> in the instructor dashboard:</strong>
