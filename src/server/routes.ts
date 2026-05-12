@@ -98,7 +98,7 @@ lti.app.get('/api/teacher/dashboard', async (req: Request, res: Response) => {
     if (!g) return;
     const dashboard = await getCourseDashboard({
       iss: g.token.iss,
-      contextId: g.token.platformContext.contextId,
+      contextId: g.token.platformContext.context?.id ?? g.token.platformContext.contextId,
     });
     res.json(dashboard);
   } catch (e) {
@@ -114,11 +114,12 @@ lti.app.get('/api/teacher/student/:id', async (req: Request, res: Response) => {
     const targetId = parseInt(String(req.params.id ?? ''), 10);
     if (!Number.isInteger(targetId)) return res.status(400).json({ error: 'bad id' });
 
-    // Verify target student is in the same LTI context
+    // Verify target student is in the same LTI context (pure course id)
+    const courseId = g.token.platformContext.context?.id ?? g.token.platformContext.contextId;
     const rows = await query<{ id: number; display_name: string }>(
       `select id, display_name from student
        where id = $1 and lti_iss = $2 and lti_context_id = $3`,
-      [targetId, g.token.iss, g.token.platformContext.contextId]
+      [targetId, g.token.iss, courseId]
     );
     if (!rows.length) return res.status(404).json({ error: 'student not in your course' });
 
@@ -140,7 +141,7 @@ lti.app.post('/api/teacher/concepts', async (req: Request, res: Response) => {
       : undefined;
     const analysis = await analyzeClassConceptGaps({
       iss: g.token.iss,
-      contextId: g.token.platformContext.contextId,
+      contextId: g.token.platformContext.context?.id ?? g.token.platformContext.contextId,
       unitNo,
     });
     res.json({ analysis });
