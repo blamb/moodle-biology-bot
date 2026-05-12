@@ -693,6 +693,27 @@
     el.innerHTML = mdToHtml(text);
   }
 
+  // Map known error patterns to student-friendly messages instead of raw API text.
+  function friendlyError(e) {
+    const msg = String(e?.message ?? e ?? '');
+    if (/529|Overloaded|overloaded_error/i.test(msg)) {
+      return 'The AI is overloaded right now (Anthropic API). Wait 30 seconds and try again — usually clears quickly.';
+    }
+    if (/\b(503|504)\b|gateway|bad gateway|service unavailable/i.test(msg)) {
+      return 'The server is starting up or briefly unavailable. Try again in a few seconds.';
+    }
+    if (/Failed to fetch|NetworkError|TypeError: load failed/i.test(msg)) {
+      return 'Network error — check your connection and try again.';
+    }
+    if (/timeout|timed out|ETIMEDOUT/i.test(msg)) {
+      return 'The AI is taking longer than usual. Try again, or pick a smaller question count.';
+    }
+    if (/rate.?limit|429/i.test(msg)) {
+      return 'Hit a usage rate limit. Wait a minute and try again.';
+    }
+    return msg;
+  }
+
   // ───── View routing ─────
   const viewPicker = $('#view-picker');
   const viewUnit = $('#view-unit');
@@ -799,7 +820,7 @@
       renderTurns(data.turns);
     } catch (e) {
       turnsEl.innerHTML = '';
-      tutorErr.textContent = 'Failed to open tutor: ' + e.message;
+      tutorErr.textContent = 'Failed to open tutor: ' + friendlyError(e);
     }
   }
 
@@ -851,7 +872,7 @@
       currentTutor.sessionId = data.session.id;
       renderTurns(data.turns);
     } catch (e) {
-      tutorErr.textContent = 'Reset failed: ' + e.message;
+      tutorErr.textContent = 'Reset failed: ' + friendlyError(e);
     }
   });
 
@@ -910,7 +931,7 @@
         }
       }
     } catch (e) {
-      tutorErr.textContent = 'Send failed: ' + e.message;
+      tutorErr.textContent = 'Send failed: ' + friendlyError(e);
     } finally {
       composeSend.disabled = false;
       composeInput.focus();
@@ -995,7 +1016,7 @@
       panel.dataset.state = 'quiz';
       renderQuizQuestion(kind, panel);
     } catch (e) {
-      errEl.textContent = 'Generate failed: ' + e.message;
+      errEl.textContent = 'Generate failed: ' + friendlyError(e);
       btn.disabled = false;
       btn.textContent = 'Generate';
     }
@@ -1129,7 +1150,7 @@
         s.results.push({ question: q, response, data });
         renderQuizResult(kind, panel, q, response, data);
       } catch (e) {
-        errEl.textContent = 'Submit failed: ' + e.message;
+        errEl.textContent = 'Submit failed: ' + friendlyError(e);
         submitBtn.disabled = false;
         submitBtn.textContent = 'Submit';
       }
@@ -1490,7 +1511,7 @@
       renderTeacherUnitTable(data.units);
       renderTeacherRoster(data.roster);
     } catch (e) {
-      totals.innerHTML = `<div class="err">${e.message}</div>`;
+      totals.innerHTML = `<div class="err">${friendlyError(e)}</div>`;
     }
   }
 
@@ -1656,7 +1677,7 @@
       table.appendChild(tbody);
       root.appendChild(table);
     } catch (e) {
-      root.innerHTML = `<div class="err">${e.message}</div>`;
+      root.innerHTML = `<div class="err">${friendlyError(e)}</div>`;
     }
   }
 
@@ -1684,7 +1705,7 @@
       setMd(block, data.analysis);
       out.appendChild(block);
     } catch (e) {
-      out.innerHTML = `<div class="err">${e.message}</div>`;
+      out.innerHTML = `<div class="err">${friendlyError(e)}</div>`;
     } finally {
       btn.disabled = false;
       btn.textContent = orig;
@@ -1784,7 +1805,7 @@
       examShowState('taking');
       renderExamQuestion();
     } catch (e) {
-      errEl.textContent = 'Generate failed: ' + e.message;
+      errEl.textContent = 'Generate failed: ' + friendlyError(e);
     } finally {
       btn.disabled = false;
       btn.textContent = 'Generate exam';
@@ -1919,7 +1940,7 @@
         }
         replaceExamSubmitWithNext(box);
       } catch (e) {
-        $('#exam-taking-err').textContent = 'Submit failed: ' + e.message;
+        $('#exam-taking-err').textContent = 'Submit failed: ' + friendlyError(e);
         submitBtn.disabled = false;
         submitBtn.textContent = 'Submit';
       }
@@ -2175,7 +2196,7 @@
       actions.appendChild(back);
       root.appendChild(actions);
     } catch (e) {
-      root.innerHTML = `<div class="err">Failed to load summary: ${e.message}</div>`;
+      root.innerHTML = `<div class="err">Failed to load summary: ${friendlyError(e)}</div>`;
     }
   }
 
@@ -2272,7 +2293,7 @@
         setMd(body, data.summary || '(no synthesis returned)');
       })
       .catch((e) => {
-        body.textContent = 'Could not generate synthesis: ' + e.message;
+        body.textContent = 'Could not generate synthesis: ' + friendlyError(e);
       });
   }
 
@@ -2311,7 +2332,7 @@
         btn.textContent = orig;
         const err = document.createElement('div');
         err.className = 'err';
-        err.textContent = 'Failed: ' + e.message;
+        err.textContent = 'Failed: ' + friendlyError(e);
         parentEl.appendChild(err);
       }
     });
