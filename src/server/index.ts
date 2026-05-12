@@ -24,14 +24,12 @@ async function main(): Promise<void> {
 
   await lti.deploy({ port: env.PORT });
 
-  // One-line diagnostic so we can confirm env vars made it to the running
-  // process. Useful when the admin endpoint reports "disabled" despite the
-  // variable being set in the dashboard.
+  // Compact env-availability signal so deploy logs make it easy to confirm
+  // env vars made it to the running process. Values redacted; only lengths.
   console.log(
-    `[env] ANTHROPIC_API_KEY=${env.ANTHROPIC_API_KEY ? 'set(' + env.ANTHROPIC_API_KEY.length + ')' : 'MISSING'}` +
-    `  ADMIN_TOKEN=${env.ADMIN_TOKEN ? 'set(' + env.ADMIN_TOKEN.length + ')' : 'MISSING'}` +
-    `  NODE_ENV=${env.NODE_ENV}` +
-    `  raw_ADMIN_TOKEN_in_process_env=${process.env.ADMIN_TOKEN ? 'present(' + process.env.ADMIN_TOKEN.length + ')' : 'absent'}`
+    `[env] ANTHROPIC_API_KEY=${env.ANTHROPIC_API_KEY ? 'set' : 'MISSING'}` +
+    `  ADMIN_TOKEN=${env.ADMIN_TOKEN ? 'set' : 'MISSING'}` +
+    `  NODE_ENV=${env.NODE_ENV}`
   );
 
   console.log(`\nMoodle Biology Bot is live`);
