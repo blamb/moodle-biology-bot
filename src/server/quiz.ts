@@ -133,13 +133,26 @@ ${DIFFICULTY_NOTES[difficulty]}
 
 Each question MUST have exactly 5 options. correct_index is 0–4 (zero-indexed).
 
+The "explanation" field MUST be Markdown formatted exactly like this template:
+
+**Why (X) is correct:** [one sentence explaining why the correct option is the right answer]
+
+**Why the other options are wrong:**
+- **(A)** [one short sentence — skip this bullet if A is the correct option]
+- **(B)** [one short sentence — skip this bullet if B is the correct option]
+- **(C)** [one short sentence — skip this bullet if C is the correct option]
+- **(D)** [one short sentence — skip this bullet if D is the correct option]
+- **(E)** [one short sentence — skip this bullet if E is the correct option]
+
+(Where X is the letter A–E of the correct option. The bulleted section must include exactly the four non-correct options.)
+
 Output JSON shape (a single array):
 [
   {
     "stem": "...",
     "options": ["A", "B", "C", "D", "E"],
     "correct_index": 0,
-    "explanation": "Why the correct one is correct AND why each incorrect one is wrong (one short sentence per distractor)."
+    "explanation": "**Why (A) is correct:** ...\\n\\n**Why the other options are wrong:**\\n- **(B)** ...\\n- **(C)** ...\\n- **(D)** ...\\n- **(E)** ..."
   }
 ]`;
 

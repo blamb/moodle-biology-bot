@@ -152,9 +152,9 @@
   }
   .btn:disabled { opacity: .5; cursor: not-allowed; }
   .btn-ghost {
-    background: none; color: var(--muted); border: 1px solid var(--border);
+    background: none; color: var(--accent); border: 1px solid var(--accent);
   }
-  .btn-ghost:hover { background: #f5f5f5; color: var(--fg); }
+  .btn-ghost:hover { background: #eaf3fc; color: var(--accent-deep, var(--accent)); }
 
   .quiz-question {
     background: #fff; border: 1px solid var(--border); border-radius: 8px;
@@ -399,11 +399,19 @@
 
   .weak-list { list-style: none; padding-left: 0; margin: 0; }
   .weak-list li {
-    padding: .4rem .6rem; margin: .25rem 0; border-radius: 6px;
+    padding: .55rem .8rem; margin: .3rem 0; border-radius: 6px;
     background: #fcf3f3; border: 1px solid #f1c4c4;
     cursor: pointer;
+    display: flex; justify-content: space-between; align-items: center; gap: .5rem;
+    transition: background .12s ease, transform .12s ease;
   }
-  .weak-list li:hover { background: #fde8e8; }
+  .weak-list li:hover { background: #fde8e8; transform: translateX(2px); }
+  .weak-list li::after {
+    content: 'Practice now →';
+    color: var(--accent); font-size: .85rem; font-weight: 500;
+    flex: 0 0 auto;
+  }
+  .weak-list li:hover::after { color: var(--accent-deep); }
 
   /* Role-conditional visibility */
   body[data-role="student"] .teacher-only { display: none !important; }
@@ -482,7 +490,17 @@
       <button class="btn" id="continue-btn" type="button">Open</button>
     </div>
     <div class="card">
-      <h2>Pick a unit</h2>
+      <h2>
+        Pick a unit
+        <span style="color:var(--muted);font-weight:normal;font-size:.85em">({{UNIT_COUNT}} total)</span>
+      </h2>
+      <div style="color:var(--muted);font-size:.78rem;margin:-.25rem 0 .6rem">
+        Badges show your accuracy so far per question type:
+        <strong>MC</strong>=Multiple choice ·
+        <strong>TF</strong>=True/false ·
+        <strong>FITB</strong>=Fill in the blank ·
+        <strong>FR</strong>=Free response
+      </div>
       <ul class="units" id="units-list">
 {{UNITS_LIST}}
       </ul>
@@ -532,7 +550,11 @@
         <div id="exam-units-list" class="exam-units"></div>
         <div style="margin-top:.75rem;display:flex;gap:.5rem;flex-wrap:wrap">
           <button class="btn" id="exam-generate">Generate exam (online)</button>
-          <button class="btn btn-ghost" id="exam-generate-print" type="button" title="Generate a printable exam with optional answer key, for paper-based or offline use.">📄 Generate printable</button>
+          <button class="btn btn-ghost" id="exam-generate-print" type="button" title="Generate a printable exam with optional answer key.">📄 Generate printable</button>
+        </div>
+        <div style="color:var(--muted);font-size:.8rem;margin-top:.4rem">
+          <strong>Online:</strong> take the exam interactively in this page, scored as you go (or at the end if you turn off live feedback).
+          <strong>Printable:</strong> generates a print-friendly page you can save as PDF or print on paper. Optional answer key.
         </div>
         <div class="err" id="exam-config-err"></div>
       </div>
@@ -728,6 +750,36 @@
   }
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+  // ─── LTI iframe auto-resize ─────
+  // Moodle embeds us in an iframe. Without help from us, Moodle can't know
+  // our content height, so the embed clips at the parent footer. The LTI
+  // platform postMessage protocol lets us request a resize from the parent.
+  function postFrameResize() {
+    try {
+      const h = Math.max(
+        document.documentElement.scrollHeight,
+        document.body.scrollHeight,
+        document.body.offsetHeight
+      );
+      window.parent?.postMessage(
+        { subject: 'lti.frameResize', height: h },
+        '*'
+      );
+    } catch (e) {
+      // ignore — fine if running outside an iframe (dev)
+    }
+  }
+  // Send once on load, then on any DOM mutation/resize.
+  window.addEventListener('load', postFrameResize);
+  if (window.ResizeObserver) {
+    new ResizeObserver(() => postFrameResize()).observe(document.documentElement);
+  }
+  if (window.MutationObserver) {
+    new MutationObserver(() => postFrameResize()).observe(document.body, {
+      subtree: true, childList: true, characterData: true,
+    });
+  }
 
   // Render a Markdown string to safe HTML for display in AI-response surfaces.
   // marked.js handles the markdown; DOMPurify trims anything dangerous.
@@ -1365,6 +1417,12 @@
 
   // ───── Progress ─────
   const KIND_LABELS = { mc: 'MC', tf: 'TF', fitb: 'FITB', fr: 'FR' };
+  const KIND_FULL = {
+    mc: 'Multiple choice',
+    tf: 'True / false',
+    fitb: 'Fill in the blank',
+    fr: 'Free response',
+  };
   const PROGRESS_KINDS = ['mc', 'tf', 'fitb', 'fr'];
   let lastProgress = null;
 
@@ -1391,7 +1449,13 @@
     }
     const la = progress.last_activity;
     const kindLabel = la.kind === 'tutor' ? 'Tutor session' : KIND_LABELS[la.kind] + ' quiz';
-    what.textContent = `Unit ${la.unit_no}: ${la.title} — ${kindLabel}`;
+    let scorePart = '';
+    if (la.kind === 'tutor' && la.turns !== null && la.turns > 0) {
+      scorePart = ` · ${la.turns} turn${la.turns === 1 ? '' : 's'} so far`;
+    } else if (la.pct !== null) {
+      scorePart = la.kind === 'fr' ? ` · ${la.pct}% avg` : ` · ${la.pct}% accuracy`;
+    }
+    what.textContent = `Unit ${la.unit_no}: ${la.title} — ${kindLabel}${scorePart}`;
     $('#continue-btn').onclick = () => {
       openUnit(la.unit_no, la.title);
       if (la.kind !== 'tutor') showTab(la.kind);
@@ -1440,6 +1504,10 @@
           ? (isFr ? `${headlinePct}% avg (${s.attempts})` : `${headlinePct}% (${s.attempts})`)
           : '—';
         b.innerHTML = `<span class="b-kind">${KIND_LABELS[k]}</span> ${display}`;
+        // Tooltip expands the abbreviation + summarizes attempts.
+        b.title = s.attempts > 0
+          ? `${KIND_FULL[k]} — ${headlinePct}% across ${s.attempts} attempt${s.attempts === 1 ? '' : 's'}`
+          : `${KIND_FULL[k]} — no attempts yet`;
         badges.appendChild(b);
       }
       if (u.tutor.turns > 0) {
@@ -2519,10 +2587,10 @@
     const btn = document.createElement('button');
     btn.className = 'btn btn-ghost';
     btn.style.marginTop = '.5rem';
-    btn.textContent = 'Want to know more?';
+    btn.textContent = '📖 Get a deeper explanation';
     btn.addEventListener('click', async () => {
       btn.disabled = true;
-      const orig = btn.textContent;
+      const orig = btn.innerHTML;
       btn.innerHTML = '<span class="spinner"></span>Thinking…';
       try {
         const resp = await fetch(apiUrl('/api/quiz/explain'), {

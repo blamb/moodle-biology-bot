@@ -46,6 +46,10 @@ export interface ProgressBundle {
     title: string;
     kind: QuizKind | 'tutor';
     at: string;
+    // For quiz kinds: cumulative accuracy on that unit-kind. For tutor: null.
+    pct: number | null;
+    // For tutor: number of turns. For quiz kinds: null.
+    turns: number | null;
   } | null;
   weak_spots: Array<{
     unit_no: number;
@@ -173,15 +177,26 @@ export async function getStudentProgress(studentId: number): Promise<ProgressBun
   };
 
   // Most recent activity (quiz or tutor)
-  type LastCandidate = { unit_no: number; title: string; kind: QuizKind | 'tutor'; at: string };
+  type LastCandidate = {
+    unit_no: number; title: string; kind: QuizKind | 'tutor';
+    at: string; pct: number | null; turns: number | null;
+  };
   const candidates: LastCandidate[] = [];
   for (const u of units) {
     for (const k of QUIZ_KINDS) {
       const at = u.by_kind[k].last_at;
-      if (at) candidates.push({ unit_no: u.unit_no, title: u.title, kind: k, at });
+      if (at) {
+        const stats = u.by_kind[k];
+        // For FR, prefer avg_score when present; otherwise accuracy.
+        const pct = k === 'fr' && stats.avg_score !== null ? stats.avg_score : stats.pct;
+        candidates.push({ unit_no: u.unit_no, title: u.title, kind: k, at, pct, turns: null });
+      }
     }
     if (u.tutor.last_at) {
-      candidates.push({ unit_no: u.unit_no, title: u.title, kind: 'tutor', at: u.tutor.last_at });
+      candidates.push({
+        unit_no: u.unit_no, title: u.title, kind: 'tutor',
+        at: u.tutor.last_at, pct: null, turns: u.tutor.turns,
+      });
     }
   }
   candidates.sort((a, b) => (a.at < b.at ? 1 : -1));
