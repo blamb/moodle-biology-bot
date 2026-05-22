@@ -1153,13 +1153,25 @@
     if (kind === 'fr') {
       const marksLine = document.createElement('div');
       marksLine.style.cssText = 'color:var(--muted);font-size:.85rem;margin-bottom:.35rem';
-      marksLine.textContent = `Worth ${q.total_marks} mark${q.total_marks === 1 ? '' : 's'}. Take your time — the AI grades against a per-mark rubric.`;
+      marksLine.textContent = `Worth ${q.total_marks} mark${q.total_marks === 1 ? '' : 's'}. Take your time — the AI grades against a per-mark rubric. Your draft saves automatically.`;
       box.appendChild(marksLine);
       const ta = document.createElement('textarea');
       ta.className = 'fr-input';
       ta.placeholder = 'Type your full answer here…';
       box.appendChild(ta);
       inputEl = ta;
+      // Auto-save draft to localStorage so a tab switch / accidental close
+      // doesn't lose work. Cleared after a successful submit.
+      const draftKey = `bbb-fr-draft-quiz-${s.sessionId}-${s.idx}`;
+      const saved = (() => {
+        try { return localStorage.getItem(draftKey) || ''; } catch { return ''; }
+      })();
+      if (saved) ta.value = saved;
+      ta.addEventListener('input', () => {
+        try { localStorage.setItem(draftKey, ta.value); } catch {}
+      });
+      // Stash the key on the element so the submit handler can clear it.
+      ta.dataset.draftKey = draftKey;
       getResponse = () => ta.value.trim();
     } else if (kind === 'mc') {
       const opts = document.createElement('div');
@@ -1256,6 +1268,9 @@
         const data = await resp.json();
         if (data.correct) s.score += 1;
         s.results.push({ question: q, response, data });
+        // Clear any FR draft for this question (it's been submitted).
+        const draftKey = inputEl?.dataset?.draftKey;
+        if (draftKey) { try { localStorage.removeItem(draftKey); } catch {} }
         renderQuizResult(kind, panel, q, response, data);
       } catch (e) {
         errEl.textContent = 'Submit failed: ' + friendlyError(e);
@@ -2118,13 +2133,22 @@
     if (item.kind === 'fr') {
       const note = document.createElement('div');
       note.style.cssText = 'color:var(--muted);font-size:.85rem;margin-bottom:.35rem';
-      note.textContent = `Worth ${q.total_marks} mark${q.total_marks === 1 ? '' : 's'}.`;
+      note.textContent = `Worth ${q.total_marks} mark${q.total_marks === 1 ? '' : 's'}. Your draft saves automatically.`;
       box.appendChild(note);
       const ta = document.createElement('textarea');
       ta.className = 'fr-input';
       ta.placeholder = 'Type your full answer here…';
       box.appendChild(ta);
       inputEl = ta;
+      const draftKey = `bbb-fr-draft-exam-${s.sessionId}-${s.idx}`;
+      const saved = (() => {
+        try { return localStorage.getItem(draftKey) || ''; } catch { return ''; }
+      })();
+      if (saved) ta.value = saved;
+      ta.addEventListener('input', () => {
+        try { localStorage.setItem(draftKey, ta.value); } catch {}
+      });
+      ta.dataset.draftKey = draftKey;
       getResponse = () => ta.value.trim();
     } else if (item.kind === 'mc') {
       const opts = document.createElement('div');
@@ -2214,6 +2238,9 @@
         if (data.correct) s.score += 1;
         if (item.kind === 'fr') s.scoreSum += data.score_pct ?? 0;
         s.results.push({ item, response, data });
+        // Clear any FR draft for this question (it's been submitted).
+        const draftKey = inputEl?.dataset?.draftKey;
+        if (draftKey) { try { localStorage.removeItem(draftKey); } catch {} }
         if (s.showFeedback) {
           renderExamResult(box, item, response, data);
         } else {
