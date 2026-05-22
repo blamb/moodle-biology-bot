@@ -104,6 +104,15 @@ DIVERSITY — this is critical:
 - If the student has previously seen questions with certain stems (a list will be supplied in the user prompt under "Avoid these stems:"), generate fresh ones that target different content from those.
 - Vary question framing: mix "identify the structure that...", "predict what happens when...", "compare X and Y", "what is the role of...". Don't write five questions that all start the same way.
 
+ANATOMICAL PRECISION — self-check every question before finalizing:
+- Any anatomical cue in the stem must uniquely identify the intended answer. If a cue could honestly point to more than one structure or category, rewrite the cue or pick a different question.
+- Common A&P pitfalls to watch for:
+  • The CNS is the brain AND the spinal cord. "Outside the skull" does NOT mean PNS — the spinal cord is outside the skull but is CNS. Use "outside the CNS" or "in a peripheral location" when you mean PNS.
+  • "Inside the brain" / "inside the spinal cord" / "outside the CNS" are precise. "Inside the skull" / "outside the skull" are not.
+  • Be careful with "above"/"below" injury levels — describe the segment explicitly (e.g. "below a T6 lesion") rather than relying on the reader to infer.
+  • For tract/nerve, ganglion/nucleus, and grey/white matter distinctions: the determining factor is CNS vs PNS location, not skull-vs-spine.
+- Verify the correct answer is unambiguously correct given ONLY the stem (no insider context). Verify each distractor (for MC) is unambiguously wrong.
+
 Output STRICTLY valid JSON. No markdown fences, no preamble, no trailing commentary.
 Your entire response must be a single JSON array (or object as specified per question type).`;
 
@@ -596,24 +605,46 @@ export function gradeTF(q: TfQuestion, chosenBool: boolean): boolean {
 
 // ─── FR grading (LLM call) ──────────────────────────────────────────────────
 
+/**
+ * Internal schema for the LLM's grading response. The model only judges per
+ * rubric index — the server reconstructs the full per_criterion list using
+ * the rubric's own text and point values. This eliminates failure modes
+ * where the model produced duplicate placeholder entries to pad the array.
+ */
+const FrLlmCriterionJudgment = z.object({
+  // Permissive: an off-by-one or out-of-range index just means the reconcile
+  // step won't match it, and the rubric item gets a default "missing" row.
+  rubric_index: z.number().int(),
+  awarded: z.number().int().min(0),
+  coverage: z.enum(['full', 'partial', 'missing']),
+  rationale: z.string().min(1),
+});
+
+const FrLlmGrade = z.object({
+  per_criterion: z.array(FrLlmCriterionJudgment),
+  strong: z.string(),
+  missing: z.string(),
+  not_needed: z.string(),
+});
+
 const FR_GRADER_SYSTEM = `You are an experienced TA grading free-response answers for an undergraduate Human Anatomy & Physiology course (BIOL 1592). You grade strictly against the provided rubric — not against your own impression of completeness.
 
-CRITICAL — rubric fidelity:
-- The "per_criterion" array MUST contain EXACTLY one entry per rubric item, in the SAME order they appear in the user prompt.
-- Each entry's "criterion" field MUST match the rubric item text VERBATIM (do not paraphrase, shorten, or rewrite it).
-- Each entry's "max_points" MUST equal the points stated in the rubric for that item.
-- Do NOT invent new criteria the rubric didn't list. Do NOT merge or split rubric items.
-- The "missing" field describes content the RUBRIC required but the student did not provide. Do NOT use it to introduce concepts the rubric never asked for, even if you think they're relevant.
+How the rubric works in your output:
+- Each rubric item is numbered (1, 2, 3, …) in the user prompt.
+- For each rubric item, return ONE judgment entry referring to it by "rubric_index" (1-based, matching the numbering in the prompt).
+- Do NOT include the rubric text itself in your judgment — only the index. The server has the rubric text and will fill it in.
+- Do NOT return more entries than the rubric has items. Do NOT return placeholder or duplicate entries — if you can't make a judgment about a rubric item, return it with coverage "missing" and a rationale that says so.
+- It's fine (and expected) to omit a rubric item if the student clearly didn't address it AND you have nothing else to say — the server will fill in a default "not addressed" entry. But it's better to include it explicitly when you have something specific to note.
 
 Grading rules:
 1. Award points only for criteria the student's response actually addresses. Be neither generous nor stingy — match the rubric.
-2. For each rubric item, choose coverage:
-   - "full"    = student fully addressed the criterion. Award full points (= max_points).
-   - "partial" = student addressed part of the criterion or got close but missed a detail. Award 1 point fewer than max_points when max_points ≥ 2, else 0.
+2. For each rubric item you judge, choose coverage:
+   - "full"    = student fully addressed the criterion. Award the full points stated in the rubric.
+   - "partial" = student addressed part of the criterion or got close but missed a detail. Award 1 point fewer than max when the criterion is worth ≥ 2 marks, else 0.
    - "missing" = student didn't address this criterion. Award 0.
 3. The rationale must quote or paraphrase specific phrases from the student's response when awarding points, and name what was missing when not awarding.
-4. "Missing" describes what the rubric required but the student's response didn't include. Empty string if all rubric items were addressed.
-5. "Not_needed" describes content in the student's response that's biology-related but outside the question's scope. Empty string if the response was tight.
+4. "Missing" describes content the RUBRIC required but the student did not provide. Do NOT use it to introduce concepts the rubric never asked for, even if you think they're relevant. Empty string if all rubric items were addressed.
+5. "Not_needed" is ONLY for content that is factually wrong OR genuinely off-topic in a way that suggests the student misread the question. Do NOT flag biology that is correct and adjacent — students often raise related material as part of thinking through a problem, and that's not a problem. Empty string in the common case.
 6. "Strong" names 1–2 things the student clearly nailed, drawn from the student's actual words. Empty string if nothing rose to that bar.
 7. Be encouraging but factual. The student will read this.
 
@@ -622,7 +653,7 @@ Output STRICTLY valid JSON. No markdown, no preamble.`;
 const FR_GRADER_USER = (q: FrQuestion, response: string) => `Question (worth ${q.total_marks} marks):
 ${q.prompt}
 
-Rubric:
+Rubric (numbered for your reference — refer to each item by its number in your "rubric_index" field):
 ${q.rubric.map((r, i) => `  ${i + 1}. (${r.points} mark${r.points === 1 ? '' : 's'}) ${r.criterion}`).join('\n')}
 
 Model answer (for reference — do NOT show this in your output):
@@ -633,16 +664,14 @@ Student's response:
 ${response}
 """
 
-Grade this response against the rubric. Output JSON in this shape:
+Grade this response. Output JSON in this shape:
 {
-  "total_awarded": <int>,
-  "total_possible": ${q.total_marks},
   "per_criterion": [
-    { "criterion": "<exact rubric criterion text>", "max_points": <int>, "awarded": <int>, "coverage": "full"|"partial"|"missing", "rationale": "<one sentence>" }
+    { "rubric_index": 1, "awarded": <int>, "coverage": "full"|"partial"|"missing", "rationale": "<one sentence>" }
   ],
   "strong": "<1-sentence summary, or empty string>",
-  "missing": "<1-2 sentences on what was required but absent>",
-  "not_needed": "<1-2 sentences on irrelevant content, or empty string>"
+  "missing": "<1-2 sentences on what the rubric required but was absent, or empty string>",
+  "not_needed": "<only for factually wrong or genuinely off-topic content; empty string otherwise>"
 }`;
 
 export async function gradeFR(
@@ -679,10 +708,49 @@ export async function gradeFR(
     .map((b) => b.text)
     .join('\n');
   const raw = JSON.parse(stripCodeFences(text));
-  const grade = FrGrade.parse(raw);
-  // Defensive: clamp total against rubric items.
-  const sumAwarded = grade.per_criterion.reduce((a, c) => a + c.awarded, 0);
-  if (sumAwarded !== grade.total_awarded) grade.total_awarded = sumAwarded;
-  return grade;
+  const llm = FrLlmGrade.parse(raw);
+
+  // Reconcile: walk the rubric in order. For each item, find the LLM's
+  // judgment (first match wins; duplicates are silently dropped). Items the
+  // LLM didn't address get filled in as "missing/0" so the displayed grade
+  // always shows one row per rubric item — no duplicates, no placeholders.
+  const seenIndices = new Set<number>();
+  const per_criterion: FrCriterionGrade[] = question.rubric.map((rubricItem, i) => {
+    const idx = i + 1;
+    const judgment = llm.per_criterion.find(
+      (j) => j.rubric_index === idx && !seenIndices.has(idx)
+    );
+    if (judgment) {
+      seenIndices.add(idx);
+      // Clamp awarded into [0, max_points].
+      const awarded = Math.max(0, Math.min(rubricItem.points, judgment.awarded));
+      return {
+        criterion: rubricItem.criterion,
+        max_points: rubricItem.points,
+        awarded,
+        coverage: judgment.coverage,
+        rationale: judgment.rationale,
+      };
+    }
+    return {
+      criterion: rubricItem.criterion,
+      max_points: rubricItem.points,
+      awarded: 0,
+      coverage: 'missing' as const,
+      rationale: 'The grader did not assess this criterion in the student response.',
+    };
+  });
+
+  const total_awarded = per_criterion.reduce((a, c) => a + c.awarded, 0);
+  const total_possible = question.rubric.reduce((a, r) => a + r.points, 0);
+
+  return FrGrade.parse({
+    total_awarded,
+    total_possible,
+    per_criterion,
+    strong: llm.strong,
+    missing: llm.missing,
+    not_needed: llm.not_needed,
+  });
 }
 
