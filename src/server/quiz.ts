@@ -25,6 +25,7 @@ import type Anthropic from '@anthropic-ai/sdk';
 import { getAnthropic, GEN_MODEL, TUTOR_MODEL } from './anthropic.js';
 import { getUnit, type UnitContent } from './content.js';
 import { recordApiCall, type Attribution } from './costs.js';
+import { query } from './db.js';
 
 // ─── Question schemas ───────────────────────────────────────────────────────
 
@@ -96,6 +97,12 @@ const SYSTEM_PREAMBLE = `You generate practice questions for an undergraduate Hu
 - Avoid trivia ("when was this discovered?"). Test understanding of mechanisms, structure, function, and relationships.
 - Use only terminology a student in this unit would have encountered.
 - Never reproduce a question verbatim from the example exam — use it only as a style anchor.
+
+DIVERSITY — this is critical:
+- When asked for multiple questions, each question MUST target a DIFFERENT slide / section / concept from the unit. Do not cluster on one topic.
+- Distribute coverage across the FULL range of the unit content (early slides, middle slides, late slides, textbook chapter), not just the most salient ideas.
+- If the student has previously seen questions with certain stems (a list will be supplied in the user prompt under "Avoid these stems:"), generate fresh ones that target different content from those.
+- Vary question framing: mix "identify the structure that...", "predict what happens when...", "compare X and Y", "what is the role of...". Don't write five questions that all start the same way.
 
 Output STRICTLY valid JSON. No markdown fences, no preamble, no trailing commentary.
 Your entire response must be a single JSON array (or object as specified per question type).`;
@@ -231,6 +238,82 @@ function stripCodeFences(text: string): string {
     .trim();
 }
 
+/**
+ * Pulls the distinct question stems the student has already seen for this
+ * (unit, kind), most-recent first, capped at 30. Used as an "avoid these"
+ * hint in the generation prompt to reduce repetition across regenerations.
+ */
+async function fetchRecentStems(
+  studentId: number | null | undefined,
+  unitNo: number,
+  kind: QuizKind
+): Promise<string[]> {
+  if (!studentId) return [];
+  try {
+    const rows = await query<{ stem: string }>(
+      `select (question->>'stem') as stem
+       from quiz_attempt qa
+       join session sess on sess.id = qa.session_id
+       where qa.unit_no = $1 and qa.kind = $2 and sess.student_id = $3
+         and (question->>'stem') is not null
+       order by qa.ts desc
+       limit 60`,
+      [unitNo, kind, studentId]
+    );
+    const seen = new Set<string>();
+    const out: string[] = [];
+    for (const r of rows) {
+      if (r.stem && !seen.has(r.stem)) {
+        seen.add(r.stem);
+        out.push(r.stem);
+      }
+      if (out.length >= 30) break;
+    }
+    return out;
+  } catch {
+    return [];
+  }
+}
+
+/** FR questions store the stem under the 'prompt' field. */
+async function fetchRecentFrPrompts(
+  studentId: number | null | undefined,
+  unitNo: number
+): Promise<string[]> {
+  if (!studentId) return [];
+  try {
+    const rows = await query<{ p: string }>(
+      `select (question->>'prompt') as p
+       from quiz_attempt qa
+       join session sess on sess.id = qa.session_id
+       where qa.unit_no = $1 and qa.kind = 'fr' and sess.student_id = $2
+         and (question->>'prompt') is not null
+       order by qa.ts desc
+       limit 30`,
+      [unitNo, studentId]
+    );
+    const seen = new Set<string>();
+    const out: string[] = [];
+    for (const r of rows) {
+      if (r.p && !seen.has(r.p)) {
+        seen.add(r.p);
+        out.push(r.p);
+      }
+      if (out.length >= 15) break;
+    }
+    return out;
+  } catch {
+    return [];
+  }
+}
+
+function avoidBlock(stems: string[]): string {
+  if (stems.length === 0) return '';
+  const lines = stems
+    .map((s) => '- ' + (s.length > 220 ? s.slice(0, 217) + '…' : s));
+  return `\n\nAvoid these stems (the student has already seen them — generate questions on DIFFERENT slides/topics, with substantively different wording):\n${lines.join('\n')}\n`;
+}
+
 async function callGenerator(
   unit: UnitContent,
   userPrompt: string,
@@ -241,7 +324,9 @@ async function callGenerator(
   const t0 = Date.now();
   const res = await client.messages.create({
     model: GEN_MODEL,
-    max_tokens: 4096,
+    // 16K leaves comfortable headroom for ~20 MC questions or ~30 TF/FITB.
+    // Previously 4K which truncated JSON for larger counts.
+    max_tokens: 16384,
     system: [
       { type: 'text', text: SYSTEM_PREAMBLE },
       {
@@ -274,7 +359,7 @@ async function callGenerator(
     const t1 = Date.now();
     const retry = await client.messages.create({
       model: GEN_MODEL,
-      max_tokens: 4096,
+      max_tokens: 16384,
       system: [
         { type: 'text', text: SYSTEM_PREAMBLE },
         {
@@ -315,10 +400,12 @@ export async function generateMC(
   attribution: Attribution = { endpoint: 'quiz.generate.mc' }
 ): Promise<McQuestion[]> {
   const unit = getUnit(unitNo);
-  const raw = await callGenerator(unit, MC_USER(count, difficulty), {
-    ...attribution,
-    endpoint: 'quiz.generate.mc',
-  });
+  const recent = await fetchRecentStems(attribution.studentId, unitNo, 'mc');
+  const raw = await callGenerator(
+    unit,
+    MC_USER(count, difficulty) + avoidBlock(recent),
+    { ...attribution, endpoint: 'quiz.generate.mc' }
+  );
   const parsed = z.array(McQuestion).parse(raw);
   return parsed.slice(0, count);
 }
@@ -330,10 +417,12 @@ export async function generateTF(
   attribution: Attribution = { endpoint: 'quiz.generate.tf' }
 ): Promise<TfQuestion[]> {
   const unit = getUnit(unitNo);
-  const raw = await callGenerator(unit, TF_USER(count, difficulty), {
-    ...attribution,
-    endpoint: 'quiz.generate.tf',
-  });
+  const recent = await fetchRecentStems(attribution.studentId, unitNo, 'tf');
+  const raw = await callGenerator(
+    unit,
+    TF_USER(count, difficulty) + avoidBlock(recent),
+    { ...attribution, endpoint: 'quiz.generate.tf' }
+  );
   const parsed = z.array(TfQuestion).parse(raw);
   return parsed.slice(0, count);
 }
@@ -345,10 +434,14 @@ export async function generateFR(
   attribution: Attribution = { endpoint: 'quiz.generate.fr' }
 ): Promise<FrQuestion[]> {
   const unit = getUnit(unitNo);
-  const raw = await callGenerator(unit, FR_USER(count, difficulty), {
-    ...attribution,
-    endpoint: 'quiz.generate.fr',
-  });
+  // FR uses 'prompt' field for the stem, not 'stem'. Note: existing FR rows
+  // in quiz_attempt store the full FrQuestion shape, so we look up prompt.
+  const recent = await fetchRecentFrPrompts(attribution.studentId, unitNo);
+  const raw = await callGenerator(
+    unit,
+    FR_USER(count, difficulty) + avoidBlock(recent),
+    { ...attribution, endpoint: 'quiz.generate.fr' }
+  );
   const parsed = z.array(FrQuestion).parse(raw);
   // Enforce rubric-points-sum-to-total-marks (LLMs sometimes drift).
   for (const q of parsed) {
@@ -371,10 +464,12 @@ export async function generateFITB(
   if (unit.terms.length === 0) {
     throw new Error(`Unit ${unitNo} has no terms list; cannot generate FITB.`);
   }
-  const raw = await callGenerator(unit, FITB_USER(count, difficulty, unit.terms), {
-    ...attribution,
-    endpoint: 'quiz.generate.fitb',
-  });
+  const recent = await fetchRecentStems(attribution.studentId, unitNo, 'fitb');
+  const raw = await callGenerator(
+    unit,
+    FITB_USER(count, difficulty, unit.terms) + avoidBlock(recent),
+    { ...attribution, endpoint: 'quiz.generate.fitb' }
+  );
   const parsed = z.array(FitbQuestion).parse(raw);
   return parsed.slice(0, count);
 }

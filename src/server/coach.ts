@@ -55,13 +55,19 @@ function describeAttempt(a: AttemptForCoaching, idx: number): string {
   if (a.kind === 'mc') {
     const q = a.question as McQuestion;
     const chosen = Number(a.response);
-    const opt = (i: number) => q.options[i] ?? '<missing option>';
+    // Pass ALL options so the explainer doesn't hallucinate distractor text.
+    // Each option is labeled with whether it's correct and/or what the student chose.
+    const optionsList = q.options
+      .map((opt, i) => {
+        const labels: string[] = [];
+        if (i === q.correct_index) labels.push('← CORRECT');
+        if (Number.isInteger(chosen) && i === chosen && i !== q.correct_index) labels.push('← student chose');
+        return `     (${String.fromCharCode(65 + i)}) ${opt}${labels.length ? '  ' + labels.join(' ') : ''}`;
+      })
+      .join('\n');
     return (
       `${prefix}MC: ${q.stem}\n` +
-      `   Correct: ${String.fromCharCode(65 + q.correct_index)}) ${opt(q.correct_index)}\n` +
-      (Number.isInteger(chosen) && chosen !== q.correct_index
-        ? `   Student chose: ${String.fromCharCode(65 + chosen)}) ${opt(chosen)}\n`
-        : '')
+      `   Options (these are the EXACT five options the student saw — do not invent or substitute):\n${optionsList}\n`
     );
   }
   if (a.kind === 'tf') {
@@ -165,7 +171,11 @@ const EXPLAIN_SYSTEM = `You give a tight plain-English walkthrough of a practice
 Rules:
 - 3–5 sentences total. One paragraph. Be terse.
 - Walk through WHY the correct answer is correct, in plain English. Anchor in the unit content.
-- For multiple choice: name the concept each tempting wrong option confuses — one phrase per distractor, not a full sentence each.
+- CRITICAL — option fidelity for multiple-choice questions:
+  • Only discuss the EXACT five options listed in the prompt under "Options:". Each option label (A, B, C, D, E) MUST refer to the literal text shown there.
+  • Do NOT invent, substitute, or imagine alternative distractors. If you say "option B confuses X with Y", option B must actually mention X or Y.
+  • If you discuss why a wrong option is wrong, paraphrase or quote the actual option text shown in the prompt.
+  • You may skip a distractor if there's nothing useful to say, but do NOT replace it with a fabricated alternative.
 - For free response: name the rubric criteria the student met and missed in concrete terms.
 - Cite the source inline when relevant: "(Unit N, slide M)" for PPT slides (use the unit number and slide number from the unit content above). Use "(Unit N textbook)" — or "(Unit N textbook, section heading)" — for textbook material. Use at most 1–2 citations, only the most direct one.
 - Do NOT repeat content the student already saw in the short explanation. Add something new (a mechanism, a comparison, a memory hook).
