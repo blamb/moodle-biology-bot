@@ -134,7 +134,7 @@ function unitGrounding(unit: UnitContent): string {
   return parts.join('\n');
 }
 
-const MC_USER = (count: number, difficulty: Difficulty) => `Generate ${count} multiple-choice questions at ${difficulty} difficulty.
+const MC_USER = (count: number, difficulty: Difficulty) => `Generate EXACTLY ${count} multiple-choice questions at ${difficulty} difficulty. Do not return fewer than ${count}. If you struggle to think of ${count} substantively different questions, target peripheral but curriculum-relevant content rather than reducing the count.
 
 ${DIFFICULTY_NOTES[difficulty]}
 
@@ -163,7 +163,7 @@ Output JSON shape (a single array):
   }
 ]`;
 
-const TF_USER = (count: number, difficulty: Difficulty) => `Generate ${count} true/false questions at ${difficulty} difficulty.
+const TF_USER = (count: number, difficulty: Difficulty) => `Generate EXACTLY ${count} true/false questions at ${difficulty} difficulty. Do not return fewer than ${count}. If you struggle to think of ${count} substantively different questions, target peripheral but curriculum-relevant content rather than reducing the count.
 
 ${DIFFICULTY_NOTES[difficulty]}
 
@@ -206,7 +206,7 @@ Output JSON shape (a single array):
   }
 ]`;
 
-const FITB_USER = (count: number, difficulty: Difficulty, terms: string[]) => `Generate ${count} fill-in-the-blank questions at ${difficulty} difficulty.
+const FITB_USER = (count: number, difficulty: Difficulty, terms: string[]) => `Generate EXACTLY ${count} fill-in-the-blank questions at ${difficulty} difficulty. Do not return fewer than ${count}.
 
 ${DIFFICULTY_NOTES[difficulty]}
 
@@ -314,6 +314,53 @@ function avoidBlock(stems: string[]): string {
   return `\n\nAvoid these stems (the student has already seen them — generate questions on DIFFERENT slides/topics, with substantively different wording):\n${lines.join('\n')}\n`;
 }
 
+/**
+ * Parses the unit's PPT markdown for "### Slide N: Title" headers and returns
+ * a list of slide numbers + titles. Excludes typical intro/summary/reference
+ * slides (slide 1, and the last two if we have enough).
+ */
+function listSlides(unit: UnitContent): { no: number; title: string }[] {
+  const re = /^### Slide (\d+):\s*(.+)$/gm;
+  const all: { no: number; title: string }[] = [];
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(unit.ppt_markdown)) !== null) {
+    const n = parseInt(m[1]!, 10);
+    if (n > 1) all.push({ no: n, title: m[2]!.trim() });
+  }
+  // Drop the last 1–2 slides when the unit has enough content (often
+  // "Summary" / "References" — low-value question targets).
+  if (all.length >= 8) return all.slice(0, -2);
+  if (all.length >= 5) return all.slice(0, -1);
+  return all;
+}
+
+/**
+ * Picks `count` random distinct slides from the unit. Returns them in slide
+ * order so the prompt reads naturally. Falls back to all available slides if
+ * count exceeds the pool.
+ */
+function pickSlideAnchors(unit: UnitContent, count: number): { no: number; title: string }[] {
+  const pool = listSlides(unit);
+  if (pool.length === 0) return [];
+  if (count >= pool.length) return pool.slice();
+  const shuffled = pool.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j]!, shuffled[i]!];
+  }
+  return shuffled.slice(0, count).sort((a, b) => a.no - b.no);
+}
+
+function anchorBlock(anchors: { no: number; title: string }[]): string {
+  if (anchors.length === 0) return '';
+  const lines = anchors.map((a, i) => `- Question ${i + 1} must be anchored in slide ${a.no} ("${a.title}")`);
+  return (
+    `\n\nSLIDE ANCHOR ASSIGNMENT — each question MUST be anchored in the slide listed below. This is the primary diversity mechanism; do not deviate from these anchors:\n` +
+    lines.join('\n') +
+    `\n\nFor each question, ground the stem, the correct answer, and (where applicable) the distractors in the content of that specific slide. You may use related context from neighbouring slides only if it supports the question's anchor slide content.\n`
+  );
+}
+
 async function callGenerator(
   unit: UnitContent,
   userPrompt: string,
@@ -401,9 +448,10 @@ export async function generateMC(
 ): Promise<McQuestion[]> {
   const unit = getUnit(unitNo);
   const recent = await fetchRecentStems(attribution.studentId, unitNo, 'mc');
+  const anchors = pickSlideAnchors(unit, count);
   const raw = await callGenerator(
     unit,
-    MC_USER(count, difficulty) + avoidBlock(recent),
+    MC_USER(count, difficulty) + anchorBlock(anchors) + avoidBlock(recent),
     { ...attribution, endpoint: 'quiz.generate.mc' }
   );
   const parsed = z.array(McQuestion).parse(raw);
@@ -418,9 +466,10 @@ export async function generateTF(
 ): Promise<TfQuestion[]> {
   const unit = getUnit(unitNo);
   const recent = await fetchRecentStems(attribution.studentId, unitNo, 'tf');
+  const anchors = pickSlideAnchors(unit, count);
   const raw = await callGenerator(
     unit,
-    TF_USER(count, difficulty) + avoidBlock(recent),
+    TF_USER(count, difficulty) + anchorBlock(anchors) + avoidBlock(recent),
     { ...attribution, endpoint: 'quiz.generate.tf' }
   );
   const parsed = z.array(TfQuestion).parse(raw);
@@ -437,9 +486,10 @@ export async function generateFR(
   // FR uses 'prompt' field for the stem, not 'stem'. Note: existing FR rows
   // in quiz_attempt store the full FrQuestion shape, so we look up prompt.
   const recent = await fetchRecentFrPrompts(attribution.studentId, unitNo);
+  const anchors = pickSlideAnchors(unit, count);
   const raw = await callGenerator(
     unit,
-    FR_USER(count, difficulty) + avoidBlock(recent),
+    FR_USER(count, difficulty) + anchorBlock(anchors) + avoidBlock(recent),
     { ...attribution, endpoint: 'quiz.generate.fr' }
   );
   const parsed = z.array(FrQuestion).parse(raw);
@@ -465,9 +515,10 @@ export async function generateFITB(
     throw new Error(`Unit ${unitNo} has no terms list; cannot generate FITB.`);
   }
   const recent = await fetchRecentStems(attribution.studentId, unitNo, 'fitb');
+  const anchors = pickSlideAnchors(unit, count);
   const raw = await callGenerator(
     unit,
-    FITB_USER(count, difficulty, unit.terms) + avoidBlock(recent),
+    FITB_USER(count, difficulty, unit.terms) + anchorBlock(anchors) + avoidBlock(recent),
     { ...attribution, endpoint: 'quiz.generate.fitb' }
   );
   const parsed = z.array(FitbQuestion).parse(raw);
