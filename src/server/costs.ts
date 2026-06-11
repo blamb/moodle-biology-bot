@@ -21,10 +21,13 @@ const MODEL_PRICES: Record<
   string,
   { input: number; output: number; cacheRead: number; cacheWrite: number }
 > = {
-  // Opus 4.x family
-  'claude-opus-4-7':    { input: 15, output: 75, cacheRead: 1.5,  cacheWrite: 18.75 },
-  'claude-opus-4-6':    { input: 15, output: 75, cacheRead: 1.5,  cacheWrite: 18.75 },
-  'claude-opus-4-5':    { input: 15, output: 75, cacheRead: 1.5,  cacheWrite: 18.75 },
+  // Opus 4.x family — $5 in / $25 out per 1M (cache read 10%, cache write 1.25x).
+  // NOTE: the $15/$75 Opus pricing predates Opus 4.5; the 4.5+ generation
+  // dropped to $5/$25. Earlier entries here overstated Opus cost ~3x.
+  'claude-opus-4-8':    { input: 5,  output: 25, cacheRead: 0.5,  cacheWrite: 6.25 },
+  'claude-opus-4-7':    { input: 5,  output: 25, cacheRead: 0.5,  cacheWrite: 6.25 },
+  'claude-opus-4-6':    { input: 5,  output: 25, cacheRead: 0.5,  cacheWrite: 6.25 },
+  'claude-opus-4-5':    { input: 5,  output: 25, cacheRead: 0.5,  cacheWrite: 6.25 },
 
   // Sonnet 4.x family
   'claude-sonnet-4-6':  { input: 3,  output: 15, cacheRead: 0.3,  cacheWrite: 3.75 },

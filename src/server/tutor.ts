@@ -7,6 +7,7 @@
  * for A&P pedagogy.
  */
 
+import Anthropic from '@anthropic-ai/sdk';
 import { query } from './db.js';
 import { getUnit, type UnitContent } from './content.js';
 import { getAnthropic, TUTOR_MODEL } from './anthropic.js';
@@ -131,7 +132,7 @@ export async function streamSocraticReply(params: {
 
   // Anthropic messages: full prior history + this user turn. The history
   // already includes the just-appended user message because we re-read.
-  const messages = turns.map((t) => ({
+  const messages: Anthropic.MessageParam[] = turns.map((t) => ({
     role: t.role,
     content: t.content,
   }));
@@ -142,8 +143,24 @@ export async function streamSocraticReply(params: {
   if (messages.length > 0 && messages[0]!.role === 'user') {
     messages[0] = {
       role: 'user',
-      content: `(Tutor preamble — not part of the student's message: the student is "${displayName}" working on Unit ${session.unit_no}: ${unit.ppt_title}. Begin or continue the Socratic dialogue.)\n\n${messages[0]!.content}`,
+      content: `(Tutor preamble — not part of the student's message: the student is "${displayName}" working on Unit ${session.unit_no}: ${unit.ppt_title}. Begin or continue the Socratic dialogue.)\n\n${messages[0]!.content as string}`,
     };
+  }
+
+  // Cache the conversation transcript too, not just the system block. A second
+  // breakpoint on the latest turn means each subsequent turn reads the prior
+  // transcript from cache instead of re-processing it at full price. The
+  // system block (rules + unit grounding) is already cached separately above;
+  // this caps the marginal per-turn input cost as the dialogue grows.
+  const last = messages[messages.length - 1];
+  if (last) {
+    last.content = [
+      {
+        type: 'text',
+        text: last.content as string,
+        cache_control: { type: 'ephemeral' },
+      },
+    ];
   }
 
   const client = getAnthropic();

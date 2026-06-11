@@ -32,5 +32,5 @@ export function getAnthropic(): Anthropic {
 
 // Default model for tutor + grading. Cheap-and-fast model for question gen
 // is wired separately in the generator code.
-export const TUTOR_MODEL = 'claude-opus-4-7';
+export const TUTOR_MODEL = 'claude-opus-4-8';
 export const GEN_MODEL = 'claude-sonnet-4-6';
