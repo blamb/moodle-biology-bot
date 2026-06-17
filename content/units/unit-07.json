@@ -64,5 +64,11 @@
     "ventral / anterior cavity",
     "visceral layer"
   ],
+  "study_guide": [
+    "What are the names and functions of the body’s systems?",
+    "Please describe anatomical terminology for body position and orientation, for different parts of the body, directional terms, terms for body planes and cavities, and for regions and quadrants.",
+    "What membranes are found in the body cavities?",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

@@ -62,5 +62,13 @@
     "opposition",
     "reposition"
   ],
+  "study_guide": [
+    "Please compare the structural classifications of joints. What are the subtypes of each fibrous joint? Cartilagenous? Synovial?",
+    "Next, compare the functional classifications of joints. For each joint discussed in this unit, be able to classify it by both the structural and functional classifications.",
+    "For each joint that allows for movement, please explain whether it exhibits uniaxial, biaxial, or multiaxial movement?",
+    "Practice drawing and labeling the parts of a synovial joint. What additional synovial joint structures are present in some joints? Add them to your diagrams.",
+    "Name the different types of movements that your body can produce. Practice performing regular movements using your own body (but not anything dangerous, like hyperflexion or hyperextension).",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

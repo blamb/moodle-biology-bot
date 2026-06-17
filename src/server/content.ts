@@ -27,6 +27,13 @@ export interface UnitContent {
     markdown: string;
   } | null;
   terms: string[];
+  /**
+   * Instructor's open-ended study-guide prompts for this unit (in their own
+   * voice). Used to bias most generated questions toward the topics the
+   * professor wants emphasized — not a hard restriction. May be empty for a
+   * unit with no study guide. See scripts/ingest/extract_study_guides.py.
+   */
+  study_guide?: string[];
 }
 
 const cache = new Map<number, UnitContent>();

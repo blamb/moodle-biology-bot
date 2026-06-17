@@ -77,5 +77,13 @@
     "supportive connective tissue",
     "transitional epithelium"
   ],
+  "study_guide": [
+    "Describe and compare the four types of body tissues, including their locations and roles in the body.",
+    "What are the subtypes of epithelial tissue? What cell types can comprise this tissue? What are its functions?",
+    "What are the subtypes of connective tissue? What cell types, fibres, and matrix is present in each type of type of connective tissue? What functions does each type serve?",
+    "What are the types of muscle tissue, and how do they differ in location and function?",
+    "What are the types of nervous tissue, and how do they differ in location and function?",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

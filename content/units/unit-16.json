@@ -49,5 +49,13 @@
     "ventral root",
     "withdrawal reflex"
   ],
+  "study_guide": [
+    "Please name and explain the functions of the various pairs of cranial nerves.",
+    "Please name and explain the functions of the different segments of spinal nerves. How do the sensory and motor portions of these nerves differ in structure and location?",
+    "Compare different stretch and withdrawal reflexes.",
+    "How do sympathetic and parasympathetic neurons differ in locations, lengths, involved neurotransmitters and hormones, and receptor types? Compare these to somatic motor neurons.",
+    "Compare the different agonists and antagonists of cholinergic receptors that were discussed in this unit.",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

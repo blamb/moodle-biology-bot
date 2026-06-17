@@ -46,5 +46,12 @@
     "tissue",
     "vesicle"
   ],
+  "study_guide": [
+    "What are the characteristics of life?",
+    "What levels of structural organization are present in the body? Can you name examples of each?",
+    "What are the different parts of a cell? Which are components of the endomembrane system? What is the function of each part?",
+    "Please contrast cell division, cell growth, and cell differentiation.",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

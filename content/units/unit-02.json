@@ -32,5 +32,16 @@
     "solvent",
     "synovial fluid"
   ],
+  "study_guide": [
+    "What are the different functions of water in the body?",
+    "What are the different water-containing compartments of the body? Which are the largest?",
+    "What are the components of a solution?",
+    "Please contrast dehydration synthesis (condensation) with hydrolysis. What type of bond is affected by these processes?",
+    "Please contrast the composition of intracellular and extracellular fluid in the body. How are sodium and potassium ion concentrations inside and outside of cells regulated?",
+    "What are the different functions of ions in the body?",
+    "Please contrast acids and bases, as well as what distinguishes strong ones from weak ones. How does a pH scale work?",
+    "What are buffers and how do they work to regulate body pH? At what pH are most body fluids maintained?",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

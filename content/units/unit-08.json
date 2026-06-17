@@ -22,5 +22,11 @@
     "negative feedback",
     "positive feedback"
   ],
+  "study_guide": [
+    "What is the definition of homeostasis.",
+    "What variables in and of the body need to be maintained at a specified level via homeostasis?",
+    "Please contrast negative and positive feedback loops, as well as feed-forward systems. Give multiple examples of each.",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

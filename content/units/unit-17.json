@@ -80,5 +80,14 @@
     "α adrenergic receptors",
     "β adrenergic receptors"
   ],
+  "study_guide": [
+    "Please contrast resting, graded, and action potentials. What determines voltage and how is voltage altered? How does the concept of all-or-none relate to action potential frequency, when it comes to changes in signalling intensity.",
+    "Explain where the following are found, and their functions: sodium-potassium pumps, ligand-gated channels, voltage-gated sodium channels, voltage-gated potassium channels, voltage-gated calcium channels, leak potassium channels. What causes the various channels to open/close/inactivate?",
+    "Explain how myelination and axon diameter affect conduction velocity.",
+    "Compare temporal and spatial summation.",
+    "Practice classifying neurotransmitters within their structural categories. Then state the function(s) of each.",
+    "Draw the different G-protein coupled receptor pathways. Which match the adrenergic receptors covered in class? How can the different types of receptor pathways cause the same neurotransmitter to exert different effects on target tissues?",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

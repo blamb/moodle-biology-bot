@@ -83,5 +83,19 @@
     "ventral tegmental area (VTA)",
     "white matter"
   ],
+  "study_guide": [
+    "Compare the terminology associated with the central nervous system with that of the peripheral nervous system. Also compare the locations of white and grey matter between the two systems. Finally, compare the types of glial cells that are found in each location.",
+    "What are the different parts of a neuron? How do these differ across different neuron types? It would be good practice to draw these different types of neurons out.",
+    "Please compare the functions of different type of glial cells, as well as neurons.",
+    "What are the different parts of the brain? How can the brain be organized into portions? For instance: what portions comprise the brainstem? And the hindbrain?",
+    "What are the functions of each part of the brain that is discussed in the lecture presentation?",
+    "What are the locations of the primary somatosensory cortex? The primary motor cortex? The primary visual cortex? The hippocampus and amygdala? Broca’s area?",
+    "Explain the causes and effects of Alzheimer’s disease, split-brain patients, amnesia, Parkinson’s disease, prefrontal cortex damage, drug addiction.",
+    "What are the sections of the spinal cord? What are the functions of each?",
+    "Describe the different meninges, and inter-meningeal spaces, that surround the central nervous system. What are their locations and functions?",
+    "What are the names and locations of the ventricles?",
+    "What is the function of cerebrospinal fluid? How and where is it made? How and where does it leave the central nervous system?",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

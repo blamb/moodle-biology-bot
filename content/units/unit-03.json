@@ -55,5 +55,19 @@
     "starch",
     "steroid"
   ],
+  "study_guide": [
+    "Why is carbon important in the body?",
+    "What are the main functional groups in human physiology? Can you name them, and write out their chemical formula? What functions do they serve in the body?",
+    "What bonds join monomers into polymers within the carbohydrate group? Within peptides and proteins? Within fats?",
+    "What atoms form carbohydrates? What is the structural difference between pentose and hexose sugars, and what are examples of each? Which monosaccharides make up which disaccharides? What forms of polysaccharides exist in animals and plants? Which are sources of energy?",
+    "Please differentiate the terms lipid, fat, triglyceride, glycerol, fatty acid chain, cholesterol. What is the structure of a triglyceride? What differentiates saturated, monounsaturated, and polyunsaturated fats?",
+    "Please explain how the structure of a phospholipid affects its function. How are phospholipids arranged in lipoproteins versus within a cell’s membrane or a vesicle?",
+    "Please explain the relationship between cholesterol and steroid hormones. What are some examples of steroid hormones? What are prostaglandins?",
+    "What is the structure of an amino acid? What is a peptide and a protein? What are the primary, secondary, tertiary, and quaternary structures of proteins?",
+    "Please explain the structure and give examples of a nucleotide. How are nucleotides arranged within RNA versus DNA and how does ATP differ from these nucleotides?",
+    "What does phosphorylation entail, and what is its function?",
+    "Which molecules are part of the glycocalyx?",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

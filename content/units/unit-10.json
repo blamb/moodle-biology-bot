@@ -75,5 +75,17 @@
     "yellow bone marrow",
     "appositional growth"
   ],
+  "study_guide": [
+    "What are the different components of the skeletal system, and what are their functions?",
+    "What are the major bone classifications? Give various examples of each. Then practice categorizing different bones into their corresponding categories.",
+    "What are the different parts of a long bone? What is the function of each part?",
+    "Please contrast compact bone and spongy bone. Where are each located. What are the functions of each?",
+    "Name the different cells found in bone, and state the function of each. Which one is developmentally unrelated to the others?",
+    "What is the difference between red and yellow marrow? Where are they located in a child, and in an adult?",
+    "Contrast the process of endochondral and intramembranous ossification.",
+    "How do bones grow in length? How do bones grow in thickness? How does the timing of these differ across an individual’s lifespan?",
+    "Please contrast the bones of the axial and appendicular skeletons. Practice naming and classifying all the bones mentioned in the lecture slides. Practice drawing these bones, as well as labelling them on unlabelled diagrams.",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

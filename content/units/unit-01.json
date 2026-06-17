@@ -39,5 +39,16 @@
     "proton",
     "valence shell"
   ],
+  "study_guide": [
+    "Please explain and differentiate between elements, compounds, mixtures, atoms, subatomic particles, molecules, and compounds. Give examples of each.",
+    "What defines and differentiates organic and inorganic compounds? What are examples of each?",
+    "How are atomic number and mass number defined?",
+    "Please explain how electrons fit into shells around atomic nuclei. What is a valence shell? What is a complete shell?",
+    "Please differentiate cations from anions, and explain how they are formed. What sort of bond can these generate?",
+    "How do covalent bonds differ from ionic bonds and hydrogen bonds? How does ATP store energy in the form of bonds, and what type of bonds are these?",
+    "How do polar covalent bonds differ from nonpolar covalent bonds? What are dipoles? What characteristics do polar charges or dipoles bestow upon substances, and how do these interact with nonpolar substances?",
+    "What are the special physical properties of water and why are these present?",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

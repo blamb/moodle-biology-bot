@@ -31,6 +31,7 @@ TEXTBOOK_INDEX = CONTENT / "textbooks" / "anatomy-i" / "index.json"
 TEXTBOOK_DIR = CONTENT / "textbooks" / "anatomy-i"
 TERMS = CONTENT / "terms.json"
 EXAM = CONTENT / "exam_style.json"
+STUDY_GUIDES = CONTENT / "study_guides.json"
 
 OUT_MAPPING = CONTENT / "unit-mapping.yaml"
 
@@ -67,6 +68,18 @@ def main() -> int:
     exam = json.load(EXAM.open())
     tb_index = json.load(TEXTBOOK_INDEX.open())
 
+    # Instructor study guides are optional — warn but don't fail if absent
+    # (run extract_study_guides.py to (re)generate). Maps unit_no -> [prompts].
+    study_guides: dict[str, list[str]] = {}
+    if STUDY_GUIDES.exists():
+        study_guides = json.load(STUDY_GUIDES.open()).get("units", {})
+    else:
+        print(
+            f"Note: {STUDY_GUIDES.name} not found — units will have an empty "
+            "study_guide list. Run extract_study_guides.py first.",
+            file=sys.stderr,
+        )
+
     # Map unit_no -> chapter index entry
     chapter_by_unit: dict[int, dict] = {
         ch["unit_no"]: ch for ch in tb_index["chapters"] if ch.get("unit_no") is not None
@@ -100,6 +113,7 @@ def main() -> int:
                 chapter_url = chap.get("source_url")
 
         unit_terms = terms["units"].get(str(unit_no), [])
+        unit_study_guide = study_guides.get(str(unit_no), [])
         slides_md = slides_to_markdown(ppt["slides"])
 
         body_chars = sum(len(s["body"]) for s in ppt["slides"])
@@ -120,6 +134,7 @@ def main() -> int:
                 "markdown": chapter_text,
             } if chapter_meta else None,
             "terms": unit_terms,
+            "study_guide": unit_study_guide,
             "exam_style_ref": "see content/exam_style.json — shared style anchor across units",
         }
 
@@ -141,7 +156,7 @@ def main() -> int:
         print(
             f"  {tag:>5}  unit {unit_no:02d}  "
             f"ppt={body_chars+notes_chars:>6}c  tb={len(chapter_text):>6}c  "
-            f"terms={len(unit_terms):>3}  → {out_path.name}"
+            f"terms={len(unit_terms):>3}  sg={len(unit_study_guide):>2}  → {out_path.name}"
         )
         assembled += 1
 

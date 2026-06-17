@@ -32,5 +32,11 @@
     "synergist",
     "third-class lever"
   ],
+  "study_guide": [
+    "What are the origin and insertion points of common muscles?",
+    "For some common antagonistic muscle relationships, differentiate between the agonist/prime mover, synergist, and antagonist.",
+    "How do power and speed levers differ? How do first, second, and third-class levers differ? Give examples of each from your body. How does the length of the effort arm and resistance arm affect the type of lever that is present?",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

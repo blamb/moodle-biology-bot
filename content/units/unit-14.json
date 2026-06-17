@@ -66,5 +66,19 @@
     "voltage-gated sodium channel",
     "Z-disc/Z-line"
   ],
+  "study_guide": [
+    "Please describe electrical transmission across motor neurons and muscle cells, as well as the chemical signalling between neuron and muscle. What molecules and ions are involved?",
+    "Please explain the steps involved in excitation-contraction coupling within a muscle fibre. What is needed to cause a muscle to contract? What about to relax?",
+    "What are the different places that ATP is needed, within both the motor neuron and muscle cell, to enable muscle contraction and relaxation to occur? When is ATP used as a signalling molecule versus as an energy source?",
+    "When ATP levels become depleted, what are the different ways that muscles can replenish them? What is the time course of these different methods of ATP generation? How long does each last? How much ATP does each provide?",
+    "How do skeletal muscles differ in terms of speed of contract? And in terms of energy source? What are the different types of skeletal muscle that result from these categories? How are these muscle types distributed across the body, and how do their relative ratios differ across endurance versus power athletes?",
+    "Define a motor unit. How do motor units vary in size and location within the body?",
+    "Please contrast the different types of muscle tension that can be performed by muscles, such as those involved in arm flexion and extension.",
+    "How does muscle length relate to the maximum tension that a muscle is capable of producing? What is the molecular basis for this (at the level of the sarcomere)?",
+    "Please contrast twitch, wave summation, and tetanus.",
+    "How do cardiac muscle fibres and smooth muscle fibres differ from skeletal muscle fibres? Compare the body’s control of cardiac muscle versus smooth muscle versus skeletal muscle. How do single-unit and multi-unit smooth muscle differ?",
+    "How does acetylcholine affect each type of muscle? How about norepinephrine?",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

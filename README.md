@@ -104,7 +104,8 @@ Re-extract the unit content if source materials change:
 
 ```bash
 npm run ingest:all              # PPTs → speaker notes; XLSX → per-unit terms;
-                                # DOCX → exam style anchor; Pressbooks → chapters
+                                # DOCX → exam style anchor + instructor study guides;
+                                # Pressbooks → chapters
 ```
 
 ### Deploying to Railway

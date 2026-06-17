@@ -42,5 +42,11 @@
     "simple diffusion",
     "sodium-potassium pump"
   ],
+  "study_guide": [
+    "What are the components of the cell’s plasma membrane?",
+    "What materials are able to cross the cell membrane without assistance? Which ones need assistance?",
+    "Compare the different types of diffusion, including osmosis, and contrast these to different types of active transport, including endocytosis and exocytosis.",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

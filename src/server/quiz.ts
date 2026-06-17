@@ -92,6 +92,7 @@ export type QuizKind = 'mc' | 'tf' | 'fitb' | 'fr';
 
 const SYSTEM_PREAMBLE = `You generate practice questions for an undergraduate Human Anatomy & Physiology course (BIOL 1592, Thompson Rivers University). Your questions must:
 - Match the professor's voice and difficulty profile from the example exam below.
+- Prioritize the instructor's study-guide prompts: most questions should align with the topics they raise. The user prompt assigns each question a specific anchor — a study-guide prompt or a unit slide.
 - Stay anchored in the unit content provided.
 - Be unambiguous: each question has exactly one correct answer.
 - Avoid trivia ("when was this discovered?"). Test understanding of mechanisms, structure, function, and relationships.
@@ -130,9 +131,18 @@ function unitGrounding(unit: UnitContent): string {
     `# UNIT ${unit.unit_no}: ${unit.ppt_title}`,
     `\n## Key terms for this unit`,
     unit.terms.length ? unit.terms.map((t) => `- ${t}`).join('\n') : '(no terms list)',
-    `\n## Lecture slides (instructor's PPT + speaker notes)`,
-    unit.ppt_markdown,
   ];
+  if (unit.study_guide && unit.study_guide.length) {
+    parts.push(
+      `\n## Instructor study-guide prompts (the topics the professor most wants emphasized)`,
+      `These are the instructor's own open-ended study questions. Most generated questions should align with the topics they raise (the user prompt assigns specific anchors).`,
+      unit.study_guide.map((q, i) => `${i + 1}. ${q}`).join('\n')
+    );
+  }
+  parts.push(
+    `\n## Lecture slides (instructor's PPT + speaker notes)`,
+    unit.ppt_markdown
+  );
   if (unit.textbook) {
     parts.push(
       `\n## Open textbook chapter (Pressbooks A&P I)`,
@@ -360,13 +370,77 @@ function pickSlideAnchors(unit: UnitContent, count: number): { no: number; title
   return shuffled.slice(0, count).sort((a, b) => a.no - b.no);
 }
 
-function anchorBlock(anchors: { no: number; title: string }[]): string {
+/** Fisher–Yates shuffle, returning a new array. */
+function shuffle<T>(arr: T[]): T[] {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j]!, a[i]!];
+  }
+  return a;
+}
+
+/**
+ * The share of a batch anchored to the instructor's study-guide prompts. The
+ * remainder is anchored to random unit slides so questions still roam the full
+ * unit — "most, but not all, align with the study guide" (professor's spec).
+ */
+const STUDY_GUIDE_RATIO = 0.75;
+
+type Anchor =
+  | { kind: 'guide'; text: string }
+  | { kind: 'slide'; no: number; title: string };
+
+/**
+ * Builds per-question anchors that bias generation toward the study guide.
+ * ~STUDY_GUIDE_RATIO of the batch maps to a study-guide prompt; the rest map
+ * to random slides. Degrades gracefully:
+ *   - unit with no study guide  → all slide anchors (original behavior)
+ *   - unit with no parseable slides → all guide anchors
+ * When the batch needs more guide-anchored questions than the guide has
+ * distinct prompts, prompts are reused round-robin (each yields a different
+ * facet), so the ratio is honored even for short guides.
+ */
+function buildAnchors(unit: UnitContent, count: number): Anchor[] {
+  const guides = unit.study_guide ?? [];
+  const slides = listSlides(unit);
+
+  if (guides.length === 0) {
+    return pickSlideAnchors(unit, count).map((s) => ({ kind: 'slide' as const, ...s }));
+  }
+
+  let guideCount = Math.max(0, Math.min(count, Math.round(count * STUDY_GUIDE_RATIO)));
+  if (slides.length === 0) guideCount = count; // nothing to anchor the remainder
+  if (guideCount === 0 && count > 0) guideCount = 1; // always lean on the guide
+  const slideCount = count - guideCount;
+
+  const shuffledGuides = shuffle(guides);
+  const guideAnchors: Anchor[] = Array.from({ length: guideCount }, (_, i) => ({
+    kind: 'guide' as const,
+    text: shuffledGuides[i % shuffledGuides.length]!,
+  }));
+
+  const slideAnchors: Anchor[] = pickSlideAnchors(unit, slideCount).map((s) => ({
+    kind: 'slide' as const,
+    ...s,
+  }));
+
+  // Interleave so the batch isn't "all guide questions, then all slide".
+  return shuffle([...guideAnchors, ...slideAnchors]);
+}
+
+function anchorBlock(anchors: Anchor[]): string {
   if (anchors.length === 0) return '';
-  const lines = anchors.map((a, i) => `- Question ${i + 1} must be anchored in slide ${a.no} ("${a.title}")`);
+  const lines = anchors.map((a, i) =>
+    a.kind === 'guide'
+      ? `- Question ${i + 1} must address this study-guide prompt: "${a.text}"`
+      : `- Question ${i + 1} must be anchored in slide ${a.no} ("${a.title}")`
+  );
   return (
-    `\n\nSLIDE ANCHOR ASSIGNMENT — each question MUST be anchored in the slide listed below. This is the primary diversity mechanism; do not deviate from these anchors:\n` +
+    `\n\nANCHOR ASSIGNMENT — each question MUST be grounded in the item listed below. This is the primary alignment-and-diversity mechanism; do not deviate from these anchors:\n` +
+    `Study-guide prompts are the instructor's own open-ended study questions. Turn each into ONE focused, objective question of the requested type — extract a specific, gradable point from it; do NOT ask the broad prompt verbatim. Slide-anchored questions roam the wider unit for breadth.\n` +
     lines.join('\n') +
-    `\n\nFor each question, ground the stem, the correct answer, and (where applicable) the distractors in the content of that specific slide. You may use related context from neighbouring slides only if it supports the question's anchor slide content.\n`
+    `\n\nFor each question, ground the stem, the correct answer, and (where applicable) the distractors in that specific item. You may use related context from the unit only where it supports the assigned anchor.\n`
   );
 }
 
@@ -457,7 +531,7 @@ export async function generateMC(
 ): Promise<McQuestion[]> {
   const unit = getUnit(unitNo);
   const recent = await fetchRecentStems(attribution.studentId, unitNo, 'mc');
-  const anchors = pickSlideAnchors(unit, count);
+  const anchors = buildAnchors(unit, count);
   const raw = await callGenerator(
     unit,
     MC_USER(count, difficulty) + anchorBlock(anchors) + avoidBlock(recent),
@@ -475,7 +549,7 @@ export async function generateTF(
 ): Promise<TfQuestion[]> {
   const unit = getUnit(unitNo);
   const recent = await fetchRecentStems(attribution.studentId, unitNo, 'tf');
-  const anchors = pickSlideAnchors(unit, count);
+  const anchors = buildAnchors(unit, count);
   const raw = await callGenerator(
     unit,
     TF_USER(count, difficulty) + anchorBlock(anchors) + avoidBlock(recent),
@@ -495,7 +569,7 @@ export async function generateFR(
   // FR uses 'prompt' field for the stem, not 'stem'. Note: existing FR rows
   // in quiz_attempt store the full FrQuestion shape, so we look up prompt.
   const recent = await fetchRecentFrPrompts(attribution.studentId, unitNo);
-  const anchors = pickSlideAnchors(unit, count);
+  const anchors = buildAnchors(unit, count);
   const raw = await callGenerator(
     unit,
     FR_USER(count, difficulty) + anchorBlock(anchors) + avoidBlock(recent),
@@ -524,7 +598,7 @@ export async function generateFITB(
     throw new Error(`Unit ${unitNo} has no terms list; cannot generate FITB.`);
   }
   const recent = await fetchRecentStems(attribution.studentId, unitNo, 'fitb');
-  const anchors = pickSlideAnchors(unit, count);
+  const anchors = buildAnchors(unit, count);
   const raw = await callGenerator(
     unit,
     FITB_USER(count, difficulty, unit.terms) + anchorBlock(anchors) + avoidBlock(recent),

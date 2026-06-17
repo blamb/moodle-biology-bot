@@ -50,5 +50,15 @@
     "tactile (Meissner) corpuscles",
     "melanin"
   ],
+  "study_guide": [
+    "Please contrast the composition of the epidermis, dermis, and hypodermis.",
+    "What are the different layers of the epidermis? What distinct features does each possess? What occurs in each layer?",
+    "What are the differences between the papillary and reticular layers of the dermis? What are their differing functions?",
+    "What are the accessory structures of the skin? What are their parts? What are their functions?",
+    "Please contrast the different glands of the integumentary system.",
+    "What are the different functions of the integumentary system?",
+    "What are the sensory cells found within the integumentary system, and how do they differ in function?",
+    "What terminology is needed to successfully navigate this unit?"
+  ],
   "exam_style_ref": "see content/exam_style.json — shared style anchor across units"
 }

@@ -1,0 +1,162 @@
+{
+  "units": {
+    "1": [
+      "Please explain and differentiate between elements, compounds, mixtures, atoms, subatomic particles, molecules, and compounds. Give examples of each.",
+      "What defines and differentiates organic and inorganic compounds? What are examples of each?",
+      "How are atomic number and mass number defined?",
+      "Please explain how electrons fit into shells around atomic nuclei. What is a valence shell? What is a complete shell?",
+      "Please differentiate cations from anions, and explain how they are formed. What sort of bond can these generate?",
+      "How do covalent bonds differ from ionic bonds and hydrogen bonds? How does ATP store energy in the form of bonds, and what type of bonds are these?",
+      "How do polar covalent bonds differ from nonpolar covalent bonds? What are dipoles? What characteristics do polar charges or dipoles bestow upon substances, and how do these interact with nonpolar substances?",
+      "What are the special physical properties of water and why are these present?",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "10": [
+      "What are the different components of the skeletal system, and what are their functions?",
+      "What are the major bone classifications? Give various examples of each. Then practice categorizing different bones into their corresponding categories.",
+      "What are the different parts of a long bone? What is the function of each part?",
+      "Please contrast compact bone and spongy bone. Where are each located. What are the functions of each?",
+      "Name the different cells found in bone, and state the function of each. Which one is developmentally unrelated to the others?",
+      "What is the difference between red and yellow marrow? Where are they located in a child, and in an adult?",
+      "Contrast the process of endochondral and intramembranous ossification.",
+      "How do bones grow in length? How do bones grow in thickness? How does the timing of these differ across an individual’s lifespan?",
+      "Please contrast the bones of the axial and appendicular skeletons. Practice naming and classifying all the bones mentioned in the lecture slides. Practice drawing these bones, as well as labelling them on unlabelled diagrams.",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "11": [
+      "Please compare the structural classifications of joints. What are the subtypes of each fibrous joint? Cartilagenous? Synovial?",
+      "Next, compare the functional classifications of joints. For each joint discussed in this unit, be able to classify it by both the structural and functional classifications.",
+      "For each joint that allows for movement, please explain whether it exhibits uniaxial, biaxial, or multiaxial movement?",
+      "Practice drawing and labeling the parts of a synovial joint. What additional synovial joint structures are present in some joints? Add them to your diagrams.",
+      "Name the different types of movements that your body can produce. Practice performing regular movements using your own body (but not anything dangerous, like hyperflexion or hyperextension).",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "12": [
+      "What are the origin and insertion points of common muscles?",
+      "For some common antagonistic muscle relationships, differentiate between the agonist/prime mover, synergist, and antagonist.",
+      "How do power and speed levers differ? How do first, second, and third-class levers differ? Give examples of each from your body. How does the length of the effort arm and resistance arm affect the type of lever that is present?",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "13": [
+      "Please contrast the three main types of muscle tissue. What are the similarities across two or three of these? What are the differences? Where are they located?",
+      "What are the names of the different layes of mysia found in muscle. Where is each located and what function(s) does each serve?",
+      "What are the different components within individual muscle fibres? What is the function of each?",
+      "Practice pairing muscle terms with their meanings. Try to break down muscle names based on these terms. Try making up nonsense muscle names of your own to see how various prefixes, terms, and suffixes can be combined to describe muscles.",
+      "Practice locating the muscles discussed in this unit within diagrams of the body. Additionally, please state their functions.",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "14": [
+      "Please describe electrical transmission across motor neurons and muscle cells, as well as the chemical signalling between neuron and muscle. What molecules and ions are involved?",
+      "Please explain the steps involved in excitation-contraction coupling within a muscle fibre. What is needed to cause a muscle to contract? What about to relax?",
+      "What are the different places that ATP is needed, within both the motor neuron and muscle cell, to enable muscle contraction and relaxation to occur? When is ATP used as a signalling molecule versus as an energy source?",
+      "When ATP levels become depleted, what are the different ways that muscles can replenish them? What is the time course of these different methods of ATP generation? How long does each last? How much ATP does each provide?",
+      "How do skeletal muscles differ in terms of speed of contract? And in terms of energy source? What are the different types of skeletal muscle that result from these categories? How are these muscle types distributed across the body, and how do their relative ratios differ across endurance versus power athletes?",
+      "Define a motor unit. How do motor units vary in size and location within the body?",
+      "Please contrast the different types of muscle tension that can be performed by muscles, such as those involved in arm flexion and extension.",
+      "How does muscle length relate to the maximum tension that a muscle is capable of producing? What is the molecular basis for this (at the level of the sarcomere)?",
+      "Please contrast twitch, wave summation, and tetanus.",
+      "How do cardiac muscle fibres and smooth muscle fibres differ from skeletal muscle fibres? Compare the body’s control of cardiac muscle versus smooth muscle versus skeletal muscle. How do single-unit and multi-unit smooth muscle differ?",
+      "How does acetylcholine affect each type of muscle? How about norepinephrine?",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "15": [
+      "Compare the terminology associated with the central nervous system with that of the peripheral nervous system. Also compare the locations of white and grey matter between the two systems. Finally, compare the types of glial cells that are found in each location.",
+      "What are the different parts of a neuron? How do these differ across different neuron types? It would be good practice to draw these different types of neurons out.",
+      "Please compare the functions of different type of glial cells, as well as neurons.",
+      "What are the different parts of the brain? How can the brain be organized into portions? For instance: what portions comprise the brainstem? And the hindbrain?",
+      "What are the functions of each part of the brain that is discussed in the lecture presentation?",
+      "What are the locations of the primary somatosensory cortex? The primary motor cortex? The primary visual cortex? The hippocampus and amygdala? Broca’s area?",
+      "Explain the causes and effects of Alzheimer’s disease, split-brain patients, amnesia, Parkinson’s disease, prefrontal cortex damage, drug addiction.",
+      "What are the sections of the spinal cord? What are the functions of each?",
+      "Describe the different meninges, and inter-meningeal spaces, that surround the central nervous system. What are their locations and functions?",
+      "What are the names and locations of the ventricles?",
+      "What is the function of cerebrospinal fluid? How and where is it made? How and where does it leave the central nervous system?",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "16": [
+      "Please name and explain the functions of the various pairs of cranial nerves.",
+      "Please name and explain the functions of the different segments of spinal nerves. How do the sensory and motor portions of these nerves differ in structure and location?",
+      "Compare different stretch and withdrawal reflexes.",
+      "How do sympathetic and parasympathetic neurons differ in locations, lengths, involved neurotransmitters and hormones, and receptor types? Compare these to somatic motor neurons.",
+      "Compare the different agonists and antagonists of cholinergic receptors that were discussed in this unit.",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "17": [
+      "Please contrast resting, graded, and action potentials. What determines voltage and how is voltage altered? How does the concept of all-or-none relate to action potential frequency, when it comes to changes in signalling intensity.",
+      "Explain where the following are found, and their functions: sodium-potassium pumps, ligand-gated channels, voltage-gated sodium channels, voltage-gated potassium channels, voltage-gated calcium channels, leak potassium channels. What causes the various channels to open/close/inactivate?",
+      "Explain how myelination and axon diameter affect conduction velocity.",
+      "Compare temporal and spatial summation.",
+      "Practice classifying neurotransmitters within their structural categories. Then state the function(s) of each.",
+      "Draw the different G-protein coupled receptor pathways. Which match the adrenergic receptors covered in class? How can the different types of receptor pathways cause the same neurotransmitter to exert different effects on target tissues?",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "2": [
+      "What are the different functions of water in the body?",
+      "What are the different water-containing compartments of the body? Which are the largest?",
+      "What are the components of a solution?",
+      "Please contrast dehydration synthesis (condensation) with hydrolysis. What type of bond is affected by these processes?",
+      "Please contrast the composition of intracellular and extracellular fluid in the body. How are sodium and potassium ion concentrations inside and outside of cells regulated?",
+      "What are the different functions of ions in the body?",
+      "Please contrast acids and bases, as well as what distinguishes strong ones from weak ones. How does a pH scale work?",
+      "What are buffers and how do they work to regulate body pH? At what pH are most body fluids maintained?",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "3": [
+      "Why is carbon important in the body?",
+      "What are the main functional groups in human physiology? Can you name them, and write out their chemical formula? What functions do they serve in the body?",
+      "What bonds join monomers into polymers within the carbohydrate group? Within peptides and proteins? Within fats?",
+      "What atoms form carbohydrates? What is the structural difference between pentose and hexose sugars, and what are examples of each? Which monosaccharides make up which disaccharides? What forms of polysaccharides exist in animals and plants? Which are sources of energy?",
+      "Please differentiate the terms lipid, fat, triglyceride, glycerol, fatty acid chain, cholesterol. What is the structure of a triglyceride? What differentiates saturated, monounsaturated, and polyunsaturated fats?",
+      "Please explain how the structure of a phospholipid affects its function. How are phospholipids arranged in lipoproteins versus within a cell’s membrane or a vesicle?",
+      "Please explain the relationship between cholesterol and steroid hormones. What are some examples of steroid hormones? What are prostaglandins?",
+      "What is the structure of an amino acid? What is a peptide and a protein? What are the primary, secondary, tertiary, and quaternary structures of proteins?",
+      "Please explain the structure and give examples of a nucleotide. How are nucleotides arranged within RNA versus DNA and how does ATP differ from these nucleotides?",
+      "What does phosphorylation entail, and what is its function?",
+      "Which molecules are part of the glycocalyx?",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "4": [
+      "What are the characteristics of life?",
+      "What levels of structural organization are present in the body? Can you name examples of each?",
+      "What are the different parts of a cell? Which are components of the endomembrane system? What is the function of each part?",
+      "Please contrast cell division, cell growth, and cell differentiation.",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "5": [
+      "What are the components of the cell’s plasma membrane?",
+      "What materials are able to cross the cell membrane without assistance? Which ones need assistance?",
+      "Compare the different types of diffusion, including osmosis, and contrast these to different types of active transport, including endocytosis and exocytosis.",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "6": [
+      "Describe and compare the four types of body tissues, including their locations and roles in the body.",
+      "What are the subtypes of epithelial tissue? What cell types can comprise this tissue? What are its functions?",
+      "What are the subtypes of connective tissue? What cell types, fibres, and matrix is present in each type of type of connective tissue? What functions does each type serve?",
+      "What are the types of muscle tissue, and how do they differ in location and function?",
+      "What are the types of nervous tissue, and how do they differ in location and function?",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "7": [
+      "What are the names and functions of the body’s systems?",
+      "Please describe anatomical terminology for body position and orientation, for different parts of the body, directional terms, terms for body planes and cavities, and for regions and quadrants.",
+      "What membranes are found in the body cavities?",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "8": [
+      "What is the definition of homeostasis.",
+      "What variables in and of the body need to be maintained at a specified level via homeostasis?",
+      "Please contrast negative and positive feedback loops, as well as feed-forward systems. Give multiple examples of each.",
+      "What terminology is needed to successfully navigate this unit?"
+    ],
+    "9": [
+      "Please contrast the composition of the epidermis, dermis, and hypodermis.",
+      "What are the different layers of the epidermis? What distinct features does each possess? What occurs in each layer?",
+      "What are the differences between the papillary and reticular layers of the dermis? What are their differing functions?",
+      "What are the accessory structures of the skin? What are their parts? What are their functions?",
+      "Please contrast the different glands of the integumentary system.",
+      "What are the different functions of the integumentary system?",
+      "What are the sensory cells found within the integumentary system, and how do they differ in function?",
+      "What terminology is needed to successfully navigate this unit?"
+    ]
+  }
+}
