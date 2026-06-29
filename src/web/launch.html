@@ -2639,14 +2639,6 @@
         const txt = document.createElement('div');
         setMd(txt, data.explanation);
         block.appendChild(txt);
-        // Citations like "(Unit 5, slide 12)" reference this bot's source
-        // deck. If your instructor uses a modified version, slide numbers
-        // may differ — the concept is what's anchored, not the number.
-        const note = document.createElement('div');
-        note.style.cssText = 'color:var(--muted);font-size:.72rem;margin-top:.65rem;padding-top:.4rem;border-top:1px dashed var(--border);font-style:italic';
-        note.textContent =
-          'Slide numbers reference this bot\'s source deck. If your instructor uses a different version of the slides, the numbers may not line up — the underlying concept is what matters.';
-        block.appendChild(note);
         btn.replaceWith(block);
       } catch (e) {
         btn.disabled = false;

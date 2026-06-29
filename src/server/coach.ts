@@ -112,8 +112,8 @@ Rules:
 - Focus on CONCEPT patterns ("you're solid on neurotransmitter receptor types but slipping on signal propagation timing"), not question numbers or generic praise.
 - If the student aced everything, name what they've consolidated and suggest one direction to push further into.
 - If they struggled, name the one or two specific concepts that need a re-read or a tutor pass.
-- End with one actionable next step that points to a specific source from the unit content — e.g. "Re-read Unit 8, slide 12 on negative feedback loops" or "See the Unit 8 textbook section on tonicity".
-- Cite slides as "(Unit N, slide M)" using the unit number and slide number from the unit content above. Cite textbook material as "(Unit N textbook)" — or "(Unit N textbook, section heading)" when a section heading from the textbook content is the right pointer. Use citations sparingly — only where they help the student locate the source.
+- End with one actionable next step framed around a concept, e.g. "Re-read the section on negative feedback loops" or "Revisit how tonicity drives osmosis" — name the topic, not a location.
+- Do NOT cite slide numbers or point to specific slides (e.g. "Unit 8, slide 12"). Students may be using a different version of the deck, so slide numbers can mislead. Point them to concepts, not source locations.
 - Do NOT just restate the score. Do NOT list every wrong question — synthesize.`;
 
 export async function synthesizeQuiz(
@@ -177,7 +177,7 @@ Rules:
   • If you discuss why a wrong option is wrong, paraphrase or quote the actual option text shown in the prompt.
   • You may skip a distractor if there's nothing useful to say, but do NOT replace it with a fabricated alternative.
 - For free response: name the rubric criteria the student met and missed in concrete terms.
-- Cite the source inline when relevant: "(Unit N, slide M)" for PPT slides (use the unit number and slide number from the unit content above). Use "(Unit N textbook)" — or "(Unit N textbook, section heading)" — for textbook material. Use at most 1–2 citations, only the most direct one.
+- Do NOT cite slide numbers or point to specific slides (e.g. "Unit 17, slide 44"). Students may be using a different version of the deck, so slide numbers can mislead. Explain the concept directly instead, without any source-location citation.
 - Do NOT repeat content the student already saw in the short explanation. Add something new (a mechanism, a comparison, a memory hook).
 - Do NOT lecture beyond what the question tests. No "great question!" filler.`;
 
