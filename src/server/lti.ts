@@ -81,6 +81,23 @@ lti.setup(
     // for operational dashboards that should NOT be visible to teachers or
     // students inside Moodle.
     serverAddon: (server) => {
+      // Unauthenticated liveness + deploy-version probe. Mounted before the
+      // LTI session validator so a plain `curl https://…/healthz` works with no
+      // launch token. Reports the commit Railway built so you can confirm a
+      // push went live: `curl -s https://…/healthz | jq .commit`. Does no DB
+      // work, so it stays green even if Postgres is down.
+      server.get('/healthz', (_req, res) => {
+        const sha = process.env.RAILWAY_GIT_COMMIT_SHA || 'unknown';
+        res.json({
+          status: 'ok',
+          commit: sha,
+          commit_short: sha === 'unknown' ? 'unknown' : sha.slice(0, 7),
+          branch: process.env.RAILWAY_GIT_BRANCH || 'unknown',
+          env: process.env.NODE_ENV || 'development',
+          uptime_s: Math.round(process.uptime()),
+        });
+      });
+
       server.get('/admin/costs', async (req, res) => {
         if (!env.ADMIN_TOKEN) {
           return res.status(503).type('text').send(

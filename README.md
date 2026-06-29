@@ -123,6 +123,13 @@ npm run ingest:all              # PPTs → speaker notes; XLSX → per-unit term
 
 The compiled `dist/` build runs migrations on every start (idempotent via the `_migration` table).
 
+To confirm a push went live, hit the unauthenticated health probe — it reports the commit Railway built:
+
+```bash
+curl -s https://moodle-biology-bot-production.up.railway.app/healthz | jq .
+# { "status": "ok", "commit": "…", "commit_short": "bac0b66", "branch": "main", ... }
+```
+
 ---
 
 ## Roadmap
