@@ -69,14 +69,15 @@ export type FrQuestion = z.infer<typeof FrQuestion>;
 export const FrCriterionGrade = z.object({
   criterion: z.string(),
   max_points: z.number().int(),
-  awarded: z.number().int().min(0),
+  // Half-marks allowed (multiples of 0.5) so partial answers earn partial credit.
+  awarded: z.number().min(0),
   coverage: z.enum(['full', 'partial', 'missing']),
   rationale: z.string().min(1),
 });
 export type FrCriterionGrade = z.infer<typeof FrCriterionGrade>;
 
 export const FrGrade = z.object({
-  total_awarded: z.number().int().min(0),
+  total_awarded: z.number().min(0),
   total_possible: z.number().int().min(1),
   per_criterion: z.array(FrCriterionGrade).min(1),
   strong: z.string(),
@@ -197,18 +198,40 @@ Output JSON shape (a single array):
   }
 ]`;
 
+// Free-response difficulty calibration. FR is the place students find hardest,
+// so the introductory tier is kept deliberately gentle — a student who has just
+// learned the unit and grasped the main idea should earn most of the marks.
+const FR_DIFFICULTY: Record<Difficulty, { note: string; marks: string; items: string }> = {
+  introductory: {
+    note: 'Introductory free-response: keep the scope tight and forgiving. Ask the student to identify/define and briefly explain ONE core idea, or a simple two-part identification. Do NOT demand full mechanistic depth, multi-step reasoning, or several distinct sub-points — that belongs at higher difficulties. The question should be answerable in a few sentences by someone who understood the unit\'s main points.',
+    marks: '3–4 marks total',
+    items: '2–3 rubric items',
+  },
+  intermediate: {
+    note: 'Intermediate free-response: ask the student to apply or compare two concepts, or explain a mechanism at a moderate level of detail.',
+    marks: '4–6 marks total',
+    items: '3–4 rubric items',
+  },
+  advanced: {
+    note: 'Advanced free-response: ask the student to synthesize across the unit or reason through a multi-step mechanism, with several distinct points to earn.',
+    marks: '6–8 marks total',
+    items: '4–6 rubric items',
+  },
+};
+
 const FR_USER = (count: number, difficulty: Difficulty) => `Generate ${count} free-response question(s) at ${difficulty} difficulty.
 
-${DIFFICULTY_NOTES[difficulty]}
+${FR_DIFFICULTY[difficulty].note}
 
-Each question is worth 5–6 marks total. The rubric breaks the marks down into specific, atomic criteria the grader can score independently — exactly how the professor's example exam does it (e.g. "Both involve ribose, phosphorous groups and adenine — 1 mark").
+Each question is worth ${FR_DIFFICULTY[difficulty].marks} (${FR_DIFFICULTY[difficulty].items}). The rubric breaks the marks down into specific, atomic criteria the grader can score independently — exactly how the professor's example exam does it (e.g. "Both involve ribose, phosphorous groups and adenine — 1 mark").
 
 The model_answer should be a complete answer that would earn full marks. Keep it concise but with enough detail that a student could see where each mark was earned.
 
 Rules:
 - Each rubric item is worth 1–3 marks; the rubric points must SUM to the total_marks.
 - Each rubric item describes ONE atomic concept/claim. Don't bundle.
-- The question prompt should require synthesis or comparison — not just recall (that's what FITB is for).
+- Match the mark count and rubric-item count to the difficulty stated above — do not make an introductory question heavier than it should be.
+- The question prompt should require some explanation or comparison — not just one-word recall (that's what FITB is for) — but keep the demand appropriate to the difficulty.
 - Anchor in this unit's content; questions that span multiple units are out of scope.
 
 Output JSON shape (a single array):
@@ -689,7 +712,8 @@ const FrLlmCriterionJudgment = z.object({
   // Permissive: an off-by-one or out-of-range index just means the reconcile
   // step won't match it, and the rubric item gets a default "missing" row.
   rubric_index: z.number().int(),
-  awarded: z.number().int().min(0),
+  // Half-marks allowed (multiples of 0.5); reconcile snaps to the nearest 0.5.
+  awarded: z.number().min(0),
   coverage: z.enum(['full', 'partial', 'missing']),
   rationale: z.string().min(1),
 });
@@ -710,17 +734,21 @@ How the rubric works in your output:
 - Do NOT return more entries than the rubric has items. Do NOT return placeholder or duplicate entries — if you can't make a judgment about a rubric item, return it with coverage "missing" and a rationale that says so.
 - It's fine (and expected) to omit a rubric item if the student clearly didn't address it AND you have nothing else to say — the server will fill in a default "not addressed" entry. But it's better to include it explicitly when you have something specific to note.
 
+Grading philosophy — grade GENEROUSLY. This is formative practice, not a final exam. Reward demonstrated understanding over exact wording. When in doubt, give the student the mark.
+
 Grading rules:
-1. Award points only for criteria the student's response actually addresses. Be neither generous nor stingy — match the rubric.
-2. For each rubric item you judge, choose coverage:
-   - "full"    = student fully addressed the criterion. Award the full points stated in the rubric.
-   - "partial" = student addressed part of the criterion or got close but missed a detail. Award 1 point fewer than max when the criterion is worth ≥ 2 marks, else 0.
-   - "missing" = student didn't address this criterion. Award 0.
-3. The rationale must quote or paraphrase specific phrases from the student's response when awarding points, and name what was missing when not awarding.
-4. "Missing" describes content the RUBRIC required but the student did not provide. Do NOT use it to introduce concepts the rubric never asked for, even if you think they're relevant. Empty string if all rubric items were addressed.
-5. "Not_needed" is ONLY for content that is factually wrong OR genuinely off-topic in a way that suggests the student misread the question. Do NOT flag biology that is correct and adjacent — students often raise related material as part of thinking through a problem, and that's not a problem. Empty string in the common case.
-6. "Strong" names 1–2 things the student clearly nailed, drawn from the student's actual words. Empty string if nothing rose to that bar.
-7. Be encouraging but factual. The student will read this.
+1. Award points for any criterion the student's response addresses in substance. Do NOT require the student's phrasing to match the rubric's or the model answer's — credit equivalent wording, partial wording, and correct ideas expressed simply.
+2. CREDIT IMPLIED CONTENT. If what the student wrote logically entails the required point, award the marks — do not dock them for not spelling out what their answer already implies. (E.g. "currents converge" implies the inputs originate at different locations; "builds over time" implies accumulation before decay.) Read for understanding, not for keywords.
+3. For each rubric item you judge, choose coverage and award marks (half-marks allowed — use multiples of 0.5):
+   - "full"    = the student conveyed the core idea, even if briefly, informally, or with a minor omission. Award the FULL points. Do not withhold full marks just because a textbook detail is absent if the main idea is clearly there.
+   - "partial" = the student showed some real understanding but missed a meaningful part. Award AT LEAST HALF the criterion's marks (e.g. 0.5 of 1, 1 of 2, 1.5 of 3), and more when they are most of the way there. Never give 0 to an answer that shows partial understanding.
+   - "missing" = the student genuinely did not address the criterion, OR what they wrote about it is incorrect. Only this earns 0.
+4. When you are unsure between two coverage levels, choose the MORE GENEROUS one (full over partial, partial over missing).
+5. The rationale must quote or paraphrase specific phrases from the student's response when awarding points, and name what was missing when not awarding.
+6. "Missing" describes content the RUBRIC required but the student did not provide. Do NOT use it to introduce concepts the rubric never asked for, even if you think they're relevant. Empty string if all rubric items were addressed.
+7. "Not_needed" is ONLY for content that is factually wrong OR genuinely off-topic in a way that suggests the student misread the question. Do NOT flag biology that is correct and adjacent — students often raise related material as part of thinking through a problem, and that's not a problem. Empty string in the common case.
+8. "Strong" names 1–2 things the student clearly nailed, drawn from the student's actual words. Empty string if nothing rose to that bar.
+9. Be encouraging but factual. The student will read this.
 
 Output STRICTLY valid JSON. No markdown, no preamble.`;
 
@@ -741,7 +769,7 @@ ${response}
 Grade this response. Output JSON in this shape:
 {
   "per_criterion": [
-    { "rubric_index": 1, "awarded": <int>, "coverage": "full"|"partial"|"missing", "rationale": "<one sentence>" }
+    { "rubric_index": 1, "awarded": <number, may be a multiple of 0.5 — e.g. 0.5, 1, 1.5>, "coverage": "full"|"partial"|"missing", "rationale": "<one sentence>" }
   ],
   "strong": "<1-sentence summary, or empty string>",
   "missing": "<1-2 sentences on what the rubric required but was absent, or empty string>",
@@ -796,8 +824,9 @@ export async function gradeFR(
     );
     if (judgment) {
       seenIndices.add(idx);
-      // Clamp awarded into [0, max_points].
-      const awarded = Math.max(0, Math.min(rubricItem.points, judgment.awarded));
+      // Snap to the nearest half-mark, then clamp into [0, max_points].
+      const snapped = Math.round(judgment.awarded * 2) / 2;
+      const awarded = Math.max(0, Math.min(rubricItem.points, snapped));
       return {
         criterion: rubricItem.criterion,
         max_points: rubricItem.points,
