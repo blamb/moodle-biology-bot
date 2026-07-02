@@ -22,7 +22,7 @@
 
 import { z } from 'zod';
 import type Anthropic from '@anthropic-ai/sdk';
-import { getAnthropic, GEN_MODEL, TUTOR_MODEL } from './anthropic.js';
+import { getAnthropic, GEN_MODEL, GRADER_MODEL } from './anthropic.js';
 import { getUnit, type UnitContent } from './content.js';
 import { recordApiCall, type Attribution } from './costs.js';
 import { query } from './db.js';
@@ -785,7 +785,7 @@ export async function gradeFR(
   const client = getAnthropic();
   const t0 = Date.now();
   const res = await client.messages.create({
-    model: TUTOR_MODEL, // Opus for grading — higher fidelity matters more than speed here
+    model: GRADER_MODEL, // GRADER_MODEL (default Haiku); raise via env if grading quality drops
     max_tokens: 2048,
     system: [
       { type: 'text', text: FR_GRADER_SYSTEM },
@@ -800,7 +800,7 @@ export async function gradeFR(
   void recordApiCall({
     ...attribution,
     endpoint: 'quiz.grade.fr',
-    model: TUTOR_MODEL,
+    model: GRADER_MODEL,
     usage: res.usage,
     durationMs: Date.now() - t0,
   });

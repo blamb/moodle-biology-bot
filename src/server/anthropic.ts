@@ -30,7 +30,12 @@ export function getAnthropic(): Anthropic {
   return client;
 }
 
-// Default model for tutor + grading. Cheap-and-fast model for question gen
-// is wired separately in the generator code.
-export const TUTOR_MODEL = 'claude-opus-4-8';
-export const GEN_MODEL = 'claude-sonnet-4-6';
+// Per-function model selection, sourced from env (see env.ts) so each can be
+// tuned independently without a redeploy. Defaults are Haiku 4.5 across the
+// board — the cheapest tier — chosen for cost at ~100 students.
+//   GEN_MODEL    — question generation + coaching feedback
+//   TUTOR_MODEL  — Socratic tutor chat
+//   GRADER_MODEL — free-response grading
+export const GEN_MODEL = env.GEN_MODEL;
+export const TUTOR_MODEL = env.TUTOR_MODEL;
+export const GRADER_MODEL = env.GRADER_MODEL;

@@ -25,6 +25,16 @@ export const env = {
   // dashboard). When empty, those endpoints are disabled. Generate via:
   //   openssl rand -hex 32
   ADMIN_TOKEN: optional('ADMIN_TOKEN', ''),
+
+  // Model selection per AI function, overridable without a code change so cost
+  // vs quality can be tuned from the Railway dashboard. Defaults are Haiku 4.5
+  // ($1/$5 per 1M) across the board for the cheapest run. Dial an individual
+  // function up to a stronger model (e.g. claude-opus-4-8, claude-sonnet-4-6)
+  // if its quality drops. Any price added here must also be added to
+  // MODEL_PRICES in costs.ts or its cost records as 0.
+  GEN_MODEL: optional('GEN_MODEL', 'claude-haiku-4-5'),        // question gen + coaching feedback
+  TUTOR_MODEL: optional('TUTOR_MODEL', 'claude-haiku-4-5'),    // Socratic tutor chat
+  GRADER_MODEL: optional('GRADER_MODEL', 'claude-haiku-4-5'),  // free-response grading
 } as const;
 
 export const isProd = env.NODE_ENV === 'production';
