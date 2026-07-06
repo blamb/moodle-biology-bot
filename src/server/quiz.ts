@@ -234,6 +234,12 @@ Rules:
 - The question prompt should require some explanation or comparison — not just one-word recall (that's what FITB is for) — but keep the demand appropriate to the difficulty.
 - Anchor in this unit's content; questions that span multiple units are out of scope.
 
+CRITICAL — the question must explicitly ask for everything the rubric scores:
+- Every rubric criterion MUST correspond to something the question prompt EXPLICITLY asks the student to do. A student reading only the prompt must be able to tell that each scored point is required of them.
+- Do NOT score any concept, comparison, direction, ranking, or detail the prompt does not ask for. (For example: if the rubric awards a mark for "which of two things happens first" or "which is more effective," the prompt must explicitly ask the student to compare or rank them — otherwise drop that criterion.)
+- Before finalizing, walk the rubric and check each item against the prompt text. For any criterion the prompt does not clearly request, either (a) add that request to the prompt wording, or (b) remove the criterion and rebalance the remaining marks so they still SUM to total_marks.
+- It is better to have a well-aligned 4-mark question than a 5-mark question where one mark tests something the student was never asked for.
+
 Output JSON shape (a single array):
 [
   {
@@ -708,21 +714,27 @@ export function gradeTF(q: TfQuestion, chosenBool: boolean): boolean {
  * the rubric's own text and point values. This eliminates failure modes
  * where the model produced duplicate placeholder entries to pad the array.
  */
+// LENIENT ON PURPOSE — this validates raw LLM output. Smaller models (Haiku)
+// intermittently omit a field or return it empty; a strict schema turns that
+// into a thrown parse error that surfaces to the student as "Submit failed".
+// Every field therefore has a safe default so an omission degrades the grade
+// slightly rather than failing the whole submission. Missing/garbled entries
+// simply don't match a rubric index and reconcile fills a "missing" row.
 const FrLlmCriterionJudgment = z.object({
-  // Permissive: an off-by-one or out-of-range index just means the reconcile
-  // step won't match it, and the rubric item gets a default "missing" row.
-  rubric_index: z.number().int(),
+  // Off-by-one, out-of-range, or a defaulted -1 just means reconcile won't
+  // match it, and the rubric item gets a default "missing" row.
+  rubric_index: z.number().int().default(-1),
   // Half-marks allowed (multiples of 0.5); reconcile snaps to the nearest 0.5.
-  awarded: z.number().min(0),
-  coverage: z.enum(['full', 'partial', 'missing']),
-  rationale: z.string().min(1),
+  awarded: z.number().min(0).default(0),
+  coverage: z.enum(['full', 'partial', 'missing']).default('missing'),
+  rationale: z.string().default(''),
 });
 
 const FrLlmGrade = z.object({
-  per_criterion: z.array(FrLlmCriterionJudgment),
-  strong: z.string(),
-  missing: z.string(),
-  not_needed: z.string(),
+  per_criterion: z.array(FrLlmCriterionJudgment).default([]),
+  strong: z.string().default(''),
+  missing: z.string().default(''),
+  not_needed: z.string().default(''),
 });
 
 const FR_GRADER_SYSTEM = `You are an experienced TA grading free-response answers for an undergraduate Human Anatomy & Physiology course (BIOL 1592). You grade strictly against the provided rubric — not against your own impression of completeness.
@@ -783,34 +795,60 @@ export async function gradeFR(
   attribution: Attribution = { endpoint: 'quiz.grade.fr' }
 ): Promise<FrGrade> {
   const client = getAnthropic();
-  const t0 = Date.now();
-  const res = await client.messages.create({
-    model: GRADER_MODEL, // GRADER_MODEL (default Haiku); raise via env if grading quality drops
-    max_tokens: 2048,
-    system: [
-      { type: 'text', text: FR_GRADER_SYSTEM },
-      {
-        type: 'text',
-        text: unitGrounding(unit),
-        cache_control: { type: 'ephemeral' },
-      },
-    ],
-    messages: [{ role: 'user', content: FR_GRADER_USER(question, response) }],
-  });
-  void recordApiCall({
-    ...attribution,
-    endpoint: 'quiz.grade.fr',
-    model: GRADER_MODEL,
-    usage: res.usage,
-    durationMs: Date.now() - t0,
-  });
 
-  const text = res.content
-    .filter((b): b is Anthropic.TextBlock => b.type === 'text')
-    .map((b) => b.text)
-    .join('\n');
-  const raw = JSON.parse(stripCodeFences(text));
-  const llm = FrLlmGrade.parse(raw);
+  // Run one grading call and return the model's raw text. Records cost.
+  async function callGrader(messages: Anthropic.MessageParam[]): Promise<string> {
+    const t0 = Date.now();
+    const res = await client.messages.create({
+      model: GRADER_MODEL, // GRADER_MODEL (default Haiku); raise via env if grading quality drops
+      max_tokens: 2048,
+      system: [
+        { type: 'text', text: FR_GRADER_SYSTEM },
+        {
+          type: 'text',
+          text: unitGrounding(unit),
+          cache_control: { type: 'ephemeral' },
+        },
+      ],
+      messages,
+    });
+    void recordApiCall({
+      ...attribution,
+      endpoint: 'quiz.grade.fr',
+      model: GRADER_MODEL,
+      usage: res.usage,
+      durationMs: Date.now() - t0,
+    });
+    return res.content
+      .filter((b): b is Anthropic.TextBlock => b.type === 'text')
+      .map((b) => b.text)
+      .join('\n');
+  }
+
+  const baseMessages: Anthropic.MessageParam[] = [
+    { role: 'user', content: FR_GRADER_USER(question, response) },
+  ];
+
+  // Parse the grade, retrying once on malformed JSON. A student's submission
+  // must not fail just because the model returned bad JSON on the first pass
+  // (more likely on Haiku). Field-level omissions are already absorbed by the
+  // lenient FrLlmGrade defaults; this handles the invalid-JSON case.
+  let llm: z.infer<typeof FrLlmGrade>;
+  const firstText = await callGrader(baseMessages);
+  try {
+    llm = FrLlmGrade.parse(JSON.parse(stripCodeFences(firstText)));
+  } catch {
+    const retryText = await callGrader([
+      ...baseMessages,
+      { role: 'assistant', content: firstText },
+      {
+        role: 'user',
+        content:
+          'Your previous response was not valid JSON in the required shape. Return ONLY the JSON object — no other text, no code fences.',
+      },
+    ]);
+    llm = FrLlmGrade.parse(JSON.parse(stripCodeFences(retryText)));
+  }
 
   // Reconcile: walk the rubric in order. For each item, find the LLM's
   // judgment (first match wins; duplicates are silently dropped). Items the
@@ -832,7 +870,9 @@ export async function gradeFR(
         max_points: rubricItem.points,
         awarded,
         coverage: judgment.coverage,
-        rationale: judgment.rationale,
+        // FrCriterionGrade.rationale is min(1); a lenient/empty LLM rationale
+        // would fail the final FrGrade.parse, so fall back to a placeholder.
+        rationale: judgment.rationale.trim() || 'No rationale provided by the grader.',
       };
     }
     return {
