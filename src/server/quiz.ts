@@ -588,6 +588,90 @@ export async function generateTF(
   return parsed.slice(0, count);
 }
 
+// ─── FR rubric/question alignment (post-generation safety pass) ──────────────
+
+/**
+ * A second, independent pass that audits a generated FR question for
+ * rubric/question alignment: every rubric criterion must be something the
+ * prompt EXPLICITLY asks the student to do. The generation prompt already
+ * enforces this, but a smaller model can still let one slip through; this is
+ * the belt-and-suspenders check the instructor asked for. It either revises
+ * the prompt to ask for a stray criterion, or drops that criterion.
+ */
+const FrAlignment = z.object({
+  changed: z.boolean(),
+  revised_prompt: z.string().min(10),
+  rubric: z.array(FrRubricItem).min(1),
+});
+
+const FR_ALIGN_SYSTEM = `You audit ONE free-response exam question for alignment between its rubric and its prompt. The question is well-formed only if a student, reading ONLY the prompt, can tell that each thing the rubric scores is required of them.
+
+Check each rubric criterion: does the prompt EXPLICITLY ask the student to produce that point?
+- If EVERY criterion is already asked → return the prompt and rubric unchanged with "changed": false.
+- If a criterion is NOT asked → fix it the least invasive way and set "changed": true:
+  • PREFERRED: minimally revise the prompt wording so it explicitly asks for that point (e.g. append "…and state which of the two reaches threshold first"). Keep the rubric item.
+  • ONLY IF the point does not belong in this question at all: drop that criterion from the rubric.
+
+Hard rules:
+- Do NOT invent new rubric criteria, and do NOT change the wording or point value of any criterion that is already aligned.
+- Do NOT change a criterion's points. If you drop one, just omit it — the server recomputes the total.
+- Preserve the order and exact text of every kept criterion.
+- Keep the prompt's topic and difficulty; only add the missing explicit ask(s).
+
+Output STRICTLY valid JSON — no markdown, no preamble:
+{ "changed": true|false, "revised_prompt": "<the prompt to use>", "rubric": [ { "points": <int>, "criterion": "<text>" } ] }`;
+
+const FR_ALIGN_USER = (q: FrQuestion) => `Question prompt:
+${q.prompt}
+
+Rubric (numbered):
+${q.rubric.map((r, i) => `  ${i + 1}. (${r.points} mark${r.points === 1 ? '' : 's'}) ${r.criterion}`).join('\n')}
+
+Audit for alignment and return the corrected JSON.`;
+
+/**
+ * Runs the alignment pass on one question. On ANY failure (API error, bad
+ * JSON, or a degenerate result) it returns the original question unchanged —
+ * this is a safety net and must never break FR generation.
+ */
+async function alignFrQuestion(q: FrQuestion, attribution: Attribution): Promise<FrQuestion> {
+  try {
+    const client = getAnthropic();
+    const t0 = Date.now();
+    const res = await client.messages.create({
+      model: GEN_MODEL,
+      max_tokens: 2048,
+      // No unit grounding needed — this is a self-contained logical check of
+      // "does the prompt ask for what the rubric scores?".
+      system: FR_ALIGN_SYSTEM,
+      messages: [{ role: 'user', content: FR_ALIGN_USER(q) }],
+    });
+    void recordApiCall({
+      ...attribution,
+      endpoint: 'quiz.generate.fr.align',
+      model: GEN_MODEL,
+      usage: res.usage,
+      durationMs: Date.now() - t0,
+    });
+    const text = res.content
+      .filter((b): b is Anthropic.TextBlock => b.type === 'text')
+      .map((b) => b.text)
+      .join('\n');
+    const a = FrAlignment.parse(JSON.parse(stripCodeFences(text)));
+    if (!a.changed) return q;
+
+    const total = a.rubric.reduce((acc, r) => acc + r.points, 0);
+    // Reject a degenerate rewrite (e.g. everything dropped) — keep the original,
+    // which the generation prompt already aligned, rather than ship a stub.
+    if (a.rubric.length < 2 || total < 3 || total > 8) return q;
+
+    return { ...q, prompt: a.revised_prompt, rubric: a.rubric, total_marks: total };
+  } catch (e) {
+    console.warn('quiz: FR alignment pass failed, keeping original question:', (e as Error).message);
+    return q;
+  }
+}
+
 export async function generateFR(
   unitNo: number,
   count: number,
@@ -613,7 +697,10 @@ export async function generateFR(
       q.total_marks = sum;
     }
   }
-  return parsed.slice(0, count);
+  // Second pass: verify each rubric only scores what the prompt asks. Runs in
+  // parallel so it adds ~one call of latency, not one per question.
+  const aligned = await Promise.all(parsed.map((q) => alignFrQuestion(q, attribution)));
+  return aligned.slice(0, count);
 }
 
 export async function generateFITB(
