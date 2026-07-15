@@ -15,6 +15,7 @@
 import { z } from 'zod';
 import type Anthropic from '@anthropic-ai/sdk';
 import { getAnthropic } from './anthropic.js';
+import { recordApiCall } from './costs.js';
 import { getUnit } from './content.js';
 import {
   unitGrounding,
@@ -107,6 +108,7 @@ export async function verifyQuestion(
       ],
       messages: [{ role: 'user', content: `Review this question:\n\n${describe(type, question)}` }],
     });
+    void recordApiCall({ endpoint: 'quiz.bank.verify', model, usage: res.usage });
     const text = res.content
       .filter((b): b is Anthropic.TextBlock => b.type === 'text')
       .map((b) => b.text)
