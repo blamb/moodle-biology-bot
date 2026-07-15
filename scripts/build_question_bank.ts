@@ -135,24 +135,65 @@ async function verifyAndBuild(
   unitNo: number,
   qs: AnyQ[],
   verify: boolean
-): Promise<{ items: BankItem<AnyQ>[]; flagged: Flagged[] }> {
+): Promise<BankItem<AnyQ>[]> {
   const verdicts: VerifyResult[] = verify
     ? await mapLimit(qs, VERIFY_CONCURRENCY, (q) => verifyQuestion(unitNo, type, q, GEN_MODEL))
     : qs.map(() => ({ verified: 'unchecked' as const, note: '' }));
 
-  const flagged: Flagged[] = [];
-  const items = qs.map((q, i) => {
+  return qs.map((q, i) => {
     const id = `u${unitNo}-${level}-${type}-${String(i + 1).padStart(2, '0')}`;
     const v = verdicts[i]!;
-    if (v.verified === 'flagged') {
-      flagged.push({ unit: unitNo, level, type, id, stem: stemOf(type, q).slice(0, 160), note: v.note });
-    }
     const item: BankItem<AnyQ> = { id, question: q, gen_model: GEN_MODEL, verified: v.verified };
     if (v.note) item.verify_note = v.note;
     return item;
   });
-  return { items, flagged };
 }
+
+const MAX_REPAIR_TRIES = 3;
+
+/**
+ * Replace each flagged item in place with a freshly generated, verified-passing
+ * question of the same type. Keeps the item's id/position and avoids stems
+ * already used. Anything still failing after MAX_REPAIR_TRIES stays flagged
+ * (rare) and is reported for manual review.
+ */
+async function repairFlagged(
+  type: BankType,
+  unitNo: number,
+  difficulty: Difficulty,
+  items: BankItem<AnyQ>[],
+  seen: Set<string>
+): Promise<void> {
+  for (let i = 0; i < items.length; i++) {
+    if (items[i]!.verified !== 'flagged') continue;
+    const oldKey = norm(stemOf(type, items[i]!.question));
+    for (let t = 0; t < MAX_REPAIR_TRIES; t++) {
+      let batch: AnyQ[] = [];
+      try {
+        batch = await genBatch(type, unitNo, 5, difficulty);
+      } catch {
+        continue;
+      }
+      let replaced = false;
+      for (const c of batch) {
+        const key = norm(stemOf(type, c));
+        if (!key || seen.has(key)) continue;
+        seen.add(key);
+        const v = await verifyQuestion(unitNo, type, c, GEN_MODEL);
+        if (v.verified === 'pass') {
+          seen.delete(oldKey);
+          items[i] = { id: items[i]!.id, question: c, gen_model: GEN_MODEL, verified: 'pass' };
+          replaced = true;
+          break;
+        }
+      }
+      if (replaced) break;
+    }
+  }
+}
+
+const countVerdict = (items: BankItem<AnyQ>[], v: BankItem<AnyQ>['verified']): number =>
+  items.filter((it) => it.verified === v).length;
 
 async function buildUnit(
   unitNo: number,
@@ -166,13 +207,31 @@ async function buildUnit(
     for (const type of ['mc', 'tf', 'fitb', 'fr'] as BankType[]) {
       const target = targets[type];
       const qs = await genDistinct(type, unitNo, difficulty, target);
-      const { items, flagged: f } = await verifyAndBuild(type, level, unitNo, qs, verify);
+      const seen = new Set(qs.map((q) => norm(stemOf(type, q))));
+      const items = await verifyAndBuild(type, level, unitNo, qs, verify);
+
+      // Auto-repair: regenerate flagged items until they pass (bounded).
+      const flaggedBefore = countVerdict(items, 'flagged');
+      if (verify && flaggedBefore > 0) {
+        await repairFlagged(type, unitNo, difficulty, items, seen);
+      }
       (lb[type] as BankItem<AnyQ>[]) = items;
-      flagged.push(...f);
-      const pass = items.filter((it) => it.verified === 'pass').length;
-      const flag = items.filter((it) => it.verified === 'flagged').length;
-      const unchecked = items.filter((it) => it.verified === 'unchecked').length;
-      const tail = verify ? `(${pass} pass, ${flag} flagged, ${unchecked} unchecked)` : '(unverified)';
+
+      // Residual flags (after repair) go to the report for manual review.
+      for (const it of items) {
+        if (it.verified === 'flagged') {
+          flagged.push({
+            unit: unitNo, level, type, id: it.id,
+            stem: stemOf(type, it.question).slice(0, 160), note: it.verify_note ?? '',
+          });
+        }
+      }
+
+      const pass = countVerdict(items, 'pass');
+      const flag = countVerdict(items, 'flagged');
+      const unchecked = countVerdict(items, 'unchecked');
+      const repaired = verify && flaggedBefore > 0 ? ` [repaired ${flaggedBefore - flag}/${flaggedBefore}]` : '';
+      const tail = verify ? `(${pass} pass, ${flag} flagged, ${unchecked} unchecked)${repaired}` : '(unverified)';
       console.log(`    ${level.padEnd(8)} ${type.toUpperCase().padEnd(4)} ${items.length}/${target} ${tail}`);
     }
     levels[level] = lb;
