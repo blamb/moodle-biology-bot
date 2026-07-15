@@ -127,7 +127,7 @@ const DIFFICULTY_NOTES: Record<Difficulty, string> = {
     'Advanced: tests synthesis across the unit and edge cases. The student should have to reason through a multi-step mechanism or evaluate a scenario. MC may use meta-options including "two of the above", "all of the above", and "None of the above" when appropriate.',
 };
 
-function unitGrounding(unit: UnitContent): string {
+export function unitGrounding(unit: UnitContent): string {
   const parts = [
     `# UNIT ${unit.unit_no}: ${unit.ppt_title}`,
     `\n## Key terms for this unit`,

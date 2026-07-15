@@ -32,13 +32,21 @@ branch). Live generation is retained only as an instructor tool.
   by stem for distinctness. `npm run bank:build` (see header for flags).
 - Output: `content/question-bank/unit-NN.json` (committed like unit content).
 
-### Phase 1.5 — Automated accuracy pass  (the review safeguard)
+### Phase 1.5 — Automated accuracy pass  ✅ implemented
 Since the instructor can't hand-check ~3,400 questions, a second strong-model
 pass cross-checks each question against that unit's lecture/textbook grounding
-and sets `verified: 'pass' | 'flagged'` (+ note). Options, not exclusive:
-- silently regenerate `flagged` items, and/or
-- surface only the flagged handful for a quick instructor review (tractable subset).
-Hook is already marked in `build_question_bank.ts` (`toBankItems`).
+and sets `verified: 'pass' | 'flagged' | 'unchecked'` (+ note).
+- `src/server/questionVerify.ts` — `verifyQuestion()`; defers to the course
+  material for classifications/definitions, and flags factual errors, wrong
+  "correct" answers, and ambiguous MC (two defensible options). Fail-safe:
+  returns `unchecked` (never a false `pass`) on error.
+- Wired into `build_question_bank.ts` (bounded concurrency, cached grounding).
+  Verified questions carry their verdict; flagged ones are collected into
+  `content/question-bank/_flagged-report.md` for a quick human glance.
+- `--no-verify` skips the pass for cheap test runs.
+
+Remaining option (not yet built): auto-regenerate `flagged` items in a loop
+until they pass, instead of only reporting them.
 
 ### Phase 2 — Storage + serving + student UI
 - DB: table mapping attempts/completion to bank question `id` (extend the
