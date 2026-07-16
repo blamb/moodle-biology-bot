@@ -171,6 +171,28 @@
   .quiz-options label.selected { background: #eaf3fc; border-color: var(--accent); }
   .quiz-options label.correct { background: #e8f5ec; border-color: var(--good); }
   .quiz-options label.incorrect { background: #fce8e8; border-color: var(--bad); }
+  /* Question bank: level toggle + numbered tile grid */
+  .bank-levels { display: flex; gap: .4rem; margin-bottom: .9rem; }
+  .bank-level {
+    padding: .35rem .95rem; border: 1px solid var(--border); border-radius: 999px;
+    background: var(--card); color: var(--muted); font: inherit; font-size: .85rem; cursor: pointer;
+  }
+  .bank-level.active { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+  .bank-intro { color: var(--muted); font-size: .85rem; margin-bottom: .75rem; }
+  .bank-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(2.75rem, 1fr)); gap: .5rem; }
+  .bank-tile {
+    aspect-ratio: 1 / 1; min-height: 2.75rem; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--card); color: var(--fg); font: inherit; font-size: .95rem; font-weight: 600;
+    cursor: pointer; display: flex; align-items: center; justify-content: center; position: relative;
+  }
+  .bank-tile:hover { border-color: var(--accent); }
+  .bank-tile.correct { background: #e8f5ec; border-color: var(--good); color: #1c6b34; }
+  .bank-tile.attempted { background: #fff5e6; border-color: #e0a44a; color: #9a6516; }
+  .bank-tile.correct::after { content: '✓'; position: absolute; top: 1px; right: 5px; font-size: .7rem; }
+  .bank-back {
+    background: none; border: none; color: var(--accent); cursor: pointer;
+    padding: 0; font: inherit; font-size: .85rem; margin-bottom: .6rem;
+  }
   .quiz-fitb-input {
     padding: .45rem .6rem; border: 1px solid var(--border); border-radius: 4px;
     font: inherit; width: 100%; max-width: 24rem;
@@ -837,6 +859,19 @@
   let currentUnit = null; // { no, title }
   let currentTutor = { sessionId: null };
 
+  // Units that have a pre-generated question bank; those quiz tabs serve fixed
+  // questions from the bank instead of live-generating. Others fall back to the
+  // live generator. Loaded once at startup (best-effort).
+  const bankUnits = new Set();
+  const bankState = { mc: null, tf: null, fitb: null, fr: null }; // per kind: { level, questions }
+  function unitHasBank() { return !!currentUnit && bankUnits.has(currentUnit.no); }
+  (async () => {
+    try {
+      const resp = await fetch(apiUrl('/api/bank/units'));
+      if (resp.ok) { const d = await resp.json(); (d.units || []).forEach((u) => bankUnits.add(u)); }
+    } catch { /* fall back to live-generate everywhere */ }
+  })();
+
   $$('#units-list li[data-unit-no]').forEach((li) => {
     li.addEventListener('click', () => openUnit(parseInt(li.dataset.unitNo, 10), li.dataset.unitTitle || ''));
   });
@@ -886,7 +921,11 @@
   async function openUnit(unitNo, unitTitle) {
     currentUnit = { no: unitNo, title: unitTitle };
     $('#unit-title').textContent = `Unit ${unitNo}: ${unitTitle}`;
-    // Reset all tab panels to their initial state
+    // Reset the quiz panels so a new unit starts fresh (they persist in the DOM).
+    ['mc', 'tf', 'fitb', 'fr'].forEach((k) => {
+      const p = $(`.tab-panel[data-panel="${k}"]`);
+      if (p) { p.innerHTML = ''; delete p.dataset.state; }
+    });
     showTab('tutor');
     // Tutor is the only one that pre-loads; quiz panels render on tab click.
     await tutorOpen(unitNo);
@@ -902,7 +941,14 @@
     $$('.tab').forEach((t) => t.classList.toggle('active', t.dataset.tab === name));
     $$('.tab-panel').forEach((p) => p.classList.toggle('active', p.dataset.panel === name));
     if (name === 'mc' || name === 'tf' || name === 'fitb' || name === 'fr') {
-      renderQuizConfig(name);
+      const panel = $(`.tab-panel[data-panel="${name}"]`);
+      if (unitHasBank()) {
+        // Don't clobber a question the student is mid-answer on; otherwise
+        // (re)load the grid so tile completion state stays fresh.
+        if (panel.dataset.state !== 'bank-q') renderBankPanel(name, panel);
+      } else {
+        renderQuizConfig(name);
+      }
     }
   }
 
@@ -1428,6 +1474,294 @@
 
     const qBox = panel.querySelector('.quiz-question');
     qBox.appendChild(wrap);
+  }
+
+  // ───── Question bank flow (served, per-question) ─────
+
+  // Grid of numbered questions for the current (unit, level, type).
+  function renderBankPanel(kind, panel) {
+    panel.innerHTML = '';
+    panel.dataset.state = 'bank';
+    const st = bankState[kind] || (bankState[kind] = { level: 'basic' });
+
+    const levels = document.createElement('div');
+    levels.className = 'bank-levels';
+    [['basic', 'Basic'], ['advanced', 'Advanced']].forEach(([lv, lab]) => {
+      const b = document.createElement('button');
+      b.className = 'bank-level' + (st.level === lv ? ' active' : '');
+      b.textContent = lab;
+      b.addEventListener('click', () => { st.level = lv; renderBankPanel(kind, panel); });
+      levels.appendChild(b);
+    });
+    panel.appendChild(levels);
+
+    const grid = document.createElement('div');
+    grid.className = 'bank-grid';
+    grid.textContent = 'Loading…';
+    panel.appendChild(grid);
+    loadBankGrid(kind, panel, grid);
+  }
+
+  async function loadBankGrid(kind, panel, grid) {
+    const st = bankState[kind];
+    try {
+      const resp = await fetch(apiUrl('/api/bank/list'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ unit_no: currentUnit.no, level: st.level, type: kind }),
+      });
+      const data = await resp.json();
+      if (!resp.ok) throw new Error(data.error || `Server returned ${resp.status}`);
+      st.questions = data.questions;
+      grid.innerHTML = '';
+      const done = st.questions.filter((q) => q.ever_correct).length;
+      const intro = document.createElement('div');
+      intro.className = 'bank-intro';
+      intro.textContent = `${st.questions.length} question${st.questions.length === 1 ? '' : 's'} · ${done} answered correctly. Pick one to practice — you can revisit any of them.`;
+      grid.appendChild(intro);
+      const tiles = document.createElement('div');
+      tiles.className = 'bank-tiles';
+      st.questions.forEach((item) => {
+        const tile = document.createElement('button');
+        tile.className = 'bank-tile' + (item.ever_correct ? ' correct' : item.attempts > 0 ? ' attempted' : '');
+        tile.textContent = item.n;
+        tile.title = item.ever_correct
+          ? 'Answered correctly'
+          : item.attempts > 0 ? 'Attempted — not yet correct' : 'Not attempted';
+        tile.addEventListener('click', () => openBankQuestion(kind, panel, item));
+        tiles.appendChild(tile);
+      });
+      grid.appendChild(tiles);
+    } catch (e) {
+      grid.textContent = 'Failed to load questions: ' + friendlyError(e);
+    }
+  }
+
+  // Build the answer input for one bank question (mirrors the quiz input, but
+  // keyed by bank id). Returns { inputEl, getResponse }.
+  function buildBankInput(kind, q, box, uid) {
+    let inputEl = null;
+    let getResponse;
+    if (kind === 'fr') {
+      const marksLine = document.createElement('div');
+      marksLine.style.cssText = 'color:var(--muted);font-size:.85rem;margin-bottom:.35rem';
+      marksLine.textContent = `Worth ${q.total_marks} mark${q.total_marks === 1 ? '' : 's'}. The AI grades against a per-mark rubric. Your draft saves automatically.`;
+      box.appendChild(marksLine);
+      const ta = document.createElement('textarea');
+      ta.className = 'fr-input';
+      ta.placeholder = 'Type your full answer here…';
+      const draftKey = `bbb-fr-draft-bank-${uid}`;
+      try { const saved = localStorage.getItem(draftKey); if (saved) ta.value = saved; } catch {}
+      ta.addEventListener('input', () => { try { localStorage.setItem(draftKey, ta.value); } catch {} });
+      ta.dataset.draftKey = draftKey;
+      box.appendChild(ta);
+      inputEl = ta;
+      getResponse = () => ta.value.trim();
+    } else if (kind === 'mc') {
+      const opts = document.createElement('div');
+      opts.className = 'quiz-options';
+      q.options.forEach((opt, i) => {
+        const label = document.createElement('label');
+        label.dataset.idx = String(i);
+        const r = document.createElement('input');
+        r.type = 'radio'; r.name = 'bmc-' + uid; r.value = String(i);
+        r.addEventListener('change', () =>
+          opts.querySelectorAll('label').forEach((l) => l.classList.toggle('selected', l.dataset.idx === String(i)))
+        );
+        label.appendChild(r);
+        const span = document.createElement('span');
+        span.textContent = String.fromCharCode(65 + i) + ') ' + opt;
+        label.appendChild(span);
+        opts.appendChild(label);
+      });
+      box.appendChild(opts);
+      getResponse = () => {
+        const c = opts.querySelector('input[type=radio]:checked');
+        return c ? parseInt(c.value, 10) : null;
+      };
+    } else if (kind === 'tf') {
+      const opts = document.createElement('div');
+      opts.className = 'quiz-options';
+      ['True', 'False'].forEach((label, i) => {
+        const isTrue = i === 0;
+        const lab = document.createElement('label');
+        lab.dataset.idx = isTrue ? 'true' : 'false';
+        const r = document.createElement('input');
+        r.type = 'radio'; r.name = 'btf-' + uid; r.value = isTrue ? 'true' : 'false';
+        r.addEventListener('change', () =>
+          opts.querySelectorAll('label').forEach((l) => l.classList.toggle('selected', l.dataset.idx === r.value))
+        );
+        lab.appendChild(r);
+        const span = document.createElement('span');
+        span.textContent = label;
+        lab.appendChild(span);
+        opts.appendChild(lab);
+      });
+      box.appendChild(opts);
+      getResponse = () => {
+        const c = opts.querySelector('input[type=radio]:checked');
+        return c ? c.value === 'true' : null;
+      };
+    } else { // fitb
+      const inp = document.createElement('input');
+      inp.type = 'text';
+      inp.className = 'quiz-fitb-input';
+      inp.placeholder = 'Type your answer';
+      inp.autocomplete = 'off';
+      box.appendChild(inp);
+      inputEl = inp;
+      getResponse = () => inp.value.trim();
+      inp.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') { e.preventDefault(); box.querySelector('.btn')?.click(); }
+      });
+    }
+    return { inputEl, getResponse };
+  }
+
+  function openBankQuestion(kind, panel, item) {
+    panel.innerHTML = '';
+    panel.dataset.state = 'bank-q';
+    const box = document.createElement('div');
+    box.className = 'quiz-question';
+
+    const back = document.createElement('button');
+    back.className = 'bank-back';
+    back.textContent = '← Back to questions';
+    back.addEventListener('click', () => renderBankPanel(kind, panel));
+    box.appendChild(back);
+
+    const prog = document.createElement('div');
+    prog.className = 'quiz-q-progress';
+    prog.textContent = `Question ${item.n} · ${bankState[kind].level === 'basic' ? 'Basic' : 'Advanced'}`;
+    box.appendChild(prog);
+
+    const q = item.question; // answer-stripped public view
+    const stem = document.createElement('div');
+    stem.className = 'quiz-stem';
+    stem.textContent = kind === 'fr' ? q.prompt : q.stem;
+    box.appendChild(stem);
+
+    const { inputEl, getResponse } = buildBankInput(kind, q, box, item.id);
+
+    const errEl = document.createElement('div');
+    errEl.className = 'err';
+    const submitBtn = document.createElement('button');
+    submitBtn.className = 'btn';
+    submitBtn.textContent = 'Submit';
+    submitBtn.addEventListener('click', async () => {
+      const response = getResponse();
+      if (response === null || response === '' || response === undefined) {
+        errEl.textContent = (kind === 'fitb' || kind === 'fr') ? 'Type an answer first.' : 'Pick an answer first.';
+        return;
+      }
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner"></span>' + (kind === 'fr' ? 'Grading…' : 'Checking…');
+      errEl.textContent = '';
+      try {
+        const resp = await fetch(apiUrl('/api/bank/answer'), {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ unit_no: currentUnit.no, level: bankState[kind].level, type: kind, id: item.id, response }),
+        });
+        const data = await resp.json();
+        if (!resp.ok) throw new Error(data.error || `Server returned ${resp.status}`);
+        item.attempts += 1;
+        if (data.correct) item.ever_correct = true;
+        const draftKey = inputEl?.dataset?.draftKey;
+        if (draftKey) { try { localStorage.removeItem(draftKey); } catch {} }
+        renderBankResult(kind, panel, box, q, response, data);
+      } catch (e) {
+        errEl.textContent = 'Submit failed: ' + friendlyError(e);
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit';
+      }
+    });
+    box.appendChild(submitBtn);
+    box.appendChild(errEl);
+    panel.appendChild(box);
+    if (inputEl) inputEl.focus();
+  }
+
+  function renderBankResult(kind, panel, box, q, response, data) {
+    // Lock the inputs and drop the Submit button.
+    box.querySelectorAll('input, textarea').forEach((el) => { el.disabled = true; el.readOnly = true; });
+    box.querySelector('.btn')?.remove();
+
+    if (kind === 'fr') {
+      renderFrGrade(panel, q, response, data);
+    } else {
+      const optsEl = box.querySelector('.quiz-options');
+      if (optsEl && kind === 'mc') {
+        optsEl.querySelectorAll('label').forEach((l) => {
+          const i = parseInt(l.dataset.idx, 10);
+          l.classList.remove('selected');
+          if (i === data.correct_index) l.classList.add('correct');
+          else if (i === response && !data.correct) l.classList.add('incorrect');
+        });
+      } else if (optsEl && kind === 'tf') {
+        optsEl.querySelectorAll('label').forEach((l) => {
+          l.classList.remove('selected');
+          const isCorrect = (l.dataset.idx === 'true') === data.correct_answer;
+          if (isCorrect) l.classList.add('correct');
+          else if (((l.dataset.idx === 'true') === response) && !data.correct) l.classList.add('incorrect');
+        });
+      }
+      const result = document.createElement('div');
+      result.className = 'quiz-result ' + (data.correct ? 'correct' : 'incorrect');
+      const label = document.createElement('span');
+      label.className = 'label';
+      label.textContent = data.correct ? '✓ Correct' : '✗ Not quite';
+      result.appendChild(label);
+      if (kind === 'fitb' && !data.correct) {
+        const expected = document.createElement('span');
+        expected.textContent = ` — expected: "${data.correct_answer}"`;
+        result.appendChild(expected);
+      }
+      const exp = document.createElement('p');
+      exp.className = 'quiz-explanation';
+      setMd(exp, data.explanation);
+      result.appendChild(exp);
+      box.appendChild(result);
+    }
+
+    // Actions: discuss with tutor (esp. when wrong) + back to the grid.
+    const actions = document.createElement('div');
+    actions.style.cssText = 'margin-top:.9rem;display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap';
+    if (!data.correct) {
+      const tut = document.createElement('button');
+      tut.className = 'btn';
+      tut.textContent = '💬 Discuss with tutor';
+      tut.addEventListener('click', () => discussBankQuestion(kind, q, response, data));
+      actions.appendChild(tut);
+    }
+    const back = document.createElement('button');
+    back.className = 'bank-back';
+    back.style.margin = '0';
+    back.textContent = '← Back to questions';
+    back.addEventListener('click', () => renderBankPanel(kind, panel));
+    actions.appendChild(back);
+    box.appendChild(actions);
+  }
+
+  // Seed the tutor with this one bank question + the student's answer.
+  function discussBankQuestion(kind, q, response, data) {
+    const lines = ['I just practiced this question and want to understand it better.', ''];
+    lines.push(kind === 'fr' ? q.prompt : q.stem);
+    if (kind === 'mc' && q.options) {
+      q.options.forEach((o, i) => lines.push(`${String.fromCharCode(65 + i)}) ${o}`));
+      lines.push('', `My answer: ${typeof response === 'number' ? String.fromCharCode(65 + response) : response}`);
+      lines.push(`Correct answer: ${String.fromCharCode(65 + data.correct_index)}`);
+    } else if (kind === 'tf') {
+      lines.push('', `My answer: ${response ? 'True' : 'False'}`, `Correct answer: ${data.correct_answer ? 'True' : 'False'}`);
+    } else if (kind === 'fitb') {
+      lines.push('', `My answer: ${response}`, `Correct answer: ${data.correct_answer}`);
+    } else if (kind === 'fr') {
+      lines.push('', `My answer: ${response}`, `I scored ${data.score_pct}%.`);
+    }
+    lines.push('', 'Can you help me understand what I got wrong and why?');
+    const seed = lines.join('\n');
+    showTab('tutor');
+    if (currentTutor.sessionId) tutorSend(seed);
   }
 
   // ───── Progress ─────
