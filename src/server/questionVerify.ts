@@ -50,12 +50,34 @@ Be strict about factual accuracy and single-correct-answer. Do NOT flag a questi
 Respond with ONLY a single JSON object and nothing else — no explanation before or after, no markdown:
 { "verdict": "pass" | "flag", "issue": "<one sentence naming the specific problem, or empty string if pass>" }`;
 
-/** Pull the JSON object out of the model's reply, tolerating stray prose/fences. */
+/**
+ * Pull the JSON object out of the model's reply, tolerating stray prose/fences.
+ * Scans for the FIRST balanced {...} object (string-aware) so trailing text —
+ * even trailing text containing braces — doesn't corrupt the parse.
+ */
 function extractJson(text: string): string {
   const t = text.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/i, '');
   const start = t.indexOf('{');
-  const end = t.lastIndexOf('}');
-  return start >= 0 && end > start ? t.slice(start, end + 1) : t;
+  if (start < 0) return t;
+  let depth = 0;
+  let inStr = false;
+  let esc = false;
+  for (let i = start; i < t.length; i++) {
+    const ch = t[i]!;
+    if (inStr) {
+      if (esc) esc = false;
+      else if (ch === '\\') esc = true;
+      else if (ch === '"') inStr = false;
+      continue;
+    }
+    if (ch === '"') inStr = true;
+    else if (ch === '{') depth++;
+    else if (ch === '}') {
+      depth--;
+      if (depth === 0) return t.slice(start, i + 1);
+    }
+  }
+  return t.slice(start); // unbalanced — let JSON.parse surface the error
 }
 
 /** Render a question for the reviewer, type-appropriately. */

@@ -1,0 +1,2998 @@
+{
+  "unit_no": 14,
+  "generated_at": "2026-07-16T17:21:35.864Z",
+  "levels": {
+    "basic": {
+      "mc": [
+        {
+          "id": "u14-basic-mc-01",
+          "question": {
+            "stem": "What is the definition of a motor unit?",
+            "options": [
+              "A single motor neuron together with all the muscle fibres it innervates",
+              "A single muscle fibre with all of the motor neurons that innervate it",
+              "A group of sarcomeres that shorten together during a twitch",
+              "The bundle of myofibrils contained within one muscle fibre",
+              "A cluster of pacemaker cells that coordinate contraction"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A motor unit is the group of muscle fibres in a muscle that are all innervated by a single motor neuron.\n\n**Why the other options are wrong:**\n- **(B)** Each muscle fibre is innervated by only one motor neuron, not many.\n- **(C)** Sarcomeres are contractile units within a fibre, not a motor unit.\n- **(D)** Myofibrils are structures inside a fibre, unrelated to neuron innervation.\n- **(E)** Pacemaker cells belong to cardiac muscle, not to a skeletal motor unit."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-02",
+          "question": {
+            "stem": "Which neurotransmitter is released by motor neurons to signal skeletal muscle fibres at the neuromuscular junction?",
+            "options": [
+              "Norepinephrine",
+              "Calmodulin",
+              "Acetylcholine",
+              "Acetylcholinesterase",
+              "Creatine phosphate"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Motor neurons release acetylcholine (ACh) into the synaptic cleft, which binds to receptors on the motor end-plate to depolarize the muscle fibre.\n\n**Why the other options are wrong:**\n- **(A)** Norepinephrine acts on smooth muscle, not the skeletal neuromuscular junction.\n- **(B)** Calmodulin is an intracellular calcium-binding protein in smooth muscle, not a neurotransmitter.\n- **(D)** Acetylcholinesterase is the enzyme that degrades ACh, not the transmitter.\n- **(E)** Creatine phosphate is an energy-storage molecule, not a neurotransmitter."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-03",
+          "question": {
+            "stem": "Which term refers to the enzyme that degrades acetylcholine in the synaptic cleft to prevent prolonged muscle excitation?",
+            "options": [
+              "Myosin light chain kinase",
+              "Acetylcholinesterase",
+              "Creatine kinase",
+              "Calmodulin",
+              "Troponin"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Acetylcholinesterase (AChE) breaks down acetylcholine in the synaptic cleft, turning off the signal and preventing overexcitation.\n\n**Why the other options are wrong:**\n- **(A)** Myosin light chain kinase phosphorylates myosin heads in smooth muscle.\n- **(C)** Creatine kinase catalyzes ATP regeneration from creatine phosphate.\n- **(D)** Calmodulin binds calcium in smooth muscle contraction.\n- **(E)** Troponin is a regulatory protein that binds calcium on the thin filament."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-04",
+          "question": {
+            "stem": "Curling a hand weight upward by shortening the biceps brachii is an example of which type of contraction?",
+            "options": [
+              "Isometric contraction",
+              "Eccentric contraction",
+              "Isotonic concentric contraction",
+              "Latch-bridge contraction",
+              "Tetanic contraction"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A concentric isotonic contraction occurs when the muscle shortens to move a load, such as curling a weight upward.\n\n**Why the other options are wrong:**\n- **(A)** Isometric contractions produce tension without changing joint angle.\n- **(B)** Eccentric contractions occur as the muscle lengthens under tension, such as lowering the weight.\n- **(D)** Latch-bridges are a smooth muscle mechanism for maintaining tone.\n- **(E)** Tetanus refers to a sustained contraction from high-frequency stimulation, not the type of length change."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-05",
+          "question": {
+            "stem": "What is the term for the single contraction of a muscle fibre produced by a single motor neuron action potential?",
+            "options": [
+              "Tetanus",
+              "Wave summation",
+              "Twitch",
+              "Recruitment",
+              "Tone"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A twitch is the single, brief contraction produced by a single action potential in the muscle fibres of a motor unit.\n\n**Why the other options are wrong:**\n- **(A)** Tetanus is a continuous contraction from high-frequency stimulation.\n- **(B)** Wave summation is the added tension when a fibre is stimulated again before relaxing.\n- **(D)** Recruitment is activation of increasing numbers of motor units.\n- **(E)** Tone is continuous partial contraction of a resting muscle."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-06",
+          "question": {
+            "stem": "During an isometric contraction, what happens to the joint angle and muscle tension?",
+            "options": [
+              "The joint angle changes and tension stays constant",
+              "The joint angle stays the same while tension is produced",
+              "The joint angle changes and tension decreases",
+              "The joint angle stays the same and no tension is produced",
+              "The joint angle increases as the muscle lengthens"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** In an isometric contraction the muscle produces tension without changing the angle of the skeletal joint, because the force cannot overcome the load.\n\n**Why the other options are wrong:**\n- **(A)** A changing joint angle describes an isotonic contraction, not isometric.\n- **(C)** Isometric contractions increase tension rather than decrease it.\n- **(D)** Tension is still generated during an isometric contraction.\n- **(E)** An increasing angle with lengthening describes an eccentric contraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-07",
+          "question": {
+            "stem": "Which feature is characteristic of smooth muscle but NOT of cardiac or skeletal muscle?",
+            "options": [
+              "Organization into sarcomeres",
+              "Presence of troponin",
+              "Thin filaments anchored to dense bodies",
+              "Striations visible under the microscope",
+              "Connection by intercalated discs"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Smooth muscle lacks sarcomeres and instead anchors its thin filaments to dense bodies, which are unique to smooth muscle.\n\n**Why the other options are wrong:**\n- **(A)** Smooth muscle has no sarcomeres; skeletal and cardiac muscle do.\n- **(B)** Smooth muscle lacks troponin and uses calmodulin instead.\n- **(D)** Smooth muscle is non-striated, unlike skeletal and cardiac muscle.\n- **(E)** Intercalated discs are a cardiac muscle feature."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-08",
+          "question": {
+            "stem": "At what percentage of resting length does a sarcomere produce its maximal tension?",
+            "options": [
+              "About 40 to 60 percent",
+              "About 60 to 80 percent",
+              "About 80 to 120 percent",
+              "About 120 to 160 percent",
+              "About 160 to 200 percent"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Maximal tension occurs at roughly 80–120 percent of resting length, where the overlap of actin-binding sites and myosin heads is optimal.\n\n**Why the other options are wrong:**\n- **(A)** At 40–60 percent the sarcomere is over-shortened and tension is reduced.\n- **(B)** Below 80 percent overlap is reduced and force decreases.\n- **(D)** Above 120 percent filaments overlap too little, decreasing force.\n- **(E)** At 160–200 percent there is minimal or no filament overlap and little tension."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-09",
+          "question": {
+            "stem": "When acetylcholine binds to receptors on the motor end-plate, what happens immediately?",
+            "options": [
+              "Voltage-gated calcium channels in the sarcoplasmic reticulum open",
+              "A ligand-gated ion channel opens, allowing Na+ to enter and depolarize the sarcolemma",
+              "Acetylcholinesterase is released from the motor neuron",
+              "Calcium is pumped back into the sarcoplasmic reticulum",
+              "Tropomyosin reshields the myosin-binding sites on actin"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** ACh binding opens a ligand-gated ion channel in the receptor, letting Na+ enter and depolarize the sarcolemma of the motor end-plate.\n\n**Why the other options are wrong:**\n- **(A)** SR calcium channels open later, after the action potential reaches the T-tubules.\n- **(C)** Acetylcholinesterase is an enzyme in the cleft, not released by ACh binding.\n- **(D)** Calcium re-uptake into the SR occurs during relaxation, not at ACh binding.\n- **(E)** Reshielding of binding sites occurs during relaxation when calcium falls."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-10",
+          "question": {
+            "stem": "Which ATP-regenerating pathway provides the greatest number of ATP molecules per glucose molecule?",
+            "options": [
+              "Creatine phosphate metabolism",
+              "Anaerobic glycolysis",
+              "Lactic acid fermentation",
+              "Aerobic cellular respiration",
+              "Latch-bridge cycling"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Aerobic cellular respiration produces approximately 32–34 ATP per glucose molecule, far more than the other pathways.\n\n**Why the other options are wrong:**\n- **(A)** Creatine phosphate provides only a few seconds of ATP and does not use glucose.\n- **(B)** Anaerobic glycolysis yields only 2 ATP per glucose.\n- **(C)** Lactic acid fermentation regenerates NAD+ but produces no additional ATP.\n- **(E)** Latch-bridge cycling is a smooth muscle mechanism, not an ATP source."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-11",
+          "question": {
+            "stem": "What distinguishes tetanus from a single twitch in a skeletal muscle fibre?",
+            "options": [
+              "In tetanus the relaxation phase disappears completely and contractions become continuous",
+              "In tetanus only one action potential is fired by the motor neuron",
+              "In tetanus the muscle produces less tension than in a single twitch",
+              "In tetanus calcium is no longer released from the sarcoplasmic reticulum",
+              "In tetanus the muscle relaxes fully between each stimulus"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Tetanus occurs when motor neuron firing is so frequent that the relaxation phase disappears entirely, producing a continuous, sustained contraction.\n\n**Why the other options are wrong:**\n- **(B)** A single action potential produces a twitch, not tetanus, which requires high-frequency repeated stimulation.\n- **(C)** Tetanus produces greater tension than a single twitch, not less.\n- **(D)** Frequent stimulation causes more calcium release, not a cessation of release.\n- **(E)** Full relaxation between stimuli describes separate twitches, not tetanus."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-12",
+          "question": {
+            "stem": "Which ATP-regenerating mechanism produces the greatest amount of ATP per glucose molecule?",
+            "options": [
+              "Aerobic cellular respiration",
+              "Creatine phosphate metabolism",
+              "Glycolysis",
+              "Lactic acid fermentation",
+              "The anaerobic pathway"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Aerobic cellular respiration in mitochondria yields approximately 32–34 ATP per glucose, far more than the other pathways.\n\n**Why the other options are wrong:**\n- **(B)** Creatine phosphate does not use glucose; it provides only a few seconds of quick ATP.\n- **(C)** Glycolysis yields only about 2 ATP per glucose.\n- **(D)** Lactic acid fermentation regenerates NAD+ but does not add ATP beyond glycolysis's small yield.\n- **(E)** The anaerobic pathway (glycolysis plus fermentation) provides only 2 ATP per glucose."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-13",
+          "question": {
+            "stem": "What is a triad in a skeletal muscle fibre?",
+            "options": [
+              "A T-tubule flanked by sarcoplasmic reticulum membranes on either side",
+              "Three myofibrils bundled together within a muscle fibre",
+              "The junction of actin, myosin, and troponin during contraction",
+              "Three motor neurons converging on one muscle fibre",
+              "A cluster of three mitochondria near the sarcolemma"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A triad is a T-tubule together with the sarcoplasmic reticulum membranes on both sides of it, a threesome of membranes.\n\n**Why the other options are wrong:**\n- **(B)** A triad refers to membrane structures, not a bundle of myofibrils.\n- **(C)** The interaction of contractile proteins is not what defines a triad.\n- **(D)** Each muscle fibre is innervated by only one motor neuron, and this is unrelated to a triad.\n- **(E)** Mitochondrial clusters are not the definition of a triad."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-14",
+          "question": {
+            "stem": "Which feature is found in both cardiac and smooth muscle but NOT in skeletal muscle?",
+            "options": [
+              "Reliance on extracellular calcium via calcium-induced calcium release",
+              "Presence of sarcomeres arranged in striations",
+              "Fusion of myoblasts creating multinucleate fibres",
+              "Voluntary control by the somatic nervous system",
+              "Regulation of contraction by troponin"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Both cardiac and smooth muscle use calcium-induced calcium release, requiring extracellular calcium entry to trigger further release from the SR, unlike skeletal muscle.\n\n**Why the other options are wrong:**\n- **(B)** Smooth muscle lacks sarcomeres and striations, so this is not shared.\n- **(C)** Multinucleate fibres from myoblast fusion are characteristic of skeletal muscle.\n- **(D)** Both cardiac and smooth muscle are involuntary, while skeletal muscle is voluntary.\n- **(E)** Smooth muscle lacks troponin, using calmodulin instead."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-15",
+          "question": {
+            "stem": "In which situation is ATP used as a signalling ligand rather than as a source of energy in the muscle contraction cycle?",
+            "options": [
+              "When ATP binds the myosin head to cause it to detach from actin",
+              "When ATP is hydrolyzed to power the calcium pumps of the SR",
+              "When ATP is hydrolyzed to re-cock the myosin head",
+              "When ATP is broken down in glycolysis to produce pyruvic acid",
+              "When ATP transfers a phosphate to creatine at rest"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** ATP binding (not hydrolysis) to the myosin head acts as a signal that causes the head to release from actin; in the absence of this binding, rigor mortis results.\n\n**Why the other options are wrong:**\n- **(B)** Powering the SR calcium pumps uses ATP as an energy source through hydrolysis.\n- **(C)** Re-cocking the myosin head uses the energy of ATP hydrolysis.\n- **(D)** Glycolysis uses and produces ATP as an energy currency, not a signal.\n- **(E)** Forming creatine phosphate uses ATP's phosphate-bond energy, not a signalling role."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-16",
+          "question": {
+            "stem": "When someone slowly lowers a hand weight in a controlled manner while the biceps brachii lengthens, what type of contraction is occurring?",
+            "options": [
+              "Eccentric isotonic contraction",
+              "Concentric isotonic contraction",
+              "Isometric contraction",
+              "Tetanic contraction",
+              "A single twitch"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** An eccentric contraction occurs when muscle tension diminishes and the muscle lengthens while still controlling a load, as in lowering a weight.\n\n**Why the other options are wrong:**\n- **(B)** A concentric contraction involves the muscle shortening to lift the load, not lengthening.\n- **(C)** Isometric contraction produces tension without changing the joint angle or muscle length.\n- **(D)** Tetanus describes stimulation frequency, not a lengthening movement type.\n- **(E)** A single twitch is one brief contraction, not a controlled lowering movement."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-17",
+          "question": {
+            "stem": "Which statement best describes a motor unit?",
+            "options": [
+              "A single motor neuron and all the muscle fibres it innervates",
+              "A single muscle fibre innervated by several motor neurons",
+              "A group of muscle fibres connected by gap junctions",
+              "The junction where a motor neuron meets a muscle fibre",
+              "A bundle of sarcomeres arranged in series within a myofibril"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A motor unit is defined as one motor neuron together with all the muscle fibres it innervates.\n\n**Why the other options are wrong:**\n- **(B)** Each skeletal muscle fibre is innervated by only one motor neuron, not several.\n- **(C)** Gap-junction-connected fibres describe a syncytium in cardiac/smooth muscle, not a motor unit.\n- **(D)** That describes the neuromuscular junction, not a motor unit.\n- **(E)** A series of sarcomeres is a myofibril component, not a motor unit."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-18",
+          "question": {
+            "stem": "In a skeletal muscle fibre, what happens when the action potential travels down the T-tubule and reaches the sarcoplasmic reticulum?",
+            "options": [
+              "Voltage-gated calcium channels in the SR open, releasing Ca2+ into the sarcoplasm",
+              "Acetylcholine is released into the synaptic cleft",
+              "Calcium is pumped from the sarcoplasm back into the SR",
+              "The myosin heads immediately detach from actin",
+              "Tropomyosin permanently blocks the myosin-binding sites"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The action potential within the T-tubule triggers opening of voltage-gated Ca2+ channels in the SR membrane, so calcium diffuses into the sarcoplasm and initiates contraction.\n\n**Why the other options are wrong:**\n- **(B)** Acetylcholine release occurs at the neuromuscular junction from the motor neuron, not from the SR.\n- **(C)** Pumping calcium back into the SR is part of relaxation, not the arrival of the action potential.\n- **(D)** Myosin detachment requires ATP binding and is a separate cross-bridge step.\n- **(E)** Calcium release actually leads to tropomyosin moving away from binding sites, not permanent blockage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-19",
+          "question": {
+            "stem": "Which neurotransmitter is released by the motor neuron at the neuromuscular junction to depolarize the skeletal muscle fibre?",
+            "options": [
+              "Acetylcholine",
+              "Norepinephrine",
+              "Calmodulin",
+              "Creatine kinase",
+              "Acetylcholinesterase"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Acetylcholine is released from the motor neuron's axon terminal and binds cholinergic receptors on the motor end-plate, opening ligand-gated channels that let Na+ in and depolarize the fibre.\n\n**Why the other options are wrong:**\n- **(B)** Norepinephrine acts on smooth and cardiac muscle, not at the skeletal neuromuscular junction.\n- **(C)** Calmodulin is a calcium-binding regulatory protein inside smooth muscle, not a neurotransmitter.\n- **(D)** Creatine kinase is an enzyme for regenerating ATP, not a neurotransmitter.\n- **(E)** Acetylcholinesterase is the enzyme that degrades acetylcholine, not a neurotransmitter."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-20",
+          "question": {
+            "stem": "Which skeletal muscle fibre type contracts slowly and relies on aerobic respiration, making it resistant to fatigue?",
+            "options": [
+              "Slow oxidative (SO) fibres",
+              "Fast glycolytic (FG) fibres",
+              "Fast oxidative (FO) fibres",
+              "Multi-unit fibres",
+              "Latch-bridge fibres"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Slow oxidative fibres have slow ATPase and use aerobic respiration, giving sustained fatigue-resistant contractions ideal for endurance activity.\n\n**Why the other options are wrong:**\n- **(B)** Fast glycolytic fibres contract quickly using anaerobic glycolysis and fatigue rapidly.\n- **(C)** Fast oxidative fibres contract quickly and can switch to anaerobic metabolism, fatiguing sooner than SO fibres.\n- **(D)** Multi-unit is a smooth muscle classification, not a skeletal fibre type.\n- **(E)** Latch-bridges are a smooth muscle feature, not a skeletal fibre type."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-21",
+          "question": {
+            "stem": "In a resting skeletal muscle fibre, what is the role of the protein tropomyosin?",
+            "options": [
+              "It blocks the myosin-binding sites on the actin filaments",
+              "It binds calcium ions to trigger contraction",
+              "It hydrolyzes ATP to power the power stroke",
+              "It anchors actin filaments to the Z-disc",
+              "It pumps calcium back into the sarcoplasmic reticulum"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Tropomyosin is a long, rod-like molecule that shields (blocks) the myosin-binding sites on actin when the muscle is at rest.\n\n**Why the other options are wrong:**\n- **(B)** Binding calcium is the role of troponin, not tropomyosin.\n- **(C)** ATP hydrolysis is carried out by the myosin head's ATPase, not tropomyosin.\n- **(D)** Anchoring actin to the Z-disc is a structural feature of the sarcomere, not a function of tropomyosin.\n- **(E)** Calcium pumping is done by ATP-dependent pumps in the SR membrane, not tropomyosin."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-22",
+          "question": {
+            "stem": "At what percentage of its resting length does a sarcomere produce maximal tension?",
+            "options": [
+              "About 20–40% of resting length",
+              "About 50–70% of resting length",
+              "About 80–120% of resting length",
+              "About 130–160% of resting length",
+              "Only exactly at 100% of resting length"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Maximal tension occurs at 80–120% of resting length because this range maximizes the overlap between actin-binding sites and myosin heads.\n\n**Why the other options are wrong:**\n- **(A)** At this over-shortened length actin filaments overlap and force is greatly diminished.\n- **(B)** Below 80%, the zone of overlap is reduced and tension declines.\n- **(D)** Beyond 120%, thick and thin filaments overlap too little, reducing cross-bridge formation.\n- **(E)** Maximal tension occurs over a range, not only at exactly 100%."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-23",
+          "question": {
+            "stem": "A person slowly lowers a dumbbell in a controlled manner. As the biceps brachii lengthens while still producing tension, what type of contraction is occurring?",
+            "options": [
+              "Isometric contraction",
+              "Eccentric (isotonic) contraction",
+              "Concentric (isotonic) contraction",
+              "Tetanic contraction",
+              "Latch-bridge contraction"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** An eccentric isotonic contraction occurs when muscle tension diminishes and the muscle lengthens while controlling a load, such as lowering a weight.\n\n**Why the other options are wrong:**\n- **(A)** Isometric contractions produce tension without changing joint angle or muscle length.\n- **(C)** Concentric contractions involve the muscle shortening to move a load, as when curling the weight upward.\n- **(D)** Tetanus refers to continuous contraction from high-frequency stimulation, not lengthening.\n- **(E)** Latch-bridges are a feature of smooth muscle tone, not skeletal arm movements."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-24",
+          "question": {
+            "stem": "Which neurotransmitter is released by a motor neuron at the neuromuscular junction to signal a skeletal muscle fibre?",
+            "options": [
+              "Norepinephrine",
+              "Calmodulin",
+              "Acetylcholine",
+              "Creatine phosphate",
+              "Myoglobin"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Motor neurons release acetylcholine into the synaptic cleft, where it binds cholinergic receptors on the motor end-plate.\n\n**Why the other options are wrong:**\n- **(A)** Norepinephrine acts on smooth muscle, not at the skeletal neuromuscular junction.\n- **(B)** Calmodulin is an intracellular calcium-binding protein in smooth muscle, not a neurotransmitter.\n- **(D)** Creatine phosphate is an energy reserve molecule, not a neurotransmitter.\n- **(E)** Myoglobin stores oxygen within muscle fibres and is not released by neurons."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-25",
+          "question": {
+            "stem": "What is the term for the single, brief contraction of a motor unit that results from one action potential from its motor neuron?",
+            "options": [
+              "Tetanus",
+              "Wave summation",
+              "A twitch",
+              "Recruitment",
+              "Tone"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A single action potential from a motor neuron produces a single, isolated contraction of its motor unit called a twitch.\n\n**Why the other options are wrong:**\n- **(A)** Tetanus is continuous contraction produced by high-frequency stimulation.\n- **(B)** Wave summation occurs when a second stimulus arrives before relaxation is complete, producing a stronger contraction.\n- **(D)** Recruitment is the activation of additional motor units to increase force.\n- **(E)** Tone is the continuous partial contraction of a muscle at rest."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-26",
+          "question": {
+            "stem": "How do neurons and muscle fibres control their membrane potential (voltage)?",
+            "options": [
+              "By opening and closing ion channels to regulate currents across the membrane",
+              "By synthesizing new membrane lipids to change thickness",
+              "By hydrolyzing ATP directly into an electrical charge",
+              "By altering the number of mitochondria present",
+              "By changing the amount of myoglobin stored"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Neurons and muscle fibres control membrane potential by opening and closing ion channels, which regulate the flow (current) of charged ions across the membrane.\n\n**Why the other options are wrong:**\n- **(B)** Membrane potential is set by ion movement, not lipid synthesis.\n- **(C)** ATP powers pumps but is not itself converted directly into charge; currents come from ion flow.\n- **(D)** Mitochondrial number affects ATP supply, not the immediate control of membrane voltage.\n- **(E)** Myoglobin stores oxygen and has no role in setting membrane potential."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-27",
+          "question": {
+            "stem": "Which skeletal muscle fibre type contracts quickly and relies primarily on anaerobic glycolysis, fatiguing rapidly and predominating in power athletes such as sprinters?",
+            "options": [
+              "Slow oxidative (SO) fibres",
+              "Fast oxidative (FO) fibres",
+              "Fast glycolytic (FG) fibres",
+              "Cardiac fibres",
+              "Single-unit smooth muscle fibres"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Fast glycolytic fibres contract quickly, use anaerobic glycolysis, fatigue quickly, and are favoured for rapid powerful movements seen in power athletes.\n\n**Why the other options are wrong:**\n- **(A)** Slow oxidative fibres contract slowly and use aerobic respiration, favouring endurance.\n- **(B)** Fast oxidative fibres contract quickly but primarily use aerobic respiration and resist fatigue better.\n- **(D)** Cardiac fibres are found only in the heart, not classified as a skeletal muscle type.\n- **(E)** Single-unit smooth muscle is not a skeletal muscle fibre type."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-28",
+          "question": {
+            "stem": "Which feature is found in cardiac muscle but NOT in smooth muscle?",
+            "options": [
+              "Actin and myosin filaments",
+              "Sarcomeres (striations)",
+              "Calcium-induced calcium release",
+              "A single nucleus per cell",
+              "Involuntary control"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Cardiac muscle is striated and organized into sarcomeres, whereas smooth muscle lacks striations and sarcomeres.\n\n**Why the other options are wrong:**\n- **(A)** Both cardiac and smooth muscle contain actin and myosin filaments.\n- **(C)** Both cardiac and smooth muscle use calcium-induced calcium release.\n- **(D)** Both cardiac and smooth muscle fibres are typically uninucleate.\n- **(E)** Both cardiac and smooth muscle are under involuntary control."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-29",
+          "question": {
+            "stem": "Which statement correctly defines a motor unit?",
+            "options": [
+              "A single muscle fibre innervated by many motor neurons",
+              "A group of muscle fibres innervated by a single motor neuron",
+              "The junction between a motor neuron and a muscle fibre",
+              "A group of sarcomeres arranged in series within a myofibril",
+              "A cluster of pacemaker cells that set contraction rate"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A motor unit is the group of muscle fibres within a muscle that are all innervated by a single motor neuron.\n\n**Why the other options are wrong:**\n- **(A)** Each muscle fibre is innervated by only one motor neuron, not many.\n- **(C)** The neuron-to-fibre contact point is the neuromuscular junction, not a motor unit.\n- **(D)** A row of sarcomeres is part of a myofibril, not the definition of a motor unit.\n- **(E)** Pacemaker cells regulate cardiac contraction and are unrelated to motor units."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-mc-30",
+          "question": {
+            "stem": "In skeletal muscle terminology, what is the correct name for the invaginations of the sarcolemma that carry the action potential deep into the muscle fibre toward the sarcoplasmic reticulum?",
+            "options": [
+              "Dense bodies",
+              "Intercalated discs",
+              "Transverse tubules (T-tubules)",
+              "Gap junctions",
+              "Motor end-plates"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Transverse tubules (T-tubules) are invaginations of the sarcolemma that carry the action potential into the fibre's interior to reach the sarcoplasmic reticulum.\n\n**Why the other options are wrong:**\n- **(A)** Dense bodies anchor thin filaments in smooth muscle, analogous to Z-discs.\n- **(B)** Intercalated discs connect cardiac muscle fibres to one another.\n- **(D)** Gap junctions allow current to flow between cardiac (or single-unit smooth) muscle cells.\n- **(E)** The motor end-plate is the region of sarcolemma bearing acetylcholine receptors at the synapse."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u14-basic-tf-01",
+          "question": {
+            "stem": "The enzyme acetylcholinesterase breaks down acetylcholine in the synaptic cleft.",
+            "correct": true,
+            "explanation": "Acetylcholinesterase (AChE) degrades acetylcholine so it can no longer bind receptors, turning off the signal and preventing prolonged, unwanted contraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-02",
+          "question": {
+            "stem": "Both cardiac muscle and skeletal muscle are striated and organized into sarcomeres, whereas smooth muscle lacks striations and sarcomeres.",
+            "correct": true,
+            "explanation": "Cardiac and skeletal muscle both have the banded (striated) sarcomere organization. Smooth muscle has actin and myosin but no sarcomeres, so it appears non-striated."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-03",
+          "question": {
+            "stem": "Fast glycolytic (FG) fibres rely primarily on aerobic respiration and are highly resistant to fatigue.",
+            "correct": false,
+            "explanation": "FG fibres primarily use anaerobic glycolysis and fatigue quickly. Slow oxidative fibres are the fatigue-resistant type that relies on aerobic respiration."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-04",
+          "question": {
+            "stem": "A single action potential from a motor neuron produces a single, brief contraction of the muscle fibres in its motor unit, called a twitch.",
+            "correct": true,
+            "explanation": "A twitch is the isolated contraction resulting from one action potential. Wave summation and tetanus require repeated/high-frequency stimulation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-05",
+          "question": {
+            "stem": "In some respiratory airways, acetylcholine causes smooth muscle contraction (constriction) while norepinephrine causes relaxation (widening).",
+            "correct": true,
+            "explanation": "Autonomic nerves release acetylcholine to constrict some airways and norepinephrine to relax/widen them, demonstrating opposite effects of the two neurotransmitters on smooth muscle."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-06",
+          "question": {
+            "stem": "Small motor units have smaller, lower-threshold motor neurons that are more excitable and are recruited first.",
+            "correct": true,
+            "explanation": "Small motor units contain smaller, lower-threshold, more excitable neurons that fire first; larger, higher-threshold motor units are recruited as more force is needed."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-07",
+          "question": {
+            "stem": "An action potential is an electrical signal that travels along a cell membrane as a wave of depolarization.",
+            "correct": true,
+            "explanation": "An action potential is a special electrical signal that propagates along the membrane as a wave of depolarization, allowing fast, faithful signal transmission over long distances."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-08",
+          "question": {
+            "stem": "During relaxation of a skeletal muscle fibre, calcium ions are pumped back into the sarcoplasmic reticulum, a process that requires ATP.",
+            "correct": true,
+            "explanation": "Relaxation involves ATP-driven pumps moving Ca2+ back into the SR against its gradient, allowing tropomyosin to reshield the actin binding sites."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-09",
+          "question": {
+            "stem": "Each skeletal muscle fibre is innervated by many different motor neurons.",
+            "correct": false,
+            "explanation": "Each muscle fibre is innervated by only one motor neuron. A single motor neuron, however, may innervate many muscle fibres, which together form its motor unit."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-10",
+          "question": {
+            "stem": "Aerobic cellular respiration produces far more ATP per glucose molecule (approximately 32–34) than glycolysis alone (about 2).",
+            "correct": true,
+            "explanation": "Aerobic respiration in the mitochondria yields roughly 32–34 ATP per glucose, whereas anaerobic glycolysis nets only about 2 ATP per glucose."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-11",
+          "question": {
+            "stem": "Aerobic cellular respiration takes place in the mitochondria and requires oxygen to produce ATP.",
+            "correct": true,
+            "explanation": "Aerobic cellular respiration occurs in the mitochondria and uses oxygen to break down glucose and other nutrients, producing CO2, water, and about 32-34 ATP per glucose."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-12",
+          "question": {
+            "stem": "Acetylcholine is the neurotransmitter released by motor neurons at the neuromuscular junction to signal skeletal muscle fibres.",
+            "correct": true,
+            "explanation": "At the neuromuscular junction, calcium influx triggers vesicles to release acetylcholine (ACh), which diffuses across the synaptic cleft and binds cholinergic receptors on the motor end-plate."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-13",
+          "question": {
+            "stem": "A motor unit consists of a single muscle fibre innervated by many motor neurons.",
+            "correct": false,
+            "explanation": "The reverse is true: a motor unit is a single motor neuron and all the muscle fibres it innervates. Each muscle fibre is innervated by only one motor neuron."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-14",
+          "question": {
+            "stem": "Small motor units, such as those controlling the extraocular eye muscles, allow for fine, precise movements.",
+            "correct": true,
+            "explanation": "Small motor units have a motor neuron connected to only a few muscle fibres, permitting weak but precise movement, as seen in the eye muscles and fingers."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-15",
+          "question": {
+            "stem": "Cardiac muscle fibres are striated and organized into sarcomeres, just like skeletal muscle fibres.",
+            "correct": true,
+            "explanation": "Cardiac muscle is striated and organized into sarcomeres with the same banding pattern as skeletal muscle, though its fibres are shorter, typically uninucleate, and branched."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-16",
+          "question": {
+            "stem": "Creatine phosphate can regenerate ATP more slowly than the anaerobic glycolysis pathway.",
+            "correct": false,
+            "explanation": "Creatine phosphate regenerates ATP very quickly (the fastest source), powering about 15 seconds of contraction before glycolysis takes over. Glycolysis provides ATP more slowly."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-17",
+          "question": {
+            "stem": "Glycolysis breaks down one glucose molecule into two pyruvic acid molecules and produces a net of two ATP.",
+            "correct": true,
+            "explanation": "Glycolysis is an anaerobic process that splits one glucose into two pyruvic acids while producing a net of two ATP, supporting roughly one minute of intense muscle activity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-18",
+          "question": {
+            "stem": "ATP is required to pump calcium ions back into the sarcoplasmic reticulum during muscle relaxation.",
+            "correct": true,
+            "explanation": "Pumping calcium against its concentration gradient back into the SR requires ATP hydrolysis. This is one of several places ATP is needed as an energy source in the muscle fibre."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-19",
+          "question": {
+            "stem": "An eccentric contraction occurs when a muscle lengthens while under tension, such as lowering a weight in a controlled manner.",
+            "correct": true,
+            "explanation": "An eccentric contraction is an isotonic contraction in which muscle tension diminishes and the muscle lengthens, as when lowering a hand weight slowly."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-20",
+          "question": {
+            "stem": "A twitch is a sustained contraction produced by a single high-frequency train of motor neuron action potentials.",
+            "correct": false,
+            "explanation": "A twitch is the single, brief contraction caused by a single action potential from a motor neuron. Sustained contractions arise from wave summation and, at high frequency, tetanus."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-21",
+          "question": {
+            "stem": "A motor unit is defined as a single motor neuron together with all of the muscle fibres it innervates.",
+            "correct": true,
+            "explanation": "This is the correct definition of a motor unit. Each muscle fibre is innervated by only one motor neuron, but a single motor neuron can supply many muscle fibres."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-22",
+          "question": {
+            "stem": "Small motor units, such as those in the extraocular eye muscles, have motor neurons with higher thresholds that are recruited only after large motor units fire.",
+            "correct": false,
+            "explanation": "This is reversed. Small motor units have smaller, lower-threshold, more excitable motor neurons that fire first, allowing fine control. Larger motor units have higher-threshold neurons recruited later for greater force."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-23",
+          "question": {
+            "stem": "During excitation-contraction coupling, the arrival of calcium ions in the sarcoplasm initiates contraction by binding to troponin and exposing myosin-binding sites on actin.",
+            "correct": true,
+            "explanation": "Calcium released from the sarcoplasmic reticulum binds troponin, which shifts tropomyosin off the myosin-binding sites on actin, allowing cross-bridge formation and contraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-24",
+          "question": {
+            "stem": "Unlike skeletal muscle, both cardiac and smooth muscle are under involuntary control.",
+            "correct": true,
+            "explanation": "Skeletal muscle is under voluntary (somatic) control, whereas cardiac and smooth muscle are involuntary, regulated by the autonomic nervous system, hormones, and (for smooth muscle) local factors."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-25",
+          "question": {
+            "stem": "A sarcomere produces its maximal tension when it is stretched well beyond 120 percent of its resting length.",
+            "correct": false,
+            "explanation": "Maximal tension is produced at 80–120 percent of resting length, where actin and myosin overlap optimally. Beyond 120 percent, there is too little overlap for cross-bridges to form, so tension decreases."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-26",
+          "question": {
+            "stem": "At the neuromuscular junction, acetylcholine released by the motor neuron binds to receptors on the motor end-plate, opening ligand-gated channels that allow sodium ions to enter and depolarize the sarcolemma.",
+            "correct": true,
+            "explanation": "ACh binds cholinergic receptors on the motor end-plate, opening ligand-gated ion channels through which Na+ enters, depolarizing the muscle fibre and triggering an action potential."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-27",
+          "question": {
+            "stem": "Acetylcholine released onto smooth muscle around some respiratory airways causes those airways to constrict.",
+            "correct": true,
+            "explanation": "Acetylcholine causes contraction of smooth muscle around some respiratory ducts, constricting the airways, whereas norepinephrine can cause relaxation and widening of those airways."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-28",
+          "question": {
+            "stem": "According to the unit outline, the study of muscle physiology in this unit covers the neuromuscular junction, skeletal muscle contraction and relaxation, cardiac muscle, and smooth muscle.",
+            "correct": true,
+            "explanation": "The unit outline lists four parts: the neuromuscular junction, skeletal muscle contraction and relaxation, cardiac muscle tissue, and smooth muscle tissue."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-29",
+          "question": {
+            "stem": "Aerobic cellular respiration yields far more ATP per glucose molecule (about 32–34) than anaerobic glycolysis, which produces only about 2 ATP per glucose.",
+            "correct": true,
+            "explanation": "Aerobic respiration in the mitochondria produces approximately 32–34 ATP per glucose, while anaerobic glycolysis produces only a net of about 2 ATP per glucose."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-tf-30",
+          "question": {
+            "stem": "Endurance athletes such as marathon runners tend to rely heavily on fast glycolytic fibres for their sustained performance.",
+            "correct": false,
+            "explanation": "Endurance activities rely more on oxidative fibres (slow oxidative and fast oxidative), which resist fatigue. Fast glycolytic fibres produce powerful but short-lived contractions and are more prominent in power athletes such as sprinters."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u14-basic-fitb-01",
+          "question": {
+            "stem": "During contraction, the release of ADP and inorganic phosphate causes the myosin head to pivot toward the M-line, pulling the actin filament along with it; this movement is called the ____________.",
+            "answer": "power stroke",
+            "accepted_synonyms": [
+              "powerstroke",
+              "power-stroke"
+            ],
+            "explanation": "Slide 18 defines the power stroke as the pivoting of the myosin head toward the M-line that pulls actin, occurring as ADP and Pi are released."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-02",
+          "question": {
+            "stem": "The group of muscle fibres within a muscle that are all innervated by a single motor neuron is called a ____________.",
+            "answer": "motor unit",
+            "accepted_synonyms": [
+              "motor units"
+            ],
+            "explanation": "A motor unit is defined as one motor neuron plus all the muscle fibres it innervates; small units allow fine control, large units allow gross powerful movement."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-03",
+          "question": {
+            "stem": "The type of skeletal muscle fibre that contracts slowly, relies on aerobic respiration, and is highly fatigue-resistant is the ____________ fibre.",
+            "answer": "slow oxidative",
+            "accepted_synonyms": [
+              "slow oxidative fibre",
+              "slow oxidative fiber",
+              "SO",
+              "slow-oxidative"
+            ],
+            "explanation": "Slow oxidative fibres contract slowly due to slow ATPase and use aerobic respiration, making them fatigue-resistant and useful for posture and endurance."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-04",
+          "question": {
+            "stem": "When a muscle produces tension without changing the angle of a skeletal joint, such as pushing against the side of a building, this is an ____________ contraction.",
+            "answer": "isometric",
+            "accepted_synonyms": [
+              "isometric contraction"
+            ],
+            "explanation": "Isometric contractions generate tension without moving a load or changing joint angle, unlike isotonic (concentric/eccentric) contractions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-05",
+          "question": {
+            "stem": "The neurotransmitter released by a motor neuron into the synaptic cleft that binds to receptors on the motor end-plate of a skeletal muscle fibre is ____________.",
+            "answer": "acetylcholine",
+            "accepted_synonyms": [
+              "ACh"
+            ],
+            "explanation": "Acetylcholine is released from the motor neuron axon terminal and binds cholinergic receptors on the motor end-plate, triggering depolarization."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-06",
+          "question": {
+            "stem": "In smooth muscle, the neurotransmitter that causes relaxation and widening of some respiratory airways but contraction of most blood vessels is ____________.",
+            "answer": "norepinephrine",
+            "accepted_synonyms": [
+              "noradrenaline"
+            ],
+            "explanation": "Norepinephrine relaxes smooth muscle in some airways (dilation) but contracts smooth muscle in blood vessels, illustrating tissue/receptor-dependent effects."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-07",
+          "question": {
+            "stem": "During relaxation, calcium ions are actively pumped back into the sarcoplasmic reticulum, which allows ____________ to reshield the myosin-binding sites on actin.",
+            "answer": "tropomyosin",
+            "accepted_synonyms": [
+              "tropomyosin protein"
+            ],
+            "explanation": "As calcium is removed from the sarcoplasm, tropomyosin returns to cover the myosin-binding sites on actin, ending cross-bridge formation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-08",
+          "question": {
+            "stem": "The enzyme that degrades acetylcholine in the synaptic cleft, turning off the receptor to avoid overexcitation and unwanted continued contraction, is ____________.",
+            "answer": "acetylcholinesterase",
+            "accepted_synonyms": [
+              "AChE",
+              "acetyl cholinesterase"
+            ],
+            "explanation": "Acetylcholinesterase breaks down acetylcholine in the synaptic cleft so it can no longer bind receptors, preventing prolonged excitation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-09",
+          "question": {
+            "stem": "The single, brief contraction of the muscle fibres of a motor unit produced by a single action potential from a motor neuron is called a ____________.",
+            "answer": "twitch",
+            "accepted_synonyms": [
+              "muscle twitch",
+              "twitches"
+            ],
+            "explanation": "A twitch is the isolated contraction produced by one motor neuron action potential; it is too brief to produce significant work, unlike summation or tetanus."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-10",
+          "question": {
+            "stem": "In a resting muscle, excess ATP transfers its phosphate to creatine to form ____________, a reserve molecule that can later regenerate ATP for about the first 15 seconds of contraction.",
+            "answer": "creatine phosphate",
+            "accepted_synonyms": [
+              "phosphocreatine",
+              "creatine-phosphate"
+            ],
+            "explanation": "Creatine phosphate stores energy in its phosphate bond and, via creatine kinase, quickly regenerates ATP for roughly 15 seconds after stored ATP is depleted."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-11",
+          "question": {
+            "stem": "The neurotransmitter released by a motor neuron into the synaptic cleft, which then binds to receptors on the muscle fibre, is ____________.",
+            "answer": "acetylcholine",
+            "accepted_synonyms": [
+              "ACh"
+            ],
+            "explanation": "Motor neurons release acetylcholine, which diffuses across the synaptic cleft to trigger depolarization of the muscle fibre."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-12",
+          "question": {
+            "stem": "The site where a motor neuron's terminal meets a skeletal muscle fibre is called the ____________.",
+            "answer": "neuromuscular junction",
+            "accepted_synonyms": [
+              "NMJ",
+              "neuromuscular junctions"
+            ],
+            "explanation": "The neuromuscular junction is where the motor neuron communicates chemically with the muscle fibre."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-13",
+          "question": {
+            "stem": "During excitation-contraction coupling, the ion that is released from the sarcoplasmic reticulum binds to ____________, which then shifts tropomyosin away from the myosin-binding sites on actin.",
+            "answer": "troponin",
+            "accepted_synonyms": [
+              "troponins"
+            ],
+            "explanation": "Calcium binds to troponin, causing a conformational change that moves tropomyosin and exposes the binding sites for contraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-14",
+          "question": {
+            "stem": "Cardiac muscle fibres are connected end-to-end by intercalated discs that contain gap junctions and ____________, which anchor the cells together so they do not pull apart during contraction.",
+            "answer": "desmosome",
+            "accepted_synonyms": [
+              "desmosomes"
+            ],
+            "explanation": "Desmosomes are the anchoring structures in intercalated discs that hold cardiac cells together during contraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-15",
+          "question": {
+            "stem": "When released onto smooth muscle of most blood vessels, ____________ causes contraction and thus constriction of those vessels.",
+            "answer": "norepinephrine",
+            "accepted_synonyms": [
+              "noradrenaline",
+              "NE"
+            ],
+            "explanation": "Norepinephrine constricts most blood vessels, though its effects can differ by tissue and receptor variant."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-16",
+          "question": {
+            "stem": "The skeletal muscle fibre type that contracts slowly and relies on aerobic respiration for ATP is the ____________ fibre.",
+            "answer": "slow oxidative",
+            "accepted_synonyms": [
+              "slow oxidative (SO)",
+              "SO",
+              "slow-oxidative"
+            ],
+            "explanation": "Slow oxidative fibres are 'slow twitch' and use aerobic respiration, making them fatigue-resistant."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-17",
+          "question": {
+            "stem": "The skeletal muscle fibre type that contracts quickly and relies primarily on anaerobic glycolysis, fatiguing rapidly, is the ____________ fibre.",
+            "answer": "fast glycolytic",
+            "accepted_synonyms": [
+              "fast glycolytic (FG)",
+              "FG",
+              "fast-glycolytic"
+            ],
+            "explanation": "Fast glycolytic fibres are fast-twitch, use anaerobic glycolysis, are large and strong, but fatigue quickly."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-18",
+          "question": {
+            "stem": "At rest, excess ATP transfers a phosphate group to creatine, forming ____________, which can later rapidly regenerate ATP for about the first 15 seconds of contraction.",
+            "answer": "creatine phosphate",
+            "accepted_synonyms": [
+              "creatine-phosphate",
+              "phosphocreatine"
+            ],
+            "explanation": "Creatine phosphate stores energy in resting muscle and quickly regenerates ATP once contraction begins."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-19",
+          "question": {
+            "stem": "A single action potential from a motor neuron produces a single, brief contraction of the muscle fibres in its motor unit, called a ____________.",
+            "answer": "twitch",
+            "accepted_synonyms": [
+              "twitches"
+            ],
+            "explanation": "A twitch is the isolated contraction resulting from one action potential, too brief to accomplish significant work."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-20",
+          "question": {
+            "stem": "The group of muscle fibres innervated by a single motor neuron is called a ____________.",
+            "answer": "motor unit",
+            "accepted_synonyms": [
+              "motor units"
+            ],
+            "explanation": "A motor unit is one motor neuron and all the muscle fibres it innervates; its size varies with the muscle's function."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-21",
+          "question": {
+            "stem": "In cardiac muscle, the structure in the intercalated disc that forms channels allowing depolarizing current to flow directly from one cell to the next is the ____________.",
+            "answer": "gap junction",
+            "accepted_synonyms": [
+              "gap junctions",
+              "gap-junction"
+            ],
+            "explanation": "Gap junctions electrically couple adjacent cardiac fibres, allowing current to spread and creating a functional syncytium."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-22",
+          "question": {
+            "stem": "The single, brief contraction of the muscle fibres of a motor unit produced by one action potential from a motor neuron is called a ____________.",
+            "answer": "twitch",
+            "accepted_synonyms": [
+              "twitches",
+              "muscle twitch"
+            ],
+            "explanation": "A single motor neuron action potential yields one isolated contraction, a twitch."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-23",
+          "question": {
+            "stem": "The electrical gradient that exists across the membrane of all living cells, measuring approximately -70 mV on the inside relative to the outside when the cell is at rest, is called the resting ____________.",
+            "answer": "membrane potential/voltage",
+            "accepted_synonyms": [
+              "membrane potential",
+              "voltage",
+              "membrane voltage",
+              "resting membrane potential"
+            ],
+            "explanation": "Slide 5 defines the resting membrane potential (also called voltage) as the electrical gradient across the cell membrane, about -70 mV inside relative to outside."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-24",
+          "question": {
+            "stem": "The skeletal muscle fibre type that contracts slowly, relies on aerobic respiration, and predominates in endurance athletes such as marathon runners is the ____________ fibre.",
+            "answer": "slow oxidative",
+            "accepted_synonyms": [
+              "slow oxidative fiber",
+              "SO",
+              "slow-oxidative"
+            ],
+            "explanation": "Slow oxidative fibres contract slowly and use aerobic metabolism, making them fatigue-resistant and abundant in endurance athletes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-25",
+          "question": {
+            "stem": "The very first backup energy source used to regenerate ATP, providing roughly 15 seconds of contraction after stored ATP is depleted, is ____________.",
+            "answer": "creatine phosphate",
+            "accepted_synonyms": [
+              "creatine-phosphate",
+              "phosphocreatine"
+            ],
+            "explanation": "Creatine phosphate transfers its phosphate to ADP via creatine kinase, quickly regenerating ATP for about 15 seconds."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-26",
+          "question": {
+            "stem": "In aerobic muscle fibres, a small local reserve of oxygen is stored bound to the protein ____________ so that mitochondria can continue producing ATP.",
+            "answer": "myoglobin",
+            "accepted_synonyms": [
+              "myoglobins"
+            ],
+            "explanation": "Myoglobin stores oxygen within oxidative muscle fibres, supporting aerobic respiration in the mitochondria."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-27",
+          "question": {
+            "stem": "During excitation-contraction coupling, calcium released into the sarcoplasm binds to ____________, which changes shape and moves tropomyosin off the myosin-binding sites on actin.",
+            "answer": "troponin",
+            "accepted_synonyms": [
+              "troponins"
+            ],
+            "explanation": "Calcium binds troponin, causing it to shift tropomyosin and expose the myosin-binding sites so contraction can begin."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-28",
+          "question": {
+            "stem": "The type of contraction in which the muscle generates tension while lengthening in a controlled way, such as slowly lowering a hand weight, is called an ____________ contraction.",
+            "answer": "eccentric",
+            "accepted_synonyms": [
+              "eccentric contraction"
+            ],
+            "explanation": "Eccentric contractions occur when muscle tension diminishes and the muscle lengthens under load, e.g., lowering a weight."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-29",
+          "question": {
+            "stem": "The neurotransmitter that causes contraction of smooth muscle around some respiratory airways, and that is degraded in the neuromuscular junction by acetylcholinesterase, is ____________.",
+            "answer": "acetylcholine",
+            "accepted_synonyms": [
+              "ACh",
+              "acetyl choline"
+            ],
+            "explanation": "Acetylcholine can constrict certain smooth muscle airways and is the neurotransmitter degraded by acetylcholinesterase at the NMJ."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fitb-30",
+          "question": {
+            "stem": "During muscle relaxation, ATP hydrolysis powers pumps that actively transport calcium ions back into the ____________, the organelle that stores calcium in the muscle fibre.",
+            "answer": "sarcoplasmic reticulum",
+            "accepted_synonyms": [
+              "SR"
+            ],
+            "explanation": "ATP-dependent calcium pumps move Ca2+ against its gradient back into the sarcoplasmic reticulum, allowing tropomyosin to reshield the actin binding sites and the muscle to relax."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u14-basic-fr-01",
+          "question": {
+            "prompt": "Define the term 'sarcomere' and briefly explain the roles of the two proteins 'troponin' and 'tropomyosin' in a resting (uncontracted) muscle fibre.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines a sarcomere as the basic contractile unit of a muscle fibre (containing overlapping actin/myosin, bounded by Z-discs)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that tropomyosin blocks/shields the myosin-binding sites on actin."
+              },
+              {
+                "points": 1,
+                "criterion": "States that troponin holds tropomyosin in place and has a binding site for calcium."
+              }
+            ],
+            "model_answer": "A sarcomere is the basic contractile unit of a muscle fibre, made up of overlapping thin (actin) and thick (myosin) filaments and bounded at each end by Z-discs. At rest, tropomyosin is a long rod-like molecule that shields (blocks) the myosin-binding sites on actin. Troponin is a globular protein that holds tropomyosin in place and has a binding site for calcium ions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fr-02",
+          "question": {
+            "prompt": "Contrast a single twitch with tetanus in a skeletal muscle. In your answer, explain what a twitch is (including its cause), state what causes tetanus, and explain what happens to the relaxation phase during tetanus.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that a twitch is the single contraction produced by a single action potential from a motor neuron."
+              },
+              {
+                "points": 1,
+                "criterion": "States that tetanus results from a high frequency of motor neuron stimulation."
+              },
+              {
+                "points": 1,
+                "criterion": "States that during tetanus the relaxation phase disappears completely, producing a continuous/sustained contraction."
+              }
+            ],
+            "model_answer": "A twitch is the single, brief contraction produced in the fibres of a motor unit by a single action potential from a motor neuron; it is very short and does not accomplish significant muscle work. Tetanus occurs when the motor neuron fires action potentials at a very high frequency. At this high frequency the relaxation phase disappears completely, so the contractions merge into one continuous, sustained contraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fr-03",
+          "question": {
+            "prompt": "During the cross-bridge cycle, ATP is involved at two different steps: ATP binding and ATP hydrolysis. Briefly state what ATP binding does to the myosin head, and what ATP hydrolysis does to the myosin head.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "States that the binding of a new ATP molecule causes the myosin head to detach/release from actin."
+              },
+              {
+                "points": 2,
+                "criterion": "States that hydrolysis of ATP (to ADP + Pi) cocks/re-cocks the myosin head (returns it to the high-energy/cocked position) so it can bind actin again."
+              }
+            ],
+            "model_answer": "When a new ATP molecule binds to the myosin head, it causes the myosin head to detach (let go) from the actin. Hydrolysis of that ATP into ADP and inorganic phosphate then changes the angle of the myosin head, re-cocking it into its high-energy position so it is ready to bind actin again for the next power stroke."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fr-04",
+          "question": {
+            "prompt": "In excitation-contraction coupling, ATP acts sometimes as an energy source and sometimes not. Identify ONE place where ATP is used as an energy source during contraction, and identify ONE place during muscle relaxation where ATP is used. For each, state what the ATP is used to power.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Identifies ATP powering the cross-bridge cycle/power stroke (myosin pulling actin) during contraction."
+              },
+              {
+                "points": 2,
+                "criterion": "Identifies ATP powering the calcium pumps that move Ca2+ back into the sarcoplasmic reticulum during relaxation."
+              }
+            ],
+            "model_answer": "During contraction, ATP is used as an energy source to power the cross-bridge cycle — its hydrolysis provides the energy for myosin to re-cock and pull the actin filaments (the power stroke). During relaxation, ATP is used as an energy source to power the calcium pumps in the sarcoplasmic reticulum membrane, which actively transport Ca2+ back into the SR against its concentration gradient."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fr-05",
+          "question": {
+            "prompt": "Define a motor unit. Then explain how a small motor unit differs from a large motor unit in terms of the number of muscle fibres involved and the type of movement it produces.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Defines a motor unit as a single motor neuron together with all the muscle fibres it innervates."
+              },
+              {
+                "points": 1,
+                "criterion": "States a small motor unit has few muscle fibres and gives fine/precise (weaker) movement."
+              },
+              {
+                "points": 1,
+                "criterion": "States a large motor unit has many muscle fibres and gives strong/gross (less precise) movement."
+              }
+            ],
+            "model_answer": "A motor unit is a single motor neuron together with all of the muscle fibres it innervates. A small motor unit has a motor neuron connected to only a few muscle fibres, giving weak but precise, fine movement (e.g., eye muscles or fingers). A large motor unit has a motor neuron connected to many muscle fibres, producing strong but 'gross' movement (e.g., limb or back muscles)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fr-06",
+          "question": {
+            "prompt": "Muscle cells store only enough ATP for a few seconds of contraction. Name the three mechanisms muscles use to regenerate ATP, and briefly identify which one supplies ATP fastest/first and which one supplies the largest amount of ATP.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Names all three: creatine phosphate metabolism, anaerobic glycolysis (glycolysis/lactic acid fermentation), and aerobic cellular respiration."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies creatine phosphate as the fastest/first source used."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies aerobic cellular respiration as producing the most ATP."
+              }
+            ],
+            "model_answer": "The three mechanisms are creatine phosphate metabolism, the anaerobic pathway (glycolysis and lactic acid fermentation), and aerobic cellular respiration. Creatine phosphate supplies ATP the fastest and is used first (about 15 seconds). Aerobic cellular respiration produces the most ATP (~32–34 per glucose versus only 2 from glycolysis)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fr-07",
+          "question": {
+            "prompt": "In a skeletal muscle fibre, calcium ions are central to both contraction and relaxation. Explain what calcium does at the sarcomere to allow contraction to begin, and explain what must happen to calcium for the muscle to relax.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "States that Ca2+ binds troponin, changing its shape so tropomyosin moves and exposes the myosin-binding sites on actin (allowing cross-bridges/contraction)."
+              },
+              {
+                "points": 2,
+                "criterion": "States that for relaxation Ca2+ must be pumped back into the sarcoplasmic reticulum, so tropomyosin re-shields the binding sites."
+              }
+            ],
+            "model_answer": "To begin contraction, calcium ions released into the sarcoplasm bind to troponin. This causes troponin to change conformation and lose its hold on tropomyosin, so tropomyosin moves and exposes the myosin-binding sites on actin, allowing cross-bridges to form. For relaxation, calcium must be pumped back into the sarcoplasmic reticulum. With calcium removed, tropomyosin re-shields (re-covers) the binding sites on actin, so cross-bridges can no longer form and the muscle relaxes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fr-08",
+          "question": {
+            "prompt": "Cardiac and smooth muscle both differ from skeletal muscle in whether they are voluntarily controlled and whether they possess sarcomeres. State whether cardiac and smooth muscle are voluntary or involuntary, and state which of cardiac and smooth muscle has sarcomeres/striations and which does not.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that both cardiac and smooth muscle are involuntary (unlike voluntary skeletal muscle)."
+              },
+              {
+                "points": 2,
+                "criterion": "States that cardiac muscle is striated and organized into sarcomeres."
+              },
+              {
+                "points": 1,
+                "criterion": "States that smooth muscle has no striations/no sarcomeres."
+              }
+            ],
+            "model_answer": "Both cardiac and smooth muscle are involuntary (not consciously controlled), whereas skeletal muscle is voluntary. Cardiac muscle is striated and organized into sarcomeres, just like skeletal muscle. Smooth muscle has no striations and no sarcomeres, although it does still contain actin and myosin filaments."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fr-09",
+          "question": {
+            "prompt": "Using the example of lifting and then lowering a hand weight with the biceps brachii, explain the difference between a concentric contraction and an eccentric contraction, and state that both are types of isotonic contraction.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "States that a concentric contraction is when the muscle shortens to move the load (e.g., curling the weight upward)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that an eccentric contraction is when muscle tension diminishes and the muscle lengthens (e.g., lowering the weight in a controlled manner)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that both concentric and eccentric contractions are types of isotonic contraction."
+              }
+            ],
+            "model_answer": "A concentric contraction occurs when the muscle shortens to move a load — for example, when the biceps brachii shortens to curl the hand weight upward, decreasing the elbow angle. An eccentric contraction occurs when muscle tension diminishes and the muscle lengthens — for example, lowering the weight in a slow, controlled manner as the elbow angle increases. Both concentric and eccentric contractions are types of isotonic contraction, because a load is moved as the muscle length changes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-basic-fr-10",
+          "question": {
+            "prompt": "Acetylcholine and norepinephrine can have different effects on smooth muscle. Describe the effect of acetylcholine on smooth muscle of the respiratory airways, and describe the effect of norepinephrine on the same smooth muscle of the airways.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "States that acetylcholine causes contraction of the airway smooth muscle, constricting/narrowing the airways."
+              },
+              {
+                "points": 2,
+                "criterion": "States that norepinephrine causes relaxation of the airway smooth muscle, widening/dilating the airways."
+              }
+            ],
+            "model_answer": "In the respiratory airways, acetylcholine causes contraction of the surrounding smooth muscle, which constricts (narrows) the airways. Norepinephrine, in contrast, causes relaxation of that same airway smooth muscle, which widens (dilates) the airways."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    },
+    "advanced": {
+      "mc": [
+        {
+          "id": "u14-advanced-mc-01",
+          "question": {
+            "stem": "An action potential is described as a wave of depolarization that travels along the sarcolemma. Which feature of this signal makes it especially useful for stimulating a long muscle fibre?",
+            "options": [
+              "It allows a signal to be transmitted quickly and faithfully over long distances",
+              "It permanently reverses the resting membrane potential to prevent repolarization",
+              "It moves calcium directly from the extracellular fluid into the sarcomeres",
+              "It only occurs at the motor end-plate and does not spread further",
+              "It slows the signal so that contraction can be finely graded"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** An action potential is a self-propagating wave of depolarization that lets the excitation signal travel quickly and faithfully along the entire length of the sarcolemma.\n\n**Why the other options are wrong:**\n- **(B)** After depolarization, each segment repolarizes; the reversal is temporary, not permanent.\n- **(C)** In skeletal muscle the action potential triggers Ca²⁺ release from the SR, not direct entry from extracellular fluid into sarcomeres.\n- **(D)** The action potential spreads from the motor end-plate along the whole sarcolemma; it does not stay localized.\n- **(E)** The value of the action potential is its speed and fidelity, not slowing signals down."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-02",
+          "question": {
+            "stem": "During transmission from a motor neuron to a skeletal muscle fibre, which sequence correctly pairs each ion with the channel event it drives?",
+            "options": [
+              "Ca²⁺ influx into the axon terminal triggers ACh release; Na⁺ influx at the motor end-plate depolarizes the sarcolemma",
+              "Na⁺ influx into the axon terminal triggers ACh release; Ca²⁺ influx at the motor end-plate depolarizes the sarcolemma",
+              "K⁺ influx into the axon terminal triggers ACh release; Ca²⁺ influx at the motor end-plate depolarizes the sarcolemma",
+              "Ca²⁺ influx into the axon terminal degrades ACh; Na⁺ efflux at the motor end-plate depolarizes the sarcolemma",
+              "Na⁺ influx into the axon terminal degrades ACh; K⁺ influx at the motor end-plate depolarizes the sarcolemma"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Depolarization opens voltage-gated Ca²⁺ channels in the axon terminal, and this Ca²⁺ influx triggers ACh-vesicle fusion; on the muscle side, ACh opens ligand-gated channels that let Na⁺ in to depolarize the sarcolemma.\n\n**Why the other options are wrong:**\n- **(B)** Ca²⁺ influx (not Na⁺) triggers vesicle fusion, and Na⁺ influx (not Ca²⁺) depolarizes the end-plate.\n- **(C)** K⁺ influx does not trigger neurotransmitter release.\n- **(D)** ACh is degraded by acetylcholinesterase, not by Ca²⁺, and Na⁺ enters (not exits) at the end-plate.\n- **(E)** Na⁺ influx does not degrade ACh, and end-plate depolarization is driven by Na⁺ entry, not K⁺ entry."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-03",
+          "question": {
+            "stem": "A sprinter's leg muscles are compared with a marathon runner's leg muscles. Which statement best captures how their predominant fibre types differ in speed and energy source?",
+            "options": [
+              "The sprinter has more fast glycolytic fibres that contract quickly and rely on anaerobic glycolysis, while the marathoner has more slow oxidative fibres that contract slowly using aerobic respiration",
+              "The sprinter has more slow oxidative fibres using aerobic respiration, while the marathoner has more fast glycolytic fibres using glycolysis",
+              "Both athletes rely almost entirely on fast glycolytic fibres, differing only in fibre diameter",
+              "The sprinter has more slow oxidative fibres and the marathoner has more fast oxidative fibres, both using anaerobic pathways",
+              "Fibre type is fixed at birth, so the two athletes have identical proportions of each fibre type"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Fast glycolytic fibres contract quickly and fatigue fast on anaerobic glycolysis (ideal for sprinting), whereas slow oxidative fibres contract slowly on aerobic respiration and resist fatigue (ideal for endurance).\n\n**Why the other options are wrong:**\n- **(B)** This reverses the correct assignment of fibre types to athletes.\n- **(C)** Endurance performance depends on oxidative fibres, not fast glycolytic ones.\n- **(D)** Slow oxidative fibres are aerobic, not anaerobic, and this misassigns fibres to athletes.\n- **(E)** Different types of exercise can shift fibre-type proportions, so they are not fixed or identical."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-04",
+          "question": {
+            "stem": "In excitation-contraction coupling, what is the immediate molecular event that allows myosin heads to begin binding actin, and what event reverses it to cause relaxation?",
+            "options": [
+              "Ca²⁺ binds troponin to expose myosin-binding sites; relaxation follows when Ca²⁺ is pumped back into the SR, letting tropomyosin reshield the sites",
+              "Ca²⁺ binds tropomyosin directly to expose sites; relaxation follows when ACh is released again",
+              "ATP binds troponin to expose sites; relaxation follows when troponin is degraded",
+              "Na⁺ binds troponin to expose sites; relaxation follows when Na⁺ leaves the sarcoplasm",
+              "Ca²⁺ binds calmodulin to expose sites; relaxation follows when tropomyosin binds Ca²⁺"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Ca²⁺ binds troponin, shifting tropomyosin off the myosin-binding sites; relaxation occurs when Ca²⁺ is actively pumped back into the SR so tropomyosin re-covers the sites.\n\n**Why the other options are wrong:**\n- **(B)** Ca²⁺ binds troponin, not tropomyosin directly, and relaxation does not require new ACh release.\n- **(C)** ATP powers cross-bridge cycling but does not bind troponin, and troponin is not degraded during relaxation.\n- **(D)** Na⁺ depolarizes the membrane but does not bind troponin.\n- **(E)** Calmodulin regulates smooth muscle, not skeletal muscle troponin-based control."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-05",
+          "question": {
+            "stem": "As a muscle begins intense activity, the ATP-regenerating systems are recruited in a particular order and duration. Which pairing of source to approximate duration is correct?",
+            "options": [
+              "Creatine phosphate powers ~15 seconds, anaerobic glycolysis powers ~1 minute, and aerobic respiration sustains prolonged activity",
+              "Anaerobic glycolysis powers ~15 seconds, creatine phosphate powers ~1 minute, and aerobic respiration sustains prolonged activity",
+              "Aerobic respiration powers ~15 seconds, creatine phosphate powers ~1 minute, and glycolysis sustains prolonged activity",
+              "Creatine phosphate powers ~1 minute, aerobic respiration powers ~15 seconds, and glycolysis sustains prolonged activity",
+              "Aerobic respiration powers the first few seconds, then creatine phosphate, then glycolysis for prolonged activity"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** After stored ATP is used, creatine phosphate provides ~15 seconds, glycolysis provides about a minute of high-intensity output, and aerobic respiration supports long-duration activity.\n\n**Why the other options are wrong:**\n- **(B)** Creatine phosphate acts first (~15 s), and glycolysis lasts about a minute, not the reverse.\n- **(C)** Aerobic respiration is the sustained, not the shortest, source.\n- **(D)** Creatine phosphate lasts ~15 s and aerobic respiration is the long-term source, so the durations are swapped.\n- **(E)** Aerobic respiration is not the first, short-lived source; creatine phosphate is."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-06",
+          "question": {
+            "stem": "A person slowly lowers a heavy dumbbell in a controlled manner while their biceps brachii lengthens. What type of contraction is this, and how does it compare to raising the weight?",
+            "options": [
+              "It is an eccentric (isotonic) contraction, whereas raising the weight is a concentric (isotonic) contraction",
+              "It is a concentric contraction, whereas raising the weight is eccentric",
+              "It is an isometric contraction, whereas raising the weight is eccentric",
+              "It is an isometric contraction in both directions since tension is constant",
+              "It is a concentric contraction, whereas raising the weight is isometric"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Lowering a load in a controlled way lengthens the muscle under tension (eccentric isotonic), while raising the load shortens the muscle to move it (concentric isotonic).\n\n**Why the other options are wrong:**\n- **(B)** Concentric involves shortening; lowering involves lengthening, so this is reversed.\n- **(C)** Lowering the weight changes muscle length, so it is not isometric.\n- **(D)** Isometric means no change in joint angle, but here the joint angle changes as the weight is lowered.\n- **(E)** Raising the weight moves a load through shortening, which is concentric, not isometric."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-07",
+          "question": {
+            "stem": "A sarcomere is experimentally stretched to about 140% of its resting length. Predict the effect on the tension it can generate and explain why at the molecular level.",
+            "options": [
+              "Tension decreases because there is less overlap between actin and myosin, so fewer cross-bridges can form",
+              "Tension increases because the thin filaments have more room to slide",
+              "Tension is maximal because sarcomeres are strongest when fully stretched",
+              "Tension decreases because the actin filaments overlap each other and block myosin heads",
+              "Tension is unchanged because cross-bridge number does not depend on sarcomere length"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Beyond ~120% of resting length, thick and thin filaments overlap less, so fewer cross-bridges can form and tension falls.\n\n**Why the other options are wrong:**\n- **(B)** More room to slide does not help if the filaments cannot overlap to form cross-bridges.\n- **(C)** Maximal tension occurs at 80–120% of resting length, not when overstretched.\n- **(D)** Actin overlapping itself is the mechanism for shortening below 80%, not stretching to 140%.\n- **(E)** Cross-bridge number depends directly on the degree of filament overlap, which changes with length."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-08",
+          "question": {
+            "stem": "Comparing cardiac, smooth, and skeletal muscle control, which statement is correct?",
+            "options": [
+              "Skeletal muscle is under voluntary control, while cardiac and smooth muscle are involuntary; single-unit smooth muscle contracts as a coordinated unit via gap junctions, whereas multi-unit smooth muscle is controlled cell-by-cell",
+              "All three muscle types are under voluntary control, but only smooth muscle uses gap junctions",
+              "Cardiac and skeletal muscle are involuntary, while smooth muscle is voluntary; multi-unit smooth muscle uses gap junctions to contract as one unit",
+              "Single-unit smooth muscle is controlled cell-by-cell, while multi-unit smooth muscle contracts as a coordinated unit through gap junctions",
+              "Skeletal muscle contracts as a functional syncytium, whereas cardiac muscle fibres are each controlled individually"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Skeletal muscle is voluntary while cardiac and smooth muscle are involuntary, and single-unit smooth muscle is coupled by gap junctions to contract together, unlike individually controlled multi-unit smooth muscle.\n\n**Why the other options are wrong:**\n- **(B)** Cardiac and smooth muscle are involuntary, not voluntary.\n- **(C)** Smooth muscle is involuntary, and it is single-unit (not multi-unit) smooth muscle that uses gap junctions to act as one unit.\n- **(D)** This reverses the definitions of single-unit and multi-unit smooth muscle.\n- **(E)** The functional syncytium describes cardiac muscle (via gap junctions), not skeletal muscle."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-09",
+          "question": {
+            "stem": "In a relaxed skeletal muscle fibre with normal Ca²⁺ levels, what prevents myosin from binding actin, and what role does troponin play?",
+            "options": [
+              "Tropomyosin physically shields the myosin-binding sites on actin, and troponin holds tropomyosin in place until Ca²⁺ binds troponin",
+              "Troponin physically shields the myosin-binding sites, and tropomyosin holds troponin in place",
+              "Myosin heads are shielded by dense bodies until calmodulin activates them",
+              "The M-line covers the binding sites until ATP is hydrolyzed",
+              "Calcium continuously blocks the binding sites until acetylcholinesterase removes it"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Tropomyosin blocks the myosin-binding sites on actin, and troponin keeps tropomyosin positioned there until Ca²⁺ binds troponin and shifts tropomyosin away.\n\n**Why the other options are wrong:**\n- **(B)** Tropomyosin is the shield and troponin is the regulator, not the reverse.\n- **(C)** Dense bodies and calmodulin belong to smooth muscle, not skeletal cross-bridge regulation.\n- **(D)** The M-line anchors myosin and does not cover binding sites.\n- **(E)** Calcium initiates contraction by exposing sites; it does not block them."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-10",
+          "question": {
+            "stem": "During skeletal muscle activity, ATP is used in several places. Which option correctly identifies a step where ATP acts as an energy source versus where a molecule acts purely as a chemical signal?",
+            "options": [
+              "ATP hydrolysis cocking the myosin head is an energy-source role, whereas Ca²⁺ binding troponin is a signalling role",
+              "ATP binding the myosin head to detach it is a signalling role, whereas Ca²⁺ pumping into the SR is an energy-source role",
+              "ATP binding troponin is a signalling role, whereas acetylcholine binding its receptor is an energy-source role",
+              "Ca²⁺ influx into the axon terminal is an energy-source role, whereas ATP powering the SR calcium pump is a signalling role",
+              "Acetylcholine crossing the synaptic cleft is an energy-source role, whereas ATP hydrolysis is a signalling role"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** ATP hydrolysis provides the energy to re-cock the myosin head, an energy-source function, while Ca²⁺ binding troponin acts as a chemical signal that triggers cross-bridge exposure.\n\n**Why the other options are wrong:**\n- **(B)** Pumping Ca²⁺ into the SR consumes ATP for energy, so calling it purely signalling is wrong.\n- **(C)** ATP does not bind troponin, and acetylcholine is a signalling molecule, not an energy source.\n- **(D)** Ca²⁺ influx into the axon terminal is a signalling trigger, and powering the SR pump is an energy-source role, so both are mislabeled.\n- **(E)** Acetylcholine is a chemical signal, not an energy source, and ATP hydrolysis provides energy."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-11",
+          "question": {
+            "stem": "In sequence, which ion movements occur as a signal travels from a motor neuron's axon terminal to trigger depolarization of the muscle fibre's sarcolemma?",
+            "options": [
+              "Ca²⁺ enters the neuron → ACh released → Na⁺ enters the muscle fibre through the ligand-gated channel",
+              "Na⁺ enters the neuron → ACh released → Ca²⁺ enters the muscle fibre through the ligand-gated channel",
+              "K⁺ leaves the neuron → norepinephrine released → Na⁺ enters the muscle fibre",
+              "Ca²⁺ leaves the neuron → ACh released → Ca²⁺ leaves the muscle fibre",
+              "Na⁺ enters the neuron → ACh released → K⁺ leaves the muscle fibre"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Depolarization at the terminal opens voltage-gated Ca²⁺ channels, Ca²⁺ influx triggers ACh release, and ACh opens a ligand-gated channel through which Na⁺ enters and depolarizes the sarcolemma.\n\n**Why the other options are wrong:**\n- **(B)** Ca²⁺ influx (not Na⁺) triggers vesicle fusion in the neuron, and Na⁺ (not Ca²⁺) enters through the ACh receptor channel.\n- **(C)** The neurotransmitter at the neuromuscular junction is ACh, not norepinephrine.\n- **(D)** Ca²⁺ enters (not leaves) the neuron, and Na⁺ enters the fibre rather than Ca²⁺ leaving.\n- **(E)** Ca²⁺ (not Na⁺) triggers release in the neuron, and Na⁺ entry (not K⁺ efflux) depolarizes the sarcolemma."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-12",
+          "question": {
+            "stem": "A sprinter's leg muscles rely heavily on fibres that contract rapidly and produce ATP anaerobically, while a marathon runner's muscles favour fibres that resist fatigue. Which pairing correctly matches each athlete's dominant fibre type to its properties?",
+            "options": [
+              "Sprinter: fast glycolytic (fast twitch, anaerobic); marathoner: slow oxidative (slow twitch, aerobic)",
+              "Sprinter: slow oxidative (slow twitch, aerobic); marathoner: fast glycolytic (fast twitch, anaerobic)",
+              "Sprinter: fast oxidative (fast twitch, aerobic); marathoner: fast glycolytic (fast twitch, anaerobic)",
+              "Sprinter: slow oxidative (fast twitch, aerobic); marathoner: fast oxidative (slow twitch, anaerobic)",
+              "Both athletes rely predominantly on slow oxidative fibres"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Sprinting demands rapid, powerful bursts supplied by fast glycolytic fibres, whereas endurance running favours fatigue-resistant slow oxidative fibres that use aerobic respiration.\n\n**Why the other options are wrong:**\n- **(B)** The fibre types are reversed for each athlete.\n- **(C)** A marathoner relies on oxidative (not glycolytic) fibres for fatigue resistance.\n- **(D)** Slow oxidative fibres are slow twitch, not fast twitch, and fast oxidative fibres are fast twitch, not slow.\n- **(E)** Sprinters depend on fast glycolytic fibres, not slow oxidative fibres."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-13",
+          "question": {
+            "stem": "During excitation-contraction coupling, what is the immediate molecular event that allows myosin heads to bind actin, and what event later triggers relaxation?",
+            "options": [
+              "Ca²⁺ binds troponin (exposing binding sites) to allow contraction; pumping Ca²⁺ back into the SR allows relaxation",
+              "ATP binds troponin to allow contraction; ACh degradation allows relaxation",
+              "Ca²⁺ binds tropomyosin to allow contraction; Ca²⁺ influx from outside the cell allows relaxation",
+              "Na⁺ binds troponin to allow contraction; Na⁺ pumping into the SR allows relaxation",
+              "Ca²⁺ binds calmodulin to allow contraction; latch-bridge formation allows relaxation"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** In skeletal muscle, Ca²⁺ binding to troponin shifts tropomyosin to expose actin's binding sites, and relaxation occurs when Ca²⁺ is actively pumped back into the SR, letting tropomyosin re-shield those sites.\n\n**Why the other options are wrong:**\n- **(B)** Ca²⁺ (not ATP) binds troponin; ACh degradation contributes but the direct sarcomere event is Ca²⁺ reuptake.\n- **(C)** Ca²⁺ binds troponin (not tropomyosin), and relaxation involves Ca²⁺ removal, not influx.\n- **(D)** Ca²⁺, not Na⁺, is the regulatory ion binding troponin.\n- **(E)** Calmodulin and latch-bridges govern smooth muscle, not skeletal muscle."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-14",
+          "question": {
+            "stem": "Norepinephrine is released onto smooth muscle in two different locations. Predict its effects on airway smooth muscle versus blood vessel smooth muscle.",
+            "options": [
+              "It relaxes airway smooth muscle (widening airways) but contracts blood vessel smooth muscle (constricting vessels)",
+              "It contracts both airway and blood vessel smooth muscle",
+              "It relaxes both airway and blood vessel smooth muscle",
+              "It contracts airway smooth muscle but relaxes blood vessel smooth muscle",
+              "It has no effect on smooth muscle because smooth muscle responds only to acetylcholine"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Norepinephrine relaxes airway smooth muscle (widening airways) yet contracts most blood vessel smooth muscle, illustrating that the same neurotransmitter can have opposite effects depending on tissue and receptor variant.\n\n**Why the other options are wrong:**\n- **(B)** It relaxes, rather than contracts, airway smooth muscle.\n- **(C)** It contracts, rather than relaxes, blood vessel smooth muscle.\n- **(D)** The effects are reversed; norepinephrine widens airways and constricts vessels.\n- **(E)** Smooth muscle responds to norepinephrine (and other signals), not only acetylcholine."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-15",
+          "question": {
+            "stem": "Which statement correctly distinguishes single-unit from multi-unit smooth muscle and relates it to cardiac muscle coordination?",
+            "options": [
+              "Single-unit smooth muscle cells are joined by gap junctions and contract as a coordinated unit, similar to how gap junctions in cardiac intercalated discs create a syncytium, whereas multi-unit cells (e.g., in the eye) are regulated individually",
+              "Multi-unit smooth muscle cells are joined by gap junctions and contract together, while single-unit cells are regulated individually",
+              "Single-unit smooth muscle uses desmosomes for coordination, whereas cardiac muscle uses gap junctions",
+              "Both single-unit and multi-unit smooth muscle lack gap junctions, unlike cardiac muscle",
+              "Multi-unit smooth muscle produces peristalsis, while single-unit smooth muscle controls the eye"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Single-unit smooth muscle is electrically coupled by gap junctions so cells act together (as cardiac muscle does via intercalated-disc gap junctions), while multi-unit smooth muscle cells such as those of the eye are controlled individually.\n\n**Why the other options are wrong:**\n- **(B)** The definitions are reversed; single-unit (not multi-unit) muscle uses gap junctions for coordination.\n- **(C)** Single-unit smooth muscle coordination depends on gap junctions, not desmosomes.\n- **(D)** Single-unit smooth muscle and cardiac muscle both use gap junctions.\n- **(E)** Peristalsis is produced by single-unit smooth muscle, and the eye contains multi-unit smooth muscle."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-16",
+          "question": {
+            "stem": "During the controlled lowering of a hand weight, the biceps brachii lengthens while still generating tension to resist gravity. How is this contraction classified, and how does it differ from raising the same weight?",
+            "options": [
+              "It is an eccentric isotonic contraction; the muscle lengthens under tension, whereas raising the weight is a concentric isotonic contraction in which the muscle shortens",
+              "It is an isometric contraction; the joint angle does not change, whereas raising the weight is an isotonic contraction",
+              "It is a concentric isotonic contraction; the muscle shortens, whereas raising the weight is eccentric",
+              "It is an isometric contraction in both cases because muscle tension is constant",
+              "It is an eccentric isometric contraction; the joint angle stays fixed while the muscle lengthens"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Lowering the weight in a controlled way is an eccentric isotonic contraction (muscle lengthens under tension), while raising it is a concentric isotonic contraction (muscle shortens to move the load).\n\n**Why the other options are wrong:**\n- **(B)** In isometric contraction the joint angle does not change; here the elbow angle increases as the forearm lowers.\n- **(C)** Lowering the weight involves lengthening, not shortening, so it is eccentric, not concentric.\n- **(D)** Both movements change the elbow joint angle, so both are isotonic, not isometric.\n- **(E)** \"Eccentric isometric\" is contradictory: eccentric involves length change while isometric does not."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-17",
+          "question": {
+            "stem": "In which of the following steps is ATP used as an energy source (hydrolyzed) rather than acting as a binding ligand, in the muscle contraction–relaxation cycle?",
+            "options": [
+              "Pumping Ca²⁺ back into the sarcoplasmic reticulum during relaxation",
+              "Detaching the myosin head from actin",
+              "Binding of a ligand to the acetylcholine receptor",
+              "Ca²⁺ binding to troponin to expose actin sites",
+              "ACh diffusing across the synaptic cleft"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Pumping Ca²⁺ against its gradient back into the SR requires ATP hydrolysis, using ATP as an energy source.\n\n**Why the other options are wrong:**\n- **(B)** Myosin detachment occurs simply when ATP *binds* the head as a ligand, before hydrolysis.\n- **(C)** ACh, not ATP, is the ligand binding the receptor here.\n- **(D)** Ca²⁺ binding to troponin does not consume ATP.\n- **(E)** ACh diffusion is passive and involves no ATP."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-18",
+          "question": {
+            "stem": "How does tetanus differ from a single twitch in terms of the relaxation phase and calcium availability?",
+            "options": [
+              "In tetanus, the high stimulation frequency prevents the relaxation phase from occurring, so Ca²⁺ stays elevated and contraction is continuous; a single twitch has a distinct relaxation phase as Ca²⁺ is reabsorbed",
+              "In tetanus, the relaxation phase is longer than in a twitch because more Ca²⁺ must be pumped out",
+              "A single twitch produces continuous tension while tetanus produces brief, isolated contractions",
+              "Tetanus occurs from a single action potential, whereas a twitch requires many action potentials",
+              "In tetanus, Ca²⁺ levels fall to zero between contractions, unlike in a single twitch"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** At high stimulation frequency the relaxation phase disappears completely because Ca²⁺ never fully returns to the SR, yielding continuous contraction, whereas a single twitch has clear contraction and relaxation phases.\n\n**Why the other options are wrong:**\n- **(B)** In tetanus the relaxation phase is absent, not lengthened.\n- **(C)** The description is reversed; tetanus is continuous and a twitch is isolated.\n- **(D)** Tetanus requires high-frequency repeated stimulation, not a single action potential.\n- **(E)** In tetanus Ca²⁺ remains elevated rather than falling to zero."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-19",
+          "question": {
+            "stem": "According to the unit, how do muscle fibres control their membrane potential to generate electrical signals, and what triggers this in muscle?",
+            "options": [
+              "They open and close ion channels to regulate currents (ion flows) across the membrane, doing so in response to acetylcholine from motor neurons",
+              "They pump ions with ATP alone, independent of any external signal",
+              "They rely on gap junctions with neighbouring fibres to spread current, triggered by norepinephrine",
+              "They generate current by mechanical stretch only, with no chemical signalling involved",
+              "They open channels in response to creatine phosphate released by motor neurons"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Muscle fibres control membrane potential by opening and closing ion channels to create currents, and in skeletal muscle this is initiated by the neurotransmitter acetylcholine from motor neurons.\n\n**Why the other options are wrong:**\n- **(B)** Current is generated by controlled ion channel opening in response to a signal, not pumping alone.\n- **(C)** Skeletal muscle fibres are triggered by ACh, not norepinephrine, and do not use gap junctions like cardiac muscle.\n- **(D)** Chemical signalling by ACh is central to triggering the current.\n- **(E)** Creatine phosphate is an energy store, not a neurotransmitter that opens channels."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-20",
+          "question": {
+            "stem": "Ranked by the order in which they supply ATP after intense contraction begins, which sequence and duration is correct?",
+            "options": [
+              "Stored ATP (seconds) → creatine phosphate (~15 s) → anaerobic glycolysis (~1 min) → aerobic respiration (sustained)",
+              "Aerobic respiration (seconds) → creatine phosphate (~15 s) → anaerobic glycolysis (~1 min) → stored ATP (sustained)",
+              "Creatine phosphate (~1 min) → stored ATP (seconds) → aerobic respiration (~15 s) → glycolysis (sustained)",
+              "Anaerobic glycolysis (seconds) → aerobic respiration (~15 s) → creatine phosphate (~1 min) → stored ATP (sustained)",
+              "Stored ATP (~1 min) → aerobic respiration (~15 s) → creatine phosphate (seconds) → glycolysis (sustained)"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The muscle first uses its small stored ATP (a few seconds), then creatine phosphate (~15 s), then anaerobic glycolysis (~1 min), and finally aerobic respiration for sustained activity.\n\n**Why the other options are wrong:**\n- **(B)** Aerobic respiration is the slow, sustained source, not the first supplied.\n- **(C)** Creatine phosphate provides only ~15 s, and stored ATP comes first.\n- **(D)** Glycolysis is not first; creatine phosphate precedes it.\n- **(E)** Stored ATP lasts only seconds, and the durations are misassigned."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-21",
+          "question": {
+            "stem": "A researcher stretches a single muscle fibre so that its sarcomeres are at 140% of resting length and finds that the tension it can generate is markedly reduced. What is the molecular explanation?",
+            "options": [
+              "There is too little overlap between thin and thick filaments, so fewer cross-bridges can form",
+              "Troponin can no longer bind calcium at this length",
+              "The thin filaments have collided with the M-line and cannot slide further",
+              "ATP hydrolysis is blocked when the sarcomere is stretched",
+              "Tropomyosin permanently covers the myosin-binding sites at this length"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Beyond ~120% resting length, thick and thin filaments overlap less, so fewer cross-bridges can form and less tension is generated.\n\n**Why the other options are wrong:**\n- **(B)** Calcium binding to troponin is not length-dependent in this way.\n- **(C)** Thin filaments colliding centrally happens when the sarcomere is over-shortened (<80%), not stretched.\n- **(D)** ATP hydrolysis is not blocked by stretching.\n- **(E)** Tropomyosin shielding is regulated by calcium, not by stretch."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-22",
+          "question": {
+            "stem": "Which statement correctly distinguishes the body's control of the three muscle types?",
+            "options": [
+              "Skeletal muscle is voluntary, while both cardiac and smooth muscle are involuntary",
+              "All three muscle types are under voluntary control",
+              "Cardiac muscle is voluntary, while skeletal and smooth muscle are involuntary",
+              "Smooth muscle is the only type that responds to the autonomic nervous system",
+              "Skeletal and cardiac muscle are involuntary, while smooth muscle is voluntary"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Skeletal muscle is controlled voluntarily by the somatic motor system, whereas cardiac and smooth muscle are involuntary and controlled by the autonomic nervous system, hormones, and (for cardiac) pacemaker cells.\n\n**Why the other options are wrong:**\n- **(B)** Cardiac and smooth muscle are not voluntary.\n- **(C)** Cardiac muscle cannot be consciously controlled.\n- **(D)** Cardiac muscle also responds to the autonomic nervous system.\n- **(E)** Skeletal muscle is voluntary and smooth muscle is involuntary."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-23",
+          "question": {
+            "stem": "A motor neuron begins firing action potentials at a rate high enough that the muscle fibre never returns to its relaxed state between stimuli, producing a smooth sustained contraction. What is this state, and how does it differ from a single twitch?",
+            "options": [
+              "Tetanus; the relaxation phase disappears completely because Ca2+ never fully returns to the SR",
+              "Wave summation; the second twitch is smaller than the first because calcium is depleted",
+              "A twitch; a single action potential can sustain contraction indefinitely",
+              "Tetanus; it occurs because acetylcholinesterase stops degrading acetylcholine",
+              "Wave summation; tension stays constant regardless of stimulus frequency"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Tetanus occurs at high stimulus frequency when the relaxation phase vanishes, as continuously released Ca2+ keeps sarcomeres contracting without returning to rest.\n\n**Why the other options are wrong:**\n- **(B)** In wave summation the second twitch is stronger, not smaller, and it is not the described sustained state.\n- **(C)** A single twitch results from one action potential and is brief, not sustained.\n- **(D)** Tetanus results from high-frequency neuronal firing, not from acetylcholinesterase failure.\n- **(E)** Wave summation involves increasing tension with frequency, not constant tension."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-24",
+          "question": {
+            "stem": "During excitation-contraction coupling, an action potential travelling down a T-tubule directly causes which of the following events at the sarcoplasmic reticulum?",
+            "options": [
+              "Opening of voltage-gated Ca2+ channels, allowing Ca2+ to diffuse out of the SR into the sarcoplasm",
+              "Pumping of Ca2+ back into the SR against its concentration gradient",
+              "Binding of acetylcholine to receptors on the SR membrane",
+              "Release of sodium ions from the SR into the sarcoplasm",
+              "Hydrolysis of ATP by the myosin heads"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The action potential in the T-tubule opens voltage-gated Ca2+ channels in the SR membrane, letting Ca2+ diffuse out into the sarcoplasm to initiate contraction.\n\n**Why the other options are wrong:**\n- **(B)** Pumping Ca2+ back into the SR occurs during relaxation, not from the incoming action potential.\n- **(C)** Acetylcholine binds at the motor end-plate, not the SR.\n- **(D)** The SR releases Ca2+, not sodium.\n- **(E)** ATP hydrolysis by myosin happens after Ca2+ release exposes binding sites, not at the SR itself."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-25",
+          "question": {
+            "stem": "Compared with the motor units of the extraocular eye muscles, the motor units of the large thigh muscles are best described as:",
+            "options": [
+              "Larger, containing more muscle fibres per motor neuron, allowing powerful but less precise movement",
+              "Smaller, containing fewer fibres per neuron, allowing finer control",
+              "Identical in size, since all motor units contain the same number of fibres",
+              "Larger, but with lower-threshold neurons that are recruited first",
+              "Smaller, but generating more tension due to more precise recruitment"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Large muscles like the thigh have large motor units where one neuron innervates many fibres, producing powerful, gross movements with less precision.\n\n**Why the other options are wrong:**\n- **(B)** Thigh motor units are large, not small.\n- **(C)** Motor unit size varies with the muscle's function.\n- **(D)** Large motor units have higher-threshold neurons that are recruited later.\n- **(E)** Large motor units are not small, and they generate more tension because of size, not precision."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-26",
+          "question": {
+            "stem": "An athlete sprints maximally for about 30 seconds. Which sequence best represents the time course of ATP-supplying systems from the very start of the sprint?",
+            "options": [
+              "Stored ATP (a few seconds) → creatine phosphate (~15 s) → anaerobic glycolysis (~1 min)",
+              "Aerobic respiration first, then glycolysis, then creatine phosphate",
+              "Creatine phosphate first, lasting several minutes, then aerobic respiration",
+              "Anaerobic glycolysis first (a few seconds), then creatine phosphate (~1 min)",
+              "Stored ATP, then aerobic respiration, then creatine phosphate"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Stored ATP powers only a few seconds, creatine phosphate then supplies roughly 15 seconds, and anaerobic glycolysis sustains high-intensity output for about a minute.\n\n**Why the other options are wrong:**\n- **(B)** Aerobic respiration is the slower, later-sustained source, not first during a sprint.\n- **(C)** Creatine phosphate lasts only ~15 seconds, not several minutes.\n- **(D)** Creatine phosphate precedes glycolysis, and creatine phosphate does not last a minute.\n- **(E)** Creatine phosphate comes before aerobic respiration, not after."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-27",
+          "question": {
+            "stem": "A long-distance marathon runner is compared to a competitive powerlifter. Which statement about their expected muscle fibre composition is most accurate?",
+            "options": [
+              "The marathon runner likely has a higher proportion of oxidative fibres, while the powerlifter has more fast glycolytic fibres",
+              "The marathon runner likely has more fast glycolytic fibres for endurance",
+              "Both athletes have identical proportions since fibre type cannot change",
+              "The powerlifter likely has more slow oxidative fibres for sustained force",
+              "The marathon runner relies mainly on fibres that fatigue in under a minute"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Endurance athletes rely on fatigue-resistant oxidative (SO/FO) fibres, while power athletes have more fast glycolytic fibres for rapid, forceful contractions.\n\n**Why the other options are wrong:**\n- **(B)** Fast glycolytic fibres fatigue quickly and are not for endurance.\n- **(C)** Exercise can shift fibre proportions.\n- **(D)** Powerlifters favour fast glycolytic fibres, not slow oxidative.\n- **(E)** Marathon runners rely on fatigue-resistant fibres, not those exhausted in under a minute."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-28",
+          "question": {
+            "stem": "During wave summation, a second stimulus arrives before the muscle fibre has fully relaxed from the first twitch, and the resulting contraction is stronger than a single twitch. What is the molecular explanation for this increased tension?",
+            "options": [
+              "The second stimulus triggers release of additional Ca²⁺, activating more sarcomeres while the fibre is still contracting from the first stimulus",
+              "The second stimulus recruits additional larger motor units to the same muscle fibre",
+              "The relaxation phase is prolonged, allowing more time for ATP to be regenerated",
+              "Acetylcholinesterase is inhibited, so acetylcholine remains bound to the motor end-plate permanently",
+              "The second stimulus permanently phosphorylates myosin heads, preventing detachment"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Summation occurs because the second stimulus releases more Ca²⁺ into the sarcoplasm, making it available to activate additional sarcomeres while the fibre is still contracting from the first stimulus.\n\n**Why the other options are wrong:**\n- **(B)** Each muscle fibre is innervated by only one motor neuron; recruitment of extra motor units involves other fibres, not summation within one fibre.\n- **(C)** Summation involves the relaxation phase shortening or disappearing, not lengthening.\n- **(D)** Acetylcholinesterase is not inhibited during normal summation; it continues to degrade ACh.\n- **(E)** Phosphorylation of myosin heads to prevent detachment is a smooth-muscle latch-bridge concept, not skeletal wave summation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-29",
+          "question": {
+            "stem": "Peristalsis in the digestive tract and coordinated contraction of a smooth muscle sheet in the bladder both depend on which structural feature that classifies the tissue as single-unit smooth muscle?",
+            "options": [
+              "Gap junctions that allow depolarization to spread from cell to cell",
+              "Intercalated discs identical to those of cardiac muscle",
+              "Sarcomeres arranged in series like skeletal muscle",
+              "Individual motor neurons innervating each cell separately",
+              "Troponin-tropomyosin regulation of each fibre"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Single-unit smooth muscle cells are joined by gap junctions, allowing depolarization to spread so the cells contract as a coordinated unit, producing peristalsis.\n\n**Why the other options are wrong:**\n- **(B)** Intercalated discs are a specialized cardiac structure, not the defining feature of single-unit smooth muscle.\n- **(C)** Smooth muscle lacks sarcomeres.\n- **(D)** Individual innervation describes multi-unit, not single-unit, smooth muscle.\n- **(E)** Smooth muscle lacks troponin; it uses calmodulin."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-mc-30",
+          "question": {
+            "stem": "Trace the correct order of events by which a motor neuron signal is chemically and electrically transmitted to trigger depolarization of a muscle fibre's sarcolemma.",
+            "options": [
+              "Neuronal AP opens voltage-gated Ca2+ channels → ACh released → ACh binds motor end-plate receptors → Na+ enters through ligand-gated channels → voltage-gated Na+ channels open",
+              "ACh released → neuronal AP opens Ca2+ channels → K+ enters muscle fibre → sarcolemma repolarizes",
+              "Neuronal AP opens Na+ channels in the neuron → ACh binds SR → Ca2+ released directly",
+              "ACh binds voltage-gated channels → Ca2+ enters neuron → sarcolemma hyperpolarizes",
+              "Neuronal AP → norepinephrine released → binds motor end-plate → Cl- enters muscle fibre"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The neuronal action potential opens voltage-gated Ca2+ channels causing ACh release; ACh binds ligand-gated receptors at the motor end-plate letting Na+ in, which then opens voltage-gated Na+ channels to spread the action potential.\n\n**Why the other options are wrong:**\n- **(B)** ACh release follows, not precedes, the neuronal AP, and Na+ (not K+) entry causes depolarization.\n- **(C)** ACh binds the motor end-plate, not the SR, and does not release SR Ca2+ directly.\n- **(D)** ACh binds ligand-gated (not voltage-gated) channels, and the sarcolemma depolarizes, not hyperpolarizes.\n- **(E)** The neurotransmitter at the neuromuscular junction is acetylcholine, not norepinephrine, and Na+ (not Cl-) drives depolarization."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u14-advanced-tf-01",
+          "question": {
+            "stem": "For a skeletal muscle to relax, calcium ions must be actively pumped back into the sarcoplasmic reticulum so that tropomyosin can re-cover the myosin-binding sites on actin.",
+            "correct": true,
+            "explanation": "True. Relaxation requires Ca2+ to be removed from the sarcoplasm (via ATP-driven pumps back into the SR). Once Ca2+ leaves troponin, tropomyosin returns to reshield the actin binding sites, ending cross-bridge cycling."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-02",
+          "question": {
+            "stem": "In skeletal muscle, the action potential travelling along the T-tubule opens voltage-gated Ca2+ channels in the sarcoplasmic reticulum membrane, releasing Ca2+ into the sarcoplasm to initiate contraction.",
+            "correct": true,
+            "explanation": "True. As described on slide 13, the action potential within the T-tubule triggers opening of voltage-gated (voltage-sensitive) calcium channels in the SR, and Ca2+ diffuses out into the sarcoplasm, initiating contraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-03",
+          "question": {
+            "stem": "Skeletal muscle is under voluntary control, whereas both cardiac and smooth muscle contractions are involuntary and can be modulated by the autonomic nervous system.",
+            "correct": true,
+            "explanation": "True. Skeletal muscle is consciously controlled via somatic motor neurons, while cardiac and smooth muscle are involuntary. Cardiac pacemaker cells and smooth muscle both respond to autonomic input and hormones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-04",
+          "question": {
+            "stem": "Anaerobic glycolysis produces more ATP per glucose molecule than aerobic cellular respiration.",
+            "correct": false,
+            "explanation": "False. Anaerobic glycolysis yields only about 2 ATP per glucose, while aerobic cellular respiration produces approximately 32–34 ATP per glucose. Aerobic respiration is far more efficient."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-05",
+          "question": {
+            "stem": "When you lower a hand weight slowly in a controlled manner, the biceps brachii is performing an eccentric contraction, in which the muscle generates tension while lengthening.",
+            "correct": true,
+            "explanation": "True. Eccentric contractions are a type of isotonic contraction in which muscle tension is slightly less than the load, so the muscle lengthens under tension — as happens when the biceps controls the descent of a weight and the elbow angle increases. A concentric contraction (shortening) would occur when curling the weight upward."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-06",
+          "question": {
+            "stem": "During wave summation, a second stimulus arriving before the first twitch fully relaxes produces a weaker contraction than a single twitch alone.",
+            "correct": false,
+            "explanation": "False. Wave summation produces a STRONGER contraction, because the second stimulus releases additional Ca2+ that activates more sarcomeres while the muscle is still contracting from the first stimulus."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-07",
+          "question": {
+            "stem": "Acetylcholine and norepinephrine can each produce opposite effects on smooth muscle depending on the tissue and the receptor variant present.",
+            "correct": true,
+            "explanation": "True. ACh can cause contraction of some airway smooth muscle, while norepinephrine relaxes airway smooth muscle but contracts most blood vessel smooth muscle. The effect depends on tissue and receptor type."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-08",
+          "question": {
+            "stem": "An eccentric contraction is a type of isotonic contraction in which the muscle lengthens while still generating tension.",
+            "correct": true,
+            "explanation": "True. Isotonic contractions move a load and include concentric (shortening) and eccentric (lengthening while still under tension, e.g., lowering a weight in a controlled manner) contractions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-09",
+          "question": {
+            "stem": "A sarcomere stretched well beyond 120% of its resting length produces greater tension because the filaments have more room to slide.",
+            "correct": false,
+            "explanation": "False. Beyond 120% of resting length there is insufficient overlap between thick and thin filaments, so fewer cross-bridges can form and tension decreases. Maximal tension occurs at 80–120% of resting length."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-10",
+          "question": {
+            "stem": "Cardiac muscle fibres are striated and organized into sarcomeres, but unlike skeletal muscle fibres they are typically uninucleate and connected by intercalated discs.",
+            "correct": true,
+            "explanation": "True. As described on slide 35, cardiac fibres share striations and sarcomere organization with skeletal muscle, but are shorter, usually have a single nucleus, and are joined by intercalated discs enabling synchronized contraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-11",
+          "question": {
+            "stem": "During transmission at the neuromuscular junction, calcium influx into the motor neuron terminal triggers acetylcholine release, whereas sodium influx into the muscle fibre is what depolarizes the sarcolemma.",
+            "correct": true,
+            "explanation": "On the presynaptic side, depolarization opens voltage-gated Ca2+ channels, and Ca2+ influx causes vesicles to release ACh. On the postsynaptic side, ACh opens ligand-gated channels that allow Na+ into the fibre, depolarizing the sarcolemma."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-12",
+          "question": {
+            "stem": "Norepinephrine causes only relaxation of smooth muscle, and never contraction, regardless of the tissue involved.",
+            "correct": false,
+            "explanation": "Norepinephrine can have opposite effects depending on the tissue and receptor variant. It relaxes smooth muscle in some airways (widening them) but contracts smooth muscle in most blood vessels (constricting them)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-13",
+          "question": {
+            "stem": "Both cardiac and single-unit smooth muscle use gap junctions to spread depolarization between cells, allowing them to contract as a coordinated functional unit.",
+            "correct": true,
+            "explanation": "Cardiac muscle uses gap junctions in intercalated discs to form a syncytium, and single-unit smooth muscle uses gap junctions to coordinate contraction (e.g., peristalsis). Multi-unit smooth muscle, in contrast, is controlled cell-by-cell."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-14",
+          "question": {
+            "stem": "A muscle that is generating tension while lengthening is undergoing an eccentric contraction, which is a type of isotonic contraction.",
+            "correct": true,
+            "explanation": "Isotonic contractions change muscle length to move a load, and include concentric (shortening) and eccentric (lengthening) types. Lowering a weight in a controlled manner is an eccentric contraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-15",
+          "question": {
+            "stem": "In the sliding filament model, actin is anchored to the Z-disc while myosin is anchored to the M-line, and contraction shortens the sarcomere as myosin pulls actin toward the M-line.",
+            "correct": true,
+            "explanation": "Thin (actin) filaments attach to the Z-discs and thick (myosin) filaments anchor at the M-line at the sarcomere center. Myosin heads pull actin toward the center, shortening the sarcomere."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-16",
+          "question": {
+            "stem": "Tetanus occurs when the frequency of motor neuron stimulation is so high that the relaxation phase disappears completely and contractions become continuous.",
+            "correct": true,
+            "explanation": "A single stimulus gives a twitch; stimulating before relaxation is complete gives stronger contractions (wave summation); and if stimulation frequency is high enough that relaxation vanishes entirely, the result is tetanus."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-17",
+          "question": {
+            "stem": "When acetylcholine binds to receptors on the motor end-plate, it opens voltage-gated sodium channels, which is what first depolarizes the sarcolemma.",
+            "correct": false,
+            "explanation": "ACh binds to cholinergic receptors that are ligand-gated ion channels; their opening admits Na+ and produces the initial depolarization. Only after that depolarization do voltage-gated sodium channels open to propagate the action potential."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-18",
+          "question": {
+            "stem": "In skeletal muscle, both contraction and relaxation require ATP — ATP powers cross-bridge cycling during contraction, and ATP powers the pumps that return Ca2+ to the sarcoplasmic reticulum during relaxation.",
+            "correct": true,
+            "explanation": "ATP is hydrolyzed for cross-bridge cycling/power stroke and its binding detaches myosin. Relaxation requires ATP-driven Ca2+ pumps to move calcium back into the SR so tropomyosin re-shields actin's binding sites."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-19",
+          "question": {
+            "stem": "Creatine phosphate provides ATP more quickly but for a shorter total duration than the anaerobic glycolytic pathway, which in turn produces far less ATP per glucose molecule than aerobic respiration.",
+            "correct": true,
+            "explanation": "Creatine phosphate powers roughly the first ~15 seconds; glycolysis provides ATP for about a minute (net 2 ATP per glucose); aerobic respiration is slower to ramp but yields ~32–34 ATP per glucose and sustains prolonged activity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-20",
+          "question": {
+            "stem": "Endurance athletes such as marathon runners tend to rely more on fast glycolytic fibres, whereas power athletes such as sprinters rely more on slow oxidative fibres.",
+            "correct": false,
+            "explanation": "This is reversed. Endurance activities favor oxidative (fatigue-resistant, aerobic) fibres, while explosive power activities like sprinting favor fast glycolytic fibres that produce rapid, forceful, but quickly fatiguing contractions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-21",
+          "question": {
+            "stem": "Norepinephrine causes relaxation and widening of some respiratory airways but contraction and constriction of most blood vessels, demonstrating that the same neurotransmitter can produce opposite effects depending on the tissue and receptor variant.",
+            "correct": true,
+            "explanation": "The unit explicitly states that norepinephrine relaxes smooth muscle around some airways (widening them) while contracting smooth muscle in most blood vessels (constricting them), and that the same neurotransmitter can have opposite effects depending on tissue and receptor type."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-22",
+          "question": {
+            "stem": "Both cardiac and smooth muscle fibres are uninucleate and use calcium-induced calcium release, but only cardiac muscle retains sarcomeres and striations.",
+            "correct": true,
+            "explanation": "Cardiac fibres are (typically) uninucleate, striated, and organized into sarcomeres, and use calcium-induced calcium release. Smooth muscle is also uninucleate and uses calcium-induced calcium release, but lacks sarcomeres and striations. So striations/sarcomeres distinguish cardiac from smooth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-23",
+          "question": {
+            "stem": "During tetanus the relaxation phase between successive twitches disappears completely, whereas in wave summation successive twitches still add together while the muscle has not yet fully relaxed.",
+            "correct": true,
+            "explanation": "Wave summation occurs when a second stimulus arrives while a previous twitch is still occurring, producing a stronger contraction. When stimulus frequency is so high that the relaxation phase vanishes entirely, contractions become continuous — this is tetanus."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-24",
+          "question": {
+            "stem": "The small motor units that control the extraocular eye muscles contain motor neurons with higher activation thresholds than the large motor units of the thigh muscles.",
+            "correct": false,
+            "explanation": "This is reversed. Small motor units (e.g., eye muscles) have smaller, lower-threshold, more excitable motor neurons that fire first. Large motor units (e.g., thigh, back) have bigger, higher-threshold motor neurons that require more stimulation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-25",
+          "question": {
+            "stem": "A skeletal muscle fibre can generate an action potential and contract on its own without any stimulation from a motor neuron at the neuromuscular junction.",
+            "correct": false,
+            "explanation": "Every skeletal muscle fibre must be stimulated by a motor neuron at the neuromuscular junction to change its membrane potential and fire an action potential. Excitation signals from the neuron are the only way to functionally activate a skeletal muscle fibre to contract."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-26",
+          "question": {
+            "stem": "Slowly lowering a hand weight in a controlled manner while the biceps brachii lengthens is an example of an eccentric contraction, which is a type of isotonic contraction.",
+            "correct": true,
+            "explanation": "Eccentric contraction occurs when muscle tension diminishes and the muscle lengthens while still bearing a load (e.g., lowering a weight slowly). It is one of the two isotonic contraction types, along with concentric."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-27",
+          "question": {
+            "stem": "Although smooth muscle fibres lack striations and sarcomeres, they contain thick and thin filaments of myosin and actin, with the thin filaments anchored to dense bodies rather than Z-discs.",
+            "correct": true,
+            "explanation": "Smooth muscle has no striations or sarcomeres, but it does possess actin and myosin filaments. Its thin filaments attach to dense bodies, which are functionally analogous to the Z-discs of skeletal and cardiac muscle."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-28",
+          "question": {
+            "stem": "The calcium influx that triggers acetylcholine release from the motor neuron and the depolarization of the muscle sarcolemma after ACh binding are both caused by the same type of ion entering the cell.",
+            "correct": false,
+            "explanation": "In the neuron, depolarization opens voltage-gated calcium channels and Ca2+ influx triggers ACh vesicle release. On the muscle side, ACh binding opens ligand-gated channels allowing Na+ (sodium) entry to depolarize the sarcolemma. The two events involve different ions (Ca2+ vs Na+)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-29",
+          "question": {
+            "stem": "In the muscle fibre, ATP hydrolysis is required both to re-cock the myosin head for the power stroke and to pump calcium back into the sarcoplasmic reticulum during relaxation.",
+            "correct": true,
+            "explanation": "ATP hydrolysis powers cross-bridge cycling (re-cocking the myosin head), and separate ATP-dependent pumps actively transport Ca2+ back into the SR against its gradient during relaxation. Both are energy uses of ATP within the muscle fibre."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-tf-30",
+          "question": {
+            "stem": "A sarcomere stretched well beyond 120% of its resting length produces maximal tension because the thin and thick filaments are pulled far apart, allowing more cross-bridges to form.",
+            "correct": false,
+            "explanation": "This is incorrect. Maximal tension occurs at roughly 80–120% of resting length, where filament overlap is optimal. Beyond 120%, there is too little overlap between actin and myosin, so fewer cross-bridges can form and tension decreases."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u14-advanced-fitb-01",
+          "question": {
+            "stem": "In excitation-contraction coupling, the muscle fibre's action potential is linked to actual contraction through the release of ____________ from the sarcoplasmic reticulum into the sarcoplasm.",
+            "answer": "calcium",
+            "accepted_synonyms": [
+              "Ca2+",
+              "calcium ions",
+              "Ca++",
+              "calcium ion"
+            ],
+            "explanation": "Slide 8 states that the coupling of the action potential to contraction occurs via release of Ca2+ from the sarcoplasmic reticulum, which then interacts with the sarcomeres."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-02",
+          "question": {
+            "stem": "When released onto the smooth muscle surrounding certain respiratory airways, the neurotransmitter ____________ causes those smooth muscles to contract and thus constrict the airways.",
+            "answer": "acetylcholine",
+            "accepted_synonyms": [
+              "ACh",
+              "acetyl choline"
+            ],
+            "explanation": "Slide 44 notes that some autonomic nerves release acetylcholine, causing contraction of smooth muscle around respiratory ducts and constriction of airways (whereas norepinephrine relaxes them)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-03",
+          "question": {
+            "stem": "When you lower a hand weight slowly and in a controlled manner, the biceps brachii is generating tension while lengthening; this type of contraction is termed ____________.",
+            "answer": "eccentric",
+            "accepted_synonyms": [
+              "eccentric contraction"
+            ],
+            "explanation": "Slide 27 defines eccentric contraction as one in which muscle tension diminishes and the muscle lengthens, e.g. lowering a weight in a controlled manner."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-04",
+          "question": {
+            "stem": "After the initial stored ATP is used up, the very first backup source that regenerates ATP quickly (powering roughly 15 seconds of contraction) is ____________.",
+            "answer": "creatine phosphate",
+            "accepted_synonyms": [
+              "creatine-phosphate",
+              "phosphocreatine"
+            ],
+            "explanation": "Slides 20-21 describe creatine phosphate as the first ATP-regenerating mechanism used after stored ATP is depleted, providing about 15 seconds of energy before glycolysis takes over."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-05",
+          "question": {
+            "stem": "A sarcomere stretched beyond 120% of its resting length produces less tension because there is reduced overlap between the thin filaments and the ____________ heads that must bind them to form cross-bridges.",
+            "answer": "myosin",
+            "accepted_synonyms": [
+              "myosin heads",
+              "myosin filament"
+            ],
+            "explanation": "Slide 28 explains that beyond 120% resting length there is less overlap of actin and myosin, so fewer cross-bridges form between myosin heads and actin, decreasing force."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-06",
+          "question": {
+            "stem": "The group of muscle fibres within a given muscle that are all innervated by a single motor neuron is called a ____________.",
+            "answer": "motor unit",
+            "accepted_synonyms": [
+              "motor-unit",
+              "motor units"
+            ],
+            "explanation": "Slide 25 defines a motor unit as the group of muscle fibres in a muscle innervated by a single motor neuron; these vary in size (small in eye muscles, large in the thigh)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-07",
+          "question": {
+            "stem": "The muscle fibre type that contracts quickly and relies primarily on anaerobic glycolysis, making it strong but quick to fatigue and predominant in a power athlete such as a sprinter, is the ____________ fibre.",
+            "answer": "fast glycolytic",
+            "accepted_synonyms": [
+              "fast glycolytic fibre",
+              "FG",
+              "fast-glycolytic",
+              "fast glycolytic fiber"
+            ],
+            "explanation": "Slide 24 describes fast glycolytic fibres as fast-twitch fibres that primarily use anaerobic glycolysis; they are stronger but fatigue quickly, favoured in power athletes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-08",
+          "question": {
+            "stem": "Once acetylcholine binds to its receptor on the motor end-plate, it opens a ____________, allowing Na+ to enter and begin depolarizing the sarcolemma.",
+            "answer": "ligand-gated ion channel",
+            "accepted_synonyms": [
+              "ligand gated ion channel",
+              "ligand-gated channel",
+              "ligand-gated ion channels"
+            ],
+            "explanation": "Slide 10 states that ACh binding opens a ligand-gated ion channel within the receptor, permitting Na+ influx and depolarization (distinct from the voltage-gated channels that fire the subsequent action potential)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-09",
+          "question": {
+            "stem": "In cardiac muscle, the network of electrically connected fibres coupled by gap junctions that contracts together as one functional unit is called a ____________.",
+            "answer": "syncytium",
+            "accepted_synonyms": [
+              "functional syncytium",
+              "syncytia"
+            ],
+            "explanation": "Slide 36 describes how gap junctions electrically couple cardiac cells, creating a functional unit of contraction called a syncytium, allowing synchronized contraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-10",
+          "question": {
+            "stem": "The continuous partial contraction of a resting muscle that allows it to resist passive stretch and helps stabilize joints and maintain posture is known as muscle ____________.",
+            "answer": "tone",
+            "accepted_synonyms": [
+              "muscle tone"
+            ],
+            "explanation": "Slide 31 defines muscle tone as the continuous partial contraction of a muscle at rest, causing it to resist passive stretch and enabling joint stabilization and posture."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-11",
+          "question": {
+            "stem": "During intense exercise when muscle oxygen delivery is insufficient, pyruvic acid is converted to lactic acid in a process called ____________, which regenerates NAD+ so glycolysis can continue.",
+            "answer": "lactic acid fermentation",
+            "accepted_synonyms": [
+              "lactic acid formation",
+              "anaerobic fermentation"
+            ],
+            "explanation": "Slide 20 lists this as one of the three ATP-regenerating mechanisms; it recycles NAD+ from NADH to allow continued glycolysis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-12",
+          "question": {
+            "stem": "The type of smooth muscle in which cells are joined by gap junctions and contract together as a coordinated wave, as seen in the walls of the digestive tract, is called ____________ smooth muscle.",
+            "answer": "single-unit",
+            "accepted_synonyms": [
+              "single unit",
+              "single-unit smooth muscle",
+              "unitary"
+            ],
+            "explanation": "Single-unit smooth muscle cells are electrically coupled by gap junctions so depolarization spreads cell-to-cell, producing coordinated contractions like peristalsis; multi-unit cells are controlled individually."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-13",
+          "question": {
+            "stem": "When a muscle relaxes, ATP is used not as a signalling molecule but as an energy source to power the pumps that return Ca2+ into the sarcoplasmic reticulum, allowing ____________ to reshield the actin-binding sites.",
+            "answer": "tropomyosin",
+            "accepted_synonyms": [
+              "tropomyosin molecule"
+            ],
+            "explanation": "Slide 19: as Ca2+ is pumped back into the SR (using ATP), tropomyosin re-covers the myosin-binding sites, ending contraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-14",
+          "question": {
+            "stem": "After acetylcholine binds its receptor and opens the ligand-gated channel, the resulting depolarization of the sarcolemma triggers the opening of the ____________, which propagates the action potential along the entire membrane.",
+            "answer": "voltage-gated sodium channel",
+            "accepted_synonyms": [
+              "voltage gated sodium channel",
+              "voltage-gated Na+ channel",
+              "voltage-gated sodium channels"
+            ],
+            "explanation": "Slide 11: local depolarization from ACh-triggered Na+ entry opens voltage-gated sodium channels, spreading the action potential along the sarcolemma."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-15",
+          "question": {
+            "stem": "Lowering a hand weight slowly while the biceps brachii lengthens under tension is an example of an ____________ contraction.",
+            "answer": "eccentric",
+            "accepted_synonyms": [
+              "eccentric contraction"
+            ],
+            "explanation": "Slide 27: an eccentric contraction occurs as muscle tension diminishes and the muscle lengthens, e.g., controlled lowering of a weight."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-16",
+          "question": {
+            "stem": "In the airways, acetylcholine causes smooth muscle contraction and constriction, whereas ____________ causes smooth muscle relaxation and widening of those airways.",
+            "answer": "norepinephrine",
+            "accepted_synonyms": [
+              "noradrenaline",
+              "norepinephrine (NE)"
+            ],
+            "explanation": "Slide 44: autonomic nerves release norepinephrine that relaxes smooth muscle around some respiratory ducts, widening the airways (while ACh constricts them)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-17",
+          "question": {
+            "stem": "A sprinter's powerful, rapid, quickly-fatiguing movements rely heavily on ____________ fibres, which contract quickly and primarily use anaerobic glycolysis for ATP.",
+            "answer": "fast glycolytic",
+            "accepted_synonyms": [
+              "fast glycolytic fibres",
+              "fast glycolytic fibers",
+              "FG"
+            ],
+            "explanation": "Slide 24: fast glycolytic fibres contract quickly and primarily use anaerobic glycolysis; they are stronger but fatigue quickly, favouring power athletes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-18",
+          "question": {
+            "stem": "In the first seconds of muscle activity, once stored ATP is depleted, ATP is regenerated most rapidly (for about 15 seconds) from ____________ by the enzyme creatine kinase.",
+            "answer": "creatine phosphate",
+            "accepted_synonyms": [
+              "creatine phosphate metabolism",
+              "phosphocreatine"
+            ],
+            "explanation": "Slide 21: creatine phosphate transfers its phosphate to ADP via creatine kinase, providing about 15 seconds of ATP after stored ATP is used up."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-19",
+          "question": {
+            "stem": "Fibres that primarily use aerobic respiration but can switch to anaerobic glycolysis, and therefore fatigue faster than slow oxidative fibres, are classified as ____________ fibres.",
+            "answer": "fast oxidative",
+            "accepted_synonyms": [
+              "fast oxidative fibres",
+              "fast oxidative fibers",
+              "fast oxidative glycolytic",
+              "FO"
+            ],
+            "explanation": "Slide 24: fast oxidative fibres contract quickly, primarily use aerobic respiration but may switch to anaerobic respiration, and thus fatigue more quickly than SO fibres."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-20",
+          "question": {
+            "stem": "The group of muscle fibres innervated by a single motor neuron, which functions as the smallest controllable unit of contraction in skeletal muscle, is called a ____________.",
+            "answer": "motor unit",
+            "accepted_synonyms": [
+              "motor units"
+            ],
+            "explanation": "Slide 25: a motor unit is the group of muscle fibres innervated by a single motor neuron; its size varies with the muscle's function."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-21",
+          "question": {
+            "stem": "In smooth muscle, the thin filaments are anchored to ____________, which are functionally analogous to the Z-discs of striated muscle and are connected through a network of intermediate filaments.",
+            "answer": "dense bodies",
+            "accepted_synonyms": [
+              "dense body"
+            ],
+            "explanation": "Slide 41 states that smooth muscle thin filaments are anchored to dense bodies, which are analogous to Z-discs and tethered to a network of intermediate filaments."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-22",
+          "question": {
+            "stem": "The functional unit of contraction created by cardiac cells being electrically linked together so that they contract as a single coordinated mass is called a ____________.",
+            "answer": "syncytium",
+            "accepted_synonyms": [
+              "functional syncytium"
+            ],
+            "explanation": "A syncytium is the network of electrically connected cardiac muscle cells that contracts as a single functional unit; a key term for the unit."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-23",
+          "question": {
+            "stem": "After acetylcholine binds and the sarcolemma begins to depolarize, the ____________ open in response to the change in voltage, allowing the action potential to propagate rapidly along the entire membrane.",
+            "answer": "voltage-gated sodium channel",
+            "accepted_synonyms": [
+              "voltage-gated sodium channels",
+              "voltage gated sodium channel",
+              "voltage gated sodium channels"
+            ],
+            "explanation": "Depolarization from ACh binding triggers voltage-gated sodium channels to open, spreading the action potential along the sarcolemma."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-24",
+          "question": {
+            "stem": "When motor neuron stimulation is so frequent that the relaxation phase disappears entirely and contractions become smooth and continuous, the muscle is in a state of ____________.",
+            "answer": "tetanus",
+            "accepted_synonyms": [
+              "complete tetanus"
+            ],
+            "explanation": "Tetanus occurs when stimulation frequency is high enough that the relaxation phase disappears completely, unlike a single twitch or partial wave summation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-25",
+          "question": {
+            "stem": "Lowering a hand weight slowly and under control, so that the biceps brachii lengthens while still generating tension, is an example of an ____________ contraction.",
+            "answer": "eccentric",
+            "accepted_synonyms": [
+              "eccentric contraction"
+            ],
+            "explanation": "An eccentric contraction occurs when muscle tension diminishes and the muscle lengthens, such as controlled lowering of a weight."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-26",
+          "question": {
+            "stem": "When motor neuron stimulation reaches such a high frequency that the relaxation phase between contractions disappears completely and the contraction becomes continuous, the muscle is in a state of ____________.",
+            "answer": "tetanus",
+            "accepted_synonyms": [
+              "complete tetanus",
+              "tetanic contraction"
+            ],
+            "explanation": "Tetanus occurs when the stimulus frequency is so high that the relaxation phase vanishes and contractions merge into a sustained one, distinguishing it from a single twitch or partial wave summation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-27",
+          "question": {
+            "stem": "A muscle fibre that contracts quickly and relies primarily on anaerobic glycolysis for ATP, making it strong but quick to fatigue and abundant in power athletes such as sprinters, is classified as ____________.",
+            "answer": "fast glycolytic",
+            "accepted_synonyms": [
+              "fast glycolytic fibre",
+              "fast glycolytic fiber",
+              "FG",
+              "fast glycolytic fibres"
+            ],
+            "explanation": "Fast glycolytic fibres contract quickly, use anaerobic glycolysis, and are strong but fatigue rapidly, favoring power athletes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-28",
+          "question": {
+            "stem": "The autonomic neurotransmitter that causes relaxation and widening of some respiratory airways but contraction and constriction of most blood vessels is ____________.",
+            "answer": "norepinephrine",
+            "accepted_synonyms": [
+              "noradrenaline"
+            ],
+            "explanation": "Slide 44 states norepinephrine relaxes airway smooth muscle (widening airways) but constricts blood vessel smooth muscle."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-29",
+          "question": {
+            "stem": "Smooth muscle whose cells are joined by gap junctions so that depolarization spreads between them and they contract as a coordinated group, as in the walls of the digestive tract, is called ____________ smooth muscle.",
+            "answer": "single-unit",
+            "accepted_synonyms": [
+              "single unit",
+              "single-unit smooth muscle"
+            ],
+            "explanation": "Single-unit smooth muscle cells are joined by gap junctions and contract in a coordinated manner, contrasting with individually-regulated multi-unit smooth muscle."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fitb-30",
+          "question": {
+            "stem": "The enzyme that degrades acetylcholine within the synaptic cleft, turning off the receptor to prevent unwanted extended muscle excitation, is called ____________.",
+            "answer": "acetylcholinesterase",
+            "accepted_synonyms": [
+              "AChE",
+              "acetyl cholinesterase"
+            ],
+            "explanation": "Acetylcholinesterase breaks down acetylcholine in the synaptic cleft so it can no longer bind its receptor, avoiding prolonged contraction. This is a key term for navigating the unit."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u14-advanced-fr-01",
+          "question": {
+            "prompt": "Once acetylcholine has caused depolarization at the motor end-plate, explain what happens to that acetylcholine in the synaptic cleft, name the enzyme responsible, and state why this process is important for controlling muscle contraction. Also state what must happen for the muscle contraction to be extended or sustained.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that acetylcholine in the synaptic cleft is degraded/broken down."
+              },
+              {
+                "points": 1,
+                "criterion": "Names acetylcholinesterase (AChE) as the enzyme responsible."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains this stops ACh from continuing to bind its receptor, avoiding unwanted/prolonged excitation and contraction."
+              },
+              {
+                "points": 1,
+                "criterion": "States that to extend contraction, more acetylcholine must be released by the motor neuron."
+              }
+            ],
+            "model_answer": "Acetylcholine in the synaptic cleft is degraded (broken down) by the enzyme acetylcholinesterase (AChE). This prevents ACh from continuing to bind cholinergic receptors on the motor end-plate, so the receptor is 'turned off' and unwanted extended excitation and contraction are avoided. To sustain or extend contraction, the motor neuron must release more acetylcholine."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fr-02",
+          "question": {
+            "prompt": "In a smooth muscle fibre, thin filaments are anchored to dense bodies rather than to Z-discs. Explain what dense bodies are analogous to, state which filaments are anchored to them, explain how dense bodies connect to the rest of the fibre (including the internal filament network), and describe how their arrangement produces contraction of the whole cell.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that dense bodies are analogous to the Z-discs of skeletal/cardiac muscle."
+              },
+              {
+                "points": 1,
+                "criterion": "States that thin filaments (actin) are anchored to the dense bodies."
+              },
+              {
+                "points": 1,
+                "criterion": "States that dense bodies are connected to a network of intermediate filaments throughout the sarcoplasm."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains that when myosin pulls actin, the dense bodies pull on the intermediate filament network, causing the whole fibre to contract (ends pulled toward the centre)."
+              }
+            ],
+            "model_answer": "Dense bodies are analogous to the Z-discs found in skeletal and cardiac muscle. The thin (actin) filaments are anchored to these dense bodies. The dense bodies are in turn connected to a network of intermediate filaments that runs throughout the sarcoplasm. During contraction, myosin pulls on the actin, which pulls on the dense bodies, which pull on the intermediate filament network — this transmits the force throughout the cell so the entire fibre contracts, with its ends being drawn toward the centre."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fr-03",
+          "question": {
+            "prompt": "Explain the length-tension relationship of a sarcomere: state the range of resting length over which maximal tension is produced, and explain at the molecular (sarcomere) level why tension decreases when a sarcomere is stretched beyond this range and when it is shortened below this range.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that maximal tension is produced at approximately 80–120% of resting length."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that when stretched beyond ~120%, actin and myosin overlap less, so fewer cross-bridges can form and tension decreases."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that when shortened below ~80%, thin filaments overlap/collide and contact fewer myosin heads (eventually no further movement possible), reducing tension."
+              }
+            ],
+            "model_answer": "Cross-bridges can only form where thin (actin) and thick (myosin) filaments overlap, so sarcomere length directly affects tension. Maximal tension occurs at about 80–120% of resting length, where overlap of actin-binding sites and myosin heads is optimal. If the sarcomere is stretched beyond 120%, the thick and thin filaments no longer overlap sufficiently, so fewer cross-bridges can form and less force is generated. If shortened below 80%, the thin filaments overlap one another and no longer contact as many myosin heads; eventually there is nowhere for the thin filaments to slide, so tension is also diminished."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fr-04",
+          "question": {
+            "prompt": "When flexing and extending the arm with a hand weight, muscles produce different types of contractions. Define concentric, eccentric, and isometric contractions, giving an example of each in the context of lifting/holding a weight.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Defines concentric contraction (muscle shortens to move a load) with an example such as curling the weight upward."
+              },
+              {
+                "points": 2,
+                "criterion": "Defines eccentric contraction (muscle tension diminishes and the muscle lengthens) with an example such as lowering the weight in a controlled manner."
+              },
+              {
+                "points": 2,
+                "criterion": "Defines isometric contraction (tension produced without changing the joint angle / muscle length) with an example such as holding a weight steady or trying to lift a load too heavy to move."
+              }
+            ],
+            "model_answer": "Concentric contraction: the muscle shortens to move a load, e.g. the biceps brachii shortening to curl a hand weight upward, decreasing the elbow angle. Eccentric contraction: the muscle tension diminishes and the muscle lengthens under control, e.g. slowly lowering the hand weight back down as the elbow angle increases. Isometric contraction: the muscle generates tension without changing the joint angle (no change in overall length/no movement of the load), e.g. holding the weight stationary or attempting to lift a load too heavy to move."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fr-05",
+          "question": {
+            "prompt": "After a muscle's small stored ATP is used up, three mechanisms regenerate ATP. Name the three mechanisms, state the approximate duration each can supply energy, and state approximately how much ATP the anaerobic (glycolytic) pathway versus aerobic respiration produce per glucose.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names creatine phosphate metabolism and states it powers roughly the first ~15 seconds after stored ATP is used."
+              },
+              {
+                "points": 1,
+                "criterion": "Names the anaerobic pathway (glycolysis / lactic acid fermentation) and states it lasts roughly ~1 minute."
+              },
+              {
+                "points": 1,
+                "criterion": "Names aerobic cellular respiration and states it can be sustained long-term (as long as O2 is supplied)."
+              },
+              {
+                "points": 2,
+                "criterion": "States glycolysis/anaerobic pathway yields about 2 ATP per glucose."
+              },
+              {
+                "points": 1,
+                "criterion": "States aerobic respiration yields about 32–34 ATP per glucose."
+              }
+            ],
+            "model_answer": "The three mechanisms are: (1) Creatine phosphate metabolism, which quickly regenerates ATP and supplies roughly the first ~15 seconds of contraction after stored ATP runs out; (2) the anaerobic pathway (glycolysis with lactic acid fermentation), which lasts about 1 minute and is used for intense bursts; and (3) aerobic cellular respiration, which can be sustained for long periods as long as oxygen is supplied. Glycolysis (anaerobic) produces only about 2 ATP per glucose, whereas aerobic respiration produces about 32–34 ATP per glucose."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fr-06",
+          "question": {
+            "prompt": "Describe the chemical and electrical signalling that occurs at the neuromuscular junction from the arrival of the neuronal action potential to the initiation of an action potential in the muscle fibre. Name the ions and the neurotransmitter involved at each step.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that the neuronal action potential depolarizes the terminal, opening voltage-gated Ca2+ channels so Ca2+ enters the neuron."
+              },
+              {
+                "points": 1,
+                "criterion": "States that Ca2+ influx triggers vesicles to fuse with the membrane and release acetylcholine (ACh) into the synaptic cleft."
+              },
+              {
+                "points": 1,
+                "criterion": "States that ACh binds cholinergic receptors (ligand-gated ion channels) on the motor end-plate."
+              },
+              {
+                "points": 1,
+                "criterion": "States that Na+ enters through the opened ligand-gated channel, depolarizing the sarcolemma."
+              },
+              {
+                "points": 2,
+                "criterion": "States that the depolarization opens voltage-gated Na+ channels, generating/propagating an action potential along the sarcolemma."
+              }
+            ],
+            "model_answer": "When the neuronal action potential reaches the axon terminal, it depolarizes the membrane and opens voltage-gated calcium channels, allowing Ca2+ to enter the neuron. This Ca2+ influx triggers synaptic vesicles to fuse with the membrane and release the neurotransmitter acetylcholine (ACh) into the synaptic cleft. ACh diffuses across and binds to cholinergic receptors — ligand-gated ion channels — on the motor end-plate of the sarcolemma. This opens the channel, allowing Na+ to enter and depolarize the sarcolemma. The depolarization then opens voltage-gated sodium channels, generating an action potential that propagates (fires) along the entire sarcolemma."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fr-07",
+          "question": {
+            "prompt": "Skeletal muscle fibres are classified by speed of contraction and by their primary ATP source. Name the three fibre types, state whether each is fast or slow and its primary metabolic pathway, and explain what determines a fibre's speed of contraction at the molecular level (referring to myosin ATPase). Then predict whether an elite marathon runner or an elite sprinter would have a higher proportion of fast glycolytic fibres, with a brief justification.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names slow oxidative (SO): slow contraction, aerobic respiration."
+              },
+              {
+                "points": 1,
+                "criterion": "Names fast oxidative (FO): fast contraction, primarily aerobic (may switch to anaerobic)."
+              },
+              {
+                "points": 1,
+                "criterion": "Names fast glycolytic (FG): fast contraction, primarily anaerobic glycolysis."
+              },
+              {
+                "points": 1,
+                "criterion": "States the determinant of speed is how fast myosin ATPase hydrolyzes ATP (fast fibres hydrolyze roughly twice as quickly)."
+              },
+              {
+                "points": 1,
+                "criterion": "Predicts the sprinter has a higher proportion of FG fibres."
+              },
+              {
+                "points": 1,
+                "criterion": "Justifies: FG fibres produce rapid, powerful contractions needed for explosive/power output (whereas endurance favours oxidative fatigue-resistant fibres)."
+              }
+            ],
+            "model_answer": "The three fibre types are: Slow oxidative (SO) — slow contraction, uses aerobic respiration; Fast oxidative (FO) — fast contraction, primarily aerobic but can switch to anaerobic; Fast glycolytic (FG) — fast contraction, primarily anaerobic glycolysis. Speed depends on how quickly myosin's ATPase hydrolyzes ATP, with fast fibres hydrolyzing about twice as fast as slow fibres. A sprinter (power athlete) would have a higher proportion of FG fibres, because FG fibres produce rapid, forceful contractions ideal for short explosive movements, whereas an endurance athlete like a marathon runner relies on fatigue-resistant oxidative fibres."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fr-08",
+          "question": {
+            "prompt": "ATP is required at several points in muscle function, sometimes as an energy source and sometimes as a signalling molecule (ligand). For the cross-bridge cycle, explain (a) the step where ATP hydrolysis provides energy, (b) the step where ATP acts as a binding ligand rather than being hydrolyzed, and (c) name one additional relaxation-related process that requires ATP.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "States that ATP hydrolysis cocks the myosin head (changes its angle to the high-energy position) so it can bind actin — ATP used as an energy source."
+              },
+              {
+                "points": 2,
+                "criterion": "States that ATP binding (as a ligand, not its hydrolysis) causes the myosin head to detach from actin."
+              },
+              {
+                "points": 1,
+                "criterion": "Names an ATP-requiring relaxation process: pumping Ca2+ back into the sarcoplasmic reticulum (SR)."
+              }
+            ],
+            "model_answer": "(a) ATP hydrolysis provides energy to 're-cock' the myosin head, changing its angle into the high-energy cocked position so it can bind to actin — here ATP is used as an energy source. (b) The binding of a new ATP molecule to the myosin head (its binding as a ligand, not its hydrolysis) causes the head to detach from actin; without ATP this cannot occur, which is why rigor mortis develops after death. (c) During relaxation, ATP is also needed to power the pumps that transport Ca2+ back into the sarcoplasmic reticulum against its concentration gradient."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fr-09",
+          "question": {
+            "prompt": "Define the following four terms used in this unit and, in one sentence each, indicate their functional significance: (1) tetanus, (2) motor unit, (3) syncytium, (4) latch-bridges.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Tetanus: motor neuron signalling frequency so high the relaxation phase disappears, producing continuous/sustained contraction."
+              },
+              {
+                "points": 1,
+                "criterion": "Motor unit: a motor neuron and all the muscle fibres it innervates; size affects precision vs. force."
+              },
+              {
+                "points": 1,
+                "criterion": "Syncytium: a network of electrically coupled (gap-junction-linked) cardiac cells acting as one functional unit of contraction."
+              },
+              {
+                "points": 1,
+                "criterion": "Latch-bridges: cross-bridges in smooth muscle that stay coupled without Ca2+/ATP, maintaining tone with little energy."
+              }
+            ],
+            "model_answer": "1) Tetanus: when the frequency of motor neuron signalling is so high that the relaxation phase disappears completely, producing a continuous, sustained contraction. 2) Motor unit: a single motor neuron together with all the muscle fibres it innervates; small units allow fine control while large units produce forceful gross movement. 3) Syncytium: a network of cardiac muscle cells electrically coupled through gap junctions so they act as a single functional unit of contraction. 4) Latch-bridges: a subset of myosin–actin cross-bridges in smooth muscle that remain coupled even without continued Ca2+ or ATP, maintaining muscle tone (e.g. in sphincters) with minimal energy use."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u14-advanced-fr-10",
+          "question": {
+            "prompt": "Excitation-contraction coupling links the muscle action potential to contraction via calcium. Trace how the action potential leads to Ca2+ release and contraction, then explain what must happen for the muscle to relax. Include the role of the T-tubules, sarcoplasmic reticulum, and tropomyosin.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States the action potential travels down the T-tubules into the interior of the fibre."
+              },
+              {
+                "points": 1,
+                "criterion": "States this opens voltage-gated Ca2+ channels in the SR, releasing Ca2+ into the sarcoplasm."
+              },
+              {
+                "points": 1,
+                "criterion": "States Ca2+ binds troponin, moving tropomyosin off the myosin-binding sites so cross-bridges can form (contraction)."
+              },
+              {
+                "points": 1,
+                "criterion": "States relaxation begins when motor neuron signalling stops / membrane repolarizes and SR Ca2+ channels close."
+              },
+              {
+                "points": 1,
+                "criterion": "States Ca2+ is pumped back into the SR (requires ATP)."
+              },
+              {
+                "points": 1,
+                "criterion": "States tropomyosin then reshields the binding sites and myosin releases actin, so the muscle relaxes."
+              }
+            ],
+            "model_answer": "The action potential sweeps along the sarcolemma and down the T-tubules into the fibre's interior. This opens voltage-gated Ca2+ channels in the sarcoplasmic reticulum (SR), releasing Ca2+ into the sarcoplasm. The Ca2+ binds troponin, which changes shape and pulls tropomyosin off the myosin-binding sites on actin, allowing cross-bridges to form and the muscle to contract (with ATP powering cross-bridge cycling). For relaxation, motor neuron signalling stops and the membrane repolarizes, closing the SR Ca2+ channels. Ca2+ is then actively pumped back into the SR (using ATP). With Ca2+ gone, troponin/tropomyosin reshields the binding sites, myosin releases actin, and the muscle returns to its resting length and relaxes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    }
+  }
+}

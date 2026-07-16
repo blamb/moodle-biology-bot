@@ -1,0 +1,3018 @@
+{
+  "unit_no": 2,
+  "generated_at": "2026-07-16T16:43:52.975Z",
+  "levels": {
+    "basic": {
+      "mc": [
+        {
+          "id": "u2-basic-mc-01",
+          "question": {
+            "stem": "Which type of fluid acts as a lubricant at synovial joints in your body?",
+            "options": [
+              "Mucus",
+              "Synovial fluid",
+              "Pleural fluid",
+              "Cerebrospinal fluid",
+              "Plasma"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Synovial fluid is the thick fluid that lubricates synovial joints, allowing them to move smoothly.\n\n**Why the other options are wrong:**\n- **(A)** Mucus lubricates the digestive tract and other surfaces, not joints.\n- **(C)** Pleural fluid allows the lungs to expand and recoil without friction.\n- **(D)** Cerebrospinal fluid cushions the central nervous system.\n- **(E)** Plasma is the fluid portion of blood, not a joint lubricant."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-02",
+          "question": {
+            "stem": "Which of the following is the single largest water-containing compartment in the body?",
+            "options": [
+              "Interstitial fluid",
+              "Plasma",
+              "Intracellular fluid",
+              "Lymph",
+              "Cerebrospinal fluid"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Intracellular fluid makes up about 55% of the body's total water, more than any other compartment.\n\n**Why the other options are wrong:**\n- **(A)** Interstitial fluid is the largest portion of extracellular fluid but is smaller than intracellular fluid overall.\n- **(B)** Plasma is only about 16% of the extracellular fluid.\n- **(D)** Lymph is one of the minor extracellular fluids.\n- **(E)** Cerebrospinal fluid is one of the minor extracellular fluids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-03",
+          "question": {
+            "stem": "Which of the following is a function performed by ions (electrolytes) in the body?",
+            "options": [
+              "Serving as the primary source of ATP",
+              "Assisting in the transmission of electrical impulses along cell membranes",
+              "Acting as the solvent in body fluids",
+              "Forming the covalent backbone of water molecules",
+              "Providing the main lubricant in synovial joints"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Ions such as sodium and potassium assist in transmitting electrical impulses along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(A)** ATP is a nucleotide energy carrier, not produced by ions themselves.\n- **(C)** Water, not ions, is the solvent in body fluids.\n- **(D)** Water molecules are formed by covalent bonds between hydrogen and oxygen, not ions.\n- **(E)** Synovial fluid, based on water, is the joint lubricant, not ions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-04",
+          "question": {
+            "stem": "In a saltwater solution, water is best described as the:",
+            "options": [
+              "Solute",
+              "Solvent",
+              "Ion",
+              "Buffer",
+              "Electrolyte"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The solvent is the substance that dissolves the solute; water dissolves salt, so water is the solvent.\n\n**Why the other options are wrong:**\n- **(A)** The solute is the dissolved substance (salt), not water.\n- **(C)** An ion is a charged atom, such as Na+ or Cl-, not water.\n- **(D)** A buffer resists pH change and is not the same as the solvent.\n- **(E)** An electrolyte is an ion-containing solution, not the solvent itself."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-05",
+          "question": {
+            "stem": "Water helps regulate body temperature primarily by functioning as a:",
+            "options": [
+              "Buffer",
+              "Solute",
+              "Heat sink",
+              "Conjugate base",
+              "Electrolyte"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Water acts as a heat sink, absorbing heat from metabolic reactions and transporting it to the body surface without a large rise in its own temperature.\n\n**Why the other options are wrong:**\n- **(A)** A buffer resists changes in pH, not temperature.\n- **(B)** A solute is a dissolved substance, unrelated to temperature regulation as a role of water.\n- **(D)** A conjugate base is part of a buffer system for pH, not heat regulation.\n- **(E)** An electrolyte is an ion-containing solution, not water's heat-regulating role."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-06",
+          "question": {
+            "stem": "A buffer is best defined as a solution of a:",
+            "options": [
+              "Strong acid and a strong base",
+              "Weak acid and its conjugate base",
+              "Solvent and its solute",
+              "Salt and pure water",
+              "Cation and its matching anion"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A buffer is a solution of a weak acid and its conjugate base, which allows it to resist sudden changes in pH.\n\n**Why the other options are wrong:**\n- **(A)** A strong acid and strong base fully dissociate and would not buffer effectively.\n- **(C)** A solvent and solute simply describe a solution, not a buffer.\n- **(D)** Salt in pure water forms a neutral solution without buffering capacity.\n- **(E)** A cation and anion pair describe a salt, not a buffer system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-07",
+          "question": {
+            "stem": "According to the pH scale, a solution with a pH of 4 compared to a solution with a pH of 5 has a hydrogen ion concentration that is:",
+            "options": [
+              "Half as high",
+              "The same",
+              "10 times higher",
+              "100 times higher",
+              "5 times lower"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Each pH unit represents a tenfold change, so a pH 4 solution has 10 times the H+ concentration of a pH 5 solution.\n\n**Why the other options are wrong:**\n- **(A)** Lower pH means more, not less, H+.\n- **(B)** Different pH values have different H+ concentrations.\n- **(D)** A 100-fold difference would correspond to a two-unit pH change.\n- **(E)** Lower pH means higher H+, not lower."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-08",
+          "question": {
+            "stem": "Which ion is present at higher concentration inside cells (intracellular fluid) than in the extracellular fluid?",
+            "options": [
+              "Sodium (Na+)",
+              "Chloride (Cl-)",
+              "Potassium (K+)",
+              "Bicarbonate (HCO3-)",
+              "Calcium (Ca2+)"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Intracellular fluid has high concentrations of potassium (and phosphate), whereas extracellular fluid is high in sodium and chloride.\n\n**Why the other options are wrong:**\n- **(A)** Sodium is concentrated in the extracellular fluid.\n- **(B)** Chloride is concentrated in the extracellular fluid.\n- **(D)** Bicarbonate is a major extracellular anion.\n- **(E)** Calcium is largely stored in bone and not the defining intracellular ion here."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-09",
+          "question": {
+            "stem": "Which of the following correctly pairs a body fluid compartment with its location?",
+            "options": [
+              "Intracellular fluid — the fluid between cells",
+              "Interstitial fluid — the fluid within cells",
+              "Plasma — the fluid portion of blood",
+              "Cytosol — the fluid found in blood vessels",
+              "Extracellular fluid — the fluid found only inside cells"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Plasma is the fluid portion of blood and is a component of the extracellular fluid.\n\n**Why the other options are wrong:**\n- **(A)** Intracellular fluid is inside cells, not between them.\n- **(B)** Interstitial fluid surrounds cells; it is not inside them.\n- **(D)** Cytosol is the fluid inside cells, not in blood vessels.\n- **(E)** Extracellular fluid is found outside cells, not inside them."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-10",
+          "question": {
+            "stem": "During dehydration synthesis (condensation), what is released as a byproduct as two molecules become joined by a covalent bond?",
+            "options": [
+              "A hydrogen ion",
+              "A molecule of water",
+              "A hydroxyl ion only",
+              "A molecule of ATP",
+              "A phosphate group"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** In dehydration synthesis, one reactant gives up a hydrogen and the other a hydroxyl group, which combine to release a molecule of water as the covalent bond forms.\n\n**Why the other options are wrong:**\n- **(A)** A single hydrogen ion alone is not the released product; the hydrogen and hydroxyl combine into water.\n- **(C)** The hydroxyl combines with hydrogen to form water rather than being released alone.\n- **(D)** ATP is not a byproduct of dehydration synthesis.\n- **(E)** A phosphate group is not released in a general dehydration synthesis reaction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-11",
+          "question": {
+            "stem": "In a saltwater solution where sodium and chloride ions are dissolved in water, which component is acting as the solvent?",
+            "options": [
+              "The sodium ions",
+              "The chloride ions",
+              "The water",
+              "The dissolved gases",
+              "The combined salt crystal"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** In a solution, the solvent is the substance that dissolves the solute; here water dissolves the ions, so water is the solvent.\n\n**Why the other options are wrong:**\n- **(A)** Sodium ions are a solute, the substance dissolved in the solvent.\n- **(B)** Chloride ions are a solute, not the dissolving medium.\n- **(D)** Dissolved gases are not the dissolving medium in this example.\n- **(E)** The salt crystal dissociates into solutes; it is not the solvent."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-12",
+          "question": {
+            "stem": "What distinguishes a strong acid from a weak acid in aqueous solution?",
+            "options": [
+              "A strong acid releases hydroxyl ions while a weak acid releases hydrogen ions",
+              "A strong acid ionizes completely, releasing all of its H+, while a weak acid does not ionize completely",
+              "A strong acid has a pH above 7 while a weak acid has a pH below 7",
+              "A strong acid accepts protons while a weak acid donates protons",
+              "A strong acid contains no hydrogen while a weak acid contains hydrogen"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Strong acids ionize completely and release all their H+ (e.g., HCl), whereas weak acids only partially ionize (e.g., acetic acid).\n\n**Why the other options are wrong:**\n- **(A)** Both strong and weak acids release hydrogen ions; hydroxyl ions come from bases.\n- **(C)** Both acids are below pH 7; strength refers to degree of ionization, not being above 7.\n- **(D)** Acids donate protons; accepting protons describes bases.\n- **(E)** Both acids contain hydrogen that they release as H+."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-13",
+          "question": {
+            "stem": "According to the unit, why is a positively charged hydrogen ion (H+) simply referred to as a \"proton\"?",
+            "options": [
+              "Because it has gained an extra electron",
+              "Because a hydrogen atom has one proton and one electron, so losing the electron leaves only a proton",
+              "Because it contains one proton and one neutron",
+              "Because it is the smallest neutron in the body",
+              "Because it carries a negative charge like an electron"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Hydrogen's common isotope has one proton and one electron; when it loses the electron to become H+, only the single proton remains.\n\n**Why the other options are wrong:**\n- **(A)** H+ has lost, not gained, its electron.\n- **(C)** The most common hydrogen isotope has no neutrons.\n- **(D)** H+ is a proton, not a neutron.\n- **(E)** H+ carries a positive charge, not a negative one."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-14",
+          "question": {
+            "stem": "Which of the following is a function of ions (electrolytes) in the body as described in this unit?",
+            "options": [
+              "Serving as the primary genetic material",
+              "Assisting in the transmission of electrical impulses in neurons and muscles",
+              "Directly breaking hydrogen bonds to cool the body",
+              "Acting as the main solvent for body fluids",
+              "Producing water during hydrolysis reactions"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Ions such as sodium and potassium assist in transmitting electrical impulses along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(A)** Genetic material is nucleic acid, not a role of ions listed here.\n- **(C)** Cooling the body via hydrogen bonds is a function of water, not ions.\n- **(D)** Water, not ions, is the main solvent of body fluids.\n- **(E)** Water is a product of dehydration synthesis and a reactant in hydrolysis, not a role of ions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-15",
+          "question": {
+            "stem": "Which fluid compartment holds the largest proportion of water in the human body?",
+            "options": [
+              "Plasma",
+              "Interstitial fluid",
+              "Intracellular fluid",
+              "Cerebrospinal fluid",
+              "Lymph"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Intracellular fluid makes up about 55% of the body's water, the largest single compartment.\n\n**Why the other options are wrong:**\n- **(A)** Plasma is only about 16% of extracellular fluid (~7% of total water).\n- **(B)** Interstitial fluid is the largest extracellular portion but still less than intracellular fluid overall.\n- **(D)** Cerebrospinal fluid is a minor extracellular fluid.\n- **(E)** Lymph is a minor component of extracellular fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-16",
+          "question": {
+            "stem": "Which mechanism maintains the high extracellular sodium and high intracellular potassium concentrations in body fluids?",
+            "options": [
+              "Passive leaking of ions through membrane pores",
+              "Sodium-potassium pumps powered by ATP",
+              "Dehydration synthesis reactions",
+              "Buffering by bicarbonate ions",
+              "Evaporation of water at the skin surface"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Sodium-potassium pumps use ATP energy to pump sodium out of and potassium into cells, maintaining these gradients.\n\n**Why the other options are wrong:**\n- **(A)** Leaking works against the gradient and would erode it, not maintain it.\n- **(C)** Dehydration synthesis is a chemical reaction unrelated to ion pumping.\n- **(D)** Bicarbonate buffering regulates pH, not sodium/potassium gradients.\n- **(E)** Evaporation is a cooling mechanism, not an ion-transport mechanism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-17",
+          "question": {
+            "stem": "Compared with intracellular fluid, the extracellular fluid (plasma and interstitial fluid) is characterized by:",
+            "options": [
+              "High concentrations of potassium and phosphate",
+              "High concentrations of sodium and chloride",
+              "Higher magnesium than any other compartment",
+              "A complete absence of all ions",
+              "Identical composition to intracellular fluid"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Extracellular fluids contain high concentrations of sodium and chloride ions.\n\n**Why the other options are wrong:**\n- **(A)** Potassium and phosphate are elevated inside cells (intracellular fluid).\n- **(C)** Magnesium is elevated in intracellular fluid, not extracellular.\n- **(D)** Extracellular fluid is rich in ions, not free of them.\n- **(E)** Extracellular and intracellular fluid compositions differ significantly."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-18",
+          "question": {
+            "stem": "A buffer is best described as:",
+            "options": [
+              "A strong acid that fully ionizes in water",
+              "A solution of a weak acid and its conjugate base that resists sudden pH changes",
+              "A strong base that releases all its hydroxyl ions",
+              "A pure water solution at pH 7",
+              "An enzyme that produces hydrogen ions"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A buffer is a solution of a weak acid and its conjugate base that resists sudden changes in acidity or alkalinity.\n\n**Why the other options are wrong:**\n- **(A)** A strong acid does not resist pH change; it drives it.\n- **(C)** A strong base is not a buffer system.\n- **(D)** Pure water is not a buffer and cannot resist pH shifts.\n- **(E)** Enzymes are proteins, not defined here as buffers producing H+."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-19",
+          "question": {
+            "stem": "Which of the following is described in this unit as a function of water in the body?",
+            "options": [
+              "Storing genetic information",
+              "Acting as a heat sink that absorbs heat without a large temperature increase",
+              "Catalyzing all metabolic reactions as an enzyme",
+              "Serving as the primary building block of bone",
+              "Directly generating electrical impulses in neurons"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Water acts as a heat sink, absorbing and dissipating heat without experiencing a large temperature increase.\n\n**Why the other options are wrong:**\n- **(A)** Genetic information is stored in nucleic acids, not water.\n- **(C)** Enzymes are proteins; water is not an enzyme.\n- **(D)** Bone is strengthened by minerals like calcium and phosphate, not water.\n- **(E)** Ions, not water itself, drive electrical impulses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-20",
+          "question": {
+            "stem": "Which term refers specifically to the fluid portion of the blood?",
+            "options": [
+              "Cytosol",
+              "Lymph",
+              "Plasma",
+              "Synovial fluid",
+              "Interstitial fluid"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Plasma is the fluid portion of the blood and a subdivision of extracellular fluid.\n\n**Why the other options are wrong:**\n- **(A)** Cytosol is the fluid portion inside cells (intracellular fluid).\n- **(B)** Lymph is excess interstitial fluid returning to the blood via lymphatic vessels.\n- **(D)** Synovial fluid lubricates joints, not the fluid of blood.\n- **(E)** Interstitial fluid surrounds cells outside the bloodstream."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-21",
+          "question": {
+            "stem": "Which of the following is a function of ions (electrolytes) in the body?",
+            "options": [
+              "Transmitting electrical impulses along neuron and muscle cell membranes",
+              "Serving as the primary energy currency for cellular reactions",
+              "Carrying oxygen bound within red blood cells",
+              "Forming the hydrogen bonds that make water a good heat sink",
+              "Splitting covalent bonds during dehydration synthesis"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Ions such as sodium and potassium assist in transmitting electrical impulses along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(B)** ATP, not ions, is the primary energy currency.\n- **(C)** Oxygen is carried by hemoglobin, a protein, not by ions themselves.\n- **(D)** Hydrogen bonds between water molecules give water its heat-sink property, not ions.\n- **(E)** Dehydration synthesis forms bonds and releases water; it is not a function of ions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-22",
+          "question": {
+            "stem": "The fluid portion found within cells, also called cytosol, is referred to as:",
+            "options": [
+              "Interstitial fluid",
+              "Plasma",
+              "Intracellular fluid",
+              "Lymph",
+              "Synovial fluid"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Intracellular fluid is the water found within cells and is the principal component of the cytosol/cytoplasm.\n\n**Why the other options are wrong:**\n- **(A)** Interstitial fluid surrounds cells and is extracellular.\n- **(B)** Plasma is the fluid portion of blood and is extracellular.\n- **(D)** Lymph is extracellular fluid returning to the blood via lymphatic vessels.\n- **(E)** Synovial fluid lubricates joints and is extracellular."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-23",
+          "question": {
+            "stem": "During a hydrolysis reaction, what happens to a molecule of water and the bond between two monomers?",
+            "options": [
+              "Water is released as a byproduct as a new covalent bond forms",
+              "A water molecule is split and its parts break a covalent bond",
+              "Water evaporates while a hydrogen bond forms",
+              "A water molecule strengthens an existing ionic bond",
+              "Water is consumed to build a larger polymer without breaking bonds"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** In hydrolysis, a water molecule is split into H and OH, which are added to break the covalent bond between two monomers.\n\n**Why the other options are wrong:**\n- **(A)** This describes dehydration synthesis, where water is released and a bond forms.\n- **(C)** Hydrolysis breaks a covalent bond, not a hydrogen bond, and involves no evaporation.\n- **(D)** Hydrolysis breaks a covalent bond; it does not strengthen ionic bonds.\n- **(E)** Hydrolysis breaks bonds rather than building larger polymers."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-24",
+          "question": {
+            "stem": "According to the definition given in this unit, an acid is a substance that:",
+            "options": [
+              "Releases hydroxyl ions (OH–) in solution",
+              "Releases hydrogen ions (H+) in solution",
+              "Accepts hydrogen ions (H+) from solution",
+              "Has a pH greater than 7",
+              "Does not dissociate in water"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** An acid is defined as a substance that releases hydrogen ions (H+, which are protons) in solution.\n\n**Why the other options are wrong:**\n- **(A)** Releasing hydroxyl ions describes a base.\n- **(C)** Accepting H+ describes a base.\n- **(D)** A pH greater than 7 is basic, not acidic.\n- **(E)** Acids do dissociate in water; strong acids dissociate completely."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-25",
+          "question": {
+            "stem": "A buffer is best described as a solution of:",
+            "options": [
+              "A strong acid and a strong base",
+              "A weak acid and its conjugate base",
+              "Two salts that fully dissociate",
+              "Pure water and dissolved oxygen",
+              "A solvent with no dissolved solutes"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A buffer is a solution of a weak acid and its conjugate base that resists sudden changes in pH.\n\n**Why the other options are wrong:**\n- **(A)** Strong acids and bases dissociate completely and cannot buffer pH.\n- **(C)** Fully dissociating salts do not resist pH changes as a buffer does.\n- **(D)** Pure water with oxygen is not a buffer system.\n- **(E)** A solvent alone provides no buffering capacity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-26",
+          "question": {
+            "stem": "Which fluid compartment holds the largest proportion of the body's total water?",
+            "options": [
+              "Plasma",
+              "Interstitial fluid",
+              "Intracellular fluid",
+              "Cerebrospinal fluid",
+              "Lymph"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Intracellular fluid makes up about 55% of total body water, the largest single compartment.\n\n**Why the other options are wrong:**\n- **(A)** Plasma is only about 7% of body water.\n- **(B)** Interstitial fluid is about 36% of body water, second largest but not the largest.\n- **(D)** Cerebrospinal fluid is a small fraction of extracellular fluid.\n- **(E)** Lymph is a minor extracellular fluid, not the largest compartment."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-27",
+          "question": {
+            "stem": "Which fluid lubricates the movement of synovial joints?",
+            "options": [
+              "Pleural fluid",
+              "Cerebrospinal fluid",
+              "Synovial fluid",
+              "Pericardial fluid",
+              "Plasma"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Synovial fluid is the thick fluid that lubricates synovial joints.\n\n**Why the other options are wrong:**\n- **(A)** Pleural fluid lubricates the pleural membranes around the lungs.\n- **(B)** Cerebrospinal fluid cushions the brain and spinal cord.\n- **(D)** Pericardial fluid allows the heart to move without friction.\n- **(E)** Plasma is the fluid portion of blood, not a joint lubricant."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-28",
+          "question": {
+            "stem": "Which of the following describes water's role as a heat sink in the body?",
+            "options": [
+              "It absorbs heat from the core and helps transport it to peripheral tissues and skin",
+              "It chemically bonds with metabolic wastes to neutralize them",
+              "It donates protons to lower body pH",
+              "It provides the covalent bonds that store ATP energy",
+              "It cushions the developing fetus from physical trauma"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** As a heat sink, water in blood absorbs heat from the warm core and carries it to peripheral capillaries and skin for radiant and evaporative loss.\n\n**Why the other options are wrong:**\n- **(B)** Water does not chemically bond with wastes to neutralize them as its heat-sink role.\n- **(C)** Donating protons describes an acid, not water's heat-sink function.\n- **(D)** ATP energy is stored in its bonds, which is unrelated to water as a heat sink.\n- **(E)** Cushioning a fetus is water's protective/cushioning role, not its heat-sink role."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-29",
+          "question": {
+            "stem": "What distinguishes a strong acid from a weak acid?",
+            "options": [
+              "A strong acid releases hydroxyl ions while a weak acid releases hydrogen ions",
+              "A strong acid ionizes completely while a weak acid does not release all of its H+",
+              "A strong acid has a pH above 7 while a weak acid has a pH below 7",
+              "A strong acid contains a buffer while a weak acid does not",
+              "A strong acid dissolves only in nonpolar solvents while a weak acid dissolves in water"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A strong acid such as HCl ionizes completely, releasing all its H+, whereas a weak acid such as acetic acid does not release all of its hydrogen ions.\n\n**Why the other options are wrong:**\n- **(A)** Both acids release H+; releasing OH– describes bases.\n- **(C)** Both strong and weak acids have pH below 7; that is not the distinction.\n- **(D)** A buffer is a separate concept and does not define acid strength.\n- **(E)** Both acids dissolve in water; solvent polarity is not the distinguishing factor."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-mc-30",
+          "question": {
+            "stem": "On the pH scale, a solution with a pH of 4 compared to a solution with a pH of 5 has:",
+            "options": [
+              "Ten times higher H+ concentration",
+              "Ten times lower H+ concentration",
+              "The same H+ concentration",
+              "One hundred times higher H+ concentration",
+              "Half the H+ concentration"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Each step down the pH scale represents a tenfold increase in H+ concentration, so pH 4 has ten times more H+ than pH 5.\n\n**Why the other options are wrong:**\n- **(B)** Lower pH means more, not less, H+.\n- **(C)** Different pH values necessarily have different H+ concentrations.\n- **(D)** A hundredfold difference would correspond to a two-unit pH change (e.g., pH 4 vs pH 6).\n- **(E)** Halving is not how the logarithmic pH scale works."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u2-basic-tf-01",
+          "question": {
+            "stem": "Intracellular fluid has a high concentration of potassium ions, whereas extracellular fluid has a high concentration of sodium ions.",
+            "correct": true,
+            "explanation": "True. The intracellular fluid contains elevated potassium (and phosphate), while the extracellular fluid contains high concentrations of sodium and chloride. These gradients are maintained by sodium-potassium pumps."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-02",
+          "question": {
+            "stem": "In hydrolysis, a molecule of water is released as a byproduct when two molecules are joined together.",
+            "correct": false,
+            "explanation": "False. This describes dehydration synthesis (condensation), which releases water as a byproduct while forming a covalent bond. Hydrolysis is the reverse: a water molecule is consumed to split a covalent bond."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-03",
+          "question": {
+            "stem": "Most body fluids, including blood, are maintained at a pH of about 7.35 to 7.45.",
+            "correct": true,
+            "explanation": "True. Body cells and blood are kept within the narrow, slightly basic range of 7.35 to 7.45, regulated by the respiratory system, urinary system, and buffers."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-04",
+          "question": {
+            "stem": "One function of ions in the body is to assist in the transmission of electrical impulses along cell membranes in neurons and muscles.",
+            "correct": true,
+            "explanation": "True. Ions such as sodium and potassium enable electrical signalling in neurons and muscles, among other roles like osmotic balance, stabilizing proteins, releasing hormones, and strengthening bones and teeth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-05",
+          "question": {
+            "stem": "In a solution, the solvent is the substance that dissolves, and the solute is the substance that does the dissolving.",
+            "correct": false,
+            "explanation": "False. It is reversed: the solvent is the substance that does the dissolving (e.g., water), and the solute is the substance that dissolves (e.g., salt or sugar)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-06",
+          "question": {
+            "stem": "Intracellular fluid is the largest water compartment in the body.",
+            "correct": true,
+            "explanation": "True. Intracellular fluid makes up about 55% of the body's water, more than the extracellular fluid (~45%), of which interstitial fluid is the largest single portion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-07",
+          "question": {
+            "stem": "The joining of two molecules with water produced as a byproduct is called dehydration synthesis.",
+            "correct": true,
+            "explanation": "True. Dehydration synthesis (also called a condensation reaction) links two molecules by a covalent bond, releasing a molecule of water as a byproduct."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-08",
+          "question": {
+            "stem": "Cytosol is a term used to describe the fluid portion of blood.",
+            "correct": false,
+            "explanation": "False. Cytosol refers to the fluid portion of the intracellular fluid found within cells (cytoplasm). The fluid portion of blood is called plasma."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-09",
+          "question": {
+            "stem": "Water acts as a heat sink, absorbing heat from the body's core and helping to dissipate it at the skin surface.",
+            "correct": true,
+            "explanation": "True. Water in the blood absorbs heat from the warm core and carries it to peripheral capillaries and the skin, where it is lost via radiant heat and evaporation of sweat."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-10",
+          "question": {
+            "stem": "Body fluids are neutral in charge, with cations and anions balancing one another both inside and outside of cells.",
+            "correct": true,
+            "explanation": "True. Body fluids maintain overall electrical neutrality: positive ions (cations) and negative ions (anions) are balanced within both the intracellular and extracellular fluids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-11",
+          "question": {
+            "stem": "Sodium ions are found in higher concentration in the extracellular fluid, while potassium ions are more concentrated inside cells.",
+            "correct": true,
+            "explanation": "Extracellular fluid is rich in sodium (Na+) and chloride, whereas intracellular fluid is rich in potassium (K+) and phosphate. These gradients are maintained by sodium-potassium pumps that use ATP to move sodium out and potassium into cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-12",
+          "question": {
+            "stem": "In a solution, the solute is the substance that dissolves the other component.",
+            "correct": false,
+            "explanation": "This is reversed. The solvent is the substance that dissolves the other; the solute is the substance that dissolves in the solvent. For example, in saltwater, water is the solvent and sodium/chloride ions are the solutes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-13",
+          "question": {
+            "stem": "One function of water in the body is to act as a heat sink, absorbing heat generated by metabolic reactions without a large increase in its own temperature.",
+            "correct": true,
+            "explanation": "Water is an excellent heat sink because the hydrogen bonds between water molecules require a large amount of energy (including heat) to break. This allows water to absorb metabolic heat and help regulate body temperature."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-14",
+          "question": {
+            "stem": "Interstitial fluid is the largest fluid compartment in the human body.",
+            "correct": false,
+            "explanation": "Intracellular fluid (~55% of body water) is the largest compartment. Interstitial fluid is the largest subdivision of the extracellular fluid (~80% of ECF, ~36% of total body water), but it is smaller than the intracellular compartment."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-15",
+          "question": {
+            "stem": "Synovial fluid lubricates the movement of joints, while pleural fluid allows the lungs to expand and recoil without friction.",
+            "correct": true,
+            "explanation": "Both are lubricating roles of water. Synovial fluid lubricates synovial joints, and pleural fluid fills the space between pleural membranes so the lungs can move without rubbing against surrounding structures."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-16",
+          "question": {
+            "stem": "A homogeneous solution is one in which the solute molecules are distributed evenly throughout the solvent.",
+            "correct": true,
+            "explanation": "In a homogeneous solution, the solute is spread uniformly, so the ratio of solute to solvent is the same throughout. For example, sugar stirred into water dissolves evenly so that any portion of the solution has the same concentration."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-17",
+          "question": {
+            "stem": "A strong acid, such as hydrochloric acid (HCl), releases all of its hydrogen ions in solution, whereas a weak acid does not ionize completely.",
+            "correct": true,
+            "explanation": "Strong acids ionize completely, releasing all their H+. Weak acids like acetic acid (vinegar) release only some H+, leaving some bonded within the compound in solution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-18",
+          "question": {
+            "stem": "The pH of the body's cells and blood is normally maintained in a slightly acidic range of about 6.5 to 6.9.",
+            "correct": false,
+            "explanation": "Body fluids are maintained at a slightly basic pH of about 7.35 to 7.45. This narrow range is regulated by the respiratory system, urinary system, and buffers such as the carbonic acid–bicarbonate system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-19",
+          "question": {
+            "stem": "In dehydration synthesis, a molecule of water is released as two molecules form a covalent bond.",
+            "correct": true,
+            "explanation": "In dehydration synthesis (condensation), one reactant gives up a hydrogen and the other a hydroxyl group; these combine to form water as the two molecules become covalently bonded. Hydrolysis is the reverse, using water to break a covalent bond."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-20",
+          "question": {
+            "stem": "The percentage of body mass made up of water is highest in infants and declines with age.",
+            "correct": true,
+            "explanation": "Body water content ranges from about 75% of body mass in infants down to about 45% in old age, due to changes in body composition and nutrient storage across the lifespan."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-21",
+          "question": {
+            "stem": "Cerebrospinal fluid, which is water-based, helps cushion the brain and spinal cord from physical trauma.",
+            "correct": true,
+            "explanation": "One of water's functions is to protect the central nervous system. Cerebrospinal fluid surrounds and fills openings within the brain and spinal cord, cushioning them from physical trauma."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-22",
+          "question": {
+            "stem": "In a saltwater solution, sodium and chloride ions act as the solvent while water acts as the solute.",
+            "correct": false,
+            "explanation": "This is reversed. Water is the solvent (the substance that dissolves others), and the sodium and chloride ions are the solutes (the substances that dissolve in the solvent)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-23",
+          "question": {
+            "stem": "A strong acid, such as hydrochloric acid (HCl), releases all of its hydrogen ions in solution because it ionizes completely.",
+            "correct": true,
+            "explanation": "Strong acids ionize completely, releasing all their H+ into solution. HCl is a classic example, whereas weak acids like acetic acid do not release all of their hydrogen ions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-24",
+          "question": {
+            "stem": "A solution consists of a solute dissolved in a solvent, and in a homogeneous solution the solute is distributed evenly throughout.",
+            "correct": true,
+            "explanation": "A solution is made of a solvent (the dissolving medium) and a solute (the dissolved substance). In a homogeneous solution, the solute molecules are distributed evenly throughout the solvent."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-25",
+          "question": {
+            "stem": "Plasma is the largest water-containing compartment in the human body.",
+            "correct": false,
+            "explanation": "The largest compartment is intracellular fluid (~55% of body water). Plasma is only about 16% of the extracellular fluid, and thus roughly 7% of total body water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-26",
+          "question": {
+            "stem": "In hydrolysis, a molecule of water is added to split a covalent bond between two subunits.",
+            "correct": true,
+            "explanation": "Hydrolysis uses water to break a covalent bond: the water splits into H and OH, which attach to the two separated portions. This is the reverse of dehydration synthesis, which releases water when forming a covalent bond."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-27",
+          "question": {
+            "stem": "Water serves only as a lubricant in the body and has no role in temperature regulation.",
+            "correct": false,
+            "explanation": "Water has multiple biological roles, including acting as a heat sink to absorb and dissipate heat, in addition to serving as a lubricant, a cushion, a component of solutions, and a participant in chemical reactions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-28",
+          "question": {
+            "stem": "The high potassium concentration inside cells and high sodium concentration outside cells are maintained by sodium-potassium pumps that use ATP.",
+            "correct": true,
+            "explanation": "Sodium-potassium pumps in the cell membrane use energy from ATP to pump sodium out of the cell and potassium into it, maintaining the characteristic ion distribution between intracellular and extracellular fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-29",
+          "question": {
+            "stem": "Cytosol is the term for the fluid portion of intracellular fluid found within cells.",
+            "correct": true,
+            "explanation": "Cytosol (the fluid part of cytoplasm) is the intracellular fluid located within cells. This term is part of the essential vocabulary for navigating this unit's discussion of fluid compartments."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-tf-30",
+          "question": {
+            "stem": "In hydrolysis, a molecule of water is added to break a covalent bond between two monomers.",
+            "correct": true,
+            "explanation": "True. In hydrolysis, water splits into a hydrogen atom and a hydroxyl group, each bonding to one of the now-separated portions, breaking the covalent bond. Dehydration synthesis is the reverse, producing water as bonds form."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u2-basic-fitb-01",
+          "question": {
+            "stem": "The single largest fluid compartment in the body, comprising about 55% of total body water and located within cells, is the ____________.",
+            "answer": "intracellular fluid",
+            "accepted_synonyms": [
+              "ICF",
+              "intracellular fluid compartment"
+            ],
+            "explanation": "Intracellular fluid makes up about 55% of total body water, the largest of all the compartments."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-02",
+          "question": {
+            "stem": "A solution of a weak acid and its conjugate base that resists sudden changes in the pH of body fluids is called a ____________.",
+            "answer": "buffer",
+            "accepted_synonyms": [
+              "buffers",
+              "buffer system",
+              "buffer solution"
+            ],
+            "explanation": "A buffer is a weak acid/conjugate base pair that binds excess H+ or contributes H+ to keep body pH near 7.35–7.45."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-03",
+          "question": {
+            "stem": "The fluid found within and around the central nervous system, which cushions the brain and spinal cord from physical trauma, is ____________.",
+            "answer": "cerebrospinal fluid",
+            "accepted_synonyms": [
+              "CSF",
+              "cerebro-spinal fluid"
+            ],
+            "explanation": "Water-based cerebrospinal fluid surrounds and fills openings of the CNS, cushioning it from trauma."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-04",
+          "question": {
+            "stem": "A substance that releases hydrogen ions (H+) in solution is defined as a(n) ____________.",
+            "answer": "acid",
+            "accepted_synonyms": [
+              "acids"
+            ],
+            "explanation": "By definition, an acid releases H+ in solution; strong acids ionize completely while weak acids do not."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-05",
+          "question": {
+            "stem": "The fluid portion inside a cell, which is the principal component of the cytoplasm, is called ____________.",
+            "answer": "cytosol",
+            "accepted_synonyms": [
+              "cytosolic fluid"
+            ],
+            "explanation": "Cytosol is the intracellular fluid that makes up the fluid portion of the cytoplasm."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-06",
+          "question": {
+            "stem": "The high concentration of sodium outside cells and potassium inside cells is maintained by the sodium-potassium ____________.",
+            "answer": "pump",
+            "accepted_synonyms": [
+              "pumps",
+              "sodium-potassium pump",
+              "Na/K pump",
+              "sodium potassium pump"
+            ],
+            "explanation": "Sodium-potassium pumps use ATP to move sodium out of and potassium into cells, maintaining these concentration differences."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-07",
+          "question": {
+            "stem": "Because it accounts for about 45% of total body water and surrounds all cells, and because plasma and interstitial fluid are its main constituents, the fluid outside cells is collectively called ____________.",
+            "answer": "extracellular fluid",
+            "accepted_synonyms": [
+              "ECF",
+              "extra-cellular fluid",
+              "extracellular fluid compartment"
+            ],
+            "explanation": "Extracellular fluid is the water outside cells, subdivided mainly into interstitial fluid and plasma."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-08",
+          "question": {
+            "stem": "The subdivision of extracellular fluid that surrounds living cells not in the blood, and that makes up about 80% of the extracellular fluid, is the ____________.",
+            "answer": "interstitial fluid",
+            "accepted_synonyms": [
+              "IF",
+              "inter-stitial fluid"
+            ],
+            "explanation": "Interstitial fluid surrounds cells (not blood cells) and is the largest portion of extracellular fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-09",
+          "question": {
+            "stem": "In a saltwater mixture, water acts as the ____________ because it is the substance that dissolves the sodium and chloride ions.",
+            "answer": "solvent",
+            "accepted_synonyms": [
+              "solvents"
+            ],
+            "explanation": "The solvent is the component of a solution that dissolves the solute; water dissolves the dissolved ions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-10",
+          "question": {
+            "stem": "The reaction in which a molecule of water splits a compound by contributing an H atom to one portion and a hydroxyl group to the other is called ____________.",
+            "answer": "hydrolysis",
+            "accepted_synonyms": [
+              "hydrolysis reaction",
+              "hydrolytic reaction"
+            ],
+            "explanation": "Hydrolysis uses a water molecule to break a covalent bond, splitting the compound into two portions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-11",
+          "question": {
+            "stem": "The fluid that bathes the brain and spinal cord, and that also cushions the central nervous system from physical trauma, is called ____________.",
+            "answer": "cerebrospinal fluid",
+            "accepted_synonyms": [
+              "CSF",
+              "cerebro-spinal fluid"
+            ],
+            "explanation": "Cerebrospinal fluid surrounds and fills spaces within the central nervous system and provides cushioning."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-12",
+          "question": {
+            "stem": "The fluid portion of the blood, which transports blood cells, electrolytes, nutrients, gases, wastes, and proteins throughout the body, is called ____________.",
+            "answer": "plasma",
+            "accepted_synonyms": [
+              "blood plasma"
+            ],
+            "explanation": "Plasma is the liquid component of blood and makes up about 16% of the extracellular fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-13",
+          "question": {
+            "stem": "In a homogeneous mixture such as saltwater, the substance present in the greater amount that dissolves the other components is called the ____________.",
+            "answer": "solvent",
+            "accepted_synonyms": [
+              "solvents"
+            ],
+            "explanation": "The solvent (water, in the body) is the medium in which solutes are dissolved."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-14",
+          "question": {
+            "stem": "The reaction in which a molecule of water splits a compound by adding a hydrogen atom to one portion and a hydroxyl group to the other is called ____________.",
+            "answer": "hydrolysis",
+            "accepted_synonyms": [
+              "hydrolysis reaction"
+            ],
+            "explanation": "Hydrolysis uses water to break a covalent bond, splitting the water into H and OH."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-15",
+          "question": {
+            "stem": "The high concentration of potassium and low concentration of sodium found within cells is characteristic of the ____________, the fluid enclosed by plasma membranes.",
+            "answer": "intracellular fluid",
+            "accepted_synonyms": [
+              "intra-cellular fluid",
+              "ICF"
+            ],
+            "explanation": "Intracellular fluid has elevated potassium and phosphate and low sodium, maintained by sodium-potassium pumps."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-16",
+          "question": {
+            "stem": "The fluid portion of the blood, which transports blood cells, nutrients, gases, wastes, and proteins such as antibodies and clotting factors, is called ____________.",
+            "answer": "plasma",
+            "accepted_synonyms": [
+              "blood plasma"
+            ],
+            "explanation": "Plasma is the fluid component of blood and the second-largest extracellular fluid compartment. Buffer systems such as bicarbonate operate here to maintain blood pH between 7.35 and 7.45."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-17",
+          "question": {
+            "stem": "A substance that releases hydrogen ions when dissolved in water forms a ____________ with a pH below 7 in which water acts as the solvent.",
+            "answer": "solution",
+            "accepted_synonyms": [
+              "solutions"
+            ],
+            "explanation": "Acids and bases dissociate in water to form solutions; an acidic solution has a pH below 7."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-18",
+          "question": {
+            "stem": "The watery fluid that lubricates synovial joints, allowing bones to move against each other with reduced friction, is called ____________.",
+            "answer": "synovial fluid",
+            "accepted_synonyms": [
+              "synovial fluids"
+            ],
+            "explanation": "Synovial fluid is water-based and lubricates the movement of synovial joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-19",
+          "question": {
+            "stem": "Surrounding all living cells that are not in the blood, and making up about 80% of the extracellular fluid, is the ____________.",
+            "answer": "interstitial fluid",
+            "accepted_synonyms": [
+              "inter-stitial fluid",
+              "IF"
+            ],
+            "explanation": "Interstitial fluid surrounds non-blood cells and is the largest subdivision of the extracellular fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-20",
+          "question": {
+            "stem": "In a solution such as saltwater, the sodium and chloride ions that are dissolved and distributed evenly are each referred to as a ____________.",
+            "answer": "solute",
+            "accepted_synonyms": [
+              "solutes"
+            ],
+            "explanation": "A solute is the substance that dissolves within a solvent to form a solution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-21",
+          "question": {
+            "stem": "The fluid found inside cells, which contains high concentrations of potassium and phosphate ions, is called ____________.",
+            "answer": "intracellular fluid",
+            "accepted_synonyms": [
+              "intracellular fluid",
+              "ICF"
+            ],
+            "explanation": "Intracellular fluid is elevated in potassium and phosphate, unlike extracellular fluid which is high in sodium and chloride."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-22",
+          "question": {
+            "stem": "The type of fluid that lubricates the movement of synovial joints in your body is ____________.",
+            "answer": "synovial fluid",
+            "accepted_synonyms": [
+              "synovial fluid",
+              "synovial"
+            ],
+            "explanation": "Slide 8 review question: synovial fluid lubricates synovial joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-23",
+          "question": {
+            "stem": "The reaction in which a molecule of water splits a compound apart by adding a hydrogen atom to one portion and a hydroxyl group to the other is called ____________.",
+            "answer": "hydrolysis",
+            "accepted_synonyms": [
+              "hydrolysis"
+            ],
+            "explanation": "Hydrolysis breaks a covalent bond using a water molecule that splits into H and OH."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-24",
+          "question": {
+            "stem": "The ions responsible for transmitting electrical impulses along cell membranes and for controlling water movement by osmosis are dissolved in water; a substance that dissolves in a solvent this way is termed a ____________.",
+            "answer": "solute",
+            "accepted_synonyms": [
+              "solute",
+              "solutes"
+            ],
+            "explanation": "Ions such as sodium and potassium act as solutes when dissolved in water, and perform functions like electrical signalling and osmosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-25",
+          "question": {
+            "stem": "A homogeneous liquid mixture, in which the dissolved particles are distributed evenly throughout, is called a ____________.",
+            "answer": "solution",
+            "accepted_synonyms": [
+              "solution",
+              "solutions"
+            ],
+            "explanation": "A solution is a homogeneous mixture of a solvent and dissolved solute."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-26",
+          "question": {
+            "stem": "The watery fluid that cushions the brain and spinal cord, protecting the central nervous system from physical trauma, is called ____________.",
+            "answer": "cerebrospinal fluid",
+            "accepted_synonyms": [
+              "cerebrospinal fluid",
+              "CSF"
+            ],
+            "explanation": "Cerebrospinal fluid surrounds and cushions the brain and spinal cord."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-27",
+          "question": {
+            "stem": "The largest single fluid compartment of the body, making up about 55% of total body water, is the ____________.",
+            "answer": "intracellular fluid",
+            "accepted_synonyms": [
+              "intracellular fluid",
+              "ICF"
+            ],
+            "explanation": "Intracellular fluid is the largest compartment at roughly 55% of body water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-28",
+          "question": {
+            "stem": "In water, a substance that acts as the medium in which solutes dissolve is called the ____________.",
+            "answer": "solvent",
+            "accepted_synonyms": [
+              "solvent",
+              "solvents"
+            ],
+            "explanation": "Water is the solvent in which solutes such as sodium and chloride dissolve; this term underlies the acid-base and solution discussions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-29",
+          "question": {
+            "stem": "Within the extracellular compartment, the fluid that surrounds living cells and makes up about 80% of extracellular fluid is called ____________.",
+            "answer": "interstitial fluid",
+            "accepted_synonyms": [
+              "interstitial fluid",
+              "IF"
+            ],
+            "explanation": "Slide 17 review context: interstitial fluid is the largest portion of the extracellular fluid, surrounding cells not in the blood."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fitb-30",
+          "question": {
+            "stem": "The fluid portion of the blood, which contains proteins such as clotting factors and antibodies, is called ____________.",
+            "answer": "plasma",
+            "accepted_synonyms": [
+              "plasma",
+              "blood plasma"
+            ],
+            "explanation": "Plasma is the liquid component of blood and contains buffering plasma proteins that help maintain body pH near 7.35–7.45."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u2-basic-fr-01",
+          "question": {
+            "prompt": "List TWO different functions that ions (electrolytes) perform in the body, and briefly describe each one.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies one valid function of ions (e.g., electrical signalling in neurons/muscles)."
+              },
+              {
+                "points": 1,
+                "criterion": "Briefly describes/explains that first function."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies a second, different valid function of ions (e.g., osmotic water movement, stabilizing protein structure, hormone release, strengthening bones/teeth)."
+              },
+              {
+                "points": 1,
+                "criterion": "Briefly describes/explains that second function."
+              }
+            ],
+            "model_answer": "One function is electrical signalling: ions such as sodium and potassium help transmit electrical impulses along cell membranes in neurons and muscles. A second function is controlling water movement by osmosis: ions in plasma contribute to the osmotic balance that moves water between cells and their environment. (Other acceptable functions include stabilizing protein structures in enzymes, aiding hormone release from glands, and strengthening bones and teeth with calcium and phosphate.)"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fr-02",
+          "question": {
+            "prompt": "Define the terms 'solute' and 'solvent', and give one example of each from a body fluid or common solution discussed in this unit.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines solute as the substance that dissolves in a solvent."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example of a solute (e.g., sodium/chloride ions, sugar)."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines solvent as the substance in which the solute dissolves."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example of a solvent (e.g., water)."
+              }
+            ],
+            "model_answer": "A solute is a substance that dissolves in a solvent; for example, sodium and chloride ions (or sugar). A solvent is the substance in which the solute dissolves; in the body, water is the main solvent."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fr-03",
+          "question": {
+            "prompt": "Contrast dehydration synthesis (condensation) with hydrolysis. In your answer, state what happens to a water molecule in each reaction and identify what type of chemical bond is formed or broken.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that in dehydration synthesis a water molecule is released/produced as two molecules join."
+              },
+              {
+                "points": 1,
+                "criterion": "States that in hydrolysis a water molecule is consumed/added to split a molecule."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies that a covalent bond is formed in dehydration synthesis."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies that a covalent bond is broken in hydrolysis."
+              }
+            ],
+            "model_answer": "In dehydration synthesis (condensation), two molecules are joined by forming a covalent bond and a molecule of water is released as a byproduct. In hydrolysis, the reverse occurs: a water molecule is added and split into H and OH, which breaks the covalent bond between the two molecules. So both reactions affect a covalent bond—it is formed in dehydration synthesis and broken in hydrolysis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fr-04",
+          "question": {
+            "prompt": "Sodium is concentrated outside cells while potassium is concentrated inside cells. Identify which ion is most concentrated in intracellular fluid and which is most concentrated in extracellular fluid, and explain what maintains these differing concentrations.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that potassium (K+) is most concentrated in intracellular fluid."
+              },
+              {
+                "points": 1,
+                "criterion": "States that sodium (Na+) is most concentrated in extracellular fluid."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that sodium-potassium pumps (using ATP) maintain these concentrations by pumping Na+ out of and K+ into the cell."
+              }
+            ],
+            "model_answer": "Potassium (K+) is most concentrated in the intracellular fluid, while sodium (Na+) is most concentrated in the extracellular fluid. These differences are maintained by sodium-potassium pumps in the cell membrane, which use energy from ATP to pump sodium out of the cell and potassium into the cell, counteracting the leaking of these ions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fr-05",
+          "question": {
+            "prompt": "Body water is divided into intracellular and extracellular fluid. Name the two subdivisions of extracellular fluid that make up the greatest proportions, and identify which single fluid compartment (intracellular or extracellular) holds the largest share of the body's water.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies interstitial fluid as a major subdivision of extracellular fluid (the largest ECF portion)."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies plasma as the other major subdivision of extracellular fluid."
+              },
+              {
+                "points": 2,
+                "criterion": "States that the intracellular fluid compartment holds the largest share of total body water (~55%)."
+              }
+            ],
+            "model_answer": "The two largest subdivisions of extracellular fluid are the interstitial fluid (about 80% of ECF) and plasma (about 16% of ECF). Of the total body water, the intracellular fluid compartment holds the largest share, at approximately 55%."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fr-06",
+          "question": {
+            "prompt": "Define what a solution is, and identify its two components. Use saltwater as your example to show which part is which.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines a solution as a homogeneous mixture in which a solute is dissolved evenly in a solvent."
+              },
+              {
+                "points": 1,
+                "criterion": "Names the solvent as one component and identifies water as the solvent in saltwater."
+              },
+              {
+                "points": 2,
+                "criterion": "Names the solute as the other component and identifies the salt (sodium and chloride ions) as the solute in saltwater."
+              }
+            ],
+            "model_answer": "A solution is a homogeneous liquid mixture in which the solute is distributed evenly throughout a solvent. It has two components: a solvent (the substance that does the dissolving) and a solute (the substance that dissolves). In saltwater, water is the solvent and the salt—sodium and chloride ions—is the solute."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fr-07",
+          "question": {
+            "prompt": "Explain how sweating helps cool the body, referring to the role of water and the hydrogen bonds between water molecules. In your answer: state that water is released at the body surface as sweat; explain how evaporation of the sweat relates to breaking hydrogen bonds and energy/heat; and explain how removing this heat cools the skin/blood and affects the body core.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that water is released at the body surface as sweat."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that evaporation of the sweat requires breaking hydrogen bonds between water molecules, which requires/absorbs energy including heat."
+              },
+              {
+                "points": 1,
+                "criterion": "States that removing this heat cools the skin/blood, which then circulates back to the body core."
+              }
+            ],
+            "model_answer": "When the body gets hot, warm water is released at the skin surface as sweat. For this water to evaporate, the hydrogen bonds between the water molecules must be broken, which requires a relatively large amount of energy, including heat, that is drawn away from the body. This evaporative cooling lowers the temperature of the skin and the blood near the surface, which then circulates back to the core to carry away more heat."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fr-08",
+          "question": {
+            "prompt": "Describe TWO different functions of water in the body, giving a brief explanation of each.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies one valid function of water (e.g., lubricant/cushion, heat sink, component of mixtures/solutions, role in chemical reactions)."
+              },
+              {
+                "points": 1,
+                "criterion": "Briefly explains that first function."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies a second, different valid function of water."
+              },
+              {
+                "points": 1,
+                "criterion": "Briefly explains that second function."
+              }
+            ],
+            "model_answer": "One function is as a lubricant and cushion: water in synovial fluid lubricates joints and cerebrospinal fluid cushions the brain and spinal cord from trauma. A second function is as a heat sink: water absorbs heat from metabolic reactions and the warm core and carries it to the periphery for radiant and evaporative heat loss, without a large rise in its own temperature. (Other acceptable answers: water acts as a solvent for solutions, and participates in chemical reactions like dehydration synthesis and hydrolysis.)"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fr-09",
+          "question": {
+            "prompt": "Contrast an acid with a base by stating what each releases in solution. Then explain what distinguishes a strong acid from a weak acid.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that an acid releases hydrogen ions (H+) in solution."
+              },
+              {
+                "points": 1,
+                "criterion": "States that a base releases hydroxyl ions (OH–) in solution (or accepts H+)."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that a strong acid ionizes completely (releases all its H+) while a weak acid ionizes only partially (some H+ stays bonded)."
+              }
+            ],
+            "model_answer": "An acid is a substance that releases hydrogen ions (H+) in solution, whereas a base releases hydroxyl ions (OH–) in solution (or accepts H+ from solution). A strong acid, such as HCl, ionizes completely, releasing all of its H+, while a weak acid, such as acetic acid, ionizes only partially, so some of its hydrogen ions remain bonded within the compound."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-basic-fr-10",
+          "question": {
+            "prompt": "A base is described as a substance that releases hydroxyl ions (OH–) in solution. Explain how the release of these hydroxyl ions reduces the acidity of a solution.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that the OH– ions combine with H+ present in the solution."
+              },
+              {
+                "points": 1,
+                "criterion": "States that this combination forms water (H2O)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that removing H+ this way reduces the solution's acidity."
+              }
+            ],
+            "model_answer": "When a base releases hydroxyl ions (OH–), these ions combine with the free hydrogen ions (H+) present in the solution to form water (H2O). By binding up and removing H+ in this way, the base lowers the concentration of free hydrogen ions, which reduces the solution's acidity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    },
+    "advanced": {
+      "mc": [
+        {
+          "id": "u2-advanced-mc-01",
+          "question": {
+            "stem": "A student ranks the body's fluid compartments from largest to smallest by volume. Which of the following correctly identifies the two largest?",
+            "options": [
+              "Plasma is the largest, followed by intracellular fluid",
+              "Intracellular fluid is the largest, followed by interstitial fluid",
+              "Interstitial fluid is the largest, followed by plasma",
+              "Extracellular fluid is the largest, followed by cerebrospinal fluid",
+              "Intracellular fluid is the largest, followed by plasma"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Intracellular fluid holds about 55% of body water (the single largest compartment), and within the extracellular fluid the interstitial fluid (about 80% of ECF) is the next largest volume.\n\n**Why the other options are wrong:**\n- **(A)** Plasma is only about 16% of ECF, far smaller than intracellular fluid.\n- **(C)** Interstitial fluid is the largest ECF subdivision but is smaller than intracellular fluid overall.\n- **(D)** Cerebrospinal fluid is a minor 'other' extracellular fluid, not the second largest.\n- **(E)** Plasma is much smaller than interstitial fluid, so it is not the second largest."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-02",
+          "question": {
+            "stem": "Which statement best captures why water is considered biologically indispensable to human functioning?",
+            "options": [
+              "Water is chemically bonded into every nutrient molecule the body absorbs",
+              "Water performs only a single essential role: dissolving nutrients",
+              "Water serves multiple roles including lubrication, cushioning, temperature regulation, and acting as a solvent",
+              "Water functions solely as a structural material in bones and teeth",
+              "Water is important only because it makes up the majority of body weight"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The unit stresses that water's indispensability comes from several distinct functions—lubricating fluids, cushioning organs, acting as a heat sink, and serving as a solvent for solutions.\n\n**Why the other options are wrong:**\n- **(A)** Water is a mixture component and reaction participant, not chemically bonded into every nutrient.\n- **(B)** Water has many roles, not just dissolving nutrients.\n- **(D)** Minerals, not water, are the structural material of bone and teeth.\n- **(E)** Body-weight proportion is a fact, not the reason water is functionally essential."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-03",
+          "question": {
+            "stem": "During intense exercise on a hot day, blood carries heat from the body's core to peripheral capillaries and sweat evaporates from the skin. Which functional property of water is being demonstrated?",
+            "options": [
+              "Water acting as a solvent",
+              "Water acting as a heat sink",
+              "Water acting as a lubricant",
+              "Water participating in hydrolysis",
+              "Water acting as a cushion"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Absorbing metabolic heat without a large temperature rise, transporting it to the periphery, and losing it through evaporation are the hallmarks of water functioning as a heat sink.\n\n**Why the other options are wrong:**\n- **(A)** Dissolving solutes is unrelated to heat transport and evaporative cooling.\n- **(C)** Lubrication involves reducing friction in fluids like synovial fluid, not thermoregulation.\n- **(D)** Hydrolysis is a bond-breaking chemical reaction, not heat dissipation.\n- **(E)** Cushioning protects organs from trauma, not from temperature change."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-04",
+          "question": {
+            "stem": "Two amino acids join to form a larger molecule, and a molecule of water is released. If this product is later split back into its two building blocks, what must happen, and what bond is involved?",
+            "options": [
+              "Dehydration synthesis splits the covalent bond by removing water",
+              "Hydrolysis splits the covalent bond by adding water",
+              "Hydrolysis forms an ionic bond by removing water",
+              "Dehydration synthesis forms a hydrogen bond by adding water",
+              "Hydrolysis splits a hydrogen bond by releasing water"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The joining that releases water is dehydration synthesis; reversing it requires hydrolysis, which uses a water molecule to break the covalent bond between the two units.\n\n**Why the other options are wrong:**\n- **(A)** Dehydration synthesis forms (not splits) the bond and releases water.\n- **(C)** The bond broken is covalent, not ionic, and hydrolysis adds water.\n- **(D)** Dehydration synthesis releases water and forms a covalent bond, not a hydrogen bond.\n- **(E)** Hydrolysis breaks the covalent bond and consumes (does not release) water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-05",
+          "question": {
+            "stem": "Solution X has a pH of 3 and solution Y has a pH of 5. How do their hydrogen ion concentrations compare?",
+            "options": [
+              "X has 2 times more H+ than Y",
+              "X has 10 times more H+ than Y",
+              "X has 100 times more H+ than Y",
+              "X has 100 times less H+ than Y",
+              "X and Y have equal H+ because both are acidic"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Each pH unit represents a tenfold change in H+ concentration, so a two-unit difference (pH 3 vs pH 5) means 10 × 10 = 100 times more H+ in the more acidic solution X.\n\n**Why the other options are wrong:**\n- **(A)** A twofold difference would only apply if pH were logarithmic base 2, which it is not.\n- **(B)** Tenfold applies to a one-unit difference, not two units.\n- **(D)** Lower pH means MORE H+, so X has more, not less.\n- **(E)** Different pH values mean different H+ concentrations, not equal ones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-06",
+          "question": {
+            "stem": "In a glass of iced tea, sugar is dissolved in water. Which statement correctly identifies the components of this solution?",
+            "options": [
+              "Water is the solute, sugar is the solvent, and the mixture is a solvent",
+              "Sugar is the solute, water is the solvent, and the mixture is a solution",
+              "Sugar is the solvent, water is the solute, and the mixture is homogeneous",
+              "Both sugar and water are solutes dissolved in a separate solvent",
+              "Sugar is a solute only if the mixture is heterogeneous"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The substance that dissolves (sugar) is the solute, the substance doing the dissolving (water) is the solvent, and the resulting homogeneous mixture is the solution.\n\n**Why the other options are wrong:**\n- **(A)** Water is the solvent, not the solute, and the mixture is a solution, not a solvent.\n- **(C)** Water dissolves sugar, so water is the solvent and sugar the solute—the roles are reversed here.\n- **(D)** Water serves as the solvent, so both cannot be solutes.\n- **(E)** A solution is by definition homogeneous, and sugar is the solute regardless."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-07",
+          "question": {
+            "stem": "A patient's calcium and phosphate levels are being evaluated because these ions are being drawn from a mineral reserve. Which role of ions in the body does this scenario most directly illustrate?",
+            "options": [
+              "Transmitting electrical impulses in neurons",
+              "Stabilizing protein structures in enzymes",
+              "Strengthening bones and teeth",
+              "Triggering hormone release from endocrine glands",
+              "Controlling water movement through osmosis"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Calcium and phosphate are incorporated into bones and teeth, with bone serving as a mineral reserve, illustrating their structural strengthening role.\n\n**Why the other options are wrong:**\n- **(A)** Electrical signalling is chiefly a role of sodium and potassium, not the bone-reserve function described.\n- **(B)** Enzyme stabilization is a separate role and does not involve bone mineral reserves.\n- **(D)** Hormone release is another ion function unrelated to mineralizing bone.\n- **(E)** Osmotic water control does not describe drawing minerals from bone reserves."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-08",
+          "question": {
+            "stem": "A cell membrane's sodium-potassium pumps suddenly stop working due to a lack of ATP. Predict the direct consequence for ion distribution across the membrane.",
+            "options": [
+              "Intracellular potassium will rise while extracellular sodium rises",
+              "The high intracellular potassium and high extracellular sodium gradients will gradually be lost",
+              "Sodium and potassium concentrations will remain perfectly stable indefinitely",
+              "Chloride will replace sodium as the dominant intracellular cation",
+              "Extracellular fluid will become identical to intracellular fluid in protein content"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The pumps use ATP to maintain high intracellular K+ and high extracellular Na+ against leakage; without them, ions leak until the gradients dissipate.\n\n**Why the other options are wrong:**\n- **(A)** Without the pump, potassium leaks out and sodium leaks in, so intracellular K+ would fall, not rise.\n- **(C)** Stability depends on the active pump, so concentrations cannot remain stable once it fails.\n- **(D)** Chloride is an anion, not a cation, and does not replace intracellular sodium.\n- **(E)** Protein differences are not caused by the sodium-potassium pump and would not equalize."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-09",
+          "question": {
+            "stem": "A student needs to correctly define terms for this unit. Which pairing of a key term with its meaning is accurate?",
+            "options": [
+              "Cytosol: the fluid found in the space between cells",
+              "Interstitial fluid: the fluid portion of the blood",
+              "Plasma: the fluid within cells",
+              "Lymph: excess interstitial fluid returning to the blood via lymphatic vessels",
+              "Solvent: the substance that is dissolved within a mixture"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Lymph is precisely defined as excess interstitial fluid that has drained from the bloodstream and is being returned to the blood through lymphatic vessels.\n\n**Why the other options are wrong:**\n- **(A)** Cytosol is the fluid inside cells, not between them.\n- **(B)** Interstitial fluid surrounds cells; plasma is the fluid portion of blood.\n- **(C)** Plasma is extracellular (in blood); intracellular fluid is inside cells.\n- **(E)** The solvent dissolves the solute, so the dissolved substance is the solute, not the solvent."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-10",
+          "question": {
+            "stem": "Hydrochloric acid (HCl) and acetic acid (vinegar) are both acids, yet HCl is classified as strong and acetic acid as weak. What is the basis for this distinction?",
+            "options": [
+              "HCl accepts protons while acetic acid releases them",
+              "HCl ionizes completely, releasing all its H+, while acetic acid only partially ionizes",
+              "HCl has a higher pH than acetic acid",
+              "Acetic acid releases hydroxyl ions while HCl releases hydrogen ions",
+              "HCl is a base and acetic acid is an acid"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A strong acid like HCl dissociates completely, releasing all its H+, whereas a weak acid like acetic acid only partially ionizes, leaving some hydrogen bonded within the compound.\n\n**Why the other options are wrong:**\n- **(A)** Both are acids that release protons; accepting protons defines a base.\n- **(C)** A stronger acid produces a lower pH, not a higher one.\n- **(D)** Acetic acid releases H+, not hydroxyl ions; it is an acid, not a base.\n- **(E)** Both HCl and acetic acid are acids, not one being a base."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-11",
+          "question": {
+            "stem": "A patient's blood pH drops slightly to 7.32 following an increase in metabolic acid production. Which best describes how a bicarbonate-carbonic acid buffer responds to restore normal pH?",
+            "options": [
+              "The bicarbonate acts as a weak base and binds the excess hydrogen ions",
+              "The carbonic acid dissociates further to release additional hydrogen ions",
+              "The buffer permanently converts all carbonic acid into a strong acid",
+              "The buffer raises the pH by generating hydroxyl ions from water molecules directly",
+              "The buffer has no effect because pH regulation is handled only by the lungs"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** When pH falls below the normal range (7.35–7.45), the buffer acts as a weak base, binding the excess H⁺ to resist the drop in pH.\n\n**Why the other options are wrong:**\n- **(B)** Releasing more H⁺ would lower pH further, worsening the acidosis.\n- **(C)** A buffer is a weak acid/conjugate base pair and does not convert into a strong acid.\n- **(D)** The buffer minimizes H⁺ change by binding H⁺, not by spontaneously producing hydroxyl ions from water.\n- **(E)** Chemical buffers act within seconds and work alongside the respiratory and renal systems."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-12",
+          "question": {
+            "stem": "Compared with extracellular fluid, intracellular fluid is characterized by which ionic profile, and how is this difference maintained?",
+            "options": [
+              "High K⁺ and phosphate; maintained by sodium-potassium pumps using ATP",
+              "High Na⁺ and Cl⁻; maintained by sodium-potassium pumps using ATP",
+              "High K⁺ and Cl⁻; maintained by passive leaking alone with no energy input",
+              "High Na⁺ and phosphate; maintained by hydrolysis of interstitial fluid",
+              "Identical ion concentrations to plasma; maintained by simple diffusion"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Intracellular fluid has elevated K⁺ and phosphate, and these gradients are maintained by sodium-potassium pumps that use ATP to pump K⁺ in and Na⁺ out.\n\n**Why the other options are wrong:**\n- **(B)** High Na⁺ and Cl⁻ describe the extracellular fluid, not the intracellular fluid.\n- **(C)** Leaking alone would dissipate the gradients; ATP-powered pumps are required.\n- **(D)** Intracellular fluid is not high in Na⁺, and hydrolysis is not a compartment-regulation mechanism.\n- **(E)** Intracellular fluid composition differs markedly from plasma."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-13",
+          "question": {
+            "stem": "Which of the following best explains why water is considered biologically indispensable to human functioning?",
+            "options": [
+              "It serves multiple roles including lubricant, cushion, heat sink, and solvent for solutions",
+              "It provides the majority of the body's energy through combustion",
+              "It is chemically bonded into every new compound the body synthesizes",
+              "It is the primary structural molecule of bones and teeth",
+              "It functions only as a lubricant and has no other biological role"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The unit emphasizes that water is indispensable because of its several roles: lubrication, cushioning, acting as a heat sink, and serving as the solvent in body solutions.\n\n**Why the other options are wrong:**\n- **(B)** Energy is released by breaking bonds in nutrients and ATP, not by burning water.\n- **(C)** In mixtures water remains chemically distinct rather than bonded into a new compound.\n- **(D)** Calcium and phosphate, not water, are the primary structural minerals of bone and teeth.\n- **(E)** Water has many roles beyond lubrication."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-14",
+          "question": {
+            "stem": "During intense exercise on a hot day, a person sweats heavily and blood is diverted to skin capillaries. Which function of water best explains how this cools the body?",
+            "options": [
+              "Water acts as a heat sink, carrying heat to the periphery where it is lost by radiation and evaporation",
+              "Water acts as a solvent, dissolving heat into a homogeneous solution",
+              "Water participates in dehydration synthesis to release heat as a byproduct",
+              "Water cushions the cells so they cannot generate additional heat",
+              "Water lubricates the skin so heat slides off more easily"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Water in blood absorbs core heat and transports it to peripheral capillaries and skin, where radiant heat loss and evaporation of sweat cool the body.\n\n**Why the other options are wrong:**\n- **(B)** Dissolving solutes is unrelated to how water dissipates heat.\n- **(C)** Dehydration synthesis produces water; it is not the cooling mechanism described.\n- **(D)** Cushioning protects from trauma and does not stop heat generation.\n- **(E)** Lubrication does not account for evaporative or radiant cooling."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-15",
+          "question": {
+            "stem": "Hydrochloric acid (HCl) and acetic acid (vinegar) both release hydrogen ions in solution. What distinguishes HCl as a strong acid from acetic acid as a weak acid?",
+            "options": [
+              "HCl ionizes completely, releasing all its H⁺, whereas acetic acid ionizes only partially",
+              "HCl has a higher pH than acetic acid because it releases fewer H⁺",
+              "HCl accepts protons from solution while acetic acid donates them",
+              "HCl releases hydroxyl ions while acetic acid releases hydrogen ions",
+              "HCl is neutral while acetic acid is basic"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A strong acid like HCl dissociates completely, releasing all of its H⁺, while a weak acid like acetic acid only partially ionizes, leaving some H⁺ bonded.\n\n**Why the other options are wrong:**\n- **(B)** A stronger acid produces more H⁺ and therefore a lower, not higher, pH.\n- **(C)** Both are acids that donate protons; accepting protons defines a base.\n- **(D)** Acids release H⁺; releasing OH⁻ describes a base.\n- **(E)** HCl is acidic, and acetic acid is a weak acid, not basic."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-16",
+          "question": {
+            "stem": "A solution of acetic acid is only partially ionized, meaning some hydrogen ions remain bonded within the molecules. What term is applied to acetic acid after it gives up a proton, and what category does this behavior place acetic acid in?",
+            "options": [
+              "It becomes acetate; acetic acid is a weak acid",
+              "It becomes acetate; acetic acid is a strong acid",
+              "It becomes hydroxide; acetic acid is a strong base",
+              "It becomes a proton donor; acetic acid is a neutral salt",
+              "It becomes a buffer; acetic acid is a strong base"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Acetic acid does not ionize completely, making it a weak acid, and it is called acetate after it gives up a proton.\n\n**Why the other options are wrong:**\n- **(B)** Incomplete ionization means acetic acid is weak, not strong.\n- **(C)** Losing a proton does not form hydroxide, and acetic acid is not a base.\n- **(D)** Acetic acid is a weak acid, not a neutral salt.\n- **(E)** The deprotonated form is acetate, and acetic acid is not a base."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-17",
+          "question": {
+            "stem": "Ranking the body's fluid compartments by volume, which sequence correctly orders them from largest to smallest?",
+            "options": [
+              "Intracellular fluid > interstitial fluid > plasma",
+              "Interstitial fluid > intracellular fluid > plasma",
+              "Plasma > intracellular fluid > interstitial fluid",
+              "Extracellular fluid > intracellular fluid > interstitial fluid",
+              "Plasma > interstitial fluid > intracellular fluid"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Intracellular fluid (~55%) is largest, followed by interstitial fluid (~80% of ECF, ~36% of body water), then plasma (~16% of ECF, ~7% of body water).\n\n**Why the other options are wrong:**\n- **(B)** Intracellular fluid is larger than interstitial fluid.\n- **(C)** Plasma is the smallest of the three, not the largest.\n- **(D)** Intracellular fluid is larger than the entire extracellular fluid, and interstitial is part of the ECF, making this comparison invalid.\n- **(E)** Plasma is the smallest, so it cannot be first."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-18",
+          "question": {
+            "stem": "When table salt is stirred into a glass of water and distributed evenly throughout, which pairing correctly identifies the components of the resulting solution?",
+            "options": [
+              "Water is the solvent, salt is the solute, and the mixture is a homogeneous solution",
+              "Salt is the solvent, water is the solute, and the mixture is heterogeneous",
+              "Water is the solute, salt is the solvent, and the mixture is a compound",
+              "Both water and salt are solvents in a chemically bonded new compound",
+              "Salt is the solution and water is the solvent, forming a solute"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** In a solution the solvent (water) dissolves the solute (salt), and even distribution makes it homogeneous.\n\n**Why the other options are wrong:**\n- **(B)** The dissolving substance (water) is the solvent, and even distribution makes it homogeneous, not heterogeneous.\n- **(C)** A mixture is not a chemically bonded compound, and the roles are reversed.\n- **(D)** The two substances stay distinct rather than forming a new compound.\n- **(E)** The solution is the whole mixture; salt is the solute, not the solution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-19",
+          "question": {
+            "stem": "A student needs to match unit terms to the correct fluid location. Which of the following pairings is correct?",
+            "options": [
+              "Cytosol is the fluid portion of intracellular fluid; interstitial fluid surrounds cells outside the blood",
+              "Cytosol is the fluid portion of plasma; interstitial fluid is found inside cells",
+              "Plasma is the fluid within cells; lymph is the fluid of the joints",
+              "Synovial fluid fills the pleural cavities; pericardial fluid lubricates joints",
+              "Interstitial fluid is the fluid portion of blood; plasma surrounds tissue cells"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Cytosol is the fluid component of intracellular fluid, and interstitial fluid is the extracellular fluid that surrounds cells not in the blood.\n\n**Why the other options are wrong:**\n- **(B)** Cytosol is intracellular, and interstitial fluid is extracellular (outside cells).\n- **(C)** Plasma is the fluid portion of blood, not intracellular; lymph is drained interstitial fluid, not joint fluid.\n- **(D)** Synovial fluid lubricates joints and pericardial fluid surrounds the heart, so the pairings are swapped.\n- **(E)** Plasma is the fluid portion of blood, and interstitial fluid surrounds tissue cells, so these are reversed."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-20",
+          "question": {
+            "stem": "Which statement correctly matches an ion with one of its physiological roles as described in this unit?",
+            "options": [
+              "Sodium and potassium ions assist in transmitting electrical impulses in neurons and muscles",
+              "Calcium and phosphate ions primarily transmit hormones through the bloodstream",
+              "Chloride ions are the main structural components of enzymes",
+              "Potassium ions are incorporated into bones and teeth for strength",
+              "All ions function only to lower body pH and have no other role"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Sodium and potassium ions are especially involved in electrical signalling along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(B)** Calcium and phosphate are incorporated into bone and teeth; ions do not directly transmit hormones.\n- **(C)** Ions stabilize protein/enzyme structures rather than serving as structural components of enzymes.\n- **(D)** Calcium and phosphate, not potassium, are incorporated into bones and teeth.\n- **(E)** Ions perform many roles, including electrical signalling, osmosis, and protein stabilization."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-21",
+          "question": {
+            "stem": "A researcher measures the total water volume in each of a person's fluid compartments. Which ranking correctly orders these compartments from LARGEST to smallest water volume?",
+            "options": [
+              "Intracellular fluid > interstitial fluid > plasma",
+              "Interstitial fluid > intracellular fluid > plasma",
+              "Plasma > interstitial fluid > intracellular fluid",
+              "Intracellular fluid > plasma > interstitial fluid",
+              "Interstitial fluid > plasma > intracellular fluid"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Intracellular fluid holds about 55% of body water (the largest), interstitial fluid is the largest portion of extracellular fluid (~80% of ECF), and plasma is the smallest of the three (~16% of ECF).\n\n**Why the other options are wrong:**\n- **(B)** Intracellular fluid, not interstitial fluid, is the single largest compartment.\n- **(C)** Plasma is the smallest, not the largest, of these compartments.\n- **(D)** Interstitial fluid is larger than plasma, so plasma cannot rank second.\n- **(E)** Intracellular fluid is the largest compartment and cannot rank last."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-22",
+          "question": {
+            "stem": "A cell membrane's sodium-potassium pumps suddenly stop working due to a lack of ATP. Which change in ion distribution would you predict over time?",
+            "options": [
+              "Sodium would accumulate inside the cell while potassium leaks out, reducing the normal gradients",
+              "Potassium would accumulate inside the cell while sodium is pumped out faster",
+              "Both sodium and potassium would become more concentrated inside the cell",
+              "Chloride would replace potassium as the main intracellular cation",
+              "No change would occur because these gradients are maintained without energy"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The pump normally uses ATP to move sodium out and potassium in against their gradients; without it, sodium leaks in and potassium leaks out, degrading the high-extracellular-Na⁺/high-intracellular-K⁺ arrangement.\n\n**Why the other options are wrong:**\n- **(B)** Without ATP the pump cannot move ions against gradients, so this active accumulation cannot happen.\n- **(C)** Sodium naturally leaks inward but potassium leaks outward, so both do not increase inside.\n- **(D)** Chloride is an extracellular anion, not an intracellular cation replacement.\n- **(E)** The gradients require constant ATP-driven pumping to maintain."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-23",
+          "question": {
+            "stem": "Solution X contains hydrochloric acid (HCl) and solution Y contains acetic acid, both at the same starting concentration. Which statement best explains why solution X is a stronger acid?",
+            "options": [
+              "Solution X dissociates completely, releasing all of its H⁺ into solution",
+              "Solution X releases hydroxyl ions while solution Y releases H⁺",
+              "Solution X has a higher pH than solution Y",
+              "Solution X only partially ionizes, keeping some H⁺ bonded",
+              "Solution X accepts protons rather than donating them"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A strong acid such as HCl ionizes completely, releasing all its H⁺, whereas a weak acid like acetic acid retains some H⁺ bonded within the molecule.\n\n**Why the other options are wrong:**\n- **(B)** Acids release H⁺, not hydroxyl ions; that describes a base.\n- **(C)** A stronger acid has a LOWER pH (more H⁺), not higher.\n- **(D)** Partial ionization describes the weak acid (Y), not the strong acid.\n- **(E)** Accepting protons describes a base, not an acid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-24",
+          "question": {
+            "stem": "Two glucose monomers are joined into a larger molecule with the release of a water molecule. How does this reaction differ from hydrolysis in terms of the covalent bond involved?",
+            "options": [
+              "This dehydration synthesis forms a new covalent bond, while hydrolysis breaks a covalent bond using water",
+              "This hydrolysis breaks a covalent bond, while dehydration synthesis consumes water",
+              "Both reactions break covalent bonds but only hydrolysis releases water",
+              "This dehydration synthesis breaks a covalent bond and consumes water",
+              "Both reactions form covalent bonds and release water"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Dehydration synthesis creates a covalent bond between monomers and releases water, whereas hydrolysis uses a water molecule to split (break) a covalent bond.\n\n**Why the other options are wrong:**\n- **(B)** The described reaction releases water and forms a bond, so it is dehydration synthesis, not hydrolysis.\n- **(C)** Dehydration synthesis forms a bond; it does not break one.\n- **(D)** Dehydration synthesis forms a bond and releases (not consumes) water.\n- **(E)** Hydrolysis breaks bonds and consumes water; only dehydration synthesis releases water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-25",
+          "question": {
+            "stem": "A patient's calcium and phosphate intake is being evaluated. Which function is MOST directly associated with these two ions in the body?",
+            "options": [
+              "Being incorporated into bones and teeth as structural mineral",
+              "Generating electrical impulses along neuron membranes",
+              "Serving as the primary solvent for body fluids",
+              "Breaking hydrogen bonds during evaporative cooling",
+              "Accepting protons to raise blood pH"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Calcium and phosphate that enter the body are largely incorporated into bones and teeth, strengthening these structures.\n\n**Why the other options are wrong:**\n- **(B)** Sodium and potassium ions are the primary players in electrical signalling, not calcium/phosphate specifically for this role.\n- **(C)** Water, not ions, is the solvent of body fluids.\n- **(D)** Evaporative cooling is a property of water, not of calcium or phosphate ions.\n- **(E)** Accepting protons is a buffer/base function, not the defining role of calcium and phosphate."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-26",
+          "question": {
+            "stem": "You stir a spoonful of table salt into a glass of water until it fully dissolves and is evenly distributed. Which statement correctly describes this system?",
+            "options": [
+              "It is a homogeneous solution where water is the solvent and the ions are solutes",
+              "It is a homogeneous solution where the salt is the solvent and water is the solute",
+              "The salt and water chemically bond to form a new compound",
+              "It is a mixture in which the solute is unevenly concentrated on one side",
+              "The dissolved ions lose their chemical identity within the water"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** In this solution the water is the solvent, the dissolved sodium and chloride ions are solutes, and even distribution makes it homogeneous.\n\n**Why the other options are wrong:**\n- **(B)** The solvent is the substance doing the dissolving (water), not the salt.\n- **(C)** In a mixture the components do not chemically bond into a new compound.\n- **(D)** A homogeneous solution is evenly distributed, not concentrated on one side.\n- **(E)** In a mixture each substance retains its own chemical identity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-27",
+          "question": {
+            "stem": "Which pairing of a body fluid with its correct location is accurate based on the unit's terminology?",
+            "options": [
+              "Cerebrospinal fluid — within and surrounding the central nervous system",
+              "Synovial fluid — the fluid portion of blood",
+              "Pleural fluid — inside the cardiac sac around the heart",
+              "Interstitial fluid — the fluid enclosed within cells",
+              "Cytosol — the fluid between adjacent tissue cells"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Cerebrospinal fluid is found within the openings of the central nervous system and surrounding the brain and spinal cord.\n\n**Why the other options are wrong:**\n- **(B)** The fluid portion of blood is plasma, not synovial fluid, which lubricates joints.\n- **(C)** Pericardial (not pleural) fluid is in the cardiac sac; pleural fluid is around the lungs.\n- **(D)** Interstitial fluid surrounds cells; intracellular fluid is enclosed within cells.\n- **(E)** Cytosol is the intracellular fluid inside cells, not the fluid between cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-28",
+          "question": {
+            "stem": "When sugar is dissolved in hot tea, the tea becomes a solution. Which combination correctly identifies the roles of each component?",
+            "options": [
+              "Sugar is the solute, water is the solvent, and the sweetened tea is the solution",
+              "Sugar is the solvent, water is the solute, and the tea is the solution",
+              "Water is the solute, sugar is the solution, and tea is the solvent",
+              "Sugar and water are both solvents, and the tea is the solute",
+              "Sugar is the solution, water is the solute, and tea is the solvent"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The solute is the substance that dissolves (sugar), the solvent is the substance doing the dissolving (water), and the resulting homogeneous mixture is the solution.\n\n**Why the other options are wrong:**\n- **(B)** The solvent is water, not sugar; sugar is the solute.\n- **(C)** These role assignments are scrambled and incorrect.\n- **(D)** Water is the solvent but sugar is the solute, not a second solvent.\n- **(E)** Sugar is the solute, not the solution, and water is the solvent, not the solute."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-29",
+          "question": {
+            "stem": "A positively charged hydrogen ion (H⁺) is often simply called a \"proton.\" Which explanation best justifies this label?",
+            "options": [
+              "A hydrogen atom's most common isotope has one proton and one electron, so losing the electron leaves just the proton",
+              "Hydrogen ions carry an extra neutron that behaves like a proton",
+              "The hydrogen ion gains an electron, converting it into a proton",
+              "A proton and a hydroxyl ion are chemically identical",
+              "Hydrogen ions release hydroxyl groups that act as protons"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Hydrogen's most common isotope has one proton and one electron and no neutrons, so when it loses its single electron to become H⁺, only the proton remains.\n\n**Why the other options are wrong:**\n- **(B)** The common hydrogen isotope has no neutrons, so no extra neutron is involved.\n- **(C)** Forming H⁺ involves losing, not gaining, an electron.\n- **(D)** A proton and a hydroxyl ion (OH⁻) are entirely different species.\n- **(E)** Acids release H⁺, not hydroxyl groups, and hydroxyl groups are not protons."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-mc-30",
+          "question": {
+            "stem": "Blood pH begins to drop slightly below 7.35. How does a carbonic acid/bicarbonate buffer respond to help restore normal pH?",
+            "options": [
+              "The bicarbonate acts as a weak base and binds the excess hydrogen ions",
+              "The carbonic acid dissociates further to release more hydrogen ions",
+              "The buffer permanently eliminates all hydrogen ions from the fluid",
+              "The buffer raises pH by releasing additional H⁺ into solution",
+              "The buffer acts as a strong acid to neutralize the added base"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** When pH falls, the conjugate base component (bicarbonate) acts as a weak base and binds the excess H⁺, resisting the drop in pH; body fluids are normally maintained at pH 7.35–7.45.\n\n**Why the other options are wrong:**\n- **(B)** Releasing more H⁺ would worsen the acidity, not correct it.\n- **(C)** Buffers moderate changes but do not permanently remove all H⁺.\n- **(D)** Releasing H⁺ would lower pH further, the opposite of what is needed.\n- **(E)** The problem is falling pH (excess acid), and buffers use weak, not strong, components."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u2-advanced-tf-01",
+          "question": {
+            "stem": "A solution with a pH of 3 has one hundred times the hydrogen ion concentration of a solution with a pH of 5.",
+            "correct": true,
+            "explanation": "Each pH unit represents a tenfold difference in H+ concentration. Two units (pH 3 vs pH 5) is 10 x 10 = 100 times more H+, making the pH 3 solution 100 times more acidic."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-02",
+          "question": {
+            "stem": "A weak acid differs from a strong acid in that a weak acid does not ionize completely, so some of its hydrogen ions remain bonded within the compound in solution.",
+            "correct": true,
+            "explanation": "Strong acids like HCl release all of their H+ (ionize completely), whereas weak acids like acetic acid only partially dissociate, leaving some H+ still bound within the molecule."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-03",
+          "question": {
+            "stem": "In a solution of salt water, the water is the solute and the sodium and chloride ions are the solvent.",
+            "correct": false,
+            "explanation": "The roles are reversed. The solvent is the substance that dissolves the other (water), and the solute is the substance that dissolves into it (sodium and chloride ions)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-04",
+          "question": {
+            "stem": "In dehydration synthesis a molecule of water is released as a byproduct, whereas in hydrolysis a molecule of water is consumed to break a bond.",
+            "correct": true,
+            "explanation": "Dehydration synthesis (condensation) forms a covalent bond and releases water. Hydrolysis is the reverse: water is split into H and OH, which break the covalent bond, consuming a water molecule."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-05",
+          "question": {
+            "stem": "Both dehydration synthesis and hydrolysis reactions affect covalent bonds between monomers.",
+            "correct": true,
+            "explanation": "Dehydration synthesis forms a covalent bond between two monomers while releasing water, and hydrolysis breaks that same covalent bond using water. Both processes act on covalent bonds."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-06",
+          "question": {
+            "stem": "Plasma and interstitial fluid are similar in composition, but plasma has a notably higher concentration of proteins than interstitial fluid.",
+            "correct": true,
+            "explanation": "Both are extracellular fluids with high sodium, chloride, and bicarbonate, but proteins are too large to leak out of capillaries, so plasma retains a much higher protein concentration than the interstitial fluid derived from it."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-07",
+          "question": {
+            "stem": "Intracellular fluid has high concentrations of sodium and chloride ions, while extracellular fluid is dominated by potassium and phosphate ions.",
+            "correct": false,
+            "explanation": "The distribution is reversed. Extracellular fluid is high in sodium (Na+) and chloride (Cl-), while intracellular fluid is high in potassium (K+) and phosphate ions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-08",
+          "question": {
+            "stem": "The high potassium inside cells and high sodium outside cells is maintained by sodium-potassium pumps that use ATP to move sodium out and potassium in.",
+            "correct": true,
+            "explanation": "Although ions leak across the membrane, sodium-potassium pumps use ATP energy to actively pump sodium out of the cell and potassium into the cell, maintaining the concentration gradients."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-09",
+          "question": {
+            "stem": "Cerebrospinal fluid, lymph, and synovial fluid are all classified as components of the intracellular fluid compartment.",
+            "correct": false,
+            "explanation": "These fluids are located outside of cells, so they are all subdivisions of the extracellular fluid compartment (the 'other' category), not the intracellular fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-10",
+          "question": {
+            "stem": "A buffer is a solution of a weak acid and its conjugate base; if body fluid pH drops below normal, the buffer acts as a weak base and binds excess hydrogen ions.",
+            "correct": true,
+            "explanation": "Buffers resist pH changes. When pH falls (too acidic), the conjugate base component binds excess H+; when pH rises, the weak acid component donates H+, keeping most body fluids near pH 7.35-7.45."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-11",
+          "question": {
+            "stem": "The sodium-potassium pump uses ATP to move sodium out of the cell and potassium into the cell, which explains why intracellular fluid is high in potassium while extracellular fluid is high in sodium.",
+            "correct": true,
+            "explanation": "True. Sodium and potassium can leak passively through pores, but sodium-potassium pumps use ATP to actively maintain high extracellular Na+ and high intracellular K+, producing the characteristic composition difference between the two compartments."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-12",
+          "question": {
+            "stem": "Of all the water compartments in the body, plasma holds the largest volume of water.",
+            "correct": false,
+            "explanation": "False. Intracellular fluid is the largest compartment (~55% of body water). Plasma is only about 16% of extracellular fluid (~7% of total body water); interstitial fluid is the largest extracellular subdivision."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-13",
+          "question": {
+            "stem": "In the phrase 'water is the solvent and sodium and chloride are the solutes,' the solutes are the substances that dissolve within the dissolving medium.",
+            "correct": true,
+            "explanation": "True. A solute is the substance that dissolves in a solvent. In a saltwater solution, water is the solvent and the dissolved Na+ and Cl- ions are the solutes distributed evenly throughout."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-14",
+          "question": {
+            "stem": "A solution with a pH of 4 has ten times the hydrogen ion concentration of a solution with a pH of 5, and both are considered acidic.",
+            "correct": true,
+            "explanation": "True. Each pH unit represents a tenfold change in H+ concentration, so pH 4 is ten times more acidic than pH 5. Both values are below 7, so both solutions are acidic."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-15",
+          "question": {
+            "stem": "Interstitial fluid and plasma are both extracellular fluids, but plasma contains a notably higher concentration of proteins than interstitial fluid.",
+            "correct": true,
+            "explanation": "True. Interstitial fluid is derived from plasma but lacks its high protein concentration because proteins are too large to leak readily out of capillaries; otherwise the two extracellular fluids are compositionally similar."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-16",
+          "question": {
+            "stem": "Water functions as a heat sink largely because the hydrogen bonds between water molecules require substantial energy to break, allowing water to absorb heat with little rise in its own temperature.",
+            "correct": true,
+            "explanation": "True. The hydrogen bonds between water molecules require considerable energy (including heat) to break, so water can absorb and dissipate metabolic heat and enable evaporative cooling in sweat without a large temperature increase."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-17",
+          "question": {
+            "stem": "In a homogeneous solution, the solute is more concentrated near the bottom of the container than at the top.",
+            "correct": false,
+            "explanation": "False. In a homogeneous solution the solute is distributed evenly throughout the solvent, so the ratio of solute to solvent is the same in every region of the solution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-18",
+          "question": {
+            "stem": "Dehydration synthesis releases a molecule of water while forming a covalent bond, whereas hydrolysis consumes a molecule of water while breaking a covalent bond.",
+            "correct": true,
+            "explanation": "True. In dehydration synthesis a hydrogen from one reactant and a hydroxyl from another combine to release water as the two join by a covalent bond; hydrolysis reverses this, splitting a covalent bond using a water molecule that divides into H and OH."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-19",
+          "question": {
+            "stem": "The body relies only on chemical buffers, and not on the respiratory or urinary systems, to keep blood pH within its normal range.",
+            "correct": false,
+            "explanation": "False. Acid-base balance is regulated by three mechanisms: buffers, the respiratory system (exhaling CO2), and the urinary/renal system (excreting H+ and conserving bicarbonate). Buffers act fastest, but the other systems are also essential."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-20",
+          "question": {
+            "stem": "Among the functions of ions in the body, sodium and potassium ions assist in transmitting electrical impulses along cell membranes in neurons and muscles.",
+            "correct": true,
+            "explanation": "True. Ions serve many roles, including electrical signalling in neurons and muscles (especially Na+ and K+), stabilizing protein structures, aiding hormone release, contributing to osmotic balance, and strengthening bones and teeth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-21",
+          "question": {
+            "stem": "Interstitial fluid represents the largest single water compartment in the body, exceeding even the intracellular fluid.",
+            "correct": false,
+            "explanation": "False. Intracellular fluid is the largest compartment, holding about 55% of body water. Interstitial fluid is the largest subdivision of the extracellular fluid (about 80% of ECF, or ~36% of total body water), but it is still smaller than the ICF."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-22",
+          "question": {
+            "stem": "Both dehydration synthesis and hydrolysis involve covalent bonds, with one process forming such a bond and the other breaking it.",
+            "correct": true,
+            "explanation": "True. In dehydration synthesis a covalent bond is formed between two monomers (releasing water), while in hydrolysis a covalent bond is broken by the addition of water. Both processes act on covalent bonds."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-23",
+          "question": {
+            "stem": "In a solution, the solute is the substance that does the dissolving, while the solvent is the substance that gets dissolved.",
+            "correct": false,
+            "explanation": "False. The terms are reversed: the solvent does the dissolving (e.g., water) and the solute is the substance dissolved (e.g., sodium and chloride ions). In body fluids, water is the solvent."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-24",
+          "question": {
+            "stem": "The sodium-potassium pump uses ATP to move sodium out of the cell and potassium into the cell, maintaining high extracellular sodium and high intracellular potassium.",
+            "correct": true,
+            "explanation": "True. Despite leakage of ions through pores, the ATP-powered sodium-potassium pump actively transports sodium out and potassium in, sustaining the characteristic difference between intracellular fluid (high K+) and extracellular fluid (high Na+)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-25",
+          "question": {
+            "stem": "In a homogeneous solution such as saltwater, the ratio of solute to solvent is the same throughout the entire volume.",
+            "correct": true,
+            "explanation": "True. A homogeneous solution has its solute distributed evenly throughout the solvent, so any sample taken from the solution has the same solute-to-solvent ratio as any other."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-26",
+          "question": {
+            "stem": "Water's ability to cool the body relies on the fact that breaking the hydrogen bonds between water molecules during evaporation requires a relatively large amount of energy, including heat.",
+            "correct": true,
+            "explanation": "True. Water acts as a heat sink because breaking its hydrogen bonds requires substantial energy. During sweating, evaporation removes heat from the skin, cooling the blood, which then returns to the core to absorb more heat."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-27",
+          "question": {
+            "stem": "If the pH of a body fluid drops slightly below the normal range, the buffer present will act as a weak acid and release additional hydrogen ions.",
+            "correct": false,
+            "explanation": "False. When pH drops (becomes too acidic), the buffer acts as a weak base and binds the excess hydrogen ions. It acts as a weak acid and contributes H+ only when pH rises above the normal range. Most body fluids are maintained around pH 7.35–7.45."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-28",
+          "question": {
+            "stem": "Bicarbonate (HCO3-) is classified as a base because it can accept protons from solution, indirectly reducing the concentration of free hydrogen ions.",
+            "correct": true,
+            "explanation": "True. A base either releases hydroxyl ions (like NaOH) or accepts protons already present in solution. Bicarbonate is a weak base that acts by accepting H+, thereby reducing the solution's acidity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-29",
+          "question": {
+            "stem": "Among the roles of ions in the body, potassium and sodium ions are especially important for transmitting electrical impulses along cell membranes in neurons and muscles.",
+            "correct": true,
+            "explanation": "True. Sodium and potassium ions play a key role in electrical signalling in neurons and muscles. Other ion functions include supporting osmotic water movement, stabilizing protein structures, aiding hormone release, and strengthening bones and teeth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-tf-30",
+          "question": {
+            "stem": "Pleural fluid, rather than synovial fluid, is the fluid responsible for lubricating the movement at joints such as the knee.",
+            "correct": false,
+            "explanation": "False. Synovial fluid lubricates synovial joints. Pleural fluid lubricates the pleural membranes surrounding the lungs, allowing them to expand and contract without harmful friction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u2-advanced-fitb-01",
+          "question": {
+            "stem": "The excess interstitial fluid that has drained out of the bloodstream and is being returned to the blood through lymphatic vessels is called ____________.",
+            "answer": "lymph",
+            "accepted_synonyms": [],
+            "explanation": "Lymph is the extracellular fluid consisting of excess interstitial fluid returned to the blood via lymphatic vessels."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-02",
+          "question": {
+            "stem": "The reaction in which a molecule of water is added to split the covalent bond between two monomers is called ____________.",
+            "answer": "hydrolysis",
+            "accepted_synonyms": [],
+            "explanation": "Hydrolysis uses a water molecule (split into H and OH) to break the covalent bond linking two monomers."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-03",
+          "question": {
+            "stem": "When table salt (NaCl) is fully dissolved in water, the NaCl acts as the ____________ within the resulting mixture.",
+            "answer": "solute",
+            "accepted_synonyms": [
+              "solutes"
+            ],
+            "explanation": "A solute is the substance that dissolves within the solvent; NaCl dissolves in water and is therefore the solute."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-04",
+          "question": {
+            "stem": "Making up about 55% of the body's total water, the ____________ is the single largest fluid compartment in the human body.",
+            "answer": "intracellular fluid",
+            "accepted_synonyms": [
+              "ICF",
+              "intra-cellular fluid"
+            ],
+            "explanation": "Intracellular fluid, the fluid within cells, accounts for roughly 55% of body water, making it the largest compartment."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-05",
+          "question": {
+            "stem": "The fluid that bathes the brain and spinal cord and cushions the central nervous system from physical trauma is called ____________.",
+            "answer": "cerebrospinal fluid",
+            "accepted_synonyms": [
+              "CSF",
+              "cerebro-spinal fluid"
+            ],
+            "explanation": "Cerebrospinal fluid surrounds and fills openings of the CNS, cushioning the brain and spinal cord."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-06",
+          "question": {
+            "stem": "Because it has elevated concentrations of potassium and phosphate ions rather than sodium and chloride, the ____________ has a composition quite distinct from that of plasma or interstitial fluid.",
+            "answer": "intracellular fluid",
+            "accepted_synonyms": [
+              "ICF",
+              "intra-cellular fluid"
+            ],
+            "explanation": "Intracellular fluid is high in potassium and phosphate, unlike the extracellular fluids (plasma and interstitial fluid) which are high in sodium and chloride."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-07",
+          "question": {
+            "stem": "The high potassium and low sodium concentrations characteristic of the fluid found within cells, called ____________, are maintained by sodium-potassium pumps in the cell membrane.",
+            "answer": "intracellular fluid",
+            "accepted_synonyms": [
+              "ICF",
+              "intracellular"
+            ],
+            "explanation": "Intracellular fluid is enriched in potassium and phosphate, and its ionic makeup is kept distinct from surrounding fluids by ATP-driven sodium-potassium pumps."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-08",
+          "question": {
+            "stem": "The fluid that surrounds all living cells not in the blood, through which nutrients and wastes travel between capillaries and cells, is the ____________.",
+            "answer": "interstitial fluid",
+            "accepted_synonyms": [
+              "IF",
+              "inter-stitial fluid"
+            ],
+            "explanation": "Interstitial fluid surrounds cells outside the bloodstream and serves as the medium for exchange between capillaries and cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-09",
+          "question": {
+            "stem": "In a homogeneous ____________, the solute molecules are distributed evenly throughout the solvent so that the ratio of solute to solvent is the same in every region.",
+            "answer": "solution",
+            "accepted_synonyms": [
+              "solutions"
+            ],
+            "explanation": "A solution is a homogeneous liquid mixture of solute dissolved evenly throughout a solvent."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-10",
+          "question": {
+            "stem": "Together with plasma, the largest constituent of the extracellular fluid compartment (about 80% of it) is the ____________.",
+            "answer": "interstitial fluid",
+            "accepted_synonyms": [
+              "IF",
+              "inter-stitial fluid"
+            ],
+            "explanation": "The extracellular fluid is divided into plasma (~16%) and interstitial fluid (~80%), making interstitial fluid the largest ECF subdivision."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-11",
+          "question": {
+            "stem": "The high concentration of potassium and low concentration of sodium found inside a cell make up the ____________, which differs markedly in ionic composition from the fluid surrounding the cell.",
+            "answer": "intracellular fluid",
+            "accepted_synonyms": [
+              "ICF",
+              "cytosol",
+              "intra-cellular fluid"
+            ],
+            "explanation": "Ions such as sodium and potassium are distributed unevenly between compartments; potassium dominates the intracellular fluid, reflecting the ionic functions and regulation described in this unit."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-12",
+          "question": {
+            "stem": "When two monomers are joined by forming a covalent bond and a molecule of water is released as a byproduct, the reaction is called ____________.",
+            "answer": "dehydration synthesis/condensation reaction",
+            "accepted_synonyms": [
+              "dehydration synthesis",
+              "condensation reaction",
+              "condensation",
+              "dehydration reaction"
+            ],
+            "explanation": "Dehydration synthesis produces water while forming a covalent bond; it is the reverse of hydrolysis, which consumes water to break that bond."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-13",
+          "question": {
+            "stem": "Because plasma and interstitial fluid share high concentrations of sodium and chloride while cells are rich in potassium and phosphate, plasma is far more similar in composition to ____________ than it is to the fluid inside cells.",
+            "answer": "interstitial fluid",
+            "accepted_synonyms": [
+              "interstitial",
+              "IF",
+              "inter-stitial fluid"
+            ],
+            "explanation": "Plasma and interstitial fluid are both extracellular and thus closely resemble each other, differing mainly in protein content, whereas intracellular fluid has a distinct ionic profile."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-14",
+          "question": {
+            "stem": "The watery fluid that cushions the brain and spinal cord within the central nervous system, protecting them from physical trauma, is called ____________.",
+            "answer": "cerebrospinal fluid",
+            "accepted_synonyms": [
+              "CSF",
+              "cerebro-spinal fluid",
+              "cerebrospinal"
+            ],
+            "explanation": "Among water's protective/cushioning functions, cerebrospinal fluid specifically surrounds and cushions the CNS."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-15",
+          "question": {
+            "stem": "A homogeneous mixture in which a solute is evenly distributed throughout a solvent is called a ____________.",
+            "answer": "solution",
+            "accepted_synonyms": [
+              "solutions"
+            ],
+            "explanation": "The key term for an evenly distributed (homogeneous) mixture of solute in solvent is a solution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-16",
+          "question": {
+            "stem": "In a saltwater mixture, water is the substance that dissolves the sodium and chloride ions, and is therefore referred to as the ____________.",
+            "answer": "solvent",
+            "accepted_synonyms": [
+              "solvents"
+            ],
+            "explanation": "The solvent is the substance that dissolves a solute; in body fluids, water is the solvent while ions like sodium and chloride are the solutes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-17",
+          "question": {
+            "stem": "Vinegar (acetic acid) does not release hydrogen ions from all of its molecules in solution; because it does not ionize completely, when dissolved it forms a ____________ containing both dissociated ions and undissociated acid.",
+            "answer": "solution",
+            "accepted_synonyms": [
+              "solutions"
+            ],
+            "explanation": "A weak acid like acetic acid only partially ionizes, but it still forms a solution when dissolved in a solvent such as water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-18",
+          "question": {
+            "stem": "A buffer, which resists sudden changes in acidity, is composed of a weak acid and its conjugate base dissolved together as a ____________.",
+            "answer": "solution",
+            "accepted_synonyms": [
+              "solutions"
+            ],
+            "explanation": "The unit defines a buffer as a solution of a weak acid and its conjugate base that helps maintain blood pH near 7.35–7.45."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-19",
+          "question": {
+            "stem": "In saltwater, the water acts as the ____________ because it is the substance that dissolves the sodium and chloride ions.",
+            "answer": "solvent",
+            "accepted_synonyms": [
+              "solvents"
+            ],
+            "explanation": "In a solution, the solvent is the substance (here water) that dissolves the solute (the ions)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-20",
+          "question": {
+            "stem": "Of all the water-containing compartments in the body, the single largest is the ____________, which is the fluid enclosed within cells and makes up about 55% of total body water.",
+            "answer": "intracellular fluid",
+            "accepted_synonyms": [
+              "ICF",
+              "cytosol",
+              "intra-cellular fluid"
+            ],
+            "explanation": "Intracellular fluid (~55%) is the largest compartment; interstitial fluid is the largest subdivision of the extracellular fluid but is smaller overall."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-21",
+          "question": {
+            "stem": "The high potassium and low sodium concentrations found within the ____________ are maintained by sodium-potassium pumps embedded in the cell membrane.",
+            "answer": "intracellular fluid",
+            "accepted_synonyms": [
+              "intracellular fluid",
+              "ICF",
+              "intracellular compartment"
+            ],
+            "explanation": "Sodium-potassium pumps keep K+ high and Na+ low inside cells; this is the fluid within cells, the intracellular fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-22",
+          "question": {
+            "stem": "In a saltwater mixture, the water is the substance that dissolves the ions and is therefore called the ____________.",
+            "answer": "solvent",
+            "accepted_synonyms": [
+              "solvents"
+            ],
+            "explanation": "The solvent is the substance (water) in which a solute dissolves; the resulting homogeneous mixture is a solution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-23",
+          "question": {
+            "stem": "When a strong acid such as HCl dissociates completely in water, water acts as the ____________ in which all of the released hydrogen ions become dispersed.",
+            "answer": "solvent",
+            "accepted_synonyms": [
+              "solvent"
+            ],
+            "explanation": "Water is the dissolving medium (solvent) into which the acid releases its H+; the acid and its ions are the solutes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-24",
+          "question": {
+            "stem": "In a homogeneous ____________ such as saltwater, the sodium and chloride ions are distributed evenly throughout the water at all locations.",
+            "answer": "solution",
+            "accepted_synonyms": [
+              "solution"
+            ],
+            "explanation": "A solution consists of a solvent and evenly-distributed solute; the whole homogeneous mixture is the solution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-25",
+          "question": {
+            "stem": "The fluid that fills the space between the two pleural membranes, allowing the lungs to expand and recoil without harmful friction against neighbouring organs, is ____________.",
+            "answer": "pleural fluid",
+            "accepted_synonyms": [
+              "pleural fluids"
+            ],
+            "explanation": "Among water's lubricating functions, pleural fluid specifically reduces friction between pleural membranes during breathing; synovial fluid lubricates joints and pericardial fluid surrounds the heart, so only pleural fluid fits the pleural membrane cue."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-26",
+          "question": {
+            "stem": "The thick fluid that reduces friction and lubricates the movement of freely movable joints is called ____________.",
+            "answer": "synovial fluid",
+            "accepted_synonyms": [
+              "synovial fluid",
+              "synovial"
+            ],
+            "explanation": "Synovial fluid lubricates synovial joints, a key term for navigating this unit."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-27",
+          "question": {
+            "stem": "Of all the body's fluid compartments, the single largest volume of water is found in the ____________, which comprises roughly 55% of the body's total water.",
+            "answer": "intracellular fluid",
+            "accepted_synonyms": [
+              "intracellular fluid compartment",
+              "ICF"
+            ],
+            "explanation": "Slide 13 states intracellular fluid makes up about 55% of body water, making it the largest single compartment; extracellular fluid is only about 45%, and its subdivisions (interstitial, plasma) are smaller still."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-28",
+          "question": {
+            "stem": "By absorbing and dissipating metabolic heat without a large rise in temperature, water carried in the ____________ transports heat from the body's core to peripheral capillaries near the skin.",
+            "answer": "plasma",
+            "accepted_synonyms": [
+              "plasma",
+              "blood plasma"
+            ],
+            "explanation": "The watery plasma of blood absorbs core heat and carries it to peripheral vessels for radiant and evaporative loss."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-29",
+          "question": {
+            "stem": "Ions that assist in the transmission of electrical impulses along the membranes of neurons and muscles do so as they move between cells and the ____________ that surrounds all cells not in the blood.",
+            "answer": "interstitial fluid",
+            "accepted_synonyms": [
+              "interstitial fluid",
+              "IF",
+              "interstitial"
+            ],
+            "explanation": "Interstitial fluid surrounds living tissue cells and is the extracellular fluid across which ions move to support electrical signalling."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fitb-30",
+          "question": {
+            "stem": "The reaction in which a water molecule is split into H and OH to break the covalent bond linking two monomers of a polymer is called ____________.",
+            "answer": "hydrolysis",
+            "accepted_synonyms": [
+              "hydrolysis",
+              "hydrolysis reaction"
+            ],
+            "explanation": "Hydrolysis consumes water to break a covalent bond, the reverse of dehydration synthesis which produces water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u2-advanced-fr-01",
+          "question": {
+            "prompt": "List and briefly explain FIVE distinct functions that ions (electrolytes) perform in the body. For each function, give a specific example of an ion or ion type involved where possible.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies electrical signalling/nerve and muscle impulse transmission (e.g., sodium and potassium ions)."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies aiding water movement via osmotic balance (e.g., all plasma ions contribute to osmosis)."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies stabilizing protein structures in enzymes."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies aiding the release of hormones from endocrine glands."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies strengthening/incorporation into bones and teeth (e.g., calcium and phosphate)."
+              }
+            ],
+            "model_answer": "1) Electrical signalling: sodium and potassium ions assist in transmitting electrical impulses along cell membranes in neurons and muscles. 2) Water movement: all ions in plasma contribute to the osmotic balance that controls the movement of water between cells and their environment. 3) Protein stabilization: some ions help stabilize protein structures in enzymes. 4) Hormone release: some ions aid in releasing hormones from endocrine glands. 5) Bone/teeth strength: calcium and phosphate are incorporated into bones and teeth. (Any four earn full marks.)"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fr-02",
+          "question": {
+            "prompt": "A student claims that plasma is the largest fluid compartment in the body. Identify the actual largest compartment, and explain why the student's answer is incorrect by ranking intracellular fluid, interstitial fluid, and plasma from largest to smallest. Include the approximate proportion of body water in each compartment.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies intracellular fluid as the largest fluid compartment (~55% of body water)."
+              },
+              {
+                "points": 1,
+                "criterion": "States interstitial fluid is the second largest (~36% of total water / ~80% of ECF)."
+              },
+              {
+                "points": 1,
+                "criterion": "States plasma is the smallest of the three (~7% of total water / ~16% of ECF)."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains the student is wrong because plasma is only a small fraction of the extracellular fluid, which itself is smaller than intracellular fluid."
+              }
+            ],
+            "model_answer": "The largest compartment is the intracellular fluid, making up about 55% of body water. Ranked largest to smallest: intracellular fluid (~55%) > interstitial fluid (~36% of total water, ~80% of ECF) > plasma (~7% of total water, ~16% of ECF). The student is incorrect because plasma is only a minor portion of the extracellular fluid, and the extracellular fluid as a whole is smaller than the intracellular fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fr-03",
+          "question": {
+            "prompt": "The extracellular fluid is not a single unified compartment. Name the two primary subdivisions of extracellular fluid, state their approximate proportions of ECF, and give TWO further examples of 'other' extracellular fluids found in the body.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names interstitial fluid as a subdivision (~80% of ECF)."
+              },
+              {
+                "points": 1,
+                "criterion": "Names plasma as a subdivision (~16% of ECF)."
+              },
+              {
+                "points": 1,
+                "criterion": "Correctly assigns the approximate proportions to each (interstitial ~80%, plasma ~16%)."
+              },
+              {
+                "points": 2,
+                "criterion": "Gives two valid additional extracellular fluids (e.g., cerebrospinal fluid, lymph, synovial fluid, pleural fluid, pericardial fluid) — 1 mark each."
+              }
+            ],
+            "model_answer": "The two primary subdivisions of ECF are interstitial fluid, which is about 80% of the ECF and surrounds cells not in the blood, and plasma, which is about 16% of the ECF and is the fluid portion of blood. Two further examples of 'other' extracellular fluids are cerebrospinal fluid (surrounding the brain and spinal cord) and lymph (excess interstitial fluid returning to the blood via lymphatic vessels). Synovial, pleural, and pericardial fluids are also acceptable."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fr-04",
+          "question": {
+            "prompt": "Define what a buffer is, state the approximate pH range at which most body fluids are maintained, and explain how a buffer responds when the pH of a body fluid falls too low versus when it rises too high.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines a buffer as a solution of a weak acid and its conjugate base that resists sudden changes in pH."
+              },
+              {
+                "points": 1,
+                "criterion": "States body fluids/blood are maintained at pH ~7.35 to 7.45."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains that when pH falls below ~7.35, the buffer acts as a weak base and binds excess hydrogen ions."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that when pH rises above ~7.45, the buffer acts as a weak acid and contributes/releases hydrogen ions."
+              }
+            ],
+            "model_answer": "A buffer is a solution of a weak acid and its conjugate base that can resist sudden changes in the acidity or alkalinity of body fluids. Body fluids (including blood) are normally maintained at a pH of about 7.35 to 7.45. When the pH drops below about 7.35, the buffer acts as a weak base and binds the excess hydrogen ions, raising pH back toward normal. When the pH rises above about 7.45, the buffer acts as a weak acid and contributes hydrogen ions to the solution, lowering pH back toward normal."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fr-05",
+          "question": {
+            "prompt": "Using saltwater as an example, identify the three components of a solution — the solvent, the solute, and the solution they form together — and explain the role each plays. Also explain what it means for a solution to be homogeneous.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies the solvent (water) as the substance that does the dissolving."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the solute(s) (sodium and chloride, or salt) as the substance dissolved in the solvent."
+              },
+              {
+                "points": 1,
+                "criterion": "States that together they form a solution (the resulting mixture)."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that homogeneous means the solute is distributed evenly/equally throughout the solvent (same ratio in all parts of the solution)."
+              }
+            ],
+            "model_answer": "In saltwater, the solvent is water, which is the substance that dissolves the other component. The solutes are the sodium and chloride ions (the salt), which are the substances dissolved in the solvent. Together these form the solution, the overall mixture. The solution is homogeneous, meaning the solute molecules are distributed evenly throughout the solvent, so the ratio of solute to solvent is the same in every part of the solution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fr-06",
+          "question": {
+            "prompt": "Contrast the ionic composition of intracellular fluid with that of extracellular fluid, naming the dominant ions in each. Then explain how the high extracellular sodium and high intracellular potassium concentrations are maintained despite these ions leaking across the membrane.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States extracellular fluid is high in sodium (Na+) and chloride (Cl–)."
+              },
+              {
+                "points": 1,
+                "criterion": "States intracellular fluid is high in potassium (K+) and phosphate (and/or magnesium/protein)."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the sodium-potassium pump in the cell membrane as the mechanism maintaining these gradients."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains the pump uses ATP energy to move sodium out of the cell and potassium into the cell."
+              }
+            ],
+            "model_answer": "Extracellular fluid has high concentrations of sodium (Na+) and chloride (Cl–) ions, whereas intracellular fluid has high concentrations of potassium (K+) and phosphate ions (as well as magnesium and protein). Although sodium and potassium can leak through pores across the membrane, the sodium-potassium pumps in the cell membrane maintain the gradients. These pumps use energy from ATP to pump sodium out of the cell and potassium into the cell, keeping sodium high outside and potassium high inside."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fr-07",
+          "question": {
+            "prompt": "Define the terms 'intracellular fluid,' 'interstitial fluid,' and 'plasma,' and explain the location of each within the body.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines intracellular fluid as the fluid found within cells (cytosol/cytoplasm)."
+              },
+              {
+                "points": 2,
+                "criterion": "Defines interstitial fluid as extracellular fluid that surrounds living cells (not blood cells)."
+              },
+              {
+                "points": 2,
+                "criterion": "Defines plasma as the fluid portion of the blood, travelling in blood vessels."
+              }
+            ],
+            "model_answer": "Intracellular fluid is the fluid located within cells, forming the cytosol (or cytoplasm). Interstitial fluid is an extracellular fluid that surrounds all living cells that are not in the blood; it is derived from plasma and fills the spaces between cells. Plasma is the fluid portion of the blood, found inside blood vessels, where it transports blood cells, proteins, electrolytes, nutrients, gases, and wastes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fr-08",
+          "question": {
+            "prompt": "Compare dehydration synthesis (condensation) and hydrolysis. In your answer, state what happens to water in each reaction, state whether covalent bonds are formed or broken in each, and identify the type of bond affected by these processes.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States dehydration synthesis releases/produces a molecule of water as a byproduct."
+              },
+              {
+                "points": 1,
+                "criterion": "States hydrolysis consumes/uses a molecule of water, which is split into H and OH."
+              },
+              {
+                "points": 1,
+                "criterion": "States dehydration synthesis forms a covalent bond between two molecules/monomers."
+              },
+              {
+                "points": 1,
+                "criterion": "States hydrolysis breaks/splits the covalent bond between two molecules/monomers."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the covalent bond as the type of bond affected by both processes."
+              }
+            ],
+            "model_answer": "In dehydration synthesis (condensation), one reactant gives up a hydrogen and the other gives up a hydroxyl group, and a molecule of water is released as a byproduct as a covalent bond forms between the two molecules. In hydrolysis, the reverse occurs: a molecule of water is consumed and split into a hydrogen atom and a hydroxyl group, which break the covalent bond between two molecules. The type of bond affected in both processes is the covalent bond."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fr-09",
+          "question": {
+            "prompt": "Distinguish between an acid and a base according to what each releases or does in solution. Then explain the difference between a strong and a weak acid, and describe how the pH scale reflects hydrogen ion concentration (including what happens to H+ concentration between two adjacent pH values).",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States an acid releases hydrogen ions (H+) in solution."
+              },
+              {
+                "points": 1,
+                "criterion": "States a base releases hydroxyl ions (OH–) or accepts H+ from solution."
+              },
+              {
+                "points": 1,
+                "criterion": "States a strong acid ionizes completely (releases all its H+)."
+              },
+              {
+                "points": 1,
+                "criterion": "States a weak acid does not ionize completely (some H+ remain bonded)."
+              },
+              {
+                "points": 1,
+                "criterion": "States lower pH = more acidic/higher H+ and higher pH = more basic/lower H+ (pH 7 neutral)."
+              },
+              {
+                "points": 1,
+                "criterion": "States each pH unit represents a 10-fold difference in H+ concentration."
+              }
+            ],
+            "model_answer": "An acid is a substance that releases hydrogen ions (H+) in solution, whereas a base releases hydroxyl ions (OH–) in solution or accepts H+ already present, reducing acidity. A strong acid ionizes completely, releasing all of its H+ (e.g., HCl), while a weak acid does not ionize completely, so some hydrogen ions remain bonded within the compound (e.g., acetic acid). On the pH scale, a lower number means more acidic (higher H+ concentration) and a higher number means more basic (lower H+ concentration), with 7 being neutral. Each pH unit differs from the next by a factor of 10 in H+ concentration, so a pH 4 solution has ten times more H+ than a pH 5 solution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u2-advanced-fr-10",
+          "question": {
+            "prompt": "Hydrochloric acid (HCl) is described as a strong acid. Explain why a hydrogen ion (H+) is often simply called a 'proton,' referring to the subatomic composition of a hydrogen atom and what happens when it loses its electron. Then explain what makes HCl a strong acid, and contrast this with the behaviour of a weak acid such as acetic acid in terms of ionization.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States a hydrogen atom has one proton and one electron."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains that when hydrogen loses its electron, only the single proton remains, so H+ is essentially a proton."
+              },
+              {
+                "points": 1,
+                "criterion": "States HCl is a strong acid because it releases all of its H+ / ionizes completely in solution."
+              },
+              {
+                "points": 1,
+                "criterion": "States a weak acid such as acetic acid does not ionize completely, so some H+ remain bonded."
+              }
+            ],
+            "model_answer": "A hydrogen atom has just one proton and one electron. When hydrogen loses its electron to become H+, all that remains is the single proton, which is why a hydrogen ion is referred to as a proton. HCl is a strong acid because it releases all of its H+ into solution — it ionizes completely. In contrast, a weak acid such as acetic acid does not ionize completely, so some of its hydrogen ions remain bonded within the compound in solution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    }
+  }
+}
