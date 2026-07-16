@@ -944,8 +944,17 @@
       const panel = $(`.tab-panel[data-panel="${name}"]`);
       if (unitHasBank()) {
         // Don't clobber a question the student is mid-answer on; otherwise
-        // (re)load the grid so tile completion state stays fresh.
-        if (panel.dataset.state !== 'bank-q') renderBankPanel(name, panel);
+        // (re)load the grid so tile completion state stays fresh. If the bank
+        // render ever throws, degrade to the live-generate flow rather than
+        // leaving the student with a broken panel.
+        if (panel.dataset.state !== 'bank-q') {
+          try {
+            renderBankPanel(name, panel);
+          } catch (e) {
+            console.warn('bank render failed; falling back to live generate:', e);
+            renderQuizConfig(name);
+          }
+        }
       } else {
         renderQuizConfig(name);
       }
