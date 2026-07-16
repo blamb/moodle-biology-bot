@@ -127,7 +127,7 @@ const DIFFICULTY_NOTES: Record<Difficulty, string> = {
     'Advanced: tests synthesis across the unit and edge cases. The student should have to reason through a multi-step mechanism or evaluate a scenario. MC may use meta-options including "two of the above", "all of the above", and "None of the above" when appropriate.',
 };
 
-function unitGrounding(unit: UnitContent): string {
+export function unitGrounding(unit: UnitContent): string {
   const parts = [
     `# UNIT ${unit.unit_no}: ${unit.ppt_title}`,
     `\n## Key terms for this unit`,
@@ -265,6 +265,12 @@ For each question:
 - Use exactly one underline "____________" to mark the blank in the stem.
 - The answer must be a term from the list above (exact form).
 - Provide accepted_synonyms with: any plausible singular/plural variants, hyphenated/unhyphenated forms, and any common synonyms (e.g. "fight or flight" / "fight-or-flight"). Server-side normalization handles case and whitespace; you don't need to list those.
+
+CRITICAL — each blank must have exactly ONE correct term-list answer. Before finalizing every item, self-check ALL of these:
+- ONE unambiguous answer: no OTHER term from the list could plausibly fill the blank. If the sentence would also accept a different term, add enough context to force the intended one, or pick a different fact.
+- The answer is NOT given away: the answer term — and any obvious form of it — must NOT appear anywhere in the stem (including in parentheses). The student must supply it, not read it off. E.g. do NOT write "...are described as ____ (all-or-none)" when the answer is "all-or-none".
+- Category match: the blank must grammatically and conceptually call for exactly the answer's category. If the sentence describes an ion moving, the answer is the ION (e.g. "potassium"), not a channel; if it describes a structure, the answer is that structure; if a process, that process. Do not answer "sodium channel" for a blank that describes the Na⁺/K⁺ pump.
+- The sentence points unmistakably to that one term — a student who knows the unit produces exactly it, with no guessing between near-synonyms on the list.
 
 Output JSON shape (a single array):
 [

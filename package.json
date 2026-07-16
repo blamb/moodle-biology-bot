@@ -11,6 +11,7 @@
     "ingest:studyguides": "python3 scripts/ingest/extract_study_guides.py",
     "ingest:textbooks": "python3 scripts/ingest/fetch_pressbooks.py",
     "ingest:build": "python3 scripts/ingest/build_units.py",
+    "bank:build": "tsx scripts/build_question_bank.ts",
     "ingest:all": "npm run ingest:pptx && npm run ingest:terms && npm run ingest:exam && npm run ingest:studyguides && npm run ingest:textbooks && npm run ingest:build",
     "db:migrate": "tsx src/server/migrate.ts",
     "dev": "tsx watch src/server/index.ts",

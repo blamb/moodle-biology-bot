@@ -12,6 +12,7 @@
  * billing from Brian's API key to TRU's.
  */
 
+import { appendFileSync } from 'node:fs';
 import { query } from './db.js';
 
 // USD per 1 million tokens. Update when Anthropic's pricing changes.
@@ -188,6 +189,26 @@ export async function getCostSummaryForCourse(params: {
 
 export async function recordApiCall(p: RecordApiCallParams): Promise<void> {
   const cost = computeCostUsd(p.model, p.usage);
+  // Diagnostic: when COST_LOG is set (offline scripts like the bank build),
+  // append each call's cost to a JSONL file. Inert in normal server operation.
+  if (process.env.COST_LOG) {
+    try {
+      appendFileSync(
+        process.env.COST_LOG,
+        JSON.stringify({
+          endpoint: p.endpoint,
+          model: p.model,
+          cost,
+          input: p.usage.input_tokens ?? 0,
+          output: p.usage.output_tokens ?? 0,
+          cache_read: p.usage.cache_read_input_tokens ?? 0,
+          cache_write: p.usage.cache_creation_input_tokens ?? 0,
+        }) + '\n'
+      );
+    } catch {
+      /* diagnostic only — never disrupt the call */
+    }
+  }
   try {
     await query(
       `insert into api_call
