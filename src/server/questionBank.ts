@@ -90,6 +90,36 @@ export function getBankItem(
   return getBankList(unitNo, level, type).find((it) => it.id === id);
 }
 
+/**
+ * The student-facing view of a stored question: everything needed to DISPLAY
+ * and answer it, with the answer/explanation stripped so it never travels to
+ * the browser before the student submits. The full item (with answer) stays
+ * server-side and is used for grading in the bank/answer route.
+ */
+export function publicQuestion(
+  type: BankType,
+  q: McQuestion | TfQuestion | FitbQuestion | FrQuestion
+): Record<string, unknown> {
+  switch (type) {
+    case 'mc': {
+      const m = q as McQuestion;
+      return { stem: m.stem, options: m.options };
+    }
+    case 'tf': {
+      const t = q as TfQuestion;
+      return { stem: t.stem };
+    }
+    case 'fitb': {
+      const f = q as FitbQuestion;
+      return { stem: f.stem };
+    }
+    case 'fr': {
+      const fr = q as FrQuestion;
+      return { prompt: fr.prompt, total_marks: fr.total_marks };
+    }
+  }
+}
+
 /** Which units currently have a generated bank on disk. */
 export function listBankUnits(): number[] {
   if (!existsSync(BANK_DIR)) return [];

@@ -38,6 +38,14 @@ import {
   type FrGrade,
 } from './quiz.js';
 import { getUnit } from './content.js';
+import {
+  getBankItem,
+  getBankList,
+  listBankUnits,
+  publicQuestion,
+  type BankLevel,
+  type BankType,
+} from './questionBank.js';
 import { getStudentProgress } from './progress.js';
 import {
   synthesizeQuiz,
@@ -363,6 +371,200 @@ lti.app.post('/api/quiz/answer', async (req: Request, res: Response) => {
     }
   } catch (e) {
     console.error('POST /api/quiz/answer failed:', e);
+    res.status(500).json({ error: (e as Error).message });
+  }
+});
+
+// ─── Question bank (Phase 2): serve pre-generated questions ──────────────────
+
+const VALID_LEVELS: BankLevel[] = ['basic', 'advanced'];
+const VALID_BANK_TYPES: BankType[] = ['mc', 'tf', 'fitb', 'fr'];
+
+/** One bank session per (student, unit, level, type) accumulates its attempts. */
+async function getOrCreateBankSession(
+  studentId: number,
+  unitNo: number,
+  level: BankLevel,
+  type: BankType
+): Promise<number> {
+  const kind = `bank_${type}`;
+  const existing = await query<{ id: number }>(
+    `select id from session
+       where student_id=$1 and kind=$2 and unit_no=$3 and summary->>'level'=$4
+       order by id limit 1`,
+    [studentId, kind, unitNo, level]
+  );
+  if (existing.length) return existing[0]!.id;
+  const created = await query<{ id: number }>(
+    `insert into session (student_id, kind, unit_no, summary) values ($1,$2,$3,$4) returning id`,
+    [studentId, kind, unitNo, JSON.stringify({ level })]
+  );
+  return created[0]!.id;
+}
+
+/** Which units have a generated bank (UI shows bank grid vs. live-generate). */
+lti.app.get('/api/bank/units', (_req: Request, res: Response) => {
+  res.json({ units: listBankUnits() });
+});
+
+/**
+ * List the questions for one (unit, level, type) tile grid — answers stripped —
+ * plus this student's per-question completion state.
+ */
+lti.app.post('/api/bank/list', async (req: Request, res: Response) => {
+  try {
+    const token = tokenOf(res);
+    const student = await studentFromToken(token);
+    const unitNo = parseInt(String(req.body?.unit_no ?? ''), 10);
+    const level = String(req.body?.level ?? '') as BankLevel;
+    const type = String(req.body?.type ?? '') as BankType;
+
+    if (!Number.isInteger(unitNo) || unitNo < 1 || unitNo > 17)
+      return res.status(400).json({ error: 'unit_no must be 1–17' });
+    if (!VALID_LEVELS.includes(level))
+      return res.status(400).json({ error: `level must be one of: ${VALID_LEVELS.join(', ')}` });
+    if (!VALID_BANK_TYPES.includes(type))
+      return res.status(400).json({ error: `type must be one of: ${VALID_BANK_TYPES.join(', ')}` });
+
+    const items = getBankList(unitNo, level, type);
+    if (items.length === 0) return res.json({ available: false, questions: [] });
+
+    // This student's attempts across these bank ids (for tile state).
+    const ids = items.map((it) => it.id);
+    const rows = await query<{ bank_question_id: string; attempts: number; ever_correct: boolean }>(
+      `select qa.bank_question_id,
+              count(*)::int as attempts,
+              bool_or(qa.scored_correct) as ever_correct
+       from quiz_attempt qa
+       join session s on s.id = qa.session_id
+       where s.student_id = $1 and qa.bank_question_id = any($2::text[])
+       group by qa.bank_question_id`,
+      [student.id, ids]
+    );
+    const byId = new Map(rows.map((r) => [r.bank_question_id, r]));
+
+    const questions = items.map((it, i) => {
+      const r = byId.get(it.id);
+      return {
+        id: it.id,
+        n: i + 1,
+        question: publicQuestion(type, it.question),
+        attempts: r?.attempts ?? 0,
+        ever_correct: r?.ever_correct ?? false,
+      };
+    });
+    res.json({ available: true, unit_no: unitNo, level, type, questions });
+  } catch (e) {
+    console.error('POST /api/bank/list failed:', e);
+    res.status(500).json({ error: (e as Error).message });
+  }
+});
+
+/** Answer one bank question by id. Grades server-side and records the attempt. */
+lti.app.post('/api/bank/answer', async (req: Request, res: Response) => {
+  try {
+    const token = tokenOf(res);
+    const student = await studentFromToken(token);
+    const unitNo = parseInt(String(req.body?.unit_no ?? ''), 10);
+    const level = String(req.body?.level ?? '') as BankLevel;
+    const type = String(req.body?.type ?? '') as BankType;
+    const id = String(req.body?.id ?? '');
+    const response = req.body?.response;
+
+    if (
+      !Number.isInteger(unitNo) ||
+      !VALID_LEVELS.includes(level) ||
+      !VALID_BANK_TYPES.includes(type) ||
+      !id
+    ) {
+      return res.status(400).json({ error: 'unit_no, level, type, id required' });
+    }
+
+    const item = getBankItem(unitNo, level, type, id);
+    if (!item) return res.status(404).json({ error: 'question not found' });
+    const question = item.question;
+
+    const sessionId = await getOrCreateBankSession(student.id, unitNo, level, type);
+
+    let correct = false;
+    let normalized: string | null = null;
+    let scoredScore: number | null = null;
+    let feedbackText: string;
+    let frGrade: FrGrade | null = null;
+
+    if (type === 'mc') {
+      const q = question as McQuestion;
+      correct = gradeMC(q, parseInt(String(response), 10));
+      feedbackText = q.explanation;
+    } else if (type === 'tf') {
+      const q = question as TfQuestion;
+      correct = gradeTF(q, response === true || response === 'true');
+      feedbackText = q.explanation;
+    } else if (type === 'fitb') {
+      const q = question as FitbQuestion;
+      const r = gradeFITB(q, String(response ?? ''));
+      correct = r.correct;
+      normalized = r.normalized_response;
+      feedbackText = q.explanation;
+    } else {
+      const q = question as FrQuestion;
+      frGrade = await gradeFR(
+        getUnit(unitNo),
+        q,
+        String(response ?? ''),
+        attr(token, student.id, sessionId, 'quiz.grade.fr')
+      );
+      scoredScore = Math.round((frGrade.total_awarded / frGrade.total_possible) * 100);
+      correct = scoredScore >= 80;
+      feedbackText = JSON.stringify(frGrade);
+    }
+
+    await query(
+      `insert into quiz_attempt
+         (session_id, unit_no, kind, question, response, scored_correct, scored_score, feedback, bank_question_id)
+       values ($1,$2,$3,$4,$5,$6,$7,$8,$9)`,
+      [
+        sessionId,
+        unitNo,
+        type,
+        JSON.stringify(question),
+        typeof response === 'string' ? response : JSON.stringify(response),
+        correct,
+        scoredScore,
+        feedbackText,
+        id,
+      ]
+    );
+    await query(
+      `insert into progress_summary (student_id, unit_no, kind, attempts, correct, last_at)
+       values ($1,$2,$3,1,$4,now())
+       on conflict (student_id, unit_no, kind)
+       do update set attempts = progress_summary.attempts + 1,
+                     correct  = progress_summary.correct + excluded.correct,
+                     last_at  = now()`,
+      [student.id, unitNo, type, correct ? 1 : 0]
+    );
+
+    if (type === 'mc') {
+      const q = question as McQuestion;
+      res.json({ correct, explanation: q.explanation, correct_index: q.correct_index });
+    } else if (type === 'tf') {
+      const q = question as TfQuestion;
+      res.json({ correct, explanation: q.explanation, correct_answer: q.correct });
+    } else if (type === 'fitb') {
+      const q = question as FitbQuestion;
+      res.json({
+        correct,
+        explanation: q.explanation,
+        correct_answer: q.answer,
+        normalized_response: normalized,
+      });
+    } else {
+      const q = question as FrQuestion;
+      res.json({ correct, score_pct: scoredScore, grade: frGrade, model_answer: q.model_answer });
+    }
+  } catch (e) {
+    console.error('POST /api/bank/answer failed:', e);
     res.status(500).json({ error: (e as Error).message });
   }
 });
