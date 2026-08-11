@@ -398,6 +398,9 @@
   .badge.has-data { color: var(--fg); background: #eef6f0; border-color: #cfe5d5; }
   .badge.weak { background: #fce8e8; border-color: #f1c4c4; color: #8b1f1f; }
   .badge .b-kind { color: var(--muted); }
+  .badge.clickable { cursor: pointer; }
+  .badge.clickable:hover { border-color: var(--accent); color: var(--accent); }
+  .badge.clickable:hover .b-kind { color: var(--accent); }
 
   /* Progress view */
   .progress-table {
@@ -918,7 +921,7 @@
     refreshProgress();
   });
 
-  async function openUnit(unitNo, unitTitle) {
+  async function openUnit(unitNo, unitTitle, startTab = 'tutor') {
     currentUnit = { no: unitNo, title: unitTitle };
     $('#unit-title').textContent = `Unit ${unitNo}: ${unitTitle}`;
     // Reset the quiz panels so a new unit starts fresh (they persist in the DOM).
@@ -926,9 +929,10 @@
       const p = $(`.tab-panel[data-panel="${k}"]`);
       if (p) { p.innerHTML = ''; delete p.dataset.state; }
     });
-    showTab('tutor');
-    // Tutor is the only one that pre-loads; quiz panels render on tab click.
+    // Preload the tutor session first (so "Discuss with tutor" works even when
+    // the student lands on a quiz tab), then show the requested tab.
     await tutorOpen(unitNo);
+    showTab(startTab);
     showView('unit');
   }
 
@@ -1862,16 +1866,27 @@
           ? (isFr ? `${headlinePct}% avg (${s.attempts})` : `${headlinePct}% (${s.attempts})`)
           : '—';
         b.innerHTML = `<span class="b-kind">${KIND_LABELS[k]}</span> ${display}`;
-        // Tooltip expands the abbreviation + summarizes attempts.
-        b.title = s.attempts > 0
+        // Clickable shortcut: jump straight to this unit's quiz type. stopPropagation
+        // so it doesn't also trigger the row's "open on tutor" handler.
+        b.classList.add('clickable');
+        b.title = (s.attempts > 0
           ? `${KIND_FULL[k]} — ${headlinePct}% across ${s.attempts} attempt${s.attempts === 1 ? '' : 's'}`
-          : `${KIND_FULL[k]} — no attempts yet`;
+          : `${KIND_FULL[k]} — no attempts yet`) + ' · click to practice';
+        b.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openUnit(parseInt(li.dataset.unitNo, 10), li.dataset.unitTitle || '', k);
+        });
         badges.appendChild(b);
       }
       if (u.tutor.turns > 0) {
         const tb = document.createElement('span');
-        tb.className = 'badge has-data';
+        tb.className = 'badge has-data clickable';
         tb.innerHTML = `<span class="b-kind">Tutor</span> ${u.tutor.turns} turns`;
+        tb.title = 'Open the tutor for this unit';
+        tb.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openUnit(parseInt(li.dataset.unitNo, 10), li.dataset.unitTitle || '', 'tutor');
+        });
         badges.appendChild(tb);
       }
     });
