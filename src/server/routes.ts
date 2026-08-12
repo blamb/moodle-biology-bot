@@ -19,6 +19,7 @@ import {
   getOrCreateActiveSession,
   getTurns,
   streamSocraticReply,
+  appendContextTurn,
 } from './tutor.js';
 import {
   generateMC,
@@ -205,6 +206,39 @@ lti.app.post('/api/tutor/session', async (req: Request, res: Response) => {
     res.json({ session, turns });
   } catch (e) {
     console.error('POST /api/tutor/session failed:', e);
+    res.status(500).json({ error: (e as Error).message });
+  }
+});
+
+/**
+ * Attach a practice-question context block to a tutor session without
+ * triggering a reply. The student then opens the conversation with their own
+ * question; the tutor sees the context (question, answer, rubric/marking) on
+ * its next turn.
+ */
+lti.app.post('/api/tutor/context', async (req: Request, res: Response) => {
+  try {
+    const token = tokenOf(res);
+    const student = await studentFromToken(token);
+    const sessionId = parseInt(String(req.body?.session_id ?? ''), 10);
+    const context = String(req.body?.context ?? '').trim();
+    if (!Number.isInteger(sessionId)) {
+      return res.status(400).json({ error: 'session_id is required' });
+    }
+    if (!context || context.length > 20000) {
+      return res.status(400).json({ error: 'context is required (max 20k chars)' });
+    }
+    const rows = await query<{ id: number; student_id: number }>(
+      `select id, student_id from session where id=$1 and kind='tutor'`,
+      [sessionId]
+    );
+    if (!rows.length || rows[0]!.student_id !== student.id) {
+      return res.status(404).json({ error: 'session not found' });
+    }
+    await appendContextTurn(sessionId, context);
+    res.json({ ok: true });
+  } catch (e) {
+    console.error('POST /api/tutor/context failed:', e);
     res.status(500).json({ error: (e as Error).message });
   }
 });
@@ -443,14 +477,78 @@ lti.app.post('/api/bank/list', async (req: Request, res: Response) => {
     );
     const byId = new Map(rows.map((r) => [r.bank_question_id, r]));
 
+    // Latest attempt per question, so reopening an answered question restores
+    // the student's answer and the marking instead of resetting it.
+    const lastRows = await query<{
+      bank_question_id: string;
+      response: string;
+      scored_correct: boolean;
+      scored_score: number | null;
+      feedback: string | null;
+    }>(
+      `select distinct on (qa.bank_question_id)
+              qa.bank_question_id, qa.response, qa.scored_correct, qa.scored_score, qa.feedback
+       from quiz_attempt qa
+       join session s on s.id = qa.session_id
+       where s.student_id = $1 and qa.bank_question_id = any($2::text[])
+       order by qa.bank_question_id, qa.ts desc, qa.id desc`,
+      [student.id, ids]
+    );
+    const lastById = new Map(lastRows.map((r) => [r.bank_question_id, r]));
+
+    /** Rebuild the same {response, result} the answer route returned. */
+    function lastAttemptView(
+      item: (typeof items)[number],
+      r: (typeof lastRows)[number]
+    ): Record<string, unknown> | null {
+      const q = item.question;
+      if (type === 'mc') {
+        const m = q as McQuestion;
+        return {
+          response: parseInt(r.response, 10),
+          result: { correct: r.scored_correct, explanation: m.explanation, correct_index: m.correct_index },
+        };
+      }
+      if (type === 'tf') {
+        const t = q as TfQuestion;
+        return {
+          response: r.response === 'true',
+          result: { correct: r.scored_correct, explanation: t.explanation, correct_answer: t.correct },
+        };
+      }
+      if (type === 'fitb') {
+        const f = q as FitbQuestion;
+        return {
+          response: r.response,
+          result: { correct: r.scored_correct, explanation: f.explanation, correct_answer: f.answer },
+        };
+      }
+      // fr — feedback column holds the FrGrade JSON.
+      const fr = q as FrQuestion;
+      let grade: unknown = null;
+      try { grade = r.feedback ? JSON.parse(r.feedback) : null; } catch { /* pre-bank rows */ }
+      if (!grade) return null;
+      return {
+        response: r.response,
+        result: {
+          correct: r.scored_correct,
+          score_pct: r.scored_score,
+          grade,
+          model_answer: fr.model_answer,
+        },
+      };
+    }
+
     const questions = items.map((it, i) => {
       const r = byId.get(it.id);
+      const lr = lastById.get(it.id);
       return {
         id: it.id,
         n: i + 1,
         question: publicQuestion(type, it.question),
         attempts: r?.attempts ?? 0,
         ever_correct: r?.ever_correct ?? false,
+        last: lr ? lastAttemptView(it, lr) : null,
       };
     });
     res.json({ available: true, unit_no: unitNo, level, type, questions });

@@ -122,6 +122,20 @@
     background: var(--tutor-bubble); color: var(--tutor-bubble-fg);
     border-bottom-left-radius: 4px;
   }
+  /* Auto-attached practice-question context: a collapsed, muted card — clearly
+     not a chat message from either party. */
+  .turn.context { justify-content: center; }
+  .turn.context details {
+    max-width: 92%; width: 100%;
+    border: 1px dashed var(--border); border-radius: 10px;
+    padding: .45rem .75rem; background: transparent;
+    color: var(--muted); font-size: .85rem;
+  }
+  .turn.context summary { cursor: pointer; user-select: none; }
+  .turn.context .ctx-body {
+    margin-top: .5rem; white-space: pre-wrap; word-wrap: break-word;
+    max-height: 320px; overflow-y: auto;
+  }
   .empty-state {
     color: var(--muted); font-style: italic; padding: 1rem 0; text-align: center;
   }
@@ -1007,7 +1021,31 @@
     turnsEl.scrollTop = turnsEl.scrollHeight;
   }
 
+  // Marker prefix for auto-attached practice-question context turns (must
+  // match CONTEXT_MARKER in src/server/tutor.ts).
+  const CONTEXT_MARKER = '[Practice question context]';
+
+  function appendContextElement(content) {
+    const div = document.createElement('div');
+    div.className = 'turn context';
+    const details = document.createElement('details');
+    const summary = document.createElement('summary');
+    summary.textContent = '📋 Practice question shared with the tutor — it can see your answer and the marking';
+    details.appendChild(summary);
+    const body = document.createElement('div');
+    body.className = 'ctx-body';
+    body.textContent = content.slice(CONTEXT_MARKER.length).trim();
+    details.appendChild(body);
+    div.appendChild(details);
+    turnsEl.appendChild(div);
+    turnsEl.scrollTop = turnsEl.scrollHeight;
+  }
+
   function appendTurnElement(role, content) {
+    if (role === 'user' && (content || '').startsWith(CONTEXT_MARKER)) {
+      appendContextElement(content);
+      return null;
+    }
     const div = document.createElement('div');
     div.className = 'turn ' + role;
     const bub = document.createElement('div');
@@ -1631,7 +1669,20 @@
     return { inputEl, getResponse };
   }
 
-  function openBankQuestion(kind, panel, item) {
+  // Prefill the (still-enabled) inputs with a previous response so a restored
+  // attempt looks exactly like it did right after submitting.
+  function prefillBankInput(kind, box, response) {
+    if (kind === 'mc' || kind === 'tf') {
+      const val = kind === 'mc' ? String(response) : (response ? 'true' : 'false');
+      const r = box.querySelector(`input[type=radio][value="${val}"]`);
+      if (r) r.checked = true;
+    } else {
+      const inp = box.querySelector('.fr-input, .quiz-fitb-input');
+      if (inp) inp.value = response ?? '';
+    }
+  }
+
+  function openBankQuestion(kind, panel, item, forceFresh = false) {
     panel.innerHTML = '';
     panel.dataset.state = 'bank-q';
     const box = document.createElement('div');
@@ -1680,9 +1731,10 @@
         if (!resp.ok) throw new Error(data.error || `Server returned ${resp.status}`);
         item.attempts += 1;
         if (data.correct) item.ever_correct = true;
+        item.last = { response, result: data }; // so reopening restores this attempt
         const draftKey = inputEl?.dataset?.draftKey;
         if (draftKey) { try { localStorage.removeItem(draftKey); } catch {} }
-        renderBankResult(kind, panel, box, q, response, data);
+        renderBankResult(kind, panel, box, q, response, data, item);
       } catch (e) {
         errEl.textContent = 'Submit failed: ' + friendlyError(e);
         submitBtn.disabled = false;
@@ -1692,10 +1744,23 @@
     box.appendChild(submitBtn);
     box.appendChild(errEl);
     panel.appendChild(box);
+
+    // Reopening an already-answered question restores the last attempt and its
+    // marking instead of resetting it (instructor feedback Aug 11). "Try again"
+    // in the result actions re-opens it fresh.
+    if (item.last && !forceFresh) {
+      prefillBankInput(kind, box, item.last.response);
+      const note = document.createElement('div');
+      note.style.cssText = 'color:var(--muted);font-size:.85rem;margin-bottom:.5rem';
+      note.textContent = 'Showing your previous attempt.';
+      box.insertBefore(note, box.querySelector('.quiz-stem'));
+      renderBankResult(kind, panel, box, q, item.last.response, item.last.result, item);
+      return;
+    }
     if (inputEl) inputEl.focus();
   }
 
-  function renderBankResult(kind, panel, box, q, response, data) {
+  function renderBankResult(kind, panel, box, q, response, data, item) {
     // Lock the inputs and drop the Submit button.
     box.querySelectorAll('input, textarea').forEach((el) => { el.disabled = true; el.readOnly = true; });
     box.querySelector('.btn')?.remove();
@@ -1747,6 +1812,13 @@
       tut.addEventListener('click', () => discussBankQuestion(kind, q, response, data));
       actions.appendChild(tut);
     }
+    if (item) {
+      const retry = document.createElement('button');
+      retry.className = 'btn btn-ghost';
+      retry.textContent = '↻ Try again';
+      retry.addEventListener('click', () => openBankQuestion(kind, panel, item, true));
+      actions.appendChild(retry);
+    }
     const back = document.createElement('button');
     back.className = 'bank-back';
     back.style.margin = '0';
@@ -1756,25 +1828,70 @@
     box.appendChild(actions);
   }
 
-  // Seed the tutor with this one bank question + the student's answer.
+  // Share context with the tutor WITHOUT auto-sending a student message: the
+  // tutor gets the question + answer + marking as background, and the student
+  // opens the conversation with their own question (instructor feedback Aug 11).
+  async function shareContextWithTutor(context) {
+    showTab('tutor');
+    if (!currentTutor.sessionId) return;
+    tutorErr.textContent = '';
+    try {
+      const resp = await fetch(apiUrl('/api/tutor/context'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ session_id: currentTutor.sessionId, context }),
+      });
+      if (!resp.ok) {
+        const d = await resp.json().catch(() => ({}));
+        throw new Error(d.error || 'Server returned ' + resp.status);
+      }
+      turnsEl.classList.remove('empty');
+      const empty = turnsEl.querySelector('.empty-state');
+      if (empty) empty.remove();
+      appendContextElement(context);
+      composeInput.placeholder = 'Ask the tutor your own question about this — e.g. why an option was wrong, or how a mark was awarded…';
+      composeInput.focus();
+    } catch (e) {
+      tutorErr.textContent = 'Could not share the question with the tutor: ' + friendlyError(e);
+    }
+  }
+
+  // Build the context block for one bank question + the student's graded attempt.
   function discussBankQuestion(kind, q, response, data) {
-    const lines = ['I just practiced this question and want to understand it better.', ''];
-    lines.push(kind === 'fr' ? q.prompt : q.stem);
+    const kindLabel = { mc: 'multiple choice', tf: 'true/false', fitb: 'fill in the blank', fr: 'free response' }[kind];
+    const level = bankState[kind]?.level === 'advanced' ? 'Advanced' : 'Basic';
+    const lines = [CONTEXT_MARKER,
+      `The student just attempted this ${level.toLowerCase()} ${kindLabel} practice question in Unit ${currentUnit?.no ?? '?'} and wants to discuss it. This block is auto-attached background — the student's own question follows in their next message.`, ''];
+    lines.push('Question: ' + (kind === 'fr' ? q.prompt : q.stem));
     if (kind === 'mc' && q.options) {
       q.options.forEach((o, i) => lines.push(`${String.fromCharCode(65 + i)}) ${o}`));
-      lines.push('', `My answer: ${typeof response === 'number' ? String.fromCharCode(65 + response) : response}`);
-      lines.push(`Correct answer: ${String.fromCharCode(65 + data.correct_index)}`);
+      lines.push('', `Student's answer: ${typeof response === 'number' ? String.fromCharCode(65 + response) + ') ' + q.options[response] : response}`);
+      lines.push(`Correct answer: ${String.fromCharCode(65 + data.correct_index)}) ${q.options[data.correct_index]}`);
+      lines.push(`Explanation shown to the student: ${data.explanation}`);
     } else if (kind === 'tf') {
-      lines.push('', `My answer: ${response ? 'True' : 'False'}`, `Correct answer: ${data.correct_answer ? 'True' : 'False'}`);
+      lines.push('', `Student's answer: ${response ? 'True' : 'False'}`, `Correct answer: ${data.correct_answer ? 'True' : 'False'}`);
+      lines.push(`Explanation shown to the student: ${data.explanation}`);
     } else if (kind === 'fitb') {
-      lines.push('', `My answer: ${response}`, `Correct answer: ${data.correct_answer}`);
+      lines.push('', `Student's answer: ${response}`, `Correct answer: ${data.correct_answer}`);
+      lines.push(`Explanation shown to the student: ${data.explanation}`);
     } else if (kind === 'fr') {
-      lines.push('', `My answer: ${response}`, `I scored ${data.score_pct}%.`);
+      lines.push('', `Student's answer:`, String(response), '');
+      const grade = data.grade;
+      if (grade) {
+        lines.push(`Score: ${grade.total_awarded}/${grade.total_possible} marks (${data.score_pct}%).`);
+        lines.push('Rubric and marking:');
+        grade.per_criterion.forEach((c, i) => {
+          lines.push(`  ${i + 1}. (${c.max_points} mark${c.max_points === 1 ? '' : 's'}) ${c.criterion} — awarded ${c.awarded}/${c.max_points} (${c.coverage})${c.rationale ? '. Grader: ' + c.rationale : ''}`);
+        });
+        if (grade.strong) lines.push(`Grader — what went well: ${grade.strong}`);
+        if (grade.missing) lines.push(`Grader — what was missing: ${grade.missing}`);
+        if (grade.not_needed) lines.push(`Grader — what wasn't needed: ${grade.not_needed}`);
+      } else {
+        lines.push(`Score: ${data.score_pct}%.`);
+      }
+      if (data.model_answer) lines.push('', `Model answer (full marks): ${data.model_answer}`);
     }
-    lines.push('', 'Can you help me understand what I got wrong and why?');
-    const seed = lines.join('\n');
-    showTab('tutor');
-    if (currentTutor.sessionId) tutorSend(seed);
+    shareContextWithTutor(lines.join('\n'));
   }
 
   // ───── Progress ─────
@@ -3053,16 +3170,15 @@
     const weak = s.results.filter(isWeak);
 
     if (weak.length === 0) {
-      return `I just scored ${scoreLine} on this unit. Can we go a level deeper on the concepts I should make sure I have nailed down?`;
+      return `The student scored ${scoreLine} on this unit — a clean run. They may want to go a level deeper on these concepts.`;
     }
 
     const cap = Math.min(5, weak.length);
     const items = weak.slice(0, cap).map((r) => formatResultForSeed(kind, r));
-    const intro = `I just took a ${kind === 'fr' ? 'free-response' : kind.toUpperCase()} quiz on this unit and scored ${scoreLine}. ` +
-      `Let's go over what I had trouble with — here ${cap === 1 ? 'is' : 'are'} ${cap === weak.length ? `all ${cap}` : `the first ${cap} of ${weak.length}`}:\n\n`;
+    const intro = `The student scored ${scoreLine} on this unit. ` +
+      `The questions they had trouble with (${cap === weak.length ? `all ${cap}` : `first ${cap} of ${weak.length}`}):\n\n`;
 
-    return intro + items.join('\n\n---\n\n') +
-      '\n\nCan we work through these one at a time?';
+    return intro + items.join('\n\n---\n\n');
   }
 
   function formatResultForSeed(kind, r) {
@@ -3071,18 +3187,18 @@
     if (kind === 'mc') {
       const opts = q.options.map((o, i) => {
         const tag = (i === data.correct_index ? ' ← correct' : '') +
-                    (i === r.response && !data.correct ? ' ← my choice' : '');
+                    (i === r.response && !data.correct ? " ← student's choice" : '');
         return `  ${String.fromCharCode(65 + i)}) ${o}${tag}`;
       }).join('\n');
       return `Question: ${q.stem}\n${opts}\nExplanation: ${data.explanation}`;
     }
     if (kind === 'tf') {
       return `Question (True/False): ${q.stem}\n` +
-        `Correct: ${data.correct_answer ? 'True' : 'False'}; my answer: ${r.response ? 'True' : 'False'}\n` +
+        `Correct: ${data.correct_answer ? 'True' : 'False'}; student's answer: ${r.response ? 'True' : 'False'}\n` +
         `Explanation: ${data.explanation}`;
     }
     if (kind === 'fitb') {
-      return `Question: ${q.stem}\nMy answer: "${r.response}"; expected: "${data.correct_answer}"\nExplanation: ${data.explanation}`;
+      return `Question: ${q.stem}\nStudent's answer: "${r.response}"; expected: "${data.correct_answer}"\nExplanation: ${data.explanation}`;
     }
     if (kind === 'fr') {
       const grade = data.grade;
@@ -3091,7 +3207,7 @@
         (c.rationale ? ' — ' + c.rationale : '')
       ).join('\n');
       return `Question: ${q.prompt}\n` +
-        `My answer: ${r.response}\n` +
+        `Student's answer: ${r.response}\n` +
         `Score: ${grade.total_awarded}/${grade.total_possible}\n` +
         `Rubric breakdown:\n${bullets}` +
         (grade.missing ? `\nWhat was missing: ${grade.missing}` : '') +
@@ -3159,10 +3275,15 @@
     tutor.textContent = 'Discuss with tutor';
     tutor.addEventListener('click', () => {
       const seed = buildQuizDiscussionSeed(s);
-      showTab('tutor');
-      if (seed && currentTutor.sessionId) {
-        // Send as a real user message so the conversation has visible context.
-        tutorSend(seed);
+      if (seed) {
+        // Attach as background context; the student asks their own question.
+        shareContextWithTutor(
+          CONTEXT_MARKER + '\n' +
+          'The student just finished a practice quiz and wants to discuss it. This block is auto-attached background — their own question follows in their next message.\n\n' +
+          seed
+        );
+      } else {
+        showTab('tutor');
       }
     });
     actions.appendChild(tutor);

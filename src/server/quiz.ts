@@ -239,6 +239,9 @@ CRITICAL — the question must explicitly ask for everything the rubric scores:
 - Do NOT score any concept, comparison, direction, ranking, or detail the prompt does not ask for. (For example: if the rubric awards a mark for "which of two things happens first" or "which is more effective," the prompt must explicitly ask the student to compare or rank them — otherwise drop that criterion.)
 - Before finalizing, walk the rubric and check each item against the prompt text. For any criterion the prompt does not clearly request, either (a) add that request to the prompt wording, or (b) remove the criterion and rebalance the remaining marks so they still SUM to total_marks.
 - It is better to have a well-aligned 4-mark question than a 5-mark question where one mark tests something the student was never asked for.
+- Rubric criteria must not smuggle in qualifiers the prompt doesn't ask for. If a criterion requires wording like "the MAIN/primary X" or a specific location, the prompt must ask for that emphasis or location explicitly — otherwise phrase the criterion so the plain fact earns the mark.
+- Symmetric criteria get symmetric marks: when two rubric items make the same kind of point about two parallel things (e.g. the function of each of two neurotransmitters), they MUST carry the same number of marks. Never weight one side of a parallel pair heavier.
+- The prompt must not give away any scored point. If the rubric awards a mark for classifying/identifying something, the prompt cannot state that classification in its own wording (e.g. don't open with "X and Y are both amino acid neurotransmitters" and then award a mark for saying so).
 
 Output JSON shape (a single array):
 [
@@ -558,6 +561,32 @@ async function callGenerator(
   }
 }
 
+/**
+ * The generator puts correct answers overwhelmingly at A/B (instructor feedback
+ * Aug 11: one unit's bank had 29/30 at "A"). Shuffle every question's options
+ * and remap the "(A)"…"(E)" letter references inside the explanation to match.
+ */
+export function shuffleMcOptions(q: McQuestion): McQuestion {
+  const n = q.options.length;
+  const order = Array.from({ length: n }, (_, i) => i);
+  for (let i = n - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [order[i], order[j]] = [order[j]!, order[i]!];
+  }
+  // order[newPos] = oldIdx → invert for letter remapping
+  const oldToNew = new Map<number, number>();
+  order.forEach((old, newPos) => oldToNew.set(old, newPos));
+  const explanation = q.explanation
+    .replace(/\(([A-E])\)/g, (_, l: string) => `(\u0000${oldToNew.get(l.charCodeAt(0) - 65)}\u0000)`)
+    .replace(/\u0000(\d)\u0000/g, (_, d: string) => String.fromCharCode(65 + parseInt(d, 10)));
+  return {
+    ...q,
+    options: order.map((old) => q.options[old]!),
+    correct_index: oldToNew.get(q.correct_index)!,
+    explanation,
+  };
+}
+
 export async function generateMC(
   unitNo: number,
   count: number,
@@ -573,7 +602,7 @@ export async function generateMC(
     { ...attribution, endpoint: 'quiz.generate.mc' }
   );
   const parsed = z.array(McQuestion).parse(raw);
-  return parsed.slice(0, count);
+  return parsed.slice(0, count).map(shuffleMcOptions);
 }
 
 export async function generateTF(
@@ -849,6 +878,7 @@ Grading rules:
    - "partial" = the student showed some real understanding but missed a meaningful part. Award AT LEAST HALF the criterion's marks (e.g. 0.5 of 1, 1 of 2, 1.5 of 3), and more when they are most of the way there. Never give 0 to an answer that shows partial understanding.
    - "missing" = the student genuinely did not address the criterion, OR what they wrote about it is incorrect. Only this earns 0.
 4. When you are unsure between two coverage levels, choose the MORE GENEROUS one (full over partial, partial over missing).
+4b. GRADE THE PROMPT, NOT THE RUBRIC'S EXTRA WORDS. If a rubric criterion contains a qualifier or detail the question prompt never asked the student for (e.g. the rubric says "the MAIN excitatory neurotransmitter" but the prompt only asked for the function, or the rubric names a location the prompt didn't request), award full marks when the student got right what the prompt actually asked. Never deduct for a word or detail the student had no way of knowing was required.
 5. The rationale must quote or paraphrase specific phrases from the student's response when awarding points, and name what was missing when not awarding.
 6. "Missing" describes content the RUBRIC required but the student did not provide. Do NOT use it to introduce concepts the rubric never asked for, even if you think they're relevant. Empty string if all rubric items were addressed.
 7. "Not_needed" is ONLY for content that is factually wrong OR genuinely off-topic in a way that suggests the student misread the question. Do NOT flag biology that is correct and adjacent — students often raise related material as part of thinking through a problem, and that's not a problem. Empty string in the common case.
