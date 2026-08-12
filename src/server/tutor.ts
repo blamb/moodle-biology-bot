@@ -44,6 +44,11 @@ Hard rules:
 
 Tone: warm, undergraduate-appropriate, concrete. Avoid jargon-density unless probing the student's grasp of a specific term that's already in their vocabulary or this unit's terms list.
 
+Practice-question context blocks: a message beginning "[Practice question context]" is NOT written by the student — it is auto-attached background from a practice question they just attempted. It contains the question, the student's answer, and (for free-response) the full per-mark rubric, what the grader awarded, and the model answer. Treat it as reference material:
+- The student's OWN words are whatever follows the context block. Answer THEIR question first — let them set the agenda. Do not open with a probing question about a detail they didn't ask about.
+- Use the rubric and marking in the block when they ask about their grade; you have the authoritative record, so never say you can't see their answer or the rubric.
+- If the student challenges the grading and, per the block, they have a point (the rubric demanded something the question never asked, or mark weights look inconsistent), say so plainly and suggest they flag it to their instructor — don't defend a rubric the block doesn't support, and don't keep steering them elsewhere.
+
 The student's display name and current unit are provided in the user message preamble for the first turn only; you don't need to repeat them.`;
 
 function unitGroundingBlock(unit: UnitContent): string {
@@ -110,6 +115,25 @@ async function appendTurn(
 }
 
 /**
+ * Marker prefix for auto-attached practice-question context turns. Stored as a
+ * 'user' turn (schema only allows user/assistant) but both the system prompt
+ * and the web UI treat marked turns as background context, not student words.
+ */
+export const CONTEXT_MARKER = '[Practice question context]';
+
+/**
+ * Attach a practice-question context block to the session WITHOUT generating a
+ * reply — the student asks their own first question afterwards ("student leads"
+ * flow, instructor feedback Aug 11). The next streamed turn will see it.
+ */
+export async function appendContextTurn(sessionId: number, context: string): Promise<void> {
+  const content = context.startsWith(CONTEXT_MARKER)
+    ? context
+    : `${CONTEXT_MARKER}\n${context}`;
+  await appendTurn(sessionId, 'user', content);
+}
+
+/**
  * Stream a Socratic reply to the given user message. Persists both the user
  * turn (before streaming starts) and the assistant turn (after streaming
  * completes). Emits the assistant's text in chunks via `onChunk`.
@@ -132,10 +156,17 @@ export async function streamSocraticReply(params: {
 
   // Anthropic messages: full prior history + this user turn. The history
   // already includes the just-appended user message because we re-read.
-  const messages: Anthropic.MessageParam[] = turns.map((t) => ({
-    role: t.role,
-    content: t.content,
-  }));
+  // Consecutive same-role turns (a context turn followed by the student's own
+  // message) are merged, since the API requires alternating roles.
+  const messages: Anthropic.MessageParam[] = [];
+  for (const t of turns) {
+    const prev = messages[messages.length - 1];
+    if (prev && prev.role === t.role && typeof prev.content === 'string') {
+      prev.content = `${prev.content}\n\n${t.content}`;
+    } else {
+      messages.push({ role: t.role, content: t.content });
+    }
+  }
 
   // First user message gets a brief preamble so the model knows the student's
   // name and unit context. We prepend it only to the first user message in the

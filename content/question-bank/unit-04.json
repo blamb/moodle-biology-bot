@@ -1,0 +1,2995 @@
+{
+  "unit_no": 4,
+  "generated_at": "2026-07-16T16:51:12.058Z",
+  "levels": {
+    "basic": {
+      "mc": [
+        {
+          "id": "u4-basic-mc-01",
+          "question": {
+            "stem": "Which term refers to the sum of all anabolic and catabolic reactions occurring in the body?",
+            "options": [
+              "Cellular respiration",
+              "Metabolism",
+              "Apoptosis",
+              "Catabolism",
+              "Differentiation"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Metabolism is defined as the sum of all anabolic and catabolic reactions that take place in the body.\n\n**Why the other options are wrong:**\n- **(A)** Cellular respiration is one specific process that produces ATP, not the entire set of reactions.\n- **(C)** Apoptosis is programmed cell death, not a metabolic summary.\n- **(D)** Catabolism is only the breakdown half of metabolism, not the whole.\n- **(E)** Differentiation is the process of cells becoming specialized."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-02",
+          "question": {
+            "stem": "Which sequence correctly orders the levels of structural organization from simplest to most complex?",
+            "options": [
+              "Chemical → cellular → organ → tissue → organ system → organismal",
+              "Chemical → tissue → cellular → organ → organismal → organ system",
+              "Chemical → cellular → tissue → organ → organ system → organismal",
+              "Cellular → chemical → tissue → organ → organ system → organismal",
+              "Cellular → tissue → chemical → organ → organ system → organismal"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The levels increase in complexity from chemical (atoms/molecules) to cellular, tissue, organ, organ system, and finally organismal.\n\n**Why the other options are wrong:**\n- **(A)** Tissues form organs, so tissues must precede organs.\n- **(B)** Cells come before tissues, not after.\n- **(D)** The chemical level precedes the cellular level, not the reverse.\n- **(E)** The chemical level is the simplest and must come first."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-03",
+          "question": {
+            "stem": "A person sweats and dilates blood vessels near the skin when body temperature rises. Which characteristic of life does this illustrate?",
+            "options": [
+              "Organization",
+              "Responsiveness",
+              "Exchange of material",
+              "Reproduction",
+              "Metabolism"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Responsiveness is the ability to adjust to changes in the internal or external environment, such as sweating to lower body temperature.\n\n**Why the other options are wrong:**\n- **(A)** Organization refers to compartmentalization of fluids and cells.\n- **(C)** Exchange of material is taking in nutrients and getting rid of wastes.\n- **(D)** Reproduction is the formation of a new organism.\n- **(E)** Metabolism is the chemical reactions that build and break down molecules."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-04",
+          "question": {
+            "stem": "Which of the following is NOT a component of the endomembrane system?",
+            "options": [
+              "Mitochondrion",
+              "Endoplasmic reticulum",
+              "Nuclear envelope",
+              "Vesicles",
+              "Golgi apparatus"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The mitochondrion has an independent evolutionary origin and is not part of the endomembrane system.\n\n**Why the other options are wrong:**\n- **(B)** The endoplasmic reticulum is part of the endomembrane system.\n- **(C)** The nuclear envelope is part of the endomembrane system.\n- **(D)** Vesicles are part of the endomembrane system.\n- **(E)** The Golgi apparatus is part of the endomembrane system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-05",
+          "question": {
+            "stem": "Which structural level is defined as an anatomically distinct structure composed of two or more tissue types?",
+            "options": [
+              "Tissue",
+              "Organelle",
+              "Organ system",
+              "Cell",
+              "Organ"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** An organ is an anatomically distinct structure composed of two or more tissue types that performs specific functions.\n\n**Why the other options are wrong:**\n- **(A)** A tissue is a group of similar or related cells, not multiple tissue types.\n- **(B)** An organelle is a membrane-enclosed structure within a cell.\n- **(C)** An organ system is a group of organs working together.\n- **(D)** A cell is the smallest independently functioning unit of an organism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-06",
+          "question": {
+            "stem": "During cell division, chromatin condenses into a highly compacted, transportable structure. What is this condensed form called?",
+            "options": [
+              "Chromosome",
+              "Ribosome",
+              "Nucleolus",
+              "Nuclear pore",
+              "Histone"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A chromosome is the condensed form of chromatin, packaged tightly so DNA can be safely transported to daughter cells during division.\n\n**Why the other options are wrong:**\n- **(B)** A ribosome is the site of protein synthesis.\n- **(C)** The nucleolus manufactures RNAs for ribosome construction.\n- **(D)** A nuclear pore is a channel through the nuclear envelope.\n- **(E)** Histones are the proteins around which DNA is wrapped, not the condensed structure."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-07",
+          "question": {
+            "stem": "Which of the following is the best example of the characteristic of life described as movement?",
+            "options": [
+              "The skin acting as a barrier against microorganisms",
+              "Combining amino acids into proteins",
+              "Breaking down glucose into carbon dioxide",
+              "The diaphragm contracting to move air into the lungs",
+              "Cells reading only relevant portions of their DNA"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Movement includes constant muscular activity such as the diaphragm contracting during breathing.\n\n**Why the other options are wrong:**\n- **(A)** The skin barrier is an example of organization.\n- **(B)** Combining amino acids is anabolism, part of metabolism.\n- **(C)** Breaking down glucose is catabolism, part of metabolism.\n- **(E)** Selective gene reading relates to differentiation/gene expression."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-08",
+          "question": {
+            "stem": "Which organelle is the site where proteins are synthesized?",
+            "options": [
+              "Smooth ER",
+              "Ribosome",
+              "Nucleolus",
+              "Golgi apparatus",
+              "Lysosome"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A ribosome is the organelle that serves as the site of protein synthesis, whether bound to rough ER or free in the cytosol.\n\n**Why the other options are wrong:**\n- **(A)** Smooth ER synthesizes lipids, not proteins.\n- **(C)** The nucleolus manufactures RNAs for constructing ribosomes, not the proteins themselves.\n- **(D)** The Golgi apparatus sorts and repackages proteins, but does not synthesize them.\n- **(E)** A lysosome contains digestive enzymes to break down material."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-09",
+          "question": {
+            "stem": "Which statement best describes cell differentiation as distinct from cell division and cell growth?",
+            "options": [
+              "A cell releases its digestive enzymes to self-destruct",
+              "A cell duplicates its DNA before splitting",
+              "A cell increases in size after being created",
+              "An unspecialized cell becomes specialized in structure and function",
+              "One cell splits to generate two daughter cells"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Cell differentiation is the process by which unspecialized cells become specialized in structure and function.\n\n**Why the other options are wrong:**\n- **(A)** Releasing digestive enzymes to self-destruct describes autolysis/apoptosis.\n- **(B)** DNA duplication is part of the preparation for cell division.\n- **(C)** Increasing in size describes cell growth, not differentiation.\n- **(E)** One cell splitting into two describes cell division."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-10",
+          "question": {
+            "stem": "The gastrointestinal tract is described as a hollow tunnel packed with microorganisms that do not actually enter the body. Which characteristic of life does this illustrate?",
+            "options": [
+              "Metabolism",
+              "Development",
+              "Movement",
+              "Organization",
+              "Reproduction"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Organization refers to the compartmentalization that keeps microorganisms in the GI tunnel from entering the body's internal fluids.\n\n**Why the other options are wrong:**\n- **(A)** Metabolism is the sum of anabolic and catabolic reactions.\n- **(B)** Development is the sum of changes the body undergoes in life.\n- **(C)** Movement refers to muscular activity in the body.\n- **(E)** Reproduction is the formation of a new organism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-11",
+          "question": {
+            "stem": "Which term refers to DNA and its associated proteins when they are in a loose, non-condensed form?",
+            "options": [
+              "Chromatin",
+              "Gene",
+              "Histone",
+              "Chromosome",
+              "Nucleolus"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Chromatin is the loose, uncondensed form of DNA wrapped around histone proteins, present when the cell is not dividing.\n\n**Why the other options are wrong:**\n- **(B)** A gene is a segment of DNA coding for a product, not the term for loose DNA-protein threads.\n- **(C)** A histone is a protein that DNA wraps around, not the DNA-protein complex itself.\n- **(D)** A chromosome is the tightly condensed form of chromatin seen during cell division.\n- **(E)** The nucleolus is the region that manufactures ribosomal RNA, not a form of DNA packaging."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-12",
+          "question": {
+            "stem": "Which of the following best describes the process of cell differentiation?",
+            "options": [
+              "The controlled self-destruction of a critically damaged cell",
+              "An increase in the number of body cells to replace worn cells",
+              "The duplication of DNA prior to division into two daughter cells",
+              "An increase in the size of an existing cell",
+              "The process by which unspecialized cells become specialized in structure and function"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Cell differentiation is the process in which unspecialized cells become specialized in structure and function to perform particular tasks.\n\n**Why the other options are wrong:**\n- **(A)** Controlled self-destruction describes apoptosis, not differentiation.\n- **(B)** Increasing cell number to replace worn cells describes cell division, not differentiation.\n- **(C)** DNA duplication before division is part of cell division, not differentiation.\n- **(D)** An increase in cell size describes cell growth, not differentiation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-13",
+          "question": {
+            "stem": "In the terminology of this unit, what is a somatic cell?",
+            "options": [
+              "A cell containing more than one nucleus",
+              "A cell that has lost its nucleus during maturation",
+              "Any body cell other than a germ cell",
+              "A cell that produces eggs or sperm",
+              "An unspecialized cell that can divide without limit"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A somatic cell is a general term for any body cell, meaning all human cells except the germ cells that produce eggs and sperm.\n\n**Why the other options are wrong:**\n- **(A)** A multinucleated cell is one example but does not define the term somatic cell.\n- **(B)** A cell that ejects its nucleus (like a red blood cell) is one example of a somatic cell but not the definition.\n- **(D)** Cells that produce eggs and sperm are germ cells, not somatic cells.\n- **(E)** An unspecialized cell that divides without limit is a stem cell."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-14",
+          "question": {
+            "stem": "Which cellular organelle is the site of protein synthesis?",
+            "options": [
+              "Smooth endoplasmic reticulum",
+              "Mitochondrion",
+              "Ribosome",
+              "Golgi apparatus",
+              "Lysosome"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A ribosome is the organelle that serves as the site of protein synthesis, whether bound to rough ER or free in the cytosol.\n\n**Why the other options are wrong:**\n- **(A)** Smooth ER synthesizes lipids, stores calcium, and detoxifies; it lacks ribosomes.\n- **(B)** The mitochondrion produces ATP through cellular respiration, not proteins.\n- **(D)** The Golgi apparatus sorts, modifies, and packages proteins, but does not synthesize them.\n- **(E)** A lysosome contains digestive enzymes to break down materials, not build proteins."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-15",
+          "question": {
+            "stem": "Which characteristic of life is defined as the sum of all the anabolic and catabolic reactions that take place in the body?",
+            "options": [
+              "Organization",
+              "Development",
+              "Responsiveness",
+              "Metabolism",
+              "Exchange of material"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Metabolism is defined as the sum of all anabolic and catabolic reactions occurring in the body.\n\n**Why the other options are wrong:**\n- **(A)** Organization refers to the compartmentalization of fluids and cells in the body.\n- **(B)** Development refers to all the changes the body goes through in life, including differentiation.\n- **(C)** Responsiveness is the ability to adjust to changes in the internal and external environments.\n- **(E)** Exchange of material refers to taking in nutrients and getting rid of wastes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-16",
+          "question": {
+            "stem": "A person begins to sweat and the blood vessels near the skin dilate when their body temperature rises. Which characteristic of life does this illustrate?",
+            "options": [
+              "Growth",
+              "Reproduction",
+              "Metabolism",
+              "Organization",
+              "Responsiveness"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Responsiveness is the ability of an organism to adjust to changes in its internal or external environment, such as sweating and vessel dilation in response to increased body temperature.\n\n**Why the other options are wrong:**\n- **(A)** Growth is an increase in body size, not a response to a stimulus.\n- **(B)** Reproduction is the formation of a new organism from parent organisms.\n- **(C)** Metabolism is the sum of anabolic and catabolic reactions, not the response to a temperature change.\n- **(D)** Organization refers to compartmentalization of body fluids and cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-17",
+          "question": {
+            "stem": "What is the correct definition of anabolism?",
+            "options": [
+              "The combining of simpler molecules into larger, more complex substances, requiring energy",
+              "The transport of proteins from the ER to the Golgi apparatus",
+              "The engulfing of bacteria by immune cells",
+              "The programmed death of a critically damaged cell",
+              "The breakdown of larger molecules into smaller ones, releasing energy"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Anabolism is the process of combining simpler molecules into larger, more complex substances, which requires the input of energy.\n\n**Why the other options are wrong:**\n- **(B)** Transport from ER to Golgi is a function of the endomembrane system, not a definition of anabolism.\n- **(C)** Engulfing bacteria describes phagocytosis.\n- **(D)** Programmed cell death describes apoptosis.\n- **(E)** The breakdown of larger molecules that releases energy is catabolism, not anabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-18",
+          "question": {
+            "stem": "According to the unit, which of the following cell types generally does NOT undergo cell division?",
+            "options": [
+              "Cells that regularly replace worn tissue",
+              "Most epithelial cells of the skin",
+              "Most connective tissue cells",
+              "Cells lining the gastrointestinal tract",
+              "Red blood cells"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Red blood cells are listed among the few cells (along with gametes, most neurons, and some muscle cells) that do not undergo cell division.\n\n**Why the other options are wrong:**\n- **(A)** Cells that replace worn tissue must divide to do so.\n- **(B)** Epithelial cells of the skin are shed and replaced through cell division.\n- **(C)** Most connective tissue cells are somatic cells that divide regularly.\n- **(D)** GI tract lining cells divide regularly as they are constantly worn away."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-19",
+          "question": {
+            "stem": "Which organelle is NOT considered part of the endomembrane system?",
+            "options": [
+              "Nuclear envelope",
+              "Vesicles",
+              "Endoplasmic reticulum",
+              "Mitochondrion",
+              "Golgi apparatus"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The mitochondrion is not part of the endomembrane system because it has an independent evolutionary origin and functions in energy processing rather than processing and transporting proteins and lipids.\n\n**Why the other options are wrong:**\n- **(A)** The nuclear envelope is included in the endomembrane system.\n- **(B)** Vesicles, including lysosomes, are part of the endomembrane system.\n- **(C)** The endoplasmic reticulum is part of the endomembrane system.\n- **(E)** The Golgi apparatus is a core component of the endomembrane system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-20",
+          "question": {
+            "stem": "Which of the following lists the levels of structural organization in the correct order from simplest to most complex?",
+            "options": [
+              "Chemical → cellular → organ → tissue → organ system → organism",
+              "Cellular → tissue → chemical → organ → organism → organ system",
+              "Chemical → cellular → tissue → organ → organ system → organism",
+              "Chemical → tissue → cellular → organ → organism → organ system",
+              "Cell → chemical → tissue → organ → organ system → organism"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The levels increase in complexity from the chemical level (atoms and molecules), to cellular, tissue, organ, organ system, and finally the organismal level.\n\n**Why the other options are wrong:**\n- **(A)** This incorrectly places the organ level before the tissue level.\n- **(B)** This misorders the chemical level and places it after cellular and tissue.\n- **(D)** This incorrectly places tissue before the cellular level.\n- **(E)** This incorrectly places the cellular level before the chemical level."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-21",
+          "question": {
+            "stem": "Which process is defined as the sum of all anabolic and catabolic reactions in the body and is considered one of the characteristics of life?",
+            "options": [
+              "Responsiveness",
+              "Organization",
+              "Reproduction",
+              "Movement",
+              "Metabolism"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Metabolism is defined as the sum of all anabolic (building up) and catabolic (breaking down) reactions that take place in the body.\n\n**Why the other options are wrong:**\n- **(A)** Responsiveness is the ability to adjust to internal and external environmental changes, not the sum of chemical reactions.\n- **(B)** Organization refers to the compartmentalization of fluids and cells within the body.\n- **(C)** Reproduction is the formation of a new organism from parents.\n- **(D)** Movement refers to muscular and cellular motion, not chemical reactions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-22",
+          "question": {
+            "stem": "A student is asked to distinguish cell division, cell growth, and cell differentiation. Which statement correctly describes cell differentiation?",
+            "options": [
+              "The process by which unspecialized cells become specialized in structure and function",
+              "The increase in the size of a cell after it has divided",
+              "The process by which one cell splits into two daughter cells",
+              "The duplication of DNA before a cell divides",
+              "The increase in the number of cells in the body"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Cell differentiation is the process in which unspecialized cells become specialized in structure and function to carry out distinct tasks.\n\n**Why the other options are wrong:**\n- **(B)** This describes cell growth, not differentiation.\n- **(C)** This describes cell division, not differentiation.\n- **(D)** DNA duplication is a step in cell division, not differentiation.\n- **(E)** Increasing cell number describes growth via cell division, not differentiation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-23",
+          "question": {
+            "stem": "Mature mammalian red blood cells differ from most other body cells because they:",
+            "options": [
+              "Contain only half of the body's DNA",
+              "Lack a nucleus",
+              "Contain twice the normal amount of DNA",
+              "Are the only cells that contain a nucleus",
+              "Contain multiple nuclei"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Mature mammalian red blood cells eject their nuclei as they mature, creating extra space for hemoglobin to carry oxygen.\n\n**Why the other options are wrong:**\n- **(A)** Cells containing half the DNA are gametes (egg and sperm), not red blood cells.\n- **(C)** Red blood cells do not carry double DNA; they have ejected their nucleus.\n- **(D)** Most body cells contain a nucleus; red blood cells are notable for lacking one.\n- **(E)** Multinucleated cells are exemplified by skeletal muscle cells, not red blood cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-24",
+          "question": {
+            "stem": "Which sequence correctly lists the levels of structural organization from simplest to most complex?",
+            "options": [
+              "Tissue → cellular → chemical → organ → organ system → organism",
+              "Chemical → cellular → tissue → organ → organ system → organism",
+              "Cell → chemical → tissue → organ → organ system → organism",
+              "Chemical → tissue → cellular → organ system → organ → organism",
+              "Cellular → chemical → organ → tissue → organism → organ system"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The body is organized in increasing complexity from the chemical level (atoms/molecules) to cellular, tissue, organ, organ system, and finally the organismal level.\n\n**Why the other options are wrong:**\n- **(A)** The chemical level is the simplest, not the third level.\n- **(C)** The chemical level, not the cell, is the simplest starting point.\n- **(D)** Cells make up tissues, so cellular must precede tissue level.\n- **(E)** The chemical level is simpler than the cellular level."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-25",
+          "question": {
+            "stem": "In this unit's terminology, what is the correct definition of a somatic cell?",
+            "options": [
+              "A cell that contains only half of the body's DNA",
+              "Any body cell other than the cells that produce eggs and sperm",
+              "An unspecialized cell that can divide without limit",
+              "A cell that lacks membrane-bound organelles",
+              "A cell that produces eggs or sperm"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A somatic cell is a general term for any body cell except the germ cells that produce eggs and sperm.\n\n**Why the other options are wrong:**\n- **(A)** Cells with half the DNA are gametes, not somatic cells.\n- **(C)** An unspecialized cell that divides without limit is a stem cell.\n- **(D)** Cells lacking membrane-bound organelles are prokaryotes such as bacteria.\n- **(E)** Cells that produce eggs and sperm are germ cells, not somatic cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-26",
+          "question": {
+            "stem": "According to the unit, most somatic cells replace worn-out cells by dividing regularly through which process?",
+            "options": [
+              "Autophagy",
+              "Exocytosis",
+              "Mitosis",
+              "Differentiation",
+              "Apoptosis"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Most somatic cells divide regularly via mitosis, generating two daughter cells to replace worn cells.\n\n**Why the other options are wrong:**\n- **(A)** Autophagy is the lysosomal digestion of damaged cell components.\n- **(B)** Exocytosis is the secretion of materials from a cell, not cell division.\n- **(D)** Differentiation is specialization, which occurs after division, not the division process itself.\n- **(E)** Apoptosis is programmed cell death, not cell division."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-27",
+          "question": {
+            "stem": "Which of the following organelles is NOT a component of the endomembrane system?",
+            "options": [
+              "Mitochondrion",
+              "Nuclear envelope",
+              "Endoplasmic reticulum",
+              "Lysosome",
+              "Golgi apparatus"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The mitochondrion is not part of the endomembrane system; it has an independent evolutionary origin and processes energy rather than processing/transporting proteins and lipids.\n\n**Why the other options are wrong:**\n- **(B)** The nuclear envelope is continuous with the ER and is part of the endomembrane system.\n- **(C)** The endoplasmic reticulum is a core member of the endomembrane system.\n- **(D)** Lysosomes are vesicles derived from the Golgi and belong to the endomembrane system.\n- **(E)** The Golgi apparatus sorts and packages proteins and is part of the endomembrane system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-28",
+          "question": {
+            "stem": "Which cellular component is the site of protein synthesis?",
+            "options": [
+              "Lysosome",
+              "Nucleolus",
+              "Golgi apparatus",
+              "Smooth ER",
+              "Ribosome"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Ribosomes are the organelles that serve as the site of protein synthesis, whether bound to rough ER or free in the cytosol.\n\n**Why the other options are wrong:**\n- **(A)** Lysosomes contain digestive enzymes and break down materials, they do not make proteins.\n- **(B)** The nucleolus manufactures the RNAs used to construct ribosomes but does not itself synthesize proteins.\n- **(C)** The Golgi apparatus sorts and packages proteins after they are made, not synthesizes them.\n- **(D)** Smooth ER synthesizes lipids and stores calcium; it lacks ribosomes and does not make proteins."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-29",
+          "question": {
+            "stem": "Which definition best describes a tissue?",
+            "options": [
+              "The smallest independently functioning unit of a living organism",
+              "An anatomically distinct structure composed of two or more tissue types",
+              "A membrane-enclosed body inside a cell that performs a unique function",
+              "A group of many similar or related cells that work together to perform a specific function",
+              "A group of organs that work together to meet a physiological need"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A tissue is a group of many similar (sometimes related) cells that work together to perform a specific function.\n\n**Why the other options are wrong:**\n- **(A)** This describes a cell, the smallest independently functioning unit.\n- **(B)** This describes an organ, which is made of two or more tissue types.\n- **(C)** This describes an organelle, a structure inside a cell.\n- **(E)** This describes an organ system, a group of organs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-mc-30",
+          "question": {
+            "stem": "In this unit's terminology, which term refers to the condensed form of chromatin that forms when a cell is preparing to divide?",
+            "options": [
+              "Ribosome",
+              "Nucleolus",
+              "Chromosome",
+              "Histone",
+              "Nuclear pore"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A chromosome is the condensed form of chromatin, composed of DNA and proteins, that forms so DNA can be safely transported during cell division.\n\n**Why the other options are wrong:**\n- **(A)** A ribosome is the site of protein synthesis, unrelated to condensed DNA.\n- **(B)** The nucleolus is the dark-staining region that makes ribosomal RNAs.\n- **(D)** Histones are the proteins around which DNA is wrapped, not the condensed structure itself.\n- **(E)** A nuclear pore is a channel in the nuclear envelope for passage of molecules."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u4-basic-tf-01",
+          "question": {
+            "stem": "The mitochondrion is a component of the endomembrane system.",
+            "correct": false,
+            "explanation": "False. The mitochondrion is NOT part of the endomembrane system; it has an independent evolutionary origin. The endomembrane system consists of the nuclear envelope, endoplasmic reticulum, Golgi apparatus, vesicles/lysosomes, and plasma membrane."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-02",
+          "question": {
+            "stem": "Cell differentiation, the process by which unspecialized cells become specialized in structure and function, is part of development.",
+            "correct": true,
+            "explanation": "True. Development includes all the changes the body goes through in life, including cell differentiation, in which unspecialized cells become specialized to perform particular tasks."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-03",
+          "question": {
+            "stem": "A somatic cell is any body cell except the germ cells that produce eggs and sperm.",
+            "correct": true,
+            "explanation": "True. A somatic cell is a general term for a body cell; all human cells are somatic except the germ cells (which produce eggs and sperm)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-04",
+          "question": {
+            "stem": "Anabolism is the process by which larger, more complex molecules are broken down into smaller ones, releasing energy.",
+            "correct": false,
+            "explanation": "False. That describes catabolism. Anabolism is the reverse: simpler molecules are combined into larger, more complex substances, which requires an input of energy."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-05",
+          "question": {
+            "stem": "A tissue is a group of similar or related cells that work together to perform a specific function.",
+            "correct": true,
+            "explanation": "True. A tissue is one of the levels of structural organization and is defined as a group of similar (or a few related types of) cells working together for a common function."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-06",
+          "question": {
+            "stem": "In the levels of structural organization, the organ level is more complex than the organ system level.",
+            "correct": false,
+            "explanation": "False. The order of increasing complexity is chemical → cellular → tissue → organ → organ system → organismal. An organ system (multiple organs) is more complex than a single organ, not less."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-07",
+          "question": {
+            "stem": "The condensed form of chromatin that appears during cell division is called a chromosome.",
+            "correct": true,
+            "explanation": "True. Chromatin (DNA wrapped around histone proteins) condenses into chromosomes when a cell is preparing to divide, allowing the DNA to be safely transported to daughter cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-08",
+          "question": {
+            "stem": "The Golgi apparatus receives proteins in vesicles, then sorts, modifies, and repackages them into new vesicles for transport or exocytosis.",
+            "correct": true,
+            "explanation": "True. The Golgi apparatus functions like a post office: it receives products in vesicles at the cis face, sorts and modifies them, and releases them repackaged in new vesicles from the trans face for transport within the cell or secretion via exocytosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-09",
+          "question": {
+            "stem": "The rough endoplasmic reticulum is studded with ribosomes and is the site of protein synthesis.",
+            "correct": true,
+            "explanation": "True. Rough ER is 'rough' because its membrane is dotted with ribosomes, which are the sites of protein synthesis. Smooth ER lacks ribosomes and functions mainly in lipid synthesis, calcium storage, and detoxification."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-10",
+          "question": {
+            "stem": "Cell growth refers to a cell dividing into two daughter cells.",
+            "correct": false,
+            "explanation": "False. Cell division (mitosis) is what generates two daughter cells. Cell growth is the increase in a cell's size after division—for example, when nerve or muscle cells elongate."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-11",
+          "question": {
+            "stem": "The mitochondrion is considered part of the cell's endomembrane system.",
+            "correct": false,
+            "explanation": "False. The mitochondrion is NOT part of the endomembrane system; it has an independent evolutionary origin. The endomembrane system includes the nuclear envelope, endoplasmic reticulum, Golgi apparatus, vesicles/lysosomes, and plasma membrane."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-12",
+          "question": {
+            "stem": "A somatic cell is any body cell other than a germ cell (the cells that produce eggs and sperm).",
+            "correct": true,
+            "explanation": "True. A somatic cell is the general term for a body cell; all human cells except the germ cells (which produce eggs and sperm) are somatic cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-13",
+          "question": {
+            "stem": "The cytoplasm consists of the organelles together with the cytosol.",
+            "correct": true,
+            "explanation": "True. The cytoplasm is composed of the cytosol (the jelly-like, mostly water fluid) and the organelles suspended within it."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-14",
+          "question": {
+            "stem": "Rough endoplasmic reticulum is studded with ribosomes and serves as a site of protein synthesis.",
+            "correct": true,
+            "explanation": "True. Rough ER has ribosomes attached to its membrane, giving it a bumpy appearance, and functions in the synthesis of proteins. Smooth ER lacks ribosomes and synthesizes lipids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-15",
+          "question": {
+            "stem": "Cell differentiation is the process by which unspecialized cells become specialized in structure and function.",
+            "correct": true,
+            "explanation": "True. Differentiation is the process by which unspecialized cells (like stem cells) assume their final specialized morphology and physiology. It is distinct from cell division (making two daughter cells) and cell growth (increasing in size)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-16",
+          "question": {
+            "stem": "Chromatin is the condensed form of DNA that appears during cell division.",
+            "correct": false,
+            "explanation": "False. This describes chromosomes. Chromatin is the threads of DNA wrapped around histone proteins in their normal, non-tightly-bundled state; chromatin condenses into chromosomes during cell division."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-17",
+          "question": {
+            "stem": "Metabolism is one of the characteristics of life and refers to the sum of all anabolic and catabolic reactions in the body.",
+            "correct": true,
+            "explanation": "True. Metabolism, a characteristic of life, is the sum of all anabolic (building up) and catabolic (breaking down) reactions occurring in the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-18",
+          "question": {
+            "stem": "Anabolism releases energy while catabolism requires an input of energy.",
+            "correct": false,
+            "explanation": "False. It is the reverse: anabolism (combining simpler molecules into larger, more complex substances) requires energy, whereas catabolism (breaking larger substances into smaller ones) releases energy."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-19",
+          "question": {
+            "stem": "Only multicellular organisms have the tissue, organ, and organ system levels of structural organization.",
+            "correct": true,
+            "explanation": "True. The tissue, organ, and organ system levels require multiple related cells working together, so only multicellular organisms possess these levels; single-celled organisms do not."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-20",
+          "question": {
+            "stem": "Responsiveness, a characteristic of life, includes an organism sweating to cool down in a hot environment.",
+            "correct": true,
+            "explanation": "True. Responsiveness is the ability to adjust to changes in the internal and external environment; sweating and dilation of skin blood vessels in response to increased body temperature are examples of responsiveness."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-21",
+          "question": {
+            "stem": "The cis face of the Golgi apparatus receives vesicles containing proteins from the rough ER.",
+            "correct": true,
+            "explanation": "The Golgi apparatus has two distinct sides: the cis face receives products in vesicles from the rough ER, and the trans face releases them in newly packaged vesicles."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-22",
+          "question": {
+            "stem": "Nuclear pores allow the passage of proteins, RNA, and solutes between the nucleus and the cytoplasm.",
+            "correct": true,
+            "explanation": "Nuclear pores span the double membrane of the nuclear envelope and serve as channels for movement of proteins, RNA, and solutes between the nucleus and cytoplasm."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-23",
+          "question": {
+            "stem": "Apoptosis refers to uncontrolled, accidental cell death.",
+            "correct": false,
+            "explanation": "Apoptosis is programmed (controlled) cell death. It can occur via autolysis, when lysosomes release their digestive enzymes inside a critically damaged cell in a controlled manner."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-24",
+          "question": {
+            "stem": "Responsiveness is the ability of an organism to adjust to changes in its internal and external environments.",
+            "correct": true,
+            "explanation": "Responsiveness is a characteristic of life; examples include moving toward food, moving away from danger, and sweating to cool down in a hot environment."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-25",
+          "question": {
+            "stem": "The chemical level of organization is more complex than the organ system level.",
+            "correct": false,
+            "explanation": "The chemical level (atoms and molecules) is the simplest level. Complexity increases through cellular, tissue, organ, organ system, and finally organismal levels."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-26",
+          "question": {
+            "stem": "Ribosomes are the site of protein synthesis and give rough ER its bumpy appearance.",
+            "correct": true,
+            "explanation": "Ribosomes are the organelles where protein synthesis occurs. Rough ER is studded with ribosomes, giving it a bumpy appearance, whereas smooth ER lacks ribosomes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-27",
+          "question": {
+            "stem": "Catabolism refers to the breakdown of larger, more complex molecules into smaller, simpler ones, releasing energy.",
+            "correct": true,
+            "explanation": "Catabolism breaks down complex substances into simpler molecules and releases energy. Anabolism is the opposite process, combining simple molecules into larger ones while requiring energy input. Together they make up metabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-28",
+          "question": {
+            "stem": "The mitochondrion is considered a component of the endomembrane system.",
+            "correct": false,
+            "explanation": "The mitochondrion is NOT part of the endomembrane system; it has an independent evolutionary origin. The endomembrane system includes the nuclear envelope, endoplasmic reticulum, Golgi apparatus, vesicles/lysosomes, and the plasma membrane."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-29",
+          "question": {
+            "stem": "The tissue level of structural organization consists of multiple related cell types working together, and is present only in multicellular organisms.",
+            "correct": true,
+            "explanation": "A tissue is a group of similar or related cells working together for a common function. Only multicellular organisms have a tissue level, along with organs and organ systems. The levels increase in complexity: chemical, cellular, tissue, organ, organ system, and organismal."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-tf-30",
+          "question": {
+            "stem": "The nucleolus is the region of the nucleus responsible for storing lysosomal digestive enzymes.",
+            "correct": false,
+            "explanation": "The nucleolus is a dark-staining region of the nucleus responsible for manufacturing the RNAs needed to construct ribosomes—not for storing digestive enzymes. Digestive enzymes are contained within lysosomes, which are vesicles derived from the Golgi apparatus."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u4-basic-fitb-01",
+          "question": {
+            "stem": "The process by which larger, more complex molecules are broken down into smaller, simpler ones, releasing energy, is called ____________.",
+            "answer": "catabolism",
+            "accepted_synonyms": [
+              "catabolic",
+              "catabolic reactions"
+            ],
+            "explanation": "Catabolism breaks down complex substances into simpler molecules and releases energy, as described under the metabolism characteristic of life."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-02",
+          "question": {
+            "stem": "The sum of all anabolic and catabolic reactions that take place in the body is referred to as ____________.",
+            "answer": "metabolism",
+            "accepted_synonyms": [
+              "metabolic activity"
+            ],
+            "explanation": "Metabolism is defined as the sum of all anabolic and catabolic reactions in the body, one of the characteristics of life."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-03",
+          "question": {
+            "stem": "The organelle that serves as the site of protein synthesis, and which can be found either bound to the ER or free in the cytosol, is the ____________.",
+            "answer": "ribosome",
+            "accepted_synonyms": [
+              "ribosomes"
+            ],
+            "explanation": "A ribosome is the organelle where proteins are synthesized; it may be bound to the ER or free in the cytosol."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-04",
+          "question": {
+            "stem": "The process in which unspecialized cells become specialized in structure and function to perform certain tasks is called ____________.",
+            "answer": "cell differentiation",
+            "accepted_synonyms": [
+              "differentiation",
+              "cellular differentiation"
+            ],
+            "explanation": "Cell differentiation is the process by which unspecialized cells become specialized, distinct from cell division and cell growth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-05",
+          "question": {
+            "stem": "The organelle that sorts, modifies, and repackages proteins received in vesicles from the rough ER, functioning much like a post office, is the ____________.",
+            "answer": "Golgi apparatus",
+            "accepted_synonyms": [
+              "golgi",
+              "golgi body",
+              "golgi complex"
+            ],
+            "explanation": "The Golgi apparatus receives, sorts, modifies, and repackages proteins into new vesicles, part of the endomembrane system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-06",
+          "question": {
+            "stem": "The portion of the endoplasmic reticulum that lacks ribosomes and is involved in producing steroid hormones and lipids is the ____________.",
+            "answer": "smooth endoplasmic reticulum",
+            "accepted_synonyms": [
+              "smooth ER",
+              "SER",
+              "smooth endoplasmic reticulum (SER)"
+            ],
+            "explanation": "Slide 24 review answer: the smooth ER produces steroid hormones and phospholipids and lacks ribosomes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-07",
+          "question": {
+            "stem": "A general term for any body cell other than the cells that produce eggs and sperm is a(n) ____________.",
+            "answer": "somatic cell",
+            "accepted_synonyms": [
+              "somatic cells"
+            ],
+            "explanation": "A somatic cell is any body cell except gametes; most somatic cells divide regularly via mitosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-08",
+          "question": {
+            "stem": "A group of many similar or related cells that work together to perform a specific function is called a(n) ____________.",
+            "answer": "tissue",
+            "accepted_synonyms": [
+              "tissues"
+            ],
+            "explanation": "At the tissue level of organization, similar or related cells work together for a common function, below the organ level."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-09",
+          "question": {
+            "stem": "A membrane-enclosed body within a cell, each type performing a unique function, is generally termed a(n) ____________.",
+            "answer": "organelle",
+            "accepted_synonyms": [
+              "organelles"
+            ],
+            "explanation": "An organelle ('little organ') is a membrane-enclosed body in the cell that performs a specific function."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-10",
+          "question": {
+            "stem": "An unspecialized cell that can divide without limit and, under specific conditions, differentiate into specialized cells is called a(n) ____________.",
+            "answer": "stem cell",
+            "accepted_synonyms": [
+              "stem cells"
+            ],
+            "explanation": "A stem cell is unspecialized, can divide indefinitely, and can differentiate into specialized cells, as described in Part 4 on differentiation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-11",
+          "question": {
+            "stem": "The sum of all anabolic and catabolic reactions taking place in the body is referred to as ____________.",
+            "answer": "metabolism",
+            "accepted_synonyms": [],
+            "explanation": "Metabolism is one of the characteristics of life and is defined as anabolism plus catabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-12",
+          "question": {
+            "stem": "The process by which unspecialized cells become specialized in structure and function to perform certain tasks in the body is called ____________.",
+            "answer": "cell differentiation",
+            "accepted_synonyms": [
+              "differentiation",
+              "cellular differentiation"
+            ],
+            "explanation": "Cell differentiation is distinct from cell division (making more cells) and cell growth (increasing in size)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-13",
+          "question": {
+            "stem": "The organelle that manufactures the RNAs necessary for constructing ribosomes and appears as a dark-staining region within the nucleus is the ____________.",
+            "answer": "nucleolus",
+            "accepted_synonyms": [
+              "nucleoli"
+            ],
+            "explanation": "The nucleolus is the region inside the nucleus responsible for producing ribosomal RNA."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-14",
+          "question": {
+            "stem": "The process whereby smaller, simpler molecules are combined into larger, more complex substances, requiring an input of energy, is called ____________.",
+            "answer": "anabolism",
+            "accepted_synonyms": [
+              "anabolic reactions"
+            ],
+            "explanation": "Anabolism builds complex molecules from simpler ones and requires energy, as opposed to catabolism which releases it."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-15",
+          "question": {
+            "stem": "When body temperature rises, an organism may sweat and dilate blood vessels near the skin; this ability to adjust to changes in the internal and external environment is the characteristic of life known as ____________.",
+            "answer": "responsiveness",
+            "accepted_synonyms": [
+              "response",
+              "responsivity"
+            ],
+            "explanation": "Slide 8 describes sweating and vessel dilation as examples of responsiveness."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-16",
+          "question": {
+            "stem": "A vesicle containing digestive enzymes that breaks down damaged cellular components or phagocytosed bacteria is called a ____________.",
+            "answer": "lysosome",
+            "accepted_synonyms": [
+              "lysosomes"
+            ],
+            "explanation": "Lysosomes contain digestive enzymes used in autophagy and the digestion of engulfed material."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-17",
+          "question": {
+            "stem": "A group of many similar or related cell types that work together to perform a specific function forms the level of organization called a ____________.",
+            "answer": "tissue",
+            "accepted_synonyms": [
+              "tissues"
+            ],
+            "explanation": "The tissue level sits above the cellular level and consists of related cells working together."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-18",
+          "question": {
+            "stem": "The membranous, bean-shaped organelle that performs the biochemical reactions of cellular respiration to produce ATP is the ____________.",
+            "answer": "mitochondion",
+            "accepted_synonyms": [
+              "mitochondrion",
+              "mitochondria"
+            ],
+            "explanation": "The mitochondrion carries out cellular respiration and is not part of the endomembrane system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-19",
+          "question": {
+            "stem": "A general term for any body cell other than the cells that produce eggs and sperm is a ____________.",
+            "answer": "somatic cell",
+            "accepted_synonyms": [
+              "somatic cells"
+            ],
+            "explanation": "Somatic cells are all body cells except the germ cells (gametes)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-20",
+          "question": {
+            "stem": "The formation of a new organism from parent organisms, carried out in humans by the male and female reproductive systems, is the characteristic of life known as ____________.",
+            "answer": "reproduction",
+            "accepted_synonyms": [
+              "reproducing"
+            ],
+            "explanation": "Reproduction is one of the characteristics of life introduced in Part 1."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-21",
+          "question": {
+            "stem": "The process by which larger, more complex molecules are broken down into smaller, simpler molecules, releasing energy, is called ____________.",
+            "answer": "catabolism",
+            "accepted_synonyms": [
+              "catabolic reactions"
+            ],
+            "explanation": "Catabolism breaks complex substances into simpler ones and releases energy; it is one of the metabolic characteristics of life."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-22",
+          "question": {
+            "stem": "The sum of all the anabolic and catabolic reactions that take place in the body is together referred to as ____________.",
+            "answer": "metabolism",
+            "accepted_synonyms": [],
+            "explanation": "Slide 4 lists metabolism among organ-system functions, and slide 6 defines it as anabolism plus catabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-23",
+          "question": {
+            "stem": "The process in which unspecialized cells become specialized in structure and function to perform particular tasks is called ____________.",
+            "answer": "cell differentiation",
+            "accepted_synonyms": [
+              "differentiation",
+              "cellular differentiation"
+            ],
+            "explanation": "Cell differentiation, distinct from division and growth, produces specialized cell types via unique gene expression."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-24",
+          "question": {
+            "stem": "An unspecialized cell that can divide without limit and, under specific conditions, give rise to specialized cells is a(n) ____________.",
+            "answer": "stem cell",
+            "accepted_synonyms": [
+              "stem cells"
+            ],
+            "explanation": "Stem cells can self-renew and differentiate; they underlie cell differentiation as opposed to simple division or growth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-25",
+          "question": {
+            "stem": "A group of many similar or related cells working together to perform a specific function is called a(n) ____________.",
+            "answer": "tissue",
+            "accepted_synonyms": [
+              "tissues"
+            ],
+            "explanation": "The tissue level sits between the cellular and organ levels in the body's structural organization."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-26",
+          "question": {
+            "stem": "The organelle that serves as the site of protein synthesis, whether attached to the ER or floating freely in the cytosol, is the ____________.",
+            "answer": "ribosome",
+            "accepted_synonyms": [
+              "ribosomes"
+            ],
+            "explanation": "Ribosomes synthesize proteins; those studding the rough ER give it its bumpy appearance."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-27",
+          "question": {
+            "stem": "An anatomically distinct structure composed of two or more tissue types that performs one or more specific physiological functions is a(n) ____________.",
+            "answer": "organ",
+            "accepted_synonyms": [
+              "organs"
+            ],
+            "explanation": "The organ level is built from multiple tissue types and precedes the organ system level."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-28",
+          "question": {
+            "stem": "The organelle that carries out the biochemical reactions of cellular respiration to produce ATP from nutrients, and which is not part of the endomembrane system, is the ____________.",
+            "answer": "mitochondion",
+            "accepted_synonyms": [
+              "mitochondrion",
+              "mitochondria",
+              "mitochondrion (mitochondria)"
+            ],
+            "explanation": "Mitochondria are the energy-transforming organelles that perform cellular respiration and have an independent evolutionary origin."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-29",
+          "question": {
+            "stem": "The organelle that receives protein products from the rough ER in vesicles, then sorts, modifies, and repackages them into new vesicles for transport or exocytosis, is the ____________.",
+            "answer": "Golgi apparatus",
+            "accepted_synonyms": [
+              "golgi",
+              "golgi body",
+              "golgi complex"
+            ],
+            "explanation": "The Golgi apparatus acts like a post office, sorting and repackaging proteins for transport within or out of the cell."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fitb-30",
+          "question": {
+            "stem": "The process by which unspecialized cells become specialized in structure and function to perform distinct tasks is called ____________.",
+            "answer": "cell differentiation",
+            "accepted_synonyms": [
+              "differentiation",
+              "cellular differentiation"
+            ],
+            "explanation": "Cell differentiation is distinct from cell division (making new cells) and cell growth (increasing in size); it is the process of a cell becoming specialized."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u4-basic-fr-01",
+          "question": {
+            "prompt": "Define metabolism as one of the characteristics of life, and briefly distinguish anabolism from catabolism in terms of what each does to molecules and its energy requirement.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines metabolism as the sum of all anabolic and catabolic reactions in the body."
+              },
+              {
+                "points": 1,
+                "criterion": "States that anabolism combines simpler molecules into larger/more complex substances."
+              },
+              {
+                "points": 1,
+                "criterion": "States that catabolism breaks larger/more complex substances into smaller/simpler molecules."
+              },
+              {
+                "points": 1,
+                "criterion": "Correctly links energy: anabolism requires/uses energy while catabolism releases energy."
+              }
+            ],
+            "model_answer": "Metabolism is the sum of all anabolic and catabolic reactions that take place in the body. Anabolism combines smaller, simpler molecules into larger, more complex substances and requires an input of energy. Catabolism breaks larger, more complex substances down into smaller, simpler molecules and releases energy."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fr-02",
+          "question": {
+            "prompt": "The unit outline lists four parts to be covered. Name any two of these parts and, for each, briefly state one thing you would expect to learn in that part of the unit.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names one correct part of the unit (e.g., characteristics of life, structural organization, cell structure/organelles, or cellular processes involved in growth)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives an appropriate example of content for that first named part."
+              },
+              {
+                "points": 1,
+                "criterion": "Names a second, different correct part of the unit."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives an appropriate example of content for that second named part."
+              }
+            ],
+            "model_answer": "Part 1 is the characteristics of life; here I would learn the features common to living things, such as metabolism, movement, and responsiveness. Part 3 is cell structure, cellular organelles and functions; here I would learn the different organelles of a cell (like the nucleus, ER, and mitochondria) and what each one does."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fr-03",
+          "question": {
+            "prompt": "The terms 'chromatin' and 'chromosome' are both used in this unit. State what each term refers to and explain the relationship between them.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that chromatin is DNA (loosely) wrapped around/associated with proteins (histones)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that a chromosome is the condensed form of chromatin."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains the relationship: chromatin condenses into chromosomes when the cell is dividing (so DNA can be safely transported to daughter cells)."
+              }
+            ],
+            "model_answer": "Chromatin is made up of threads of DNA wrapped around proteins called histones and is in a loose, uncondensed form. A chromosome is the condensed form of that same chromatin. When a cell is about to divide, the chromatin condenses into chromosomes so that the DNA can be packaged tightly and transported safely to the daughter cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fr-04",
+          "question": {
+            "prompt": "Robert Hooke coined the term 'cell' in 1665. Briefly explain what Hooke actually observed and why he chose the word 'cell' for what he saw.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that Hooke observed (dead) cork tissue under a microscope."
+              },
+              {
+                "points": 1,
+                "criterion": "States that he saw small subdivisions/compartments (empty box-like spaces)."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains he named them 'cells' because they resembled the small rooms that monks inhabited."
+              }
+            ],
+            "model_answer": "Hooke looked at dead cork tissue under a microscope and saw many small, box-like subdivisions or compartments. He called them 'cells' because these small spaces reminded him of the small rooms (cells) that monks lived in."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fr-05",
+          "question": {
+            "prompt": "Contrast cell division and cell growth by stating what happens to the cell in each process. Give one example of a cell type that grows (increases in size) after dividing.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that cell division produces two new cells (daughter cells), e.g., via mitosis."
+              },
+              {
+                "points": 2,
+                "criterion": "States that cell growth is an increase in the size of a cell (occurring after division)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example of a cell that grows/elongates after dividing (e.g., a nerve cell/neuron or a muscle cell)."
+              }
+            ],
+            "model_answer": "In cell division, one cell divides (through mitosis) to produce two new daughter cells. In cell growth, a cell increases in size after it has divided. For example, nerve cells first appear as relatively small cells and then grow/elongate to become extremely long cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fr-06",
+          "question": {
+            "prompt": "Name any three organelles that are part of the endomembrane system, and briefly state the function of one of them.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names one correct endomembrane system component (nuclear envelope, endoplasmic reticulum, Golgi apparatus, vesicles/lysosomes, or plasma membrane)."
+              },
+              {
+                "points": 1,
+                "criterion": "Names a second, different correct endomembrane component."
+              },
+              {
+                "points": 1,
+                "criterion": "Names a third, different correct endomembrane component."
+              },
+              {
+                "points": 1,
+                "criterion": "Correctly states the function of one of the named components."
+              }
+            ],
+            "model_answer": "Three components of the endomembrane system are the endoplasmic reticulum, the Golgi apparatus, and lysosomes (vesicles). The Golgi apparatus sorts, modifies, and repackages proteins received from the rough ER into new vesicles for transport within the cell or for export (exocytosis)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fr-07",
+          "question": {
+            "prompt": "Two of the levels of structural organization in the body are the tissue level and the organ level. Define each level and give one example of each.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines a tissue as a group of similar/related cells working together for a common function."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example of a tissue (or tissue type)."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines an organ as a structure composed of two or more tissue types performing a specific function."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example of an organ (e.g., heart, lung, kidney, skin)."
+              }
+            ],
+            "model_answer": "A tissue is a group of similar or related cells that work together to perform a specific function; an example is muscle tissue. An organ is an anatomically distinct structure made of two or more tissue types that performs one or more specific functions; an example is the heart."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fr-08",
+          "question": {
+            "prompt": "Explain what cell differentiation is, and briefly explain how cells with identical DNA can end up specialized as different cell types.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Defines cell differentiation as the process by which unspecialized cells become specialized in structure and function."
+              },
+              {
+                "points": 1,
+                "criterion": "States that all body cells contain the same/full complement of DNA."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains that each cell type only reads/expresses the portion of DNA relevant to its function (gene expression)."
+              }
+            ],
+            "model_answer": "Cell differentiation is the process by which unspecialized cells become specialized in structure and function to carry out particular tasks. Even though all cells in the body contain the same complete set of DNA, each cell type only 'reads' (transcribes and translates) the portions of DNA relevant to its own function. This selective use of genes, called gene expression, is what makes cells specialize differently."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fr-09",
+          "question": {
+            "prompt": "The chemical level is the simplest level of structural organization in the body. State what makes up the chemical level, and identify the next-higher level of organization and one example of a structure at that level.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "States that the chemical level consists of atoms and molecules (may also include subatomic particles)."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the cellular level as the next level up."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example at the cellular level (a cell or a cell structure/organelle, e.g., a nerve cell or the nucleus)."
+              }
+            ],
+            "model_answer": "The chemical level is made up of atoms and molecules (and subatomic particles). The next-higher level is the cellular level, which consists of cells and their structures. An example at the cellular level is a nerve cell (or an organelle such as the nucleus)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-basic-fr-10",
+          "question": {
+            "prompt": "'Responsiveness' is one of the characteristics of life. Explain what responsiveness means and give one example of the body responding to a change in its environment.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Explains that responsiveness is the ability of an organism to adjust to changes in its internal and/or external environment."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example (e.g., moving toward food or away from danger; sweating/dilating skin blood vessels to cool down)."
+              }
+            ],
+            "model_answer": "Responsiveness is the ability of an organism to detect and adjust to changes in its internal and external environment. For example, when body temperature rises, the body responds by sweating and dilating blood vessels near the skin to help cool itself down."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    },
+    "advanced": {
+      "mc": [
+        {
+          "id": "u4-advanced-mc-01",
+          "question": {
+            "stem": "Which of the following organelles is NOT considered part of the endomembrane system?",
+            "options": [
+              "Endoplasmic reticulum",
+              "Nuclear envelope",
+              "Lysosome",
+              "Golgi apparatus",
+              "Mitochondrion"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The mitochondrion is an energy-processing organelle with an independent evolutionary origin and is explicitly excluded from the endomembrane system.\n\n**Why the other options are wrong:**\n- **(A)** The endoplasmic reticulum is part of the endomembrane system and is continuous with the nuclear envelope.\n- **(B)** The nuclear envelope is listed as an endomembrane system component.\n- **(C)** Lysosomes are vesicles derived from the endomembrane system.\n- **(D)** The Golgi apparatus is a core endomembrane component that sorts and repackages proteins."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-02",
+          "question": {
+            "stem": "A protein synthesized on the rough ER is packaged into a vesicle for delivery to the Golgi apparatus. Which side of the Golgi receives this vesicle, and what happens next?",
+            "options": [
+              "The trans face receives it, then it is broken down by enzymes",
+              "The nuclear envelope receives it, then it enters the nucleus",
+              "The trans face receives it, then it is sent back to the ER",
+              "The cis face receives it, then it is sorted and repackaged into new vesicles at the trans face",
+              "The cis face receives it, then it is immediately secreted without modification"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The Golgi's cis face receives vesicles, sorts and modifies their contents, and releases them from the trans face in new vesicles.\n\n**Why the other options are wrong:**\n- **(A)** The trans face releases, not receives, and the Golgi sorts rather than digests proteins.\n- **(B)** The nuclear envelope is not the receiving side of the Golgi apparatus.\n- **(C)** Products move forward to the trans face, not back to the ER.\n- **(E)** Products are sorted and modified before release, and enter via the cis face for processing."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-03",
+          "question": {
+            "stem": "A cell specializes in synthesizing steroid hormones and also detoxifies drugs. Which organelle would you expect to be especially abundant in this cell?",
+            "options": [
+              "Golgi apparatus",
+              "Rough endoplasmic reticulum",
+              "Lysosomes",
+              "Nucleolus",
+              "Smooth endoplasmic reticulum"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Smooth ER synthesizes lipids including steroid hormones and performs detoxification, so cells with these functions contain large amounts of it.\n\n**Why the other options are wrong:**\n- **(A)** The Golgi sorts and ships products but does not synthesize steroids or detoxify.\n- **(B)** Rough ER is studded with ribosomes and is the site of protein synthesis, not steroid or detox functions.\n- **(C)** Lysosomes digest cellular components; they do not make steroids.\n- **(D)** The nucleolus manufactures RNA for ribosome construction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-04",
+          "question": {
+            "stem": "A person moves away from a hot stove and begins to sweat when their body temperature rises. Which characteristic of life do BOTH of these actions best illustrate?",
+            "options": [
+              "Organization",
+              "Responsiveness",
+              "Reproduction",
+              "Metabolism",
+              "Exchange of material"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Responsiveness is the ability to adjust to changes in the internal and external environments, which includes moving away from danger and sweating to cool down.\n\n**Why the other options are wrong:**\n- **(A)** Organization refers to compartmentalization of fluids and cells.\n- **(C)** Reproduction is the formation of a new organism.\n- **(D)** Metabolism refers to the sum of anabolic and catabolic reactions, not adjusting to stimuli.\n- **(E)** Exchange of material involves taking in nutrients and expelling wastes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-05",
+          "question": {
+            "stem": "The stomach contains an inner lining, layers of muscle, and connective tissue all working together to perform digestion. The stomach itself represents which level of structural organization?",
+            "options": [
+              "Organ level",
+              "Chemical level",
+              "Tissue level",
+              "Cellular level",
+              "Organ system level"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** An organ is an anatomically distinct structure composed of two or more tissue types performing specific functions, which describes the stomach.\n\n**Why the other options are wrong:**\n- **(B)** The chemical level involves atoms and molecules.\n- **(C)** A tissue is a group of related cells; the stomach contains multiple tissue types.\n- **(D)** The cellular level refers to individual cells and their structures.\n- **(E)** An organ system is a group of organs; the stomach is a single organ."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-06",
+          "question": {
+            "stem": "A muscle cell first divides via mitosis, then elongates, and finally begins expressing genes that make it capable of contraction. These three events correspond respectively to which processes?",
+            "options": [
+              "Cell differentiation, cell growth, cell division",
+              "Cell growth, cell differentiation, cell division",
+              "Cell division, cell differentiation, cell growth",
+              "Cell division, cell growth, cell differentiation",
+              "Cell growth, cell division, cell differentiation"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Division (mitosis) creates new cells, growth is the subsequent increase in size (elongation), and differentiation is becoming specialized through selective gene expression.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the order; division comes first, not differentiation.\n- **(B)** The sequence is scrambled and does not match the described events.\n- **(C)** Elongation is growth, not differentiation, and differentiation is last here.\n- **(E)** Growth follows division rather than preceding it."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-07",
+          "question": {
+            "stem": "Which level of structural organization is present in multicellular organisms such as humans but NOT in single-celled organisms like bacteria?",
+            "options": [
+              "Cellular level",
+              "Atomic level",
+              "Chemical level",
+              "Tissue level",
+              "Molecular level"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Only multicellular organisms have the tissue level (and organs and organ systems), since these require many cells working together.\n\n**Why the other options are wrong:**\n- **(A)** Even single-celled bacteria have a cellular level of organization.\n- **(B)** Atoms exist in all matter.\n- **(C)** All matter, including bacteria, has a chemical level.\n- **(E)** Molecules exist in all organisms."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-08",
+          "question": {
+            "stem": "A cell's DNA is loosely dispersed and wrapped around histone proteins, but the cell is not currently dividing. What is this material called, and what would it be called if the cell prepared to divide?",
+            "options": [
+              "Nucleolus now; chromatin during division",
+              "Chromosome now; chromatin during division",
+              "Histone now; chromosome during division",
+              "Gene now; chromatin during division",
+              "Chromatin now; chromosomes during division"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Loosely dispersed DNA wrapped around histones is chromatin, which condenses into chromosomes when the cell prepares to divide.\n\n**Why the other options are wrong:**\n- **(A)** The nucleolus is a region that makes ribosomal RNA, not the DNA-histone material.\n- **(B)** This reverses the terms; chromosomes are the condensed, not the loose, form.\n- **(C)** Histones are the proteins the DNA wraps around, not the whole complex.\n- **(D)** A gene is a functional DNA segment, not the term for the dispersed material."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-09",
+          "question": {
+            "stem": "An embryonic stem cell can give rise to any cell needed for a complete organism, while an adult stem cell can only produce a limited range of cell types within one lineage. These two cells are best described respectively as:",
+            "options": [
+              "Totipotent and multipotent",
+              "Pluripotent and totipotent",
+              "Totipotent and pluripotent",
+              "Multipotent and totipotent",
+              "Pluripotent and multipotent"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Totipotent cells can differentiate into any cell needed for a full organism, while multipotent (adult) stem cells are limited to a small number of lineages.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the terms and mislabels the adult cell.\n- **(C)** Pluripotent cannot support full development, unlike the described embryonic cell.\n- **(D)** Multipotent describes the adult cell, not the embryonic one.\n- **(E)** Neither term fits the totipotent embryonic cell described."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-10",
+          "question": {
+            "stem": "In this unit's terminology, what is the key distinction between a somatic cell and a germ cell?",
+            "options": [
+              "Somatic cells contain no DNA, while germ cells contain a complete set",
+              "Germ cells produce eggs and sperm, while somatic cells are all other body cells",
+              "Somatic cells are multinucleated, while germ cells are anucleate",
+              "Somatic cells cannot divide, while germ cells divide by mitosis",
+              "Germ cells are found only in bone, while somatic cells are found everywhere"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Germ cells produce eggs and sperm, whereas somatic cells is the general term for all other body cells.\n\n**Why the other options are wrong:**\n- **(A)** Somatic cells contain a complete set of DNA; germ cells (gametes) carry only half.\n- **(C)** Multinucleation and anucleation are properties of certain cell types, not the somatic/germ distinction.\n- **(D)** Most somatic cells divide regularly, so this is false.\n- **(E)** Germ cells are found in reproductive tissue, not only in bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-11",
+          "question": {
+            "stem": "A physiologist observes that when a person enters a hot room, blood vessels near the skin dilate and sweating begins to lower body temperature. Which characteristic of life is best illustrated by this adjustment to a changing environment?",
+            "options": [
+              "Responsiveness",
+              "Metabolism",
+              "Exchange of material",
+              "Organization",
+              "Reproduction"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Responsiveness is the ability of an organism to adjust to changes in its internal and external environments, exemplified by sweating and vasodilation in response to increased temperature.\n\n**Why the other options are wrong:**\n- **(B)** Metabolism refers to the sum of anabolic and catabolic reactions, not to environmental adjustment.\n- **(C)** Exchange of material refers to taking in nutrients and expelling wastes, not thermoregulation.\n- **(D)** Organization refers to compartmentalization of fluids and cells, not temperature adjustment.\n- **(E)** Reproduction is the formation of a new organism from parents."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-12",
+          "question": {
+            "stem": "A student is told that a certain nuclear material is composed of DNA and proteins but is NOT tightly bundled. What is the correct term for this material?",
+            "options": [
+              "Histone",
+              "Chromatin",
+              "Chromosome",
+              "Nucleolus",
+              "Gene"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Chromatin is the term for threads of DNA wrapped around histone proteins in the uncondensed (not tightly bundled) state.\n\n**Why the other options are wrong:**\n- **(A)** A histone is just the protein that DNA wraps around, not the DNA-plus-protein complex.\n- **(C)** A chromosome is the tightly bundled (condensed) form of chromatin present during cell division.\n- **(D)** The nucleolus is a region of the nucleus that makes ribosomal RNA.\n- **(E)** A gene is a segment of DNA that codes for a product, not the DNA-plus-protein complex."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-13",
+          "question": {
+            "stem": "Which of the following correctly identifies an organelle and states whether it belongs to the endomembrane system?",
+            "options": [
+              "The nucleolus is part of the endomembrane system and synthesizes ATP",
+              "The Golgi apparatus is part of the endomembrane system and packages proteins into vesicles",
+              "The smooth ER is NOT part of the endomembrane system because it lacks ribosomes",
+              "The mitochondrion is part of the endomembrane system because it has two membranes",
+              "Ribosomes are part of the endomembrane system and store calcium"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The Golgi apparatus is a component of the endomembrane system and functions to sort, modify, and repackage proteins into new vesicles.\n\n**Why the other options are wrong:**\n- **(A)** The nucleolus makes ribosomal RNA, not ATP, and is a region of the nucleus.\n- **(C)** The smooth ER IS part of the endomembrane system despite lacking ribosomes.\n- **(D)** The mitochondrion is NOT part of the endomembrane system; it has an independent evolutionary origin.\n- **(E)** Ribosomes are not membrane-bound and calcium storage is a smooth ER function."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-14",
+          "question": {
+            "stem": "In this unit, the terms 'somatic cell' and 'germ cell' are used to classify body cells. Which statement correctly distinguishes them?",
+            "options": [
+              "Both somatic and germ cells contain only half of a person's DNA",
+              "Somatic cells produce eggs and sperm, while germ cells make up the rest of the body",
+              "Somatic cells never divide, whereas germ cells divide regularly",
+              "Somatic cells are all body cells except those that produce eggs and sperm, which are germ cells",
+              "Germ cells are all body cells except those producing eggs and sperm"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A somatic cell is a general term for a body cell, and all human cells except those that produce eggs and sperm (germ cells) are somatic cells.\n\n**Why the other options are wrong:**\n- **(A)** Somatic cells contain a complete set of DNA; only gametes carry half.\n- **(B)** This reverses the definitions of somatic and germ cells.\n- **(C)** Most somatic cells divide regularly, while gametes and certain cells do not.\n- **(E)** This reverses the definitions; germ cells are specifically the egg- and sperm-producing cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-15",
+          "question": {
+            "stem": "A biologist notes that a cell continuously assembles amino acids into proteins (using energy) while simultaneously breaking glucose down into carbon dioxide and water (releasing energy). Which characteristic of life encompasses BOTH of these processes?",
+            "options": [
+              "Catabolism only",
+              "Anabolism only",
+              "Responsiveness",
+              "Development",
+              "Metabolism"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Metabolism is the sum of all anabolic (building) and catabolic (breaking down) reactions, so it encompasses both processes described.\n\n**Why the other options are wrong:**\n- **(A)** Catabolism only describes the glucose breakdown, not the protein building.\n- **(B)** Anabolism only describes the protein-building reaction, not the glucose breakdown.\n- **(C)** Responsiveness is adjustment to the environment, not chemical reactions.\n- **(D)** Development refers to changes the body goes through in life, including differentiation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-16",
+          "question": {
+            "stem": "A protein has just been synthesized in the rough ER and packaged into a vesicle. When it arrives at the Golgi apparatus, which prediction correctly describes what happens next if the protein is destined for export from the cell?",
+            "options": [
+              "The Golgi attaches ribosomes to the vesicle so more protein can be made",
+              "The Golgi breaks the protein down into amino acids for immediate reuse",
+              "The Golgi receives the vesicle at its cis face, sorts and modifies the protein, then repackages it into a new vesicle that fuses with the cell membrane for exocytosis",
+              "The Golgi converts the protein into a steroid hormone before secreting it",
+              "The Golgi stores the protein permanently inside the nucleus"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The Golgi receives products at its cis face, sorts and modifies them, and repackages them into new vesicles; exported products travel in a vesicle that fuses with the cell membrane and is secreted via exocytosis.\n\n**Why the other options are wrong:**\n- **(A)** Ribosomes are added at the rough ER, not by the Golgi.\n- **(B)** The Golgi modifies and ships proteins; it does not break them into amino acids.\n- **(D)** Steroid hormones are made by the smooth ER, not converted from proteins by the Golgi.\n- **(E)** The Golgi does not store proteins in the nucleus."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-17",
+          "question": {
+            "stem": "Which of the following correctly pairs a level of structural organization with a valid example of that level?",
+            "options": [
+              "Tissue level — multiple related cell types working together",
+              "Organ system level — a single water molecule",
+              "Cellular level — a glucose molecule",
+              "Chemical level — a red blood cell",
+              "Organ level — a single cell type"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The tissue level consists of multiple similar or related cell types working together for a common function.\n\n**Why the other options are wrong:**\n- **(B)** A water molecule is a chemical-level example, not an organ system.\n- **(C)** A glucose molecule is an example of the chemical level, not the cellular level.\n- **(D)** A red blood cell is an example of the cellular level, not the chemical level.\n- **(E)** An organ is composed of two or more tissue types, not a single cell type."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-18",
+          "question": {
+            "stem": "A newly formed nerve cell first appears small, then lengthens into a long cell, and comes to 'read' only the portions of DNA relevant to signal transmission. Which sequence correctly matches these events to the cellular processes involved in growth?",
+            "options": [
+              "Cell growth, then cell differentiation, then cell division",
+              "Cell division, then cell growth, then cell differentiation",
+              "Cell division, then cell differentiation, then cell growth",
+              "Cell differentiation, then cell growth, then cell division",
+              "Cell differentiation, then cell division, then cell growth"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A cell is first created by division, then increases in size (growth, e.g., a neuron elongating), and becomes specialized by differentiation (expressing only relevant genes for signaling).\n\n**Why the other options are wrong:**\n- **(A)** Growth cannot occur before the cell is produced by division.\n- **(C)** Differentiation is placed before growth, but the neuron elongates (grows) as part of specialization.\n- **(D)** Differentiation is placed before growth incorrectly here for the described sequence.\n- **(E)** Differentiation cannot precede the cell division that created the cell."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-19",
+          "question": {
+            "stem": "Two cells are compared: Cell X has abundant smooth ER and Cell Y has abundant rough ER. Based on their organelle content, which functional prediction is most accurate?",
+            "options": [
+              "Cell X synthesizes lipids and steroid hormones, while Cell Y synthesizes and processes proteins for export",
+              "Neither cell can be part of the endomembrane system",
+              "Both cells are equally specialized for detoxifying toxins in the liver",
+              "Cell Y stores and releases calcium, while Cell X attaches ribosomes for protein synthesis",
+              "Cell X specializes in exporting large amounts of protein, while Cell Y makes steroid hormones"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Smooth ER synthesizes lipids and steroid hormones and lacks ribosomes, while rough ER is studded with ribosomes and is the site of protein synthesis and processing for export.\n\n**Why the other options are wrong:**\n- **(B)** Both the rough and smooth ER are part of the endomembrane system.\n- **(C)** Detoxification is a smooth ER function, not equally shared.\n- **(D)** Calcium storage is a smooth ER (Cell X) function, and ribosome attachment defines rough ER (Cell Y); the pairing is reversed.\n- **(E)** This reverses the roles; protein export is a rough ER function and steroid synthesis a smooth ER function."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-20",
+          "question": {
+            "stem": "A biology student states that a group of organs working together to perform a major body function is called a tissue. Which statement correctly identifies the error and the proper term?",
+            "options": [
+              "The student is correct; a tissue is a group of organs",
+              "The error is that a group of organs is an organelle, the smallest functional level",
+              "The error is that a group of organs working together is an organ system, whereas a tissue is a group of similar or related cells",
+              "The error is that the correct term is an organism, which is a single organ",
+              "The error is that the correct term is a cell, since cells perform all body functions"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** An organ system is a group of organs working together, while a tissue is a group of similar or related cells working together—so the student mislabeled the organ-system level.\n\n**Why the other options are wrong:**\n- **(A)** A tissue is not a group of organs; it is a group of cells.\n- **(B)** An organelle is a membrane-enclosed structure inside a cell, not a group of organs.\n- **(D)** An organism is a whole living being, not a single organ.\n- **(E)** A cell is the smallest independently functioning unit, not a group of organs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-21",
+          "question": {
+            "stem": "A histologist examines a structure composed of several tissue types working together to perform digestion. Which level of structural organization is being observed?",
+            "options": [
+              "Chemical level",
+              "Tissue level",
+              "Cellular level",
+              "Organ system level",
+              "Organ level"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** An organ is an anatomically distinct structure composed of two or more tissue types performing a specific function, such as digestion in the stomach.\n\n**Why the other options are wrong:**\n- **(A)** The chemical level involves atoms and molecules, far below the structure described.\n- **(B)** A tissue is a group of similar or related cells, not multiple tissue types combined.\n- **(C)** The cellular level refers to individual cells and their organelles, not combinations of tissues.\n- **(D)** An organ system is a group of organs working together, one level higher than a single organ."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-22",
+          "question": {
+            "stem": "A person exercising in the heat begins to sweat, and the blood vessels near their skin dilate. Which characteristic of life does this best illustrate?",
+            "options": [
+              "Metabolism",
+              "Exchange of material",
+              "Reproduction",
+              "Responsiveness",
+              "Organization"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Sweating and vessel dilation are adjustments to a change in the internal environment (rising body temperature), which is the definition of responsiveness.\n\n**Why the other options are wrong:**\n- **(A)** Metabolism refers to the sum of anabolic and catabolic reactions, not to adjusting to environmental changes.\n- **(B)** Exchange of material involves taking in nutrients and expelling wastes, not cooling responses.\n- **(C)** Reproduction is the formation of a new organism from parents.\n- **(E)** Organization refers to compartmentalization of fluids and cells, not temperature regulation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-23",
+          "question": {
+            "stem": "On a hot day, a person begins to sweat and the blood vessels near their skin dilate to release heat. Which characteristic of life is being demonstrated?",
+            "options": [
+              "Anabolism",
+              "Metabolism",
+              "Responsiveness",
+              "Organization",
+              "Reproduction"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Responsiveness is the ability to adjust to changes in the internal or external environment, such as cooling down through sweating and vasodilation.\n\n**Why the other options are wrong:**\n- **(A)** Anabolism is the building of complex molecules from simpler ones.\n- **(B)** Metabolism is the sum of anabolic and catabolic reactions, not the specific act of adjusting to heat.\n- **(D)** Organization refers to compartmentalization of fluids and cells, not temperature adjustment.\n- **(E)** Reproduction is the formation of a new organism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-24",
+          "question": {
+            "stem": "Squamous skin cells are flat and packed tightly into rows and sheets, while a nerve cell is star-shaped with long processes. This contrast is used to illustrate which key biological theme?",
+            "options": [
+              "Larger cells always live longer than smaller cells",
+              "Specialized cells cannot perform metabolism",
+              "The form of a structure is suited to its function",
+              "Cell shape is determined entirely by the nucleus",
+              "All cells in the body contain different DNA"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The differing shapes of skin and nerve cells illustrate that the form of a structure is optimally suited to perform its particular function—protection versus long-distance communication.\n\n**Why the other options are wrong:**\n- **(A)** Lifespan relates to cell type and turnover, not simply to size.\n- **(B)** All living cells perform metabolism regardless of specialization.\n- **(D)** Cell shape reflects specialization for function, not control solely by the nucleus.\n- **(E)** All somatic cells contain the same DNA; differences arise from gene expression."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-25",
+          "question": {
+            "stem": "A student needs to correctly define the term 'somatic cell' for the unit. Which statement is accurate?",
+            "options": [
+              "A somatic cell is an unspecialized cell that can divide without limit",
+              "A somatic cell contains only half of the organism's DNA",
+              "A somatic cell is any body cell that is not a germ cell",
+              "A somatic cell is a cell that lacks a nucleus",
+              "A somatic cell is any cell that produces eggs or sperm"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A somatic cell is a general term for a body cell; all human cells except the germ cells that produce eggs and sperm are somatic cells.\n\n**Why the other options are wrong:**\n- **(A)** An unspecialized cell that divides without limit describes a stem cell.\n- **(B)** Somatic cells contain the complete set of DNA; gametes carry only half.\n- **(D)** Lacking a nucleus describes mature red blood cells, a specific case, not the definition of somatic cells.\n- **(E)** Cells producing eggs and sperm are germ cells, not somatic cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-26",
+          "question": {
+            "stem": "A vesicle carrying newly synthesized protein leaves the rough ER. Which sequence of endomembrane-system involvement correctly reflects the protein's typical packaging and shipping pathway?",
+            "options": [
+              "Rough ER → Golgi apparatus → vesicle for transport or exocytosis",
+              "Golgi apparatus → rough ER → lysosome",
+              "Mitochondrion → smooth ER → Golgi apparatus",
+              "Nucleolus → Golgi apparatus → rough ER",
+              "Smooth ER → nucleolus → plasma membrane"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Proteins made on the rough ER are shipped in vesicles to the Golgi apparatus, which sorts and repackages them into new vesicles for transport within the cell or export by exocytosis.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the order; the rough ER precedes the Golgi.\n- **(C)** The mitochondrion is not part of the endomembrane system and is not in this pathway.\n- **(D)** The nucleolus does not receive proteins for shipping; the order is also reversed.\n- **(E)** The nucleolus makes ribosomal RNA and is not a stop for protein packaging."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-27",
+          "question": {
+            "stem": "During most of a cell's life, its DNA and associated histone proteins exist as loosely arranged threads rather than tightly bundled structures. What is this loosely arranged form called?",
+            "options": [
+              "Gene",
+              "Chromosome",
+              "Nucleolus",
+              "Chromatin",
+              "Ribosome"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Chromatin is the term for the loosely arranged threads of DNA wrapped around histones; it condenses into chromosomes only during cell division.\n\n**Why the other options are wrong:**\n- **(A)** A gene is a functional segment of DNA, not the overall loosely bundled DNA–protein form.\n- **(B)** A chromosome is the condensed, tightly bundled form of chromatin seen during division.\n- **(C)** The nucleolus manufactures RNA for ribosomes and is not DNA wrapped around histones.\n- **(E)** A ribosome is the site of protein synthesis, not a DNA–histone complex."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-28",
+          "question": {
+            "stem": "A fertilized egg gives rise to totipotent, then pluripotent, and finally multipotent stem cells. What BEST distinguishes cell differentiation from cell division in this developmental progression?",
+            "options": [
+              "Both processes require the daughter cells to receive only half of the DNA",
+              "Differentiation always occurs before any cell division",
+              "Division increases specialization while differentiation only increases cell number",
+              "Division changes gene expression while differentiation duplicates DNA",
+              "Differentiation is the acquisition of specialized structure and function, whereas division generates new cells"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Cell differentiation is the process by which unspecialized cells assume specialized structure and function, while cell division simply produces two new daughter cells.\n\n**Why the other options are wrong:**\n- **(A)** Somatic daughter cells each receive a complete set of DNA, not half.\n- **(B)** Division and differentiation occur together over development; differentiation does not always precede all division.\n- **(C)** This reverses the definitions; division increases number and differentiation increases specialization.\n- **(D)** Differentiation involves selective gene expression, and DNA duplication is part of division, so this is swapped."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-29",
+          "question": {
+            "stem": "The intestinal tract contains more bacterial cells than the total human cells in the body, yet these microorganisms are considered outside the body and cannot circulate freely inside it. Which characteristic of life does this scenario best exemplify?",
+            "options": [
+              "Responsiveness",
+              "Reproduction",
+              "Organization",
+              "Metabolism",
+              "Movement"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Organization refers to compartmentalization—the GI tract lining keeps gut microorganisms outside the body's internal fluids, illustrating distinct internal compartments.\n\n**Why the other options are wrong:**\n- **(A)** Responsiveness is adjusting to environmental changes, not maintaining separated compartments.\n- **(B)** Reproduction is the formation of a new organism.\n- **(D)** Metabolism concerns anabolic and catabolic chemical reactions, not compartmentalization.\n- **(E)** Movement involves muscular and cellular motion, not the barrier separating gut contents."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-mc-30",
+          "question": {
+            "stem": "A researcher examines a structure composed of two or more different tissue types that together perform a specific physiological function. At which level of structural organization is this structure, and what is the next-lower level of complexity?",
+            "options": [
+              "Organismal level; the next-lower level is the organ system level",
+              "Organ level; the next-lower level is the tissue level",
+              "Cellular level; the next-lower level is the chemical level",
+              "Organ system level; the next-lower level is the organ level",
+              "Tissue level; the next-lower level is the cellular level"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** An organ is composed of two or more tissue types working together, and the level immediately below the organ level is the tissue level.\n\n**Why the other options are wrong:**\n- **(A)** The organismal level is the whole human, not a single multi-tissue structure.\n- **(C)** The cellular level consists of cells and their structures, not multiple tissues.\n- **(D)** An organ system is made of multiple organs, not multiple tissue types.\n- **(E)** A tissue is a group of related cells, not multiple tissue types."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u4-advanced-tf-01",
+          "question": {
+            "stem": "A tissue is composed of two or more different organs working together.",
+            "correct": false,
+            "explanation": "This reverses the levels of organization. A tissue is a group of similar or related cells working together; an organ is composed of two or more tissue types. The organ, not the tissue, is the level made of multiple tissues."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-02",
+          "question": {
+            "stem": "Anabolism requires an input of energy, whereas catabolism releases energy.",
+            "correct": true,
+            "explanation": "Anabolism builds larger, more complex molecules from simpler ones and requires energy input, while catabolism breaks complex molecules into simpler ones and releases energy. Together they constitute metabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-03",
+          "question": {
+            "stem": "Both the rough ER and the smooth ER are components of the endomembrane system, but only the smooth ER synthesizes steroid hormones and phospholipids.",
+            "correct": true,
+            "explanation": "Both forms of ER belong to the endomembrane system. However, protein synthesis occurs at ribosomes on the rough ER, whereas lipid synthesis (including steroid hormones and phospholipids), calcium storage, and detoxification are functions of the smooth ER."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-04",
+          "question": {
+            "stem": "Cell differentiation refers to unspecialized cells becoming specialized in structure and function, which is a different process from cell division.",
+            "correct": true,
+            "explanation": "Cell division produces new cells (two daughter cells from one), cell growth increases cell size, and cell differentiation is the process by which unspecialized cells acquire specialized structures and functions. These are three distinct processes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-05",
+          "question": {
+            "stem": "Because the microorganisms living in the gastrointestinal tract are inside the hollow tube of the GI tract, they are considered to have entered the internal environment of the body.",
+            "correct": false,
+            "explanation": "The GI tract is a hollow tunnel through the body, and its lining cells prevent the gut microflora from entering the internal fluids. The microorganisms are still considered outside the body's internal environment despite being within the GI passage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-06",
+          "question": {
+            "stem": "Sweating and dilation of blood vessels near the skin in response to increased body temperature are examples of responsiveness.",
+            "correct": true,
+            "explanation": "Responsiveness is the ability to adjust to changes in the internal and external environment. Sweating and dilating skin blood vessels to lower an elevated body temperature are responses to an internal change, illustrating responsiveness."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-07",
+          "question": {
+            "stem": "Mitochondria are part of the endomembrane system because they are enclosed by membranes and process proteins for export.",
+            "correct": false,
+            "explanation": "Mitochondria are membranous (with two membranes) but are NOT part of the endomembrane system; they have an independent evolutionary origin. Their role is cellular respiration to produce ATP, not the processing and transport of proteins/lipids like endomembrane organelles."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-08",
+          "question": {
+            "stem": "The nucleolus manufactures the RNAs needed to build ribosomes, which are then involved in protein synthesis.",
+            "correct": true,
+            "explanation": "The nucleolus is the dark-staining region of the nucleus responsible for producing the RNAs used to construct ribosomal subunits. Ribosomes, in turn, are the sites of protein synthesis, linking these two structures functionally."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-09",
+          "question": {
+            "stem": "Chromatin and chromosomes are made of the same material (DNA wrapped around histones), but chromosomes are the condensed form present during cell division.",
+            "correct": true,
+            "explanation": "Chromatin consists of DNA wrapped around histone proteins. When a cell prepares to divide, the chromatin condenses into chromosomes so the DNA can be safely transported to daughter cells. They are the same material in different states of condensation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-10",
+          "question": {
+            "stem": "A totipotent stem cell is more restricted in the cell types it can become than a multipotent stem cell.",
+            "correct": false,
+            "explanation": "The opposite is true. Totipotent embryonic stem cells can differentiate into any cell type. Multipotent stem cells (typically adult) are more specialized and can only produce cells within a limited lineage. Totipotent is the least restricted, not the most."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-11",
+          "question": {
+            "stem": "Catabolism refers to reactions that break larger, more complex molecules into smaller, simpler ones and release energy in the process.",
+            "correct": true,
+            "explanation": "True. Catabolism breaks complex substances into simpler ones and releases energy; anabolism does the opposite, combining simple molecules into complex ones while requiring energy input. Together they constitute metabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-12",
+          "question": {
+            "stem": "The term 'somatic cell' refers to gametes such as sperm and egg cells.",
+            "correct": false,
+            "explanation": "False. Somatic cells are all body cells EXCEPT the germ cells that produce eggs and sperm (gametes). Gametes contain only half of an individual's DNA, whereas somatic cells contain the complete set."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-13",
+          "question": {
+            "stem": "Robert Hooke first observed living, moving cells and immediately understood their function as the basic units of life.",
+            "correct": false,
+            "explanation": "False. Hooke (1665) observed dead cork tissue and coined the term 'cell' based on resemblance to monks' rooms, without realizing their function. It was Antonie van Leeuwenhoek who first observed living cells, and cell theory developed over the following century."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-14",
+          "question": {
+            "stem": "A tissue represents a higher level of structural organization than an organ.",
+            "correct": false,
+            "explanation": "False. The order of increasing complexity is: chemical → cellular → tissue → organ → organ system → organismal. An organ (made of two or more tissue types) is more complex than a tissue, not the reverse."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-15",
+          "question": {
+            "stem": "The dilation of blood vessels near the skin and the onset of sweating when body temperature rises are examples of responsiveness.",
+            "correct": true,
+            "explanation": "True. Responsiveness is the ability to adjust to changes in the internal and external environment. Sweating and vasodilation of skin blood vessels are responses to an increase in internal body temperature that act to lower it."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-16",
+          "question": {
+            "stem": "In cell differentiation, an unspecialized cell becomes specialized in structure and function, whereas in cell division a cell produces two daughter cells.",
+            "correct": true,
+            "explanation": "True. Differentiation is the process by which unspecialized cells become specialized; cell division (mitosis in somatic cells) generates two daughter cells; and cell growth is the increase in size that follows. These are distinct processes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-17",
+          "question": {
+            "stem": "The cellular level is the highest and most complex level of structural organization in the body.",
+            "correct": false,
+            "explanation": "False. The organismal level is the highest level of organization. The full sequence of increasing complexity is chemical, cellular, tissue, organ, organ system, and finally organismal."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-18",
+          "question": {
+            "stem": "In multicellular organisms, growth occurs mostly by increasing the number of cells rather than by increasing the size of existing cells.",
+            "correct": true,
+            "explanation": "True. Growth is primarily achieved by increasing the number of cells (and adding non-cellular matrix, such as mineral deposits in bone), with only very limited increases in the size of existing cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-19",
+          "question": {
+            "stem": "A totipotent stem cell can differentiate into any cell type needed to develop a full organism, whereas a multipotent stem cell is more specialized and limited to a smaller number of cell lineages.",
+            "correct": true,
+            "explanation": "True. Totipotent (embryonic) stem cells can become any cell type. Pluripotent cells are somewhat specialized, and multipotent (adult) stem cells are even more restricted, differentiating only within a given lineage or a small number of lineages."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-20",
+          "question": {
+            "stem": "The mitochondrion is a member of the endomembrane system along with the endoplasmic reticulum and Golgi apparatus.",
+            "correct": false,
+            "explanation": "False. The mitochondrion is NOT part of the endomembrane system; it has an independent evolutionary origin and processes energy rather than transporting proteins and lipids. The endomembrane system includes the nuclear envelope, ER, Golgi apparatus, vesicles/lysosomes, and plasma membrane."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-21",
+          "question": {
+            "stem": "Catabolism releases energy by breaking larger, complex molecules into smaller ones, while anabolism requires energy input to build complex molecules from simpler ones.",
+            "correct": true,
+            "explanation": "This correctly distinguishes the two components of metabolism: catabolism (breakdown, energy-releasing) and anabolism (synthesis, energy-requiring). Together they constitute metabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-22",
+          "question": {
+            "stem": "According to the characteristics of life, growth in humans occurs mostly by increasing the size of existing cells rather than by increasing the number of cells.",
+            "correct": false,
+            "explanation": "False. Growth occurs mostly by increasing the number of cells (and non-cellular matrix around cells); increasing the size of existing cells happens only within very narrow limits."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-23",
+          "question": {
+            "stem": "The rough endoplasmic reticulum, Golgi apparatus, and mitochondria are all components of the endomembrane system.",
+            "correct": false,
+            "explanation": "False. Mitochondria are NOT part of the endomembrane system—they have an independent evolutionary origin. The endomembrane system includes the nuclear envelope, ER, Golgi apparatus, vesicles/lysosomes, and plasma membrane."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-24",
+          "question": {
+            "stem": "A tissue is composed of two or more different organs working together, while an organ is a group of similar cells.",
+            "correct": false,
+            "explanation": "False. The relationship is reversed: a tissue is a group of similar/related cells, and an organ is composed of two or more tissue types. Organs then combine into organ systems."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-25",
+          "question": {
+            "stem": "Cellular respiration in the mitochondria requires oxygen and produces carbon dioxide as it generates ATP from nutrients.",
+            "correct": true,
+            "explanation": "True. Mitochondria perform cellular respiration, harvesting energy from nutrients to synthesize ATP; this process consumes oxygen and produces carbon dioxide."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-26",
+          "question": {
+            "stem": "Chromatin is the condensed form of a chromosome that appears during cell division.",
+            "correct": false,
+            "explanation": "False. The relationship is reversed: a chromosome is the condensed form of chromatin. Chromatin (loose threads of DNA wrapped around histones) condenses into chromosomes when a cell prepares to divide."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-27",
+          "question": {
+            "stem": "When the body increases sweating and dilates blood vessels near the skin in response to a rising internal temperature, this demonstrates the characteristic of responsiveness.",
+            "correct": true,
+            "explanation": "True. Responsiveness is the ability to adjust to internal and external environmental changes; sweating and vasodilation in response to increased body temperature are examples of responding to an internal change."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-28",
+          "question": {
+            "stem": "Cell division and cell differentiation are the same process, since both result in cells becoming specialized for particular functions.",
+            "correct": false,
+            "explanation": "False. Cell division (mitosis) produces new daughter cells, whereas cell differentiation is the separate process by which unspecialized cells become specialized in structure and function. Division does not itself confer specialization."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-29",
+          "question": {
+            "stem": "The nucleolus manufactures the RNAs needed to construct ribosomes, and newly made ribosomal subunits exit the nucleus through nuclear pores.",
+            "correct": true,
+            "explanation": "True. The nucleolus is the dark-staining region responsible for producing ribosomal RNAs; the assembled ribosomal subunits then leave the nucleus via nuclear pores in the nuclear envelope."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-tf-30",
+          "question": {
+            "stem": "A pluripotent stem cell can support the full development of an entire organism because it can differentiate into any type of cell.",
+            "correct": false,
+            "explanation": "False. Only totipotent (embryonic) stem cells can differentiate into any cell needed for full organism development. Pluripotent cells are already somewhat specialized and cannot support full development, being limited to specific cell lines."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u4-advanced-fitb-01",
+          "question": {
+            "stem": "The sum of all the anabolic and catabolic reactions occurring in the body is collectively referred to as ____________.",
+            "answer": "metabolism",
+            "accepted_synonyms": [],
+            "explanation": "Slide 2 lists metabolism as a major unit topic; anabolism plus catabolism together equal metabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-02",
+          "question": {
+            "stem": "A structure composed of two or more different tissue types working together for a specific physiological function, such as the stomach, represents the ____________ level of organization.",
+            "answer": "organ",
+            "accepted_synonyms": [
+              "organs"
+            ],
+            "explanation": "An organ is anatomically distinct and made of two or more tissue types; the next level up (organ system) involves multiple organs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-03",
+          "question": {
+            "stem": "Because it lacks ribosomes and instead synthesizes phospholipids and steroid hormones, this cellular component is the ____________.",
+            "answer": "smooth endoplasmic reticulum",
+            "accepted_synonyms": [
+              "smooth ER",
+              "SER",
+              "smooth endoplasmic reticulum (ER)"
+            ],
+            "explanation": "Smooth ER lacks ribosomes and handles lipid/steroid synthesis, distinguishing it from rough ER."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-04",
+          "question": {
+            "stem": "A group of similar or related cells working together for a common function—but not yet composed of multiple tissue types—defines the ____________ level of organization.",
+            "answer": "tissue",
+            "accepted_synonyms": [
+              "tissues"
+            ],
+            "explanation": "A tissue is a group of similar/related cells; combining tissue types produces an organ, the next level."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-05",
+          "question": {
+            "stem": "A body cell that is not a gamete—one that divides regularly via mitosis to replace worn cells—is generally termed a ____________.",
+            "answer": "somatic cell",
+            "accepted_synonyms": [
+              "somatic cells",
+              "somatic"
+            ],
+            "explanation": "Somatic cells are all body cells except the germ cells that produce eggs and sperm."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-06",
+          "question": {
+            "stem": "The process by which an unspecialized cell takes on a specific structure and function, such as a small precursor cell becoming an elongated nerve cell, is called ____________.",
+            "answer": "cell differentiation",
+            "accepted_synonyms": [
+              "differentiation",
+              "cellular differentiation"
+            ],
+            "explanation": "Cell differentiation is the process of a cell becoming specialized, distinct from cell division (producing new cells) and cell growth (increase in size)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-07",
+          "question": {
+            "stem": "The unspecialized DNA-and-histone threads found inside the nucleus that later condense during cell division are called ____________.",
+            "answer": "chomatin",
+            "accepted_synonyms": [
+              "chromatin"
+            ],
+            "explanation": "Chromatin is uncondensed DNA wrapped around histones; it condenses into chromosomes at division."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-08",
+          "question": {
+            "stem": "The process by which an unspecialized cell assumes a final specialized morphology and physiology—by expressing only a portion of its genes—is called ____________.",
+            "answer": "cell differentiation",
+            "accepted_synonyms": [
+              "cell differentiation",
+              "differentiation"
+            ],
+            "explanation": "Cell differentiation (via selective gene expression) makes cells specialized, distinct from cell division and cell growth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-09",
+          "question": {
+            "stem": "After a protein is synthesized on the rough ER, it is transported inside a small membranous sac called a ____________ to reach the Golgi apparatus.",
+            "answer": "vesicle",
+            "accepted_synonyms": [
+              "vesicles"
+            ],
+            "explanation": "Proteins travel from the ER to the Golgi packaged inside vesicles, small fluid-filled membranous sacs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-10",
+          "question": {
+            "stem": "The controlled 'self-destruct' process in which a critically damaged cell is killed by the release of its own lysosomal enzymes (autolysis) is called ____________.",
+            "answer": "apoptosis",
+            "accepted_synonyms": [],
+            "explanation": "Apoptosis is programmed cell death carried out via autolysis, a mechanism relevant to the body's development and repair."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-11",
+          "question": {
+            "stem": "Whether it is a diaphragm moving air, cardiac muscle pumping blood, or smooth muscle propelling food through the gut, all of these are examples of the characteristic of life known as ____________.",
+            "answer": "movement",
+            "accepted_synonyms": [
+              "motion"
+            ],
+            "explanation": "Slide 9 defines movement as the constant muscular activity occurring throughout the body, including breathing, heartbeats, and GI tract motion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-12",
+          "question": {
+            "stem": "The general term for a body cell — that is, any human cell except a germ cell that produces eggs or sperm — is a(n) ____________.",
+            "answer": "somatic cell",
+            "accepted_synonyms": [
+              "somatic cells",
+              "somatic"
+            ],
+            "explanation": "The terminology of the unit distinguishes somatic cells (body cells) from germ cells; all cells except gamete-producing cells are somatic."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-13",
+          "question": {
+            "stem": "A newly synthesized protein released into a channel of the rough ER is packaged into a vesicle and sent for sorting, modification, and repackaging to the ____________.",
+            "answer": "Golgi apparatus",
+            "accepted_synonyms": [
+              "Golgi",
+              "golgi apparatus",
+              "golgi complex",
+              "Golgi complex"
+            ],
+            "explanation": "The Golgi apparatus receives products from the rough ER in vesicles, then sorts, modifies, and repackages them into new vesicles for transport or exocytosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-14",
+          "question": {
+            "stem": "Although the nuclear envelope, endoplasmic reticulum, and Golgi apparatus all belong to the endomembrane system, the ____________ does not, because it has an independent evolutionary origin and functions in energy processing rather than protein/lipid transport.",
+            "answer": "mitochondion",
+            "accepted_synonyms": [
+              "mitochondrion",
+              "mitochondria",
+              "mitochondrian"
+            ],
+            "explanation": "The mitochondrion is explicitly stated to be outside the endomembrane system due to its separate evolutionary origin and its role in cellular respiration."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-15",
+          "question": {
+            "stem": "The process by which an unspecialized cell assumes its final structure and function, transcribing only the portion of its DNA relevant to its role, is called ____________.",
+            "answer": "cell differentiation",
+            "accepted_synonyms": [
+              "differentiation",
+              "cellular differentiation"
+            ],
+            "explanation": "Cell differentiation, distinct from division (making more cells) and growth (increasing size), is the process of becoming specialized through selective gene expression."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-16",
+          "question": {
+            "stem": "A neuron with high energy demands is densely packed with the organelle that performs the biochemical reactions of ____________, consuming oxygen and producing carbon dioxide to generate ATP.",
+            "answer": "cellular respiration",
+            "accepted_synonyms": [
+              "respiration",
+              "aerobic respiration"
+            ],
+            "explanation": "Slide 23 states that mitochondria perform cellular respiration to produce ATP from nutrients, requiring O2 and producing CO2."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-17",
+          "question": {
+            "stem": "When simpler molecules are combined into larger, more complex substances with an input of energy — such as building a protein from amino acids — the reaction type is ____________.",
+            "answer": "anabolism",
+            "accepted_synonyms": [
+              "anabolic reactions",
+              "anabolic"
+            ],
+            "explanation": "Anabolism is the energy-requiring building of larger molecules from simpler ones, as contrasted with energy-releasing catabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-18",
+          "question": {
+            "stem": "An unspecialized cell that can divide without limit and, under specific conditions, differentiate into specialized cell types is a(n) ____________.",
+            "answer": "stem cell",
+            "accepted_synonyms": [
+              "stem cells"
+            ],
+            "explanation": "A stem cell is defined as an unspecialized cell that can divide indefinitely and differentiate; it can be totipotent, pluripotent, or multipotent."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-19",
+          "question": {
+            "stem": "The overall term for the sum of all anabolic and catabolic reactions occurring in the body — reflecting the first law of thermodynamics that energy only changes form — is ____________.",
+            "answer": "metabolism",
+            "accepted_synonyms": [
+              "metabolic processes"
+            ],
+            "explanation": "Metabolism is defined as the sum of all anabolic plus catabolic reactions and is one of the characteristics of life."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-20",
+          "question": {
+            "stem": "At the level of structural organization directly above the cellular level, a group of similar or related cells working together for a common function forms a(n) ____________.",
+            "answer": "tissue",
+            "accepted_synonyms": [
+              "tissues"
+            ],
+            "explanation": "The tissue level sits above the cellular level; a tissue is a group of similar or related cell types working together, and multiple tissue types form an organ."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-21",
+          "question": {
+            "stem": "The process in which an unspecialized cell becomes specialized in structure and function—such as when a precursor cell becomes a nerve cell rather than merely enlarging or splitting into two—is called ____________.",
+            "answer": "cell differentiation",
+            "accepted_synonyms": [
+              "differentiation",
+              "cellular differentiation"
+            ],
+            "explanation": "Cell differentiation is the acquisition of a specialized structure/function, distinct from cell division (making new cells) and cell growth (increase in size)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-22",
+          "question": {
+            "stem": "When an organism sweats and dilates the blood vessels near its skin to lower its body temperature in response to heat, it is displaying the characteristic of life known as responsiveness; the sum of all the anabolic and catabolic chemical reactions that make such adjustments possible is termed ____________.",
+            "answer": "metabolism",
+            "accepted_synonyms": [],
+            "explanation": "Metabolism is defined as the sum of all anabolic and catabolic reactions occurring in the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-23",
+          "question": {
+            "stem": "When your body assembles amino acids into proteins, using energy in the process, it is carrying out the type of reaction called ____________.",
+            "answer": "anabolism",
+            "accepted_synonyms": [
+              "anabolic reactions",
+              "anabolic"
+            ],
+            "explanation": "Anabolism combines simpler molecules into larger, more complex ones and requires the input of energy—opposite of catabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-24",
+          "question": {
+            "stem": "A protein released into the channel of the rough ER is packaged into a small fluid-filled sac and shipped for sorting and repackaging to the organelle called the ____________.",
+            "answer": "Golgi apparatus",
+            "accepted_synonyms": [
+              "golgi",
+              "golgi body",
+              "golgi complex"
+            ],
+            "explanation": "The Golgi apparatus receives vesicles from the rough ER, then sorts, modifies, and repackages the proteins into new vesicles."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-25",
+          "question": {
+            "stem": "A group of two or more different tissue types combined into an anatomically distinct structure that performs one or more specific physiological functions is called an ____________.",
+            "answer": "organ",
+            "accepted_synonyms": [
+              "organs"
+            ],
+            "explanation": "An organ is composed of two or more tissue types, sitting between the tissue level and the organ system level of organization."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-26",
+          "question": {
+            "stem": "The level of structural organization defined as a group of similar or related cells working together for a common function is the ____________ level.",
+            "answer": "tissue",
+            "accepted_synonyms": [
+              "tissues"
+            ],
+            "explanation": "A tissue is a group of similar/related cells working together; it lies above the cellular level and below the organ level."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-27",
+          "question": {
+            "stem": "All human body cells except the germ cells that give rise to eggs and sperm—and which typically divide regularly to replace worn cells—are collectively called ____________.",
+            "answer": "somatic cell",
+            "accepted_synonyms": [
+              "somatic cells"
+            ],
+            "explanation": "A somatic cell is any body cell other than a germ (gamete-producing) cell; most somatic cells divide regularly via mitosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-28",
+          "question": {
+            "stem": "The condensed, tightly bundled form of DNA and its associated proteins that appears only when a cell is preparing to divide is the ____________.",
+            "answer": "chromosome",
+            "accepted_synonyms": [
+              "chromosomes"
+            ],
+            "explanation": "A chromosome is the condensed form of chromatin, present during cell division; the loosely packed form is chromatin."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-29",
+          "question": {
+            "stem": "Even though gut microorganisms outnumber your own cells, the tightly packed lining of the GI tract keeps them from entering internal fluids—an example of the characteristic of life called ____________.",
+            "answer": "organization",
+            "accepted_synonyms": [],
+            "explanation": "Organization refers to the compartmentalization that keeps internal cells and fluids separate from external threats, exemplified by the GI tract lining."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fitb-30",
+          "question": {
+            "stem": "A membrane-bound sac of digestive enzymes that carries out autophagy of damaged organelles and, when opened within a critically damaged cell, triggers autolysis leading to apoptosis is the ____________.",
+            "answer": "lysosome",
+            "accepted_synonyms": [
+              "lysosomes"
+            ],
+            "explanation": "The lysosome contains digestive enzymes used in autophagy and, via autolysis, in the programmed cell death known as apoptosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u4-advanced-fr-01",
+          "question": {
+            "prompt": "Define the terms 'anabolism' and 'catabolism', and explain how each relates to energy. Then state the single term that encompasses both processes.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines anabolism as combining smaller/simpler molecules into larger, more complex substances."
+              },
+              {
+                "points": 1,
+                "criterion": "States that anabolism requires (consumes) energy."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines catabolism as breaking larger/more complex substances into smaller, simpler molecules."
+              },
+              {
+                "points": 1,
+                "criterion": "States that catabolism releases energy."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies metabolism as the term encompassing both anabolism and catabolism."
+              }
+            ],
+            "model_answer": "Anabolism is the process by which smaller, simpler molecules are combined into larger, more complex substances, and it requires an input of energy. Catabolism is the process by which larger, more complex substances are broken down into smaller, simpler molecules, and it releases energy. Together, anabolism and catabolism make up metabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fr-02",
+          "question": {
+            "prompt": "Define what an 'organ' is, including the specific physiological function(s) it performs, and define what an 'organ system' is. Explain how these two levels of structural organization relate to one another. Give one example of an organ system.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines an organ as an anatomically distinct structure composed of two or more tissue types."
+              },
+              {
+                "points": 1,
+                "criterion": "States that an organ performs one or more specific physiological functions."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines an organ system as a group of organs that work together."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains the relationship: an organ system is composed of multiple organs (organs are the next lower level of organization)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example of an organ system (e.g., integumentary, digestive)."
+              }
+            ],
+            "model_answer": "An organ is an anatomically distinct structure of the body composed of two or more tissue types, and it performs one or more specific physiological functions. An organ system is a group of organs that work together to perform major functions or meet physiological needs of the body. Thus an organ system sits one level higher than the organ level, being made up of several organs working together. An example is the integumentary system, which includes the skin, hair, and nails."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fr-03",
+          "question": {
+            "prompt": "Two of the characteristics of life are 'responsiveness' and 'movement'. Define each characteristic and give one example of the body demonstrating each.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines responsiveness as the ability of an organism to adjust to changes in its internal and/or external environment."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example of responsiveness (e.g., moving away from danger, sweating in response to heat)."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines movement as motion within the body, including of organs/cells (not just whole-body motion at joints)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example of movement (e.g., heartbeat, breathing, GI tract movement, maintaining posture)."
+              }
+            ],
+            "model_answer": "Responsiveness is the ability of an organism to adjust to changes in its internal and external environments; for example, sweating and dilating skin blood vessels to cool down when body temperature rises. Movement includes not only whole-body actions at joints but also the constant motion of organs and cells within the body; for example, cardiac muscle contracting to pump blood or the diaphragm moving air into and out of the lungs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fr-04",
+          "question": {
+            "prompt": "The endomembrane system consists of several organelles. Name any THREE components of the endomembrane system and describe one function of each.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names a valid endomembrane component (from: nuclear envelope, ER, Golgi apparatus, vesicles/lysosomes, plasma membrane) — first."
+              },
+              {
+                "points": 1,
+                "criterion": "States a correct function of that first component."
+              },
+              {
+                "points": 1,
+                "criterion": "Names a second valid endomembrane component."
+              },
+              {
+                "points": 1,
+                "criterion": "States a correct function of that second component."
+              },
+              {
+                "points": 1,
+                "criterion": "Names a third valid endomembrane component."
+              },
+              {
+                "points": 1,
+                "criterion": "States a correct function of that third component."
+              }
+            ],
+            "model_answer": "Rough ER: site of protein synthesis (has attached ribosomes) and processing of proteins destined for export. Golgi apparatus: sorts, modifies, and repackages proteins received from the rough ER into new vesicles for transport within the cell or secretion by exocytosis. Lysosome: a vesicle containing digestive enzymes that break down damaged cellular components (autophagy) or engulfed material such as bacteria. (Other acceptable answers: nuclear envelope — separates nucleus from cytoplasm and has pores for exchange; smooth ER — lipid synthesis, Ca2+ storage, detoxification; plasma membrane — separates intracellular from extracellular environment.)"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fr-05",
+          "question": {
+            "prompt": "List the six levels of structural organization of the human body in order from simplest to most complex, and give one example of a structure found at each level.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Lists all six levels (chemical, cellular, tissue, organ, organ system, organismal) in correct order from simplest to most complex."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct example at the chemical level (e.g., atom or glucose molecule)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct example at the cellular level (e.g., a nerve cell or skin cell)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct example at the organ and/or organ system level (e.g., skin as an organ; integumentary as an organ system)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct example for the remaining levels (tissue and organismal — e.g., epithelial tissue; a human being)."
+              }
+            ],
+            "model_answer": "From simplest to most complex: (1) chemical level — atoms and molecules, e.g., a glucose molecule; (2) cellular level — cells and cell structures, e.g., a nerve cell; (3) tissue level — related cells working together, e.g., epithelial tissue; (4) organ level — multiple tissue types, e.g., the skin; (5) organ system level — multiple organs, e.g., the integumentary system; (6) organismal level — e.g., a human being."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fr-06",
+          "question": {
+            "prompt": "The cellular level of organization illustrates that 'form suits function'. Using a nerve cell and a squamous skin cell as your two examples, describe the shape of each cell type and explain how the shape of each cell suits its function.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Describes the nerve cell shape (star-like with long processes, up to a meter long)."
+              },
+              {
+                "points": 1,
+                "criterion": "Links nerve cell shape to its function of communicating/sending signals over long distances."
+              },
+              {
+                "points": 1,
+                "criterion": "Describes the squamous skin cell shape (flat/plate-like, packed tightly into rows/sheets)."
+              },
+              {
+                "points": 1,
+                "criterion": "Links squamous skin cell shape to its function of providing a protective barrier for underlying cells/tissues."
+              }
+            ],
+            "model_answer": "A nerve cell is shaped like a star with long winding processes that can be up to a meter in length; this shape allows it to communicate with other cells and send rapid signals across long distances in the body. A squamous skin cell is flat and plate-like and is packed tightly into rows and sheets; this shape allows the cells to form a protective barrier for the cells and tissues that lie beneath. This shows how the form of each cell is optimally suited to its function."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fr-07",
+          "question": {
+            "prompt": "Distinguish between a 'somatic cell' and a 'germ cell'. In your answer, define each cell type and explain how they differ in terms of the DNA they contain, including how much of the individual's DNA is found in somatic cells and in the eggs/sperm (gametes) produced.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines a somatic cell as any body cell other than the cells that produce eggs and sperm."
+              },
+              {
+                "points": 1,
+                "criterion": "States that somatic cells contain the complete set of the individual's DNA."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies germ cells as the cells that produce eggs and sperm (gametes)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that eggs/sperm (gametes) contain only half of the individual's DNA."
+              }
+            ],
+            "model_answer": "A somatic cell is a general term for any body cell except the cells that produce eggs and sperm; somatic cells contain the complete set of an individual's DNA. Germ cells are the cells that produce the gametes (eggs and sperm). The gametes contain only half of the individual's DNA, so that the fusion of an egg and sperm restores a complete set of DNA in the offspring."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fr-08",
+          "question": {
+            "prompt": "Slide 4 describes 'organization' as a characteristic of life involving the compartmentalization of fluids and cells. Explain what is meant by the body's organization, give two examples of structures that provide compartmentalization, and explain how one of your examples provides compartmentalization.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Explains that organization refers to the body maintaining distinct internal compartments that keep body cells separated from external/environmental threats (and keep them moist/nourished)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid first example of a compartmentalizing structure (e.g., cell membrane separating intracellular from extracellular fluid)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid second example (e.g., skin/GI tract lining keeping microorganisms out, or blood vessels keeping blood in a closed system)."
+              },
+              {
+                "points": 1,
+                "criterion": "Correctly explains one example (e.g., notes that GI-tract microflora remain 'outside' the body's internal fluids, or that the cell membrane keeps intracellular and extracellular fluids separate)."
+              }
+            ],
+            "model_answer": "Organization means the body maintains distinct internal compartments that separate body cells from external environmental threats such as microorganisms, while keeping the cells moist and nourished. One example is the cell (plasma) membrane, which keeps the intracellular fluid and organelles separate from the extracellular environment. A second example is the lining of the GI tract, a hollow tunnel through the body: it is packed with microflora, but the cells lining it prevent these microorganisms from entering the body's internal fluids, so they remain effectively 'outside' the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fr-09",
+          "question": {
+            "prompt": "Contrast 'cell division' and 'cell growth' as two distinct cellular processes involved in the growth of the body. In your answer, indicate which type of cell (somatic or germ) undergoes regular cell division.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Describes cell division as one cell dividing (via mitosis) to generate two new (daughter) cells."
+              },
+              {
+                "points": 1,
+                "criterion": "Describes cell growth as an increase in the size of a cell (e.g., a neuron or muscle cell elongating)."
+              },
+              {
+                "points": 1,
+                "criterion": "Distinguishes the two: division increases the NUMBER of cells whereas growth increases the SIZE of a cell."
+              },
+              {
+                "points": 1,
+                "criterion": "States that most somatic cells (not germ cells) divide regularly."
+              }
+            ],
+            "model_answer": "Cell division is the process in which one cell divides, typically via mitosis, to generate two new daughter cells; it increases the number of cells. Cell growth is the increase in the size of an individual cell, such as a nerve cell or muscle cell elongating to become extremely long. Thus division adds more cells while growth enlarges existing cells. Most somatic cells divide regularly to replace worn cells, whereas germ cells and a few others (e.g., red blood cells, most neurons) do not divide regularly."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u4-advanced-fr-10",
+          "question": {
+            "prompt": "Explain the relationship between cell differentiation and gene expression. In your answer: (1) define cell differentiation, (2) explain why all cells of the body can contain identical DNA (beginning with the fertilized egg) yet be structurally and functionally different, and (3) explain how differential gene expression accounts for these differences.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines cell differentiation as the process by which unspecialized cells become specialized in structure and function."
+              },
+              {
+                "points": 2,
+                "criterion": "States that all body cells contain the same full complement of DNA (beginning with the fertilized egg)."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that each cell type only reads/expresses the portion of DNA relevant to its function (gene expression), which is why cells become different despite identical DNA."
+              }
+            ],
+            "model_answer": "Cell differentiation is the process by which unspecialized cells become specialized in their structure and function to perform particular tasks. All cells of the body, beginning with the fertilized egg, contain the same full complement of DNA. Cells become different from one another because each cell type only 'reads'—transcribes and translates—the portion of DNA relevant to its own function. This selective reading of the genome is called gene expression, and it is what allows genetically identical cells to develop into structurally and functionally distinct cell types."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    }
+  }
+}

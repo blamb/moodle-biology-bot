@@ -1,0 +1,3036 @@
+{
+  "unit_no": 10,
+  "generated_at": "2026-07-16T17:09:06.599Z",
+  "levels": {
+    "basic": {
+      "mc": [
+        {
+          "id": "u10-basic-mc-01",
+          "question": {
+            "stem": "Which of the following is a component of the axial skeleton?",
+            "options": [
+              "Sternum",
+              "Clavicle",
+              "Humerus",
+              "Scapula",
+              "Femur"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The sternum is part of the thoracic cage, which belongs to the axial skeleton.\n\n**Why the other options are wrong:**\n- **(B)** The clavicle is part of the pectoral girdle of the appendicular skeleton.\n- **(C)** The humerus is an upper limb bone of the appendicular skeleton.\n- **(D)** The scapula is part of the pectoral girdle of the appendicular skeleton.\n- **(E)** The femur is a lower limb bone of the appendicular skeleton."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-02",
+          "question": {
+            "stem": "What term refers to the production of blood cells within bone?",
+            "options": [
+              "Ossification",
+              "Remodeling",
+              "Resorption",
+              "Calcification",
+              "Hematopoiesis"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Hematopoiesis is the production of red blood cells, white blood cells, and platelets, which occurs in red marrow.\n\n**Why the other options are wrong:**\n- **(A)** Ossification is the process of bone formation, not blood cell production.\n- **(B)** Remodeling is the ongoing replacement of old bone with new bone.\n- **(C)** Resorption is the breakdown of bone tissue.\n- **(D)** Calcification is the deposition of mineral salts onto matrix."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-03",
+          "question": {
+            "stem": "Which part of a long bone is the tubular shaft that runs between its proximal and distal ends?",
+            "options": [
+              "Epiphyseal plate",
+              "Metaphysis",
+              "Articular cartilage",
+              "Epiphysis",
+              "Diaphysis"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The diaphysis is the tubular shaft of a long bone whose walls are made of compact bone and which contains the medullary cavity.\n\n**Why the other options are wrong:**\n- **(A)** The epiphyseal plate is the growth-plate cartilage, not the shaft.\n- **(B)** The metaphysis is the narrow region where the epiphysis meets the diaphysis.\n- **(C)** Articular cartilage covers the joint surface of the epiphysis.\n- **(D)** The epiphysis is the wide end of a long bone, not the shaft."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-04",
+          "question": {
+            "stem": "How does spongy bone differ from compact bone?",
+            "options": [
+              "Spongy bone is found deep to the periosteum of the diaphysis, while compact bone fills the epiphyses",
+              "Spongy bone lacks osteocytes, while compact bone contains them in lacunae",
+              "Spongy bone is arranged in osteons, while compact bone contains trabeculae",
+              "Spongy bone is denser and stronger, while compact bone contains open spaces",
+              "Spongy bone forms a lattice of trabeculae and is lighter, while compact bone is dense and forms the diaphysis walls"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Spongy bone is a lattice-like network of trabeculae that makes bone lighter, whereas dense compact bone forms the diaphysis walls and withstands compressive forces.\n\n**Why the other options are wrong:**\n- **(A)** Compact bone lies deep to the periosteum of the diaphysis; spongy bone fills the epiphyses — this is reversed.\n- **(B)** Both spongy and compact bone contain osteocytes in lacunae.\n- **(C)** Osteons are found in compact bone and trabeculae in spongy bone — this is reversed.\n- **(D)** This reverses the two — compact bone is the denser, stronger type."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-05",
+          "question": {
+            "stem": "Which statement correctly describes red and yellow marrow?",
+            "options": [
+              "Red marrow is the site of hematopoiesis, while yellow marrow contains adipose tissue for fat storage",
+              "Red marrow stores fat, while yellow marrow produces blood cells",
+              "Red marrow contains triglycerides, while yellow marrow contains osteoblasts",
+              "Yellow marrow fills the spaces of spongy bone, while red marrow fills the medullary cavity",
+              "Both red and yellow marrow produce red blood cells"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Red marrow is the site of hematopoiesis (blood cell production), while yellow marrow contains adipose tissue whose triglycerides serve as an energy store.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the functions of the two marrow types.\n- **(C)** Yellow marrow stores triglycerides; neither marrow type is defined by containing osteoblasts.\n- **(D)** Red marrow fills spaces in spongy bone, and yellow marrow fills the medullary cavity — this is reversed.\n- **(E)** Only red marrow produces blood cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-06",
+          "question": {
+            "stem": "Which bone cell type is developmentally unrelated to the others, arising instead from monocytes and macrophages?",
+            "options": [
+              "Osteogenic cell",
+              "Osteoclast",
+              "Osteocyte",
+              "Osteoblast",
+              "Chondroblast"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The osteoclast, which resorbs bone, originates from monocytes and macrophages rather than from osteogenic cells like the other bone cells.\n\n**Why the other options are wrong:**\n- **(A)** Osteogenic cells are the dividing stem cells that give rise to osteoblasts.\n- **(C)** Osteocytes are mature osteoblasts trapped in matrix, part of the same lineage.\n- **(D)** Osteoblasts develop from osteogenic cells.\n- **(E)** Chondroblasts are cartilage-forming cells, not a bone cell type in this lineage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-07",
+          "question": {
+            "stem": "Which connective tissue structure attaches muscle to bone?",
+            "options": [
+              "Ligament",
+              "Endosteum",
+              "Periosteum",
+              "Tendon",
+              "Cartilage"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Tendons are connective tissue structures that firmly attach muscles to bones so that muscle contraction produces movement.\n\n**Why the other options are wrong:**\n- **(A)** Ligaments connect bone to bone at moveable joints.\n- **(B)** The endosteum lines the internal bone surfaces and is involved in growth and remodeling.\n- **(C)** The periosteum covers bone and serves as an attachment site, but is not the muscle-to-bone connector itself.\n- **(E)** Cartilage provides flexible support and cushioning, not muscle attachment."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-08",
+          "question": {
+            "stem": "In compact bone, what runs down the center of each osteon and contains blood vessels, nerves, and lymphatic vessels?",
+            "options": [
+              "Canaliculus",
+              "Perforating canal",
+              "Central canal",
+              "Lacuna",
+              "Lamella"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The central canal runs down the center of each osteon and carries blood vessels, nerves, and lymphatic vessels.\n\n**Why the other options are wrong:**\n- **(A)** Canaliculi are tiny channels connecting lacunae to the central canal.\n- **(B)** The perforating canal branches at right angles from the central canal to reach the periosteum and endosteum.\n- **(D)** A lacuna is the small space that houses an osteocyte.\n- **(E)** A lamella is a concentric ring of calcified matrix in the osteon."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-09",
+          "question": {
+            "stem": "Which of the following bones belongs to the appendicular skeleton?",
+            "options": [
+              "Occipital bone",
+              "Cervical vertebra",
+              "Radius",
+              "Sternum",
+              "Sacrum"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The radius is a bone of the forearm (upper limb) and is therefore part of the appendicular skeleton.\n\n**Why the other options are wrong:**\n- **(A)** The occipital bone is part of the skull, which is axial.\n- **(B)** Cervical vertebrae are part of the vertebral column, which is axial.\n- **(D)** The sternum is part of the thoracic cage, which is axial.\n- **(E)** The sacrum is part of the vertebral column, which is axial."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-10",
+          "question": {
+            "stem": "Into which bone classification do the carpals of the wrist and the tarsals of the ankle fall?",
+            "options": [
+              "Long bones",
+              "Short bones",
+              "Sesamoid bones",
+              "Irregular bones",
+              "Flat bones"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Carpals and tarsals are cube-like, being approximately equal in length, width, and thickness, which defines short bones.\n\n**Why the other options are wrong:**\n- **(A)** Long bones are cylindrical with a length greater than their diameter, like the femur.\n- **(C)** Sesamoid bones are small and round and form in tendons, like the patella.\n- **(D)** Irregular bones have complex shapes, like the vertebrae.\n- **(E)** Flat bones are thin and often curved, like the cranial bones and sternum."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-11",
+          "question": {
+            "stem": "Which of the following bones is part of the appendicular skeleton rather than the axial skeleton?",
+            "options": [
+              "A thoracic vertebra",
+              "Clavicle",
+              "Sternum",
+              "Sacrum",
+              "Occipital bone"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The clavicle is part of the pectoral girdle, which attaches the upper limb to the axial skeleton and is therefore counted as part of the appendicular skeleton.\n\n**Why the other options are wrong:**\n- **(A)** Thoracic vertebrae are part of the vertebral column and belong to the axial skeleton.\n- **(C)** The sternum is part of the thoracic cage and belongs to the axial skeleton.\n- **(D)** The sacrum is part of the vertebral column and belongs to the axial skeleton.\n- **(E)** The occipital bone is a skull bone and belongs to the axial skeleton."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-12",
+          "question": {
+            "stem": "The tarsal bones of the ankle are the best example of which bone classification?",
+            "options": [
+              "Irregular bones",
+              "Short bones",
+              "Sesamoid bones",
+              "Long bones",
+              "Flat bones"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Short bones are cube-like with roughly equal length, width, and thickness, and the only short bones in the body are the carpals and tarsals.\n\n**Why the other options are wrong:**\n- **(A)** Irregular bones have complex shapes that fit no other category, like vertebrae.\n- **(C)** Sesamoid bones are small, round bones that form in tendons, like the patella.\n- **(D)** Long bones are cylindrical with a diameter smaller than their length, like the femur or humerus.\n- **(E)** Flat bones are thin and often curved, like cranial bones or the scapula."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-13",
+          "question": {
+            "stem": "In a long bone, which part is the hollow region within the diaphysis that is filled with yellow marrow?",
+            "options": [
+              "Metaphysis",
+              "Epiphysis",
+              "Medullary cavity",
+              "Articular cartilage",
+              "Epiphyseal plate"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The medullary cavity is the hollow region inside the diaphysis and it is filled with yellow marrow.\n\n**Why the other options are wrong:**\n- **(A)** The metaphysis is the narrow region where the epiphysis meets the diaphysis and contains the epiphyseal plate.\n- **(B)** The epiphysis is the wider end of the bone filled with spongy bone and red marrow.\n- **(D)** Articular cartilage covers the epiphyses at joint surfaces to reduce friction.\n- **(E)** The epiphyseal plate is a layer of hyaline cartilage responsible for lengthwise growth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-14",
+          "question": {
+            "stem": "Which statement best describes sesamoid bones?",
+            "options": [
+              "They are cylindrical bones that act as levers when muscles contract",
+              "They are complex-shaped bones that protect the spinal cord from compression",
+              "They are small, round bones that form within tendons and help resist compression",
+              "They are thin, curved bones that protect internal organs",
+              "They are cube-like bones found only in the wrists and ankles"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Sesamoid bones are small, round bones (shaped like a sesame seed) that form in tendons where a great deal of pressure is generated, helping tendons overcome compressive forces.\n\n**Why the other options are wrong:**\n- **(A)** Cylindrical lever bones are long bones.\n- **(B)** Complex bones protecting the spinal cord are irregular bones (vertebrae).\n- **(D)** Thin, curved bones that protect organs are flat bones.\n- **(E)** Cube-like bones of the wrists and ankles are short bones (carpals and tarsals)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-15",
+          "question": {
+            "stem": "A long bone grows in length primarily through activity at which structure?",
+            "options": [
+              "The epiphyseal plate",
+              "The articular cartilage",
+              "The medullary cavity",
+              "The periosteum",
+              "The nutrient foramen"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The epiphyseal plate is the layer of hyaline cartilage where ossification adds new bone to the diaphysis, producing longitudinal (length) growth.\n\n**Why the other options are wrong:**\n- **(B)** Articular cartilage reduces friction at joints and is not responsible for lengthwise growth.\n- **(C)** The medullary cavity is the hollow marrow-filled cavity, not a growth zone.\n- **(D)** The periosteum contributes to growth in diameter (appositional growth), not length.\n- **(E)** The nutrient foramen is an opening for blood vessels and nerves, not a growth site."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-16",
+          "question": {
+            "stem": "What is the primary functional difference between red and yellow bone marrow?",
+            "options": [
+              "Red marrow stores fat, while yellow marrow produces blood cells",
+              "Red marrow calcifies bone, while yellow marrow resorbs bone",
+              "Red marrow produces cartilage, while yellow marrow produces collagen",
+              "Red marrow produces blood cells (hematopoiesis), while yellow marrow stores fat",
+              "Red marrow lines the medullary cavity, while yellow marrow fills spongy bone"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Red marrow is the site of hematopoiesis (production of red blood cells, white blood cells, and platelets), while yellow marrow contains adipose tissue and stores fat as triglycerides.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the two functions.\n- **(B)** Calcification and resorption are performed by osteoblasts and osteoclasts, not marrow.\n- **(C)** Neither marrow type produces cartilage or collagen as its primary function.\n- **(E)** Red marrow fills spaces in spongy bone; yellow marrow fills the medullary cavity, which reverses the described locations."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-17",
+          "question": {
+            "stem": "The mineral crystal that gives bone matrix its hardness is called:",
+            "options": [
+              "Collagen",
+              "Trabecula",
+              "Lamella",
+              "Hydroxyapatite",
+              "Osteoid"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Hydroxyapatite is the salt crystal (from calcium phosphate and calcium carbonate) that calcifies on collagen fibres and gives bone its hardness and strength.\n\n**Why the other options are wrong:**\n- **(A)** Collagen fibres provide flexibility, not hardness.\n- **(B)** A trabecula is a matrix spike found in spongy bone, not a mineral crystal.\n- **(C)** A lamella is a concentric ring of calcified matrix in an osteon, not a mineral crystal.\n- **(E)** Osteoid is the uncalcified matrix before mineral salts are deposited."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-18",
+          "question": {
+            "stem": "Which bone cell originates from monocytes and macrophages rather than from osteogenic cells, and is responsible for bone breakdown?",
+            "options": [
+              "Osteocyte",
+              "Osteoclast",
+              "Chondroblast",
+              "Osteogenic cell",
+              "Osteoblast"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Osteoclasts are multinucleated cells that resorb (break down) bone and originate from monocytes and macrophages, unlike the other bone cells that derive from osteogenic cells.\n\n**Why the other options are wrong:**\n- **(A)** Osteocytes are mature cells that maintain matrix and develop from trapped osteoblasts.\n- **(C)** Chondroblasts secrete cartilage matrix and are not one of the four bone cell types.\n- **(D)** Osteogenic cells are the dividing stem cells that produce osteoblasts.\n- **(E)** Osteoblasts form new bone by secreting matrix and develop from osteogenic cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-19",
+          "question": {
+            "stem": "In the forearm, which bone is located on the medial (pinkie) side?",
+            "options": [
+              "Metacarpal",
+              "Carpal",
+              "Ulna",
+              "Humerus",
+              "Radius"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The ulna is the medial forearm bone, on the same side as the pinkie finger, while the radius lies laterally.\n\n**Why the other options are wrong:**\n- **(A)** Metacarpal bones form the palm of the hand, not the forearm.\n- **(B)** Carpal bones form the base of the hand (wrist), not the forearm.\n- **(D)** The humerus is the single bone of the upper arm, not the forearm.\n- **(E)** The radius is the lateral (thumb side) bone of the forearm."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-20",
+          "question": {
+            "stem": "Which structure of the skeletal system is the strong connective tissue band that holds bones together at a moveable joint and prevents excessive movement?",
+            "options": [
+              "Periosteum",
+              "Tendon",
+              "Osteoid",
+              "Cartilage",
+              "Ligament"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Ligaments are the strong connective tissue bands that hold bones together at moveable joints and prevent excessive movements that would cause injury.\n\n**Why the other options are wrong:**\n- **(A)** The periosteum is the membrane covering the outer surface of bone.\n- **(B)** Tendons attach muscles to bones, not bone to bone.\n- **(C)** Osteoid is uncalcified bone matrix, not a connective tissue band at joints.\n- **(D)** Cartilage provides flexible support and cushioning but does not bind bones as a band at a joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-21",
+          "question": {
+            "stem": "Which statement correctly distinguishes intramembranous ossification from endochondral ossification?",
+            "options": [
+              "Intramembranous ossification takes much longer than endochondral ossification.",
+              "Endochondral ossification forms the cranial flat bones, while intramembranous ossification forms the long bones.",
+              "Intramembranous ossification replaces a hyaline cartilage template, while endochondral ossification develops bone directly from mesenchymal tissue.",
+              "Intramembranous ossification develops bone directly from mesenchymal connective tissue, while endochondral ossification replaces a hyaline cartilage template.",
+              "Both processes require a cartilage model, but only intramembranous ossification uses osteoblasts."
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Intramembranous ossification forms bone directly from sheets of mesenchymal connective tissue, whereas endochondral ossification uses a hyaline cartilage template that is gradually replaced by bone.\n\n**Why the other options are wrong:**\n- **(A)** Endochondral ossification is the slower of the two processes, not intramembranous.\n- **(B)** The cranial flat bones form via intramembranous, and long bones via endochondral — this is reversed.\n- **(C)** This reverses the two processes.\n- **(E)** Only endochondral ossification uses a cartilage model, and both processes use osteoblasts."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-22",
+          "question": {
+            "stem": "In bone histology, what is the correct definition of a lacuna?",
+            "options": [
+              "A concentric ring of calcified matrix in compact bone.",
+              "The central channel of an osteon containing blood vessels and nerves.",
+              "A small space within the bone matrix that houses an osteocyte.",
+              "A tiny channel connecting osteocytes to one another.",
+              "The membrane lining the medullary cavity."
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A lacuna is the small space within the bone matrix in which an osteocyte resides.\n\n**Why the other options are wrong:**\n- **(A)** A concentric ring of calcified matrix is a lamella, not a lacuna.\n- **(B)** The central channel of an osteon is the central (Haversian) canal.\n- **(D)** The tiny connecting channels are canaliculi.\n- **(E)** The membrane lining the medullary cavity is the endosteum."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-23",
+          "question": {
+            "stem": "A bone grows in length primarily at which structure, and this growth ceases in early adulthood when that structure ossifies into what?",
+            "options": [
+              "At the diaphysis, which ossifies into the epiphysis.",
+              "At the periosteum, which ossifies into the endosteum.",
+              "At the medullary cavity, which ossifies into compact bone.",
+              "At the epiphyseal plate, which ossifies into the epiphyseal line.",
+              "At the articular cartilage, which ossifies into the metaphysis."
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Longitudinal growth occurs at the epiphyseal (growth) plate of hyaline cartilage, which becomes the fully ossified epiphyseal line when growth stops.\n\n**Why the other options are wrong:**\n- **(A)** The diaphysis is the shaft and does not ossify into the epiphysis.\n- **(B)** The periosteum is involved in growth in diameter, not length, and does not become the endosteum.\n- **(C)** The medullary cavity is enlarged by osteoclast resorption; it does not ossify into compact bone.\n- **(E)** Articular cartilage remains as a joint surface and does not become the metaphysis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-24",
+          "question": {
+            "stem": "The flat bones on the top of the skull fall into which bone classification category?",
+            "options": [
+              "Flat bones",
+              "Irregular bones",
+              "Long bones",
+              "Short bones",
+              "Sesamoid bones"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The cranial bones of the skull are classic examples of flat bones, which are thin and often curved.\n\n**Why the other options are wrong:**\n- **(B)** Irregular bones have complex shapes, such as vertebrae, not the skull cap.\n- **(C)** Long bones are cylindrical, such as the humerus or femur.\n- **(D)** Short bones are cube-like, such as the carpals and tarsals.\n- **(E)** Sesamoid bones are small round bones that form in tendons, like the patella."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-25",
+          "question": {
+            "stem": "Which single bone forms the posterior skull and the posterior base of the cranial cavity?",
+            "options": [
+              "Parietal bone",
+              "Maxilla",
+              "Frontal bone",
+              "Occipital bone",
+              "Temporal bone"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The occipital bone is the single bone that forms the posterior skull and the posterior base of the cranial cavity.\n\n**Why the other options are wrong:**\n- **(A)** The parietal bones are paired and form the upper lateral sides of the skull.\n- **(B)** The maxilla is a paired facial bone forming the upper jaw.\n- **(C)** The frontal bone is a single bone that forms the forehead.\n- **(E)** The temporal bones are paired and form the lower lateral sides of the skull."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-26",
+          "question": {
+            "stem": "Which of the following bones belongs to the appendicular skeleton rather than the axial skeleton?",
+            "options": [
+              "Clavicle",
+              "Sacrum",
+              "Cervical vertebra",
+              "Sternum",
+              "Rib"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The clavicle is part of the pectoral girdle, which attaches the upper limb to the axial skeleton and is therefore part of the appendicular skeleton.\n\n**Why the other options are wrong:**\n- **(B)** The sacrum is part of the vertebral column of the axial skeleton.\n- **(C)** Cervical vertebrae are part of the vertebral column of the axial skeleton.\n- **(D)** The sternum is part of the thoracic cage of the axial skeleton.\n- **(E)** The ribs are part of the thoracic cage of the axial skeleton."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-27",
+          "question": {
+            "stem": "The carpals of the wrist and the tarsals of the ankle are examples of which bone classification?",
+            "options": [
+              "Long bones",
+              "Short bones",
+              "Flat bones",
+              "Irregular bones",
+              "Sesamoid bones"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The carpals and tarsals are the only short bones in the human skeleton, being cube-like and providing stability with limited motion.\n\n**Why the other options are wrong:**\n- **(A)** Long bones are cylindrical with a length greater than their width, like the femur.\n- **(C)** Flat bones are thin and often curved, like the sternum or cranial bones.\n- **(D)** Irregular bones have complex shapes, like the vertebrae.\n- **(E)** Sesamoid bones form within tendons, like the patella."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-28",
+          "question": {
+            "stem": "Which component of the skeletal system consists of strong connective tissue bands that hold bones together at a moveable joint?",
+            "options": [
+              "Tendons",
+              "Bones",
+              "Cartilage",
+              "Periosteum",
+              "Ligaments"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Ligaments are the strong connective tissue bands that hold bones together at a moveable joint and prevent excessive, injurious movement.\n\n**Why the other options are wrong:**\n- **(A)** Tendons attach muscle to bone, not bone to bone.\n- **(B)** Bones form the rigid framework but are the structures being held together, not the bands.\n- **(C)** Cartilage provides flexible support and cushioning but is not a connective tissue band uniting bones at a joint.\n- **(D)** The periosteum is the outer membrane covering bones, not a joint-uniting band."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-29",
+          "question": {
+            "stem": "In a long bone, which part is the tubular shaft whose walls are made of compact bone and whose hollow interior holds yellow marrow?",
+            "options": [
+              "Diaphysis",
+              "Epiphyseal plate",
+              "Epiphysis",
+              "Articular cartilage",
+              "Metaphysis"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The diaphysis is the tubular shaft with compact bone walls surrounding the medullary cavity, which contains yellow marrow.\n\n**Why the other options are wrong:**\n- **(B)** The epiphyseal plate is the hyaline cartilage layer responsible for growth in length.\n- **(C)** The epiphysis is the wide end of the bone filled with spongy bone and red marrow.\n- **(D)** Articular cartilage covers the epiphysis where it meets another bone in a joint.\n- **(E)** The metaphysis is the narrow region between diaphysis and epiphysis containing the growth plate."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-mc-30",
+          "question": {
+            "stem": "Which statement correctly describes the difference between red and yellow bone marrow?",
+            "options": [
+              "Red marrow produces red blood cells only, while yellow marrow produces white blood cells only.",
+              "Yellow marrow fills the spongy bone of the epiphyses, while red marrow fills the medullary cavity.",
+              "Both types produce blood cells, but yellow marrow additionally stores minerals.",
+              "Red marrow stores fat, while yellow marrow produces blood cells.",
+              "Red marrow is the site of blood cell production (hematopoiesis), while yellow marrow stores fat as adipose tissue."
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Red marrow carries out hematopoiesis (producing red cells, white cells, and platelets), whereas yellow marrow contains adipose tissue that stores triglycerides for energy.\n\n**Why the other options are wrong:**\n- **(A)** Red marrow produces all blood cell types, not only red blood cells, and yellow marrow does not produce white blood cells.\n- **(B)** Red marrow fills the spongy bone of the epiphyses, while yellow marrow fills the medullary cavity — this is reversed.\n- **(C)** Yellow marrow stores fat, not minerals, and does not produce blood cells.\n- **(D)** This reverses the functions of the two marrow types."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u10-basic-tf-01",
+          "question": {
+            "stem": "Osteoclasts originate from monocytes and macrophages rather than from osteogenic cells.",
+            "correct": true,
+            "explanation": "True. Osteoclasts are the bone-resorbing, multinucleated cells that develop from monocytes and macrophages (types of white blood cells). This makes them developmentally unrelated to the osteogenic-cell lineage that gives rise to osteoblasts and osteocytes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-02",
+          "question": {
+            "stem": "The occipital bone is a single (unpaired) bone that forms the posterior skull and the posterior base of the cranial cavity.",
+            "correct": true,
+            "explanation": "True. The occipital bone is one of the unpaired brain case bones and forms the posterior portion of the skull as well as the posterior base of the cranial cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-03",
+          "question": {
+            "stem": "The medullary cavity of a long bone is located within the diaphysis and is filled with yellow marrow.",
+            "correct": true,
+            "explanation": "True. The hollow region in the diaphysis (shaft) is the medullary cavity, which contains yellow (fat-storing) marrow. Red marrow, by contrast, fills the spaces of spongy bone in the epiphyses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-04",
+          "question": {
+            "stem": "The endosteum is the membrane that covers the outer surface of a bone and serves as the attachment point for tendons and ligaments.",
+            "correct": false,
+            "explanation": "False. The endosteum lines the internal surfaces (medullary cavity and trabeculae). It is the periosteum that covers the outer surface of the bone and whose outer fibrous layer serves as the attachment point for tendons and ligaments."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-05",
+          "question": {
+            "stem": "Ligaments connect bone to bone at a joint, whereas tendons attach muscle to bone.",
+            "correct": true,
+            "explanation": "True. Ligaments are strong connective tissue bands that hold bones together at a moveable joint, while tendons are the connective tissue structures that firmly attach muscles to bones so that muscle contraction produces movement."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-06",
+          "question": {
+            "stem": "The carpals of the wrist and the tarsals of the ankle are examples of long bones.",
+            "correct": false,
+            "explanation": "False. The carpals and tarsals are short bones—cube-like in shape, with roughly equal length, width, and thickness—providing stability and limited motion. Long bones (e.g., humerus, femur) are cylindrical and longer than they are wide."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-07",
+          "question": {
+            "stem": "During intramembranous ossification, bone develops directly from undifferentiated (mesenchymal) connective tissue rather than by replacing a hyaline cartilage template.",
+            "correct": true,
+            "explanation": "True. Intramembranous ossification forms bone directly from sheets of mesenchymal connective tissue (e.g., most cranial bones, flat facial bones, clavicles). Endochondral ossification is the pathway that replaces a hyaline cartilage template and takes much longer."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-08",
+          "question": {
+            "stem": "Red bone marrow is the site of hematopoiesis, while yellow marrow stores fat as triglycerides in adipose tissue.",
+            "correct": true,
+            "explanation": "True. Red marrow produces blood cells (red blood cells, white blood cells, and platelets) through hematopoiesis, whereas yellow marrow contains adipose tissue whose triglycerides serve as an energy reserve."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-09",
+          "question": {
+            "stem": "Compact bone is denser and stronger than spongy bone and is found in the diaphysis and deep to the periosteum of long bones.",
+            "correct": true,
+            "explanation": "True. Compact (cortical) bone is the denser, stronger tissue that withstands compressive forces and is located deep to the periosteum and in the diaphysis. Spongy (cancellous) bone, with its trabecular network, is lighter and located mainly in the epiphyses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-10",
+          "question": {
+            "stem": "One function of the skeletal system is mineral storage, with bone acting as a reservoir for calcium and phosphorus that can be released into the bloodstream to maintain homeostasis.",
+            "correct": true,
+            "explanation": "True. The bone matrix stores minerals—especially calcium and phosphorus—which can be released back into the bloodstream. For example, parathyroid hormone (PTH) helps regulate calcium homeostasis by mobilizing calcium from bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-11",
+          "question": {
+            "stem": "Compact bone is the denser, stronger type of bone tissue and forms the walls of the diaphysis of long bones.",
+            "correct": true,
+            "explanation": "Compact bone is dense and withstands compressive forces; it is found deep to the periosteum and in the diaphyses of long bones. Spongy bone, by contrast, contains open spaces (trabeculae) and is found in the epiphyses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-12",
+          "question": {
+            "stem": "Spongy bone is heavier and denser than compact bone, which is why it fills the diaphysis.",
+            "correct": false,
+            "explanation": "This is false. Spongy (cancellous) bone is lighter because of its open, lattice-like trabecular network, and it is found in the epiphyses. It is compact bone that is denser and heavier and forms the diaphysis walls."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-13",
+          "question": {
+            "stem": "In an adult, red marrow performs hematopoiesis while yellow marrow stores fat in the form of triglycerides.",
+            "correct": true,
+            "explanation": "Red marrow is the site of hematopoiesis (production of red blood cells, white blood cells, and platelets), whereas yellow marrow contains adipose tissue that stores triglycerides as an energy reserve."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-14",
+          "question": {
+            "stem": "Fontanelles allow the fetal skull to change shape during passage through the birth canal and permit continued skull growth after birth.",
+            "correct": true,
+            "explanation": "Fontanelles are soft spots of dense connective tissue between the brain-case bones. They let the skull deform during birth and allow expansion as the brain grows; they decrease in size and disappear by about age 2."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-15",
+          "question": {
+            "stem": "The carpals of the wrist and the tarsals of the ankle are classified as long bones.",
+            "correct": false,
+            "explanation": "This is false. Carpals and tarsals are cube-like and are classified as short bones, providing stability and limited motion. Long bones (e.g., humerus, femur) are cylindrical with a length greater than their diameter."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-16",
+          "question": {
+            "stem": "The medullary cavity of a long bone is located in the diaphysis and is filled with yellow marrow.",
+            "correct": true,
+            "explanation": "The diaphysis contains the hollow medullary cavity filled with yellow marrow, and its walls are made of compact bone. Red marrow, by contrast, fills the spaces of the spongy bone in the epiphyses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-17",
+          "question": {
+            "stem": "Tendons connect muscle to bone, whereas ligaments connect bone to bone at a moveable joint.",
+            "correct": true,
+            "explanation": "Tendons are connective tissue structures that attach muscles to bones so that muscle contraction produces movement. Ligaments are strong connective tissue bands that hold bones together at joints and prevent excessive, injurious movement."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-18",
+          "question": {
+            "stem": "The femur is part of the axial skeleton because it is a large weight-bearing bone.",
+            "correct": false,
+            "explanation": "This is false. The femur is a bone of the lower limb and therefore belongs to the appendicular skeleton. The axial skeleton consists of the skull, vertebral column, and thoracic cage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-19",
+          "question": {
+            "stem": "Osteogenic cells are the primary cells of mature bone that maintain the mineral concentration of the matrix.",
+            "correct": false,
+            "explanation": "This is false. The osteocyte is the primary cell of mature bone and maintains the mineral concentration of the matrix. Osteogenic cells are undifferentiated cells that undergo mitosis and develop into osteoblasts."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-20",
+          "question": {
+            "stem": "The pelvic girdle and pelvis are covered as part of the Skeletal Anatomy section of this unit.",
+            "correct": true,
+            "explanation": "The unit outline lists Section B: Skeletal Anatomy, which includes Part 3: The Pelvic Girdle and Pelvis, along with the axial skeleton, appendicular skeleton, and bones of the lower limb."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-21",
+          "question": {
+            "stem": "Compact bone is denser and stronger than spongy bone and is found in the diaphysis of long bones.",
+            "correct": true,
+            "explanation": "Compact bone is the denser, stronger of the two types, located deep to the periosteum and in the diaphysis, where it provides support and protection. Spongy bone, in contrast, is lighter and found in the epiphyses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-22",
+          "question": {
+            "stem": "Tendons are the connective tissue bands that hold bones together at a moveable joint, whereas ligaments attach muscle to bone.",
+            "correct": false,
+            "explanation": "The definitions are reversed. Ligaments hold bones together at moveable joints, while tendons attach muscles to bones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-23",
+          "question": {
+            "stem": "Osteoclasts develop from monocytes and macrophages rather than from osteogenic cells, making them developmentally unrelated to the other bone cells.",
+            "correct": true,
+            "explanation": "Osteoblasts, osteocytes, and osteogenic cells share a common developmental lineage, but osteoclasts originate from monocytes and macrophages (white blood cells), making them the developmentally distinct cell responsible for bone resorption."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-24",
+          "question": {
+            "stem": "Bones grow in length at the epiphyseal plate, and this longitudinal growth continues indefinitely throughout adulthood.",
+            "correct": false,
+            "explanation": "Growth in length occurs at the epiphyseal plate, but it stops in early adulthood (around 18–21 years) when the plate ossifies into the epiphyseal line. Growth in diameter (appositional growth), however, can continue after longitudinal growth ceases."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-25",
+          "question": {
+            "stem": "The femur is part of the appendicular skeleton, while the vertebral column is part of the axial skeleton.",
+            "correct": true,
+            "explanation": "The femur is a lower limb bone and belongs to the appendicular skeleton, whereas the vertebral column forms the central axis of the body and is part of the axial skeleton."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-26",
+          "question": {
+            "stem": "The carpals of the wrist and the tarsals of the ankle are classified as short bones.",
+            "correct": true,
+            "explanation": "Short bones are cube-like, approximately equal in length, width, and thickness. The only short bones in the human skeleton are the carpals of the wrists and the tarsals of the ankles."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-27",
+          "question": {
+            "stem": "Red marrow is the site of hematopoiesis, while yellow marrow stores fat as triglycerides in adipose tissue.",
+            "correct": true,
+            "explanation": "Red marrow produces blood cells (hematopoiesis), while yellow marrow contains adipose tissue and stores triglycerides that can serve as an energy source."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-28",
+          "question": {
+            "stem": "During endochondral ossification, the hyaline cartilage model is gradually converted directly into bone tissue.",
+            "correct": false,
+            "explanation": "Cartilage does not become bone; it serves as a template that is completely replaced by new bone. The chondrocytes die as the matrix calcifies, and osteoblasts (delivered by invading blood vessels) lay down new bone tissue in their place."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-29",
+          "question": {
+            "stem": "The medullary cavity is the hollow region in the diaphysis of a long bone and is filled with yellow marrow.",
+            "correct": true,
+            "explanation": "The medullary cavity is the hollow region within the diaphysis, and it is filled with yellow marrow. Its walls are composed of compact bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-tf-30",
+          "question": {
+            "stem": "Endochondral ossification forms bone by replacing a hyaline cartilage template, whereas intramembranous ossification forms bone directly from sheets of mesenchymal connective tissue.",
+            "correct": true,
+            "explanation": "This is the key contrast between the two pathways: endochondral ossification (long bones, base of skull) uses a cartilage model, while intramembranous ossification (most cranial bones, flat facial bones, clavicles) develops directly from undifferentiated mesenchymal tissue without a cartilage template."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u10-basic-fitb-01",
+          "question": {
+            "stem": "The type of ossification in which bone develops by replacing a pre-existing hyaline cartilage template, as occurs in long bones, is called ____________.",
+            "answer": "endochondral ossification",
+            "accepted_synonyms": [
+              "endochondral"
+            ],
+            "explanation": "Endochondral ossification replaces a hyaline cartilage model, unlike intramembranous ossification which forms bone directly from mesenchymal connective tissue."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-02",
+          "question": {
+            "stem": "Strong connective tissue bands that hold bones together at a moveable joint and prevent excessive, injury-causing movement are called ____________.",
+            "answer": "ligament",
+            "accepted_synonyms": [
+              "ligaments"
+            ],
+            "explanation": "Slide 4 describes ligaments as the connective tissue bands that unite bones at joints and limit excessive movement; tendons instead attach muscle to bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-03",
+          "question": {
+            "stem": "The division of the skeleton that includes the bones of the upper and lower limbs plus the girdle bones that attach them to the body's central axis is the ____________.",
+            "answer": "appendicular skeleton",
+            "accepted_synonyms": [
+              "appendicular"
+            ],
+            "explanation": "The appendicular skeleton contains the limb bones and girdles, in contrast to the axial skeleton of the head, neck, chest, and back."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-04",
+          "question": {
+            "stem": "In a growing long bone, the layer of hyaline cartilage located at the metaphysis that is responsible for growth in length is the ____________.",
+            "answer": "epiphyseal plate",
+            "accepted_synonyms": [
+              "epiphyseal plate",
+              "growth plate",
+              "epiphyseal (growth) plate"
+            ],
+            "explanation": "The epiphyseal plate is the site of longitudinal bone growth; once growth stops it is replaced by the epiphyseal line."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-05",
+          "question": {
+            "stem": "Cube-like bones that are approximately equal in length, width, and thickness, such as those of the wrist and ankle, are classified as ____________ bones.",
+            "answer": "short",
+            "accepted_synonyms": [
+              "short bone",
+              "short bones"
+            ],
+            "explanation": "Short bones are cube-like; the carpals of the wrist and tarsals of the ankle are the only short bones in the human skeleton."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-06",
+          "question": {
+            "stem": "The denser, stronger bone tissue found deep to the periosteum and forming the walls of the diaphysis is ____________.",
+            "answer": "compact bone",
+            "accepted_synonyms": [
+              "compact",
+              "cortical bone",
+              "compact bone tissue"
+            ],
+            "explanation": "Compact bone is dense and withstands compressive forces, whereas spongy bone contains open spaces (trabeculae) and supports weight shifts."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-07",
+          "question": {
+            "stem": "The paired bones that form most of the upper lateral sides of the skull and join together at the top of the head are the ____________ bones.",
+            "answer": "parietal bone",
+            "accepted_synonyms": [
+              "parietal",
+              "parietal bones",
+              "parietal bone"
+            ],
+            "explanation": "Slide 57 identifies the paired parietal bones as forming the upper lateral side of the skull, joining at the top of the head."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-08",
+          "question": {
+            "stem": "The hollow region within the shaft of a long bone that is filled with yellow marrow lies inside the ____________, the tubular shaft of the bone.",
+            "answer": "diaphysis",
+            "accepted_synonyms": [
+              "diaphyses"
+            ],
+            "explanation": "The diaphysis is the tubular shaft of a long bone; its medullary cavity holds yellow marrow and its walls are made of compact bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-09",
+          "question": {
+            "stem": "The multinucleated bone cell responsible for the breakdown and resorption of bone, which originates from monocytes and macrophages rather than from osteogenic cells, is the ____________.",
+            "answer": "osteoclast",
+            "accepted_synonyms": [
+              "osteoclasts"
+            ],
+            "explanation": "Osteoclasts resorb bone and are developmentally unrelated to the other bone cells, arising from monocytes/macrophages instead of osteogenic cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-10",
+          "question": {
+            "stem": "The production of blood cells—red blood cells, white blood cells, and platelets—that occurs in red bone marrow is called ____________.",
+            "answer": "hematopoiesis",
+            "accepted_synonyms": [
+              "haematopoiesis",
+              "hemopoiesis",
+              "haemopoiesis"
+            ],
+            "explanation": "Hematopoiesis is the blood cell production function of the skeletal system, taking place in the red bone marrow."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-11",
+          "question": {
+            "stem": "Growth of a bone in diameter, in which osteoclasts resorb bone lining the medullary cavity while osteoblasts add new bone beneath the periosteum, is called ____________.",
+            "answer": "appositional growth",
+            "accepted_synonyms": [
+              "appositional"
+            ],
+            "explanation": "Appositional growth increases bone diameter and can continue even after longitudinal growth ceases, distinguishing it from length growth at the epiphyseal plate."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-12",
+          "question": {
+            "stem": "The type of marrow found in the medullary cavity that stores fat as triglycerides in adipose tissue is called ____________.",
+            "answer": "yellow bone marrow",
+            "accepted_synonyms": [
+              "yellow marrow",
+              "yellow bone marrow"
+            ],
+            "explanation": "Yellow marrow contains adipose tissue and serves as a fat/energy store, in contrast to red marrow which performs hematopoiesis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-13",
+          "question": {
+            "stem": "The ossification process in which compact and spongy bone develops directly from sheets of mesenchymal connective tissue, forming the cranial bones and clavicles, is called ____________.",
+            "answer": "intramembranous ossification",
+            "accepted_synonyms": [
+              "intramembranous"
+            ],
+            "explanation": "Intramembranous ossification forms bone directly from mesenchyme without a cartilage template, unlike endochondral ossification."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-14",
+          "question": {
+            "stem": "The scapula and clavicle both belong to the ____________ skeleton, which includes the limbs and the girdles that attach them to the axial skeleton.",
+            "answer": "appendicular skeleton",
+            "accepted_synonyms": [
+              "appendicular"
+            ],
+            "explanation": "The scapula and clavicle form the pectoral girdle, part of the appendicular skeleton, not the axial skeleton."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-15",
+          "question": {
+            "stem": "The thin layer of hyaline cartilage covering the epiphysis where two bones meet to form a joint, reducing friction and acting as a shock absorber, is called ____________.",
+            "answer": "articular cartilage",
+            "accepted_synonyms": [
+              "articular"
+            ],
+            "explanation": "Articular cartilage covers the joint surfaces of epiphyses, where the periosteum is absent, and reduces friction between bones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-16",
+          "question": {
+            "stem": "The denser, stronger type of bone tissue found deep to the periosteum and in the diaphysis of long bones, built from units called osteons, is ____________.",
+            "answer": "compact bone",
+            "accepted_synonyms": [
+              "compact",
+              "cortical bone"
+            ],
+            "explanation": "Compact bone is dense and withstands compressive forces, contrasting with spongy bone which has open spaces and trabeculae."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-17",
+          "question": {
+            "stem": "The strong connective tissue bands that hold bones together at a moveable joint and prevent excessive movement are called ____________.",
+            "answer": "ligament",
+            "accepted_synonyms": [
+              "ligaments"
+            ],
+            "explanation": "Ligaments unite bones at joints, distinguishing them from tendons, which attach muscle to bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-18",
+          "question": {
+            "stem": "The multinucleated bone cell responsible for bone breakdown and resorption, which originates from monocytes and macrophages rather than from osteogenic cells, is the ____________.",
+            "answer": "osteoclast",
+            "accepted_synonyms": [
+              "osteoclasts"
+            ],
+            "explanation": "The osteoclast performs resorption and is developmentally unrelated to the other bone cells, arising from white blood cell precursors."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-19",
+          "question": {
+            "stem": "The girdle of the appendicular skeleton that attaches the lower limbs to the vertebral column is the ____________.",
+            "answer": "pelvic girdle",
+            "accepted_synonyms": [
+              "pelvic girdle",
+              "hip girdle"
+            ],
+            "explanation": "The pelvic girdle attaches the lower limbs to the axial skeleton, whereas the pectoral girdle attaches the upper limbs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-20",
+          "question": {
+            "stem": "The type of ossification that lengthens long bones by replacing hyaline cartilage at the epiphyseal plate is ____________.",
+            "answer": "endochondral ossification",
+            "accepted_synonyms": [
+              "endochondral"
+            ],
+            "explanation": "Endochondral ossification, which replaces cartilage with bone, is the process occurring at the growth plate of long bones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-21",
+          "question": {
+            "stem": "The tubular shaft that runs between the proximal and distal ends of a long bone, whose walls are made of compact bone, is called the ____________.",
+            "answer": "diaphysis",
+            "accepted_synonyms": [
+              "diaphyses"
+            ],
+            "explanation": "The diaphysis is the shaft of a long bone; its walls are compact bone and its hollow center holds yellow marrow."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-22",
+          "question": {
+            "stem": "The thin layer of cartilage that covers the epiphyses where bones meet to form a joint, reducing friction and acting as a shock absorber, is the ____________.",
+            "answer": "articular cartilage",
+            "accepted_synonyms": [
+              "articular cartilages"
+            ],
+            "explanation": "Articular cartilage covers the joint surfaces of the epiphyses to reduce friction and cushion the joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-23",
+          "question": {
+            "stem": "In an adult, the medullary cavity of a long bone is filled with fat-storing ____________, which is composed of adipose tissue.",
+            "answer": "yellow bone marrow",
+            "accepted_synonyms": [
+              "yellow marrow",
+              "yellow bone marrow"
+            ],
+            "explanation": "Yellow marrow contains adipose tissue for fat storage and fills the medullary cavity, especially in adults."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-24",
+          "question": {
+            "stem": "The ossification process by which compact and spongy bone develops directly from sheets of undifferentiated (mesenchymal) connective tissue, forming most cranial bones and the clavicles, is ____________.",
+            "answer": "intramembranous ossification",
+            "accepted_synonyms": [
+              "intramembranous"
+            ],
+            "explanation": "Intramembranous ossification forms bone directly from mesenchymal tissue without a cartilage template."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-25",
+          "question": {
+            "stem": "The single bone that forms the lower jaw, and the only moveable bone of the skull, is the ____________.",
+            "answer": "mandible",
+            "accepted_synonyms": [
+              "mandibles"
+            ],
+            "explanation": "The mandible forms the lower jaw and is the only moveable bone of the skull; it is part of the axial skeleton."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-26",
+          "question": {
+            "stem": "The production of blood cells—red blood cells, white blood cells, and platelets—that takes place in red marrow is called ____________.",
+            "answer": "hematopoiesis",
+            "accepted_synonyms": [
+              "haematopoiesis"
+            ],
+            "explanation": "Hematopoiesis is blood cell production, occurring in red bone marrow."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-27",
+          "question": {
+            "stem": "A small, round bone shaped like a sesame seed that forms within a tendon at the knee, present in nearly every person, is the ____________.",
+            "answer": "patella",
+            "accepted_synonyms": [
+              "patellae",
+              "patellas"
+            ],
+            "explanation": "The patella is the only sesamoid bone found commonly in every person, forming in the tendon at the knee."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-28",
+          "question": {
+            "stem": "The division of the skeleton that includes all bones of the upper and lower limbs plus the girdles that attach them to the body's central axis is the ____________.",
+            "answer": "appendicular skeleton",
+            "accepted_synonyms": [
+              "appendicular"
+            ],
+            "explanation": "The appendicular skeleton comprises the limb bones plus the pectoral and pelvic girdles."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-29",
+          "question": {
+            "stem": "The multinucleated bone cell responsible for bone resorption and breakdown, which originates from monocytes and macrophages rather than from osteogenic cells, is the ____________.",
+            "answer": "osteoclast",
+            "accepted_synonyms": [
+              "osteoclasts"
+            ],
+            "explanation": "Osteoclasts resorb bone and are developmentally unrelated to the other bone cells, arising from white blood cell lines."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fitb-30",
+          "question": {
+            "stem": "The denser, stronger type of bone tissue, organized into osteons and found deep to the periosteum and in the diaphyses of long bones, is ____________.",
+            "answer": "compact bone",
+            "accepted_synonyms": [
+              "compact",
+              "cortical bone"
+            ],
+            "explanation": "Compact bone is dense, resists compression, and is arranged in osteons; it forms the diaphysis walls."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u10-basic-fr-01",
+          "question": {
+            "prompt": "Define the terms 'tendon' and 'ligament', and state the difference between what each one connects.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines a tendon as connective tissue that attaches muscle to bone."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines a ligament as connective tissue that connects bone to bone (holds bones together at a joint)."
+              },
+              {
+                "points": 2,
+                "criterion": "Clearly distinguishes the two: tendons attach muscle to bone (transmitting muscle pull for movement), whereas ligaments join bone to bone (stabilizing a joint / preventing excessive movement)."
+              }
+            ],
+            "model_answer": "A tendon is a band of connective tissue that firmly attaches a muscle to a bone, so that when the muscle contracts it pulls on the bone to produce movement. A ligament is a strong connective tissue band that connects one bone to another at a moveable joint, holding the bones together and preventing excessive movements that could cause injury. The key difference is what they connect: tendons link muscle to bone, while ligaments link bone to bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fr-02",
+          "question": {
+            "prompt": "Bone formation is called ossification (osteogenesis). State the two named pathways of ossification introduced in this unit, and briefly state one thing they have in common.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names intramembranous ossification."
+              },
+              {
+                "points": 1,
+                "criterion": "Names endochondral ossification."
+              },
+              {
+                "points": 1,
+                "criterion": "States a valid commonality (e.g., both produce the same bone tissue / both begin during embryonic development around the 6th–7th week)."
+              }
+            ],
+            "model_answer": "The two pathways are intramembranous ossification and endochondral ossification. Although they use different starting tissues, both produce the same bone tissue, and both begin during embryonic development (around the 6th–7th week)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fr-03",
+          "question": {
+            "prompt": "The skeleton is divided into the axial and appendicular skeletons. For each division, state one bone that belongs to it (choosing from bones covered in the lecture), and briefly state what the axial skeleton forms/protects.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Gives a correct axial bone (e.g., skull/frontal bone, a vertebra, sternum, rib, sacrum, coccyx)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct appendicular bone (e.g., femur, humerus, clavicle, scapula, tibia, radius, etc.)."
+              },
+              {
+                "points": 2,
+                "criterion": "States that the axial skeleton forms the central/vertical axis of the body and protects organs such as the brain, spinal cord, heart, and/or lungs."
+              }
+            ],
+            "model_answer": "An axial bone is the sternum (a vertebra or skull bone would also be acceptable). An appendicular bone is the femur (or humerus, clavicle, etc.). The axial skeleton forms the vertical, central axis of the body and protects internal organs including the brain, spinal cord, heart, and lungs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fr-04",
+          "question": {
+            "prompt": "Contrast intramembranous and endochondral ossification by stating the starting tissue that each one develops from.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "States that intramembranous ossification develops directly from mesenchymal (undifferentiated) connective tissue, not from a cartilage model."
+              },
+              {
+                "points": 2,
+                "criterion": "States that endochondral ossification develops by replacing a hyaline cartilage template/model."
+              }
+            ],
+            "model_answer": "In intramembranous ossification, compact and spongy bone develops directly from sheets of mesenchymal (undifferentiated) connective tissue, without a cartilage template. In endochondral ossification, bone develops by replacing a hyaline cartilage model; the cartilage does not become bone but serves as a template that is replaced by new bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fr-05",
+          "question": {
+            "prompt": "The skeletal system is made up of more than just bones. Name two of the non-bone connective tissue components of the skeletal system and state the function of each.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names cartilage and gives its function (flexible support / smooth surfaces at joints / cushioning between bones)."
+              },
+              {
+                "points": 1,
+                "criterion": "Names ligaments and gives their function (hold bones together at a joint / prevent excessive movement)."
+              },
+              {
+                "points": 2,
+                "criterion": "Both components correctly identified as parts of the skeletal system with an accurate stated function for each."
+              }
+            ],
+            "model_answer": "Two non-bone components are cartilage and ligaments. Cartilage provides flexible strength and smooth surfaces for movement at joints and can cushion or unite adjacent bones. Ligaments are strong connective tissue bands that hold bones together at moveable joints and prevent excessive movements that would cause injury."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fr-06",
+          "question": {
+            "prompt": "Bones are classified into five categories by shape. Name the category that describes the femur, and name the category that describes the carpal bones of the wrist, giving a brief reason for each classification.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Classifies the femur as a long bone."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid reason for long bone (cylindrical, diameter smaller than height / acts as a lever)."
+              },
+              {
+                "points": 1,
+                "criterion": "Classifies the carpals as short bones."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid reason for short bone (cube-like, roughly equal length/width/thickness)."
+              }
+            ],
+            "model_answer": "The femur is a long bone because it is cylindrical, with a diameter smaller than its height, and functions as a lever. The carpal bones are short bones because they are cube-like, being approximately equal in length, width, and thickness, providing stability with limited motion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fr-07",
+          "question": {
+            "prompt": "Bones can grow in length and in thickness (diameter). Name the structure responsible for growth in length, and name the process by which bones grow in thickness/diameter. State which of these two can continue after the other has stopped.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies the epiphyseal (growth) plate as responsible for growth in length."
+              },
+              {
+                "points": 1,
+                "criterion": "Names appositional growth as the process of growth in diameter/thickness."
+              },
+              {
+                "points": 2,
+                "criterion": "States that appositional (diameter) growth can continue after longitudinal (length) growth has ceased."
+              }
+            ],
+            "model_answer": "Bones grow in length at the epiphyseal plate (growth plate), a layer of hyaline cartilage. Bones grow in thickness/diameter by appositional growth, in which osteoblasts lay down new bone beneath the periosteum while osteoclasts resorb bone along the medullary cavity. Growth in length stops in early adulthood when the epiphyseal plate ossifies into an epiphyseal line, but appositional (diameter) growth can continue even after longitudinal growth has ceased."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fr-08",
+          "question": {
+            "prompt": "Identify the diaphysis and the epiphysis of a long bone, and state one function or feature associated with each.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies the diaphysis as the tubular shaft of the long bone."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct feature/function of the diaphysis (compact bone walls / contains the medullary cavity with yellow marrow)."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the epiphysis as the wide end(s) of the long bone."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct feature/function of the epiphysis (filled with spongy bone / contains red marrow / covered by articular cartilage at joints)."
+              }
+            ],
+            "model_answer": "The diaphysis is the tubular shaft that runs between the ends of the bone; its walls are made of dense compact bone and it contains the medullary cavity filled with yellow marrow. The epiphysis is the wider section at each end of the bone; it is filled with spongy bone whose spaces contain red marrow, and it is covered with articular cartilage where it meets other bones to form joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fr-09",
+          "question": {
+            "prompt": "Bone tissue contains four types of cells. State the function of the osteoblast and the function of the osteoclast. Then identify which one of the four bone cell types is developmentally unrelated to the others, and explain why by describing what it develops from compared to the other cell types.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that osteoblasts form/secrete new bone matrix."
+              },
+              {
+                "points": 1,
+                "criterion": "States that osteoclasts break down/resorb bone."
+              },
+              {
+                "points": 2,
+                "criterion": "Identifies the osteoclast as the cell developmentally unrelated to the others, noting it arises from monocytes/macrophages rather than from osteogenic cells."
+              }
+            ],
+            "model_answer": "Osteoblasts are the bone cells that form new bone by secreting the collagen matrix and calcium salts. Osteoclasts break down (resorb) bone. Of the four cell types, the osteoclast is developmentally unrelated to the others: osteogenic cells, osteoblasts, and osteocytes are all part of one lineage, whereas osteoclasts originate from monocytes and macrophages (white blood cells) rather than from osteogenic cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-basic-fr-10",
+          "question": {
+            "prompt": "One function of the skeletal system is protection. Give two specific examples of bones protecting internal organs, naming both the protective bony structure and the organ(s) it protects in each case.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Gives one correct example pairing a bony structure with the organ it protects (e.g., cranium/skull protects the brain)."
+              },
+              {
+                "points": 2,
+                "criterion": "Gives a second, different correct example pairing a bony structure with the organ it protects (e.g., ribs/thoracic cage protect the heart and lungs; vertebral column protects the spinal cord)."
+              }
+            ],
+            "model_answer": "First, the cranium (skull) completely surrounds and protects the brain. Second, the ribs (thoracic cage) protect the heart and lungs. (A third valid example is the vertebral column protecting the spinal cord.)"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    },
+    "advanced": {
+      "mc": [
+        {
+          "id": "u10-advanced-mc-01",
+          "question": {
+            "stem": "A 25-year-old and a 10-year-old both begin an intensive weight-training program. Which statement best explains how their bones would respond to the increased mechanical demand?",
+            "options": [
+              "Only the 10-year-old can increase bone diameter, because appositional growth stops at adulthood",
+              "Both can still lengthen their bones because longitudinal growth continues throughout life",
+              "Only the 25-year-old can thicken bone, because appositional growth requires closed growth plates",
+              "Both can increase bone diameter via appositional growth, but only the 10-year-old can still increase bone length at the epiphyseal plate",
+              "Neither can change bone thickness because remodeling only removes bone"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Appositional (diameter) growth can continue in adulthood, so both individuals can thicken bone, but longitudinal growth at the epiphyseal plate ceases in early adulthood, so only the still-growing 10-year-old can add length.\n\n**Why the other options are wrong:**\n- **(A)** Appositional growth continues after adulthood, so the adult can also thicken bone.\n- **(B)** Longitudinal growth stops in early adulthood when the plate becomes the epiphyseal line.\n- **(C)** Appositional growth does not require closed plates, and it also occurs in growing children.\n- **(E)** Remodeling includes both resorption and new bone deposition, so thickness can change."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-02",
+          "question": {
+            "stem": "A student is sorting bones into shape categories. Which grouping correctly matches each bone to its classification?",
+            "options": [
+              "Patella = irregular; vertebra = sesamoid; humerus = long",
+              "Metacarpal = short; scapula = irregular; patella = flat",
+              "Sternum = long; tarsal = flat; femur = short",
+              "Tibia = short; carpal = long; parietal = flat",
+              "Carpal = short; humerus = long; vertebra = irregular"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Carpals are cube-like short bones, the humerus is a cylindrical long bone, and vertebrae have complex shapes making them irregular bones.\n\n**Why the other options are wrong:**\n- **(A)** The patella is sesamoid and vertebrae are irregular (both reversed).\n- **(B)** Metacarpals are long bones and the scapula is a flat bone.\n- **(C)** The sternum is flat and the femur is long, not as listed.\n- **(D)** The tibia is long, and carpals are short (both reversed)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-03",
+          "question": {
+            "stem": "The skeletal system includes more than bones. Which pairing correctly matches a component to its function?",
+            "options": [
+              "Ligaments attach muscle to bone to transmit contraction forces",
+              "Bones provide flexible strength for the external ear and trachea",
+              "Ligaments produce blood cells and store fat in their interior",
+              "Tendons connect bone to bone at a joint to prevent excess movement",
+              "Cartilage provides flexible support and cushioning at joints"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Cartilage is a semi-rigid connective tissue that provides flexible support and smooth cushioning surfaces at joints and in structures like the ear and trachea.\n\n**Why the other options are wrong:**\n- **(A)** Ligaments connect bone to bone; tendons attach muscle to bone.\n- **(B)** Cartilage, not bone, provides flexible support to the ear and trachea.\n- **(C)** Bone marrow, not ligaments, produces blood cells and stores fat.\n- **(D)** Tendons attach muscle to bone; ligaments connect bone to bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-04",
+          "question": {
+            "stem": "During fetal development, most bones form on a template before being replaced by mineralized matrix. Based on this, which statement about the cartilage template is correct?",
+            "options": [
+              "Osteoclasts secrete the cartilage matrix that later serves as the bone template",
+              "By birth, none of the cartilage has yet been replaced by bone",
+              "The cartilage template itself gradually hardens directly into bone tissue",
+              "Chondroblasts secrete the cartilage matrix and become chondrocytes once surrounded by it",
+              "The template is made of fibrous membrane in all bones formed before birth"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Chondroblasts secrete the semi-solid cartilage matrix, and once completely surrounded by that matrix they mature into chondrocytes.\n\n**Why the other options are wrong:**\n- **(A)** Osteoclasts break down bone; chondroblasts secrete cartilage matrix.\n- **(B)** By birth most of the cartilage template has already been replaced with bone.\n- **(C)** Cartilage serves as a template that is replaced by bone; it does not itself turn into bone.\n- **(E)** Fibrous membrane is the template only for intramembranous ossification, not all pre-birth bones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-05",
+          "question": {
+            "stem": "A patient's vertebral column is described as having a fused single bone below the lumbar region, formed from five vertebrae. Which region is being described, and how does it differ from the coccyx?",
+            "options": [
+              "The thoracic region, formed from five fused vertebrae anchoring the ribs",
+              "The lumbar region, containing five separate vertebrae that never fuse",
+              "The coccyx, formed from five fused vertebrae, sitting above the sacrum",
+              "The sacrum, formed from four fused vertebrae, sitting below the coccyx",
+              "The sacrum, formed from five fused vertebrae, sitting above the coccyx"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The sacrum is formed by fusion of five sacral vertebrae and lies above the coccyx, which is formed from four fused coccygeal vertebrae.\n\n**Why the other options are wrong:**\n- **(A)** The thoracic region has 12 separate vertebrae, not five fused ones.\n- **(B)** The five lumbar vertebrae remain separate, but the described bone is fused.\n- **(C)** The coccyx is formed from four vertebrae and sits below the sacrum.\n- **(D)** The sacrum has five fused vertebrae and sits above the coccyx."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-06",
+          "question": {
+            "stem": "A histology slide shows osteocytes arranged in concentric rings around a central canal. Compared to a slide showing osteocytes scattered within a lattice of matrix spikes, what functional difference does this reflect?",
+            "options": [
+              "The lattice tissue (spongy bone) is denser and stronger than the concentric-ring tissue",
+              "The concentric-ring tissue (compact bone) withstands compressive forces; the lattice tissue (spongy bone) supports shifting weight distribution and is lighter",
+              "Both tissues are found only in the diaphysis and have identical functions",
+              "The concentric-ring tissue houses red marrow, while the lattice tissue contains only yellow marrow",
+              "The concentric-ring tissue (spongy bone) is lighter, while the lattice tissue (compact bone) resists compression"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Osteons (concentric lamellae around a central canal) define compact bone, which resists compression, while trabeculae (matrix spikes) define spongy bone, which is lighter and supports weight shifts.\n\n**Why the other options are wrong:**\n- **(A)** Compact bone is denser and stronger than spongy bone.\n- **(C)** Spongy bone is found in the epiphyses, and the two tissues have different functions.\n- **(D)** Red marrow fills the spaces of spongy (lattice) bone, not the compact osteon tissue.\n- **(E)** The tissue types are reversed; concentric rings are compact, lattice is spongy."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-07",
+          "question": {
+            "stem": "A student mixes up two structural terms. Which pairing correctly matches a term to its definition?",
+            "options": [
+              "Lamella = concentric ring of calcified matrix in an osteon",
+              "Canaliculus = space in which an osteocyte sits within the matrix",
+              "Trabecula = the tubular shaft of a long bone",
+              "Periosteum = the lining of the medullary cavity",
+              "Lacuna = channel through which osteocyte processes communicate"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Lamellae are the concentric rings of calcified matrix that make up an osteon in compact bone.\n\n**Why the other options are wrong:**\n- **(B)** A canaliculus is a channel; the space for an osteocyte is a lacuna.\n- **(C)** A trabecula is a matrix spike of spongy bone, not the diaphysis.\n- **(D)** The periosteum covers the outer surface; the endosteum lines the medullary cavity.\n- **(E)** A lacuna is the space housing an osteocyte, not a channel."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-08",
+          "question": {
+            "stem": "A clinician lists the bones injured in a patient: clavicle, scapula, femur, and radius. Which classification of these bones with respect to the skeletal divisions is correct?",
+            "options": [
+              "The radius is axial; the other three are appendicular",
+              "The femur is axial; the other three are appendicular",
+              "All four are part of the appendicular skeleton",
+              "All four are part of the axial skeleton",
+              "The clavicle and scapula are axial; the femur and radius are appendicular"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The clavicle and scapula form the pectoral girdle, and the femur and radius are limb bones, so all four belong to the appendicular skeleton.\n\n**Why the other options are wrong:**\n- **(A)** The radius is a forearm bone and is appendicular, not axial.\n- **(B)** The femur is a limb bone and is appendicular, not axial.\n- **(D)** None of these are axial bones; the axial skeleton is the head, neck, chest, and back.\n- **(E)** The clavicle and scapula are girdle bones of the appendicular skeleton, not axial."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-09",
+          "question": {
+            "stem": "In a long bone, which pairing of a structure with its function is correct?",
+            "options": [
+              "Diaphysis = wide end filled with spongy bone and red marrow",
+              "Articular cartilage = reduces friction and absorbs shock where bones meet at a joint",
+              "Endosteum = fibrous attachment site for tendons on the outer surface",
+              "Epiphyseal line = actively growing cartilage plate in a child",
+              "Medullary cavity = layer of hyaline cartilage where growth occurs"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Articular cartilage covers the epiphyses where bones form joints, reducing friction and acting as a shock absorber.\n\n**Why the other options are wrong:**\n- **(A)** The diaphysis is the tubular shaft; the wide ends filled with spongy bone are the epiphyses.\n- **(C)** The endosteum lines the internal cavity; tendons attach to the outer periosteum.\n- **(D)** The epiphyseal line is the ossified remnant of the plate in a mature bone, not an active plate.\n- **(E)** The medullary cavity is the hollow region filled with yellow marrow, not a growth plate."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-10",
+          "question": {
+            "stem": "In a healthy 8-year-old child versus a healthy adult, how does the distribution of red and yellow marrow differ?",
+            "options": [
+              "Both children and adults have only red marrow in the diaphysis",
+              "Children have mostly yellow marrow, which shifts largely to red marrow in adults",
+              "Red marrow performs hematopoiesis and is more widespread in children, while adults have relatively more yellow (fat-storing) marrow",
+              "Yellow marrow performs hematopoiesis in children while red marrow does so in adults",
+              "Red marrow stores fat and yellow marrow produces blood cells in both age groups"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Red marrow is the site of hematopoiesis and is more widely distributed in children, whereas adults convert much of it to fat-storing yellow marrow, especially in the medullary cavity.\n\n**Why the other options are wrong:**\n- **(A)** The diaphysis medullary cavity contains yellow marrow, not red.\n- **(B)** The trend is reversed; red marrow is more prevalent in children, yellow more in adults.\n- **(D)** Hematopoiesis occurs in red marrow, not yellow, at all ages.\n- **(E)** Red marrow makes blood cells and yellow marrow stores fat, not the reverse."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-11",
+          "question": {
+            "stem": "A histologist notes that one type of bone cell is multinucleated and derived from monocytes and macrophages rather than from the cell line that produces the others. Which cell is this, and what does it do?",
+            "options": [
+              "Osteocyte, which maintains the mineral concentration of the matrix",
+              "Osteoclast, which resorbs and breaks down bone",
+              "Osteogenic cell, which divides to produce new osteoblasts",
+              "Osteoblast, which secretes new bone matrix",
+              "Chondrocyte, which maintains cartilage matrix"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The osteoclast is multinucleated, originates from monocytes and macrophages (not from osteogenic cells), and is responsible for bone resorption/breakdown.\n\n**Why the other options are wrong:**\n- **(A)** Osteocytes derive from osteoblasts and thus from the osteogenic line.\n- **(C)** Osteogenic cells are the ancestral cell of the related group, not the developmentally unrelated one.\n- **(D)** Osteoblasts secrete matrix but develop from osteogenic cells, so they are developmentally related to the others.\n- **(E)** Chondrocytes are cartilage cells, not one of the four bone cell types."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-12",
+          "question": {
+            "stem": "A student is told that an adult skeleton has 206 major bones divided into two divisions. Which statement about these divisions is correct?",
+            "options": [
+              "The appendicular skeleton includes the vertebral column and thoracic cage",
+              "The axial skeleton contains 126 bones and forms the limbs",
+              "Both divisions together contain fewer bones in a child than in an adult",
+              "The appendicular skeleton contains 126 bones, including the limbs and the girdles that attach them",
+              "The axial skeleton contains all limb bones plus the skull"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The appendicular skeleton has 126 bones — the bones of the upper and lower limbs plus the pectoral and pelvic girdles that attach them to the axial skeleton.\n\n**Why the other options are wrong:**\n- **(A)** The vertebral column and thoracic cage are part of the axial skeleton.\n- **(B)** The axial skeleton has 80 bones and forms the central axis, not the limbs.\n- **(C)** Children have MORE bones than adults because some fuse during development.\n- **(E)** Limb bones belong to the appendicular skeleton, not the axial."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-13",
+          "question": {
+            "stem": "A patient has cartilage in their trachea and larynx, ligaments holding a joint together, and tendons connecting muscle to bone. Which statement correctly matches a skeletal-system component to its function?",
+            "options": [
+              "Tendons unite adjacent bones and cushion joints",
+              "Ligaments hold bones together at a moveable joint and prevent injurious excess movement",
+              "Bones provide flexible support for structures such as the external ear",
+              "Ligaments transmit the pulling force of muscles to move bones",
+              "Cartilage attaches muscles to bones so muscles can pull on the skeleton"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Ligaments are strong connective tissue bands that hold bones together at a moveable joint and prevent excessive, injurious movement.\n\n**Why the other options are wrong:**\n- **(A)** Tendons attach muscle to bone; uniting/cushioning bones is a role of cartilage.\n- **(C)** Cartilage (not bone) provides flexible support for structures like the external ear.\n- **(D)** Tendons transmit muscle force to bones; ligaments connect bone to bone.\n- **(E)** Tendons, not cartilage, attach muscles to bones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-14",
+          "question": {
+            "stem": "A researcher compares two ossification pathways in the fetal skeleton. Which statement correctly distinguishes them?",
+            "options": [
+              "Intramembranous ossification is used to form long bones such as the femur",
+              "Endochondral ossification builds bone directly from mesenchyme, whereas intramembranous ossification replaces cartilage",
+              "Intramembranous ossification builds bone directly from mesenchymal connective tissue, whereas endochondral ossification replaces a hyaline cartilage model",
+              "Both pathways require a pre-existing cartilage template",
+              "Endochondral ossification is faster than intramembranous ossification"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Intramembranous ossification develops bone directly from sheets of mesenchymal connective tissue, while endochondral ossification replaces a hyaline cartilage model with bone.\n\n**Why the other options are wrong:**\n- **(A)** Long bones form by endochondral ossification, not intramembranous.\n- **(B)** This reverses the two definitions.\n- **(D)** Only endochondral ossification uses a cartilage template; intramembranous does not.\n- **(E)** Endochondral ossification takes much longer than intramembranous ossification."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-15",
+          "question": {
+            "stem": "Which of the following correctly classifies a bone into its skeletal division?",
+            "options": [
+              "The sternum is part of the appendicular skeleton",
+              "The femur is part of the axial skeleton",
+              "The scapula is part of the appendicular skeleton",
+              "The clavicle is part of the axial skeleton",
+              "The sacrum is part of the appendicular skeleton"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The scapula is a bone of the pectoral girdle, which attaches the upper limb to the axial skeleton and is therefore appendicular.\n\n**Why the other options are wrong:**\n- **(A)** The sternum is part of the thoracic cage of the axial skeleton.\n- **(B)** The femur is a lower-limb bone and is appendicular.\n- **(D)** The clavicle is part of the pectoral girdle and is appendicular.\n- **(E)** The sacrum is part of the vertebral column of the axial skeleton."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-16",
+          "question": {
+            "stem": "A textbook states the skeletal system is more than just bones. Which of the following is NOT considered a component of the skeletal system?",
+            "options": [
+              "Skeletal muscle",
+              "None of the above (all are components)",
+              "Ligaments",
+              "Bone (osseous tissue)",
+              "Cartilage"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The skeletal system consists of bones, cartilages, and ligaments; skeletal muscle is part of the muscular system, though it attaches to bones via tendons.\n\n**Why the other options are wrong:**\n- **(B)** Incorrect because skeletal muscle is not a component.\n- **(C)** Ligaments unite bones at joints and are part of the skeletal system.\n- **(D)** Bone is the primary component of the skeletal system.\n- **(E)** Cartilage provides flexible support and is a skeletal-system component."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-17",
+          "question": {
+            "stem": "A student must sort bones by shape category. Which grouping correctly matches bones to a single shape classification?",
+            "options": [
+              "The humerus and the patella are both long bones",
+              "The mandible and the femur are both irregular bones",
+              "The tarsals and the metatarsals are both short bones",
+              "The scapula and the vertebrae are both flat bones",
+              "Carpals and tarsals are both short bones"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Carpals (wrist) and tarsals (ankle) are cube-like and are the classic examples of short bones.\n\n**Why the other options are wrong:**\n- **(A)** The humerus is a long bone but the patella is a sesamoid bone.\n- **(B)** The mandible is irregular, but the femur is a long bone.\n- **(C)** Tarsals are short bones, but metatarsals are long bones.\n- **(D)** The scapula is flat, but vertebrae are irregular bones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-18",
+          "question": {
+            "stem": "How do the mechanisms and timing of a long bone's growth in length versus growth in diameter differ?",
+            "options": [
+              "Growth in length occurs at the epiphyseal plate and ceases in early adulthood, while appositional growth in diameter can continue after longitudinal growth stops",
+              "Growth in diameter occurs at the epiphyseal plate, while growth in length occurs beneath the periosteum",
+              "Growth in length is driven by osteoclasts, while growth in diameter is driven by chondrocytes",
+              "Appositional growth ceases before longitudinal growth in the same bone",
+              "Both length and diameter growth occur only at the epiphyseal plate and stop simultaneously"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Lengthwise growth occurs at the epiphyseal plate and ends in early adulthood, whereas appositional (diameter) growth can continue even after longitudinal growth has ceased.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the sites: the epiphyseal plate governs length; periosteal deposition governs diameter.\n- **(C)** Length growth involves chondrocyte proliferation, and diameter growth involves both osteoblasts and osteoclasts.\n- **(D)** Appositional growth outlasts longitudinal growth, not the reverse.\n- **(E)** They do not stop simultaneously; diameter growth can outlast length growth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-19",
+          "question": {
+            "stem": "In a healthy adult, how do red and yellow marrow differ in function and typical location compared with a young child?",
+            "options": [
+              "Red marrow performs hematopoiesis and is more widespread in a child, while yellow marrow stores fat and becomes more prominent in the adult",
+              "Yellow marrow produces white blood cells and red marrow produces red blood cells only",
+              "Red marrow fills the medullary cavity of the diaphysis, while yellow marrow fills the spongy bone of the epiphyses",
+              "Yellow marrow performs hematopoiesis in the child, while red marrow stores fat in the adult",
+              "Both marrow types produce blood cells, but only in adults"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Red marrow is the site of hematopoiesis and is comparatively more widespread in children, while yellow marrow stores fat (triglycerides) and becomes relatively more prominent with age.\n\n**Why the other options are wrong:**\n- **(B)** Red marrow produces red blood cells, white blood cells, and platelets; yellow marrow stores fat and does not make white blood cells.\n- **(C)** Yellow marrow occupies the medullary cavity of the diaphysis; red marrow occupies spaces in spongy bone.\n- **(D)** This reverses the two marrow functions.\n- **(E)** Only red marrow performs hematopoiesis, not yellow marrow."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-20",
+          "question": {
+            "stem": "A 6-year-old child and a 70-year-old adult each have their femurs examined. Which statement correctly describes the expected difference in bone marrow?",
+            "options": [
+              "Neither has red marrow, because red marrow is found only in the liver",
+              "The adult has more red marrow, because hematopoiesis increases with age",
+              "The child has more red marrow relative to yellow marrow than the adult, because red marrow is progressively replaced by yellow marrow with age",
+              "The child has only yellow marrow because bones are still growing",
+              "Both have only yellow marrow, since red marrow disappears entirely at birth"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Red marrow (the site of hematopoiesis) is more widespread in children and is gradually replaced by fat-storing yellow marrow as a person ages.\n\n**Why the other options are wrong:**\n- **(A)** Red bone marrow is found within bones, not the liver, and is the site of blood cell production.\n- **(B)** Hematopoietic red marrow decreases, not increases, with age.\n- **(D)** Growing bones contain abundant red marrow, not only yellow.\n- **(E)** Red marrow does not disappear at birth; it persists into adulthood, especially in spongy bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-21",
+          "question": {
+            "stem": "A student is told that the adult skeleton has 206 major bones divided into an axial (80 bones) and appendicular (126 bones) division. Which of the following correctly reflects why younger individuals may be counted as having more bones?",
+            "options": [
+              "Some separate bones fuse together during childhood and adolescence to form a single adult bone",
+              "Children have extra sesamoid bones that are lost by adulthood",
+              "Children continuously grow new bones throughout the appendicular skeleton",
+              "The axial skeleton splits into additional bones as a person ages",
+              "Younger individuals have duplicate copies of each long bone"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Younger individuals have higher bone counts because bones such as the sacrum, coccyx, and hip bones form from multiple separate bones that fuse during development.\n\n**Why the other options are wrong:**\n- **(B)** Sesamoid bone numbers vary by person and are not systematically lost with age.\n- **(C)** Bones grow in size, but new whole bones are not continuously generated.\n- **(D)** The axial skeleton does not split; if anything, its components fuse.\n- **(E)** Individuals do not have duplicate copies of long bones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-22",
+          "question": {
+            "stem": "Of the four bone cell types, one is described as developmentally unrelated to the others. Which cell is it, and why?",
+            "options": [
+              "The osteoblast, because it is derived from cartilage rather than bone",
+              "The osteocyte, because it forms from red marrow stem cells",
+              "The osteoblast, because it originates from monocytes and macrophages",
+              "The osteoclast, because it originates from monocytes and macrophages rather than from osteogenic cells",
+              "The osteogenic cell, because it arises from white blood cells"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Osteoclasts arise from monocytes and macrophages (white blood cells), whereas osteogenic cells, osteoblasts, and osteocytes belong to the same osteogenic lineage.\n\n**Why the other options are wrong:**\n- **(A)** Osteoblasts derive from osteogenic cells, not cartilage.\n- **(B)** Osteocytes form when osteoblasts become trapped in matrix, not from red marrow stem cells.\n- **(C)** It is the osteoclast, not the osteoblast, that comes from monocytes and macrophages.\n- **(E)** Osteogenic cells are the lineage that produces osteoblasts; they are not from white blood cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-23",
+          "question": {
+            "stem": "In a long bone, which pairing of structure and function is correct?",
+            "options": [
+              "Medullary cavity — a hollow region in the diaphysis that contains yellow marrow",
+              "Epiphyseal line — a layer of hyaline cartilage responsible for active lengthening",
+              "Epiphysis — the tubular shaft filled with compact bone only",
+              "Articular cartilage — the outer fibrous membrane serving as a tendon attachment point",
+              "Endosteum — the dense compact bone forming the walls of the diaphysis"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The medullary cavity is the hollow space within the diaphysis and is filled with fat-storing yellow marrow.\n\n**Why the other options are wrong:**\n- **(B)** The epiphyseal line is the ossified remnant after growth stops, not active cartilage; the epiphyseal plate lengthens the bone.\n- **(C)** The epiphysis is the wide end filled with spongy bone; the diaphysis is the shaft.\n- **(D)** Articular cartilage covers joint surfaces to reduce friction; the periosteum is the fibrous membrane for tendon attachment.\n- **(E)** The endosteum is the delicate lining of the medullary cavity, not compact bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-24",
+          "question": {
+            "stem": "An astronaut spends several months in the weightlessness of space, and a patient has a limb immobilized in a cast for months. What does the skeletal system's dynamic nature predict for their bones?",
+            "options": [
+              "Bones will thicken uniformly to compensate for the lack of gravity",
+              "Only the mandible thickens while all other bones thin",
+              "Weight-bearing bones will become thinner because reduced mechanical loading decreases bone deposition",
+              "Bone composition remains completely unchanged regardless of mechanical demand",
+              "Muscle attachment sites enlarge due to disuse"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Bones are dynamic and lose thickness and strength when mechanical demands (body weight, muscle pull) are reduced, as during weightlessness or immobilization.\n\n**Why the other options are wrong:**\n- **(A)** Reduced loading causes thinning, not thickening.\n- **(B)** The mandible thins with reduced use (e.g., soft-food diet), not the reverse.\n- **(D)** Bone actively remodels in response to mechanical demand, so it does change.\n- **(E)** Muscle attachment sites enlarge with increased strength, not with disuse."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-25",
+          "question": {
+            "stem": "A 30-year-old completes an intense marathon training program. Which statement best describes how bone growth in length versus diameter differs at this stage of life?",
+            "options": [
+              "Diameter can only decrease because osteoclasts dominate in adulthood",
+              "Neither lengthening nor thickening is possible after childhood",
+              "Both lengthening at the epiphyseal plate and appositional growth continue at equal rates",
+              "Only lengthening continues, driven by the proliferative zone of the epiphyseal plate",
+              "Lengthening has ceased because the epiphyseal plates have closed, but appositional growth in diameter can still occur"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** By early adulthood the epiphyseal plates have ossified into epiphyseal lines (stopping lengthening), but appositional growth in diameter can continue even after longitudinal growth ceases.\n\n**Why the other options are wrong:**\n- **(A)** Osteoblasts still deposit bone beneath the periosteum; diameter is not restricted to decreasing.\n- **(B)** Thickening via appositional growth remains possible in adulthood.\n- **(C)** Lengthening has already stopped in an adult, so the two are not equal.\n- **(D)** The proliferative zone is inactive once the plate closes, so lengthening does not continue."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-26",
+          "question": {
+            "stem": "Which comparison of compact and spongy bone is correct?",
+            "options": [
+              "Spongy bone is denser and stronger than compact bone, providing protection deep to the periosteum",
+              "Both compact and spongy bone lack osteocytes housed in lacunae",
+              "Compact bone contains trabeculae arranged along lines of stress, while spongy bone is arranged in concentric lamellae",
+              "Compact bone is organized into osteons and resists compressive forces, while spongy bone consists of trabeculae and houses red marrow for hematopoiesis",
+              "Spongy bone forms the dense walls of the diaphysis, while compact bone fills the epiphyses"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Compact bone's osteons make it dense to resist compression, while spongy bone's trabecular lattice is lighter and its spaces can hold red marrow for blood cell production.\n\n**Why the other options are wrong:**\n- **(A)** Compact bone, not spongy bone, is the denser and stronger type deep to the periosteum.\n- **(B)** Both bone types contain osteocytes housed in lacunae.\n- **(C)** Trabeculae are in spongy bone and concentric lamellae are in compact bone (reversed).\n- **(E)** Compact bone forms the diaphysis walls; spongy bone fills the epiphyses (reversed)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-27",
+          "question": {
+            "stem": "A student sorts bones into axial and appendicular divisions. Which grouping is entirely correct?",
+            "options": [
+              "Axial: scapula, ribs, coccyx; Appendicular: humerus, tibia, sacrum",
+              "Axial: sternum, occipital bone, lumbar vertebrae; Appendicular: clavicle, femur, metacarpals",
+              "Axial: pelvic girdle, ribs, coccyx; Appendicular: fibula, ulna, mandible",
+              "Axial: clavicle, mandible, ribs; Appendicular: radius, patella, sacrum",
+              "Axial: femur, sternum, cervical vertebrae; Appendicular: scapula, tarsals, occipital bone"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The sternum, occipital bone, and lumbar vertebrae are axial (head, chest, back), while the clavicle, femur, and metacarpals belong to the limbs and girdles of the appendicular skeleton.\n\n**Why the other options are wrong:**\n- **(A)** The scapula is appendicular, and the sacrum is axial (misplaced).\n- **(C)** The pelvic girdle is appendicular, and the mandible is axial (misplaced).\n- **(D)** The clavicle is appendicular, and the sacrum is axial (misplaced).\n- **(E)** The femur is appendicular, and the occipital bone is axial (misplaced)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-28",
+          "question": {
+            "stem": "Which set of terms is correctly matched to its definition as used in this unit?",
+            "options": [
+              "Canaliculi — the tubular shaft running between the ends of a long bone",
+              "Hydroxyapatite — the collagen fibres that give bone its flexibility",
+              "Lamellae — the multinucleated cells that resorb bone",
+              "Trabeculae — concentric rings of matrix that surround the central canal of an osteon",
+              "Nutrient foramen — a small opening in the diaphysis through which blood vessels and nerves enter the bone"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The nutrient foramen is the small opening in the diaphysis that allows arteries, veins, and nerves to pass into the bone.\n\n**Why the other options are wrong:**\n- **(A)** Canaliculi are tiny channels connecting lacunae; the tubular shaft is the diaphysis.\n- **(B)** Hydroxyapatite is the mineral crystal giving hardness; collagen fibres give flexibility.\n- **(C)** Lamellae are concentric matrix rings; the multinucleated resorbing cells are osteoclasts.\n- **(D)** Trabeculae are the lattice spikes of spongy bone; concentric matrix rings are lamellae."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-29",
+          "question": {
+            "stem": "Which statement correctly contrasts intramembranous and endochondral ossification?",
+            "options": [
+              "Endochondral ossification forms the flat bones of the face and clavicles, while intramembranous ossification forms the long bones",
+              "Intramembranous ossification forms bone directly from mesenchymal connective tissue, while endochondral ossification replaces a hyaline cartilage template",
+              "Both processes require a hyaline cartilage model before bone can be deposited",
+              "Intramembranous ossification takes much longer than endochondral ossification",
+              "Endochondral ossification produces bone directly from mesenchyme, while intramembranous ossification replaces cartilage"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** In intramembranous ossification bone develops directly from sheets of mesenchymal tissue, whereas endochondral ossification replaces a hyaline cartilage template.\n\n**Why the other options are wrong:**\n- **(A)** The pairings are reversed: intramembranous forms flat facial bones and clavicles, endochondral forms long bones.\n- **(C)** Only endochondral ossification uses a cartilage model; intramembranous does not.\n- **(D)** Endochondral ossification takes longer, not intramembranous.\n- **(E)** The descriptions are reversed for the two processes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-mc-30",
+          "question": {
+            "stem": "A researcher examines two developing bones. Bone X forms directly from sheets of mesenchymal connective tissue, while Bone Y forms by first laying down a hyaline cartilage template that is later replaced. Which statement correctly contrasts these two processes?",
+            "options": [
+              "Both bones must first form a cartilage model before osteoblasts can secrete matrix",
+              "Bone Y uses intramembranous ossification because it involves a hyaline cartilage template",
+              "Bone X uses endochondral ossification, which is why it does not require a cartilage template",
+              "Bone X uses intramembranous ossification, and this process typically completes faster than the endochondral process used by Bone Y",
+              "Neither process involves osteoblasts; both rely solely on chondrocytes to deposit bone matrix"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Bone X (forming from mesenchyme directly) undergoes intramembranous ossification, which takes much less time than endochondral ossification (Bone Y), which requires replacing a cartilage template.\n\n**Why the other options are wrong:**\n- **(A)** Intramembranous ossification forms bone directly from mesenchyme with no cartilage model.\n- **(B)** Using a hyaline cartilage template is the defining feature of endochondral, not intramembranous, ossification.\n- **(C)** Endochondral ossification, by definition, replaces a cartilage template, so it does require one.\n- **(E)** Both pathways rely on osteoblasts to secrete and calcify the bone matrix."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u10-advanced-tf-01",
+          "question": {
+            "stem": "The patella and the carpal bones both belong to the same bone classification category.",
+            "correct": false,
+            "explanation": "The patella is a sesamoid bone (a small, round bone forming in a tendon), whereas the carpal bones of the wrist are short bones (cube-like, roughly equal in length, width, and thickness). They fall into two different categories."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-02",
+          "question": {
+            "stem": "In bone tissue, tendons attach muscle to bone, while ligaments hold bones together at a moveable joint.",
+            "correct": true,
+            "explanation": "By definition, tendons are the connective tissue structures that attach muscles to bones, and ligaments are the strong connective tissue bands that unite bones at a moveable joint and prevent excessive movement."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-03",
+          "question": {
+            "stem": "Cartilage is a component of the skeletal system that provides flexible support and can cushion or unite adjacent bones at joints.",
+            "correct": true,
+            "explanation": "The skeletal system consists of bones, cartilages, and ligaments. Cartilage provides flexible strength and support (e.g., in the thoracic cage, ear, trachea/larynx) and at joints can unite bones or provide cushioning between them."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-04",
+          "question": {
+            "stem": "Compact bone is found in the diaphysis walls of long bones to withstand compressive forces, whereas spongy bone is located in the epiphyses and is lighter due to its trabecular network.",
+            "correct": true,
+            "explanation": "Compact (cortical) bone is dense and forms the diaphysis walls and the layer deep to the periosteum, resisting compression. Spongy (cancellous) bone, made of trabeculae, fills the epiphyses, is lighter, and its spaces may hold red marrow."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-05",
+          "question": {
+            "stem": "The bones of the cranium and the vertebral column both serve a protective function for parts of the central nervous system.",
+            "correct": true,
+            "explanation": "Per slide 8, bones protect internal organs by surrounding them: the cranium protects the brain, and the vertebrae of the vertebral column protect the spinal cord. Both the brain and spinal cord are part of the central nervous system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-06",
+          "question": {
+            "stem": "Red bone marrow performs hematopoiesis (blood cell production), while yellow bone marrow primarily stores fat as triglycerides.",
+            "correct": true,
+            "explanation": "Red marrow is the site of hematopoiesis, producing red blood cells, white blood cells, and platelets. Yellow marrow contains adipose tissue and stores triglycerides as an energy reserve. (The slide 18 review statement that yellow marrow makes white blood cells is false.)"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-07",
+          "question": {
+            "stem": "The clavicle and scapula are part of the appendicular skeleton, even though the clavicle attaches to the sternum, which is axial.",
+            "correct": true,
+            "explanation": "The clavicle and scapula form the pectoral girdle, which is part of the appendicular skeleton because it attaches the upper limb to the axial skeleton. The sternum itself is axial, but the girdle bones are classified as appendicular."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-08",
+          "question": {
+            "stem": "Sesamoid bones form within tendons and help those tendons overcome compressive forces where a great deal of pressure is generated in a joint.",
+            "correct": true,
+            "explanation": "Per slide 17, sesamoid bones are small, round bones that form in tendons subjected to high pressure at joints. They protect the tendons by helping them withstand compressive forces and can increase leverage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-09",
+          "question": {
+            "stem": "Of the four bone cell types, the osteoclast is the one that is developmentally unrelated to the others because it originates from monocytes and macrophages rather than from osteogenic cells.",
+            "correct": true,
+            "explanation": "Osteogenic cells give rise to osteoblasts, which become osteocytes when trapped in matrix — all three share this lineage. Osteoclasts, the bone-resorbing cells, instead originate from monocytes and macrophages (white blood cells), making them developmentally distinct."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-10",
+          "question": {
+            "stem": "In a long bone, the medullary cavity is lined by the periosteum and filled with red marrow.",
+            "correct": false,
+            "explanation": "The medullary cavity is lined by the endosteum (not the periosteum, which covers the outer surface) and is filled with yellow marrow. Red marrow instead fills the spaces of the spongy bone in the epiphyses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-11",
+          "question": {
+            "stem": "Appositional growth (growth in diameter) can continue even after longitudinal growth at the epiphyseal plate has ceased in early adulthood.",
+            "correct": true,
+            "explanation": "True. Longitudinal growth stops when the epiphyseal plate ossifies into the epiphyseal line in early adulthood, but appositional growth—osteoclasts resorbing bone in the medullary cavity while osteoblasts add bone beneath the periosteum—can still increase a bone's diameter."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-12",
+          "question": {
+            "stem": "Tendons attach muscle to bone, whereas ligaments hold bones together at moveable joints.",
+            "correct": true,
+            "explanation": "True. Tendons connect muscles to bones so that muscle contraction produces movement, while ligaments are strong connective tissue bands that unite bones at a moveable joint and prevent excessive, injurious movement."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-13",
+          "question": {
+            "stem": "The articular cartilage covering the epiphysis is a specialized layer of the periosteum that reduces friction at joints.",
+            "correct": false,
+            "explanation": "False. Articular cartilage is hyaline cartilage, not part of the periosteum. In fact, the periosteum covers the entire outer bone surface EXCEPT where the epiphyses form joints—there, articular cartilage replaces it to reduce friction and absorb shock."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-14",
+          "question": {
+            "stem": "Osteoclasts, unlike osteoblasts and osteocytes, do not arise from osteogenic cells but instead develop from monocytes and macrophages.",
+            "correct": true,
+            "explanation": "True. Osteoblasts (and the osteocytes they become) originate from osteogenic cells, but osteoclasts are developmentally unrelated—they originate from monocytes and macrophages, two types of white blood cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-15",
+          "question": {
+            "stem": "In an adult, red marrow (the site of hematopoiesis) becomes increasingly restricted, while yellow marrow filling the medullary cavity stores fat.",
+            "correct": true,
+            "explanation": "True. Red marrow is the site of blood cell production and is found in the spongy bone spaces, while yellow marrow contains adipose tissue and fills the medullary cavity, serving as an energy (triglyceride) store."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-16",
+          "question": {
+            "stem": "The endosteum lines the medullary cavity and the trabeculae of spongy bone, whereas the periosteum covers the external surface of the bone.",
+            "correct": true,
+            "explanation": "True. 'Endo-' means inside: the endosteum lines the internal surfaces (medullary cavity and trabeculae). 'Peri-' means around: the periosteum is the membrane covering the outer bone surface, containing an inner cellular layer and an outer fibrous layer."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-17",
+          "question": {
+            "stem": "Spongy bone is denser and better able to withstand compressive forces than compact bone, which is why compact bone is found only at the ends of long bones.",
+            "correct": false,
+            "explanation": "False. It is compact bone that is denser and resists compressive forces, and it is located in the diaphysis (shaft) walls and deep to the periosteum. Spongy bone, with its open trabecular network, is lighter and found in the epiphyses, supporting shifts in weight distribution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-18",
+          "question": {
+            "stem": "The clavicle and the flat bones of the face form primarily by intramembranous ossification, whereas long bones form by the slower endochondral ossification.",
+            "correct": true,
+            "explanation": "True. Intramembranous ossification (from mesenchymal connective tissue directly) forms the cranial bones, flat facial bones, and clavicles. Endochondral ossification (replacing a hyaline cartilage template) forms long bones and the base of the skull and takes much longer."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-19",
+          "question": {
+            "stem": "The tarsal bones of the ankle and the carpal bones of the wrist are both classified as short bones because they are approximately cube-shaped.",
+            "correct": true,
+            "explanation": "True. Short bones are cube-like, being roughly equal in length, width, and thickness. The only short bones in the human skeleton are the carpals of the wrists and the tarsals of the ankles; they provide stability with limited motion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-20",
+          "question": {
+            "stem": "The bony pelvis consists of the two hip (coxal) bones plus the sacrum and coccyx, meaning it combines appendicular and axial skeletal elements.",
+            "correct": true,
+            "explanation": "True. The pelvic girdle (the hip/coxal bones) belongs to the appendicular skeleton, while the sacrum and coccyx are part of the axial skeleton. Together they form the bony pelvis, so it integrates elements of both divisions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-21",
+          "question": {
+            "stem": "The tarsal bones of the ankle and the carpal bones of the wrist are both classified as short bones.",
+            "correct": true,
+            "explanation": "Short bones are cube-like, approximately equal in length, width, and thickness. The only short bones in the human skeleton are the carpals of the wrists and the tarsals of the ankles."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-22",
+          "question": {
+            "stem": "Once longitudinal bone growth ceases in early adulthood, the epiphyseal plate is replaced by osseous tissue and becomes the epiphyseal line.",
+            "correct": true,
+            "explanation": "When chondrocytes in the epiphyseal plate stop proliferating and bone replaces the cartilage, longitudinal growth stops, and all that remains of the epiphyseal plate is the fully ossified epiphyseal line."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-23",
+          "question": {
+            "stem": "Osteoclasts arise from osteogenic cells, just as osteoblasts and osteocytes do.",
+            "correct": false,
+            "explanation": "False. Osteoblasts and osteocytes derive from osteogenic cells, but osteoclasts originate from monocytes and macrophages (white blood cells), making them developmentally unrelated to the other bone cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-24",
+          "question": {
+            "stem": "The parietal bones are paired bones that join together at the top of the skull to form most of the upper lateral sides of the skull.",
+            "correct": true,
+            "explanation": "The parietal bones are paired, with the right and left bones joining at the top of the skull, and they form most of the upper lateral side of the skull."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-25",
+          "question": {
+            "stem": "Appositional (diameter) growth of a bone can continue even after longitudinal growth has stopped.",
+            "correct": true,
+            "explanation": "Bones grow in length at the epiphyseal plate, which ceases in early adulthood, but appositional growth (growth in diameter) can continue even after longitudinal growth ceases via osteoclast resorption in the medullary cavity and osteoblast deposition under the periosteum."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-26",
+          "question": {
+            "stem": "The medullary cavity of a long bone is located in the diaphysis and is normally filled with red marrow in an adult.",
+            "correct": false,
+            "explanation": "False. The medullary cavity in the diaphysis is filled with yellow marrow (fat storage). Red marrow, where hematopoiesis occurs, fills the spaces of spongy bone in the epiphyses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-27",
+          "question": {
+            "stem": "Compact bone is denser and stronger than spongy bone and is found deep to the periosteum and in the diaphysis of long bones.",
+            "correct": true,
+            "explanation": "Compact bone is the denser, stronger of the two tissues, providing support and protection, and is located deep to the periosteum and in the diaphyses of long bones. Spongy bone has open spaces and is found in the epiphyses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-28",
+          "question": {
+            "stem": "Both ligaments and tendons are connective tissue structures of the skeletal system, with ligaments connecting bone to bone and tendons connecting muscle to bone.",
+            "correct": true,
+            "explanation": "Ligaments are strong connective tissue bands that hold bones together at moveable joints, while tendons attach muscles to the skeleton so that muscle contraction pulls on bone to produce movement."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-29",
+          "question": {
+            "stem": "The clavicle and scapula are part of the appendicular skeleton, whereas the sternum and ribs are part of the axial skeleton.",
+            "correct": true,
+            "explanation": "The clavicle and scapula form the pectoral girdle, which is appendicular, attaching the upper limb to the body. The sternum and ribs form the thoracic cage, which is part of the axial skeleton."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-tf-30",
+          "question": {
+            "stem": "In a young child, red marrow is more widely distributed, while in an adult much of it is replaced by yellow marrow, leaving red marrow concentrated in spongy bone.",
+            "correct": true,
+            "explanation": "Red marrow (site of hematopoiesis) is more extensive in children, while over life much is converted to yellow (fat-storing) marrow; in adults red marrow becomes concentrated in the spaces of spongy bone, and yellow marrow fills the medullary cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u10-advanced-fitb-01",
+          "question": {
+            "stem": "The bones forming the top and sides of the cranial vault, such as the parietal bones, are thin and curved, placing them in the ____________ category of bone shape.",
+            "answer": "flat bone",
+            "accepted_synonyms": [
+              "flat bones",
+              "flat"
+            ],
+            "explanation": "Slide 19's review point: the skull bones on the top of the head are classified as flat bones, which are thin, often curved, and protect internal organs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-02",
+          "question": {
+            "stem": "The dense, strong bone tissue found deep to the periosteum and forming the walls of the diaphysis, where it resists compressive forces, is ____________.",
+            "answer": "compact bone",
+            "accepted_synonyms": [
+              "compact",
+              "cortical bone"
+            ],
+            "explanation": "Contrasting the two bone tissues: compact bone is denser and located in the diaphysis walls, whereas spongy bone (with trabeculae) fills the epiphyses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-03",
+          "question": {
+            "stem": "The thin layer of hyaline cartilage covering the epiphyses where bones meet to form a joint, which reduces friction and acts as a shock absorber, is called ____________.",
+            "answer": "articular cartilage",
+            "accepted_synonyms": [
+              "articular"
+            ],
+            "explanation": "Key terminology: articular cartilage covers joint surfaces of epiphyses, distinct from the epiphyseal plate's cartilage that drives growth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-04",
+          "question": {
+            "stem": "Unlike the other bone cells, which develop from osteogenic cells, the multinucleated cell responsible for bone resorption arises from monocytes and macrophages; this cell is the ____________.",
+            "answer": "osteoclast",
+            "accepted_synonyms": [
+              "osteoclasts"
+            ],
+            "explanation": "The osteoclast is developmentally unrelated to the osteogenic-cell lineage (osteoblast/osteocyte), originating instead from white blood cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-05",
+          "question": {
+            "stem": "The single S-shaped bone that joins the sternum of the axial skeleton to the scapula, anchoring the upper limb, is the ____________.",
+            "answer": "clavicle",
+            "accepted_synonyms": [
+              "clavicles",
+              "collarbone",
+              "collarbones"
+            ],
+            "explanation": "The clavicle is part of the appendicular skeleton's pectoral girdle and connects the axial sternum to the scapula."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-06",
+          "question": {
+            "stem": "The carpals of the wrist and tarsals of the ankle are the only bones in the human body classified by shape as ____________, being roughly equal in length, width, and thickness.",
+            "answer": "short bone",
+            "accepted_synonyms": [
+              "short bones",
+              "short"
+            ],
+            "explanation": "Short bones are cube-like and provide stability with limited motion; carpals and tarsals are the only examples."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-07",
+          "question": {
+            "stem": "The hollow region within the shaft of a long bone, filled with yellow marrow and lined by endosteum, sits inside a part called the ____________.",
+            "answer": "diaphysis",
+            "accepted_synonyms": [
+              "diaphyses"
+            ],
+            "explanation": "The diaphysis is the tubular shaft of a long bone containing the medullary cavity; the epiphyses are the wide ends."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-08",
+          "question": {
+            "stem": "The flat bones of the face, most cranial bones, and the clavicles form directly from sheets of mesenchymal connective tissue rather than from a cartilage template, through a process called ____________.",
+            "answer": "intramembranous ossification",
+            "accepted_synonyms": [
+              "intramembranous",
+              "intramembranous ossification"
+            ],
+            "explanation": "Slide 32/33: intramembranous ossification builds bone directly from mesenchyme, in contrast to endochondral ossification, which replaces a cartilage model."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-09",
+          "question": {
+            "stem": "In an adult, most long-bone shafts contain fat-storing tissue rather than blood-forming tissue; the tissue responsible for hematopoiesis is ____________, which in adults becomes limited to spongy bone of certain bones.",
+            "answer": "red bone marrow",
+            "accepted_synonyms": [
+              "red marrow",
+              "red bone marrow"
+            ],
+            "explanation": "Red bone marrow performs hematopoiesis and, in adults, is confined largely to spongy bone, while yellow marrow (fat storage) fills the medullary cavities."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-10",
+          "question": {
+            "stem": "A long bone increases in length at a layer of hyaline cartilage between the diaphysis and epiphysis called the ____________, which produces cartilage on one side and ossifies on the other until early adulthood.",
+            "answer": "epiphyseal plate",
+            "accepted_synonyms": [
+              "epiphyseal plate",
+              "growth plate"
+            ],
+            "explanation": "Length growth occurs at the epiphyseal plate; once it fully ossifies it becomes the epiphyseal line, whereas diameter growth (appositional) can continue afterward."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-11",
+          "question": {
+            "stem": "The flat bones of the cranium and the clavicles form directly from sheets of undifferentiated mesenchymal connective tissue, without any cartilage template, in a process called ____________.",
+            "answer": "intramembranous ossification",
+            "accepted_synonyms": [
+              "intramembranous"
+            ],
+            "explanation": "Intramembranous ossification builds bone directly from mesenchyme, unlike endochondral ossification, which replaces a hyaline cartilage template."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-12",
+          "question": {
+            "stem": "The hollow shaft region of a long bone, whose walls are made of compact bone and whose interior contains yellow marrow, is the ____________.",
+            "answer": "diaphysis",
+            "accepted_synonyms": [
+              "diaphyses"
+            ],
+            "explanation": "The diaphysis is the tubular shaft of a long bone containing the medullary cavity; the epiphyses are the wide ends filled with spongy bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-13",
+          "question": {
+            "stem": "The strong connective tissue band that unites two bones at a moveable joint and prevents excessive, injurious movement is a ____________.",
+            "answer": "ligament",
+            "accepted_synonyms": [
+              "ligaments"
+            ],
+            "explanation": "Ligaments join bone to bone at joints; tendons, by contrast, attach muscle to bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-14",
+          "question": {
+            "stem": "The mineral crystal, made of calcium phosphate and calcium carbonate, that deposits on collagen fibres to give bone its hardness is ____________.",
+            "answer": "hydroxyapatite",
+            "accepted_synonyms": [
+              "hydroxyapatite crystal",
+              "hydroxyapatite crystals"
+            ],
+            "explanation": "Hydroxyapatite crystals provide hardness while the collagen fibres they coat provide flexibility."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-15",
+          "question": {
+            "stem": "Because it withstands compressive forces and is organized into osteons, the dense, strong bone tissue found deep to the periosteum and forming the walls of the diaphysis is ____________.",
+            "answer": "compact bone",
+            "accepted_synonyms": [
+              "compact",
+              "cortical bone"
+            ],
+            "explanation": "Compact bone is dense and osteon-based, unlike spongy bone, which has an open trabecular network for weight distribution."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-16",
+          "question": {
+            "stem": "Because the ribs and sternum surround and shield the heart and lungs from injury, the thoracic cage illustrates the skeletal function of ____________.",
+            "answer": "protection",
+            "accepted_synonyms": [
+              "protecting",
+              "protect"
+            ],
+            "explanation": "Slide 6/8 lists protection as a gross function; bones cover or surround internal organs such as the heart and lungs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-17",
+          "question": {
+            "stem": "The division of the skeleton that includes all bones of the upper and lower limbs plus the girdle bones that attach them to the vertical axis is the ____________.",
+            "answer": "appendicular skeleton",
+            "accepted_synonyms": [
+              "appendicular"
+            ],
+            "explanation": "The appendicular skeleton comprises the limbs plus the pectoral and pelvic girdles, in contrast to the axial skeleton of head, neck, chest, and back."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-18",
+          "question": {
+            "stem": "A long bone increases in length as new cartilage is produced on the epiphyseal side and ossified on the diaphyseal side of the ____________.",
+            "answer": "epiphyseal plate",
+            "accepted_synonyms": [
+              "epiphyseal plates",
+              "growth plate",
+              "growth plates"
+            ],
+            "explanation": "The epiphyseal plate drives longitudinal growth until early adulthood, when it ossifies into the epiphyseal line."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-19",
+          "question": {
+            "stem": "In the forearm, the bone located on the medial (pinkie) side that articulates with the humerus at the elbow joint is the ____________.",
+            "answer": "ulna",
+            "accepted_synonyms": [
+              "ulnas",
+              "ulnae"
+            ],
+            "explanation": "The ulna is the medial forearm bone; the radius lies laterally on the thumb side."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-20",
+          "question": {
+            "stem": "The carpal bones of the wrist and the tarsal bones of the ankle, being roughly equal in length, width, and thickness, are classified as ____________.",
+            "answer": "short bones",
+            "accepted_synonyms": [
+              "short bone",
+              "short"
+            ],
+            "explanation": "Short bones are cube-like and provide stability with limited motion; the only examples in the body are the carpals and tarsals."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-21",
+          "question": {
+            "stem": "The type of ossification in which developing bone completely replaces a pre-existing hyaline cartilage template, as occurs in the long bones, is called ____________.",
+            "answer": "endochondral ossification",
+            "accepted_synonyms": [
+              "endochondral"
+            ],
+            "explanation": "Endochondral ossification replaces a hyaline cartilage model with bone, unlike intramembranous ossification, which forms bone directly from mesenchymal connective tissue."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-22",
+          "question": {
+            "stem": "The denser, stronger bone tissue that forms the walls of the diaphysis and lies deep to the periosteum, where it must withstand compressive forces, is ____________.",
+            "answer": "compact bone",
+            "accepted_synonyms": [
+              "compact",
+              "cortical bone"
+            ],
+            "explanation": "Compact bone is dense and located in the diaphysis and beneath the periosteum, in contrast to spongy bone, which has open spaces and supports shifts in weight."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-23",
+          "question": {
+            "stem": "The only bone cell developmentally unrelated to the others—originating from monocytes and macrophages rather than from osteogenic cells—and responsible for bone resorption is the ____________.",
+            "answer": "osteoclast",
+            "accepted_synonyms": [
+              "osteoclasts"
+            ],
+            "explanation": "The osteoclast arises from monocytes/macrophages (white blood cell lineage), whereas osteoblasts and osteocytes derive from osteogenic cells; osteoclasts break down bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-24",
+          "question": {
+            "stem": "In a long bone, the hollow region within the shaft is lined by a delicate membrane called the ____________, which lines the medullary cavity and also covers the trabeculae, and is a site of bone growth, repair, and remodeling.",
+            "answer": "endosteum",
+            "accepted_synonyms": [
+              "endosteal lining"
+            ],
+            "explanation": "The endosteum lines the internal surfaces of bone (medullary cavity and trabeculae), unlike the periosteum, which covers the outer surface."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-25",
+          "question": {
+            "stem": "Growth in the diameter (thickness) of a bone, which can continue even after longitudinal growth has ceased, is called ____________.",
+            "answer": "appositional growth",
+            "accepted_synonyms": [
+              "appositional"
+            ],
+            "explanation": "Appositional growth increases bone diameter as osteoblasts add bone beneath the periosteum; it can continue after the epiphyseal plates close, unlike lengthwise growth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-26",
+          "question": {
+            "stem": "In the appendicular skeleton, the group of bones formed by the clavicle and scapula that anchors each upper limb to the axial skeleton is the ____________.",
+            "answer": "pectoral girdle",
+            "accepted_synonyms": [
+              "shoulder girdle"
+            ],
+            "explanation": "The pectoral girdle (clavicle and scapula) attaches the upper limb to the thoracic cage, in contrast to the pelvic girdle, which attaches the lower limb."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-27",
+          "question": {
+            "stem": "The cube-shaped bones that provide stability with only limited motion and are found only in the wrist and ankle include the tarsals of the ankle and the ____________ of the wrist.",
+            "answer": "carpal",
+            "accepted_synonyms": [
+              "carpals",
+              "carpal bones"
+            ],
+            "explanation": "Short (cube-like) bones occur only in the carpals of the wrist and tarsals of the ankle; the carpals are the wrist members of this class."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-28",
+          "question": {
+            "stem": "In spongy bone, osteocytes housed in lacunae are not arranged in concentric rings but instead lie within a lattice-like network of matrix spikes called ____________.",
+            "answer": "trabeculae",
+            "accepted_synonyms": [
+              "trabecula",
+              "trabecular network"
+            ],
+            "explanation": "Spongy bone is organized as trabeculae aligned along lines of stress, rather than in the osteons found in compact bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-29",
+          "question": {
+            "stem": "Of the bones a student must name and classify, the longest and strongest bone of the body—the single bone of the thigh in the appendicular skeleton—is the ____________.",
+            "answer": "femur",
+            "accepted_synonyms": [
+              "femurs",
+              "thigh bone"
+            ],
+            "explanation": "The femur is the single bone of the thigh and is the longest, strongest bone; it belongs to the appendicular skeleton (lower limb)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fitb-30",
+          "question": {
+            "stem": "The type of bone marrow that contains adipose tissue and stores triglycerides as an energy reserve, filling the medullary cavity of long bones in an adult, is ____________.",
+            "answer": "yellow bone marrow",
+            "accepted_synonyms": [
+              "yellow marrow"
+            ],
+            "explanation": "Yellow marrow stores fat and fills the medullary cavity, whereas red marrow is the site of hematopoiesis; yellow marrow becomes more prominent in adults."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u10-advanced-fr-01",
+          "question": {
+            "prompt": "The axial and appendicular skeletons make up the human skeleton. State the general function of each division, and correctly classify each of the following bones into the axial or appendicular skeleton: sternum, femur, occipital bone, scapula.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that the axial skeleton forms the central vertical axis and protects internal organs (brain, spinal cord, heart, lungs)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that the appendicular skeleton includes the limbs plus the girdles that attach them to the axial skeleton."
+              },
+              {
+                "points": 1,
+                "criterion": "Classifies sternum as axial."
+              },
+              {
+                "points": 1,
+                "criterion": "Classifies femur as appendicular."
+              },
+              {
+                "points": 1,
+                "criterion": "Classifies occipital bone as axial."
+              },
+              {
+                "points": 1,
+                "criterion": "Classifies scapula as appendicular."
+              }
+            ],
+            "model_answer": "The axial skeleton forms the central, vertical axis of the body (head, neck, chest, back) and protects the brain, spinal cord, heart, and lungs. The appendicular skeleton consists of the bones of the upper and lower limbs plus the girdle bones (pectoral and pelvic) that attach the limbs to the axial skeleton. The sternum is axial; the femur is appendicular; the occipital bone is axial; the scapula is appendicular."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fr-02",
+          "question": {
+            "prompt": "Compare red and yellow bone marrow by stating the function of each and identifying where each is located in the bone, and describe how their relative amounts differ between a child and an adult.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States red marrow is the site of hematopoiesis (production of blood cells)."
+              },
+              {
+                "points": 1,
+                "criterion": "States yellow marrow stores fat/adipose tissue (triglycerides) as an energy reserve."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies red marrow as located in spongy bone (e.g., epiphyses) and yellow marrow in the medullary cavity."
+              },
+              {
+                "points": 1,
+                "criterion": "States a child has relatively more red marrow."
+              },
+              {
+                "points": 1,
+                "criterion": "States that as a person ages, red marrow is increasingly replaced by yellow marrow (adult has more yellow marrow)."
+              }
+            ],
+            "model_answer": "Red marrow is the site of hematopoiesis, producing red blood cells, white blood cells, and platelets, and is found in the spaces of spongy bone (e.g., the epiphyses). Yellow marrow stores fat (triglycerides in adipocytes) as an energy reserve and fills the medullary cavity of the diaphysis. Children have proportionally more red marrow, whereas with age much of the red marrow is replaced by yellow marrow, so adults have relatively more yellow marrow."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fr-03",
+          "question": {
+            "prompt": "Using correct terminology from this unit, define the following two terms and explain how they differ from one another: 'osteoblast' and 'osteoclast'. In your answer, contrast their functions and note at least one additional distinguishing feature (such as their number of nuclei or their cell of origin).",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines osteoblast as a bone cell that forms/secretes new bone matrix."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines osteoclast as a bone cell that breaks down/resorbs bone."
+              },
+              {
+                "points": 1,
+                "criterion": "States that osteoblasts build/deposit bone while osteoclasts break down/resorb bone (opposite functions)."
+              },
+              {
+                "points": 1,
+                "criterion": "Notes an additional distinguishing feature (e.g., osteoclasts are multinucleated and derive from monocytes/macrophages, whereas osteoblasts derive from osteogenic cells)."
+              }
+            ],
+            "model_answer": "An osteoblast is a bone cell that synthesizes and secretes new bone matrix (osteoid) to form bone. An osteoclast is a multinucleated cell that resorbs (breaks down) bone. They have opposite functions—osteoblasts build bone while osteoclasts break it down—and this balance is responsible for remodeling. They also differ in origin: osteoclasts arise from monocytes and macrophages, whereas osteoblasts develop from osteogenic cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fr-04",
+          "question": {
+            "prompt": "Contrast endochondral ossification with intramembranous ossification. In your answer, identify the template tissue each process uses and give one example of a bone (or bone group) formed by each. Also compare the relative time each process takes, and state what type of bone tissue each ultimately produces.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States endochondral ossification replaces a hyaline cartilage template/model."
+              },
+              {
+                "points": 1,
+                "criterion": "States intramembranous ossification develops directly from mesenchymal (undifferentiated) connective tissue, not cartilage."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example of an endochondral bone (e.g., long bones / base of skull)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example of an intramembranous bone (e.g., flat cranial/facial bones or clavicle)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that endochondral ossification takes much longer than intramembranous ossification."
+              },
+              {
+                "points": 1,
+                "criterion": "Notes both processes ultimately produce the same bone tissue (identical end product)."
+              }
+            ],
+            "model_answer": "In endochondral ossification, bone develops by replacing a hyaline cartilage template that is gradually replaced by osseous tissue; long bones and the bones at the base of the skull form this way. In intramembranous ossification, compact and spongy bone develop directly from sheets of mesenchymal (undifferentiated) connective tissue rather than from cartilage; the flat cranial and facial bones and the clavicles form this way. Endochondral ossification takes much longer than intramembranous ossification, but both pathways produce the same type of bone tissue in the end."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fr-05",
+          "question": {
+            "prompt": "Bone tissue contains four cell types: osteogenic cells, osteoblasts, osteocytes, and osteoclasts. State the function of each cell type, and identify which one is developmentally unrelated to the others.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States osteogenic cells are undifferentiated cells that undergo mitosis and give rise to osteoblasts."
+              },
+              {
+                "points": 1,
+                "criterion": "States osteoblasts secrete/form new bone matrix."
+              },
+              {
+                "points": 1,
+                "criterion": "States osteocytes are mature bone cells that maintain the mineral concentration of the matrix."
+              },
+              {
+                "points": 1,
+                "criterion": "States osteoclasts break down/resorb bone."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the osteoclast as developmentally unrelated (arises from monocytes/macrophages, not from osteogenic cells)."
+              }
+            ],
+            "model_answer": "Osteogenic cells are undifferentiated cells that divide (the only bone cells capable of mitosis) and differentiate into osteoblasts. Osteoblasts secrete and form new bone matrix. Osteocytes are mature bone cells (trapped osteoblasts) that maintain the mineral concentration of the matrix. Osteoclasts break down and resorb bone. The osteoclast is developmentally unrelated to the other three—it originates from monocytes and macrophages rather than from osteogenic cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fr-06",
+          "question": {
+            "prompt": "During endochondral ossification of a long bone (as shown on slide 37), explain why the chondrocytes in the centre of the cartilage model die (referring to matrix calcification and nutrient supply), and describe what forms in the space they leave behind, including what invades the spaces, how the cavities change, and the final structure they become.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that as the matrix calcifies, nutrients can no longer reach the central chondrocytes (cartilage is avascular / relies on diffusion)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that the deprived chondrocytes die and the surrounding cartilage disintegrates/degenerates."
+              },
+              {
+                "points": 1,
+                "criterion": "States that blood vessels (carrying osteogenic cells) invade the resulting spaces."
+              },
+              {
+                "points": 1,
+                "criterion": "States that the cavities enlarge and eventually combine."
+              },
+              {
+                "points": 1,
+                "criterion": "States that these combined cavities become the medullary cavity."
+              }
+            ],
+            "model_answer": "As the cartilage matrix in the centre of the model calcifies, nutrients can no longer diffuse through it to reach the chondrocytes (cartilage is avascular). Deprived of nutrients, the central chondrocytes die and the surrounding cartilage disintegrates. Blood vessels then invade the resulting spaces, carrying osteogenic cells with them. These inner cavities enlarge and eventually combine, forming the medullary cavity of the bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fr-07",
+          "question": {
+            "prompt": "Bones are classified into five categories by shape. Name the category that each of the following bones belongs to, and for each state the defining shape feature of that category: (a) the humerus, (b) a carpal bone, (c) a vertebra.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Classifies the humerus as a long bone."
+              },
+              {
+                "points": 1,
+                "criterion": "States the defining feature of long bones (cylindrical; diameter smaller than length)."
+              },
+              {
+                "points": 1,
+                "criterion": "Classifies a carpal as a short bone."
+              },
+              {
+                "points": 1,
+                "criterion": "States the defining feature of short bones (cube-like; roughly equal length, width, thickness)."
+              },
+              {
+                "points": 1,
+                "criterion": "Classifies a vertebra as an irregular bone."
+              },
+              {
+                "points": 1,
+                "criterion": "States the defining feature of irregular bones (complex shape that fits no other category)."
+              }
+            ],
+            "model_answer": "(a) The humerus is a long bone—long bones are cylindrical in shape, with a diameter smaller than their length, and function as levers. (b) A carpal is a short bone—short bones are cube-like, being roughly equal in length, width, and thickness, and provide stability with limited motion. (c) A vertebra is an irregular bone—irregular bones have complex shapes that do not fit any of the other categories (here protecting the spinal cord from compression)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fr-08",
+          "question": {
+            "prompt": "The skeletal system consists of more than just bones. Name the four types of structures that make up the skeletal system, and state the function(s) of each. For ligaments, also explain what excessive movement they prevent, and for tendons, also explain how they contribute to producing movement.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names bones and states they support body weight, allow movement, and/or protect organs (mineral/energy storage also acceptable)."
+              },
+              {
+                "points": 1,
+                "criterion": "Names cartilage and states it provides flexible strength/support and cushioning or smooth surfaces at joints."
+              },
+              {
+                "points": 1,
+                "criterion": "Names ligaments and states they connect bone to bone at joints."
+              },
+              {
+                "points": 1,
+                "criterion": "States ligaments prevent excessive joint movement that would cause injury."
+              },
+              {
+                "points": 1,
+                "criterion": "Names tendons and states they attach muscle to bone."
+              },
+              {
+                "points": 1,
+                "criterion": "States tendons transmit muscle contraction force to produce movement."
+              }
+            ],
+            "model_answer": "The skeletal system consists of bones, cartilages, ligaments, and tendons. Bones support the weight of the body, allow movement, protect internal organs, and store minerals and fat. Cartilage provides flexible strength and support and cushions or provides smooth surfaces at joints. Ligaments are strong connective tissue bands that connect bone to bone at joints and prevent excessive movements that would cause injury. Tendons attach muscle to bone and transmit the force of muscle contraction to the bones to produce movement."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fr-09",
+          "question": {
+            "prompt": "Identify the following three parts of a long bone and state the function of each: the diaphysis, the epiphysis, and the epiphyseal plate.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies the diaphysis as the tubular shaft (compact bone walls surrounding the medullary cavity)."
+              },
+              {
+                "points": 1,
+                "criterion": "States the diaphysis provides support/protection (or houses yellow marrow in the medullary cavity)."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the epiphysis as the wide end of the bone, containing spongy bone."
+              },
+              {
+                "points": 1,
+                "criterion": "States the epiphysis contains red marrow / is site of hematopoiesis or forms joints with articular cartilage."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the epiphyseal plate as a layer of hyaline cartilage between diaphysis and epiphysis."
+              },
+              {
+                "points": 1,
+                "criterion": "States the epiphyseal plate is responsible for growth in length (longitudinal growth) of the bone."
+              }
+            ],
+            "model_answer": "The diaphysis is the tubular shaft of the bone; its walls are dense compact bone that provides support and protection, and its hollow medullary cavity holds yellow marrow. The epiphysis is the wider end of the bone, filled with spongy bone whose spaces contain red marrow (hematopoiesis) and whose surface bears articular cartilage where it forms a joint. The epiphyseal plate is a layer of hyaline cartilage located between the diaphysis and epiphysis (in the metaphysis) that is responsible for the longitudinal growth (growth in length) of the bone; once growth stops it becomes the epiphyseal line."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u10-advanced-fr-10",
+          "question": {
+            "prompt": "Section B divides the skeleton into the axial and appendicular skeletons. Explain how the functional demands placed on the upper and lower limbs differ, including how the lower limbs are adapted for weight-bearing support and stability as well as for locomotion (walking/running), and how the upper limbs are adapted for mobility and manipulation. Then describe how the structure of each limb reflects those demands.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States lower limbs are adapted for weight-bearing support and stability."
+              },
+              {
+                "points": 1,
+                "criterion": "States lower limbs also function in locomotion (walking/running)."
+              },
+              {
+                "points": 1,
+                "criterion": "States upper limbs are highly mobile / adapted for a wide range of movements and manipulation."
+              },
+              {
+                "points": 1,
+                "criterion": "Links lower limb structure to demand (e.g., pelvic girdle strongly united/immobile for weight transfer; femur/tibia thick and strong)."
+              },
+              {
+                "points": 1,
+                "criterion": "Links upper limb structure to demand (e.g., pectoral girdle highly mobile / not joined across midline, enhancing shoulder and arm range of motion)."
+              }
+            ],
+            "model_answer": "Because of our upright stance, the lower and upper limbs face different demands. The lower limbs are adapted for weight-bearing support and stability and for locomotion (walking and running); this is reflected in the strongly united, largely immobile pelvic girdle that transfers body weight to the limbs, and in the thick, strong femur and weight-bearing tibia. The upper limbs are not needed for weight support and are instead highly mobile, allowing a wide range of movements and manipulation of objects; this is reflected in the pectoral girdle, whose clavicle attaches to the axial skeleton by a single mobile joint and whose right and left sides are not joined across the midline, giving the shoulder and arm extensive range of motion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    }
+  }
+}

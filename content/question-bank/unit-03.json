@@ -1,0 +1,2936 @@
+{
+  "unit_no": 3,
+  "generated_at": "2026-07-16T16:46:50.749Z",
+  "levels": {
+    "basic": {
+      "mc": [
+        {
+          "id": "u3-basic-mc-01",
+          "question": {
+            "stem": "Which functional group has the chemical formula –COOH and is characteristic of acids in the body?",
+            "options": [
+              "Amino group",
+              "Hydroxyl group",
+              "Phosphate group",
+              "Carboxyl group",
+              "Methyl group"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The carboxyl group (–COOH) is the acidic functional group found in acids and at one end of fatty acids and amino acids.\n\n**Why the other options are wrong:**\n- **(A)** The amino group is –NH2, a basic group found in amino acids.\n- **(B)** The hydroxyl group is –OH, a polar group found in all four classes of organic compounds.\n- **(C)** The phosphate group is –PO4 and is found in phospholipids and nucleotides, not acids specifically.\n- **(E)** The methyl group is –CH3, a nonpolar group found in fatty acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-02",
+          "question": {
+            "stem": "Why is carbon able to serve as the backbone of nearly all organic compounds in the body?",
+            "options": [
+              "It forms only single bonds and therefore cannot make chains",
+              "It is polar and dissolves easily in water",
+              "It readily donates all four valence electrons to become a stable ion",
+              "It has four valence electrons and completes its shell by sharing electrons in covalent bonds",
+              "It accepts four electrons to fill its innermost shell"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Carbon has four valence electrons and completes its octet by sharing electrons through covalent bonds, allowing it to form long carbon skeletons.\n\n**Why the other options are wrong:**\n- **(A)** Carbon can form single, double, and triple bonds and readily builds chains.\n- **(B)** Carbon itself is not inherently polar; polarity depends on the atoms bonded to it.\n- **(C)** Carbon does not complete its shell by donating four electrons; it shares them.\n- **(E)** Its first (innermost) shell is already full; it is the valence (second) shell that needs completing."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-03",
+          "question": {
+            "stem": "The covalent bond that links two monosaccharides together within a carbohydrate is called a:",
+            "options": [
+              "Glycosidic bond",
+              "Ester bond",
+              "Peptide bond",
+              "Hydrogen bond",
+              "Ionic bond"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Monosaccharides are joined by glycosidic bonds, formed via dehydration synthesis (glyco- = sugar).\n\n**Why the other options are wrong:**\n- **(B)** Ester-type linkages join fatty acids to glycerol, not sugars.\n- **(C)** Peptide bonds join amino acids in proteins, not sugars.\n- **(D)** Hydrogen bonds hold DNA strands together, not carbohydrate monomers.\n- **(E)** Ionic bonds involve electron transfer, not the linking of monosaccharides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-04",
+          "question": {
+            "stem": "Which of the following correctly pairs a monosaccharide type with an example?",
+            "options": [
+              "Hexose — galactose",
+              "Pentose — fructose",
+              "Hexose — ribose",
+              "Hexose — deoxyribose",
+              "Pentose — glucose"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Galactose is a six-carbon hexose sugar, along with glucose and fructose.\n\n**Why the other options are wrong:**\n- **(B)** Fructose is a six-carbon hexose, not a pentose.\n- **(C)** Ribose is a five-carbon pentose, not a hexose.\n- **(D)** Deoxyribose is a five-carbon pentose, not a hexose.\n- **(E)** Glucose is a six-carbon hexose, not a pentose."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-05",
+          "question": {
+            "stem": "How does the structure of a phospholipid allow it to form the cell membrane bilayer?",
+            "options": [
+              "It is entirely nonpolar and clumps into a solid mass",
+              "It has a cholesterol ring that binds two membranes together",
+              "It has three fatty acid tails that repel each other",
+              "It is entirely polar and dissolves fully in water",
+              "It has a hydrophilic phosphate head and hydrophobic fatty acid tails"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The polar (hydrophilic) phosphate head faces the watery fluids while the nonpolar (hydrophobic) fatty acid tails face inward, producing a stable bilayer.\n\n**Why the other options are wrong:**\n- **(A)** A phospholipid is not entirely nonpolar; its head is polar.\n- **(B)** Cholesterol is a separate steroid molecule, not the structural basis of the phospholipid bilayer.\n- **(C)** A phospholipid has only two fatty acid tails, not three.\n- **(D)** It is not entirely polar; its tails are hydrophobic and do not dissolve in water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-06",
+          "question": {
+            "stem": "Which statement about the relationship between cholesterol and steroid hormones is correct?",
+            "options": [
+              "Steroid hormones are proteins derived from amino acids",
+              "Cholesterol is a building block for hormones such as testosterone and cortisol",
+              "Steroid hormones are polysaccharides built from glucose",
+              "Cholesterol is synthesized from steroid hormones in the liver",
+              "Prostaglandins are steroid hormones synthesized from cholesterol"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Cholesterol serves as the foundational building block for steroid hormones including testosterone, estradiol, progesterone, and cortisol.\n\n**Why the other options are wrong:**\n- **(A)** Steroid hormones are lipids, not proteins.\n- **(C)** Steroid hormones are lipids based on hydrocarbon rings, not polysaccharides.\n- **(D)** The relationship is reversed—cholesterol is the precursor, not the product.\n- **(E)** Prostaglandins are derived from fatty acids, not from cholesterol, and act locally."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-07",
+          "question": {
+            "stem": "Phosphorylation is best defined as:",
+            "options": [
+              "The removal of a phosphate group from ATP to release energy",
+              "The addition of a phosphate group to an organic compound",
+              "The folding of a protein into its tertiary structure",
+              "The breaking of a polymer into monomers using water",
+              "The linking of two monosaccharides by a glycosidic bond"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Phosphorylation is the addition of a phosphate group to an organic compound, often catalyzed by a kinase enzyme.\n\n**Why the other options are wrong:**\n- **(A)** Removing a phosphate is dephosphorylation (e.g., ATP → ADP), the opposite process.\n- **(C)** Protein folding into tertiary structure is a separate structural process.\n- **(D)** Breaking a polymer using water is hydrolysis.\n- **(E)** Linking monosaccharides forms a glycosidic bond, unrelated to phosphate transfer."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-08",
+          "question": {
+            "stem": "A chain of approximately 2 to 20 amino acids joined by peptide bonds is best described as a:",
+            "options": [
+              "Monosaccharide",
+              "Nucleotide",
+              "Peptide",
+              "Polypeptide",
+              "Protein"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A peptide is a short chain of roughly 2 to 20 amino acids linked by peptide bonds.\n\n**Why the other options are wrong:**\n- **(A)** A monosaccharide is a single sugar unit, not amino acids.\n- **(B)** A nucleotide is a nucleic acid monomer, not an amino acid chain.\n- **(D)** A polypeptide contains roughly 20 to 100 amino acids, longer than a peptide.\n- **(E)** A protein is a much longer chain of more than about 100 amino acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-09",
+          "question": {
+            "stem": "Which set of three subunits correctly describes the composition of a nucleotide?",
+            "options": [
+              "An amino group, a carboxyl group, and a variable side chain",
+              "Two monosaccharides and a glycosidic bond",
+              "A hydrocarbon ring, a hydroxyl head, and a bile acid",
+              "A glycerol, three fatty acids, and a phosphate group",
+              "One or more phosphate groups, a pentose sugar, and a nitrogen-containing base"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A nucleotide consists of one or more phosphate groups, a pentose sugar (ribose or deoxyribose), and a nitrogen-containing base.\n\n**Why the other options are wrong:**\n- **(A)** This describes an amino acid, the monomer of proteins.\n- **(B)** This describes a disaccharide, not a nucleotide.\n- **(C)** This describes features of cholesterol, a steroid lipid.\n- **(D)** This describes a triglyceride/phospholipid arrangement, not a nucleotide."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-10",
+          "question": {
+            "stem": "During dehydration synthesis, two monomers are joined and a molecule of water is released. Which parts do the monomers contribute to form this water?",
+            "options": [
+              "Water is added rather than released in this reaction",
+              "Both monomers contribute a hydrogen atom",
+              "One monomer gives up a phosphate and the other a hydroxyl group",
+              "One monomer gives up a hydrogen atom and the other gives up a hydroxyl group",
+              "Both monomers contribute a hydroxyl group"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** In dehydration synthesis, one monomer gives up a hydrogen atom (H) and the other gives up a hydroxyl group (OH), which combine to release water.\n\n**Why the other options are wrong:**\n- **(A)** Water is released in dehydration synthesis; it is added during hydrolysis.\n- **(B)** Two hydrogen atoms alone cannot form water.\n- **(C)** Phosphate is not the group released; a hydrogen and a hydroxyl are.\n- **(E)** Two hydroxyl groups would not combine to form a single water molecule."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-11",
+          "question": {
+            "stem": "Which two types of molecules make up the glycocalyx found on the surface of cell membranes?",
+            "options": [
+              "Glycolipids and glycoproteins",
+              "Phospholipids and steroids",
+              "Amino acids and cholesterol",
+              "Triglycerides and nucleotides",
+              "Prostaglandins and fatty acids"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The glycocalyx is formed by short carbohydrate chains attached to glycolipids and glycoproteins on the cell membrane, which aid in cellular recognition.\n\n**Why the other options are wrong:**\n- **(B)** Phospholipids form the bilayer and steroids are not part of the glycocalyx.\n- **(C)** Free amino acids and cholesterol are not the carbohydrate-bearing molecules of the glycocalyx.\n- **(D)** Triglycerides are energy stores and nucleotides build nucleic acids, not the glycocalyx.\n- **(E)** Prostaglandins are signaling molecules and free fatty acids are not glycocalyx components."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-12",
+          "question": {
+            "stem": "What is the relationship between cholesterol and steroid hormones such as testosterone, estradiol, and cortisol?",
+            "options": [
+              "Cholesterol serves as the building block from which steroid hormones are made",
+              "Cholesterol and steroid hormones are unrelated molecules",
+              "Cholesterol is broken down by steroid hormones",
+              "Steroid hormones are stored inside cholesterol droplets",
+              "Steroid hormones convert cholesterol into prostaglandins"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Cholesterol is a sterol that serves as the foundational building block for many steroid hormones, including progesterone, testosterone, estradiol, and cortisol.\n\n**Why the other options are wrong:**\n- **(B)** They are directly related, as steroid hormones are synthesized from cholesterol.\n- **(C)** Steroid hormones do not break down cholesterol; they are built from it.\n- **(D)** Steroid hormones are not stored inside cholesterol droplets.\n- **(E)** Prostaglandins are derived from fatty acids, not from cholesterol via steroid hormones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-13",
+          "question": {
+            "stem": "A nucleotide is an organic compound composed of three subunits. Which of the following is one of those three subunits?",
+            "options": [
+              "A fatty acid chain",
+              "A carboxyl group",
+              "An alpha-helix",
+              "A pentose sugar",
+              "A glycerol backbone"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A nucleotide consists of one or more phosphate groups, a pentose sugar (deoxyribose or ribose), and a nitrogen-containing base.\n\n**Why the other options are wrong:**\n- **(A)** Fatty acid chains are components of triglycerides and phospholipids, not nucleotides.\n- **(B)** A carboxyl group is a functional group found in acids and amino acids, not a nucleotide subunit.\n- **(C)** An alpha-helix is a protein secondary structure, not a nucleotide subunit.\n- **(E)** Glycerol is part of lipids, not nucleotides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-14",
+          "question": {
+            "stem": "Which functional group has the chemical formula –COOH and is a component of acids and amino acids?",
+            "options": [
+              "Hydroxyl group",
+              "Carboxyl group",
+              "Phosphate group",
+              "Methyl group",
+              "Amino group"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The carboxyl group (–COOH) is acidic and is a component of acids and the amino acids that make up proteins.\n\n**Why the other options are wrong:**\n- **(A)** The hydroxyl group is –OH.\n- **(C)** The phosphate group is –PO4 (with charge), not –COOH.\n- **(D)** The methyl group is –CH3.\n- **(E)** The amino group is –NH2."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-15",
+          "question": {
+            "stem": "What is the structural difference between hexose and pentose sugars?",
+            "options": [
+              "Hexose sugars are polymers while pentose sugars are monomers",
+              "Hexose sugars contain six carbon atoms while pentose sugars contain five",
+              "Hexose sugars are found only in DNA while pentose sugars are found only in plants",
+              "Hexose sugars contain five carbon atoms while pentose sugars contain six",
+              "Hexose sugars contain nitrogen while pentose sugars do not"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Hexose sugars (e.g., glucose, fructose, galactose) contain six carbon atoms, whereas pentose sugars (e.g., ribose, deoxyribose) contain five.\n\n**Why the other options are wrong:**\n- **(A)** Both hexoses and pentoses are monosaccharides (monomers).\n- **(C)** Deoxyribose (a pentose) is found in DNA, contradicting this statement.\n- **(D)** This reverses the correct carbon counts.\n- **(E)** Neither carbohydrate type inherently contains nitrogen; they are made of carbon, hydrogen, and oxygen."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-16",
+          "question": {
+            "stem": "What does phosphorylation entail?",
+            "options": [
+              "The bonding of a fatty acid to glycerol",
+              "The splitting of a polymer by adding water",
+              "The linking of two monosaccharides via a glycosidic bond",
+              "The removal of a hydroxyl group from an organic compound",
+              "The addition of a phosphate group to an organic compound"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Phosphorylation is the addition of a phosphate group to an organic compound, often carried out by an enzyme called a kinase.\n\n**Why the other options are wrong:**\n- **(A)** Bonding a fatty acid to glycerol describes triglyceride formation.\n- **(B)** Splitting a polymer by adding water is hydrolysis.\n- **(C)** Linking two monosaccharides is dehydration synthesis forming a glycosidic bond.\n- **(D)** Removing a hydroxyl group is not phosphorylation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-17",
+          "question": {
+            "stem": "Why is carbon so important in forming the organic compounds of the body?",
+            "options": [
+              "It readily gives up all four valence electrons to form ionic bonds",
+              "It cannot form double bonds, keeping molecules simple",
+              "It has four valence electrons and readily shares them via covalent bonds to build carbon skeletons",
+              "It bonds only with hydrogen and no other elements",
+              "It is the only atom capable of forming polar molecules"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Carbon has four valence electrons and completes its valence shell by sharing electrons via covalent bonds, allowing it to form long carbon skeletons and complex organic molecules.\n\n**Why the other options are wrong:**\n- **(A)** Carbon shares electrons through covalent bonds rather than donating them for ionic bonds.\n- **(B)** Carbon can form double and even triple bonds.\n- **(D)** Carbon bonds with hydrogen, oxygen, nitrogen, and other elements.\n- **(E)** Many atoms besides carbon participate in polar molecules."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-18",
+          "question": {
+            "stem": "What structurally distinguishes a saturated fatty acid from an unsaturated fatty acid?",
+            "options": [
+              "A saturated fatty acid is attached to glycerol; an unsaturated one is not",
+              "A saturated fatty acid is liquid at room temperature; an unsaturated one is solid",
+              "A saturated fatty acid has no double carbon bonds; an unsaturated one has one or more",
+              "A saturated fatty acid contains nitrogen; an unsaturated one does not",
+              "A saturated fatty acid has one or more double carbon bonds; an unsaturated one has none"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Saturated fatty acids have no double carbon bonds (straight chains that pack tightly and are solid), while unsaturated fatty acids have one (mono-) or more (poly-) double bonds that create kinks.\n\n**Why the other options are wrong:**\n- **(A)** Both types can attach to glycerol; that is not the distinguishing feature.\n- **(B)** Saturated fats are typically solid and unsaturated fats liquid at room temperature—this is reversed.\n- **(D)** Neither fatty acid type is defined by containing nitrogen.\n- **(E)** This reverses the definitions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-19",
+          "question": {
+            "stem": "A triglyceride is formed by attaching three fatty acid chains to which backbone molecule via dehydration synthesis?",
+            "options": [
+              "An amino acid",
+              "A phosphate group",
+              "Glycerol",
+              "Ribose",
+              "Cholesterol"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A triglyceride consists of a glycerol backbone with three fatty acid chains attached by dehydration synthesis.\n\n**Why the other options are wrong:**\n- **(A)** Amino acids are the monomers of proteins, not triglyceride backbones.\n- **(B)** A phosphate group is part of phospholipids and nucleotides, not the triglyceride backbone.\n- **(D)** Ribose is a pentose sugar found in nucleotides, not triglycerides.\n- **(E)** Cholesterol is a sterol with a ring structure, not the backbone of a triglyceride."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-20",
+          "question": {
+            "stem": "Which of the following correctly describes the structural difference between hexose and pentose sugars?",
+            "options": [
+              "Hexose sugars contain six carbon atoms, while pentose sugars contain five carbon atoms",
+              "Hexose sugars are always polymers, while pentose sugars are always monomers",
+              "Hexose sugars contain five carbon atoms, while pentose sugars contain six carbon atoms",
+              "Hexose sugars contain nitrogen, while pentose sugars do not",
+              "Hexose sugars are found only in plants, while pentose sugars are found only in animals"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Hexose sugars such as glucose, fructose, and galactose contain six carbon atoms, while pentose sugars such as ribose and deoxyribose contain five carbon atoms.\n\n**Why the other options are wrong:**\n- **(B)** Both hexose and pentose sugars are monosaccharides (monomers), not polymers.\n- **(C)** This reverses the correct carbon counts.\n- **(D)** Carbohydrates are composed of carbon, hydrogen, and oxygen, not nitrogen.\n- **(E)** Both hexose and pentose sugars occur in the bodies of animals and plants."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-21",
+          "question": {
+            "stem": "What does phosphorylation involve?",
+            "options": [
+              "The linking of two monosaccharides by a glycosidic bond",
+              "The addition of a phosphate group to an organic compound",
+              "The breaking of a peptide bond between two amino acids",
+              "The pairing of nitrogen-containing bases by hydrogen bonds",
+              "The removal of a hydroxyl group from a fatty acid"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Phosphorylation is the addition of a phosphate group to an organic compound, for example converting ADP to ATP or glucose to glucose phosphate.\n\n**Why the other options are wrong:**\n- **(A)** Linking monosaccharides by a glycosidic bond forms disaccharides, unrelated to phosphate addition.\n- **(C)** Breaking a peptide bond is hydrolysis of a protein, not phosphorylation.\n- **(D)** Base pairing by hydrogen bonds describes DNA strand attachment, not phosphorylation.\n- **(E)** Removing a hydroxyl group describes part of dehydration synthesis, not phosphorylation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-22",
+          "question": {
+            "stem": "Which type of covalent bond joins amino acids together within a protein?",
+            "options": [
+              "Glycosidic bond",
+              "Hydrogen bond",
+              "Ester bond",
+              "Peptide bond",
+              "Phosphodiester bond"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Amino acids are linked into peptides and proteins by peptide bonds, which form via dehydration synthesis.\n\n**Why the other options are wrong:**\n- **(A)** Glycosidic bonds link monosaccharides in carbohydrates, not amino acids.\n- **(B)** Hydrogen bonds help stabilize protein secondary structure but do not covalently join amino acids into the chain.\n- **(C)** Ester-type bonding attaches fatty acids to glycerol, not amino acids to one another.\n- **(E)** Phosphodiester-type bonding links nucleotides in nucleic acids, not amino acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-23",
+          "question": {
+            "stem": "Which of the following is a hexose monosaccharide found in the disaccharide lactose?",
+            "options": [
+              "Cellulose",
+              "Maltose",
+              "Deoxyribose",
+              "Galactose",
+              "Ribose"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Galactose is a hexose monosaccharide that combines with glucose to form the disaccharide lactose (milk sugar).\n\n**Why the other options are wrong:**\n- **(A)** Cellulose is a polysaccharide, not a monosaccharide.\n- **(B)** Maltose is itself a disaccharide, not a monosaccharide component of lactose.\n- **(C)** Deoxyribose is a pentose sugar found in DNA, not in lactose.\n- **(E)** Ribose is a pentose sugar found in RNA, not in lactose."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-24",
+          "question": {
+            "stem": "How are phospholipids arranged within a cell's plasma membrane?",
+            "options": [
+              "As isolated droplets suspended within the cytoplasm",
+              "As a solid crystalline sheet with no distinct head or tail regions",
+              "As a bilayer, with hydrophobic tails facing the watery fluids and hydrophilic heads facing inward",
+              "As a single layer, with all heads and tails pointing in the same direction",
+              "As a bilayer, with hydrophilic heads facing the watery fluids and hydrophobic tails facing inward"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** In a cell membrane, phospholipids form a bilayer where the polar hydrophilic heads face the intracellular and interstitial fluids and the nonpolar hydrophobic tails cluster together on the inside.\n\n**Why the other options are wrong:**\n- **(A)** Phospholipids self-assemble into organized bilayers, not scattered droplets.\n- **(B)** Phospholipid membranes are fluid bilayers with distinct head and tail regions, not rigid crystalline sheets.\n- **(C)** This reverses the orientation; hydrophilic heads, not tails, face the watery environments.\n- **(D)** A single layer describes the surface of a lipoprotein, not the membrane bilayer."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-25",
+          "question": {
+            "stem": "What is the role of a kinase in phosphorylation reactions?",
+            "options": [
+              "It is a phosphate group cleaved from ATP",
+              "It is a carbohydrate that stores excess glucose",
+              "It is a nitrogen-containing base found in DNA",
+              "It is a lipid that transports cholesterol in the blood",
+              "It is an enzyme that catalyzes the transfer of phosphate groups"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A kinase is an enzyme that facilitates the transfer of phosphate groups, such as a hexokinase adding a phosphate to glucose.\n\n**Why the other options are wrong:**\n- **(A)** A cleaved phosphate group (Pi) is a reaction product, not the enzyme that transfers it.\n- **(B)** The carbohydrate storing excess glucose is glycogen, not a kinase.\n- **(C)** Nitrogen-containing bases such as adenine are nucleotide components, not enzymes.\n- **(D)** A cholesterol-transporting particle is a lipoprotein, not a kinase."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-26",
+          "question": {
+            "stem": "Which statement correctly describes the structure of a triglyceride?",
+            "options": [
+              "Four hydrocarbon rings bonded to a polar hydroxyl head",
+              "A central carbon bonded to an amino group and a carboxyl group",
+              "A pentose sugar bonded to a phosphate group and a nitrogen base",
+              "A glycerol backbone with two fatty acids and a phosphate group",
+              "A glycerol backbone with three fatty acid chains attached"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A triglyceride consists of a glycerol backbone with three fatty acid chains attached via dehydration synthesis.\n\n**Why the other options are wrong:**\n- **(A)** Four hydrocarbon rings with a hydroxyl head describes cholesterol (a sterol).\n- **(B)** A central carbon with amino and carboxyl groups describes an amino acid.\n- **(C)** A pentose sugar with a phosphate and a base describes a nucleotide.\n- **(D)** A glycerol with two fatty acids and a phosphate describes a phospholipid, not a triglyceride."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-27",
+          "question": {
+            "stem": "What describes the primary structure of a protein?",
+            "options": [
+              "The overall three-dimensional folded shape of a single polypeptide",
+              "The coiling of the chain into an alpha-helix held by hydrogen bonds",
+              "The linear sequence of amino acids in the polypeptide chain",
+              "The flat beta-pleated sheet stabilized by hydrogen bonds",
+              "The assembly of two or more polypeptide subunits into one protein"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The primary structure is the linear sequence of amino acids that make up the polypeptide chain.\n\n**Why the other options are wrong:**\n- **(A)** A three-dimensional folded single polypeptide is the tertiary structure.\n- **(B)** An alpha-helix held by hydrogen bonds is a secondary structure.\n- **(D)** A beta-pleated sheet is a secondary structure, not the primary sequence.\n- **(E)** Assembly of multiple subunits describes the quaternary structure."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-28",
+          "question": {
+            "stem": "Which functional group is written with the chemical formula -COOH?",
+            "options": [
+              "Amino group",
+              "Carboxyl group",
+              "Hydroxyl group",
+              "Methyl group",
+              "Phosphate group"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The carboxyl group has the chemical formula -COOH and is a component of acids, including the carboxyl group of amino acids and fatty acids.\n\n**Why the other options are wrong:**\n- **(A)** The amino group is written -NH2.\n- **(C)** The hydroxyl group is written -OH.\n- **(D)** The methyl group is written -CH3.\n- **(E)** The phosphate group is written -PO4 (with a negative charge)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-29",
+          "question": {
+            "stem": "What is the relationship between cholesterol and steroid hormones such as testosterone and cortisol?",
+            "options": [
+              "Cholesterol and steroid hormones are unrelated types of carbohydrate",
+              "Cholesterol is a protein that carries steroid hormones through the blood",
+              "Cholesterol serves as the building block from which steroid hormones are made",
+              "Steroid hormones are converted into cholesterol for storage in cells",
+              "Steroid hormones form the phospholipid bilayer that surrounds cholesterol"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Cholesterol is the sterol foundation from which many steroid hormones—such as progesterone, testosterone, estradiol, and cortisol—are built.\n\n**Why the other options are wrong:**\n- **(A)** Both cholesterol and steroid hormones are lipids (sterols), not carbohydrates.\n- **(B)** Cholesterol is a lipid, not a protein carrier.\n- **(D)** The relationship runs the other way: cholesterol is the precursor, not the storage product of hormones.\n- **(E)** Phospholipid bilayers are formed by phospholipids, not steroid hormones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-mc-30",
+          "question": {
+            "stem": "Which property of carbon allows it to form the long backbones found in most organic compounds of the body?",
+            "options": [
+              "It readily shares its four valence electrons in covalent bonds, including with other carbon atoms",
+              "It donates four electrons to become a stable cation",
+              "It forms hydrogen bonds with other carbon atoms",
+              "It has a full valence shell and therefore does not react",
+              "It accepts four electrons to fill its first electron shell"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Carbon has four valence electrons and completes its octet by sharing electrons through covalent bonds, allowing it to link with other carbons to form carbon skeletons.\n\n**Why the other options are wrong:**\n- **(B)** Carbon does not donate four electrons to form ions; it shares them.\n- **(C)** Carbon-carbon backbones are held together by covalent bonds, not hydrogen bonds.\n- **(D)** Carbon's valence shell is not full, which is precisely why it bonds so readily.\n- **(E)** Carbon's first shell is already full; its second (valence) shell is only half full."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u3-basic-tf-01",
+          "question": {
+            "stem": "The bonds that link amino acids together in a protein are called peptide bonds.",
+            "correct": true,
+            "explanation": "Amino acids are joined by peptide bonds, which are covalent bonds formed via dehydration synthesis. Monosaccharides, by contrast, are joined by glycosidic bonds."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-02",
+          "question": {
+            "stem": "Phosphorylation is the addition of a phosphate group to an organic compound and is carried out by enzymes called kinases.",
+            "correct": true,
+            "explanation": "Phosphorylation adds a phosphate group to a molecule, a reaction catalyzed by kinases. It can alter a molecule's size, charge, or function—for example, trapping glucose inside a cell as glucose phosphate."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-03",
+          "question": {
+            "stem": "Carbon is important in the body largely because each carbon atom can form four covalent bonds, allowing it to build long, stable carbon skeletons.",
+            "correct": true,
+            "explanation": "Carbon has four valence electrons and completes its octet by sharing electrons via covalent bonds, enabling long carbon chains (skeletons) that form the backbone of organic macromolecules."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-04",
+          "question": {
+            "stem": "A triglyceride consists of a glycerol backbone attached to three fatty acid chains via dehydration synthesis.",
+            "correct": true,
+            "explanation": "This is correct. A triglyceride (fat) is made of a glycerol backbone with three fatty acid chains attached; the terms lipid and cholesterol refer to broader/other categories, while glycerol and fatty acid are the individual components."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-05",
+          "question": {
+            "stem": "A polypeptide contains roughly 20 to 100 amino acids, which is more than a peptide but fewer than a protein.",
+            "correct": true,
+            "explanation": "Per the slide's approximate ranges, peptides are ~2–20 amino acids, polypeptides ~20–100, and proteins >100. Exact cut-offs are not important, but the relative sizes are."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-06",
+          "question": {
+            "stem": "In this unit, a monomer is a single repeating unit, while a polymer is a chain built from many monomers.",
+            "correct": true,
+            "explanation": "This is the correct terminology: 'mono-' means one and 'poly-' means many. Monomers link by dehydration synthesis to form polymers, and hydrolysis splits polymers back into monomers."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-07",
+          "question": {
+            "stem": "Starch is the primary polymer used by the human body to store excess glucose.",
+            "correct": false,
+            "explanation": "False. Glycogen is the body's storage polymer of glucose, found mainly in the liver and muscles. Starch is a plant storage polysaccharide obtained from the diet."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-08",
+          "question": {
+            "stem": "Both glycolipids and glycoproteins are components of the glycocalyx.",
+            "correct": true,
+            "explanation": "The glycocalyx is a carbohydrate coating on the cell membrane formed by glycolipids and glycoproteins (and short carbohydrate chains), which aid in cellular recognition and immune function."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-09",
+          "question": {
+            "stem": "Cholesterol serves as the building block from which steroid hormones such as testosterone, estradiol, and cortisol are made.",
+            "correct": true,
+            "explanation": "Cholesterol is the sterol foundation for steroid hormones including progesterone, testosterone, estradiol, and cortisol, as well as for bile acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-10",
+          "question": {
+            "stem": "The primary structure of a protein is maintained by hydrogen bonds that form alpha-helices and beta-sheets.",
+            "correct": false,
+            "explanation": "False. The primary structure is simply the linear sequence of amino acids. Hydrogen bonds forming alpha-helices and beta-sheets describe the secondary structure."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-11",
+          "question": {
+            "stem": "Cholesterol serves as the building block from which steroid hormones such as testosterone, estradiol, and cortisol are synthesized.",
+            "correct": true,
+            "explanation": "True. Cholesterol is a sterol synthesized by the liver that acts as the basis for steroid hormones, including progesterone, testosterone, estradiol, and cortisol, as well as for bile acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-12",
+          "question": {
+            "stem": "Prostaglandins are steroid hormones that travel through the bloodstream to act on distant tissues throughout the body.",
+            "correct": false,
+            "explanation": "False. Prostaglandins are lipids derived from fatty acid chains, not steroids, and they act as hormone-like signaling molecules that work locally at their site of release rather than travelling through the blood to distant sites."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-13",
+          "question": {
+            "stem": "Hexose sugars such as glucose, fructose, and galactose each contain six carbon atoms, whereas pentose sugars such as ribose and deoxyribose each contain five.",
+            "correct": true,
+            "explanation": "True. Hexose sugars are six-carbon monosaccharides (glucose, fructose, galactose), while pentose sugars are five-carbon monosaccharides (ribose, deoxyribose)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-14",
+          "question": {
+            "stem": "A functional group is a set of covalently bonded atoms that tends to act as a single unit within chemical reactions.",
+            "correct": true,
+            "explanation": "True. A functional group is a cluster of atoms linked by covalent bonds that behaves as one unit in chemical reactions; the five important ones in human physiology are hydroxyl, carboxyl, amino, methyl, and phosphate groups."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-15",
+          "question": {
+            "stem": "The glycocalyx on a cell's membrane is composed of glycoproteins and glycolipids that aid in cellular recognition.",
+            "correct": true,
+            "explanation": "True. The glycocalyx is a carbohydrate coating formed by glycoproteins and glycolipids on the cell membrane, and it helps the immune system distinguish the body's own cells from pathogens and diseased cells."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-16",
+          "question": {
+            "stem": "Phosphorylation is the removal of a phosphate group from an organic molecule and is carried out by an enzyme called a kinase.",
+            "correct": false,
+            "explanation": "False. Phosphorylation is the ADDITION of a phosphate group to an organic compound. It is catalyzed by a kinase and can alter a molecule's size, charge, and function (for example, converting glucose to glucose phosphate)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-17",
+          "question": {
+            "stem": "Amino acids are joined into peptides and proteins by peptide bonds, which form via dehydration synthesis.",
+            "correct": true,
+            "explanation": "True. Peptide bonds are the covalent bonds that link amino acids together, and they form by dehydration synthesis, releasing a molecule of water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-18",
+          "question": {
+            "stem": "The monosaccharides that make up carbohydrates are joined to one another by glycosidic bonds.",
+            "correct": true,
+            "explanation": "True. Monosaccharides are linked into disaccharides and polysaccharides by glycosidic bonds ('glyco' meaning sugar), which form through dehydration synthesis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-19",
+          "question": {
+            "stem": "The presence of polar hydroxyl groups makes carbohydrates polar molecules that dissolve readily in water.",
+            "correct": true,
+            "explanation": "True. Carbohydrates contain many hydroxyl (-OH) groups, which are polar; this polarity allows carbohydrates to interact with and dissolve in water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-20",
+          "question": {
+            "stem": "The chemical formula for a methyl group is -OH.",
+            "correct": false,
+            "explanation": "False. -OH is the formula for a hydroxyl group. A methyl group is -CH3."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-21",
+          "question": {
+            "stem": "Phosphorylation is carried out by enzymes called kinases, which transfer a phosphate group onto an organic compound.",
+            "correct": true,
+            "explanation": "A kinase is an enzyme that catalyzes the transfer of a phosphate group. For example, hexokinase adds a phosphate to glucose, forming glucose phosphate."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-22",
+          "question": {
+            "stem": "The chemical formula of a carboxyl group is -NH2.",
+            "correct": false,
+            "explanation": "-NH2 is the amino group. The carboxyl group is -COOH, which is a component of acids (including the acidic end of fatty acids and amino acids)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-23",
+          "question": {
+            "stem": "Carbon is important in the body because each carbon atom can form up to four covalent bonds, allowing it to build long, stable carbon skeletons.",
+            "correct": true,
+            "explanation": "Carbon has four valence electrons and completes its valence shell by sharing electrons in four covalent bonds, enabling the formation of long carbon chains that serve as the backbone of organic molecules."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-24",
+          "question": {
+            "stem": "Saturated fatty acids have no double bonds between their carbons and are solid at room temperature, while unsaturated fatty acids contain one or more double bonds that kink the chain and keep them liquid at room temperature.",
+            "correct": true,
+            "explanation": "Saturated fatty acid chains are straight, pack tightly, and are solid/semi-solid at room temperature; monounsaturated (one double bond) and polyunsaturated (more than one double bond) chains are kinked and liquid at room temperature."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-25",
+          "question": {
+            "stem": "ATP contains the sugar deoxyribose, the same pentose sugar found in DNA.",
+            "correct": false,
+            "explanation": "ATP contains ribose (like RNA), not deoxyribose. ATP is composed of a ribose sugar, an adenine base, and three phosphate groups."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-26",
+          "question": {
+            "stem": "Hexose sugars such as glucose, fructose, and galactose contain six carbon atoms, whereas pentose sugars such as ribose and deoxyribose contain five carbon atoms.",
+            "correct": true,
+            "explanation": "Hexoses (glucose, fructose, galactose) have six carbons; pentoses (ribose, deoxyribose) have five carbons. All are composed of carbon, hydrogen, and oxygen."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-27",
+          "question": {
+            "stem": "The covalent bonds that link amino acids together within a protein are called glycosidic bonds.",
+            "correct": false,
+            "explanation": "Amino acids are joined by peptide bonds. Glycosidic bonds link monosaccharides together in carbohydrates. Both types form via dehydration synthesis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-28",
+          "question": {
+            "stem": "Glycoproteins and glycolipids are components of the glycocalyx found on the cell membrane.",
+            "correct": true,
+            "explanation": "The glycocalyx is a carbohydrate-rich coating formed by short sugar chains attached to proteins (glycoproteins) and lipids (glycolipids), which aid in cellular recognition by the immune system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-29",
+          "question": {
+            "stem": "The main categories of organic compounds examined in this unit are carbohydrates, lipids, proteins, and nucleotides/nucleic acids.",
+            "correct": true,
+            "explanation": "The unit outline lists the chemistry of carbon followed by the four major classes of biological macromolecules: carbohydrates, lipids, proteins, and nucleotides and nucleic acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-tf-30",
+          "question": {
+            "stem": "Prostaglandins are steroid hormones that travel through the bloodstream to act on distant organs throughout the body.",
+            "correct": false,
+            "explanation": "False. Prostaglandins are lipid molecules derived from fatty acid chains, not steroids, and they act as hormone-like signaling molecules that work locally at their site of release rather than travelling through the bloodstream to distant sites."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u3-basic-fitb-01",
+          "question": {
+            "stem": "Steroid hormones such as testosterone, estradiol, and cortisol are all built using ____________ as their structural starting molecule.",
+            "answer": "cholesterol",
+            "accepted_synonyms": [],
+            "explanation": "Cholesterol is the sterol that serves as the building block for the body's steroid hormones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-02",
+          "question": {
+            "stem": "The two monosaccharides within a disaccharide are joined together by a glycosidic bond, which is formed through the process of dehydration synthesis to create a larger ____________.",
+            "answer": "carbohydrate",
+            "accepted_synonyms": [
+              "carbohydrates"
+            ],
+            "explanation": "Glycosidic bonds join sugar monomers into larger carbohydrate molecules within the carbohydrate group."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-03",
+          "question": {
+            "stem": "The spiral secondary structure of a protein known as the alpha-helix is held in shape by hydrogen bonds bridging different regions of a chain of amino acids linked by ____________ bonds.",
+            "answer": "peptide",
+            "accepted_synonyms": [
+              "peptide bond",
+              "peptide bonds"
+            ],
+            "explanation": "Amino acids in a protein are joined by peptide bonds, and the alpha-helix (a secondary structure) is a coiled form of this chain."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-04",
+          "question": {
+            "stem": "A molecule consisting of a central carbon bonded to a hydrogen atom, an amino group, a carboxyl group, and a variable side chain (R-group) is called an ____________.",
+            "answer": "amino acid",
+            "accepted_synonyms": [
+              "amino acids"
+            ],
+            "explanation": "This is the defining structure of an amino acid, the monomer of proteins."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-05",
+          "question": {
+            "stem": "Glucose, fructose, and galactose each contain six carbon atoms, making them hexose ____________ that serve as the individual sugar units of carbohydrates.",
+            "answer": "monosacchariide",
+            "accepted_synonyms": [
+              "monosaccharide",
+              "monosaccharides",
+              "monosacchariides"
+            ],
+            "explanation": "Hexose sugars like glucose are monosaccharides, the single sugar unit monomers of carbohydrates."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-06",
+          "question": {
+            "stem": "Because they contain polar hydroxyl groups, most carbohydrates can dissolve in water and are therefore described as ____________.",
+            "answer": "hydrophilic",
+            "accepted_synonyms": [],
+            "explanation": "The polar hydroxyl groups make carbohydrates polar and water-soluble, i.e., hydrophilic."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-07",
+          "question": {
+            "stem": "The functional group with the formula -COOH, found in acids and at one end of a fatty acid, is called the ____________.",
+            "answer": "carboxyl group",
+            "accepted_synonyms": [
+              "carboxyl",
+              "carboxyl groups"
+            ],
+            "explanation": "The carboxyl group (-COOH) is one of the five key functional groups and is a component of acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-08",
+          "question": {
+            "stem": "The polar head of a phospholipid, which interacts with water on both sides of a cell membrane, contains a ____________ group.",
+            "answer": "phosphate",
+            "accepted_synonyms": [
+              "phosphate group",
+              "phosphate groups"
+            ],
+            "explanation": "The phosphate group forms the polar, hydrophilic head of a phospholipid that interacts with the watery fluids surrounding the membrane."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-09",
+          "question": {
+            "stem": "The energy-storing nucleotide that is composed of a ribose sugar, an adenine base, and three phosphate groups is ____________.",
+            "answer": "adenosine triphosphate (ATP)",
+            "accepted_synonyms": [
+              "ATP",
+              "adenosine triphosphate"
+            ],
+            "explanation": "ATP is the nucleotide with ribose, adenine, and three phosphates that stores potential energy in its phosphate bonds."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-10",
+          "question": {
+            "stem": "The addition of a phosphate group to an organic compound, a reaction carried out by a kinase enzyme, is called ____________.",
+            "answer": "phosphorylation",
+            "accepted_synonyms": [],
+            "explanation": "Phosphorylation is the addition of a phosphate group to a molecule, catalyzed by a kinase."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-11",
+          "question": {
+            "stem": "The covalent bond that joins two amino acids together during dehydration synthesis is called a(n) ____________.",
+            "answer": "peptide bond",
+            "accepted_synonyms": [
+              "peptide bonds"
+            ],
+            "explanation": "Amino acids are linked into protein chains by peptide bonds formed via dehydration synthesis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-12",
+          "question": {
+            "stem": "A monomer composed of one or more phosphate groups, a pentose sugar, and a nitrogen-containing base is called a(n) ____________.",
+            "answer": "nucleotide",
+            "accepted_synonyms": [
+              "nucleotides"
+            ],
+            "explanation": "A nucleotide contains a phosphate group, a pentose sugar (ribose or deoxyribose), and a nitrogen-containing base; these assemble into DNA, RNA, and ATP."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-13",
+          "question": {
+            "stem": "A nonpolar organic compound made primarily of hydrocarbons that does not dissolve in water is classified as a(n) ____________.",
+            "answer": "lipid",
+            "accepted_synonyms": [
+              "lipids"
+            ],
+            "explanation": "Lipids are nonpolar, hydrophobic compounds made mostly of hydrocarbons that do not dissolve in water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-14",
+          "question": {
+            "stem": "Because it has four valence electrons and readily shares them, ____________ forms the covalently bonded backbone (skeleton) of virtually all organic compounds in the body.",
+            "answer": "carbon",
+            "accepted_synonyms": [],
+            "explanation": "Carbon's ability to share four electrons via covalent bonds lets it form the long chains that serve as the backbone of organic molecules."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-15",
+          "question": {
+            "stem": "A mixture in which tiny droplets of a nonpolar liquid are dispersed within water, such as milk fat suspended in water, is called a(n) ____________.",
+            "answer": "emulsion",
+            "accepted_synonyms": [
+              "emulsions"
+            ],
+            "explanation": "Lipids do not truly dissolve in water but can form an emulsion, a suspension of droplets, as seen in milk."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-16",
+          "question": {
+            "stem": "The five-carbon (pentose) sugar found in RNA is ____________.",
+            "answer": "ribose",
+            "accepted_synonyms": [],
+            "explanation": "Ribose is the pentose sugar in RNA, whereas deoxyribose is found in DNA."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-17",
+          "question": {
+            "stem": "In a triglyceride, three fatty acid chains are attached by dehydration synthesis to a backbone molecule called ____________.",
+            "answer": "glycerol",
+            "accepted_synonyms": [],
+            "explanation": "A triglyceride consists of a glycerol backbone bonded to three fatty acid chains."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-18",
+          "question": {
+            "stem": "A sugar-fat compound found in the cell membrane that, along with glycoproteins, forms part of the glycocalyx is a(n) ____________.",
+            "answer": "glycolipid",
+            "accepted_synonyms": [
+              "glycolipids"
+            ],
+            "explanation": "Glycolipids are sugar-fat compounds in the cell membrane that contribute to the glycocalyx and cellular recognition."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-19",
+          "question": {
+            "stem": "The lipid that self-assembles into a bilayer forming the basis of the cell membrane, having a hydrophilic head and hydrophobic tails, is a(n) ____________.",
+            "answer": "phospholipid",
+            "accepted_synonyms": [
+              "phospholipids"
+            ],
+            "explanation": "Phospholipids, with a polar phosphate head and two nonpolar fatty acid tails, self-assemble into the bilayer of cell membranes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-20",
+          "question": {
+            "stem": "The functional group with the chemical formula –COOH, which is characteristic of acids, is the ____________.",
+            "answer": "carboxyl group",
+            "accepted_synonyms": [
+              "carboxyl",
+              "carboxyl groups"
+            ],
+            "explanation": "The carboxyl group (–COOH) is one of the five key functional groups and is a component of acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-21",
+          "question": {
+            "stem": "The steroid ____________, synthesized by the liver, serves as the building block from which steroid hormones such as testosterone and cortisol are made.",
+            "answer": "cholesterol",
+            "accepted_synonyms": [],
+            "explanation": "Cholesterol is the sterol foundation for steroid hormones and bile acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-22",
+          "question": {
+            "stem": "A triglyceride is formed when three fatty acid chains attach to a single molecule of ____________, which serves as the backbone.",
+            "answer": "glycerol",
+            "accepted_synonyms": [],
+            "explanation": "The glycerol backbone bonds to three fatty acids to form a triglyceride."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-23",
+          "question": {
+            "stem": "The central carbon of every ____________ is bonded to a hydrogen atom, an amino group, a carboxyl group, and a variable side chain.",
+            "answer": "amino acid",
+            "accepted_synonyms": [
+              "amino acids"
+            ],
+            "explanation": "This describes the shared structure of the 20 amino acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-24",
+          "question": {
+            "stem": "Within proteins, individual amino acid monomers are joined together by a covalent bond called a ____________.",
+            "answer": "peptide bond",
+            "accepted_synonyms": [
+              "peptide bonds"
+            ],
+            "explanation": "Peptide bonds link amino acids via dehydration synthesis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-25",
+          "question": {
+            "stem": "The functional group with the chemical formula –NH2, found in all amino acids, is called the ____________.",
+            "answer": "amino group",
+            "accepted_synonyms": [
+              "amino"
+            ],
+            "explanation": "Slide 8 reviews that –NH2 is the amino group, an alkaline functional group present in amino acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-26",
+          "question": {
+            "stem": "The reaction in which an enzyme called a kinase adds a phosphate group to an organic compound such as ADP or glucose is called ____________.",
+            "answer": "phosphorylation",
+            "accepted_synonyms": [],
+            "explanation": "Phosphorylation is the addition of a phosphate group, catalyzed by kinases."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-27",
+          "question": {
+            "stem": "Because lipids are nonpolar and do not dissolve in water, mixing them thoroughly with water produces an ____________, a suspension of tiny droplets, as seen in milk.",
+            "answer": "emulsion",
+            "accepted_synonyms": [
+              "emulsions"
+            ],
+            "explanation": "Lipids form emulsions rather than true solutions in water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-28",
+          "question": {
+            "stem": "In DNA, the pentose sugar found in each nucleotide is ____________, whereas in RNA the sugar is ribose.",
+            "answer": "deoxyribose",
+            "accepted_synonyms": [],
+            "explanation": "DNA nucleotides contain deoxyribose; RNA contains ribose."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-29",
+          "question": {
+            "stem": "The functional group with the chemical formula -COOH, which makes molecules acidic and is found on fatty acids and amino acids, is the ____________.",
+            "answer": "carboxyl group",
+            "accepted_synonyms": [
+              "carboxyl groups",
+              "carboxyl"
+            ],
+            "explanation": "The carboxyl group (-COOH) is the acidic functional group."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fitb-30",
+          "question": {
+            "stem": "The polar, water-attracting head of a phospholipid is described as ____________, which allows the heads to face the watery fluids on the inside and outside of a cell membrane.",
+            "answer": "hydrophilic",
+            "accepted_synonyms": [],
+            "explanation": "The phosphate head is hydrophilic, orienting toward water in a bilayer."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u3-basic-fr-01",
+          "question": {
+            "prompt": "Pentose and hexose sugars are two categories of monosaccharide. State the structural difference between a pentose and a hexose sugar, and give one example of each.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that pentose sugars contain five carbon atoms."
+              },
+              {
+                "points": 1,
+                "criterion": "States that hexose sugars contain six carbon atoms."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct pentose example (ribose or deoxyribose)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct hexose example (glucose, fructose, or galactose)."
+              }
+            ],
+            "model_answer": "Pentose sugars contain five carbon atoms, while hexose sugars contain six carbon atoms. An example of a pentose is ribose (or deoxyribose), and an example of a hexose is glucose (or fructose or galactose)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fr-02",
+          "question": {
+            "prompt": "Describe the three subunits that make up a nucleotide, and briefly explain one way in which ATP differs from the nucleotides found in DNA and RNA.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies one or more phosphate groups as a subunit."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies a pentose sugar (deoxyribose or ribose) as a subunit."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies a nitrogen-containing base as a subunit."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains a difference of ATP (e.g., it carries three phosphate groups whose bonds store energy, rather than being linked into a nucleic acid strand)."
+              }
+            ],
+            "model_answer": "A nucleotide is composed of one or more phosphate groups, a pentose sugar (deoxyribose or ribose), and a nitrogen-containing base. ATP differs in that it is a single nucleotide with three phosphate groups whose high-energy covalent bonds store potential energy, rather than being linked into a long nucleic acid strand like the nucleotides of DNA and RNA."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fr-03",
+          "question": {
+            "prompt": "Name the type of covalent bond that joins monomers within a carbohydrate polymer, and the type that joins monomers within a protein. Briefly state the general reaction that forms both of these bonds.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies the glycosidic bond as joining monosaccharides in carbohydrates."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the peptide bond as joining amino acids in proteins."
+              },
+              {
+                "points": 1,
+                "criterion": "States that both bonds form by dehydration synthesis (condensation), releasing water."
+              }
+            ],
+            "model_answer": "In carbohydrates, monosaccharides are joined by glycosidic bonds. In proteins, amino acids are joined by peptide bonds. Both types of bond are formed by dehydration synthesis (condensation), which releases a molecule of water as the monomers link together."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fr-04",
+          "question": {
+            "prompt": "Explain what happens during phosphorylation, identify the type of enzyme that carries it out, and give one example of how phosphorylation can change a molecule's function.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that phosphorylation is the addition of a phosphate group to an organic compound."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies a kinase as the enzyme that transfers phosphate groups."
+              },
+              {
+                "points": 2,
+                "criterion": "Gives a functional consequence example (e.g., phosphorylating glucose changes its size/charge so it cannot leave the cell, or phosphate can activate/regulate enzymes)."
+              }
+            ],
+            "model_answer": "Phosphorylation is the addition of a phosphate group to an organic compound. It is carried out by a kinase, an enzyme that transfers phosphate groups (for example from ATP). Adding a phosphate can change a molecule's function: for instance, phosphorylating glucose increases its size and charge so that it can no longer exit the cell through the channel it entered, trapping it inside for storage or metabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fr-05",
+          "question": {
+            "prompt": "A phospholipid has a polar phosphate head and two nonpolar fatty acid tails. Explain how this structure allows phospholipids to form the cell membrane, and briefly describe how phospholipids are arranged differently in a lipoprotein.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that the phosphate head is hydrophilic/polar and the fatty acid tails are hydrophobic/nonpolar."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that in a membrane phospholipids form a bilayer, with heads facing the watery fluids and tails facing inward toward each other."
+              },
+              {
+                "points": 1,
+                "criterion": "States that in a lipoprotein phospholipids form a single outer layer, with heads outward toward the blood/water and tails facing the lipid core inside."
+              }
+            ],
+            "model_answer": "The phosphate head is polar and hydrophilic while the two fatty acid tails are nonpolar and hydrophobic. In a cell membrane, phospholipids self-assemble into a bilayer: the hydrophilic heads face the watery intracellular and interstitial fluids on each side, while the hydrophobic tails point inward toward one another. In a lipoprotein, the phospholipids instead form a single outer layer, with their heads facing outward into the water-based blood plasma and their tails facing inward toward the hydrophobic triglycerides and cholesterol in the core."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fr-06",
+          "question": {
+            "prompt": "The glycocalyx is a coating found on the outer surface of cell membranes. Name the two types of molecules that make up the glycocalyx, and state one function it serves.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies glycolipids as a component of the glycocalyx."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies glycoproteins as a component of the glycocalyx."
+              },
+              {
+                "points": 1,
+                "criterion": "States a function, e.g., cellular identification/recognition allowing the immune system to distinguish self from pathogen/diseased cells."
+              }
+            ],
+            "model_answer": "The glycocalyx is made up of glycolipids (sugar-fat compounds) and glycoproteins (sugar-protein compounds). Its function is cellular identification and recognition: the sugar residues allow the immune system to distinguish the body's own cells from pathogens and to tell healthy cells apart from diseased ones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fr-07",
+          "question": {
+            "prompt": "Name any two of the five functional groups important in human physiology. For each one, give its chemical formula and state one class of molecule or role it is associated with in the body.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names a correct functional group and gives its correct formula (e.g., hydroxyl -OH, carboxyl -COOH, amino -NH2, methyl -CH3, phosphate -PO4)."
+              },
+              {
+                "points": 1,
+                "criterion": "States a correct role/association for that first group (e.g., carboxyl = acids; amino = amino acids; phosphate = phospholipids/nucleotides; methyl = fatty acids; hydroxyl = polar/hydrogen bonding)."
+              },
+              {
+                "points": 1,
+                "criterion": "Names a second correct functional group and gives its correct formula."
+              },
+              {
+                "points": 1,
+                "criterion": "States a correct role/association for that second group."
+              }
+            ],
+            "model_answer": "The carboxyl group (-COOH) is a component of acids and is found on fatty acids and amino acids. The amino group (-NH2) is a component of amino acids, the building blocks of proteins. (Other acceptable answers: hydroxyl -OH, found in all four classes of organic compounds and polar/involved in hydrogen bonding; methyl -CH3, found on fatty acids; phosphate -PO4, found in phospholipids and nucleotides.)"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fr-08",
+          "question": {
+            "prompt": "Describe the general structure of an amino acid, then explain the difference between the primary structure and the secondary structure of a protein.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that an amino acid has an amino group and a carboxyl group attached to a central carbon."
+              },
+              {
+                "points": 1,
+                "criterion": "States that an amino acid also has a variable side chain (R-group) that determines its identity."
+              },
+              {
+                "points": 1,
+                "criterion": "States that primary structure is the linear sequence/chain of amino acids."
+              },
+              {
+                "points": 1,
+                "criterion": "States that secondary structure is local folding into alpha-helices and/or beta-sheets, held by hydrogen bonds."
+              }
+            ],
+            "model_answer": "An amino acid consists of a central carbon bonded to an amino group (NH2), a carboxyl group (COOH), a hydrogen atom, and a variable side chain (R-group) that determines the amino acid's identity. The primary structure of a protein is simply the linear sequence of amino acids in the chain. The secondary structure is the local folding of that chain into alpha-helices or beta-pleated sheets, which are held in place by hydrogen bonds between different regions of the strand."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fr-09",
+          "question": {
+            "prompt": "Carbohydrates are described as polar molecules that dissolve in water, yet the body stores most excess energy as fat rather than as carbohydrate. Explain why carbohydrates are polar and water-soluble, and why this makes fat a more efficient form of energy storage.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that carbohydrates are polar because they contain hydroxyl (-OH) groups."
+              },
+              {
+                "points": 1,
+                "criterion": "States that this polarity lets them interact with / dissolve in water (bond water)."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains that stored carbohydrate is bonded to water and thus heavier, whereas fat is stored without water, making fat more efficient/lighter to store."
+              }
+            ],
+            "model_answer": "Carbohydrates are polar because they contain many hydroxyl (-OH) groups, which are polar. This polarity allows them to interact with and dissolve in water, meaning stored carbohydrate (such as glycogen) is bonded to water molecules and is therefore heavy. Fat is nonpolar and stored \"pure\" without bonded water, so it is a lighter, more efficient way to store the same amount of energy."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-basic-fr-10",
+          "question": {
+            "prompt": "Sucrose and maltose are both disaccharides joined by a glycosidic bond. Identify the monosaccharides that make up each of these two disaccharides, and explain how the two monosaccharides in each disaccharide are linked together (naming the bond and the type of reaction that forms it).",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that sucrose is made of glucose and fructose."
+              },
+              {
+                "points": 1,
+                "criterion": "States that maltose is made of two glucose molecules."
+              },
+              {
+                "points": 1,
+                "criterion": "Correctly identifies both disaccharides as being linked by a glycosidic bond (formed by dehydration synthesis)."
+              }
+            ],
+            "model_answer": "Sucrose (table sugar) is made of glucose and fructose. Maltose (malt sugar) is made of two glucose molecules linked together. In both cases the two monosaccharides are joined by a glycosidic bond, which is formed by dehydration synthesis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    },
+    "advanced": {
+      "mc": [
+        {
+          "id": "u3-advanced-mc-01",
+          "question": {
+            "stem": "A student claims that all fats are triglycerides and all triglycerides are lipids. Which statement best corrects or clarifies these relationships?",
+            "options": [
+              "Fatty acids and glycerol are both lipids but a triglyceride is not",
+              "Triglyceride is the broadest category, and lipids are one subtype of triglyceride",
+              "Lipid is the broadest category; a triglyceride is one type of lipid, and \"fat\" typically refers to a triglyceride",
+              "Glycerol is the broadest category since it forms the backbone of all lipids",
+              "Cholesterol is a triglyceride because it is a lipid"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Lipid is the umbrella term for nonpolar hydrocarbon-based compounds; a triglyceride is one class of lipid, and the everyday word \"fat\" usually refers to a triglyceride.\n\n**Why the other options are wrong:**\n- **(A)** A triglyceride is a lipid, and fatty acids/glycerol are its components rather than independent lipid categories.\n- **(B)** This reverses the hierarchy; lipid is broader than triglyceride, not the other way around.\n- **(D)** Glycerol is only the backbone of glycerol-based lipids, not the broadest category, and does not form cholesterol.\n- **(E)** Cholesterol is a lipid (a sterol) but is not a triglyceride."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-02",
+          "question": {
+            "stem": "Which of the following is the chemical formula of an amino group?",
+            "options": [
+              "-PO4",
+              "-OH",
+              "-COOH",
+              "-CH3",
+              "-NH2"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The amino group has the formula -NH2 and is the basic (alkaline) nitrogen-containing group found in amino acids.\n\n**Why the other options are wrong:**\n- **(A)** -PO4 is a phosphate group.\n- **(B)** -OH is a hydroxyl group.\n- **(C)** -COOH is an acidic carboxyl group.\n- **(D)** -CH3 is a methyl group."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-03",
+          "question": {
+            "stem": "A dietary fatty acid chain has a methyl group at one end and an acidic group at the other. Which functional group is responsible for the acidic character of that end, and to which class of molecules does it also give acidic properties?",
+            "options": [
+              "Methyl group (-CH3); it makes lipids acidic",
+              "Hydroxyl group (-OH); it makes carbohydrates acidic",
+              "Phosphate group; it makes nucleotides acidic",
+              "Amino group (-NH2); it makes proteins acidic",
+              "Carboxyl group (-COOH); it is a component of acids"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The carboxyl group (-COOH) is the acidic functional group and is a component of acids, including the carboxyl end of a fatty acid.\n\n**Why the other options are wrong:**\n- **(A)** The methyl group is at the opposite (nonpolar) end and does not confer acidity.\n- **(B)** Hydroxyl groups are polar but confer polarity, not acidity, to carbohydrates.\n- **(C)** Phosphate groups are part of nucleotides but the acidic end of a fatty acid is the carboxyl group.\n- **(D)** The amino group is alkaline (basic), not acidic."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-04",
+          "question": {
+            "stem": "How does ATP structurally differ from a nucleotide found within a strand of DNA?",
+            "options": [
+              "ATP contains three phosphate groups and a ribose sugar, whereas a DNA nucleotide contains one phosphate group and deoxyribose",
+              "ATP uses uracil as its base while DNA nucleotides use thymine",
+              "ATP contains two nitrogen bases joined by a hydrogen bond",
+              "ATP contains a deoxyribose sugar while DNA nucleotides contain ribose",
+              "ATP lacks a nitrogen-containing base entirely"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** ATP has three phosphate groups and a ribose sugar with an adenine base, while a DNA nucleotide has a single phosphate and a deoxyribose sugar.\n\n**Why the other options are wrong:**\n- **(B)** ATP uses adenine, not uracil, as its base.\n- **(C)** ATP is a single nucleotide, not two bases joined by a hydrogen bond.\n- **(D)** This reverses the sugars; ATP has ribose and DNA has deoxyribose.\n- **(E)** ATP contains the adenine base."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-05",
+          "question": {
+            "stem": "A reaction joins two monomers together and releases a molecule of water. Which pair of terms correctly names this reaction and its reverse?",
+            "options": [
+              "Phosphorylation (joining); emulsification (splitting)",
+              "Emulsion (joining); condensation (splitting)",
+              "Hydrolysis (joining); dehydration synthesis (splitting)",
+              "Glycosidic bonding (joining); peptide bonding (splitting)",
+              "Dehydration synthesis (joining); hydrolysis (splitting)"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Dehydration synthesis links monomers while releasing water, and hydrolysis is the reverse reaction that splits polymers using water.\n\n**Why the other options are wrong:**\n- **(A)** Phosphorylation adds a phosphate group, and emulsification is not a bond-breaking reaction.\n- **(B)** An emulsion is a physical mixture, and condensation is actually a synonym for dehydration synthesis (joining).\n- **(C)** These labels are reversed; hydrolysis splits, dehydration synthesis joins.\n- **(D)** Glycosidic and peptide bonds are specific bond types, not the general reaction and its reverse."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-06",
+          "question": {
+            "stem": "When glucose first enters a cell, a hexokinase transfers a phosphate group to it. What does this phosphorylation accomplish?",
+            "options": [
+              "It converts glucose directly into ATP",
+              "It makes glucose nonpolar so it can cross the membrane freely",
+              "It alters the size and charge of glucose so it cannot exit through the channel it entered by",
+              "It splits glucose into two monosaccharides",
+              "It removes energy from glucose so it can no longer be metabolized"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Adding a phosphate group changes glucose's size and charge, trapping it inside the cell because it can no longer exit via the channel it entered through.\n\n**Why the other options are wrong:**\n- **(A)** Glucose is not converted into ATP; ATP donates the phosphate.\n- **(B)** The added charged phosphate makes glucose more polar, not nonpolar.\n- **(D)** Phosphorylation adds a group, it does not hydrolyze glucose into monosaccharides.\n- **(E)** Phosphorylation prepares glucose for storage or metabolism, not removal from use."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-07",
+          "question": {
+            "stem": "Why is carbon uniquely suited to form the backbone of the body's organic macromolecules?",
+            "options": [
+              "It has one valence electron, allowing it to bond to a single other atom",
+              "It has four valence electrons and completes its shell by sharing electrons in up to four covalent bonds, forming long stable chains",
+              "It readily donates four electrons to form ionic bonds",
+              "It cannot bond with hydrogen, oxygen, or nitrogen",
+              "It always forms double bonds, giving rigid straight molecules"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Carbon has four valence electrons and completes its octet by sharing electrons in up to four covalent bonds, letting it form long, branching carbon skeletons.\n\n**Why the other options are wrong:**\n- **(A)** Carbon has four valence electrons, not one.\n- **(C)** Carbon shares electrons via covalent bonds rather than donating them ionically.\n- **(D)** Carbon commonly bonds with hydrogen, oxygen, and nitrogen.\n- **(E)** Carbon can form single, double, or triple bonds, not always double bonds."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-08",
+          "question": {
+            "stem": "The same phospholipids that form a bilayer around a cell also coat the outside of a lipoprotein. Which feature of phospholipid structure explains why they behave differently in these two arrangements?",
+            "options": [
+              "Phospholipids have three fatty acid tails that repel one another",
+              "Phospholipids are entirely hydrophobic, so they always cluster together away from water",
+              "Phospholipids have a nonpolar head and polar tails, reversing the usual orientation",
+              "Phospholipids have both a hydrophilic phosphate head and hydrophobic fatty acid tails, so their heads face watery fluids while tails face nonpolar contents",
+              "Phospholipids are entirely hydrophilic, so they dissolve completely in water"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The amphipathic structure (hydrophilic phosphate head, hydrophobic tails) lets phospholipids orient heads toward water and tails toward nonpolar interiors, whether forming a bilayer or the single outer layer of a lipoprotein.\n\n**Why the other options are wrong:**\n- **(A)** Phospholipids have two fatty acid tails, not three.\n- **(B)** Phospholipids are amphipathic, not entirely hydrophobic.\n- **(C)** The head is polar/hydrophilic and the tails are nonpolar, not the reverse.\n- **(E)** They are not entirely hydrophilic; the tails are hydrophobic."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-09",
+          "question": {
+            "stem": "Both a hexose and a pentose sugar are composed of carbon, hydrogen, and oxygen. Which statement correctly distinguishes them and gives a valid example of each?",
+            "options": [
+              "A hexose has five carbons (e.g., glucose) and a pentose has six carbons (e.g., ribose)",
+              "A hexose has six carbons (e.g., glucose) and a pentose has five carbons (e.g., ribose)",
+              "A hexose has five carbons (e.g., deoxyribose) and a pentose has six carbons (e.g., fructose)",
+              "A hexose is a polysaccharide (e.g., starch) and a pentose is a disaccharide (e.g., sucrose)",
+              "A hexose contains nitrogen (e.g., galactose) while a pentose does not (e.g., fructose)"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Hexose sugars contain six carbons (glucose, fructose, galactose) while pentose sugars contain five carbons (ribose, deoxyribose).\n\n**Why the other options are wrong:**\n- **(A)** This reverses the carbon counts.\n- **(C)** This again assigns the wrong carbon count to each sugar type.\n- **(D)** Hexoses and pentoses are monosaccharides, not poly- or disaccharides.\n- **(E)** Carbohydrates contain only C, H, and O, not nitrogen."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-10",
+          "question": {
+            "stem": "The 20 amino acids used to build proteins all share the same central structure but differ in one feature. What is that distinguishing feature, and what does it determine?",
+            "options": [
+              "The variable side chain (R-group); it determines the amino acid's identity and can be polar or nonpolar",
+              "The hydrogen atom; it determines the amino acid's charge",
+              "The central carbon; it determines protein length",
+              "The amino group; it determines whether the amino acid is essential",
+              "The carboxyl group; it determines the number of peptide bonds"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** All 20 amino acids share a central carbon bonded to an amino group, a carboxyl group, and a hydrogen; only the variable R-group differs and gives each amino acid its identity and polar/nonpolar character.\n\n**Why the other options are wrong:**\n- **(B)** The bonded hydrogen atom is common to all amino acids and does not determine identity.\n- **(C)** The central carbon is identical in all amino acids.\n- **(D)** The amino group is common to all amino acids and does not define identity.\n- **(E)** The carboxyl group is shared by all amino acids and does not set peptide bond number."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-11",
+          "question": {
+            "stem": "A cell surface displays a coating that its own immune system reads to distinguish 'self' from a pathogen. Which pair of molecule types contributes carbohydrate residues to this glycocalyx?",
+            "options": [
+              "Nucleotides and prostaglandins",
+              "Glycolipids and glycoproteins",
+              "Fatty acids and glycerol",
+              "Triglycerides and steroids",
+              "Phospholipids and cholesterol"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The glycocalyx is formed from short carbohydrate chains attached to glycolipids and glycoproteins in the cell membrane, both of which aid in cellular recognition.\n\n**Why the other options are wrong:**\n- **(A)** Nucleotides and prostaglandins are not surface recognition molecules of the glycocalyx.\n- **(C)** Fatty acids and glycerol are components of lipids, not the sugar-bearing recognition molecules.\n- **(D)** Triglycerides store energy and steroids are ring lipids; neither forms the glycocalyx.\n- **(E)** Phospholipids form the bilayer and cholesterol stabilizes membranes, but neither carries the identifying sugars of the glycocalyx."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-12",
+          "question": {
+            "stem": "A student compares a molecule of DNA nucleotide, an RNA nucleotide, and an ATP molecule. Which statement correctly distinguishes ATP from the nucleic-acid nucleotides?",
+            "options": [
+              "ATP is double-stranded whereas RNA nucleotides are single-stranded",
+              "ATP uses uracil rather than adenine as its base",
+              "ATP carries three phosphate groups whose phosphate–phosphate bonds store transferable energy",
+              "ATP contains deoxyribose, unlike RNA nucleotides",
+              "ATP lacks a pentose sugar entirely"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** ATP is a ribose-adenine nucleotide with three phosphate groups; the high-energy bonds between those phosphates store potential energy that fuels body activities.\n\n**Why the other options are wrong:**\n- **(A)** ATP is a single molecule, not a double-stranded structure.\n- **(B)** ATP uses adenine as its base, not uracil.\n- **(D)** ATP contains ribose (like RNA), not deoxyribose.\n- **(E)** ATP does contain a pentose sugar (ribose)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-13",
+          "question": {
+            "stem": "When glucose enters a cell, a hexokinase transfers a phosphate group from ATP onto it. What is the functional consequence of this phosphorylation?",
+            "options": [
+              "It removes the hydroxyl groups from glucose to make it hydrophobic",
+              "It changes glucose's size and charge so it cannot exit through the channel it entered",
+              "It links glucose directly to a phospholipid head",
+              "It breaks the glucose ring into two pentose sugars",
+              "It converts glucose into fructose"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Adding a phosphate produces glucose phosphate, a larger, more charged molecule that can no longer leave via the same channel, trapping it for storage or metabolism.\n\n**Why the other options are wrong:**\n- **(A)** Phosphorylation adds a charged group; it does not strip hydroxyls or make glucose hydrophobic.\n- **(C)** Glucose phosphate is not bonded to a phospholipid head.\n- **(D)** The glucose ring is not split into pentoses by phosphorylation.\n- **(E)** Phosphorylation does not isomerize glucose into fructose."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-14",
+          "question": {
+            "stem": "Hemoglobin is assembled from four separate folded polypeptide subunits bonded together. Which level of protein structure does this describe?",
+            "options": [
+              "Quaternary structure",
+              "Tertiary structure",
+              "Secondary structure",
+              "Primary structure",
+              "It is not a protein structure at all"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Quaternary structure arises when two or more separate tertiary polypeptides bond together, exactly as in hemoglobin's four subunits.\n\n**Why the other options are wrong:**\n- **(B)** Tertiary structure is the 3-D folding of a single polypeptide.\n- **(C)** Secondary structure refers to alpha-helices and beta-sheets held by hydrogen bonds.\n- **(D)** Primary structure is the linear amino acid sequence of a single chain.\n- **(E)** Combining multiple polypeptides is a recognized protein structural level."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-15",
+          "question": {
+            "stem": "A dietary fat is solid at room temperature and its fatty acid chains pack tightly together in straight lines. What best explains this behaviour?",
+            "options": [
+              "The fatty acids carry phosphate heads",
+              "The glycerol backbone is missing",
+              "The chains are saturated, having no double bonds",
+              "The chains are polyunsaturated with many kinks",
+              "The chains are monounsaturated with one kink"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Saturated fatty acids have no double bonds, so the straight, rigid chains pack tightly and are solid at room temperature.\n\n**Why the other options are wrong:**\n- **(A)** Fatty acids in triglycerides do not carry phosphate heads (that is a phospholipid feature).\n- **(B)** A triglyceride requires a glycerol backbone; its absence would not explain the solid state.\n- **(D)** Polyunsaturated chains are kinked and liquid at room temperature.\n- **(E)** Monounsaturated chains have one kink and are also liquid at room temperature."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-16",
+          "question": {
+            "stem": "Every one of the 20 amino acids used to build human proteins shares the same core arrangement bonded to a central carbon. Which component is the one that determines the identity and unique properties of a given amino acid?",
+            "options": [
+              "The central hydrogen atom",
+              "The carboxyl group",
+              "The peptide bond",
+              "The variable side chain (R-group)",
+              "The amino group"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The variable side chain (R-group) differs between amino acids and can be polar or nonpolar, giving each its unique characteristics.\n\n**Why the other options are wrong:**\n- **(A)** The central hydrogen atom is identical in each amino acid.\n- **(B)** The carboxyl group is also shared by all amino acids.\n- **(C)** A peptide bond links amino acids together and is not part of an individual amino acid's identity.\n- **(E)** The amino group is common to all 20 amino acids, so it cannot distinguish them."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-17",
+          "question": {
+            "stem": "A student reads that milk is a mixture of tiny fat droplets dispersed in a watery liquid rather than a true solution. Which term from the unit describes this arrangement?",
+            "options": [
+              "Glycosidic bond",
+              "Polymer",
+              "Emulsion",
+              "Hydrolysis",
+              "Monomer"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** An emulsion is a mixture in which tiny droplets of one liquid (fat) are dispersed in another (water), as in milk, because nonpolar lipids do not dissolve in water.\n\n**Why the other options are wrong:**\n- **(A)** A glycosidic bond links monosaccharides, unrelated to droplet dispersion.\n- **(B)** A polymer is a chain of repeating monomers, not a dispersion of droplets.\n- **(D)** Hydrolysis is a reaction that splits polymers using water.\n- **(E)** A monomer is a single building-block unit, not a mixture."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-18",
+          "question": {
+            "stem": "In a cell membrane and in a lipoprotein, phospholipids are oriented differently, yet both arrangements exploit the same structural feature. What feature of a phospholipid drives its behaviour in both settings?",
+            "options": [
+              "It is composed entirely of hydrocarbon rings",
+              "It has three fatty acid tails, making it fully hydrophobic",
+              "It has a polar phosphate head and two nonpolar fatty acid tails",
+              "It carries a nitrogen-containing base and pentose sugar",
+              "It is a straight chain with no charged region"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A phospholipid's hydrophilic phosphate head and hydrophobic fatty acid tails cause it to self-assemble into bilayers in membranes and to form the outer coat of lipoproteins (heads facing the aqueous plasma, tails facing the packaged lipids).\n\n**Why the other options are wrong:**\n- **(A)** Hydrocarbon rings describe steroids, not phospholipids.\n- **(B)** A phospholipid has two fatty acid tails, not three, and is not fully hydrophobic.\n- **(D)** Nitrogen-containing bases and pentose sugars are features of nucleotides.\n- **(E)** A phospholipid has a charged polar head, so it is not entirely uncharged."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-19",
+          "question": {
+            "stem": "Sucrose (table sugar) and maltose (malt sugar) are both disaccharides. What monosaccharide do they have in common in their composition?",
+            "options": [
+              "Fructose",
+              "Deoxyribose",
+              "Galactose",
+              "Ribose",
+              "Glucose"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Sucrose is glucose + fructose and maltose is glucose + glucose, so glucose is present in both disaccharides.\n\n**Why the other options are wrong:**\n- **(A)** Fructose is in sucrose but not in maltose.\n- **(B)** Deoxyribose is a pentose sugar found in DNA, not in these disaccharides.\n- **(C)** Galactose is part of lactose, not sucrose or maltose.\n- **(D)** Ribose is a pentose sugar found in RNA, not in these disaccharides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-20",
+          "question": {
+            "stem": "A student is asked to identify the bond that joins the monomers in three different polymers: a polysaccharide, a protein, and a triglyceride. Which set correctly names those bonds?",
+            "options": [
+              "Peptide bond; glycosidic bond; hydrogen bond",
+              "Glycosidic bond; hydrogen bond; peptide bond",
+              "Hydrogen bond; peptide bond; glycosidic bond",
+              "Glycosidic bond; peptide bond; ester bond formed by dehydration synthesis",
+              "Ester bond; glycosidic bond; hydrogen bond"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Monosaccharides join by glycosidic bonds, amino acids join by peptide bonds, and fatty acids attach to glycerol via dehydration synthesis (ester-type bonds); all are formed by dehydration synthesis.\n\n**Why the other options are wrong:**\n- **(A)** It mismatches carbohydrates with peptide bonds and calls the fat linkage a hydrogen bond.\n- **(B)** It incorrectly assigns hydrogen bonds to proteins and peptide bonds to fats.\n- **(C)** Hydrogen bonds do not join carbohydrate monomers; the assignments are scrambled.\n- **(E)** It incorrectly assigns hydrogen bonds to triglycerides and mismatches the others."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-21",
+          "question": {
+            "stem": "A student reads that hydrolysis 'ruptures' a polymer into monomers. Based on the meaning of the word parts and how the reaction works, which statement is correct?",
+            "options": [
+              "Hydrolysis forms a peptide bond between two amino acids",
+              "Hydrolysis releases a molecule of water as it joins two monomers",
+              "Hydrolysis removes a phosphate group from ATP without water involvement",
+              "Hydrolysis uses a molecule of water to break a covalent bond between monomers",
+              "Hydrolysis is the reaction that builds glycogen from glucose"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** '-lysis' means rupture, and hydrolysis splits a polymer by adding a water molecule, donating H to one monomer and OH to the other.\n\n**Why the other options are wrong:**\n- **(A)** Forming a peptide bond is a dehydration synthesis (building) reaction.\n- **(B)** Releasing water while joining monomers describes dehydration synthesis, not hydrolysis.\n- **(C)** ATP breakdown to ADP is itself a hydrolysis reaction that does involve water.\n- **(E)** Building glycogen from glucose is a synthesis reaction, not hydrolysis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-22",
+          "question": {
+            "stem": "A phospholipid has a hydrophilic phosphate head and two hydrophobic fatty acid tails. Predict how these molecules will be arranged in a cell membrane versus in a lipoprotein.",
+            "options": [
+              "In both structures the phosphate heads face inward, away from water",
+              "In both structures they form a bilayer with tails facing outward",
+              "In a membrane they form a single layer; in a lipoprotein they form a bilayer",
+              "In a lipoprotein the tails face the plasma while the heads face the lipid core",
+              "In a membrane they form a bilayer with tails facing inward; in a lipoprotein they form a single outer layer with heads facing the surrounding plasma"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** In a membrane phospholipids form a bilayer (tails inward, heads to the aqueous fluids on both sides), while in a lipoprotein they form a single outer layer with polar heads facing the watery plasma and tails facing the lipid core.\n\n**Why the other options are wrong:**\n- **(A)** Phosphate heads are hydrophilic and face toward water, not away.\n- **(B)** A bilayer with tails outward would expose hydrophobic tails to water, which is unfavorable.\n- **(C)** This reverses the correct arrangements for membrane and lipoprotein.\n- **(D)** The polar heads, not the tails, face the aqueous plasma."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-23",
+          "question": {
+            "stem": "Carbon is central to organic compounds because of a specific feature of its valence shell. Which statement best explains why carbon forms the backbone of macromolecules?",
+            "options": [
+              "Carbon forms hydrogen bonds with other carbons to build long chains",
+              "Carbon donates four electrons to become a stable cation, forming ionic backbones",
+              "Carbon accepts four electrons to fill its first shell, forming stable chains",
+              "Carbon has four valence electrons and completes its octet by sharing electrons in covalent bonds, allowing long carbon chains",
+              "Carbon has a full valence shell and therefore never bonds with other atoms"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Carbon has four valence electrons and satisfies the octet rule by sharing electrons through covalent bonds, enabling it to link into long carbon skeletons.\n\n**Why the other options are wrong:**\n- **(A)** Carbon-carbon backbones are held by covalent bonds, not hydrogen bonds.\n- **(B)** Carbon shares rather than donates electrons; it does not form ionic backbones.\n- **(C)** Carbon does not fill a shell by accepting four electrons; it shares them.\n- **(E)** Carbon's valence shell is only half full, which is precisely why it bonds readily."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-24",
+          "question": {
+            "stem": "All nucleotides share a common set of subunits, but ATP is used for energy rather than as part of a nucleic acid strand. Which comparison of ATP to a DNA nucleotide is correct?",
+            "options": [
+              "ATP contains deoxyribose, whereas a DNA nucleotide contains ribose",
+              "ATP and a DNA nucleotide are structurally identical",
+              "ATP lacks a nitrogen-containing base, whereas a DNA nucleotide has one",
+              "ATP contains ribose and three phosphate groups, whereas a DNA nucleotide contains deoxyribose and a single phosphate group",
+              "ATP contains uracil, whereas a DNA nucleotide contains thymine"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** ATP is built from ribose, an adenine base, and three phosphate groups, while a DNA nucleotide has deoxyribose and only one phosphate group.\n\n**Why the other options are wrong:**\n- **(A)** ATP contains ribose, not deoxyribose; DNA contains deoxyribose.\n- **(B)** They differ in sugar type and number of phosphate groups.\n- **(C)** ATP does have a nitrogen base (adenine).\n- **(E)** ATP contains adenine, not uracil."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-25",
+          "question": {
+            "stem": "A hexokinase transfers a phosphate group onto glucose as it enters a cell, producing glucose phosphate. What is the functional consequence of this modification?",
+            "options": [
+              "The larger, charged glucose phosphate cannot exit through the same channel it entered, effectively trapping it in the cell",
+              "The glucose phosphate is exported back into the blood for storage",
+              "The glucose is immediately converted into a fatty acid",
+              "The glucose phosphate becomes nonpolar and diffuses freely across the membrane",
+              "The reaction removes energy from ATP without changing glucose"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Adding a phosphate increases the size and charge of glucose so it can no longer leave through the channel it entered, effectively trapping it for storage or metabolism.\n\n**Why the other options are wrong:**\n- **(B)** The point of trapping is that it cannot be exported through the same channel.\n- **(C)** Glucose phosphate is stored as glycogen or metabolized, not converted directly into a fatty acid.\n- **(D)** The phosphate adds charge, making the molecule more polar, not nonpolar.\n- **(E)** The reaction transfers a phosphate from ATP onto glucose, clearly changing glucose."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-26",
+          "question": {
+            "stem": "A student is comparing the bonds that link monomers in different macromolecule classes. Which pairing correctly matches the macromolecule to the bond joining its monomers?",
+            "options": [
+              "Carbohydrates use ionic bonds; proteins use glycosidic bonds",
+              "Carbohydrates use glycosidic bonds; proteins use peptide bonds",
+              "Carbohydrates use peptide bonds; proteins use glycosidic bonds",
+              "Proteins use glycosidic bonds; triglycerides use peptide bonds",
+              "Both carbohydrates and proteins use hydrogen bonds to join monomers"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Monosaccharides are joined by glycosidic bonds, while amino acids in proteins are joined by peptide bonds; all form via dehydration synthesis.\n\n**Why the other options are wrong:**\n- **(A)** Carbohydrate monomers are joined by glycosidic (covalent) bonds, not ionic bonds.\n- **(C)** This swaps the two correct bond types.\n- **(D)** Proteins use peptide bonds, and triglyceride fatty acids attach via dehydration synthesis, not peptide bonds.\n- **(E)** Hydrogen bonds stabilize secondary structure, not the primary covalent monomer linkages."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-27",
+          "question": {
+            "stem": "Hemoglobin is described as having a quaternary structure, whereas an alpha-helix is a secondary structure. Which statement correctly distinguishes these levels of protein organization?",
+            "options": [
+              "Secondary structure requires peptide bonds between separate proteins, while quaternary does not",
+              "Secondary structure is the linear amino acid sequence, while quaternary structure is a single folded chain",
+              "Both structures refer to the same level of folding in a single polypeptide",
+              "Quaternary structure is a flat 2-D ribbon, while secondary structure is fully 3-D",
+              "Secondary structure (e.g., alpha-helix) is stabilized by hydrogen bonds within one chain, while quaternary structure involves two or more folded polypeptide subunits joined together"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** An alpha-helix is a secondary structure held by hydrogen bonds within a single chain, while quaternary structure arises when multiple tertiary (folded) polypeptide subunits combine, as in hemoglobin's four subunits.\n\n**Why the other options are wrong:**\n- **(A)** Peptide bonds link amino acids within a chain, not the association of separate subunits.\n- **(B)** The linear amino acid sequence is the primary structure, not secondary.\n- **(C)** Secondary is within one chain, while quaternary involves multiple chains—different levels.\n- **(D)** An alpha-helix is essentially a 2-D ribbon; quaternary is multiple 3-D subunits."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-28",
+          "question": {
+            "stem": "A dietary fat that is solid at room temperature is analyzed and found to have straight, tightly packing fatty acid chains. What can be concluded, and how does this differ from an oil?",
+            "options": [
+              "The fat is saturated (no double bonds, straight chains that pack tightly); oils contain unsaturated, kinked chains that cannot pack tightly and stay liquid",
+              "The fat is polyunsaturated; oils are saturated and therefore liquid",
+              "The fat is cholesterol; oils are fatty acids",
+              "The fat is monounsaturated because it is solid; oils have no double bonds",
+              "The fat is a phospholipid; oils are triglycerides"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Straight, tightly packing chains with no double bonds indicate a saturated fat (solid at room temperature), whereas oils contain kinked mono- or polyunsaturated chains that stay liquid.\n\n**Why the other options are wrong:**\n- **(B)** Polyunsaturated chains are kinked and liquid; saturated fats are solid, so this is reversed.\n- **(C)** Cholesterol is a sterol with ring structures, not a straight-chain fat.\n- **(D)** Monounsaturated fats are kinked and liquid; saturation, not unsaturation, causes solidity.\n- **(E)** Solidity and packing relate to saturation of a triglyceride, not to it being a phospholipid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-29",
+          "question": {
+            "stem": "Phosphorylation is described as reversible and is used to build ATP from ADP. Which statement correctly describes what phosphorylation entails and its role?",
+            "options": [
+              "It is the addition of a hydroxyl group to glucose to form glycogen",
+              "It is the addition of a phosphate group to an organic compound, carried out by a kinase, and it can store energy or alter a molecule's function",
+              "It is the process that converts amino acids into proteins",
+              "It is the breakdown of a polysaccharide into monosaccharides",
+              "It is the removal of a phosphate group by a kinase to release energy"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Phosphorylation adds a phosphate group to an organic compound, is catalyzed by a kinase, and can store energy (as in ATP) or change a molecule's function by altering its size and charge.\n\n**Why the other options are wrong:**\n- **(A)** Phosphorylation adds a phosphate, not a hydroxyl group.\n- **(C)** Assembling amino acids into proteins occurs via peptide bonds, not phosphorylation.\n- **(D)** Breaking down polysaccharides is hydrolysis, not phosphorylation.\n- **(E)** Removal of a phosphate is dephosphorylation/hydrolysis, the opposite of phosphorylation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-mc-30",
+          "question": {
+            "stem": "A student learns that the carboxyl group (-COOH) and the amino group (-NH2) are both found on every amino acid. What roles do these two functional groups play?",
+            "options": [
+              "The carboxyl group is acidic and the amino group is basic (alkaline), giving amino acids both acid and base character",
+              "Both groups are phosphate-containing and store energy",
+              "The carboxyl group is basic and the amino group is acidic",
+              "The carboxyl group is a component of fatty acids only, and the amino group is found only in DNA",
+              "Both groups are nonpolar and make amino acids hydrophobic"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The carboxyl group (-COOH) is acidic while the amino group (-NH2) is alkaline/basic, so amino acids contain both an acid and a base.\n\n**Why the other options are wrong:**\n- **(B)** Neither group contains phosphate; the phosphate group is separate.\n- **(C)** This reverses the acid/base identities of the two groups.\n- **(D)** Amino acids universally carry both groups; the amino group is not restricted to DNA.\n- **(E)** These groups are polar and charged, not nonpolar."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u3-advanced-tf-01",
+          "question": {
+            "stem": "Glucose and galactose are both hexose sugars, whereas ribose and deoxyribose are pentose sugars.",
+            "correct": true,
+            "explanation": "Hexose sugars contain six carbons (glucose, fructose, galactose) and pentose sugars contain five carbons (ribose, deoxyribose). The structural difference is the number of carbon atoms in the ring."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-02",
+          "question": {
+            "stem": "In a protein's quaternary structure, hydrogen bonds hold together the alpha-helices and beta-sheets within a single polypeptide chain.",
+            "correct": false,
+            "explanation": "That description matches secondary structure. Quaternary structure arises when two or more separate tertiary polypeptide subunits bond together, as in hemoglobin's four subunits."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-03",
+          "question": {
+            "stem": "In a cell membrane, phospholipids arrange into a bilayer with their hydrophilic phosphate heads facing the watery fluids and their hydrophobic tails facing inward, whereas in a lipoprotein the phospholipids form a single outer layer with heads facing the surrounding plasma.",
+            "correct": true,
+            "explanation": "Membranes and vesicles use a bilayer (two layers of phospholipids, tails together in the middle), while lipoproteins use a single phospholipid outer layer with polar heads outward toward the aqueous blood and tails facing the hydrophobic lipid cargo inside."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-04",
+          "question": {
+            "stem": "Phosphorylation is carried out by enzymes called kinases and can alter a molecule's function, such as trapping glucose inside a cell by increasing its size and charge.",
+            "correct": true,
+            "explanation": "Kinases catalyze the transfer of a phosphate group. Adding a phosphate to glucose forms glucose phosphate, a larger, charged molecule that cannot exit through the channel it entered by."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-05",
+          "question": {
+            "stem": "The bonds joining monosaccharides in carbohydrates, amino acids in proteins, and fatty acids to glycerol in fats all form by dehydration synthesis.",
+            "correct": true,
+            "explanation": "Glycosidic bonds (carbohydrates), peptide bonds (proteins), and the ester linkages of triglycerides are all formed via dehydration synthesis, releasing water as monomers are joined."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-06",
+          "question": {
+            "stem": "Carbon completes its valence shell primarily by donating or accepting four electrons rather than by sharing them.",
+            "correct": false,
+            "explanation": "Carbon has four valence electrons and completes its octet by sharing electrons through covalent bonds, not by donating or accepting them. This sharing allows carbon to form long, stable carbon skeletons."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-07",
+          "question": {
+            "stem": "A triglyceride and a fatty acid are the same thing, since both are the basic units of dietary fat.",
+            "correct": false,
+            "explanation": "A triglyceride is composed of a glycerol backbone bonded to three fatty acid chains. A fatty acid is only one of these hydrocarbon chains, not the whole molecule."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-08",
+          "question": {
+            "stem": "Cholesterol serves as a structural building block for steroid hormones such as testosterone, estradiol, and cortisol.",
+            "correct": true,
+            "explanation": "Cholesterol, a sterol with a four-ring structure, is the foundation from which steroid hormones (progesterone, testosterone, estradiol, cortisol) and bile acids are synthesized."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-09",
+          "question": {
+            "stem": "The glycocalyx is composed only of glycolipids, with proteins playing no role in its structure.",
+            "correct": false,
+            "explanation": "The glycocalyx is formed by both glycolipids and glycoproteins (short carbohydrate chains attached to lipids and proteins on the membrane). Both contribute to cellular recognition and immune surveillance."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-10",
+          "question": {
+            "stem": "Because carbon can form covalent bonds with other carbons as well as with hydrogen, oxygen, and nitrogen, it can build the long, complex carbon skeletons that form the backbone of organic macromolecules.",
+            "correct": true,
+            "explanation": "Carbon's ability to share electrons with multiple other atoms allows it to form chains and branched structures, making it central to building carbohydrates, lipids, proteins, and nucleic acids in the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-11",
+          "question": {
+            "stem": "A protein's quaternary structure arises when two or more separate tertiary polypeptide subunits bond together, as seen in hemoglobin.",
+            "correct": true,
+            "explanation": "Quaternary structure results from the association of multiple folded (tertiary) polypeptide subunits. Hemoglobin, made of four tertiary subunits, is the classic example."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-12",
+          "question": {
+            "stem": "In a triglyceride, three fatty acid chains attach to a glycerol backbone via peptide bonds formed by dehydration synthesis.",
+            "correct": false,
+            "explanation": "The fatty acids attach to glycerol by dehydration synthesis (ester linkages), not peptide bonds. Peptide bonds join amino acids in proteins, not the components of a triglyceride."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-13",
+          "question": {
+            "stem": "The carboxyl group (-COOH) contributes acidic character to molecules, while the amino group (-NH2) is basic (alkaline), and both are found in amino acids.",
+            "correct": true,
+            "explanation": "The carboxyl group is acidic and the amino group is basic (alkaline). Amino acids contain both, giving them their name and their buffering ability."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-14",
+          "question": {
+            "stem": "The glycocalyx on a cell membrane is formed by glycolipids and glycoproteins, both of which contain a carbohydrate component.",
+            "correct": true,
+            "explanation": "The glycocalyx is a carbohydrate coating built from glycolipids (sugar-fat) and glycoproteins (sugar-protein). These sugar residues aid in cellular recognition by the immune system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-15",
+          "question": {
+            "stem": "The glycosidic bonds joining monosaccharides and the peptide bonds joining amino acids are both formed by dehydration synthesis.",
+            "correct": true,
+            "explanation": "Both bond types form via dehydration synthesis, releasing water. Glycosidic bonds link sugars in carbohydrates; peptide bonds link amino acids in proteins; ester bonds link fatty acids to glycerol in fats — all by dehydration synthesis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-16",
+          "question": {
+            "stem": "An alpha-helix is an example of a protein's tertiary structure because it is a three-dimensional coiled shape.",
+            "correct": false,
+            "explanation": "An alpha-helix is a secondary structure, maintained by hydrogen bonds. Although it coils, it is treated as a 2-D ribbon; tertiary structure refers to the further folding into a compact 3-D shape."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-17",
+          "question": {
+            "stem": "ATP differs from the nucleotides in DNA and RNA in that it carries three phosphate groups, whereas nucleotides within nucleic acids contribute a single phosphate to the backbone.",
+            "correct": true,
+            "explanation": "ATP has a ribose sugar, an adenine base, and three phosphates whose bonds store energy. Nucleotides assembled into DNA or RNA contribute one phosphate group each to the sugar-phosphate backbone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-18",
+          "question": {
+            "stem": "In a cell membrane, phospholipids arrange with their hydrophobic tails facing outward toward the surrounding water and their hydrophilic heads meeting in the interior of the bilayer.",
+            "correct": false,
+            "explanation": "It is the reverse: the hydrophilic phosphate heads face the watery intracellular and interstitial fluids, while the hydrophobic tails point inward toward each other, forming the interior of the bilayer."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-19",
+          "question": {
+            "stem": "The terms peptide, polypeptide, and protein all refer to chains of amino acids, differing only approximately by length.",
+            "correct": true,
+            "explanation": "All three describe amino acid chains linked by peptide bonds and share many properties. They are distinguished only by approximate length (peptide ~2–20, polypeptide ~20–100, protein ~>100 amino acids)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-20",
+          "question": {
+            "stem": "A phosphate group is a component of both phospholipids and nucleotides.",
+            "correct": true,
+            "explanation": "True. Phosphate groups (-PO4) are found in all phospholipids (forming the polar head) and in all nucleotides (as part of the sugar-phosphate backbone or ATP), making them a shared functional group across these molecule classes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-21",
+          "question": {
+            "stem": "A monosaccharide is the polymer form of a carbohydrate, while a polysaccharide is the individual repeating unit.",
+            "correct": false,
+            "explanation": "False. The terms are reversed: a monosaccharide (mono- = 'one') is the individual monomer unit, while a polysaccharide (poly- = 'many') is the polymer made of many monosaccharides linked by glycosidic bonds."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-22",
+          "question": {
+            "stem": "Cholesterol serves as the structural building block for steroid hormones such as testosterone, estradiol, and cortisol.",
+            "correct": true,
+            "explanation": "True. Cholesterol, a sterol with four hydrocarbon rings, is the foundation from which the body synthesizes steroid hormones including progesterone, testosterone, estradiol, and cortisol, as well as bile acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-23",
+          "question": {
+            "stem": "Deoxyribose and ribose are pentose sugars, whereas glucose, fructose, and galactose are hexose sugars.",
+            "correct": true,
+            "explanation": "True. Pentose sugars (deoxyribose and ribose) contain five carbon atoms, while hexose sugars (glucose, fructose, galactose) contain six carbon atoms. All are composed of carbon, hydrogen, and oxygen."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-24",
+          "question": {
+            "stem": "The carboxyl group (-COOH) is a component of acids, and it is one of the two functional groups (along with the amino group) found in every amino acid.",
+            "correct": true,
+            "explanation": "True. The carboxyl group (-COOH) is acidic and, together with the alkaline amino group (-NH2), forms the defining pair of functional groups present in all 20 amino acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-25",
+          "question": {
+            "stem": "Phospholipids are the class of lipid that forms the basis of cell membranes, whereas prostaglandins serve as the primary membrane-forming lipid.",
+            "correct": false,
+            "explanation": "False. Phospholipids form the bilayer basis of cell membranes due to their hydrophilic heads and hydrophobic tails. Prostaglandins are hormone-like signaling molecules derived from fatty acids and act locally; they are not structural membrane components."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-26",
+          "question": {
+            "stem": "Saturated fatty acids are straight and pack tightly, making them solid at room temperature, while unsaturated fatty acids are kinked at their double bonds and are liquid at room temperature.",
+            "correct": true,
+            "explanation": "True. The absence of double bonds gives saturated fatty acids straight chains that pack tightly (solid, e.g. butter), while the double bond(s) in mono- and polyunsaturated fatty acids create kinks that prevent tight packing (liquid, e.g. olive oil)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-27",
+          "question": {
+            "stem": "ATP differs from a DNA nucleotide in that ATP contains ribose and three phosphate groups, whereas a DNA nucleotide contains deoxyribose and a single phosphate group.",
+            "correct": true,
+            "explanation": "True. ATP is a nucleotide composed of ribose, an adenine base, and three phosphate groups whose bonds store energy. A DNA nucleotide instead contains deoxyribose, one phosphate group, and a nitrogen-containing base."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-28",
+          "question": {
+            "stem": "The tertiary structure of a protein refers to its two-dimensional alpha-helices and beta-sheets, while the secondary structure describes its compact three-dimensional folding.",
+            "correct": false,
+            "explanation": "False. The definitions are swapped: the secondary structure consists of alpha-helices and beta-sheets held by hydrogen bonds, while the tertiary structure is the compact three-dimensional folding of that secondary structure."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-29",
+          "question": {
+            "stem": "Monosaccharides are joined into polysaccharides by glycosidic bonds, whereas amino acids are joined into proteins by peptide bonds—but both types of bonds form via dehydration synthesis.",
+            "correct": true,
+            "explanation": "True. Carbohydrate monomers link via glycosidic bonds and amino acids link via peptide bonds; despite the different names, both bond types (as well as the ester bonds joining fatty acids to glycerol) form through dehydration synthesis, which releases water."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-tf-30",
+          "question": {
+            "stem": "Carbon can complete its valence shell by sharing electrons, allowing it to form long chains and bond with hydrogen, oxygen, and nitrogen, which is why it serves as the backbone of organic molecules in the body.",
+            "correct": true,
+            "explanation": "True. Carbon has four valence electrons and does not readily donate or accept four electrons; instead it forms four covalent bonds, enabling stable carbon skeletons and bonds with H, O, and N. This versatility is precisely why carbon underlies carbohydrates, lipids, proteins, and nucleotides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u3-advanced-fitb-01",
+          "question": {
+            "stem": "The enzyme hexokinase transfers a phosphate group from ATP to glucose, trapping it inside the cell; this addition of a phosphate group to an organic compound is called ____________.",
+            "answer": "phosphorylation",
+            "accepted_synonyms": [
+              "phosphorylate"
+            ],
+            "explanation": "Phosphorylation is the addition of a phosphate group, catalyzed by a kinase, which can alter a molecule's size and charge (as with glucose)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-02",
+          "question": {
+            "stem": "Within a single polypeptide chain, hydrogen bonds between amino acids in different regions produce the coiled alpha-helix and the flat beta-pleated sheet, which together are known as the protein's secondary structure; the linear sequence of amino acids that determines all higher-level folding is the ____________ structure.",
+            "answer": "primary",
+            "accepted_synonyms": [
+              "primary structure",
+              "1°",
+              "primary structures"
+            ],
+            "explanation": "The primary structure is the sequence of amino acids in the linear chain, from which secondary, tertiary, and quaternary structures arise."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-03",
+          "question": {
+            "stem": "The nitrogen-containing base thymine is found only in DNA, whereas its counterpart in ____________ is uracil.",
+            "answer": "ribonucleic acid (RNA)",
+            "accepted_synonyms": [
+              "RNA",
+              "ribonucleic acid",
+              "mRNA",
+              "messenger RNA"
+            ],
+            "explanation": "RNA uses uracil in place of thymine, distinguishing its base set from that of DNA."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-04",
+          "question": {
+            "stem": "Besides glycolipids and glycoproteins, short carbohydrate chains attached to the cell membrane form a coating that lets the immune system identify a cell as 'self'; this carbohydrate-rich surface layer is the ____________.",
+            "answer": "glycocalyx",
+            "accepted_synonyms": [
+              "glycocalyces"
+            ],
+            "explanation": "The glycocalyx is the carbohydrate coating on the cell membrane, composed of glycolipids and glycoproteins, that aids cellular recognition."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-05",
+          "question": {
+            "stem": "Both galactose and glucose are six-carbon monosaccharides, but deoxyribose and ribose each contain only five carbons; a five-carbon sugar such as ribose is classified as a ____________ sugar.",
+            "answer": "pentose",
+            "accepted_synonyms": [
+              "pentose sugar",
+              "pentoses"
+            ],
+            "explanation": "Pentose sugars (ribose, deoxyribose) have five carbons, in contrast to the six-carbon hexose sugars."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-06",
+          "question": {
+            "stem": "Because the many hydroxyl groups on a carbohydrate are polar, molecules like glucose readily dissolve in water; this property makes carbohydrates ____________, unlike the nonpolar lipids.",
+            "answer": "hydrophilic",
+            "accepted_synonyms": [
+              "hydrophillic",
+              "water-loving",
+              "water loving"
+            ],
+            "explanation": "The polar hydroxyl groups on carbohydrates make them hydrophilic (water-soluble), whereas nonpolar lipids are hydrophobic."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-07",
+          "question": {
+            "stem": "A triglyceride is built from three fatty acids attached by dehydration synthesis to a three-carbon backbone, each carbon of which originally bears a hydroxyl group; this backbone molecule is ____________.",
+            "answer": "glycerol",
+            "accepted_synonyms": [
+              "glycerine",
+              "glycerin"
+            ],
+            "explanation": "Glycerol is the three-carbon backbone of a triglyceride, to which three fatty acids attach."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-08",
+          "question": {
+            "stem": "Unlike the double-stranded nucleic acid that stores genetic information, ATP contains a ribose sugar, an adenine base, and three phosphate groups, making ATP a single ____________ rather than a polymer.",
+            "answer": "nucleotide",
+            "accepted_synonyms": [
+              "nucleotides"
+            ],
+            "explanation": "ATP is a single nucleotide (ribose + adenine + three phosphates), whereas DNA and RNA are polymers of many nucleotides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-09",
+          "question": {
+            "stem": "The covalent bond that joins two amino acids together during dehydration synthesis, forming the backbone of a protein chain, is specifically named a ____________.",
+            "answer": "peptide bond",
+            "accepted_synonyms": [
+              "peptide bonds",
+              "peptide linkage"
+            ],
+            "explanation": "A peptide bond is the covalent bond linking amino acids, distinct from the glycosidic bonds of carbohydrates."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-10",
+          "question": {
+            "stem": "When ADP gains a phosphate group during ____________, the energy invested is stored in the newly formed phosphate-phosphate bond, regenerating ATP.",
+            "answer": "phosphorylation",
+            "accepted_synonyms": [
+              "phosphorylate"
+            ],
+            "explanation": "Slide 33 describes ADP undergoing phosphorylation — the addition of a phosphate group — to rebuild ATP, requiring an energy input to power the dehydration synthesis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-11",
+          "question": {
+            "stem": "The three-carbon backbone molecule to which three fatty acid chains are attached to form a triglyceride is called ____________.",
+            "answer": "glycerol",
+            "accepted_synonyms": [
+              "glycerol backbone"
+            ],
+            "explanation": "A triglyceride consists of a glycerol backbone bonded to three fatty acid chains via dehydration synthesis; glycerol is the three-carbon backbone that distinguishes it from the fatty acids themselves."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-12",
+          "question": {
+            "stem": "Both ribose and deoxyribose contain five carbon atoms, making them examples of a pentose ____________.",
+            "answer": "monosacchariide",
+            "accepted_synonyms": [
+              "monosaccharide",
+              "monosaccharides",
+              "monosacchariides"
+            ],
+            "explanation": "Ribose and deoxyribose are the two pentose sugars; individual sugar units like these are monosaccharides, distinguished from hexose monosaccharides such as glucose by having five rather than six carbons."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-13",
+          "question": {
+            "stem": "Progesterone, testosterone, and cortisol are all steroid hormones synthesized in the body using ____________ as their structural building block.",
+            "answer": "cholesterol",
+            "accepted_synonyms": [
+              "cholesterol"
+            ],
+            "explanation": "Cholesterol is a sterol that serves as the foundation from which steroid hormones such as progesterone, testosterone, estradiol, and cortisol are built."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-14",
+          "question": {
+            "stem": "When a kinase transfers a phosphate group from ATP onto glucose entering a cell, the glucose becomes larger and charged and can no longer exit through its original channel; this addition of a phosphate group is called ____________.",
+            "answer": "phosphorylation",
+            "accepted_synonyms": [
+              "phosphorylation"
+            ],
+            "explanation": "Phosphorylation is the addition of a phosphate group to an organic compound, here altering glucose's size and charge so it is trapped in the cell for storage or metabolism."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-15",
+          "question": {
+            "stem": "Within the glycocalyx, the sugar-fat compounds embedded in the cell membrane that aid in cellular recognition are known as ____________.",
+            "answer": "glycolipid",
+            "accepted_synonyms": [
+              "glycolipids"
+            ],
+            "explanation": "Glycolipids are sugar-fat compounds in the cell membrane; along with glycoproteins they form the glycocalyx and function in immune surveillance and cellular identification."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-16",
+          "question": {
+            "stem": "The four-ringed lipid ____________ is synthesized by the liver and serves as the molecular building block from which steroid hormones such as testosterone, estradiol, and cortisol are constructed.",
+            "answer": "cholesterol",
+            "accepted_synonyms": [],
+            "explanation": "Cholesterol is a sterol with four hydrocarbon rings that acts as the precursor for steroid hormones, distinguishing it from the hormone-like prostaglandins that are derived from fatty acids instead."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-17",
+          "question": {
+            "stem": "Because carbon has four valence electrons and does not readily gain or lose them, it completes its valence shell by sharing electrons and can link with other carbons into a long chain called a carbon skeleton; a chain of carbon covalently bonded only to hydrogen is called a ____________.",
+            "answer": "hydrocarbon",
+            "accepted_synonyms": [
+              "hydrocarbons"
+            ],
+            "explanation": "Carbon's affinity for covalent bonding lets it form carbon skeletons; where those carbons bond only to hydrogen, the grouping is a hydrocarbon, the nonpolar core of lipids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-18",
+          "question": {
+            "stem": "The functional group with the formula -COOH, which gives molecules acidic properties and is found at one end of every fatty acid, is the ____________.",
+            "answer": "carboxyl group",
+            "accepted_synonyms": [
+              "carboxyl",
+              "carboxyl group (-COOH)",
+              "carboxyl groups"
+            ],
+            "explanation": "The carboxyl group (-COOH) is one of the five functional groups important in human physiology; it is acidic and appears at one end of fatty acids and within amino acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-19",
+          "question": {
+            "stem": "When lipids such as milk fat are mixed thoroughly with water they do not form a true solution but instead disperse as tiny suspended droplets, a mixture known as an ____________.",
+            "answer": "emulsion",
+            "accepted_synonyms": [
+              "emulsions"
+            ],
+            "explanation": "Because lipids are hydrophobic and cannot dissolve in water, mixing them yields an emulsion — tiny droplets of one liquid dispersed in another, as in milk."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-20",
+          "question": {
+            "stem": "The covalent bond joining two amino acids, formed by dehydration synthesis during the assembly of a protein, is specifically named a ____________.",
+            "answer": "peptide bond",
+            "accepted_synonyms": [
+              "peptide bonds"
+            ],
+            "explanation": "A peptide bond is the covalent bond linking amino acids into peptides, polypeptides, and proteins, formed by dehydration synthesis — key terminology for navigating the proteins section of the unit."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-21",
+          "question": {
+            "stem": "The functional group with the formula -COOH gives organic molecules acidic properties and is found at one end of every ____________, the long hydrocarbon component of a triglyceride.",
+            "answer": "fatty acid",
+            "accepted_synonyms": [
+              "fatty acids",
+              "fatty acid chain"
+            ],
+            "explanation": "The carboxyl group (-COOH) is acidic and sits at one end of the fatty acid chain; the methyl group sits at the other end. This ties the functional group to its role in the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-22",
+          "question": {
+            "stem": "The sugar-and-protein compounds that decorate the cell membrane and, along with glycolipids, help the immune system identify a cell as its own, are called ____________.",
+            "answer": "glycoprotein",
+            "accepted_synonyms": [
+              "glycoproteins"
+            ],
+            "explanation": "Glycoproteins are proteins with attached sugars that form part of the glycocalyx and aid in cellular recognition."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-23",
+          "question": {
+            "stem": "Progesterone, testosterone, and cortisol are all steroid hormones synthesized from the sterol ____________.",
+            "answer": "cholesterol",
+            "accepted_synonyms": [],
+            "explanation": "Slide 20 identifies cholesterol as the basis for steroid hormones such as progesterone, testosterone, estradiol, and cortisol, as well as for bile acids."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-24",
+          "question": {
+            "stem": "Deoxyribose and ribose are both five-carbon sugars, which distinguishes them from six-carbon sugars such as ____________, the main sugar used to generate ATP in the body.",
+            "answer": "glucose",
+            "accepted_synonyms": [
+              "glucoses"
+            ],
+            "explanation": "Glucose is a hexose sugar (six carbons) used as the primary energy monosaccharide, contrasting with the pentose sugars deoxyribose and ribose."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-25",
+          "question": {
+            "stem": "Each amino acid contains a central carbon bonded to a hydrogen, a variable side chain, an acidic carboxyl group, and an alkaline (basic) ____________.",
+            "answer": "amino group",
+            "accepted_synonyms": [
+              "amino groups",
+              "amine group"
+            ],
+            "explanation": "The amino group (NH2) is the basic nitrogen-containing functional group present in every amino acid alongside the acidic carboxyl group."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-26",
+          "question": {
+            "stem": "Unlike the nucleotides that make up DNA, which contain the pentose sugar deoxyribose, the nucleotide ____________ contains a ribose sugar, an adenine base, and three phosphate groups that store potential energy in their bonds.",
+            "answer": "adenosine triphosphate (ATP)",
+            "accepted_synonyms": [
+              "ATP",
+              "adenosine triphosphate",
+              "adenosine tri-phosphate"
+            ],
+            "explanation": "ATP differs from DNA/RNA nucleotides by having three phosphate groups (rather than one) whose covalent bonds store energy; it uses ribose plus an adenine base."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-27",
+          "question": {
+            "stem": "In the double-stranded molecule that stores genetic information, the nitrogen-containing bases of the two backbones are held together by hydrogen bonds; this nucleic acid is called ____________.",
+            "answer": "deoxyribonucleic acid (DNA)",
+            "accepted_synonyms": [
+              "DNA",
+              "deoxyribonucleic acid"
+            ],
+            "explanation": "DNA is the double-stranded nucleic acid whose complementary bases are joined by hydrogen bonds, forming the double helix."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-28",
+          "question": {
+            "stem": "Saturated, monounsaturated, and polyunsaturated forms differ in their number of double carbon bonds; these long hydrocarbon chains bearing a carboxyl group at one end are collectively called ____________ chains.",
+            "answer": "fatty acid",
+            "accepted_synonyms": [
+              "fatty acids",
+              "fatty-acid"
+            ],
+            "explanation": "Fatty acid chains are classified as saturated or unsaturated based on double bonds and attach to glycerol to form triglycerides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-29",
+          "question": {
+            "stem": "The covalent bond that joins one amino acid to the next when a protein is assembled by dehydration synthesis is a ____________.",
+            "answer": "peptide bond",
+            "accepted_synonyms": [
+              "peptide bonds"
+            ],
+            "explanation": "Peptide bonds link amino acid monomers into peptides, polypeptides, and proteins, whereas glycosidic bonds join sugars."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fitb-30",
+          "question": {
+            "stem": "When galactose and glucose are joined by a glycosidic bond via dehydration synthesis, the resulting disaccharide is ____________.",
+            "answer": "lactose",
+            "accepted_synonyms": [
+              "milk sugar"
+            ],
+            "explanation": "Slide 11 states that lactose is formed by combining galactose and glucose; sucrose is glucose + fructose, and maltose is two glucose molecules, so only lactose fits this specific pairing."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u3-advanced-fr-01",
+          "question": {
+            "prompt": "Compare hexose and pentose monosaccharides. State the structural difference between them, give one example of each type, and explain why monosaccharides such as glucose are able to dissolve in water.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "States that hexose sugars contain six carbon atoms while pentose sugars contain five carbon atoms."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct hexose example (glucose, fructose, or galactose)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct pentose example (ribose or deoxyribose)."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains that the presence of polar hydroxyl (-OH) groups makes them polar and thus able to dissolve in (interact with) water."
+              }
+            ],
+            "model_answer": "Hexose sugars contain six carbon atoms, whereas pentose sugars contain five carbon atoms. An example of a hexose is glucose (also fructose or galactose), and an example of a pentose is ribose (or deoxyribose). Monosaccharides dissolve in water because they carry several polar hydroxyl (-OH) groups, making the molecule polar so it can interact with the polar water molecules."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fr-02",
+          "question": {
+            "prompt": "Name any three of the five functional groups important in human physiology. For each, give its chemical formula and state one biological role or the class of molecule it is associated with. Note: at minimum the first two groups need a correct name and formula, and the third group needs a correct name, formula, AND a correct role or associated molecule.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "First group named with correct formula (e.g., hydroxyl -OH; carboxyl -COOH; amino -NH2; methyl -CH3; phosphate -PO4)."
+              },
+              {
+                "points": 2,
+                "criterion": "Second group named with correct formula."
+              },
+              {
+                "points": 2,
+                "criterion": "Third group named with a correct formula AND a correct role/associated molecule (e.g., carboxyl = component of acids; amino = component of amino acids; phosphate = component of phospholipids/nucleotides; hydroxyl = polar, involved in dehydration/hydrolysis; methyl = component of fatty acids)."
+              }
+            ],
+            "model_answer": "Hydroxyl (-OH): polar group involved in hydrogen bonding and in dehydration synthesis/hydrolysis; found in all four major organic classes. Carboxyl (-COOH): a component of acids, e.g., the acidic end of an amino acid or fatty acid. Amino (-NH2): the basic group found in amino acids. (Others: methyl -CH3, component of fatty acids; phosphate -PO4, component of phospholipids and nucleotides.)"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fr-03",
+          "question": {
+            "prompt": "The terms 'triglyceride,' 'glycerol,' and 'fatty acid chain' are related but distinct. Explain how these three relate to one another by describing the structure of a triglyceride, name the type of reaction that assembles it, and state how a saturated fatty acid differs structurally from an unsaturated fatty acid.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Describes a triglyceride as a glycerol backbone with three fatty acid chains attached."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the assembling reaction as dehydration synthesis (condensation)."
+              },
+              {
+                "points": 2,
+                "criterion": "States that saturated fatty acids have no double (carbon-carbon) bonds while unsaturated fatty acids contain one or more double bonds."
+              }
+            ],
+            "model_answer": "A triglyceride is made of a glycerol backbone to which three fatty acid chains are attached. Glycerol and each fatty acid join via dehydration synthesis, releasing water. A saturated fatty acid has no carbon-carbon double bonds (so its chains are straight and pack tightly, solid at room temperature), whereas an unsaturated fatty acid contains one (monounsaturated) or more (polyunsaturated) double bonds that kink the chain."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fr-04",
+          "question": {
+            "prompt": "Lipids as a group are described as hydrophobic and do not dissolve in water, yet milk is a stable mixture of fat and water. Explain why lipids do not dissolve in water, and explain what an emulsion is and how it allows fat and water to coexist as in milk.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Explains that lipids are nonpolar (made mostly of hydrocarbons) and therefore do not bond with/dissolve in polar water."
+              },
+              {
+                "points": 2,
+                "criterion": "Defines an emulsion as a mixture in which tiny droplets of one liquid (fat) are dispersed/suspended within the other liquid (water), as in milk."
+              }
+            ],
+            "model_answer": "Lipids are made primarily of nonpolar hydrocarbons, so they cannot form bonds with polar water molecules and therefore do not dissolve in water. However, if sufficiently mixed, they can form an emulsion — a mixture in which tiny droplets of one liquid are dispersed within another. In milk, tiny droplets of fat are suspended throughout the water, allowing the two to coexist without truly dissolving."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fr-05",
+          "question": {
+            "prompt": "Explain how the structure of a phospholipid gives it both a hydrophilic and a hydrophobic region, and then describe how phospholipids are arranged in a cell membrane versus in the outer coat of a lipoprotein.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies the polar/hydrophilic phosphate 'head'."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the nonpolar/hydrophobic 'tail' of two fatty acid chains."
+              },
+              {
+                "points": 2,
+                "criterion": "States that in a cell membrane phospholipids form a bilayer, with heads facing the watery intracellular and interstitial fluids and tails facing inward toward each other."
+              },
+              {
+                "points": 1,
+                "criterion": "States that in a lipoprotein phospholipids form a single outer layer, with polar heads facing the watery blood/plasma and hydrophobic tails facing the packaged lipids inside."
+              }
+            ],
+            "model_answer": "A phospholipid has a polar phosphate 'head' that is hydrophilic and a nonpolar 'tail' of two fatty acid chains that is hydrophobic. In a cell membrane, phospholipids self-assemble into a bilayer: the hydrophilic heads face the watery intracellular fluid on one side and interstitial fluid on the other, while the hydrophobic tails point inward toward one another. In a lipoprotein, phospholipids form a single outer layer — the polar heads face outward into the watery plasma of the blood, while the hydrophobic tails face inward to interact with the packaged triglycerides and cholesterol."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fr-06",
+          "question": {
+            "prompt": "The glycocalyx is a carbohydrate coating on the cell membrane. Name the two types of molecules that contribute the sugar residues of the glycocalyx, and explain one function the glycocalyx serves in the body.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies glycolipids as a contributing molecule."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies glycoproteins as a contributing molecule."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains a function: cellular recognition/identification — allowing the immune system to distinguish the body's own cells from pathogens or diseased cells (e.g., blood type matching)."
+              }
+            ],
+            "model_answer": "The glycocalyx is formed by the sugar residues of glycolipids and glycoproteins. It functions in cellular recognition/identification: these carbohydrate markers allow the immune system to distinguish the body's own healthy cells from pathogenic invaders or diseased cells (for example, the A and B sugar residues that determine blood type must be matched during transfusion)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fr-07",
+          "question": {
+            "prompt": "Describe what phosphorylation entails, including the type of enzyme that carries it out, and using glucose entering a cell as an example, explain one functional consequence of phosphorylating a molecule.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Defines phosphorylation as the addition of a phosphate group to an organic compound (often transferred from ATP)."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies a kinase as the enzyme that facilitates the transfer of phosphate groups."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains a functional consequence using glucose: adding phosphate changes glucose's size/charge so it cannot exit the cell through the channel it entered, trapping it for storage or metabolism (also acceptable: phosphorylation can alter enzyme activity)."
+              }
+            ],
+            "model_answer": "Phosphorylation is the addition of a phosphate group to an organic compound, with the phosphate often transferred from ATP. It is carried out by an enzyme called a kinase, which catalyzes the transfer of phosphate groups. For example, when glucose enters a cell, a hexokinase transfers a phosphate from ATP to form glucose phosphate. This changes the size and charge of the molecule so it can no longer exit through the same channel it entered, trapping it in the cell so it can be stored as glycogen or metabolized for energy."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fr-08",
+          "question": {
+            "prompt": "Define the terms 'monomer' and 'polymer,' and using carbohydrates as your example, explain the type of reaction that joins monomers into a polymer and the type of reaction that reverses this.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines a monomer as a single repeating unit/building block."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines a polymer as a long chain of many monomers linked together."
+              },
+              {
+                "points": 2,
+                "criterion": "States that dehydration synthesis (condensation) joins monomers into polymers, releasing water (e.g., monosaccharides joined into di-/polysaccharides)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that hydrolysis breaks a polymer into monomers, requiring/using a molecule of water."
+              }
+            ],
+            "model_answer": "A monomer is a single repeating building-block unit (e.g., a monosaccharide such as glucose), and a polymer is a long chain of many monomers linked together (e.g., a polysaccharide such as glycogen). Monomers are joined into polymers by dehydration synthesis (condensation), which links them via covalent bonds and releases a molecule of water. This is reversed by hydrolysis, which splits the polymer back into monomers by adding a molecule of water across the bond."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fr-09",
+          "question": {
+            "prompt": "A nucleotide has three subunits. Name these three subunits, then explain two ways in which a DNA nucleotide differs from an RNA nucleotide, and state one way ATP differs from the nucleotides that make up nucleic acids.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Names all three subunits: one or more phosphate groups, a pentose sugar, and a nitrogen-containing base."
+              },
+              {
+                "points": 1,
+                "criterion": "First DNA vs RNA difference: DNA uses deoxyribose while RNA uses ribose."
+              },
+              {
+                "points": 1,
+                "criterion": "Second DNA vs RNA difference: DNA uses thymine while RNA uses uracil (in place of thymine)."
+              },
+              {
+                "points": 2,
+                "criterion": "States a way ATP differs: ATP carries three phosphate groups (whereas a nucleic-acid nucleotide has one), storing energy in the phosphate-phosphate bonds; it uses ribose and an adenine base and is not part of a nucleic-acid chain."
+              }
+            ],
+            "model_answer": "A nucleotide is composed of one or more phosphate groups, a pentose sugar, and a nitrogen-containing base. A DNA nucleotide differs from an RNA nucleotide in that DNA uses the sugar deoxyribose while RNA uses ribose, and DNA uses the base thymine while RNA uses uracil in its place. ATP differs from the single-phosphate nucleotides of nucleic acids in that it carries three phosphate groups, storing potential energy in the covalent bonds between those phosphates; it is built on a ribose sugar with an adenine base and functions as an energy carrier rather than being part of a nucleic-acid chain."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u3-advanced-fr-10",
+          "question": {
+            "prompt": "Explain the relationship between cholesterol and steroid hormones by describing cholesterol's role, giving one example of a steroid hormone, and then contrast steroid hormones with prostaglandins in terms of how each signaling molecule reaches its target.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "States that cholesterol is the building block/basis from which steroid hormones are made."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct steroid hormone example (progesterone, testosterone, estradiol, or cortisol)."
+              },
+              {
+                "points": 2,
+                "criterion": "Contrasts signaling: steroid hormones travel through the bloodstream to distant sites, whereas prostaglandins act locally at/near their site of release (hormone-like)."
+              }
+            ],
+            "model_answer": "Cholesterol is the foundational building block from which steroid hormones are synthesized. Examples of steroid hormones include progesterone, testosterone, estradiol, and cortisol. Steroid hormones travel through the bloodstream to act on distant target sites throughout the body. Prostaglandins, which are lipid molecules derived from fatty acid chains, are hormone-like but differ in that they act locally at or near their site of release rather than travelling through the blood."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    }
+  }
+}

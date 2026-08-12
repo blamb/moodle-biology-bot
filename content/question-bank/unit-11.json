@@ -1,0 +1,2960 @@
+{
+  "unit_no": 11,
+  "generated_at": "2026-07-16T17:11:34.665Z",
+  "levels": {
+    "basic": {
+      "mc": [
+        {
+          "id": "u11-basic-mc-01",
+          "question": {
+            "stem": "Which term describes the movement that turns the bottom of the foot to face toward the midline of the body?",
+            "options": [
+              "Inversion",
+              "Plantar flexion",
+              "Retraction",
+              "Eversion",
+              "Dorsiflexion"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Inversion is the turning of the foot so that the sole angles toward the midline of the body.\n\n**Why the other options are wrong:**\n- **(B)** Plantar flexion points the toes downward at the ankle joint.\n- **(C)** Retraction is a posterior-medial movement of the scapula or mandible, not a foot motion.\n- **(D)** Eversion turns the sole away from the midline, the opposite motion.\n- **(E)** Dorsiflexion lifts the top of the foot toward the anterior leg."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-02",
+          "question": {
+            "stem": "The thumb movement that brings the tip of the thumb into contact with the tip of a finger on the same hand is called:",
+            "options": [
+              "Retraction",
+              "Reposition",
+              "Circumduction",
+              "Opposition",
+              "Abduction"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Opposition brings the thumb tip into contact with the tip of the fingers of the same hand and is what allows grasping and tool use.\n\n**Why the other options are wrong:**\n- **(A)** Retraction is a posterior movement of the scapula or mandible.\n- **(B)** Reposition returns the thumb back next to the index finger, the reverse of opposition.\n- **(C)** Circumduction is circular movement of a limb, not the thumb-to-finger contact.\n- **(E)** Abduction moves the thumb away from the palm but does not bring it to touch the fingertips."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-03",
+          "question": {
+            "stem": "Which of the following movements decreases the angle between two limb bones and bends the joint?",
+            "options": [
+              "Rotation",
+              "Flexion",
+              "Abduction",
+              "Extension",
+              "Elevation"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** In the limbs, flexion decreases the angle between the bones and bends the joint.\n\n**Why the other options are wrong:**\n- **(A)** Rotation is a twisting movement around a bone's long axis.\n- **(C)** Abduction moves a limb laterally away from the midline within the coronal plane.\n- **(D)** Extension increases the angle and straightens the joint, the opposite motion.\n- **(E)** Elevation is an upward movement of the scapula or mandible."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-04",
+          "question": {
+            "stem": "A joint in which the adjacent bones are united by hyaline cartilage or fibrocartilage and which lacks a joint cavity is classified as which structural type?",
+            "options": [
+              "Ball-and-socket joint",
+              "Synovial joint",
+              "Cartilaginous joint",
+              "Pivot joint",
+              "Fibrous joint"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Cartilaginous joints unite bones by hyaline cartilage or fibrocartilage and lack a joint cavity.\n\n**Why the other options are wrong:**\n- **(A)** A ball-and-socket joint is also a subtype of synovial joint.\n- **(B)** Synovial joints have a fluid-filled joint cavity between the bones.\n- **(D)** A pivot joint is a subtype of synovial joint, not a structural classification.\n- **(E)** Fibrous joints unite bones by fibrous connective tissue, not cartilage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-05",
+          "question": {
+            "stem": "Which additional synovial joint structure is a thin connective tissue sac filled with lubricating liquid that separates adjacent structures to prevent friction?",
+            "options": [
+              "Bursa",
+              "Meniscus",
+              "Fat pad",
+              "Articular cartilage",
+              "Synovial membrane"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A bursa is a thin connective tissue sac filled with lubricating liquid that reduces friction by separating adjacent structures near a joint.\n\n**Why the other options are wrong:**\n- **(B)** A meniscus is a large C-shaped fibrocartilage structure between articulating bones.\n- **(C)** A fat pad serves as a cushion but is not a fluid-filled sac.\n- **(D)** Articular cartilage is a hyaline cartilage layer covering the bone surface, not a sac.\n- **(E)** The synovial membrane lines the inner surface of the articular capsule."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-06",
+          "question": {
+            "stem": "Which of the following is a subtype of fibrous joint?",
+            "options": [
+              "Condyloid joint",
+              "Saddle joint",
+              "Gomphosis",
+              "Synchondrosis",
+              "Symphysis"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A gomphosis (peg-and-socket joint anchoring a tooth) is one of the three subtypes of fibrous joints, along with sutures and syndesmoses.\n\n**Why the other options are wrong:**\n- **(A)** A condyloid joint is a subtype of synovial joint.\n- **(B)** A saddle joint is a subtype of synovial joint.\n- **(D)** A synchondrosis is a subtype of cartilaginous joint.\n- **(E)** A symphysis is a subtype of cartilaginous joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-07",
+          "question": {
+            "stem": "The elbow joint allows only bending and straightening along a single axis. It is therefore classified functionally as which type of joint?",
+            "options": [
+              "Amphiarthrosis",
+              "Multiaxial",
+              "Synarthrosis",
+              "Uniaxial",
+              "Biaxial"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A joint that permits motion in only one plane around a single axis, such as the elbow, is uniaxial.\n\n**Why the other options are wrong:**\n- **(A)** Amphiarthrosis is a functional classification for slightly moveable joints, not axes of movement.\n- **(B)** Multiaxial joints allow movement in all three planes, like the shoulder.\n- **(C)** Synarthrosis is a functional classification for immobile joints.\n- **(E)** Biaxial joints allow movement in two planes, like the knuckle joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-08",
+          "question": {
+            "stem": "All synovial joints are functionally classified as which of the following?",
+            "options": [
+              "Syndesmosis",
+              "Synchondrosis",
+              "Diarthrosis",
+              "Amphiarthrosis",
+              "Synarthrosis"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Because synovial joints allow free movement between bones, they are all functionally classified as diarthroses.\n\n**Why the other options are wrong:**\n- **(A)** Syndesmosis is a structural subtype of fibrous joint, not a functional class.\n- **(B)** Synchondrosis is a structural subtype of cartilaginous joint, not a functional class.\n- **(D)** Amphiarthrosis is a slightly moveable joint, describing some fibrous and cartilaginous joints.\n- **(E)** Synarthrosis is an immobile joint, describing some fibrous and cartilaginous joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-09",
+          "question": {
+            "stem": "The upward movement of the lower jaw used to close the mouth or bite is called:",
+            "options": [
+              "Elevation",
+              "Retraction",
+              "Depression",
+              "Circumduction",
+              "Protraction"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Elevation of the mandible is the upward movement of the lower jaw used to close the mouth or bite.\n\n**Why the other options are wrong:**\n- **(B)** Retraction pulls the lower jaw backward.\n- **(C)** Depression is the downward movement that opens the mouth.\n- **(D)** Circumduction is circular movement of a limb, not a mandible motion.\n- **(E)** Protraction pushes the lower jaw forward to stick out the chin."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-10",
+          "question": {
+            "stem": "In this unit, the term \"articulation\" refers to which of the following?",
+            "options": [
+              "The hyaline cartilage layer covering a bone's surface",
+              "A muscle attachment that supports a joint",
+              "A strong band of fibrous connective tissue connecting bones",
+              "The thick fluid secreted into the joint cavity",
+              "A location where bones, or bone and cartilage, meet"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A joint, or articulation, is defined as the location where bones, or bone and cartilage, come together.\n\n**Why the other options are wrong:**\n- **(A)** That describes articular cartilage.\n- **(B)** That describes a tendon acting as a dynamic ligament.\n- **(C)** That describes a ligament, not an articulation.\n- **(D)** That describes synovial fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-11",
+          "question": {
+            "stem": "A hinge joint, such as the elbow, is functionally classified as which type of movable joint?",
+            "options": [
+              "Uniaxial",
+              "Multiaxial",
+              "Nonaxial synarthrosis",
+              "Biaxial",
+              "Amphiaxial"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A hinge joint allows only bending (flexion) and straightening (extension) along a single axis, making it uniaxial.\n\n**Why the other options are wrong:**\n- **(B)** Multiaxial joints (like ball-and-socket) allow movement in all three planes.\n- **(C)** \"Nonaxial synarthrosis\" is not a movement classification for a movable joint.\n- **(D)** Biaxial joints (like condyloid and saddle) allow movement in two planes, not a single one.\n- **(E)** \"Amphiaxial\" is not a real axial category."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-12",
+          "question": {
+            "stem": "Which term refers to moving a limb laterally away from the midline of the body?",
+            "options": [
+              "Rotation",
+              "Adduction",
+              "Flexion",
+              "Abduction",
+              "Retraction"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Abduction is the movement that moves a limb laterally away from the midline of the body within the coronal plane.\n\n**Why the other options are wrong:**\n- **(A)** Rotation is twisting around a long axis, not a lateral movement.\n- **(B)** Adduction is the opposite motion, moving a limb toward the midline.\n- **(C)** Flexion is an anterior/posterior bending motion within the sagittal plane.\n- **(E)** Retraction is a posterior movement of the scapula or mandible."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-13",
+          "question": {
+            "stem": "In the structural classification of joints, which type is defined by the presence of a fluid-filled joint cavity?",
+            "options": [
+              "Cartilaginous joint",
+              "Synchondrosis",
+              "Symphysis",
+              "Fibrous joint",
+              "Synovial joint"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A synovial joint is structurally defined by a joint cavity filled with lubricating synovial fluid between the articulating surfaces.\n\n**Why the other options are wrong:**\n- **(A)** A cartilaginous joint unites bones with cartilage and lacks a joint cavity.\n- **(B)** A synchondrosis is a subtype of cartilaginous joint with no joint cavity.\n- **(C)** A symphysis is a subtype of cartilaginous joint with no joint cavity.\n- **(D)** A fibrous joint unites bones with fibrous connective tissue and has no joint cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-14",
+          "question": {
+            "stem": "What is a bursa?",
+            "options": [
+              "A thin connective tissue sac filled with lubricating liquid that reduces friction",
+              "A ring of bone and ligament that encircles a rotating bone",
+              "A layer of hyaline cartilage covering the articulating surface of a bone",
+              "A pad of fibrocartilage that unites the bodies of adjacent vertebrae",
+              "A band of fibrous connective tissue that connects muscle to bone"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A bursa is a thin connective tissue sac filled with lubricating liquid that separates structures like skin, muscle, or tendon from underlying bone to prevent friction.\n\n**Why the other options are wrong:**\n- **(B)** That describes the structure of a pivot joint.\n- **(C)** That describes articular cartilage.\n- **(D)** That describes an intervertebral disc, not a bursa.\n- **(E)** A tendon connects muscle to bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-15",
+          "question": {
+            "stem": "Which structure lines the inner surface of the articular capsule and secretes lubricating fluid?",
+            "options": [
+              "Periodontal ligament",
+              "Synovial membrane",
+              "Interosseous membrane",
+              "Articular cartilage",
+              "Meniscus"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The synovial membrane lines the inner surface of the articular capsule, and its cells secrete synovial fluid.\n\n**Why the other options are wrong:**\n- **(A)** The periodontal ligament anchors a tooth in a gomphosis.\n- **(C)** The interosseous membrane is a fibrous joint structure between parallel bones.\n- **(D)** Articular cartilage covers the bone surfaces but does not secrete fluid.\n- **(E)** A meniscus is a fibrocartilage pad that provides cushioning, not lubrication secretion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-16",
+          "question": {
+            "stem": "Which movement is described as pointing the toes downward or lifting the heel from the ground?",
+            "options": [
+              "Circumduction",
+              "Eversion",
+              "Dorsiflexion",
+              "Inversion",
+              "Plantar flexion"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Plantar flexion is lifting the heel or pointing the toes downward at the ankle joint.\n\n**Why the other options are wrong:**\n- **(A)** Circumduction is a circular movement combining flexion, abduction, extension, and adduction.\n- **(B)** Eversion angles the bottom of the foot away from the midline.\n- **(C)** Dorsiflexion is lifting the top of the foot toward the anterior leg.\n- **(D)** Inversion angles the bottom of the foot toward the midline at the intertarsal joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-17",
+          "question": {
+            "stem": "A gomphosis, which anchors a tooth into its bony socket, is a subtype of which structural joint class?",
+            "options": [
+              "Synovial joint",
+              "Synchondrosis",
+              "Fibrous joint",
+              "Symphysis",
+              "Cartilaginous joint"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A gomphosis is a fibrous joint, using periodontal ligaments (dense connective tissue) to hold the tooth root in its socket.\n\n**Why the other options are wrong:**\n- **(A)** A synovial joint has a joint cavity, which a gomphosis lacks.\n- **(B)** A synchondrosis is a cartilaginous subtype using hyaline cartilage.\n- **(D)** A symphysis is a cartilaginous subtype using fibrocartilage.\n- **(E)** A cartilaginous joint unites bones with cartilage, not fibrous tissue."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-18",
+          "question": {
+            "stem": "The elbow joint belongs to which category of synovial joint?",
+            "options": [
+              "Pivot",
+              "Hinge",
+              "Saddle",
+              "Ball-and-socket",
+              "Condyloid"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The elbow, formed by the articulation between the humerus and ulna, is a hinge joint allowing flexion and extension along a single axis.\n\n**Why the other options are wrong:**\n- **(A)** A pivot joint allows rotation, such as the atlantoaxial joint.\n- **(C)** A saddle joint (like the thumb base) is biaxial.\n- **(D)** A ball-and-socket joint (hip or shoulder) is multiaxial.\n- **(E)** A condyloid joint (like the knuckle) is biaxial."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-19",
+          "question": {
+            "stem": "The intervertebral disc between vertebral bodies allows limited movement. Which functional classification best describes this joint?",
+            "options": [
+              "Amphiarthrosis",
+              "Uniaxial diarthrosis",
+              "Diarthrosis",
+              "Multiaxial diarthrosis",
+              "Synarthrosis"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** An intervertebral disc allows only limited movement between adjacent vertebrae, functionally classifying it as an amphiarthrosis.\n\n**Why the other options are wrong:**\n- **(B)** Uniaxial diarthrosis applies to freely movable joints like the elbow.\n- **(C)** A diarthrosis is freely movable, which the disc is not.\n- **(D)** Multiaxial diarthrosis applies to freely movable joints like the shoulder.\n- **(E)** A synarthrosis is immobile, whereas the disc permits limited movement."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-20",
+          "question": {
+            "stem": "Which term refers to the movement that brings a limb medially, toward the midline of the body?",
+            "options": [
+              "Eversion",
+              "Circumduction",
+              "Elevation",
+              "Adduction",
+              "Abduction"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Adduction is the movement that brings a limb toward the body or across the midline.\n\n**Why the other options are wrong:**\n- **(A)** Eversion turns the bottom of the foot away from the midline.\n- **(B)** Circumduction is a circular movement, not simply a medial-going motion.\n- **(C)** Elevation is an upward movement of the scapula or mandible.\n- **(E)** Abduction moves the limb laterally, away from the midline."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-21",
+          "question": {
+            "stem": "In a synovial joint, which structure secretes the lubricating fluid found within the joint cavity?",
+            "options": [
+              "Bursa",
+              "Ligament",
+              "Articular capsule",
+              "Articular cartilage",
+              "Synovial membrane"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The synovial membrane lines the inner surface of the articular capsule, and its cells secrete synovial fluid.\n\n**Why the other options are wrong:**\n- **(A)** A bursa is a separate fluid-filled sac outside the joint that reduces friction.\n- **(B)** Ligaments are fibrous bands that anchor bones together.\n- **(C)** The articular capsule forms the walls of the joint cavity but does not itself secrete fluid.\n- **(D)** Articular cartilage is hyaline cartilage covering the bone surfaces; it does not secrete fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-22",
+          "question": {
+            "stem": "Which functional classification describes a joint that is freely moveable?",
+            "options": [
+              "Amphiarthrosis",
+              "Diarthrosis",
+              "Synarthrosis",
+              "Syndesmosis",
+              "Synchondrosis"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A diarthrosis is a freely moveable joint, and all synovial joints are functionally classified as diarthroses.\n\n**Why the other options are wrong:**\n- **(A)** An amphiarthrosis is a slightly moveable joint.\n- **(C)** A synarthrosis is an immobile joint.\n- **(D)** Syndesmosis is a structural type of fibrous joint, not a functional class.\n- **(E)** Synchondrosis is a structural type of cartilaginous joint, not a functional class."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-23",
+          "question": {
+            "stem": "Which movement of the forearm rotates it so the palm faces backward, causing the radius and ulna to form an X-shape?",
+            "options": [
+              "Supination",
+              "Pronation",
+              "Dorsiflexion",
+              "Circumduction",
+              "Retraction"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Pronation is the forearm movement that turns the palm backward, crossing the radius over the ulna into an X-shape.\n\n**Why the other options are wrong:**\n- **(A)** Supination is the opposite motion, with the palm facing forward and the bones parallel.\n- **(C)** Dorsiflexion is a movement at the ankle, not the forearm.\n- **(D)** Circumduction is a circular movement of a limb.\n- **(E)** Retraction is a posterior movement of the scapula or mandible."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-24",
+          "question": {
+            "stem": "Which of the following is one of the three structural classifications of joints?",
+            "options": [
+              "Amphiarthrotic joint",
+              "Uniaxial joint",
+              "Diarthrotic joint",
+              "Synarthrotic joint",
+              "Cartilaginous joint"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The three structural classifications are fibrous, cartilaginous, and synovial joints.\n\n**Why the other options are wrong:**\n- **(A)** Amphiarthrotic is a functional classification, not structural.\n- **(B)** Uniaxial describes an axis of movement subcategory, not a structural class.\n- **(C)** Diarthrotic is a functional classification, not structural.\n- **(D)** Synarthrotic is a functional classification, not structural."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-25",
+          "question": {
+            "stem": "At a synchondrosis, the bones are joined together by which tissue?",
+            "options": [
+              "Synovial fluid",
+              "Dense fibrous connective tissue",
+              "Fibrocartilage",
+              "Hyaline cartilage",
+              "Adipose tissue"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A synchondrosis is a cartilaginous joint where bones are joined by hyaline cartilage, such as the epiphyseal plate.\n\n**Why the other options are wrong:**\n- **(A)** Synovial fluid fills the joint cavity of synovial joints.\n- **(B)** Dense fibrous connective tissue joins bones at fibrous joints.\n- **(C)** Fibrocartilage joins bones at a symphysis, not a synchondrosis.\n- **(E)** Adipose tissue may form fat pads but does not unite bones at a cartilaginous joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-26",
+          "question": {
+            "stem": "What is the meaning of the term \"synovia,\" from which synovial joints take their name?",
+            "options": [
+              "Growing together",
+              "To bind or sew",
+              "A thick fluid",
+              "Fastened with a band",
+              "Joined by cartilage"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Synovia means \"a thick fluid,\" referring to the lubricating synovial fluid within these joints.\n\n**Why the other options are wrong:**\n- **(A)** \"Growing together\" is the meaning of symphysis.\n- **(B)** \"To bind or sew\" is the meaning of suture.\n- **(D)** \"Fastened with a band\" is the meaning of syndesmosis.\n- **(E)** \"Joined by cartilage\" is the meaning of synchondrosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-27",
+          "question": {
+            "stem": "A ball-and-socket joint, such as the shoulder, is classified as which type based on its axes of movement?",
+            "options": [
+              "Nonaxial",
+              "Biaxial",
+              "Uniaxial",
+              "Immobile",
+              "Multiaxial"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Ball-and-socket joints are multiaxial, allowing anterior-posterior, medial-lateral, and rotational movements.\n\n**Why the other options are wrong:**\n- **(A)** Nonaxial is not a term used for movement classification in this unit.\n- **(B)** Biaxial joints, like the knuckle, allow movement in two planes.\n- **(C)** Uniaxial joints, like the elbow, allow movement in only one plane.\n- **(D)** Ball-and-socket joints are freely moveable, not immobile."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-28",
+          "question": {
+            "stem": "Lifting the top of the foot upward toward the anterior leg at the ankle joint is called what?",
+            "options": [
+              "Inversion",
+              "Eversion",
+              "Plantar flexion",
+              "Dorsiflexion",
+              "Extension"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Dorsiflexion lifts the front of the foot so that the top of the foot moves toward the anterior leg.\n\n**Why the other options are wrong:**\n- **(A)** Inversion turns the bottom of the foot toward the midline.\n- **(B)** Eversion turns the bottom of the foot away from the midline.\n- **(C)** Plantar flexion lifts the heel or points the toes downward.\n- **(E)** Extension is a general limb movement, not the specific ankle term for this motion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-29",
+          "question": {
+            "stem": "The intervertebral disc that unites the bodies of adjacent vertebrae is made of fibrocartilage and is therefore structurally classified as which type of cartilaginous joint?",
+            "options": [
+              "Suture",
+              "Symphysis",
+              "Syndesmosis",
+              "Synchondrosis",
+              "Gomphosis"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A symphysis is a cartilaginous joint in which bones are joined by fibrocartilage, exactly as seen with the intervertebral disc.\n\n**Why the other options are wrong:**\n- **(A)** A suture is a fibrous joint between skull bones.\n- **(C)** A syndesmosis is a fibrous joint, not a cartilaginous joint.\n- **(D)** A synchondrosis joins bones by hyaline cartilage, not fibrocartilage.\n- **(E)** A gomphosis is a fibrous joint anchoring a tooth in its socket."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-mc-30",
+          "question": {
+            "stem": "The elbow joint permits only bending and straightening along a single axis. It is therefore functionally classified as which type of joint?",
+            "options": [
+              "Synarthrosis",
+              "Amphiarthrosis",
+              "Uniaxial",
+              "Multiaxial",
+              "Biaxial"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Movement in only one plane around a single axis defines a uniaxial joint, which describes the hinge-type elbow.\n\n**Why the other options are wrong:**\n- **(A)** Synarthrosis means immobile, which does not apply to the movable elbow.\n- **(B)** Amphiarthrosis is a functional classification meaning slightly mobile, not an axis category, and does not describe the freely mobile elbow.\n- **(D)** A multiaxial joint allows movement in all three planes, such as the shoulder.\n- **(E)** A biaxial joint allows movement in two planes, such as the knuckle joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u11-basic-tf-01",
+          "question": {
+            "stem": "Abduction is the movement that brings a limb toward the midline of the body.",
+            "correct": false,
+            "explanation": "This describes adduction. Abduction moves a limb laterally, away from the midline of the body, while adduction brings it toward the midline."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-02",
+          "question": {
+            "stem": "A fibrous joint can be classified structurally as a suture, a syndesmosis, or a gomphosis.",
+            "correct": true,
+            "explanation": "The three types of fibrous joints are sutures (between most skull bones), syndesmoses (uniting parallel bones), and gomphoses (anchoring teeth in their sockets)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-03",
+          "question": {
+            "stem": "The synovial membrane secretes synovial fluid, which lubricates the joint and nourishes the articular cartilage.",
+            "correct": true,
+            "explanation": "The synovial membrane lines the inner surface of the articular capsule and secretes synovial fluid, which reduces friction and provides nourishment to the avascular articular cartilage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-04",
+          "question": {
+            "stem": "The interosseous membrane between the radius and ulna is a type of syndesmosis.",
+            "correct": true,
+            "explanation": "A syndesmosis unites two parallel bones by fibrous connective tissue. When the gap is wide, this tissue forms an interosseous membrane, as seen between the radius and ulna."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-05",
+          "question": {
+            "stem": "Plantar flexion is the movement that lifts the top of the foot toward the anterior leg.",
+            "correct": false,
+            "explanation": "That describes dorsiflexion. Plantar flexion is the opposite movement — lifting the heel or pointing the toes downward."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-06",
+          "question": {
+            "stem": "A defining feature of synovial joints, not seen in fibrous or cartilaginous joints, is the presence of a fluid-filled joint cavity.",
+            "correct": true,
+            "explanation": "The joint cavity, a fluid-filled space between the articulating surfaces, is the key structural feature of synovial joints and allows the increased mobility that classifies them as diarthroses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-07",
+          "question": {
+            "stem": "A hinge joint, such as the elbow, is classified as a uniaxial joint.",
+            "correct": true,
+            "explanation": "A hinge joint allows only bending (flexion) and straightening (extension) along a single axis, so it is functionally uniaxial."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-08",
+          "question": {
+            "stem": "A synchondrosis is functionally classified as an amphiarthrosis.",
+            "correct": false,
+            "explanation": "A synchondrosis is functionally classified as a synarthrosis (immobile) due to the lack of movement between the bone and hyaline cartilage. A symphysis, by contrast, is an amphiarthrosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-09",
+          "question": {
+            "stem": "All synovial joints are functionally classified as diarthroses.",
+            "correct": true,
+            "explanation": "Because the joint cavity allows free movement between the articulating bones, all synovial joints are functionally classified as diarthroses (freely moveable)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-10",
+          "question": {
+            "stem": "A bursa is a fluid-filled sac that helps reduce friction where structures such as tendons, ligaments, or skin rub against bone near a joint.",
+            "correct": true,
+            "explanation": "A bursa is a thin connective tissue sac filled with lubricating fluid, located where skin, ligaments, muscles, or tendons could rub against each other or against bone, preventing direct friction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-11",
+          "question": {
+            "stem": "The synovial membrane secretes synovial fluid, which lubricates the joint and also provides nourishment to the articular cartilage.",
+            "correct": true,
+            "explanation": "The cells of the synovial membrane secrete synovial fluid. This fluid reduces friction and nourishes the articular cartilage, which lacks its own blood vessels."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-12",
+          "question": {
+            "stem": "Dorsiflexion is the movement that lifts the top of the foot toward the anterior leg.",
+            "correct": true,
+            "explanation": "Dorsiflexion lifts the front of the foot so the top moves toward the anterior leg, whereas plantar flexion lifts the heel or points the toes downward."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-13",
+          "question": {
+            "stem": "The three subtypes of fibrous joints are suture, syndesmosis, and gomphosis.",
+            "correct": true,
+            "explanation": "Fibrous joints are subdivided into sutures (between most skull bones), syndesmoses (parallel bones united by fibrous tissue/interosseous membrane), and gomphoses (tooth root in its socket)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-14",
+          "question": {
+            "stem": "A hinge joint, such as the elbow, is a biaxial joint that allows movement in two planes.",
+            "correct": false,
+            "explanation": "A hinge joint is uniaxial, allowing only flexion and extension along a single axis. Biaxial joints (movement in two planes) include condyloid and saddle joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-15",
+          "question": {
+            "stem": "Circumduction refers to the movement of a body region in a circular manner, where one end stays relatively stationary while the other end moves in a circle.",
+            "correct": true,
+            "explanation": "Circumduction involves the sequential combination of flexion, adduction, extension, and abduction, producing a cone-like circular motion of the distal end of a body region."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-16",
+          "question": {
+            "stem": "A ball-and-socket joint, such as the hip or shoulder, is a multiaxial joint.",
+            "correct": true,
+            "explanation": "Ball-and-socket joints allow anterior-posterior, medial-lateral, and rotational movements, so they are classified as multiaxial (movement in all three planes)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-17",
+          "question": {
+            "stem": "A defining structural feature of a synovial joint that is absent in fibrous and cartilaginous joints is a fluid-filled joint cavity.",
+            "correct": true,
+            "explanation": "The joint cavity, a fluid-filled space between the articulating surfaces, is unique to synovial joints. Fibrous and cartilaginous joints unite bones directly with connective tissue or cartilage and lack this cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-18",
+          "question": {
+            "stem": "A bursa is a fibrocartilage disc located directly between the articulating surfaces of the bones inside the joint cavity.",
+            "correct": false,
+            "explanation": "A bursa is a thin connective tissue sac filled with lubricating fluid located outside the joint, preventing friction between structures like skin, tendon, or muscle and bone. A fibrocartilage structure between articulating bones is an articular disc or meniscus."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-19",
+          "question": {
+            "stem": "Abduction moves a limb medially toward the midline of the body.",
+            "correct": false,
+            "explanation": "Abduction moves a limb laterally, away from the midline. It is adduction that brings the limb toward or across the midline."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-20",
+          "question": {
+            "stem": "A meniscus is a fibrocartilage structure that is larger and C-shaped compared to an articular disc.",
+            "correct": true,
+            "explanation": "The unit terminology defines a meniscus as the larger, C-shaped fibrocartilage structure, whereas an articular disc is generally smaller and oval-shaped."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-21",
+          "question": {
+            "stem": "Opposition of the thumb brings the tip of the thumb into contact with the tips of the fingers of the same hand.",
+            "correct": true,
+            "explanation": "Opposition brings the thumb tip into contact with a fingertip of the same hand; reposition returns the thumb next to the index finger. This movement occurs at the first carpometacarpal (saddle) joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-22",
+          "question": {
+            "stem": "A hinge joint is functionally classified as a uniaxial joint.",
+            "correct": true,
+            "explanation": "A hinge joint allows only angular movement (flexion and extension) along a single axis, so it is uniaxial. The elbow is a classic example."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-23",
+          "question": {
+            "stem": "The synovial membrane lines the inner surface of the articular capsule and secretes synovial fluid.",
+            "correct": true,
+            "explanation": "The synovial membrane lines the inside of the articular capsule, and its cells secrete synovial fluid, which lubricates the joint and nourishes the avascular articular cartilage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-24",
+          "question": {
+            "stem": "A gomphosis is a subtype of cartilaginous joint.",
+            "correct": false,
+            "explanation": "A gomphosis is a subtype of fibrous joint (the peg-and-socket joint anchoring a tooth to its socket). The two subtypes of cartilaginous joints are synchondrosis and symphysis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-25",
+          "question": {
+            "stem": "A bursa is a thin connective tissue sac filled with lubricating liquid that prevents friction between adjacent structures.",
+            "correct": true,
+            "explanation": "A bursa is a fluid-filled sac located where skin, ligaments, muscles, or tendons rub against each other near a joint, reducing friction by separating the adjacent structures."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-26",
+          "question": {
+            "stem": "An amphiarthrosis is a joint that allows slight movement.",
+            "correct": true,
+            "explanation": "In the functional classification, a synarthrosis is immobile, an amphiarthrosis is slightly mobile, and a diarthrosis is freely moveable. Some fibrous and cartilaginous joints are amphiarthroses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-27",
+          "question": {
+            "stem": "The intercarpal joints between the carpal bones of the wrist are examples of plane (gliding) joints.",
+            "correct": true,
+            "explanation": "True. Plane joints have flat or slightly curved articulating surfaces that allow gliding movements. Examples include the intercarpal joints of the wrist, the intertarsal joints of the foot, and the zygapophysial joints between adjacent vertebrae."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-28",
+          "question": {
+            "stem": "Dorsiflexion is the movement that lifts the heel or points the toes downward.",
+            "correct": false,
+            "explanation": "False. Dorsiflexion lifts the top of the foot toward the anterior leg. Lifting the heel or pointing the toes downward is plantar flexion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-29",
+          "question": {
+            "stem": "A gomphosis is a subtype of fibrous joint.",
+            "correct": true,
+            "explanation": "True. Fibrous joints have three subtypes: sutures, syndesmoses, and gomphoses. A gomphosis is the peg-and-socket fibrous joint that anchors a tooth root into its bony socket."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-tf-30",
+          "question": {
+            "stem": "Supination refers to the forearm position in which the radius and ulna form an X-shape and the palm faces backward.",
+            "correct": false,
+            "explanation": "False. That describes pronation. In supination (the anatomical position), the palm faces forward and the radius and ulna are parallel to each other."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u11-basic-fitb-01",
+          "question": {
+            "stem": "A joint that is immobile or nearly immobile, such as the fibrous joints between the bones of the skull, is functionally classified as a ____________.",
+            "answer": "synarthrosis",
+            "accepted_synonyms": [
+              "synarthroses",
+              "synarthrotic joint"
+            ],
+            "explanation": "Slide 7 identifies the skull sutures as an example of a synarthrosis, an immobile joint that provides protection."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-02",
+          "question": {
+            "stem": "The movement in which the bottom of the foot is turned to angle away from the midline of the body is called ____________.",
+            "answer": "eversion",
+            "accepted_synonyms": [
+              "evert",
+              "everting"
+            ],
+            "explanation": "Eversion turns the sole of the foot away from the midline; inversion turns it toward the midline."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-03",
+          "question": {
+            "stem": "The fibrous connective tissue sheet that fills the wide gap between the shafts of parallel bones such as the radius and ulna is called an ____________.",
+            "answer": "interosseous membrane",
+            "accepted_synonyms": [
+              "interosseous membranes",
+              "inter-osseous membrane"
+            ],
+            "explanation": "The interosseous membrane is the broad connective tissue sheet uniting parallel long bones, as described in the syndesmosis section."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-04",
+          "question": {
+            "stem": "The epiphyseal plate (growth plate), where the diaphysis and epiphysis of a long bone are united by hyaline cartilage, is an example of a temporary ____________.",
+            "answer": "synchondrosis",
+            "accepted_synonyms": [
+              "synchondroses"
+            ],
+            "explanation": "A synchondrosis is a cartilaginous joint where bones are joined by hyaline cartilage; the epiphyseal plate is a temporary example."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-05",
+          "question": {
+            "stem": "The structural classification of joint in which the articulating surfaces of the bones contact each other within a fluid-filled joint cavity is the ____________.",
+            "answer": "synovial joint",
+            "accepted_synonyms": [
+              "synovial joints",
+              "synovial"
+            ],
+            "explanation": "Structural classifications include fibrous, cartilaginous, and synovial; only synovial joints have a joint cavity filled with lubricating fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-06",
+          "question": {
+            "stem": "Of the three structural categories of joints, the type in which the articulating surfaces meet within a fluid-filled joint cavity is called a(n) ____________.",
+            "answer": "synovial joint",
+            "accepted_synonyms": [
+              "synovial joints",
+              "synovial"
+            ],
+            "explanation": "The unit outline lists fibrous, cartilaginous, and synovial joints as the three structural types; only the synovial joint has a joint cavity filled with lubricating fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-07",
+          "question": {
+            "stem": "A joint that unites the bodies of adjacent vertebrae with an intervertebral disc allows limited movement and is therefore functionally classified as an ____________.",
+            "answer": "amphiarthrosis",
+            "accepted_synonyms": [
+              "amphiarthroses",
+              "amphiarthrotic joint"
+            ],
+            "explanation": "Slide 8 classifies the intervertebral disc joint as an amphiarthrosis, a slightly moveable joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-08",
+          "question": {
+            "stem": "The thin layer lining the inner surface of the articular capsule, whose cells secrete lubricating fluid, is the ____________.",
+            "answer": "synovial membrane",
+            "accepted_synonyms": [
+              "synovial membranes"
+            ],
+            "explanation": "Slide 24 states the synovial membrane lines the inner articular capsule and secretes synovial fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-09",
+          "question": {
+            "stem": "The specialized fibrous joint that anchors the root of a tooth into its bony socket in the jaw is called a ____________.",
+            "answer": "gomphosis",
+            "accepted_synonyms": [
+              "gomphoses",
+              "peg-and-socket joint",
+              "peg and socket joint"
+            ],
+            "explanation": "A gomphosis anchors a tooth root into its socket via periodontal ligaments and is classified as a synarthrosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-10",
+          "question": {
+            "stem": "All synovial joints, because they permit free movement between the bones, are functionally classified as a ____________.",
+            "answer": "diarthrosis",
+            "accepted_synonyms": [
+              "diarthroses",
+              "diarthrotic joint"
+            ],
+            "explanation": "Slide 6 states all synovial joints are functionally classified as diarthroses (freely moveable)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-11",
+          "question": {
+            "stem": "The complex movement in which the distal end of a limb traces a circle while the proximal end stays relatively stationary, produced by combining flexion, adduction, extension, and abduction, is called ____________.",
+            "answer": "circumduction",
+            "accepted_synonyms": [],
+            "explanation": "Slide 37 describes circumduction as the distal end of the bone moving in a circle while the proximal end remains stationary, combining flexion, abduction, extension, and adduction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-12",
+          "question": {
+            "stem": "The fluid-filled space between the articulating surfaces of bones that is characteristic of synovial joints is called the ____________.",
+            "answer": "joint cavity",
+            "accepted_synonyms": [
+              "joint cavities"
+            ],
+            "explanation": "Key terminology: the joint cavity is the fluid-filled space unique to synovial joints, absent in fibrous and cartilaginous joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-13",
+          "question": {
+            "stem": "A slightly moveable joint is functionally classified as a(n) ____________.",
+            "answer": "amphiarthrosis",
+            "accepted_synonyms": [
+              "amphiarthroses"
+            ],
+            "explanation": "Key terminology: an amphiarthrosis is the functional class describing slightly moveable joints, such as a symphysis or syndesmosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-14",
+          "question": {
+            "stem": "A joint that permits movement in only a single plane, such as the elbow, is described as ____________.",
+            "answer": "uniaxial",
+            "accepted_synonyms": [
+              "uni-axial"
+            ],
+            "explanation": "Slide 9 defines uniaxial joints as those allowing movement in one plane; the elbow (a hinge joint) is the example given."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-15",
+          "question": {
+            "stem": "All synovial joints are functionally classified as a(n) ____________ because they are freely moveable.",
+            "answer": "diarthrosis",
+            "accepted_synonyms": [
+              "diarthroses"
+            ],
+            "explanation": "Functional classification: every synovial joint is a diarthrosis, the freely moveable functional category."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-16",
+          "question": {
+            "stem": "Lifting the front of the foot so that its top moves toward the anterior leg is the ankle movement called ____________.",
+            "answer": "dorsiflexion",
+            "accepted_synonyms": [
+              "dorsi-flexion"
+            ],
+            "explanation": "Slide 50 defines dorsiflexion as lifting the top of the foot toward the anterior leg at the ankle joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-17",
+          "question": {
+            "stem": "The narrow type of fibrous joint that joins most of the bones of the skull to one another is called a(n) ____________.",
+            "answer": "suture",
+            "accepted_synonyms": [
+              "sutures"
+            ],
+            "explanation": "Structural subtypes of fibrous joints include the suture, which unites most skull bones (all except the mandible)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-18",
+          "question": {
+            "stem": "Turning of the foot to angle its sole away from the midline of the body, occurring at the intertarsal joints, is called ____________.",
+            "answer": "eversion",
+            "accepted_synonyms": [],
+            "explanation": "Slide 51 defines eversion as turning the bottom of the foot away from the midline, a movement at the intertarsal plane joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-19",
+          "question": {
+            "stem": "The synovial joint in which both articulating surfaces are concave in one direction and convex in the other, exemplified by the first carpometacarpal joint of the thumb, is called a(n) ____________.",
+            "answer": "saddle joint",
+            "accepted_synonyms": [
+              "saddle joints",
+              "saddle"
+            ],
+            "explanation": "Slide 34 describes the saddle joint as having surfaces concave in one direction and convex in the other, with the thumb's carpometacarpal joint as the example."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-20",
+          "question": {
+            "stem": "In a synovial joint, the thin layer of tissue that lines the inner surface of the articular capsule and secretes the lubricating fluid is the ____________.",
+            "answer": "synovial membrane",
+            "accepted_synonyms": [
+              "synovial membranes"
+            ],
+            "explanation": "Slide 24 identifies the synovial membrane as the lining of the articular capsule whose cells secrete synovial fluid; it is a labeled part of a synovial joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-21",
+          "question": {
+            "stem": "The movement that turns the bottom of the foot to angle it toward the midline of the body is called ____________.",
+            "answer": "inversion",
+            "accepted_synonyms": [],
+            "explanation": "Inversion turns the sole of the foot toward the midline at the intertarsal joints, the opposite of eversion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-22",
+          "question": {
+            "stem": "A joint that is functionally classified as slightly moveable, such as the intervertebral symphysis, is called a(n) ____________.",
+            "answer": "amphiarthrosis",
+            "accepted_synonyms": [
+              "amphiarthroses"
+            ],
+            "explanation": "Amphiarthrosis is the functional classification for a slightly moveable joint, distinguished from immobile (synarthrosis) and freely moveable (diarthrosis)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-23",
+          "question": {
+            "stem": "The thin layer of hyaline cartilage that covers the articulating surface of each bone within a synovial joint and reduces friction is the ____________.",
+            "answer": "articular cartilage",
+            "accepted_synonyms": [
+              "articular cartilages"
+            ],
+            "explanation": "Articular cartilage is the hyaline cartilage coating the bone ends inside a synovial joint, preventing friction between them."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-24",
+          "question": {
+            "stem": "The movement that brings a limb medially toward the midline of the body, opposing the outward lateral movement, is called ____________.",
+            "answer": "adduction",
+            "accepted_synonyms": [
+              "adducting",
+              "adduct"
+            ],
+            "explanation": "Adduction occurs within the coronal plane and brings the limb toward or across the midline, the opposite of abduction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-25",
+          "question": {
+            "stem": "In some synovial joints, a thin connective tissue sac filled with lubricating liquid that separates adjacent structures to prevent friction is called a(n) ____________.",
+            "answer": "bursa",
+            "accepted_synonyms": [
+              "bursae",
+              "bursas"
+            ],
+            "explanation": "A bursa is a fluid-filled sac located where skin, muscle, or tendon rubs against bone, reducing friction near a joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-26",
+          "question": {
+            "stem": "A hinge joint such as the elbow allows movement in only a single plane and is therefore classified as ____________ (in terms of its axes of movement).",
+            "answer": "uniaxial",
+            "accepted_synonyms": [],
+            "explanation": "Hinge joints permit only flexion and extension along one axis, making them uniaxial joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-27",
+          "question": {
+            "stem": "Joints in which the articulating surfaces are enclosed within a space filled with lubricating fluid, allowing a wide range of movement, are classified structurally as ____________ joints.",
+            "answer": "synovial joint",
+            "accepted_synonyms": [
+              "synovial joints",
+              "synovial"
+            ],
+            "explanation": "Slide 5 describes freely moveable joints with a fluid-filled cavity; structurally these are synovial joints, most common in the appendicular skeleton."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-28",
+          "question": {
+            "stem": "The type of fibrous joint that anchors the root of a tooth into its bony socket in the jaw is a(n) ____________.",
+            "answer": "gomphosis",
+            "accepted_synonyms": [
+              "gomphoses"
+            ],
+            "explanation": "A gomphosis, also called a peg-and-socket joint, is the fibrous joint holding a tooth in its socket via periodontal ligaments."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-29",
+          "question": {
+            "stem": "The movement of the forearm that returns the palm to face forward, as in the anatomical position, with the radius and ulna parallel, is called ____________.",
+            "answer": "supination",
+            "accepted_synonyms": [],
+            "explanation": "Supination rotates the forearm so the palm faces anteriorly and the radius and ulna are parallel, the opposite of pronation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fitb-30",
+          "question": {
+            "stem": "The type of cartilaginous joint in which bones are joined by fibrocartilage, such as the pubic symphysis, is a(n) ____________.",
+            "answer": "symphysis",
+            "accepted_synonyms": [
+              "symphyses"
+            ],
+            "explanation": "A symphysis is a cartilaginous joint united by fibrocartilage, distinct from a synchondrosis, which uses hyaline cartilage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u11-basic-fr-01",
+          "question": {
+            "prompt": "Classify the elbow joint and the shoulder joint by their number of axes of movement (uniaxial, biaxial, or multiaxial), and briefly explain what movement(s) each allows that justifies your classification.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies the elbow as a uniaxial joint."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains the elbow only allows bending/straightening (flexion and extension) in a single plane."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the shoulder as a multiaxial joint."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains the shoulder allows movement in three directions (anterior-posterior, medial-lateral, and rotation)."
+              }
+            ],
+            "model_answer": "The elbow is a uniaxial joint because it only allows bending and straightening (flexion and extension) along a single axis/plane. The shoulder is a multiaxial joint because it allows anterior-posterior movement (flexion-extension), medial-lateral movement (abduction-adduction), and rotation around its long axis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fr-02",
+          "question": {
+            "prompt": "Define abduction and adduction, and give an example of each movement performed at the shoulder joint.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines abduction as moving a limb laterally away from the midline of the body."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines adduction as moving a limb medially toward the midline of the body."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct example of abduction (e.g., raising the arm laterally away from the body)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct example of adduction (e.g., bringing the arm back down to the side of the body)."
+              }
+            ],
+            "model_answer": "Abduction moves a limb laterally away from the midline of the body, such as raising the arm out to the side at the shoulder. Adduction is the opposite movement, bringing the limb toward the midline, such as lowering the arm back to the side of the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fr-03",
+          "question": {
+            "prompt": "The term 'diarthrosis' comes from the root 'arthroun'. State what 'arthroun' means and explain what a diarthrosis is in terms of joint movement.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that arthroun means 'to fasten by a joint'."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that a diarthrosis is a freely moveable joint (all synovial joints are diarthroses)."
+              }
+            ],
+            "model_answer": "'Arthroun' means 'to fasten by a joint.' A diarthrosis is a freely moveable joint. All synovial joints are functionally classified as diarthroses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fr-04",
+          "question": {
+            "prompt": "Give the three functional classifications of joints, and for each one state the amount of movement it allows.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names synarthrosis and identifies it as immobile (no movement)."
+              },
+              {
+                "points": 1,
+                "criterion": "Names amphiarthrosis and identifies it as slightly moveable."
+              },
+              {
+                "points": 1,
+                "criterion": "Names diarthrosis and identifies it as freely moveable."
+              }
+            ],
+            "model_answer": "A synarthrosis is an immobile (or nearly immobile) joint. An amphiarthrosis is a slightly moveable joint. A diarthrosis is a freely moveable joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fr-05",
+          "question": {
+            "prompt": "Define the terms 'synchondrosis' and 'symphysis', and state which type of cartilage joins the bones in each.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines synchondrosis as a cartilaginous joint where bones are joined by cartilage (or bone joined to cartilage)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that a synchondrosis is joined by hyaline cartilage."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines symphysis as a cartilaginous joint where bones are joined together."
+              },
+              {
+                "points": 1,
+                "criterion": "States that a symphysis is joined by fibrocartilage."
+              }
+            ],
+            "model_answer": "A synchondrosis is a cartilaginous joint where bones (or bone and a cartilage structure) are joined by hyaline cartilage. A symphysis is a cartilaginous joint where the bones are joined together by fibrocartilage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fr-06",
+          "question": {
+            "prompt": "Name and describe the function of TWO additional structures found in some synovial joints (beyond the standard articular capsule, articular cartilage, and synovial membrane).",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names one valid additional structure (articular disc/meniscus, fat pad, or bursa)."
+              },
+              {
+                "points": 1,
+                "criterion": "Correctly describes the function of that first structure."
+              },
+              {
+                "points": 1,
+                "criterion": "Names a second valid additional structure."
+              },
+              {
+                "points": 1,
+                "criterion": "Correctly describes the function of that second structure."
+              }
+            ],
+            "model_answer": "A meniscus (or articular disc) is a fibrocartilage structure that can provide shock absorption and cushioning between bones (e.g., the knee meniscus), unite bones, or smooth their movements. A bursa is a thin connective tissue sac filled with lubricating fluid that separates adjacent structures to prevent friction where tendons, muscles, or skin rub near a joint. (A fat pad, which cushions between bones, is also acceptable.)"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fr-07",
+          "question": {
+            "prompt": "A biaxial joint allows movement in two planes. Using the metacarpophalangeal (knuckle) joint as your example, describe the TWO distinct movements this biaxial joint permits, and explain that these movements occur along two different axes/planes (making the joint biaxial).",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies bending/straightening of the finger (flexion and extension) as one movement."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies spreading fingers apart and bringing them together (abduction and adduction) as the second movement."
+              },
+              {
+                "points": 1,
+                "criterion": "Correctly states these occur along two different axes/planes (making it biaxial)."
+              }
+            ],
+            "model_answer": "The knuckle (metacarpophalangeal) joint is biaxial. Along one axis it allows bending and straightening of the finger (flexion and extension). Along a second axis it allows the fingers to spread apart and come back together (abduction and adduction). Because movement occurs along two different axes, the joint is classified as biaxial."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fr-08",
+          "question": {
+            "prompt": "Fibrous joints and synovial joints differ structurally. State how the bones are held together in a fibrous joint versus a synovial joint, and explain how this difference affects mobility.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that fibrous joints unite bones by fibrous connective tissue (with no joint cavity)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that synovial joints have a fluid-filled joint cavity between the articulating surfaces."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains fibrous joints allow little or no movement (more stable)."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains synovial joints allow free/increased movement (more mobile)."
+              }
+            ],
+            "model_answer": "In a fibrous joint the adjacent bones are directly united by fibrous connective tissue with no joint cavity, which allows little or no movement and provides stability. In a synovial joint the articulating surfaces are separated by a fluid-filled joint cavity and are not directly connected, allowing the bones to move smoothly against each other and giving free/increased mobility."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fr-09",
+          "question": {
+            "prompt": "For the vertebral column, define flexion and extension, and state which anatomical plane these movements occur within.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines flexion of the vertebral column as an anterior (forward) bending of the neck or body."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines extension of the vertebral column as a posterior-directed motion (straightening or bending backward)."
+              },
+              {
+                "points": 1,
+                "criterion": "States these movements occur within the sagittal plane."
+              }
+            ],
+            "model_answer": "For the vertebral column, flexion is an anterior (forward) bending of the neck or body, while extension is a posterior-directed motion such as straightening from a flexed position or bending backward. Both movements occur within the sagittal plane."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-basic-fr-10",
+          "question": {
+            "prompt": "Define the movements 'dorsiflexion' and 'plantar flexion', and name the joint at which they occur.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines dorsiflexion as lifting the front/top of the foot toward the anterior leg."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines plantar flexion as lifting the heel / pointing the toes downward."
+              },
+              {
+                "points": 1,
+                "criterion": "Names the ankle joint as the joint where these occur."
+              }
+            ],
+            "model_answer": "Dorsiflexion is lifting the front of the foot so the top of the foot moves toward the anterior leg. Plantar flexion is lifting the heel from the ground or pointing the toes downward. Both movements occur at the ankle joint (a hinge joint)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    },
+    "advanced": {
+      "mc": [
+        {
+          "id": "u11-advanced-mc-01",
+          "question": {
+            "stem": "A student is organizing the structural classifications of joints and their subtypes. Which of the following correctly pairs a structural class with one of its true subtypes?",
+            "options": [
+              "Cartilaginous joint — gomphosis",
+              "Fibrous joint — synchondrosis",
+              "Synovial joint — symphysis",
+              "Fibrous joint — syndesmosis",
+              "Cartilaginous joint — suture"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A syndesmosis is one of the three fibrous joint subtypes (along with sutures and gomphoses), where parallel bones are united by fibrous connective tissue.\n\n**Why the other options are wrong:**\n- **(A)** A gomphosis is a fibrous joint, not cartilaginous.\n- **(B)** A synchondrosis is a cartilaginous joint (hyaline cartilage), not fibrous.\n- **(C)** A symphysis is a cartilaginous joint subtype, not synovial (synovial joints are subdivided by shape, e.g. hinge, pivot).\n- **(E)** A suture is a fibrous joint, not cartilaginous."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-02",
+          "question": {
+            "stem": "The key term \"circumduction\" is used in this unit to describe a movement. Which description best matches this term?",
+            "options": [
+              "The distal end of a limb moves in a circle while the proximal end stays relatively stationary",
+              "The angle between two bones decreases",
+              "The bottom of the foot is turned toward the midline",
+              "A bone rotates around its own long axis",
+              "The scapula is pulled posteriorly toward the vertebral column"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Circumduction is the sequential combination of flexion, adduction, extension, and abduction, in which the distal end traces a circle while the proximal end remains relatively fixed.\n\n**Why the other options are wrong:**\n- **(B)** Decreasing the angle between bones is flexion.\n- **(C)** Turning the sole toward the midline is inversion.\n- **(D)** Rotation about the long axis is rotation, not circumduction.\n- **(E)** Pulling the scapula posteriorly and medially is retraction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-03",
+          "question": {
+            "stem": "A metacarpophalangeal (knuckle) joint allows the fingers to bend/straighten and to spread apart/together. Based on these motions, how is this joint functionally classified with respect to its axes of movement?",
+            "options": [
+              "Multiaxial",
+              "Nonaxial (immobile)",
+              "Uniaxial",
+              "It cannot be classified by axes because it is a fibrous joint",
+              "Biaxial"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The knuckle (condyloid) joint permits movement in two planes—flexion/extension and abduction/adduction—making it a biaxial joint.\n\n**Why the other options are wrong:**\n- **(A)** Multiaxial joints allow three axes of movement, as in ball-and-socket joints.\n- **(B)** The knuckle joint is clearly mobile, not immobile.\n- **(C)** Uniaxial joints allow motion in only one plane, like the elbow.\n- **(D)** The knuckle joint is a synovial (condyloid) joint, not fibrous."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-04",
+          "question": {
+            "stem": "The intervertebral disc unites the bodies of adjacent vertebrae. Which combined structural AND functional classification correctly applies to this joint?",
+            "options": [
+              "Synovial joint / diarthrosis",
+              "Cartilaginous symphysis / amphiarthrosis",
+              "Fibrous syndesmosis / amphiarthrosis",
+              "Cartilaginous synchondrosis / synarthrosis",
+              "Fibrous joint / synarthrosis"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The intervertebral disc is made of fibrocartilage (structurally a symphysis) and allows limited movement, so it is functionally an amphiarthrosis.\n\n**Why the other options are wrong:**\n- **(A)** It has no joint cavity and is not freely movable, so it is not synovial/diarthrosis.\n- **(C)** It is cartilaginous, not fibrous, though it is correctly amphiarthrotic.\n- **(D)** A synchondrosis is joined by hyaline cartilage and is immobile; the disc is fibrocartilage and slightly mobile.\n- **(E)** It is not fibrous, and it is not immobile."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-05",
+          "question": {
+            "stem": "In a labeled diagram of a synovial joint, one component lines the inner surface of the articular capsule and secretes a fluid that both lubricates the joint and nourishes the avascular articular cartilage. Which labeled structure is this?",
+            "options": [
+              "Meniscus",
+              "Synovial membrane",
+              "Bursa",
+              "Articular cartilage",
+              "Periodontal ligament"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The synovial membrane lines the inner articular capsule and its cells secrete synovial fluid, which lubricates the joint and nourishes the blood-vessel-free articular cartilage.\n\n**Why the other options are wrong:**\n- **(A)** A meniscus is a fibrocartilage disc for cushioning, not a secretory lining.\n- **(C)** A bursa is a separate fluid-filled sac that prevents friction outside the joint, not the capsule lining.\n- **(D)** Articular cartilage covers bone ends and reduces friction but does not secrete synovial fluid.\n- **(E)** A periodontal ligament belongs to a gomphosis, not a synovial joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-06",
+          "question": {
+            "stem": "As the Unit 11 review slide emphasizes, the radius and ulna are held firmly together along their shafts by a broad sheet of fibrous connective tissue. This union is an example of which joint type?",
+            "options": [
+              "Synchondrosis",
+              "Synovial (pivot) joint",
+              "Suture",
+              "Gomphosis",
+              "Syndesmosis"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The shafts of the radius and ulna are united by an interosseous membrane, which is a syndesmosis—a fibrous joint uniting parallel bones.\n\n**Why the other options are wrong:**\n- **(A)** A synchondrosis is a cartilaginous joint, not a fibrous membrane between shafts.\n- **(B)** The proximal radioulnar joint (a pivot) is a separate synovial joint; the shafts are united by a syndesmosis, not a joint cavity.\n- **(C)** Sutures occur between skull bones, not the forearm.\n- **(D)** A gomphosis anchors a tooth in its socket."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-07",
+          "question": {
+            "stem": "A person shrugs their shoulders upward and then lowers them, and separately opens and closes their mouth. Which pair of movement terms correctly describes the UPWARD movement of the scapula and the CLOSING of the mouth, respectively?",
+            "options": [
+              "Protraction; retraction",
+              "Elevation; depression",
+              "Retraction; protraction",
+              "Elevation; elevation",
+              "Depression; elevation"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Upward movement of the scapula is elevation, and closing the mouth (raising the mandible) is also elevation.\n\n**Why the other options are wrong:**\n- **(A)** Protraction and retraction are anterior-posterior movements, not up-down.\n- **(B)** Closing the mouth is elevation of the mandible, not depression.\n- **(C)** These are anterior-posterior terms, not the vertical movements described.\n- **(E)** Raising the scapula is elevation, not depression."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-08",
+          "question": {
+            "stem": "A student needs to distinguish the terms \"supination\" and \"pronation.\" Which statement correctly uses these terms in relation to forearm anatomy?",
+            "options": [
+              "In supination the radius and ulna are crossed in an X-shape",
+              "Supination occurs only at the elbow hinge joint",
+              "In supination the radius and ulna are parallel and the palm faces forward",
+              "In pronation the palm faces forward as in anatomical position",
+              "Pronation is the movement of turning the sole of the foot outward"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** In the supinated (anatomical) position the palm faces forward and the radius and ulna lie parallel to each other.\n\n**Why the other options are wrong:**\n- **(A)** The crossed X-shape is the pronated position, not supinated.\n- **(B)** Supination occurs at the proximal radioulnar (pivot) joint, not the elbow hinge.\n- **(D)** The forward-facing palm is the supinated position, not pronated.\n- **(E)** Turning the sole outward is eversion of the foot, unrelated to forearm pronation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-09",
+          "question": {
+            "stem": "A synovial joint and a symphysis are compared. Which structural feature is present in the synovial joint but ABSENT in the symphysis, and accounts for the synovial joint's greater mobility?",
+            "options": [
+              "A fluid-filled joint cavity",
+              "An interosseous membrane",
+              "Fibrous connective tissue binding the bones",
+              "Hyaline cartilage covering the bone ends",
+              "Fibrocartilage between the bones"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A synovial joint uniquely possesses a fluid-filled joint cavity, which a symphysis lacks; this cavity allows the bones to move freely against each other.\n\n**Why the other options are wrong:**\n- **(B)** An interosseous membrane is found in a syndesmosis, not in either of these joints.\n- **(C)** Fibrous connective tissue binding bones characterizes fibrous joints.\n- **(D)** Hyaline cartilage does cover the ends of synovial bones (articular cartilage), but it is not the feature responsible for the cavity and mobility.\n- **(E)** Fibrocartilage between the bones is the defining feature of a symphysis, not the synovial-specific feature."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-10",
+          "question": {
+            "stem": "When a person touches the tip of the thumb to the tip of the little finger of the same hand, which movement is being performed and at which joint does it primarily occur?",
+            "options": [
+              "Abduction, at the interphalangeal joint",
+              "Circumduction, at the radiocarpal joint",
+              "Protraction, at the intercarpal joints",
+              "Reposition, at the metacarpophalangeal joint",
+              "Opposition, at the first carpometacarpal (saddle) joint"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Opposition brings the thumb tip into contact with a fingertip and occurs at the first carpometacarpal (saddle) joint, combining flexion and abduction of the thumb.\n\n**Why the other options are wrong:**\n- **(A)** Pure abduction moves the thumb away from the palm and does not create fingertip contact.\n- **(B)** Circumduction is a circular movement, not thumb-to-finger contact, and does not occur at this joint for this action.\n- **(C)** Protraction is a scapula/mandible movement, not a thumb action.\n- **(D)** Reposition returns the thumb to the anatomical position beside the index finger, the opposite of what is described."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-11",
+          "question": {
+            "stem": "What structural feature distinguishes a synovial joint from both fibrous and cartilaginous joints and is the reason synovial joints allow the greatest mobility?",
+            "options": [
+              "The bones are joined by hyaline cartilage that is continuous between them",
+              "The articulating surfaces are fused by ossified connective tissue",
+              "The articulating bones are directly united by fibrocartilage",
+              "The bones are connected by a broad interosseous membrane",
+              "A fluid-filled joint cavity separates the articulating bone surfaces"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The defining feature of a synovial joint is the presence of a joint cavity—a fluid-filled space in which the articulating surfaces contact each other but are not directly connected, permitting increased mobility.\n\n**Why the other options are wrong:**\n- **(A)** Continuous hyaline cartilage between bones describes a synchondrosis (cartilaginous joint).\n- **(B)** Ossified fusion describes a synostosis, which is immobile, the opposite of a synovial joint.\n- **(C)** Direct union by fibrocartilage describes a symphysis (cartilaginous joint), which lacks a joint cavity.\n- **(D)** An interosseous membrane characterizes a syndesmosis (fibrous joint), not a synovial joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-12",
+          "question": {
+            "stem": "A basketball player quickly turns the sole of her foot to angle inward toward the midline as she changes direction. Which movement is this, and where does it occur?",
+            "options": [
+              "Plantar flexion, occurring at the ankle (talocrural) joint",
+              "Eversion, occurring at the ankle (talocrural) joint",
+              "Inversion, occurring at the ankle (talocrural) joint",
+              "Inversion, occurring at the intertarsal (plane) joints",
+              "Dorsiflexion, occurring at the intertarsal joints"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Turning the sole of the foot toward the midline is inversion, and this complex movement occurs at the multiple plane (intertarsal) joints among the tarsal bones, not at the ankle joint proper.\n\n**Why the other options are wrong:**\n- **(A)** Plantar flexion is pointing the toes/lifting the heel, a different motion at the ankle joint.\n- **(B)** Eversion angles the sole away from the midline, and it does not occur at the ankle joint.\n- **(C)** The movement is inversion, but it occurs at the intertarsal joints, not the ankle joint.\n- **(E)** Dorsiflexion lifts the top of the foot and occurs at the ankle, not the intertarsal joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-13",
+          "question": {
+            "stem": "A student is grouping joints by their structural classification and subtypes. Which pairing correctly matches a structural class with one of its recognized subtypes?",
+            "options": [
+              "Synovial joint — syndesmosis",
+              "Cartilaginous joint — synchondrosis",
+              "Fibrous joint — symphysis",
+              "Fibrous joint — synchondrosis",
+              "Cartilaginous joint — gomphosis"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A synchondrosis (bones joined by hyaline cartilage) is one of the two subtypes of cartilaginous joints, along with the symphysis.\n\n**Why the other options are wrong:**\n- **(A)** A syndesmosis is a fibrous joint, not a synovial joint.\n- **(C)** A symphysis is a cartilaginous joint, not a fibrous joint.\n- **(D)** A synchondrosis is cartilaginous; the fibrous subtypes are suture, syndesmosis, and gomphosis.\n- **(E)** A gomphosis is a fibrous joint, not a cartilaginous joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-14",
+          "question": {
+            "stem": "When labeling a diagram of a synovial joint, a student must identify the structure that lines the inner surface of the articular capsule and secretes the lubricating fluid. Which structure is this?",
+            "options": [
+              "Synovial membrane",
+              "Articular cartilage",
+              "Fat pad",
+              "Bursa",
+              "Meniscus"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The synovial membrane lines the inner surface of the articular capsule, and its cells secrete synovial fluid that lubricates and nourishes the articular cartilage.\n\n**Why the other options are wrong:**\n- **(B)** Articular cartilage covers the bone's articulating surfaces to reduce friction; it does not secrete fluid.\n- **(C)** A fat pad serves as a cushion between bones and does not secrete synovial fluid.\n- **(D)** A bursa is a separate fluid-filled sac outside the joint that reduces friction between soft tissues and bone.\n- **(E)** A meniscus is a C-shaped fibrocartilage pad found only in some joints, not the fluid-secreting lining."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-15",
+          "question": {
+            "stem": "A term in this unit literally means \"fastened with bolts\" and describes a peg-and-socket fibrous joint. Which term is it, and which joint does it describe?",
+            "options": [
+              "Syndesmosis — the radioulnar interosseous membrane",
+              "Symphysis — the pubic symphysis of the pelvis",
+              "Suture — the union of most skull bones",
+              "Synchondrosis — the epiphyseal plate of a long bone",
+              "Gomphosis — the anchoring of a tooth root in its bony socket"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Gomphosis means \"fastened with bolts\" and is the peg-and-socket fibrous joint anchoring a tooth root into its bony socket via periodontal ligaments.\n\n**Why the other options are wrong:**\n- **(A)** Syndesmosis means \"fastened with a band\" and unites parallel bones like the radius and ulna.\n- **(B)** Symphysis means \"growing together\" and describes fibrocartilage joints like the pubic symphysis.\n- **(C)** Suture means \"to bind or sew\" and describes skull bone joints, not a peg-and-socket structure.\n- **(D)** Synchondrosis means \"joined by cartilage\" and describes the epiphyseal plate."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-16",
+          "question": {
+            "stem": "The metacarpophalangeal (knuckle) joint allows fingers to bend/straighten and to spread apart/together, whereas the elbow allows only bending and straightening. Which axial classification correctly describes each?",
+            "options": [
+              "Both joints are multiaxial",
+              "The knuckle joint is uniaxial; the elbow is biaxial",
+              "The knuckle joint is biaxial; the elbow is uniaxial",
+              "Both joints are uniaxial",
+              "The knuckle joint is multiaxial; the elbow is biaxial"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The knuckle (condyloid) joint permits movement in two planes (flexion/extension and abduction/adduction), making it biaxial, while the elbow (hinge) permits movement in only one plane, making it uniaxial.\n\n**Why the other options are wrong:**\n- **(A)** Neither joint is multiaxial; only ball-and-socket joints allow three axes of motion.\n- **(B)** The classifications are reversed; the knuckle is biaxial and the elbow is uniaxial.\n- **(D)** The knuckle joint permits two planes of movement, so it is not uniaxial.\n- **(E)** The knuckle joint is biaxial, not multiaxial, and the elbow is uniaxial, not biaxial."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-17",
+          "question": {
+            "stem": "Comparing the interosseous membrane of the forearm (radius–ulna) with the tibiofibular syndesmosis of the leg, both are fibrous joints of the same subtype, yet they differ functionally. What is the key functional difference?",
+            "options": [
+              "Neither permits any movement, since both are synarthroses",
+              "The forearm membrane permits rotation of the radius, while the leg syndesmosis allows little movement for stability",
+              "The leg syndesmosis permits rotation, while the forearm membrane provides rigid stability",
+              "Both permit equal, extensive rotation of the parallel bones",
+              "The forearm joint is a synovial joint, while the leg joint is fibrous"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Both are syndesmoses (amphiarthroses), but the antebrachial interosseous membrane is flexible enough to allow the radius to rotate for forearm movements, whereas the tibiofibular syndesmosis allows little movement to provide strength and stability during weight bearing.\n\n**Why the other options are wrong:**\n- **(A)** Syndesmoses are amphiarthroses (slightly mobile), not synarthroses.\n- **(C)** The functional roles are reversed; the forearm permits rotation, not the leg.\n- **(D)** The two joints differ markedly in mobility; the leg allows little movement.\n- **(E)** Both joints are fibrous (syndesmoses), not synovial."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-18",
+          "question": {
+            "stem": "A person shrugs their shoulders upward and then closes their jaw to bite. Which single pair of movement terms correctly describes both actions?",
+            "options": [
+              "Depression of the scapula and depression of the mandible",
+              "Retraction (shoulder) and protraction (jaw)",
+              "Protraction (shoulder) and retraction (jaw)",
+              "Elevation of the scapula and elevation of the mandible",
+              "Elevation of the scapula and depression of the mandible"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Shrugging the shoulders upward is elevation of the scapula, and closing the jaw to bite is upward movement (elevation) of the mandible—both are elevation.\n\n**Why the other options are wrong:**\n- **(A)** Depression is downward movement; both actions described are upward.\n- **(B)** These are anterior-posterior movements, not the upward actions given.\n- **(C)** Protraction/retraction are anterior-posterior movements, not the upward motions described.\n- **(E)** Closing the jaw to bite is elevation of the mandible, not depression."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-19",
+          "question": {
+            "stem": "Which of the following correctly classifies a joint by BOTH its structural and functional class?",
+            "options": [
+              "A skull suture is a cartilaginous joint and a synarthrosis",
+              "A gomphosis is a synovial joint and an amphiarthrosis",
+              "The intervertebral disc joint is a cartilaginous joint and an amphiarthrosis",
+              "The atlantoaxial (pivot) joint is a fibrous joint and a synarthrosis",
+              "The pubic symphysis is a synovial joint and a diarthrosis"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The intervertebral disc is made of fibrocartilage, making it a cartilaginous joint (symphysis), and it permits limited movement, making it functionally an amphiarthrosis.\n\n**Why the other options are wrong:**\n- **(A)** A suture is a fibrous joint, not cartilaginous (though it is correctly a synarthrosis).\n- **(B)** A gomphosis is a fibrous joint and a synarthrosis, not synovial/amphiarthrosis.\n- **(D)** The atlantoaxial pivot joint is a synovial joint and a diarthrosis, not fibrous/synarthrosis.\n- **(E)** The pubic symphysis is a cartilaginous joint (symphysis) and an amphiarthrosis, not synovial."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-20",
+          "question": {
+            "stem": "A student states: \"All synovial joints share one functional classification.\" Which functional class is this, and why does it apply to every synovial joint?",
+            "options": [
+              "Diarthrosis, because the joint cavity allows the bones to move freely against each other",
+              "Amphiarthrosis, because they allow only limited movement",
+              "Diarthrosis, because fibrocartilage discs limit their motion",
+              "Amphiarthrosis, because a joint cavity restricts movement to a small range",
+              "Synarthrosis, because their bones are strongly anchored together"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** All synovial joints are functionally classified as diarthroses because the fluid-filled joint cavity separates the bones and allows them to move freely against one another.\n\n**Why the other options are wrong:**\n- **(B)** Amphiarthroses are slightly mobile joints (some fibrous/cartilaginous), not the freely mobile synovial joints.\n- **(C)** Diarthrosis is correct, but synovial joints are freely mobile precisely because of the joint cavity, not limited by discs.\n- **(D)** A joint cavity enables free movement rather than restricting it, and synovial joints are diarthroses.\n- **(E)** Synarthroses are immobile joints (some fibrous/cartilaginous), which synovial joints are not."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-21",
+          "question": {
+            "stem": "A student examines the pubic symphysis and the sutures of the skull. How would each be classified functionally, and why do they differ?",
+            "options": [
+              "The pubic symphysis is a synarthrosis, while sutures are amphiarthroses",
+              "Both are amphiarthroses, because both are cartilaginous joints",
+              "The pubic symphysis is a diarthrosis, while sutures are amphiarthroses",
+              "The pubic symphysis is an amphiarthrosis (fibrocartilage allows limited movement), while sutures are synarthroses (tight fibrous union prevents movement)",
+              "Both are synarthroses, because both are held together without a joint cavity"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The pubic symphysis is a fibrocartilage symphysis that permits limited movement (amphiarthrosis), whereas skull sutures form a tight fibrous union that prevents most movement (synarthrosis).\n\n**Why the other options are wrong:**\n- **(A)** These classifications are reversed—the symphysis is the amphiarthrosis and the suture is the synarthrosis.\n- **(B)** Sutures are fibrous, not cartilaginous, and are immobile synarthroses.\n- **(C)** Neither joint is a freely movable diarthrosis; only synovial joints are diarthroses.\n- **(E)** The pubic symphysis is slightly mobile, not immobile, so it is not a synarthrosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-22",
+          "question": {
+            "stem": "Both a synchondrosis and a symphysis lack a joint cavity and unite bones with cartilage. What structural feature distinguishes a synchondrosis from a symphysis?",
+            "options": [
+              "A synchondrosis has a synovial membrane, while a symphysis does not",
+              "A synchondrosis is always amphiarthrotic, while a symphysis is always synarthrotic",
+              "A synchondrosis uses hyaline cartilage, while a symphysis uses fibrocartilage",
+              "A synchondrosis unites bone to bone only, while a symphysis unites bone to cartilage only",
+              "A synchondrosis uses fibrocartilage, while a symphysis uses hyaline cartilage"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A synchondrosis joins bones (or bone to cartilage) with hyaline cartilage, while a symphysis joins bones with fibrocartilage.\n\n**Why the other options are wrong:**\n- **(A)** Neither cartilaginous joint has a synovial membrane; that is a synovial-joint feature.\n- **(B)** Synchondroses are synarthrotic and symphyses are amphiarthrotic—the reverse of what is stated.\n- **(D)** A synchondrosis can unite bone to cartilage (e.g., rib to costal cartilage), so this distinction is incorrect.\n- **(E)** This reverses the cartilage types."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-23",
+          "question": {
+            "stem": "While labeling a diagram of a synovial joint, a student must identify the structure that secretes a fluid that both lubricates the joint and nourishes the avascular articular cartilage. Which structure is this?",
+            "options": [
+              "Bursa",
+              "Meniscus",
+              "Articular capsule",
+              "Articular cartilage",
+              "Synovial membrane"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The synovial membrane lines the inner articular capsule and its cells secrete synovial fluid, which lubricates the joint and nourishes the blood-vessel-free articular cartilage.\n\n**Why the other options are wrong:**\n- **(A)** A bursa is a separate fluid-filled sac outside the joint that reduces friction, not the nourishing membrane.\n- **(B)** A meniscus is a fibrocartilage cushion, not a fluid-secreting structure.\n- **(C)** The articular capsule forms the fibrous walls of the joint cavity but does not secrete synovial fluid.\n- **(D)** Articular cartilage is the tissue being nourished, not the source of the fluid."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-24",
+          "question": {
+            "stem": "A student encounters the term 'gomphosis' and needs to know what it describes. Which definition correctly matches this term?",
+            "options": [
+              "A peg-and-socket fibrous joint anchoring a tooth root into its bony socket by periodontal ligaments",
+              "A synovial joint allowing rotation around a single axis",
+              "A fibrous joint uniting two parallel bones by an interosseous membrane",
+              "A cartilaginous joint uniting the bodies of adjacent vertebrae",
+              "A hyaline-cartilage joint found at an epiphyseal plate"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A gomphosis ('fastened with bolts') is the peg-and-socket fibrous joint that anchors a tooth root into its socket via periodontal ligaments, classified as a synarthrosis.\n\n**Why the other options are wrong:**\n- **(B)** This describes a pivot joint, a synovial joint.\n- **(C)** This describes a syndesmosis, a different fibrous joint.\n- **(D)** This describes an intervertebral symphysis, a cartilaginous joint.\n- **(E)** This describes a synchondrosis, a cartilaginous joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-25",
+          "question": {
+            "stem": "The three structural classifications of joints are distinguished primarily by what feature?",
+            "options": [
+              "Whether they contain a meniscus, a bursa, or a fat pad",
+              "Whether the bones are united by fibrous tissue, by cartilage, or contact within a fluid-filled joint cavity",
+              "Whether they are located in the axial or appendicular skeleton",
+              "Whether they permit uniaxial, biaxial, or multiaxial movement",
+              "Whether they are classified as synarthrotic, amphiarthrotic, or diarthrotic"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Structural classification depends on whether adjacent bones are joined by fibrous connective tissue (fibrous), by cartilage (cartilaginous), or articulate within a fluid-filled joint cavity (synovial).\n\n**Why the other options are wrong:**\n- **(A)** These are additional structures of some synovial joints, not the classification basis.\n- **(C)** Location in the skeleton is not the basis for structural classification.\n- **(D)** Axes of movement describe subtypes of diarthroses, not the structural classification scheme.\n- **(E)** These are the functional classifications, not the structural ones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-26",
+          "question": {
+            "stem": "A person turns the sole of their right foot to face medially (toward the body's midline). This movement occurs at the intertarsal plane joints. What is this movement called?",
+            "options": [
+              "Plantar flexion",
+              "Pronation",
+              "Eversion",
+              "Inversion",
+              "Dorsiflexion"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Inversion is the movement at the intertarsal joints that angles the bottom of the foot toward the midline.\n\n**Why the other options are wrong:**\n- **(A)** Plantar flexion points the toes downward at the ankle joint.\n- **(B)** Pronation is a forearm movement, not a foot movement.\n- **(C)** Eversion turns the sole away from the midline, the opposite motion.\n- **(E)** Dorsiflexion lifts the top of the foot at the ankle joint, not a sole-turning motion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-27",
+          "question": {
+            "stem": "A student labels the knee joint and identifies a large, C-shaped fibrocartilage structure between the femur and tibia that provides shock absorption. What is this structure, and how does it differ from a bursa?",
+            "options": [
+              "It is a fat pad; unlike a bursa, it secretes synovial fluid",
+              "It is a bursa; unlike a meniscus, it is made of hyaline cartilage",
+              "It is a meniscus; unlike a bursa (a fluid-filled sac reducing friction with skin or tendon), it is a fibrocartilage cushion between the articulating bones",
+              "It is an articular disc; unlike a meniscus, it is always small and oval",
+              "It is a synovial membrane; unlike a bursa, it lines the joint cavity"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The C-shaped fibrocartilage cushion in the knee is a meniscus that sits between the articulating bones for shock absorption, whereas a bursa is a fluid-filled sac that reduces friction between structures like skin, tendon, and bone.\n\n**Why the other options are wrong:**\n- **(A)** A fat pad cushions but does not secrete synovial fluid.\n- **(B)** A bursa is a fluid-filled sac, not the fibrocartilage structure described.\n- **(D)** A meniscus is the large C-shaped type of articular disc, so calling it always small and oval is incorrect.\n- **(E)** The synovial membrane is a fluid-secreting lining, not a fibrocartilage cushion between bones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-28",
+          "question": {
+            "stem": "At a cartilaginous joint, the adjacent bones are united by cartilage and there is no joint cavity. Based on this defining feature, which of the following is true of ALL cartilaginous joints?",
+            "options": [
+              "They are all lined by a synovial membrane",
+              "They lack a joint cavity and are functionally classified as either synarthroses or amphiarthroses",
+              "They are all freely movable and located in the appendicular skeleton",
+              "They are all functionally classified as diarthroses",
+              "They all use fibrocartilage to unite the bones"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Cartilaginous joints lack a joint cavity and, depending on type, are functionally classified as either synarthroses (synchondroses) or amphiarthroses (symphyses).\n\n**Why the other options are wrong:**\n- **(A)** A synovial membrane is a feature of synovial joints, not cartilaginous joints.\n- **(C)** Cartilaginous joints are immobile or only slightly mobile, not freely movable.\n- **(D)** Only synovial joints are diarthroses; cartilaginous joints are not.\n- **(E)** Synchondroses use hyaline cartilage, so not all cartilaginous joints use fibrocartilage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-29",
+          "question": {
+            "stem": "A hinge joint (like the elbow) and a ball-and-socket joint (like the hip) both allow movement, but they differ in the number of axes. How should each be classified by axes of movement?",
+            "options": [
+              "Both are multiaxial because both are synovial joints",
+              "The elbow is multiaxial and the hip is uniaxial",
+              "The elbow is uniaxial (movement in one plane) and the hip is multiaxial (movement in three planes)",
+              "Both are uniaxial because both are diarthroses",
+              "The elbow is biaxial and the hip is uniaxial"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A hinge joint permits movement in only one plane (uniaxial), while a ball-and-socket joint permits anterior-posterior, medial-lateral, and rotational movement (multiaxial).\n\n**Why the other options are wrong:**\n- **(A)** Being synovial does not make all joints multiaxial; the elbow is uniaxial.\n- **(B)** This reverses the correct classifications.\n- **(D)** The hip is multiaxial, not uniaxial, so this is incorrect.\n- **(E)** These classifications are reversed and the elbow is uniaxial, not biaxial."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-mc-30",
+          "question": {
+            "stem": "A person shrugs their shoulders upward and then closes their mouth by raising the lower jaw. What single movement term describes both of these upward movements?",
+            "options": [
+              "Elevation",
+              "Protraction",
+              "Opposition",
+              "Retraction",
+              "Depression"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Elevation is the upward movement of the scapula (shrugging) or the mandible (closing the mouth).\n\n**Why the other options are wrong:**\n- **(B)** Protraction is an anterior movement of the scapula or mandible, not an upward one.\n- **(C)** Opposition is a thumb movement bringing the thumb tip to a fingertip.\n- **(D)** Retraction is a posterior movement, not upward.\n- **(E)** Depression is the downward movement, the opposite of what is described."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u11-advanced-tf-01",
+          "question": {
+            "stem": "The intervertebral disc is structurally classified as a symphysis and functionally classified as an amphiarthrosis.",
+            "correct": true,
+            "explanation": "The intervertebral disc is made of fibrocartilage joining adjacent vertebral bodies, making it a symphysis (a cartilaginous joint). Because it permits only limited movement between vertebrae, it is functionally an amphiarthrosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-02",
+          "question": {
+            "stem": "A gomphosis and a suture are both functionally classified as synarthroses.",
+            "correct": true,
+            "explanation": "A gomphosis (tooth in socket) and a suture (between skull bones) are both immobile or nearly immobile fibrous joints, so both are functionally classified as synarthroses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-03",
+          "question": {
+            "stem": "Turning the sole of the foot to angle the bottom of the foot toward the midline is called eversion.",
+            "correct": false,
+            "explanation": "This describes inversion. Eversion is the opposite movement, turning the bottom of the foot away from the midline. Both occur at the intertarsal (plane) joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-04",
+          "question": {
+            "stem": "A saddle joint is uniaxial, allowing movement in only one plane.",
+            "correct": false,
+            "explanation": "A saddle joint, such as the first carpometacarpal joint at the base of the thumb, is biaxial, allowing angular movement in two planes. Uniaxial joints include hinge and pivot joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-05",
+          "question": {
+            "stem": "Elevation of the mandible closes the mouth, while depression of the mandible opens it.",
+            "correct": true,
+            "explanation": "Elevation is the upward movement of the lower jaw used to close the mouth or bite, and depression is the downward movement that opens the mouth. Both movements also apply to the scapula (shrugging)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-06",
+          "question": {
+            "stem": "Because the thumb is oriented at roughly a 90-degree angle to the other fingers, abduction of the thumb moves it anteriorly away from the palm.",
+            "correct": true,
+            "explanation": "Since the thumb sits nearly perpendicular to the other fingers, its abduction/adduction plane differs from the fingers. Abduction moves the thumb anteriorly away from the palm, and adduction brings it back in line with the index finger."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-07",
+          "question": {
+            "stem": "Both cartilaginous joints and fibrous joints lack a joint cavity, whereas synovial joints possess a fluid-filled joint cavity.",
+            "correct": true,
+            "explanation": "Fibrous joints unite bones with fibrous connective tissue and cartilaginous joints unite them with cartilage, so neither has a joint cavity. Only synovial joints have a joint cavity filled with synovial fluid, which is their defining structural feature."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-08",
+          "question": {
+            "stem": "Synovial fluid, in addition to lubricating the joint, provides nourishment to the articular cartilage because that cartilage lacks blood vessels.",
+            "correct": true,
+            "explanation": "The synovial membrane secretes synovial fluid, which lubricates the joint AND nourishes the avascular articular (hyaline) cartilage, which cannot receive nutrients directly from blood vessels."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-09",
+          "question": {
+            "stem": "The interosseous membrane between the radius and ulna is more flexible than the tibiofibular syndesmosis, allowing the radius to rotate during forearm movements.",
+            "correct": true,
+            "explanation": "The antebrachial interosseous membrane is flexible enough to permit rotation of the radius (supination/pronation), giving the forearm mobility. The tibiofibular syndesmosis, in contrast, allows very little movement, prioritizing strength and stability during weight bearing."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-10",
+          "question": {
+            "stem": "Circumduction and rotation are the same movement, since both involve a bone moving around its long axis.",
+            "correct": false,
+            "explanation": "They are distinct. Rotation is a bone turning around its own long axis. Circumduction is a sequential combination of flexion, adduction, extension, and abduction in which the distal end of a bone traces a circle while the proximal end stays relatively stationary."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-11",
+          "question": {
+            "stem": "The term 'amphiarthrosis' refers to a slightly moveable joint, whereas 'diarthrosis' refers to a freely moveable joint.",
+            "correct": true,
+            "explanation": "These are functional classifications. Amphiarthrosis = slightly moveable (e.g., intervertebral symphysis), and diarthrosis = freely moveable (all synovial joints). A synarthrosis is the immobile type."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-12",
+          "question": {
+            "stem": "A biaxial joint permits movement in two planes, exemplified by the knuckle (metacarpophalangeal) joints which allow both bending of the fingers and spreading them apart.",
+            "correct": true,
+            "explanation": "The metacarpophalangeal (condyloid) joint is biaxial: flexion/extension along one axis and abduction/adduction along a second axis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-13",
+          "question": {
+            "stem": "The elbow joint is a hinge joint that permits only uniaxial movement, so it is classified as a multiaxial diarthrosis.",
+            "correct": false,
+            "explanation": "The elbow is a hinge joint allowing only flexion and extension along a single axis, so it is a UNIAXIAL diarthrosis, not multiaxial. Multiaxial diarthroses are the ball-and-socket joints of the shoulder and hip."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-14",
+          "question": {
+            "stem": "The intervertebral disc is structurally classified as a symphysis (cartilaginous joint) and functionally classified as an amphiarthrosis.",
+            "correct": true,
+            "explanation": "The intervertebral disc is made of fibrocartilage, making it a symphysis structurally, and it allows limited movement, making it an amphiarthrosis functionally."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-15",
+          "question": {
+            "stem": "Supination is the movement that brings the palm to face forward with the radius and ulna parallel, while pronation turns the palm backward and crosses the radius over the ulna into an X-shape.",
+            "correct": true,
+            "explanation": "In the supinated (anatomical) position the radius and ulna are parallel; pronation rotates the radius over the ulna forming an X, turning the palm posteriorly."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-16",
+          "question": {
+            "stem": "Eversion is the movement that turns the sole of the foot toward the midline of the body.",
+            "correct": false,
+            "explanation": "That describes INVERSION. Eversion turns the sole of the foot AWAY from the midline. Both occur at the intertarsal (plane) joints, not the ankle joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-17",
+          "question": {
+            "stem": "In the elbow (a hinge joint), the convex end of one bone articulates with the concave end of the adjoining bone, permitting only angular flexion and extension.",
+            "correct": true,
+            "explanation": "Slide 32 states the hinge joint has a convex bone end fitting a concave end, allowing only bending (flexion) and straightening (extension) along a single axis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-18",
+          "question": {
+            "stem": "The knee and interphalangeal joints, like the elbow, are hinge joints and therefore permit rotational movement around their long axis.",
+            "correct": false,
+            "explanation": "The knee and interphalangeal joints ARE hinge joints, but hinge joints are uniaxial and allow only flexion/extension, NOT rotation. Rotation around a long axis occurs at pivot and ball-and-socket joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-19",
+          "question": {
+            "stem": "A gomphosis and a suture are both fibrous joints functionally classified as synarthroses, whereas a syndesmosis is a fibrous joint classified as an amphiarthrosis.",
+            "correct": true,
+            "explanation": "All three are fibrous joints. Gomphoses (tooth-socket) and sutures (skull) are immobile synarthroses, while a syndesmosis (e.g., interosseous membrane between radius and ulna) allows slight movement, making it an amphiarthrosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-20",
+          "question": {
+            "stem": "In a synovial joint, the synovial membrane secretes synovial fluid that lubricates the joint and also nourishes the avascular articular cartilage.",
+            "correct": true,
+            "explanation": "The synovial membrane lines the inner surface of the articular capsule and secretes synovial fluid, which reduces friction and provides nourishment to the articular cartilage, since cartilage lacks blood vessels."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-21",
+          "question": {
+            "stem": "Inversion turns the bottom of the foot toward the midline, while eversion turns the bottom of the foot away from the midline.",
+            "correct": true,
+            "explanation": "This is the correct definition of these paired movements, which occur at the intertarsal (plane) joints rather than the ankle joint proper."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-22",
+          "question": {
+            "stem": "A meniscus is a small, oval-shaped fibrocartilage structure, whereas an articular disc is the larger, C-shaped version found in the knee.",
+            "correct": false,
+            "explanation": "The terms are reversed: an articular disc is generally small and oval-shaped, while a meniscus is the larger, C-shaped structure, such as those found in the knee joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-23",
+          "question": {
+            "stem": "A synarthrosis is an immobile (or nearly immobile) joint, while an amphiarthrosis is a slightly moveable joint.",
+            "correct": true,
+            "explanation": "These functional classification terms are defined by degree of mobility: synarthrosis = immobile, amphiarthrosis = slightly mobile, and diarthrosis = freely moveable."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-24",
+          "question": {
+            "stem": "In the anatomical position, the hand is held in the pronated position, with the radius and ulna crossed in an X-shape.",
+            "correct": false,
+            "explanation": "In the anatomical position, the hand is held supinated (palm facing forward), with the radius and ulna parallel. The pronated position is the reverse, with the bones crossed in an X-shape."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-25",
+          "question": {
+            "stem": "A hinge joint and a pivot joint are both functionally classified as uniaxial joints, even though they permit different types of motion.",
+            "correct": true,
+            "explanation": "Both are uniaxial: the hinge joint allows angular flexion/extension around a single axis, while the pivot joint allows rotation around a single axis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-26",
+          "question": {
+            "stem": "Elevation of the mandible closes the mouth, while depression of the mandible opens the mouth.",
+            "correct": true,
+            "explanation": "Elevation is the upward movement of the lower jaw (closing/biting), and depression is the downward movement that opens the mouth."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-27",
+          "question": {
+            "stem": "A saddle joint and a condyloid joint are both biaxial joints allowing movement in two planes.",
+            "correct": true,
+            "explanation": "Both are biaxial: the saddle joint (e.g., first carpometacarpal) and the condyloid joint (e.g., metacarpophalangeal) each permit two planes of angular movement (flexion/extension and abduction/adduction)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-28",
+          "question": {
+            "stem": "The suture joints of the skull are examples of a synarthrosis, and their immobility functions primarily to protect the brain.",
+            "correct": true,
+            "explanation": "Skull sutures are classified as a synarthrosis (immobile joint); their strong, immobile union surrounds and protects the brain."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-29",
+          "question": {
+            "stem": "The intervertebral disc between vertebral bodies is functionally an amphiarthrosis and structurally a symphysis.",
+            "correct": true,
+            "explanation": "The intervertebral disc is made of fibrocartilage, making it a symphysis (cartilaginous) structurally, and it allows limited movement, making it an amphiarthrosis functionally."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-tf-30",
+          "question": {
+            "stem": "Both a synchondrosis and a symphysis are cartilaginous joints, but a synchondrosis uses hyaline cartilage while a symphysis uses fibrocartilage.",
+            "correct": true,
+            "explanation": "This correctly distinguishes the two subtypes of cartilaginous joints: a synchondrosis joins bones with hyaline cartilage, while a symphysis joins them with fibrocartilage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u11-advanced-fitb-01",
+          "question": {
+            "stem": "When you point your toes downward, as when standing on tiptoe, the movement occurring at the ankle joint is called ____________.",
+            "answer": "plantar flexion",
+            "accepted_synonyms": [
+              "plantarflexion",
+              "plantar-flexion"
+            ],
+            "explanation": "Lifting the heel or pointing the toes downward at the ankle hinge joint is plantar flexion, the opposite of dorsiflexion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-02",
+          "question": {
+            "stem": "The movement that returns the forearm from a palm-backward position to the palm-forward (anatomical) position, so that the radius and ulna become parallel, is called ____________.",
+            "answer": "supination",
+            "accepted_synonyms": [
+              "supinate"
+            ],
+            "explanation": "Supination rotates the radius so the palm faces anteriorly and the radius and ulna lie parallel, the reverse of pronation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-03",
+          "question": {
+            "stem": "The intervertebral disc permits only limited movement between adjacent vertebrae, so it is functionally classified as a(n) ____________.",
+            "answer": "amphiarthrosis",
+            "accepted_synonyms": [
+              "amphiarthrotic joint",
+              "amphiarthroses"
+            ],
+            "explanation": "A slightly moveable joint is an amphiarthrosis; the intervertebral symphysis allows small movements between vertebrae."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-04",
+          "question": {
+            "stem": "The pubic symphysis and the intervertebral discs both allow only limited movement, so they are functionally classified as a(n) ____________, in contrast to the immobile sutures of the skull.",
+            "answer": "amphiarthrosis",
+            "accepted_synonyms": [
+              "amphiarthroses",
+              "amphiarthrotic joint"
+            ],
+            "explanation": "Cartilaginous joints joined by fibrocartilage (symphyses) permit slight movement, making them functionally an amphiarthrosis, unlike the immobile synarthrotic sutures."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-05",
+          "question": {
+            "stem": "Among the three subtypes of fibrous joints, the one that anchors a tooth root into its bony socket in the jaw is a(n) ____________.",
+            "answer": "gomphosis",
+            "accepted_synonyms": [
+              "gomphoses",
+              "peg-and-socket joint",
+              "peg and socket joint"
+            ],
+            "explanation": "The gomphosis (peg-and-socket joint) uses periodontal ligaments to anchor a tooth root into its socket."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-06",
+          "question": {
+            "stem": "A thin connective tissue sac filled with lubricating fluid that separates a tendon from an underlying bone to reduce friction near a joint is called a(n) ____________.",
+            "answer": "bursa",
+            "accepted_synonyms": [
+              "bursae",
+              "bursas"
+            ],
+            "explanation": "A bursa is a fluid-filled sac that prevents friction between adjacent structures such as skin, muscle, or tendon and bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-07",
+          "question": {
+            "stem": "Among the two subtypes of cartilaginous joints, the epiphyseal (growth) plate that unites the diaphysis and epiphysis of a growing long bone with hyaline cartilage is a(n) ____________.",
+            "answer": "synchondrosis",
+            "accepted_synonyms": [
+              "synchondroses"
+            ],
+            "explanation": "A synchondrosis joins bones with hyaline cartilage; the epiphyseal plate is a temporary example."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-08",
+          "question": {
+            "stem": "The Latin-derived term meaning \"fastened with a band,\" describing a fibrous joint in which parallel bones are united by an interosseous membrane, is ____________.",
+            "answer": "syndesmosis",
+            "accepted_synonyms": [
+              "syndesmoses"
+            ],
+            "explanation": "Syndesmosis (\"fastened with a band\") unites parallel bones such as the radius and ulna by fibrous connective tissue."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-09",
+          "question": {
+            "stem": "A cartilaginous joint in which the bones are united by fibrocartilage, such as the pubic symphysis, is structurally classified as a(n) ____________.",
+            "answer": "symphysis",
+            "accepted_synonyms": [
+              "symphyses"
+            ],
+            "explanation": "A symphysis joins bones with fibrocartilage; the pubic symphysis and intervertebral discs are examples."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-10",
+          "question": {
+            "stem": "The structure lining the inner surface of the articular capsule, whose cells secrete a lubricating fluid that also nourishes the avascular articular cartilage, is the ____________.",
+            "answer": "synovial membrane",
+            "accepted_synonyms": [
+              "synovial membranes"
+            ],
+            "explanation": "The synovial membrane lines the articular capsule and secretes synovial fluid, which lubricates and nourishes the articular cartilage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-11",
+          "question": {
+            "stem": "When you scoop up a bowl of soup by rotating the forearm so the palm faces upward and the radius and ulna become parallel, you are performing ____________.",
+            "answer": "supination",
+            "accepted_synonyms": [
+              "supinate"
+            ],
+            "explanation": "Supination is the forearm rotation that returns the palm to the anterior-facing anatomical position with the radius and ulna parallel."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-12",
+          "question": {
+            "stem": "The intervertebral discs allow only limited movement between adjacent vertebrae, so functionally each disc joint is classified as a(n) ____________.",
+            "answer": "amphiarthrosis",
+            "accepted_synonyms": [
+              "amphiarthrotic",
+              "amphiarthroses"
+            ],
+            "explanation": "A slightly moveable joint is functionally classified as an amphiarthrosis; the intervertebral symphysis is the classic example."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-13",
+          "question": {
+            "stem": "Pushing the lower jaw forward to stick out the chin is the anterior movement of the mandible called ____________.",
+            "answer": "protraction",
+            "accepted_synonyms": [
+              "protrusion",
+              "protract"
+            ],
+            "explanation": "Protraction is the anterior movement of the scapula or mandible; for the mandible it pushes the chin forward."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-14",
+          "question": {
+            "stem": "Among the structural classes of joints, the class in which bones are separated by a fluid-filled cavity rather than being directly united by connective tissue or cartilage is the ____________.",
+            "answer": "synovial joint",
+            "accepted_synonyms": [
+              "synovial",
+              "synovial joints"
+            ],
+            "explanation": "Structural classification divides joints into fibrous, cartilaginous, and synovial; only synovial joints possess a joint cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-15",
+          "question": {
+            "stem": "Lifting the front of the foot so that the top of the foot moves toward the anterior leg, at the ankle hinge joint, is called ____________.",
+            "answer": "dorsiflexion",
+            "accepted_synonyms": [
+              "dorsiflex",
+              "dorsi flexion"
+            ],
+            "explanation": "Dorsiflexion raises the top of the foot toward the shin; its opposite, plantar flexion, points the toes downward."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-16",
+          "question": {
+            "stem": "The additional synovial joint structure that is a thin connective tissue sac filled with lubricating fluid, located where tendons or skin rub against bone near a joint, is a(n) ____________.",
+            "answer": "bursa",
+            "accepted_synonyms": [
+              "bursae",
+              "bursas"
+            ],
+            "explanation": "A bursa reduces friction by separating adjacent structures such as skin, muscle, or tendon from underlying bone."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-17",
+          "question": {
+            "stem": "Because the elbow allows movement around only a single axis (bending and straightening), it is functionally a uniaxial joint, and this same uniaxial property is shared by the ____________, where one bone rotates within a ring formed by another bone and a ligament.",
+            "answer": "pivot joint",
+            "accepted_synonyms": [
+              "pivot",
+              "pivot joints"
+            ],
+            "explanation": "Both hinge and pivot joints are uniaxial; the pivot allows only rotation around one axis, as at the atlantoaxial joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-18",
+          "question": {
+            "stem": "A joint whose articulating surfaces are each concave in one direction and convex in the other, permitting biaxial movement, is a(n) ____________, exemplified by the first carpometacarpal joint of the thumb.",
+            "answer": "saddle joint",
+            "accepted_synonyms": [
+              "saddle",
+              "saddle joints"
+            ],
+            "explanation": "The saddle joint is biaxial and its reciprocally curved surfaces give the thumb its distinctive range of motion."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-19",
+          "question": {
+            "stem": "The skull sutures prevent nearly all movement to protect the brain and are therefore functionally classified as a(n) ____________.",
+            "answer": "synarthrosis",
+            "accepted_synonyms": [
+              "synarthrotic",
+              "synarthroses"
+            ],
+            "explanation": "An immobile joint is functionally a synarthrosis; sutures are the classic protective example."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-20",
+          "question": {
+            "stem": "The specialized fibrous joint that anchors a tooth into its bony socket by numerous periodontal ligaments, also called a peg-and-socket joint, is a(n) ____________.",
+            "answer": "gomphosis",
+            "accepted_synonyms": [
+              "gomphoses"
+            ],
+            "explanation": "A gomphosis is the fibrous peg-and-socket joint securing a tooth root within the jaw; it is a synarthrosis."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-21",
+          "question": {
+            "stem": "A gomphosis is immobile, so functionally it belongs to the same class as the sutures of the skull, namely a ____________.",
+            "answer": "synarthrosis",
+            "accepted_synonyms": [
+              "synarthroses",
+              "synarthrotic joint"
+            ],
+            "explanation": "Both gomphoses and skull sutures are immobile joints, which are functionally classified as synarthroses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-22",
+          "question": {
+            "stem": "The thumb movement that returns the thumb from touching a fingertip back to its position beside the index finger is called ____________.",
+            "answer": "reposition",
+            "accepted_synonyms": [
+              "repositioning"
+            ],
+            "explanation": "Reposition is the movement that brings the thumb back next to the index finger, the opposite of opposition."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-23",
+          "question": {
+            "stem": "The thick, slimy fluid secreted by the synovial membrane that both lubricates the joint and nourishes the avascular articular cartilage is called ____________.",
+            "answer": "synovial fluid",
+            "accepted_synonyms": [
+              "synovia"
+            ],
+            "explanation": "Synovial fluid provides lubrication and delivers nutrients to the articular cartilage, which lacks blood vessels."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-24",
+          "question": {
+            "stem": "A symphysis such as the intervertebral disc permits only limited movement, and is therefore functionally classified as an ____________.",
+            "answer": "amphiarthrosis",
+            "accepted_synonyms": [
+              "amphiarthroses",
+              "amphiarthrotic joint"
+            ],
+            "explanation": "Symphyses allow slight movement, placing them in the amphiarthrosis functional class."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-25",
+          "question": {
+            "stem": "The twisting movement of the head from side to side, as when shaking the head \"no,\" occurring at the atlantoaxial pivot joint, is called ____________.",
+            "answer": "rotation",
+            "accepted_synonyms": [
+              "rotational movement"
+            ],
+            "explanation": "Rotation is the only movement allowed at a uniaxial pivot joint such as the atlantoaxial joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-26",
+          "question": {
+            "stem": "The wide sheet of fibrous connective tissue that fills the gap between the shafts of the radius and ulna is called the ____________.",
+            "answer": "interosseous membrane",
+            "accepted_synonyms": [
+              "interosseous membranes"
+            ],
+            "explanation": "A syndesmosis with a wide gap is bridged by an interosseous membrane; this is the specific term for that connective tissue sheet, distinct from a narrow-gap ligament."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-27",
+          "question": {
+            "stem": "Among the structural classes, the type of joint that includes the subtypes suture, syndesmosis, and gomphosis is the ____________.",
+            "answer": "fibrous joint",
+            "accepted_synonyms": [
+              "fibrous joints",
+              "fibrous"
+            ],
+            "explanation": "Fibrous joints, united by fibrous connective tissue, are subdivided into sutures, syndesmoses, and gomphoses."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-28",
+          "question": {
+            "stem": "The large, C-shaped fibrocartilage structure within the knee that provides shock absorption and cushioning between the femur and tibia is a ____________.",
+            "answer": "meniscus",
+            "accepted_synonyms": [
+              "menisci",
+              "meniscus"
+            ],
+            "explanation": "A meniscus is a large, C-shaped articular fibrocartilage, exemplified by the shock-absorbing menisci of the knee."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-29",
+          "question": {
+            "stem": "Lifting the front of the foot so that its top moves toward the anterior leg, a movement at the ankle hinge joint, is called ____________.",
+            "answer": "dorsiflexion",
+            "accepted_synonyms": [
+              "dorsi-flexion",
+              "dorsi flexion"
+            ],
+            "explanation": "Dorsiflexion raises the top of the foot toward the shin at the ankle joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fitb-30",
+          "question": {
+            "stem": "Turning the sole of the foot to angle it away from the midline, a movement occurring at the intertarsal plane joints, is called ____________.",
+            "answer": "eversion",
+            "accepted_synonyms": [
+              "everting"
+            ],
+            "explanation": "Eversion turns the bottom of the foot away from the midline; it occurs at the intertarsal joints rather than the ankle."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u11-advanced-fr-01",
+          "question": {
+            "prompt": "Define the terms 'articular cartilage' and 'articular disc' as they apply to synovial joints, and state one way they differ in composition.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Defines articular cartilage as a thin layer of hyaline cartilage covering the articulating surface of each bone (reduces friction / prevents bone damage)."
+              },
+              {
+                "points": 2,
+                "criterion": "Defines articular disc as a fibrocartilage structure located between the articulating bones in some joints (e.g. unites bones, provides cushioning, or smooths movement)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that articular cartilage is hyaline cartilage while an articular disc is made of fibrocartilage."
+              }
+            ],
+            "model_answer": "Articular cartilage is a thin layer of hyaline cartilage that covers the entire articulating surface of each bone, allowing the bones to move smoothly against each other without damaging the underlying bone. An articular disc is a fibrocartilage structure found between the articulating bones in some synovial joints; it may unite the bones, cushion them, or smooth their movements. They differ in that articular cartilage is hyaline cartilage whereas an articular disc is fibrocartilage."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fr-02",
+          "question": {
+            "prompt": "Compare the three structural classes of joints (fibrous, cartilaginous, synovial) by naming the connecting material for each and stating whether each possesses a joint cavity.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Fibrous joints: bones united by fibrous connective tissue, and no joint cavity."
+              },
+              {
+                "points": 2,
+                "criterion": "Cartilaginous joints: bones united by cartilage (hyaline cartilage or fibrocartilage), and no joint cavity."
+              },
+              {
+                "points": 2,
+                "criterion": "Synovial joints: articulating surfaces not directly connected but meet within a fluid-filled joint cavity."
+              }
+            ],
+            "model_answer": "Fibrous joints unite bones by fibrous connective tissue and have no joint cavity. Cartilaginous joints unite bones by cartilage — either hyaline cartilage or fibrocartilage — and also lack a joint cavity. Synovial joints do not directly connect the bone surfaces; instead the articulating surfaces meet within a fluid-filled joint cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fr-03",
+          "question": {
+            "prompt": "Using your own hand and forearm as examples, describe the movements of supination and pronation, and identify what happens to the positions of the radius and ulna during each. Also identify what type of movement these are and at which joint they occur.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Describes supination as the forearm position with the palm facing forward/upward (anatomical position, 'holding soup'), with radius and ulna parallel."
+              },
+              {
+                "points": 2,
+                "criterion": "Describes pronation as the forearm position with the palm facing backward/downward, with radius and ulna crossed (X-shape)."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies these as rotational movements of the forearm (occurring at the proximal radioulnar pivot joint)."
+              }
+            ],
+            "model_answer": "Supination is the forearm position in which the palm faces forward (anatomical position), as if holding a bowl of soup; here the radius and ulna lie parallel to each other. Pronation is the reverse, with the palm facing backward, and the radius crosses over the ulna to form an X-shape. Both are rotational movements of the forearm produced at the proximal radioulnar (pivot) joint."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fr-04",
+          "question": {
+            "prompt": "Name the two subtypes of cartilaginous joints and, for each, state the type of cartilage involved and give one example location in the body.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Names synchondrosis and identifies hyaline cartilage."
+              },
+              {
+                "points": 2,
+                "criterion": "Gives a valid synchondrosis example (e.g. epiphyseal plate of a growing long bone, or rib joined to its costal cartilage)."
+              },
+              {
+                "points": 1,
+                "criterion": "Names symphysis and identifies fibrocartilage."
+              },
+              {
+                "points": 2,
+                "criterion": "Gives a valid symphysis example (e.g. pubic symphysis or intervertebral disc)."
+              }
+            ],
+            "model_answer": "The two cartilaginous joint subtypes are the synchondrosis and the symphysis. A synchondrosis joins bones (or bone to cartilage) by hyaline cartilage; an example is the epiphyseal (growth) plate of a growing long bone, or the anterior end of a rib joined to its costal cartilage. A symphysis joins bones by fibrocartilage; examples are the pubic symphysis and the intervertebral disc between vertebral bodies."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fr-05",
+          "question": {
+            "prompt": "Describe the roles of the articular capsule and the synovial membrane in a synovial joint, and explain one additional function of synovial fluid beyond lubrication.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Articular capsule: fibrous (dense) connective tissue structure that forms the walls of the joint cavity."
+              },
+              {
+                "points": 2,
+                "criterion": "Synovial membrane: lines the inner surface of the articular capsule and its cells secrete synovial fluid."
+              },
+              {
+                "points": 1,
+                "criterion": "States that synovial fluid also nourishes the articular cartilage (which lacks blood vessels)."
+              }
+            ],
+            "model_answer": "The articular capsule is a fibrous (dense) connective tissue structure whose walls enclose and form the joint cavity. The synovial membrane lines the inner surface of the articular capsule, and its cells secrete synovial fluid. Beyond lubrication, synovial fluid also provides nourishment to the articular cartilage, which contains no blood vessels of its own."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fr-06",
+          "question": {
+            "prompt": "Explain the difference between the functional classifications synarthrosis and amphiarthrosis, and give one specific joint example of each. In your answer, state what feature (criterion) these functional classifications are based on.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines synarthrosis as an immobile (or nearly immobile) joint."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid synarthrosis example (e.g. skull suture or gomphosis)."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines amphiarthrosis as a slightly moveable joint."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid amphiarthrosis example (e.g. intervertebral disc/symphysis or a syndesmosis)."
+              },
+              {
+                "points": 1,
+                "criterion": "States that both classes are based on the degree of movement between the bones."
+              }
+            ],
+            "model_answer": "Both are functional classifications based on how much movement the joint permits. A synarthrosis is an immobile or nearly immobile joint, such as a skull suture or a gomphosis (tooth in its socket). An amphiarthrosis is a slightly moveable joint, such as the intervertebral symphysis (disc) between vertebral bodies or a syndesmosis between parallel bones."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fr-07",
+          "question": {
+            "prompt": "For the scapula, describe the movements of elevation, depression, protraction, and retraction, indicating the direction of each.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Elevation: upward movement of the scapula/shoulder."
+              },
+              {
+                "points": 1,
+                "criterion": "Depression: downward movement of the scapula/shoulder."
+              },
+              {
+                "points": 2,
+                "criterion": "Protraction: scapula moved forward (anteriorly) and laterally, as when pushing or throwing."
+              },
+              {
+                "points": 2,
+                "criterion": "Retraction: scapula pulled posteriorly and medially, toward the vertebral column."
+              }
+            ],
+            "model_answer": "Elevation is the upward movement of the scapula and shoulder (as in shrugging), while depression is the downward movement. Protraction moves the scapula forward and laterally, as when pushing against something or throwing a ball. Retraction is the opposite, pulling the scapula posteriorly and medially toward the vertebral column."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fr-08",
+          "question": {
+            "prompt": "The elbow, the metacarpophalangeal (knuckle) joint, and the shoulder each allow movement. Classify each as uniaxial, biaxial, or multiaxial, and briefly justify each classification by the movement(s) it permits.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Elbow is uniaxial — allows movement in one plane (flexion/extension only)."
+              },
+              {
+                "points": 2,
+                "criterion": "Metacarpophalangeal joint is biaxial — allows movement in two planes (flexion/extension and abduction/adduction, i.e. bend and spread)."
+              },
+              {
+                "points": 2,
+                "criterion": "Shoulder is multiaxial — allows movement in three planes/axes (flexion-extension, abduction-adduction, and rotation)."
+              }
+            ],
+            "model_answer": "The elbow is uniaxial: it only permits bending and straightening (flexion/extension) in a single plane. The metacarpophalangeal (knuckle) joint is biaxial: it permits flexion/extension of the finger plus abduction/adduction (spreading), giving movement in two planes. The shoulder is multiaxial: it allows anterior-posterior (flexion-extension), medial-lateral (abduction-adduction), and rotation around the long axis — movement in all three planes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fr-09",
+          "question": {
+            "prompt": "Define the terms 'abduction' and 'adduction' with reference to the anatomical position, and give one example movement of each for a limb.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Abduction: movement of a limb laterally, away from the midline of the body."
+              },
+              {
+                "points": 2,
+                "criterion": "Adduction: movement of a limb medially, toward (or across) the midline of the body."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid example for either (e.g. raising the arm laterally at the shoulder = abduction; bringing it back to the side = adduction)."
+              }
+            ],
+            "model_answer": "Abduction is the movement of a limb laterally away from the midline of the body — for example, raising the arm out to the side at the shoulder. Adduction is the opposing movement, bringing the limb medially toward or across the midline — for example, bringing the raised arm back down to the side of the body. Both occur within the coronal plane."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u11-advanced-fr-10",
+          "question": {
+            "prompt": "Explain what circumduction is, describe the sequence of component movements it combines, and state at which type(s) of synovial joint it can occur.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Describes circumduction as movement of a body region in a circle, with one end (proximal) relatively stationary and the other (distal) tracing a circle."
+              },
+              {
+                "points": 2,
+                "criterion": "States it combines a sequence of flexion, adduction, extension, and abduction."
+              },
+              {
+                "points": 1,
+                "criterion": "States it occurs at biaxial (condyloid and saddle) joints and multiaxial (ball-and-socket) joints."
+              }
+            ],
+            "model_answer": "Circumduction is the movement of a body region in a circular manner, in which the proximal end stays relatively stationary while the distal end traces a circle. It is produced by a sequential combination of flexion, adduction, extension, and abduction at the joint. Circumduction can occur at biaxial joints (condyloid and saddle) and at multiaxial ball-and-socket joints."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    }
+  }
+}

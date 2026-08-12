@@ -1,0 +1,2959 @@
+{
+  "unit_no": 7,
+  "generated_at": "2026-07-16T16:59:38.092Z",
+  "levels": {
+    "basic": {
+      "mc": [
+        {
+          "id": "u7-basic-mc-01",
+          "question": {
+            "stem": "A patient is asked to lie face-up on the examination table, looking toward the ceiling. Which term describes this body position?",
+            "options": [
+              "Sagittal",
+              "Rostral",
+              "Distal",
+              "Prone",
+              "Supine"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Supine describes a face-up orientation of a body that is lying down.\n\n**Why the other options are wrong:**\n- **(A)** Sagittal is a body plane, not a lying-down position.\n- **(B)** Rostral is a directional term meaning toward the nose, not a body position.\n- **(C)** Distal is a directional term for a position farther from the trunk, not a body position.\n- **(D)** Prone describes a face-down orientation, the opposite of supine."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-02",
+          "question": {
+            "stem": "Which directional term correctly describes the position of the elbow relative to the wrist in a person standing in anatomical position?",
+            "options": [
+              "Peripheral",
+              "Medial",
+              "Distal",
+              "Superficial",
+              "Proximal"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Proximal describes a position in a limb nearer to the point of attachment or trunk, and the elbow is closer to the trunk than the wrist.\n\n**Why the other options are wrong:**\n- **(A)** Peripheral describes a position toward the outer edge of a structure or organ system, not this relationship.\n- **(B)** Medial refers to nearness to the body's midline, not to limb attachment.\n- **(C)** Distal means farther from the trunk, which describes the wrist relative to the elbow, not the reverse.\n- **(D)** Superficial refers to closeness to the body surface, not position along a limb."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-03",
+          "question": {
+            "stem": "Which organ system is responsible for the protective outer covering of the body, including the skin?",
+            "options": [
+              "Urinary",
+              "Lymphatic",
+              "Endocrine",
+              "Integumentary",
+              "Muscular"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The integumentary system consists of the skin and its associated structures, forming the body's protective outer covering.\n\n**Why the other options are wrong:**\n- **(A)** The urinary system removes waste and regulates fluids.\n- **(B)** The lymphatic system deals with immunity and fluid balance.\n- **(C)** The endocrine system secretes hormones.\n- **(E)** The muscular system produces movement, not the outer skin covering."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-04",
+          "question": {
+            "stem": "Within the thoracic cavity, which compartment contains the heart within its pericardial cavity?",
+            "options": [
+              "Pelvic cavity",
+              "Abdominal cavity",
+              "Cranial cavity",
+              "Mediastinum",
+              "Pleural cavity"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The heart, within its pericardial cavity, is located in the mediastinum, a compartment of the thoracic cavity.\n\n**Why the other options are wrong:**\n- **(A)** The pelvic cavity houses the reproductive organs, not the heart.\n- **(B)** The abdominal cavity houses digestive organs and is inferior to the diaphragm.\n- **(C)** The cranial cavity houses the brain within the dorsal cavity.\n- **(E)** The pleural cavities house the lungs, not the heart."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-05",
+          "question": {
+            "stem": "Which serous membrane surrounds the lungs within their cavity?",
+            "options": [
+              "Peritoneum",
+              "Pleura",
+              "Parietal skull",
+              "Meninges",
+              "Pericardium"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The pleura is the serous membrane that surrounds the lungs in the pleural cavity.\n\n**Why the other options are wrong:**\n- **(A)** The peritoneum surrounds several organs in the abdominopelvic cavity.\n- **(C)** \"Parietal skull\" is not a serous membrane.\n- **(D)** The meninges cover the brain and spinal cord in the dorsal cavity, not the lungs.\n- **(E)** The pericardium surrounds the heart, not the lungs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-06",
+          "question": {
+            "stem": "In the medical term \"hypertension,\" which part of the word is the prefix, and what does it mean?",
+            "options": [
+              "\"-ion\" meaning process",
+              "\"tension\" meaning pressure",
+              "\"hyper-\" meaning below",
+              "\"hyper-\" meaning high or over",
+              "\"tens-\" meaning organ"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The prefix \"hyper-\" means \"high\" or \"over\" and describes the root word.\n\n**Why the other options are wrong:**\n- **(A)** \"-ion\" is not the prefix used to define hypertension in this unit.\n- **(B)** \"tension\" is the root referring to pressure, not the prefix.\n- **(C)** \"hyper-\" means high or over, not below.\n- **(E)** \"tens-\" is part of the root and does not mean organ here."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-07",
+          "question": {
+            "stem": "Which body plane divides the body horizontally into upper and lower portions, producing a cross section?",
+            "options": [
+              "Coronal plane",
+              "Frontal plane",
+              "Sagittal plane",
+              "Midsagittal plane",
+              "Transverse plane"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A transverse (horizontal) plane divides the body into upper and lower portions and produces cross sections.\n\n**Why the other options are wrong:**\n- **(A)** A coronal plane is another name for the frontal plane, dividing anterior from posterior.\n- **(B)** A frontal plane divides the body into anterior and posterior portions.\n- **(C)** A sagittal plane divides the body into right and left sides.\n- **(D)** A midsagittal plane divides the body into equal right and left halves."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-08",
+          "question": {
+            "stem": "In a serous membrane, which layer lines the walls of the body cavity?",
+            "options": [
+              "Serous space",
+              "Superficial layer",
+              "Parietal layer",
+              "Visceral layer",
+              "Peripheral layer"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The parietal layer lines the walls of the body cavity, as \"pariet-\" refers to a cavity wall.\n\n**Why the other options are wrong:**\n- **(A)** The serous space is the fluid-filled gap between the two layers, not a membrane layer.\n- **(B)** \"Superficial layer\" is not a term for a serous membrane layer.\n- **(D)** The visceral layer covers the organs, not the cavity walls.\n- **(E)** \"Peripheral layer\" is not a term used for serous membranes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-09",
+          "question": {
+            "stem": "The term \"antebrachium\" refers to which specific region of the body?",
+            "options": [
+              "The wrist",
+              "The forearm",
+              "The lower leg between knee and ankle",
+              "The upper arm",
+              "The thigh"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** \"Antebrachium\" is the correct regional term for the forearm rather than \"lower arm.\"\n\n**Why the other options are wrong:**\n- **(A)** The wrist is the carpal region, not the antebrachium.\n- **(C)** The lower leg between knee and ankle is the \"leg\" or \"crus.\"\n- **(D)** The upper arm is the \"brachium,\" not the antebrachium.\n- **(E)** The thigh is the \"femur.\""
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-10",
+          "question": {
+            "stem": "In the term \"hypertension,\" which part of the word is the root that refers to a condition, organ, or tissue?",
+            "options": [
+              "tension",
+              "-sion",
+              "-ic",
+              "hyper-",
+              "hypo-"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The root of a term refers to an organ, tissue, or condition, and \"tension\" refers to pressure, while \"hyper-\" is the prefix meaning high or over.\n\n**Why the other options are wrong:**\n- **(B)** \"-sion\" is not the meaningful root of this term.\n- **(C)** \"-ic\" is a suffix and does not appear in this word.\n- **(D)** \"hyper-\" is a prefix meaning high or over, not the root.\n- **(E)** \"hypo-\" means low or under and does not appear in this word."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-11",
+          "question": {
+            "stem": "A plane that divides the body vertically into unequal right and left sides is called a:",
+            "options": [
+              "Frontal plane",
+              "Parasagittal plane",
+              "Midsagittal plane",
+              "Transverse plane",
+              "Coronal plane"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A parasagittal plane divides the body vertically into unequal right and left sides, unlike the midsagittal plane which passes down the exact middle.\n\n**Why the other options are wrong:**\n- **(A)** A frontal plane divides the body into anterior and posterior portions.\n- **(C)** The midsagittal (median) plane divides the body into equal right and left halves.\n- **(D)** A transverse plane divides the body into upper and lower portions.\n- **(E)** A coronal plane is another name for the frontal plane, which separates front from back."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-12",
+          "question": {
+            "stem": "Within the thoracic cavity, the heart is located within a compartment called the:",
+            "options": [
+              "Mediastinum",
+              "Pelvic cavity",
+              "Abdominal cavity",
+              "Cranial cavity",
+              "Pleural cavity"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The heart, within its pericardial cavity, sits in a central thoracic compartment called the mediastinum.\n\n**Why the other options are wrong:**\n- **(B)** The pelvic cavity houses reproductive organs, not the heart.\n- **(C)** The abdominal cavity houses digestive organs and is inferior to the diaphragm.\n- **(D)** The cranial cavity is part of the dorsal cavity and houses the brain.\n- **(E)** The pleural cavities house the lungs, not the heart."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-13",
+          "question": {
+            "stem": "Which organ system is chiefly responsible for producing hormones that regulate body functions?",
+            "options": [
+              "Endocrine",
+              "Urinary",
+              "Nervous",
+              "Muscular",
+              "Lymphatic"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The endocrine system is the group of organs that produce hormones to regulate physiological functions.\n\n**Why the other options are wrong:**\n- **(B)** The urinary system filters blood and produces urine.\n- **(C)** The nervous system controls the body through electrical signals, not primarily hormones.\n- **(D)** The muscular system produces movement.\n- **(E)** The lymphatic system is involved in immunity and fluid balance."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-14",
+          "question": {
+            "stem": "The brachium (arm) is described as ______ to the antebrachium (forearm).",
+            "options": [
+              "Superficial",
+              "Proximal",
+              "Distal",
+              "Lateral",
+              "Deep"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Proximal describes a position in a limb nearer to the point of attachment or trunk, so the arm is proximal to the forearm.\n\n**Why the other options are wrong:**\n- **(A)** Superficial refers to closeness to the body surface.\n- **(C)** Distal describes a position farther from the trunk, which would be the forearm relative to the arm.\n- **(D)** Lateral refers to a position toward the side of the body, not this relationship.\n- **(E)** Deep refers to distance from the body surface."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-15",
+          "question": {
+            "stem": "The serous membrane that surrounds the lungs within the pleural cavity is the:",
+            "options": [
+              "Pericardium",
+              "Mediastinum",
+              "Peritoneum",
+              "Pleura",
+              "Parietal cranium"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The pleura is the serous membrane surrounding the lungs in the pleural cavity.\n\n**Why the other options are wrong:**\n- **(A)** The pericardium surrounds the heart, not the lungs.\n- **(B)** The mediastinum is a compartment, not a serous membrane.\n- **(C)** The peritoneum surrounds organs in the abdominopelvic cavity.\n- **(E)** \"Parietal cranium\" is not a serous membrane and is not a real term of this kind."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-16",
+          "question": {
+            "stem": "Which organ system provides support and protection for the body and includes the bones?",
+            "options": [
+              "Integumentary",
+              "Respiratory",
+              "Skeletal",
+              "Cardiovascular",
+              "Muscular"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The skeletal system consists of the bones and provides support and protection.\n\n**Why the other options are wrong:**\n- **(A)** The integumentary system is the skin and its associated structures.\n- **(B)** The respiratory system handles gas exchange.\n- **(D)** The cardiovascular system circulates blood.\n- **(E)** The muscular system produces movement."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-17",
+          "question": {
+            "stem": "According to the unit, what is the main purpose of using standardized anatomical terminology?",
+            "options": [
+              "To make communication more artistic",
+              "To describe only the surface of the body",
+              "To increase precision and reduce medical errors",
+              "To match the language used in everyday conversation",
+              "To keep information secret from patients"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Health professionals use standardized anatomical terminology to increase precision during procedures and thereby reduce errors.\n\n**Why the other options are wrong:**\n- **(A)** The purpose is precision, not artistry.\n- **(B)** The terminology describes locations throughout the body, not only the surface.\n- **(D)** The terms derive from Latin and Greek and are not everyday conversational language.\n- **(E)** The terminology is not meant to conceal information."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-18",
+          "question": {
+            "stem": "In a serous membrane, which layer directly covers the organ (viscera)?",
+            "options": [
+              "Visceral layer",
+              "Mediastinal layer",
+              "Cutaneous layer",
+              "Parietal layer",
+              "Serous space"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The visceral layer of a serous membrane covers the organs (the viscera).\n\n**Why the other options are wrong:**\n- **(B)** \"Mediastinal layer\" is not a serous membrane layer.\n- **(C)** \"Cutaneous layer\" refers to skin, not a serous membrane layer.\n- **(D)** The parietal layer lines the walls of the body cavity.\n- **(E)** The serous space is the fluid-filled cavity between the two layers, not a membrane on the organ."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-19",
+          "question": {
+            "stem": "In the term \"hypertension,\" the prefix \"hyper-\" indicates:",
+            "options": [
+              "Low or under",
+              "Around or surrounding",
+              "High or over",
+              "Toward the middle",
+              "Below or beneath"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The prefix \"hyper-\" means \"high\" or \"over,\" so hypertension means abnormally high blood pressure.\n\n**Why the other options are wrong:**\n- **(A)** \"Low\" or \"under\" would correspond to a prefix like \"hypo-.\"\n- **(B)** \"Around\" is not the meaning of \"hyper-.\"\n- **(D)** \"Toward the middle\" corresponds to medial, not \"hyper-.\"\n- **(E)** \"Below\" or \"beneath\" is not the meaning of \"hyper-.\""
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-20",
+          "question": {
+            "stem": "A person lying face-down is described as being in which position?",
+            "options": [
+              "Distal",
+              "Sagittal",
+              "Anatomical",
+              "Supine",
+              "Prone"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Prone describes a face-down orientation of the body.\n\n**Why the other options are wrong:**\n- **(A)** Distal is a directional term, not a lying position.\n- **(B)** Sagittal is a body plane, not a body position.\n- **(C)** The anatomical position is standing upright with palms forward.\n- **(D)** Supine describes a face-up orientation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-21",
+          "question": {
+            "stem": "Which organ system is primarily responsible for transporting blood, nutrients, and gases throughout the body?",
+            "options": [
+              "Urinary system",
+              "Lymphatic system",
+              "Endocrine system",
+              "Respiratory system",
+              "Cardiovascular system"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The cardiovascular system is the organ system that moves blood, and with it nutrients and gases, throughout the body.\n\n**Why the other options are wrong:**\n- **(A)** The urinary system removes wastes and regulates fluid balance rather than transporting blood body-wide.\n- **(B)** The lymphatic system deals with immune defense and fluid return, not primary blood transport.\n- **(C)** The endocrine system regulates the body using hormones, not blood transport.\n- **(D)** The respiratory system handles gas exchange with the environment, not circulation throughout the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-22",
+          "question": {
+            "stem": "The integumentary system is best described as the organ system that:",
+            "options": [
+              "Enables reproduction",
+              "Covers and protects the surface of the body",
+              "Moves the skeleton through contraction",
+              "Produces hormones to regulate metabolism",
+              "Filters blood to produce urine"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The integumentary system forms the body's outer covering (skin) and protects the underlying structures.\n\n**Why the other options are wrong:**\n- **(A)** Reproduction is the role of the reproductive system.\n- **(C)** Moving the skeleton by contraction is the function of the muscular system.\n- **(D)** Hormonal regulation of metabolism is a function of the endocrine system.\n- **(E)** Filtering blood to produce urine is the role of the urinary system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-23",
+          "question": {
+            "stem": "Which serous membrane surrounds the heart within the pericardial cavity?",
+            "options": [
+              "Parietal serosa of the abdomen",
+              "Mediastinum",
+              "Pleura",
+              "Pericardium",
+              "Peritoneum"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The pericardium is the serous membrane that surrounds the heart in the pericardial cavity.\n\n**Why the other options are wrong:**\n- **(A)** The abdominal parietal serosa lines the abdominopelvic wall, not the heart.\n- **(B)** The mediastinum is the compartment housing the heart, not a serous membrane.\n- **(C)** The pleura surrounds the lungs, not the heart.\n- **(E)** The peritoneum surrounds organs in the abdominopelvic cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-24",
+          "question": {
+            "stem": "In anatomical position, which term correctly describes the location of the knee relative to the ankle?",
+            "options": [
+              "Proximal",
+              "Distal",
+              "Superficial",
+              "Lateral",
+              "Deep"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Proximal means nearer to the point of attachment or trunk, and the knee is closer to the trunk than the ankle.\n\n**Why the other options are wrong:**\n- **(B)** Distal describes structures farther from the trunk, which is the opposite relationship.\n- **(C)** Superficial describes closeness to the body surface, not limb position.\n- **(D)** Lateral refers to a position toward the side, not up or down a limb.\n- **(E)** Deep describes distance from the surface, not limb position."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-25",
+          "question": {
+            "stem": "A patient lying face-up during an examination is described as being in which position?",
+            "options": [
+              "Lateral position",
+              "Supine",
+              "Anatomical position",
+              "Prone",
+              "Proximal position"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Supine describes a face-up orientation of the body when lying down.\n\n**Why the other options are wrong:**\n- **(A)** \"Lateral position\" is not the standard term for face-up lying.\n- **(C)** Anatomical position is a standing upright reference posture, not a lying-down position.\n- **(D)** Prone describes a face-down orientation, the opposite of face-up.\n- **(E)** Proximal is a directional term, not a body position."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-26",
+          "question": {
+            "stem": "Which layer of a serous membrane directly lines the wall of a body cavity?",
+            "options": [
+              "Serous space",
+              "Visceral layer",
+              "Deep layer",
+              "Parietal layer",
+              "Superficial layer"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The parietal layer lines the walls of the body cavity (pariet- refers to a cavity wall).\n\n**Why the other options are wrong:**\n- **(A)** The serous space is the fluid-filled gap between the two layers, not a membrane on the wall.\n- **(B)** The visceral layer covers the organs, not the cavity wall.\n- **(C)** \"Deep layer\" is not a named serous membrane layer.\n- **(E)** \"Superficial layer\" is not a named serous membrane layer."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-27",
+          "question": {
+            "stem": "In the medical term \"hypertension,\" which part of the word is the prefix and what does it mean?",
+            "options": [
+              "\"hyper-,\" meaning below",
+              "\"tension,\" meaning pressure",
+              "\"hyper-,\" meaning high or over",
+              "\"-sion,\" meaning condition",
+              "\"tens-,\" meaning organ"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The prefix \"hyper-\" means \"high\" or \"over\" and describes the root word.\n\n**Why the other options are wrong:**\n- **(A)** \"hyper-\" means high/over, not below.\n- **(B)** \"tension\" is the root referring to pressure, not the prefix.\n- **(D)** \"-sion\" is not the meaningful prefix carrying the \"high\" sense here.\n- **(E)** \"tens-\" is part of the root for pressure, not an organ term."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-28",
+          "question": {
+            "stem": "Which directional term describes a position closer to the surface of the body?",
+            "options": [
+              "Superficial",
+              "Central",
+              "Medial",
+              "Caudal",
+              "Deep"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Superficial describes a position closer to the surface of the body, such as skin being superficial to bone.\n\n**Why the other options are wrong:**\n- **(B)** Central refers to the middle of a structure or organ system, not surface depth.\n- **(C)** Medial refers to a position toward the midline, not the surface.\n- **(D)** Caudal refers to a position toward the tail/inferior, not the surface.\n- **(E)** Deep describes a position farther from the surface, the opposite meaning."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-29",
+          "question": {
+            "stem": "Which body plane divides the body horizontally into upper and lower portions?",
+            "options": [
+              "Frontal (coronal) plane",
+              "Parasagittal plane",
+              "Midsagittal plane",
+              "Sagittal plane",
+              "Transverse (horizontal) plane"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The transverse (horizontal) plane divides the body horizontally into upper and lower portions, producing cross sections.\n\n**Why the other options are wrong:**\n- **(A)** A frontal (coronal) plane divides the body into anterior and posterior portions.\n- **(B)** A parasagittal plane divides the body into unequal right and left sides.\n- **(C)** The midsagittal plane divides the body into equal right and left halves.\n- **(D)** A sagittal plane divides the body vertically into right and left sides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-mc-30",
+          "question": {
+            "stem": "According to the definition used in this unit, what distinguishes an organ from a tissue?",
+            "options": [
+              "An organ is a living being that performs all life functions",
+              "An organ is a group of organs working together",
+              "An organ is composed of two or more tissue types",
+              "An organ is composed of only one tissue type",
+              "An organ is a single cell performing a function"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** An organ is an anatomically distinct structure composed of two or more tissue types that performs specific physiological functions.\n\n**Why the other options are wrong:**\n- **(A)** A living being performing all life functions is an organism, not an organ.\n- **(B)** A group of organs working together is an organ system, not an organ.\n- **(D)** An organ contains two or more tissue types, not just one.\n- **(E)** A single cell is a cellular-level structure, not an organ."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u7-basic-tf-01",
+          "question": {
+            "stem": "A frontal (coronal) plane divides the body into anterior and posterior portions.",
+            "correct": true,
+            "explanation": "A frontal (coronal) plane separates the body into a front (anterior) portion and a back (posterior) portion. A plane dividing into upper and lower portions is transverse, and one dividing into right and left is sagittal."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-02",
+          "question": {
+            "stem": "The integumentary system is one of the eleven organ systems of the human body.",
+            "correct": true,
+            "explanation": "The integumentary system (skin and associated structures) is indeed one of the eleven organ systems, along with the skeletal, muscular, nervous, endocrine, cardiovascular, lymphatic, respiratory, digestive, urinary, and reproductive systems."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-03",
+          "question": {
+            "stem": "In anatomical terms, the prefix or suffix often describes the root, which typically refers to an organ, tissue, or condition.",
+            "correct": true,
+            "explanation": "Anatomical terms are built from roots, prefixes, and suffixes. The root often names an organ, tissue, or condition, while the prefix/suffix describes it — for example, 'hyper-' (high) plus 'tension' (pressure) yields hypertension."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-04",
+          "question": {
+            "stem": "The parietal layer of a serous membrane covers the organs, while the visceral layer lines the walls of the body cavity.",
+            "correct": false,
+            "explanation": "This is reversed. The parietal layer lines the walls of the body cavity ('pariet-' refers to a cavity wall), and the visceral layer covers the organs (the viscera)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-05",
+          "question": {
+            "stem": "A defining feature of an organism is that it can independently perform all physiological functions necessary for life.",
+            "correct": true,
+            "explanation": "An organism is a living being with cellular structure that can independently perform all physiologic functions necessary for life — the highest level of anatomical organization."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-06",
+          "question": {
+            "stem": "The term 'antebrachium' refers to the forearm rather than the upper arm.",
+            "correct": true,
+            "explanation": "'Antebrachium' (forearm) is used instead of 'lower arm,' while 'brachium' or 'arm' is reserved for the upper arm."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-07",
+          "question": {
+            "stem": "In the standard anatomical position, the body stands upright with feet parallel and the palms of the hands facing forward.",
+            "correct": true,
+            "explanation": "Anatomical position is the body standing upright, feet parallel and shoulder-width apart with toes forward, upper limbs held to each side, and palms facing forward. This standardized position reduces confusion in describing locations."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-08",
+          "question": {
+            "stem": "The peritoneum is the serous membrane that surrounds the heart within the pericardial cavity.",
+            "correct": false,
+            "explanation": "The peritoneum surrounds several organs in the abdominopelvic cavity. The serous membrane around the heart is the pericardium (in the pericardial cavity), and the pleura surrounds the lungs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-09",
+          "question": {
+            "stem": "The term 'distal' describes a position in a limb that is farther from the point of attachment or trunk of the body.",
+            "correct": true,
+            "explanation": "Distal means farther from the point of attachment; for example, the crus (leg) is distal to the femur (thigh). Proximal, its opposite, means nearer to the point of attachment."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-10",
+          "question": {
+            "stem": "A body lying face-down is described as supine.",
+            "correct": false,
+            "explanation": "A face-down orientation is prone. Supine describes a face-up orientation (lying on the back, facing the sky)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-11",
+          "question": {
+            "stem": "In the term \"hypertension,\" the prefix \"hyper-\" means \"high\" or \"over.\"",
+            "correct": true,
+            "explanation": "Anatomical terms are built from roots, prefixes, and suffixes. In \"hypertension,\" the prefix \"hyper-\" means high/over and the root \"tension\" refers to pressure, giving abnormally high blood pressure."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-12",
+          "question": {
+            "stem": "The fingers are distal to the wrist.",
+            "correct": true,
+            "explanation": "Distal describes a position in a limb farther from the point of attachment or the trunk. Because the fingers are farther from the trunk than the wrist, they are distal to the wrist (not proximal, lateral, or superficial)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-13",
+          "question": {
+            "stem": "An organ system is a group of organs that work together to perform major functions of the body.",
+            "correct": true,
+            "explanation": "By definition, an organ system is a group of organs that work together to perform major functions or meet physiological needs of the body. The human body has eleven such systems."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-14",
+          "question": {
+            "stem": "The pericardium is the serous membrane that surrounds the heart in the pericardial cavity.",
+            "correct": true,
+            "explanation": "There are three serous membranes: the pleura surrounds the lungs, the pericardium surrounds the heart in the pericardial cavity, and the peritoneum surrounds several organs in the abdominopelvic cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-15",
+          "question": {
+            "stem": "The reproductive system is the organ system responsible for producing blood cells and pumping blood through vessels.",
+            "correct": false,
+            "explanation": "Pumping blood through vessels is the role of the cardiovascular system, not the reproductive system. The reproductive system houses the organs of reproduction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-16",
+          "question": {
+            "stem": "A body lying face-down is described as being in the prone position.",
+            "correct": true,
+            "explanation": "Prone describes a face-down orientation, while supine describes a face-up orientation (lying on the back, facing the sky)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-17",
+          "question": {
+            "stem": "The term \"antebrachium\" refers to the upper arm.",
+            "correct": false,
+            "explanation": "\"Antebrachium\" (or forearm) refers to the lower arm. The term \"brachium\" (or arm) is reserved for the upper arm."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-18",
+          "question": {
+            "stem": "In the term \"hypertension,\" the prefix \"hyper-\" means \"high\" or \"over,\" while the root \"tension\" refers to pressure.",
+            "correct": true,
+            "explanation": "This is correct. Anatomical terms are built from roots, prefixes, and suffixes; the root usually refers to an organ, tissue, or condition, while the prefix or suffix describes it. \"Hyper-\" (high) + \"tension\" (pressure) = abnormally high blood pressure."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-19",
+          "question": {
+            "stem": "The peritoneum is the serous membrane that surrounds the heart in the pericardial cavity.",
+            "correct": false,
+            "explanation": "This is false. The pericardium surrounds the heart in the pericardial cavity. The peritoneum surrounds several organs in the abdominopelvic cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-20",
+          "question": {
+            "stem": "The integumentary, skeletal, muscular, and nervous systems are among the eleven organ systems of the human body.",
+            "correct": true,
+            "explanation": "This is correct. The human body has eleven organ systems: integumentary, skeletal, muscular, nervous, endocrine, cardiovascular, lymphatic, respiratory, digestive, urinary, and reproductive."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-21",
+          "question": {
+            "stem": "The reproductive system is one of the eleven organ systems, and the organs housed in the pelvic cavity are associated with reproduction.",
+            "correct": true,
+            "explanation": "This is correct. The reproductive system is one of the eleven organ systems, and the pelvic cavity is described as the division of the abdominopelvic cavity that houses the organs of reproduction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-22",
+          "question": {
+            "stem": "The parietal layer of a serous membrane covers the organs (viscera), while the visceral layer lines the walls of the body cavity.",
+            "correct": false,
+            "explanation": "This is false. The relationship is reversed: the parietal layer lines the walls of the body cavity (pariet- refers to a cavity wall), and the visceral layer covers the organs (viscera)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-23",
+          "question": {
+            "stem": "A transverse (horizontal) plane divides the body or an organ into upper and lower portions.",
+            "correct": true,
+            "explanation": "This is correct. A transverse plane, also called a horizontal plane, divides the body horizontally into upper and lower portions and produces cross sections."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-24",
+          "question": {
+            "stem": "In anatomical terminology, the term \"leg\" (or crus) refers to the upper part of the lower limb between the hip and the knee.",
+            "correct": false,
+            "explanation": "This is false. The term \"leg\" or \"crus\" is reserved for the portion of the lower limb between the knee and the ankle. The upper part of the lower limb is called the thigh or femur."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-25",
+          "question": {
+            "stem": "The nine-region approach to the abdominopelvic cavity uses two vertical lines drawn as if dropped from the midpoint of each clavicle.",
+            "correct": true,
+            "explanation": "This is correct. The nine-region approach uses one horizontal line just inferior to the ribs, one just superior to the pelvis, and two vertical lines dropped from the midpoint of each clavicle."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-26",
+          "question": {
+            "stem": "Superior (or cranial) describes a position above or higher than another part of the body proper.",
+            "correct": true,
+            "explanation": "This is correct. Superior (cranial) means above or higher; for example, the orbits are superior to the oris (mouth). Its paired opposite is inferior (caudal)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-27",
+          "question": {
+            "stem": "In the anatomical position, the body stands upright with the feet parallel, the toes pointing forward, and the palms facing forward.",
+            "correct": true,
+            "explanation": "This is correct. The anatomical position is the standard body \"map\": standing upright, feet parallel at shoulder width, toes forward, upper limbs to each side with palms facing forward."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-28",
+          "question": {
+            "stem": "The muscular system is one of the eleven organ systems of the human body.",
+            "correct": true,
+            "explanation": "True. The human body contains eleven distinct organ systems: integumentary, skeletal, muscular, nervous, endocrine, cardiovascular, lymphatic, respiratory, digestive, urinary, and reproductive."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-29",
+          "question": {
+            "stem": "A frontal (coronal) plane divides the body horizontally into upper and lower portions.",
+            "correct": false,
+            "explanation": "False. A frontal (coronal) plane divides the body into anterior (front) and posterior (rear) portions. The plane that divides the body horizontally into upper and lower portions is the transverse (horizontal) plane."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-tf-30",
+          "question": {
+            "stem": "The parietal layer of a serous membrane lines the walls of the body cavity, while the visceral layer covers the organs.",
+            "correct": true,
+            "explanation": "True. The parietal layer lines the cavity wall (pariet- refers to a cavity wall) and the visceral layer covers the viscera (organs), with a thin fluid-filled serous space between them."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u7-basic-fitb-01",
+          "question": {
+            "stem": "A plane that divides the body horizontally into upper and lower portions, producing cross sections, is called the ____________ plane.",
+            "answer": "transverse / horizontal",
+            "accepted_synonyms": [
+              "transverse",
+              "horizontal",
+              "transverse plane",
+              "horizontal plane"
+            ],
+            "explanation": "The transverse (horizontal) plane divides the body into upper and lower portions and produces cross sections."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-02",
+          "question": {
+            "stem": "When a body is lying face down, it is described as being in the ____________ position.",
+            "answer": "prone",
+            "accepted_synonyms": [
+              "prone position"
+            ],
+            "explanation": "Slide 6 states that prone describes a face-down orientation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-03",
+          "question": {
+            "stem": "A structure closer to the surface of the body, such as the skin relative to the bones, is described as ____________.",
+            "answer": "superficial",
+            "accepted_synonyms": [
+              "superficial to"
+            ],
+            "explanation": "Superficial describes a position closer to the surface of the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-04",
+          "question": {
+            "stem": "The middle finger, lying between the ring and index fingers, is in a position described as ____________ between a more medial and a more lateral structure.",
+            "answer": "intermediate",
+            "accepted_synonyms": [
+              "intermediate position"
+            ],
+            "explanation": "Intermediate describes a position between a more medial and a more lateral structure."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-05",
+          "question": {
+            "stem": "The serous membrane that surrounds the heart within its cavity is called the ____________.",
+            "answer": "pericardium",
+            "accepted_synonyms": [
+              "pericardial membrane"
+            ],
+            "explanation": "The pericardium is the serous membrane that surrounds the heart in the pericardial cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-06",
+          "question": {
+            "stem": "Because the fingers lie farther from the trunk than the wrist, they are described as ____________ to the wrist.",
+            "answer": "distal",
+            "accepted_synonyms": [
+              "distal to"
+            ],
+            "explanation": "Distal describes a position in a limb farther from the point of attachment or trunk; the fingers are distal to the wrist."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-07",
+          "question": {
+            "stem": "The organ system that includes the skin and provides a protective covering for the body is the ____________ system.",
+            "answer": "integumentary",
+            "accepted_synonyms": [
+              "integumentary system"
+            ],
+            "explanation": "The integumentary system includes the skin and covers the body's surface."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-08",
+          "question": {
+            "stem": "A plane that divides the body or an organ vertically into right and left sides is called a ____________ plane.",
+            "answer": "sagittal",
+            "accepted_synonyms": [
+              "sagittal plane",
+              "midsagittal",
+              "median"
+            ],
+            "explanation": "The sagittal plane divides the body vertically into right and left sides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-09",
+          "question": {
+            "stem": "The organ system responsible for transporting blood throughout the body, containing the heart, is the ____________ system.",
+            "answer": "cardiovascular",
+            "accepted_synonyms": [
+              "cardiovascular system",
+              "circulatory"
+            ],
+            "explanation": "The cardiovascular system, which includes the heart, transports blood throughout the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-10",
+          "question": {
+            "stem": "The portion of a serous membrane that lines the walls of a body cavity is called the ____________.",
+            "answer": "parietal layer",
+            "accepted_synonyms": [
+              "parietal",
+              "parietal serosa",
+              "parietal membrane"
+            ],
+            "explanation": "The parietal layer lines the walls of the body cavity, while the visceral layer covers the organs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-11",
+          "question": {
+            "stem": "The plane that divides the body vertically into right and left sides is the ____________ plane.",
+            "answer": "sagittal",
+            "accepted_synonyms": [
+              "sagittal plane"
+            ],
+            "explanation": "A sagittal plane divides the body or an organ vertically into right and left sides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-12",
+          "question": {
+            "stem": "The serous membrane that surrounds the heart within the pericardial cavity is called the ____________.",
+            "answer": "pericardium",
+            "accepted_synonyms": [
+              "pericardium"
+            ],
+            "explanation": "The pericardium is the serous membrane surrounding the heart in the pericardial cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-13",
+          "question": {
+            "stem": "The organ system responsible for producing movement by contracting against the skeleton is the ____________ system.",
+            "answer": "muscular",
+            "accepted_synonyms": [
+              "muscular system"
+            ],
+            "explanation": "The muscular system's major function is generating movement, distinguishing it from the skeletal system that provides the framework it acts upon."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-14",
+          "question": {
+            "stem": "The organ system responsible for covering and protecting the body's surface, including the skin, is the ____________ system.",
+            "answer": "integumentary",
+            "accepted_synonyms": [
+              "integumentary system"
+            ],
+            "explanation": "The integumentary system is the organ system that includes the skin."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-15",
+          "question": {
+            "stem": "A position closer to the surface of the body is described as ____________, whereas a position farther from the surface is described as deep.",
+            "answer": "superficial",
+            "accepted_synonyms": [],
+            "explanation": "Superficial describes a position closer to the surface of the body (e.g., the skin is superficial to the bones); it is the paired opposite of deep."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-16",
+          "question": {
+            "stem": "A directional term describing a position closer to the surface of the body, such as the skin relative to the bones, is ____________.",
+            "answer": "superficial",
+            "accepted_synonyms": [
+              "superficial"
+            ],
+            "explanation": "Superficial describes a position closer to the surface of the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-17",
+          "question": {
+            "stem": "A directional term describing a position farther from the surface of the body, such as the brain relative to the skull, is ____________.",
+            "answer": "deep",
+            "accepted_synonyms": [
+              "deep"
+            ],
+            "explanation": "Deep describes a position farther from the surface of the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-18",
+          "question": {
+            "stem": "A person lying down in a face-up orientation is described as being in the ____________ position.",
+            "answer": "supine",
+            "accepted_synonyms": [
+              "supine position"
+            ],
+            "explanation": "Supine describes a face-up orientation of a body lying down."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-19",
+          "question": {
+            "stem": "The organ system whose organs include the lungs and whose major function is gas exchange is the ____________ system.",
+            "answer": "respiratory",
+            "accepted_synonyms": [
+              "respiratory system"
+            ],
+            "explanation": "The respiratory system includes the lungs and carries out gas exchange."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-20",
+          "question": {
+            "stem": "The layer of a serous membrane that lines the walls of the body cavity is the ____________.",
+            "answer": "parietal layer",
+            "accepted_synonyms": [
+              "parietal",
+              "parietal layers"
+            ],
+            "explanation": "The parietal layer lines the walls of the body cavity (pariet- refers to a cavity wall)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-21",
+          "question": {
+            "stem": "The portion of a serous membrane that directly covers the surface of the organs (the viscera) is called the ____________.",
+            "answer": "visceral layer",
+            "accepted_synonyms": [
+              "visceral",
+              "visceral serosa"
+            ],
+            "explanation": "The visceral layer covers the organs, whereas the parietal layer lines the cavity wall."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-22",
+          "question": {
+            "stem": "The organ system responsible for chemically and mechanically breaking down food and absorbing nutrients is the ____________ system.",
+            "answer": "digestive",
+            "accepted_synonyms": [
+              "digestion"
+            ],
+            "explanation": "The digestive system processes food and absorbs nutrients."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-23",
+          "question": {
+            "stem": "A plane that divides the body horizontally into upper and lower portions, producing a cross section, is the ____________ plane.",
+            "answer": "transverse / horizontal",
+            "accepted_synonyms": [
+              "transverse",
+              "horizontal",
+              "transverse plane",
+              "horizontal plane"
+            ],
+            "explanation": "The transverse (horizontal) plane divides the body into superior and inferior parts, unlike the sagittal (left/right) or frontal/coronal (anterior/posterior) planes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-24",
+          "question": {
+            "stem": "A plane that divides the body vertically into right and left sides is called a ____________ plane.",
+            "answer": "sagittal",
+            "accepted_synonyms": [
+              "sagital"
+            ],
+            "explanation": "A sagittal plane divides the body into right and left sides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-25",
+          "question": {
+            "stem": "A body lying face-up, facing the sky, is described as being in the ____________ position.",
+            "answer": "supine",
+            "accepted_synonyms": [],
+            "explanation": "Supine describes a face-up orientation; prone is face-down."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-26",
+          "question": {
+            "stem": "The serous membrane that surrounds several organs within the abdominopelvic cavity is called the ____________.",
+            "answer": "peritoneum",
+            "accepted_synonyms": [
+              "peritonea"
+            ],
+            "explanation": "The peritoneum surrounds abdominopelvic organs, the pleura the lungs, and the pericardium the heart."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-27",
+          "question": {
+            "stem": "The subdivision of the dorsal (posterior) cavity that houses the brain is the ____________.",
+            "answer": "cranial cavity",
+            "accepted_synonyms": [
+              "cranial"
+            ],
+            "explanation": "The cranial cavity houses the brain, while the spinal cavity encloses the spinal cord."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-28",
+          "question": {
+            "stem": "A body that is lying face-down is described as being in the ____________ position.",
+            "answer": "prone",
+            "accepted_synonyms": [],
+            "explanation": "Prone describes a face-down orientation, while supine describes a face-up orientation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-29",
+          "question": {
+            "stem": "The organ system responsible for covering and protecting the body at its surface, including the skin, is the ____________ system.",
+            "answer": "integumentary",
+            "accepted_synonyms": [
+              "integument"
+            ],
+            "explanation": "The integumentary system is one of the eleven organ systems and forms the outer covering of the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fitb-30",
+          "question": {
+            "stem": "In anatomical position, the fingers are ____________ to the wrist because they are farther from the point of attachment to the trunk.",
+            "answer": "distal",
+            "accepted_synonyms": [],
+            "explanation": "Distal describes a position in a limb farther from the point of attachment; the fingers are distal to the wrist."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u7-basic-fr-01",
+          "question": {
+            "prompt": "Name the integumentary system and the muscular system, and give one major function of each.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Correctly identifies the integumentary system."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid function of the integumentary system (e.g., covers/protects the body surface)."
+              },
+              {
+                "points": 1,
+                "criterion": "Correctly identifies the muscular system."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a valid function of the muscular system (e.g., produces movement)."
+              }
+            ],
+            "model_answer": "The integumentary system consists of the skin and its associated structures, and its major function is to cover and protect the outer surface of the body. The muscular system consists of muscles, and its major function is to produce movement of the body."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fr-02",
+          "question": {
+            "prompt": "Name the three serous membranes found in the ventral (anterior) body cavity and, for each, state which organ or organs it surrounds.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies the pleura as surrounding the lungs."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the pericardium as surrounding the heart."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the peritoneum as surrounding several organs in the abdominopelvic cavity."
+              }
+            ],
+            "model_answer": "The pleura is the serous membrane that surrounds the lungs (in the pleural cavity). The pericardium surrounds the heart (in the pericardial cavity). The peritoneum surrounds several organs in the abdominopelvic cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fr-03",
+          "question": {
+            "prompt": "An organ system is a group of organs working together. Define what an 'organ' is, stating that it is an anatomically distinct structure and that it is composed of two or more tissue types. Then define what an 'organism' is, stating that it is a living being with cellular structure and that it can independently perform all physiologic functions necessary for life.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines an organ as an anatomically distinct structure."
+              },
+              {
+                "points": 1,
+                "criterion": "States that an organ is composed of two or more tissue types."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines an organism as a living being with cellular structure."
+              },
+              {
+                "points": 1,
+                "criterion": "States that an organism can independently perform all physiologic functions necessary for life."
+              }
+            ],
+            "model_answer": "An organ is an anatomically distinct structure of the body composed of two or more tissue types, performing one or more specific functions. An organism is a living being that has a cellular structure and that can independently perform all the physiologic functions necessary for life."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fr-04",
+          "question": {
+            "prompt": "Consider your fingers relative to your wrist. State the correct directional term that describes this relationship, and briefly explain what that term means.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies the correct term as 'distal'."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that distal describes a position in a limb farther from the point of attachment or trunk of the body."
+              }
+            ],
+            "model_answer": "The fingers are distal to the wrist. Distal describes a position in a limb that is farther from the point of attachment or from the trunk of the body, so the fingers (farther from the trunk) are distal relative to the wrist."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fr-05",
+          "question": {
+            "prompt": "Serous membranes have two layers and a space between them. Identify the parietal layer and the visceral layer by stating what each one lines or covers, and describe what is found in the space between them.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States the parietal layer lines the walls of the body cavity."
+              },
+              {
+                "points": 1,
+                "criterion": "States the visceral layer covers the organs (viscera)."
+              },
+              {
+                "points": 2,
+                "criterion": "Describes the serous space/cavity between the layers as a thin, fluid-filled space (containing serous fluid that reduces friction)."
+              }
+            ],
+            "model_answer": "The parietal layer lines the walls of the body cavity, and the visceral layer covers the organs (the viscera). Between the two layers is a very thin, fluid-filled serous space or cavity containing serous fluid, which reduces friction as the organs move."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fr-06",
+          "question": {
+            "prompt": "Describe the anatomical position by stating the orientation of the body and two features of how the limbs/hands are held.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States the body is standing upright (with feet parallel/toes forward)."
+              },
+              {
+                "points": 1,
+                "criterion": "States the palms of the hands face forward."
+              },
+              {
+                "points": 1,
+                "criterion": "States the upper limbs are held out to the sides (or feet at shoulder width)."
+              }
+            ],
+            "model_answer": "In anatomical position, the body is standing upright with the feet parallel, shoulder width apart, and toes forward. The upper limbs are held out to each side, and the palms of the hands face forward."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fr-07",
+          "question": {
+            "prompt": "Anatomical terms are built from roots, prefixes, and suffixes. Using the example 'hypertension,' explain what the root generally refers to and what a prefix or suffix generally does, referring to the parts of this word. Then state what the whole word 'hypertension' means.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States the root often refers to an organ, tissue, or condition (e.g., 'tension' = pressure)."
+              },
+              {
+                "points": 1,
+                "criterion": "States the prefix/suffix often describes the root (e.g., 'hyper-' = high/over)."
+              },
+              {
+                "points": 1,
+                "criterion": "Concludes that hypertension therefore means abnormally high (blood) pressure."
+              }
+            ],
+            "model_answer": "The root of a term often refers to an organ, tissue, or condition; in hypertension the root 'tension' refers to pressure. The prefix or suffix describes the root; here the prefix 'hyper-' means high or over. Combined, 'hypertension' means abnormally high blood pressure."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fr-08",
+          "question": {
+            "prompt": "Define the sagittal plane and the transverse (horizontal) plane, stating how each one divides the body.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States the sagittal plane divides the body vertically."
+              },
+              {
+                "points": 1,
+                "criterion": "States the sagittal plane divides into right and left sides."
+              },
+              {
+                "points": 1,
+                "criterion": "States the transverse plane divides the body horizontally."
+              },
+              {
+                "points": 1,
+                "criterion": "States the transverse plane divides into upper and lower portions."
+              }
+            ],
+            "model_answer": "A sagittal plane divides the body or an organ vertically into right and left sides. A transverse (horizontal) plane divides the body or organ horizontally into upper and lower portions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fr-09",
+          "question": {
+            "prompt": "The terms 'prone' and 'supine' both describe a body lying down. State what both terms have in common, then explain the difference between the two by describing the orientation each one refers to.",
+            "total_marks": 3,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States both terms describe a body that is lying down."
+              },
+              {
+                "points": 1,
+                "criterion": "States prone is a face-down orientation."
+              },
+              {
+                "points": 1,
+                "criterion": "States supine is a face-up orientation."
+              }
+            ],
+            "model_answer": "Both prone and supine describe a body that is lying down. Prone describes a face-down orientation, while supine describes a face-up orientation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-basic-fr-10",
+          "question": {
+            "prompt": "Using the nervous system as your example, explain the difference between the directional terms 'central' and 'peripheral,' stating where each part of the nervous system is located.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States central describes a position toward the middle/centre of a structure or organ system."
+              },
+              {
+                "points": 1,
+                "criterion": "States the central nervous system is contained within the skull and vertebral column."
+              },
+              {
+                "points": 1,
+                "criterion": "States peripheral describes a position toward the outer edge/periphery of a structure or organ system."
+              },
+              {
+                "points": 1,
+                "criterion": "States the peripheral nervous system is found outside the skull and vertebral column."
+              }
+            ],
+            "model_answer": "Central describes a position toward the middle (centre) of a structure or organ system; the central nervous system is contained within the skull and vertebral column. Peripheral describes a position toward the outer edge (periphery); the peripheral nervous system is found outside the skull and vertebral column."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    },
+    "advanced": {
+      "mc": [
+        {
+          "id": "u7-advanced-mc-01",
+          "question": {
+            "stem": "A surgeon notes that a patient's inflamed membrane is the layer directly touching and covering the surface of the heart itself, rather than the layer lining the outer sac wall. Which layer is inflamed?",
+            "options": [
+              "The parietal layer of the pericardium",
+              "The mediastinal serous space",
+              "The visceral layer of the peritoneum",
+              "The parietal layer of the pleura",
+              "The visceral layer of the pericardium"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The visceral layer of a serous membrane covers the organ itself, so the layer touching the heart is the visceral pericardium.\n\n**Why the other options are wrong:**\n- **(A)** The parietal layer lines the cavity wall, not the organ surface.\n- **(B)** The serous space is a fluid-filled cavity, not a membrane layer covering the heart.\n- **(C)** The peritoneum surrounds abdominopelvic organs, not the heart.\n- **(D)** The pleura surrounds the lungs, not the heart."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-02",
+          "question": {
+            "stem": "Which organ system's major function is best described as protecting the body's surface and forming its outermost covering?",
+            "options": [
+              "The skeletal system",
+              "The integumentary system",
+              "The lymphatic system",
+              "The muscular system",
+              "The nervous system"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The integumentary system forms the body's external covering (skin) and provides surface protection.\n\n**Why the other options are wrong:**\n- **(A)** The skeletal system provides internal support, not the outer covering.\n- **(C)** The lymphatic system relates to immunity and fluid balance, not surface covering.\n- **(D)** The muscular system produces movement, not surface covering.\n- **(E)** The nervous system controls and coordinates body activities."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-03",
+          "question": {
+            "stem": "The pleura, pericardium, and peritoneum are all examples of the same type of membrane. What common feature do all three share?",
+            "options": [
+              "They each secrete cerebrospinal fluid to cushion organs",
+              "They each surround only a single organ with no cavity",
+              "They each consist of parietal and visceral layers with a fluid-filled space between them",
+              "They are all found within the dorsal (posterior) cavity",
+              "They are all located within the cranial cavity"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Each of these serous membranes has a parietal layer lining the cavity wall and a visceral layer over the organ, separated by a fluid-filled serous space.\n\n**Why the other options are wrong:**\n- **(A)** They secrete serous fluid, not cerebrospinal fluid.\n- **(B)** The peritoneum surrounds several organs, and all involve a serous cavity.\n- **(D)** They are found in the ventral (anterior) cavity, not the dorsal cavity.\n- **(E)** Only the pericardium and pleura are thoracic; none are in the cranial cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-04",
+          "question": {
+            "stem": "In the term 'hypertension,' the prefix 'hyper-' means 'high' and 'tension' refers to pressure. Based on how anatomical terms are constructed, what part of a term typically identifies the organ, tissue, or condition being described?",
+            "options": [
+              "The root",
+              "The plane",
+              "The suffix",
+              "The quadrant",
+              "The prefix"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The root of a term often refers to an organ, tissue, or condition, while the prefix or suffix describes it.\n\n**Why the other options are wrong:**\n- **(B)** A plane is a cutting orientation, not a word part.\n- **(C)** The suffix also describes the root rather than naming it.\n- **(D)** A quadrant is a body region division, not a word part.\n- **(E)** The prefix describes the root rather than naming the organ or condition."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-05",
+          "question": {
+            "stem": "A radiologist produces a scan that divides the body into an anterior portion and a posterior portion. Which plane was used, and what is its alternate name?",
+            "options": [
+              "Transverse plane, also called the horizontal plane",
+              "Frontal plane, also called the coronal plane",
+              "Midsagittal plane, also called the cross section",
+              "Sagittal plane, also called the median plane",
+              "Parasagittal plane, also called the longitudinal plane"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A frontal plane divides the body into anterior and posterior portions and is also called the coronal plane.\n\n**Why the other options are wrong:**\n- **(A)** A transverse plane divides into upper and lower portions.\n- **(C)** A midsagittal plane divides into equal right and left sides; cross section refers to transverse cuts.\n- **(D)** A sagittal/median plane divides into right and left, not front and back.\n- **(E)** A parasagittal plane divides into unequal right and left sides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-06",
+          "question": {
+            "stem": "A clinician describes a lesion using the regional term 'antebrachium.' To which part of the body does this correctly refer?",
+            "options": [
+              "The thigh, above the knee",
+              "The leg, between the knee and ankle",
+              "The upper arm, between the shoulder and elbow",
+              "The forearm, between the elbow and wrist",
+              "The wrist and hand"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** 'Antebrachium' is the term used for the forearm rather than 'lower arm.'\n\n**Why the other options are wrong:**\n- **(A)** The thigh is the femur.\n- **(B)** The leg between knee and ankle is the crus.\n- **(C)** The upper arm is the brachium, not the antebrachium.\n- **(E)** The wrist region is carpal, not antebrachium."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-07",
+          "question": {
+            "stem": "The heart is an organ that pumps blood, but it also has functions integral to fluid balance. This best illustrates which principle about the body's organ systems?",
+            "options": [
+              "An organ is composed of only one tissue type",
+              "Each organ belongs to exactly one organ system",
+              "The organism level is lower than the organ system level",
+              "Organs can contribute to more than one organ system",
+              "Organ systems never share functions"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Assigning organs to systems is imprecise because most organs contribute to more than one system.\n\n**Why the other options are wrong:**\n- **(A)** An organ is composed of two or more tissue types.\n- **(B)** Organs can belong to more than one system.\n- **(C)** The organism level is the highest level of organization, not lower.\n- **(E)** Systems commonly share functions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-08",
+          "question": {
+            "stem": "Using directional terms in anatomical position, which statement is correctly stated?",
+            "options": [
+              "The spinal cord is central while a spinal nerve in the limb is peripheral",
+              "The elbow is distal to the wrist",
+              "The brain is superficial to the skull",
+              "The nose is lateral to the ears",
+              "The knee is superior to the hip"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Central describes a position toward the centre of an organ system (the spinal cord), while peripheral describes the outer edge (a nerve in a limb).\n\n**Why the other options are wrong:**\n- **(B)** The elbow is proximal to the wrist, not distal.\n- **(C)** The brain is deep to the skull, not superficial.\n- **(D)** The nose is medial to the ears, not lateral.\n- **(E)** The knee is inferior to the hip, not superior."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-09",
+          "question": {
+            "stem": "The lecture notes that when discussing the central nervous system, the term 'rostral' is used instead of simply 'cranial.' What does 'rostral' specifically indicate?",
+            "options": [
+              "Toward the surface of the body",
+              "Toward the back of the body",
+              "Toward the middle of the body",
+              "Toward the tail or coccyx",
+              "Toward the nose or beak"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** While cranial means toward the head, rostral means toward the nose or beak along the curved CNS axis.\n\n**Why the other options are wrong:**\n- **(A)** Toward the surface is superficial.\n- **(B)** Toward the back is dorsal/posterior.\n- **(C)** Toward the middle is medial.\n- **(D)** Toward the tail is caudal, the opposite end from rostral."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-10",
+          "question": {
+            "stem": "A structure is located in the ventral cavity, inferior to the diaphragm, in the division that houses the digestive organs. Which cavity is this?",
+            "options": [
+              "The cranial cavity",
+              "The thoracic cavity",
+              "The abdominal cavity",
+              "The pelvic cavity",
+              "The pericardial cavity"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The abdominal cavity is the subdivision of the abdominopelvic cavity, below the diaphragm, that houses the digestive organs.\n\n**Why the other options are wrong:**\n- **(A)** The cranial cavity is in the dorsal cavity and houses the brain.\n- **(B)** The thoracic cavity is superior to the diaphragm.\n- **(D)** The pelvic cavity houses reproductive organs, not the digestive organs.\n- **(E)** The pericardial cavity houses the heart in the thorax."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-11",
+          "question": {
+            "stem": "In the term 'hypertension', the prefix 'hyper-' means 'high' and the root 'tension' refers to pressure. Based on this same logic, how would you best interpret the components of an anatomical or physiological term?",
+            "options": [
+              "The root usually describes the organ or condition, while the prefix or suffix modifies that root",
+              "The prefix names the tissue and the root names the body plane involved",
+              "The prefix always names the organ, while the root names the direction",
+              "The suffix always names the organ, while the root describes severity",
+              "Roots, prefixes, and suffixes are interchangeable and carry no fixed meaning"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The unit states that the root of a term often refers to an organ, tissue, or condition, while the prefix or suffix describes or modifies that root.\n\n**Why the other options are wrong:**\n- **(B)** Prefixes and roots are not defined as naming tissues and planes in this scheme.\n- **(C)** The prefix modifies the root; it does not name the organ, and the root does not name direction.\n- **(D)** The suffix modifies rather than names the organ, and roots do not specifically describe severity.\n- **(E)** These terms have fixed meanings precisely to reduce ambiguity, so they are not interchangeable."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-12",
+          "question": {
+            "stem": "In the term 'hypertension,' 'hyper-' means high and 'tension' refers to pressure. Applying this same logic to anatomical word-building, what does knowing that a root usually names an organ, tissue, or condition help you predict about a new term?",
+            "options": [
+              "Every term contains exactly one root and no affixes",
+              "The prefix or suffix will always name the organ involved",
+              "The meaning of the root changes depending on the patient",
+              "The root component identifies the main structure or condition, while a prefix or suffix modifies it",
+              "Roots are only used for directional terms, not organs"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The unit states the root often refers to an organ, tissue, or condition, while the prefix or suffix describes (modifies) the root.\n\n**Why the other options are wrong:**\n- **(A)** Terms frequently combine roots with prefixes and/or suffixes.\n- **(B)** It is the root, not the affix, that typically names the organ.\n- **(C)** Because these are dead languages, term meanings do not change.\n- **(E)** Roots name organs, tissues, or conditions, not just directional terms."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-13",
+          "question": {
+            "stem": "A student is asked to identify the organ system responsible for producing offspring, and separately the system that houses the digestive organs' function of breaking down food. Which pairing correctly matches system to function?",
+            "options": [
+              "Urinary – produces offspring; respiratory – processes food",
+              "Lymphatic – produces offspring; endocrine – processes food",
+              "Reproductive – produces offspring; digestive – processes food",
+              "Reproductive – processes food; digestive – produces offspring",
+              "Muscular – produces offspring; skeletal – processes food"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The reproductive system is responsible for producing offspring, and the digestive system processes food.\n\n**Why the other options are wrong:**\n- **(A)** The urinary system does not produce offspring, nor does the respiratory system process food.\n- **(B)** The lymphatic and endocrine systems have neither of these functions.\n- **(D)** The systems are swapped and thus reversed incorrectly.\n- **(E)** The muscular and skeletal systems do neither of these functions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-14",
+          "question": {
+            "stem": "A radiologist obtains a scan that divides the body into unequal right and left portions. Which plane was used, and how does it differ from the median plane?",
+            "options": [
+              "Frontal plane; it separates anterior from posterior",
+              "Coronal plane; it produces a cross section",
+              "Transverse plane; it separates superior from inferior",
+              "Parasagittal plane; unlike the midsagittal (median) plane it does not run down the exact midline",
+              "Midsagittal plane; it always produces equal halves"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A sagittal plane that yields unequal right and left sides is a parasagittal plane, differing from the midsagittal (median) plane, which runs directly down the midline into equal halves.\n\n**Why the other options are wrong:**\n- **(A)** A frontal plane separates front from back, not right from left.\n- **(B)** A coronal plane is another name for the frontal plane.\n- **(C)** A transverse plane divides upper from lower, not right from left.\n- **(E)** The midsagittal plane produces equal halves, which contradicts the unequal division described."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-15",
+          "question": {
+            "stem": "The visceral layer of a serous membrane covers the lungs. What is the correct name of this membrane, and what does its parietal layer line?",
+            "options": [
+              "Pleura; its parietal layer lines the wall of the pleural cavity",
+              "Peritoneum; it lines the abdominal wall",
+              "Pleura; its parietal layer covers the heart",
+              "Peritoneum; its parietal layer covers the lungs",
+              "Pericardium; it lines the wall of the mediastinum"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The serous membrane around the lungs is the pleura, and its parietal layer lines the wall of the pleural cavity while the visceral layer covers the lungs.\n\n**Why the other options are wrong:**\n- **(B)** The peritoneum surrounds abdominopelvic organs, not the lungs.\n- **(C)** The pleura does not cover the heart; that is the pericardium.\n- **(D)** The peritoneum does not cover the lungs.\n- **(E)** The pericardium surrounds the heart, not the lungs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-16",
+          "question": {
+            "stem": "A serous cavity contains a thin layer of fluid between two membrane layers. What is the primary functional benefit of this fluid-filled space for an organ such as the beating heart?",
+            "options": [
+              "It replaces the need for cerebrospinal fluid",
+              "It anchors the visceral layer permanently to the parietal layer",
+              "It transports oxygen directly to the organ",
+              "It reduces friction between the organ and the surrounding cavity wall as it moves",
+              "It increases friction so the organ stays in place"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Serous fluid reduces friction between the moving organ (e.g., the heart in the pericardial cavity) and the cavity wall, protecting the viscera.\n\n**Why the other options are wrong:**\n- **(A)** Cerebrospinal fluid cushions the CNS in the dorsal cavity, a separate function.\n- **(B)** The two layers glide past one another rather than being fused.\n- **(C)** Serous fluid cushions and lubricates; it does not deliver oxygen.\n- **(E)** The fluid reduces, not increases, friction."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-17",
+          "question": {
+            "stem": "Which of the following correctly distinguishes the cardiovascular system from the lymphatic system based on their roles as circulatory-type systems in the body?",
+            "options": [
+              "The lymphatic system is not an organ system at all",
+              "Each is a distinct organ system among the eleven, working with other systems since organs may belong to more than one system",
+              "The cardiovascular system is part of the integumentary system",
+              "They are the same single organ system with two names",
+              "Both are among the eleven organ systems, but only the cardiovascular system is skeletal"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The cardiovascular and lymphatic systems are two of the eleven distinct organ systems, and organs can contribute to more than one system.\n\n**Why the other options are wrong:**\n- **(A)** The lymphatic system is explicitly one of the eleven organ systems.\n- **(C)** The cardiovascular system is independent of the integumentary system.\n- **(D)** They are two separate systems, not one.\n- **(E)** The cardiovascular system is not part of the skeletal system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-18",
+          "question": {
+            "stem": "A student encounters the regional term 'antebrachium' in a lab manual. Using the unit's regional terminology, what does this term precisely refer to, and why is 'lower arm' avoided?",
+            "options": [
+              "The wrist; 'lower arm' means the hand",
+              "The thigh; 'lower arm' refers to the leg",
+              "The forearm; 'brachium' is reserved for the upper arm, so 'antebrachium' names the forearm precisely",
+              "The entire upper limb; 'lower arm' is a synonym",
+              "The upper arm; 'lower arm' is too formal"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** 'Antebrachium' means forearm, and because 'brachium' (arm) is reserved for the upper arm, the precise term 'antebrachium' avoids the ambiguous 'lower arm.'\n\n**Why the other options are wrong:**\n- **(A)** The antebrachium is the forearm, not the wrist.\n- **(B)** The thigh is the femur region, unrelated to the arm.\n- **(D)** The antebrachium is only the forearm, not the whole upper limb.\n- **(E)** The upper arm is the brachium, not the antebrachium."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-19",
+          "question": {
+            "stem": "The Unit 7 outline is divided into two parts: Body Systems and Anatomical Terminology. A topic dealing with how to describe the relative location of a tumor as 'superficial to' another structure would fall under which part, and why?",
+            "options": [
+              "Part 1, because tumors are organs",
+              "Neither part, because it is not covered in the unit",
+              "Part 1, because it names an organ system",
+              "Part 2, because it lists the eleven organ systems",
+              "Part 2, because directional terms are a component of anatomical terminology"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Directional terms like 'superficial to' are part of Anatomical Terminology, which is Part 2 of the unit outline.\n\n**Why the other options are wrong:**\n- **(A)** A tumor is not an organ system topic, and this concerns directional description.\n- **(B)** Directional terms are explicitly covered under Part 2.\n- **(C)** Naming organ systems is Part 1, but this is a directional-term question.\n- **(D)** The eleven organ systems belong to Part 1, not this question."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-20",
+          "question": {
+            "stem": "A patient reports pain in the abdominopelvic region located centrally, immediately around the navel. Using the nine-region scheme, which region is this, and how does it relate to the quadrant scheme's dividing point?",
+            "options": [
+              "Umbilical region; the quadrant scheme's lines intersect at the umbilicus",
+              "Right lumbar region; the quadrant lines cross at the clavicle",
+              "Hypogastric region; the quadrant lines cross above it",
+              "Epigastric region; the quadrant lines meet at the ribs",
+              "Left iliac region; the quadrant lines meet at the pelvis"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The central region around the navel is the umbilical region, and the four-quadrant scheme divides the cavity with lines that intersect at the umbilicus.\n\n**Why the other options are wrong:**\n- **(B)** The right lumbar region is lateral, and quadrant lines cross at the umbilicus, not the clavicle.\n- **(C)** The hypogastric region lies inferior to the umbilical region.\n- **(D)** The epigastric region is superior to the umbilical region, not central at the navel.\n- **(E)** The left iliac region is in the lower left, not central around the navel."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-21",
+          "question": {
+            "stem": "A surgeon notes that a tumor is growing on the layer of serous membrane that directly covers the surface of the lung itself. Which membrane layer is affected?",
+            "options": [
+              "The parietal peritoneum",
+              "The visceral peritoneum",
+              "The visceral pleura",
+              "The parietal pleura",
+              "The parietal pericardium"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The visceral layer of a serous membrane covers the organ itself, so the membrane covering the lung surface is the visceral pleura.\n\n**Why the other options are wrong:**\n- **(A)** The parietal peritoneum lines the abdominopelvic wall, not the lung.\n- **(B)** The peritoneum is found in the abdominopelvic cavity, not around the lung.\n- **(D)** The parietal pleura lines the wall of the pleural cavity, not the lung surface.\n- **(E)** The pericardium surrounds the heart, not the lung."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-22",
+          "question": {
+            "stem": "Which of the following correctly describes the relationship between the pericardial cavity and the thoracic cavity?",
+            "options": [
+              "The pericardial cavity houses the lungs within the mediastinum",
+              "The pericardial cavity is a subdivision of the abdominopelvic cavity within the thorax",
+              "The pericardial cavity is located inferior to the diaphragm",
+              "The pericardial cavity is part of the dorsal cavity",
+              "The pericardial cavity surrounds the heart and lies within the mediastinum of the thoracic cavity"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The heart sits within a pericardial cavity, which is located in the mediastinum, a compartment of the thoracic cavity.\n\n**Why the other options are wrong:**\n- **(A)** The lungs are in the pleural cavities, not the pericardial cavity.\n- **(B)** The pericardial cavity is in the thoracic, not abdominopelvic, cavity.\n- **(C)** The pericardial cavity is superior to the diaphragm within the thorax.\n- **(D)** The pericardial cavity is part of the ventral, not dorsal, cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-23",
+          "question": {
+            "stem": "In the term 'hypertension,' 'hyper-' means high/over and 'tension' refers to pressure. Based on this same logic of roots, prefixes, and suffixes, what best describes the general role of a root in anatomical terminology?",
+            "options": [
+              "The root is only used for terms borrowed from English",
+              "The root often refers to an organ, tissue, or condition",
+              "The root usually describes or modifies the main portion of the word",
+              "The root indicates whether a value is high or low",
+              "The root always indicates a direction or plane"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The root of an anatomical term often refers to an organ, tissue, or condition, while the prefix or suffix describes it.\n\n**Why the other options are wrong:**\n- **(A)** Anatomical terms derive largely from Latin and Greek, not English.\n- **(C)** It is the prefix/suffix that describes or modifies the root, not the reverse.\n- **(D)** Indicating high/low is the role of a prefix like 'hyper-,' not the root.\n- **(E)** Roots are not limited to directions or planes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-24",
+          "question": {
+            "stem": "A student is asked to match an organ system with a defining function. Which pairing is correct?",
+            "options": [
+              "Integumentary system — houses the organs of reproduction",
+              "Skeletal system — produces cerebrospinal fluid that cushions the heart",
+              "Cardiovascular system — provides an outer covering of the body",
+              "Nervous system — transports blood and moves substances around the body",
+              "Urinary system — one of the systems studied later that includes organs of waste handling"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The urinary system is one of the eleven organ systems covered in the second course and is associated with waste handling, and organs can belong to more than one system.\n\n**Why the other options are wrong:**\n- **(A)** The reproductive system, not integumentary, houses reproductive organs.\n- **(B)** The skeletal system does not produce cerebrospinal fluid, and CSF cushions the brain and spinal cord, not the heart.\n- **(C)** The outer covering is provided by the integumentary system, not cardiovascular.\n- **(D)** Transporting blood is the cardiovascular system's role, not the nervous system's."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-25",
+          "question": {
+            "stem": "Using standard anatomical terminology, which statement is correctly worded according to the regional terms taught in this unit?",
+            "options": [
+              "The 'femur' refers to the portion of the lower limb between the knee and ankle",
+              "The 'crus' refers to the thigh above the knee",
+              "The 'leg' properly refers to the entire lower limb from hip to toes",
+              "The 'arm' refers to the region between the wrist and the fingers",
+              "The 'brachium' refers to the upper arm, while the 'antebrachium' refers to the forearm"
+            ],
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** 'Brachium' (arm) is reserved for the upper arm and 'antebrachium' (forearm) for the lower arm.\n\n**Why the other options are wrong:**\n- **(A)** The 'femur'/thigh is the upper part of the leg, not the shin region.\n- **(B)** The 'crus' is the portion between the knee and ankle, not the thigh.\n- **(C)** 'Leg' properly refers only to the portion between the knee and ankle.\n- **(D)** 'Arm' refers to the upper arm, not the region beyond the wrist."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-26",
+          "question": {
+            "stem": "Applying the paired directional terms from this unit, which statement is correct when the body is in anatomical position?",
+            "options": [
+              "The coccyx is at the cranial end of the spinal column",
+              "The toes are anterior to the foot",
+              "The back of the knee (popliteus) is anterior to the kneecap (patella)",
+              "The pelvis is superior to the abdomen",
+              "The mouth (oris) is superior to the eye orbits"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The toes point toward the front of the body, so they are anterior to the foot.\n\n**Why the other options are wrong:**\n- **(A)** The coccyx is at the caudal (inferior) end, not the cranial end.\n- **(C)** The popliteus is posterior to the patella, not anterior.\n- **(D)** The pelvis is inferior to the abdomen.\n- **(E)** The eye orbits are superior to the mouth, not the reverse."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-27",
+          "question": {
+            "stem": "The speaker notes state that most organs contribute to more than one system. Which conclusion best follows from this statement?",
+            "options": [
+              "Every organ belongs to exactly one organ system",
+              "Organ systems never share organs with one another",
+              "The organism level of organization is lower than the organ level",
+              "Assigning organs to a single organ system can be imprecise because organs may serve multiple systems",
+              "An organ is composed of only a single tissue type"
+            ],
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Because organs can have functions integral to more than one system, assigning an organ to only one system can be imprecise.\n\n**Why the other options are wrong:**\n- **(A)** Organs may belong to more than one system, contradicting this.\n- **(B)** Systems can share organs, which is the whole point of the statement.\n- **(C)** The organism is the highest, not lowest, level of organization.\n- **(E)** An organ is composed of two or more tissue types."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-28",
+          "question": {
+            "stem": "A radiologist reviews a scan that divides the body into anterior and posterior portions. Which plane was used, and what is its alternate name?",
+            "options": [
+              "Frontal plane, also called the coronal plane",
+              "Sagittal plane, also called the median plane",
+              "Transverse plane, also called the horizontal plane",
+              "Midsagittal plane, also called the parasagittal plane",
+              "Transverse plane, also called the cross-sectional plane"
+            ],
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A frontal plane divides the body into anterior and posterior portions and is also called the coronal plane.\n\n**Why the other options are wrong:**\n- **(B)** A sagittal plane divides into left and right, not anterior/posterior.\n- **(C)** A transverse plane divides into upper and lower portions.\n- **(D)** Midsagittal and parasagittal are both sagittal-type planes dividing left/right.\n- **(E)** A transverse plane divides into upper and lower portions, not anterior/posterior."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-29",
+          "question": {
+            "stem": "Both the parietal and visceral serous layers secrete a thin fluid into the serous space. What is the primary functional benefit of this arrangement for moving organs like the beating heart or inflating lungs?",
+            "options": [
+              "It physically divides the abdominopelvic cavity into regions",
+              "It increases friction to hold the organs firmly in place",
+              "It reduces friction between the organs and the body wall as they move",
+              "It produces cerebrospinal fluid to cushion the organs",
+              "It converts the ventral cavity into a dorsal cavity"
+            ],
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The serous fluid cushions and reduces friction between the organs and body wall as they move, protecting the viscera.\n\n**Why the other options are wrong:**\n- **(A)** No membrane physically divides the abdominopelvic cavity.\n- **(B)** The fluid reduces friction; it does not increase it.\n- **(D)** Cerebrospinal fluid is produced by the brain in the dorsal cavity, not by serous membranes.\n- **(E)** Serous membranes do not convert one cavity type into another."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-mc-30",
+          "question": {
+            "stem": "A patient is asked to lie face-up on the exam table with the palms turned toward the ceiling. Which combination of terms correctly describes this position and hand orientation?",
+            "options": [
+              "Prone position, with palms facing posteriorly",
+              "Supine position, with palms facing anteriorly",
+              "Supine position, with palms facing posteriorly",
+              "Anatomical position, with palms facing medially",
+              "Prone position, with palms facing anteriorly"
+            ],
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Face-up is supine, and palms turned up (toward the ceiling) face anteriorly, consistent with the anatomical reference.\n\n**Why the other options are wrong:**\n- **(A)** The position is supine, not prone, and the palm orientation is wrong.\n- **(C)** Palms turned up face anteriorly, not posteriorly.\n- **(D)** Anatomical position is standing upright, not lying down, and palms face anteriorly.\n- **(E)** Prone describes face-down, not face-up."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "tf": [
+        {
+          "id": "u7-advanced-tf-01",
+          "question": {
+            "stem": "The nervous system and the endocrine system both function in communication and coordination within the body.",
+            "correct": true,
+            "explanation": "Both systems coordinate body functions—the nervous system via rapid electrical signals and the endocrine system via slower hormonal signals. Both are among the eleven organ systems and both serve regulatory/coordinating roles."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-02",
+          "question": {
+            "stem": "The integumentary system and the muscular system perform the same major function of moving the body.",
+            "correct": false,
+            "explanation": "False. The muscular system produces movement, whereas the integumentary system (skin and associated structures) provides a protective outer covering. They are distinct systems with different major functions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-03",
+          "question": {
+            "stem": "In the term 'hypertension,' the prefix 'hyper-' describes the root word 'tension,' which refers to pressure.",
+            "correct": true,
+            "explanation": "True. Anatomical terms are built from roots, prefixes, and suffixes. The root often names an organ, tissue, or condition (here, tension = pressure), while the prefix or suffix describes it (hyper- = high), giving 'high pressure.'"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-04",
+          "question": {
+            "stem": "A scar described as being in the 'anterior carpal region' would be located on the palm side of the wrist, regardless of how the hand is currently held.",
+            "correct": true,
+            "explanation": "True. Anatomical terms are always applied as if the body is in anatomical position (palms facing forward). Thus 'anterior carpal' is the palm side of the wrist even if the hand is resting palm-down on a table."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-05",
+          "question": {
+            "stem": "An organ can belong to more than one organ system.",
+            "correct": true,
+            "explanation": "True. Assigning organs to systems is imprecise because organs that belong to one system often have functions integral to another; in fact most organs contribute to more than one system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-06",
+          "question": {
+            "stem": "The organism level is a lower level of anatomical organization than the organ system level.",
+            "correct": false,
+            "explanation": "False. The organism level is the highest level of anatomical organization, above the organ system level. An organism is a living being that can independently perform all physiologic functions necessary for life."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-07",
+          "question": {
+            "stem": "The term 'brachium' (arm) refers to the upper arm, while 'antebrachium' (forearm) refers to the lower arm.",
+            "correct": true,
+            "explanation": "True. To increase precision, 'brachium'/'arm' is reserved for the upper arm and 'antebrachium'/'forearm' is used rather than 'lower arm.' Similarly 'femur'/'thigh' is the upper leg and 'crus'/'leg' is between knee and ankle."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-08",
+          "question": {
+            "stem": "The visceral layer of a serous membrane covers the organs, while the parietal layer lines the walls of the body cavity.",
+            "correct": true,
+            "explanation": "True. The visceral layer covers the viscera (organs), and the parietal layer lines the cavity wall (pariet- refers to a cavity wall). Between them lies a fluid-filled serous space."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-09",
+          "question": {
+            "stem": "The peritoneum is the serous membrane that surrounds the heart within the pericardial cavity.",
+            "correct": false,
+            "explanation": "False. The peritoneum surrounds several organs in the abdominopelvic cavity. The pericardium is the serous membrane that surrounds the heart in the pericardial cavity; the pleura surrounds the lungs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-10",
+          "question": {
+            "stem": "A frontal (coronal) plane divides the body into anterior and posterior portions, while a transverse plane divides it into superior and inferior portions.",
+            "correct": true,
+            "explanation": "True. A frontal/coronal plane separates front (anterior) from back (posterior), and a transverse/horizontal plane separates upper (superior) from lower (inferior) portions, producing cross sections. A sagittal plane, by contrast, divides into right and left."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-11",
+          "question": {
+            "stem": "The visceral layer of a serous membrane covers the organs, while the parietal layer lines the wall of the body cavity.",
+            "correct": true,
+            "explanation": "This is correct. The visceral layer of the serosa covers the viscera (organs), and the parietal layer (from pariet-, meaning cavity wall) lines the walls of the body cavity, with a fluid-filled serous space between them."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-12",
+          "question": {
+            "stem": "The pericardium surrounds the heart, the pleura surrounds the lungs, and the peritoneum surrounds several organs in the abdominopelvic cavity.",
+            "correct": true,
+            "explanation": "This is correct. These are the three serous membranes: pericardium (heart, in the pericardial cavity), pleura (lungs, in the pleural cavities), and peritoneum (abdominopelvic organs)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-13",
+          "question": {
+            "stem": "Using regional terminology, the term 'arm' (brachium) refers to the entire upper limb from shoulder to fingertips.",
+            "correct": false,
+            "explanation": "False. 'Arm' (brachium) is reserved specifically for the upper arm (shoulder to elbow). The 'antebrachium' or 'forearm' refers to the region between the elbow and wrist. The entire upper limb includes both plus the hand."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-14",
+          "question": {
+            "stem": "Because directional terms are always applied as if the body were in anatomical position, the palm of the hand is on the anterior surface even when the hand is resting palm-down on a table.",
+            "correct": true,
+            "explanation": "This is correct. Anatomical position defines terms regardless of the body's actual orientation. In anatomical position the palms face forward (anterior), so the palm is always described as the anterior surface even if physically turned downward."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-15",
+          "question": {
+            "stem": "A midsagittal (median) plane divides the body into equal right and left halves, whereas a parasagittal plane divides it into unequal right and left portions.",
+            "correct": true,
+            "explanation": "This is correct. Both are sagittal (vertical, right/left) planes. The midsagittal/median runs down the exact midline producing equal halves; a parasagittal plane is off-center producing unequal right and left portions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-16",
+          "question": {
+            "stem": "The serous fluid within the pleural cavity increases friction between the lungs and the body wall to help anchor the lungs in place during breathing.",
+            "correct": false,
+            "explanation": "False. Serous fluid reduces friction between the lungs and the body wall so the lungs can inflate and deflate smoothly. It does not increase friction or anchor the organs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-17",
+          "question": {
+            "stem": "The urinary and reproductive systems are counted as two separate organ systems among the eleven organ systems of the human body.",
+            "correct": true,
+            "explanation": "This is correct. The eleven systems are integumentary, skeletal, muscular, nervous, endocrine, cardiovascular, lymphatic, respiratory, digestive, urinary, and reproductive — the urinary and reproductive systems are listed separately."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-18",
+          "question": {
+            "stem": "Anatomical terminology is used primarily to make communication sound more sophisticated, but it does not improve precision or reduce medical errors.",
+            "correct": false,
+            "explanation": "False. The stated purpose of anatomical terminology is precisely to increase precision and reduce medical errors by eliminating ambiguity (e.g., specifying exactly where a scar is located), not to sound sophisticated."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-19",
+          "question": {
+            "stem": "The central nervous system is located within the skull and vertebral column, whereas the peripheral nervous system is found outside the skull and vertebral column.",
+            "correct": true,
+            "explanation": "This is correct, and it illustrates the terms 'central' (toward the centre of a structure/system) and 'peripheral' (toward the outer edge). The CNS lies within the cranial and spinal cavities; the PNS lies outside them."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-20",
+          "question": {
+            "stem": "An organ belongs to exactly one organ system, so no organ can contribute functions to more than one system.",
+            "correct": false,
+            "explanation": "False. Assigning organs to organ systems is imprecise because most organs contribute functions to more than one system. An organ that 'belongs' to one system can also perform functions integral to another."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-21",
+          "question": {
+            "stem": "A transverse plane divides the body into anterior and posterior portions.",
+            "correct": false,
+            "explanation": "A transverse (horizontal) plane divides the body into upper (superior) and lower (inferior) portions. The plane that divides the body into anterior and posterior portions is the frontal (coronal) plane."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-22",
+          "question": {
+            "stem": "When a person lies face-down, they are in the prone position, whereas lying face-up is the supine position.",
+            "correct": true,
+            "explanation": "Prone describes a face-down orientation and supine describes a face-up orientation. These are used to describe body position during examinations or procedures."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-23",
+          "question": {
+            "stem": "The skeletal system and the muscular system are two of the eleven organ systems, and a single organ can belong to more than one system.",
+            "correct": true,
+            "explanation": "The eleven systems include the skeletal and muscular systems. Assigning organs to systems can be imprecise because most organs contribute functions to more than one system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-24",
+          "question": {
+            "stem": "In an anatomical term, the root usually refers to an organ, tissue, or condition, while the prefix or suffix often describes that root.",
+            "correct": true,
+            "explanation": "This is exactly how anatomical terminology is built. For example, in 'hypertension,' the root 'tension' refers to pressure and the prefix 'hyper-' (high/over) describes it, giving 'high blood pressure.'"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-25",
+          "question": {
+            "stem": "Because the central nervous system lies within the skull and vertebral column, it is described as peripheral rather than central.",
+            "correct": false,
+            "explanation": "The CNS is described as central because it lies toward the middle/core (within the skull and vertebral column). The peripheral nervous system is found outside the skull and vertebral column, i.e., toward the periphery."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-26",
+          "question": {
+            "stem": "An organism differs from an organ system in that an organism can independently perform all physiologic functions necessary for life.",
+            "correct": true,
+            "explanation": "An organism is a living being with cellular structure capable of independently carrying out all functions necessary for life, whereas an organ system is only a group of organs performing certain major functions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-27",
+          "question": {
+            "stem": "The visceral layer of a serous membrane lines the wall of the body cavity, while the parietal layer covers the organs.",
+            "correct": false,
+            "explanation": "It is reversed: the parietal layer lines the cavity wall (pariet- refers to a cavity wall), and the visceral layer covers the organs (viscera)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-28",
+          "question": {
+            "stem": "The pericardium surrounds the heart in the pericardial cavity, while the pleura surrounds the lungs in the pleural cavity.",
+            "correct": true,
+            "explanation": "Both statements are correct: the pericardium is the serous membrane around the heart, and the pleura is the serous membrane around the lungs. The peritoneum is the third serous membrane, surrounding organs in the abdominopelvic cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-29",
+          "question": {
+            "stem": "A midsagittal (median) plane produces equal right and left halves, whereas a parasagittal plane produces unequal right and left portions.",
+            "correct": true,
+            "explanation": "A sagittal plane divides the body vertically into right and left. If it runs directly down the middle it is midsagittal (median), giving equal halves; if it is off-center it is parasagittal, giving unequal right and left portions."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-tf-30",
+          "question": {
+            "stem": "The terms 'cranial' and 'rostral' are interchangeable, both meaning toward the tail.",
+            "correct": false,
+            "explanation": "Neither means toward the tail (that is caudal). Cranial means toward the head, while rostral means toward the nose or beak; because of the CNS's curved rostro-caudal axis, they are not always interchangeable."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fitb": [
+        {
+          "id": "u7-advanced-fitb-01",
+          "question": {
+            "stem": "The brain is described as ____________ to the skull, because it lies farther from the body's surface than the overlying bone.",
+            "answer": "deep",
+            "accepted_synonyms": [],
+            "explanation": "Deep describes a position farther from the surface of the body; the brain is deep to the skull, while the skull is superficial to the brain."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-02",
+          "question": {
+            "stem": "The skin is the primary organ of the ____________ system, which forms the body's outer covering.",
+            "answer": "integumentary",
+            "accepted_synonyms": [
+              "integumentary system"
+            ],
+            "explanation": "The integumentary system is the body-covering system whose major organ is the skin."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-03",
+          "question": {
+            "stem": "A cut that divides the body into anterior and posterior portions is made along the ____________ plane.",
+            "answer": "frontal / coronal",
+            "accepted_synonyms": [
+              "frontal",
+              "coronal",
+              "frontal plane",
+              "coronal plane"
+            ],
+            "explanation": "The frontal (coronal) plane divides the body into front and back portions, distinguishing it from the sagittal (left/right) and transverse (upper/lower) planes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-04",
+          "question": {
+            "stem": "Because it lies nearer the point of attachment to the trunk, the brachium is ____________ to the antebrachium.",
+            "answer": "proximal",
+            "accepted_synonyms": [],
+            "explanation": "Proximal describes a position in a limb nearer to the point of attachment or trunk; the upper arm is proximal to the forearm."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-05",
+          "question": {
+            "stem": "In precise anatomical usage, the term reserved for the portion of the lower limb between the knee and the ankle — rather than the whole lower limb — is the ____________.",
+            "answer": "crus",
+            "accepted_synonyms": [
+              "crus",
+              "leg"
+            ],
+            "explanation": "Per slide 7, 'leg' or 'crus' is reserved for the region between the knee and ankle, distinct from the femur/thigh above it."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-06",
+          "question": {
+            "stem": "A patient asked to lie face-up on the sky-facing surface of an examination table is placed in the ____________ position.",
+            "answer": "supine",
+            "accepted_synonyms": [],
+            "explanation": "Supine describes a face-up orientation, contrasting with prone (face-down)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-07",
+          "question": {
+            "stem": "The serous membrane that surrounds several organs in the abdominopelvic cavity and reduces friction against the body wall is the ____________.",
+            "answer": "peritoneum",
+            "accepted_synonyms": [],
+            "explanation": "The peritoneum is the serosa of the abdominopelvic cavity, unlike the pleura (lungs) or pericardium (heart)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-08",
+          "question": {
+            "stem": "The portion of a serous membrane that folds back to directly cover an organ, rather than lining the cavity wall, is the ____________.",
+            "answer": "visceral layer",
+            "accepted_synonyms": [
+              "visceral",
+              "visceral serosa"
+            ],
+            "explanation": "The visceral layer covers the viscera (organs), in contrast to the parietal layer that lines the cavity wall."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-09",
+          "question": {
+            "stem": "The system responsible for filtering the blood and removing wastes as urine is the ____________ system.",
+            "answer": "urinary",
+            "accepted_synonyms": [
+              "urinary system"
+            ],
+            "explanation": "The urinary system handles waste removal via urine, distinguishing it from the digestive or reproductive systems."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-10",
+          "question": {
+            "stem": "The nervous system component located outside the skull and vertebral column is called the ____________ nervous system, because it lies toward the outer edge of that organ system.",
+            "answer": "peripheral",
+            "accepted_synonyms": [],
+            "explanation": "Peripheral describes a position toward the outer edge of a structure; the peripheral nervous system lies outside the CNS, whereas central refers to the CNS within the skull and vertebral column."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-11",
+          "question": {
+            "stem": "A cut that divides the body into upper and lower portions, producing a cross section, is made along the ____________ plane.",
+            "answer": "transverse / horizontal",
+            "accepted_synonyms": [
+              "transverse",
+              "horizontal",
+              "transverse plane",
+              "horizontal plane"
+            ],
+            "explanation": "The transverse (horizontal) plane divides the body horizontally into superior and inferior portions, yielding cross sections."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-12",
+          "question": {
+            "stem": "When comparing the position of the elbow to the shoulder along the same limb, the elbow is more ____________ because it lies farther from the point of attachment to the trunk.",
+            "answer": "distal",
+            "accepted_synonyms": [
+              "distal"
+            ],
+            "explanation": "Distal describes a position in a limb farther from the point of attachment; the elbow is distal to the shoulder."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-13",
+          "question": {
+            "stem": "The organ system responsible for eliminating metabolic wastes and regulating fluid balance through the kidneys is the ____________ system.",
+            "answer": "urinary",
+            "accepted_synonyms": [
+              "urinary",
+              "urinary system"
+            ],
+            "explanation": "The urinary system, which includes the kidneys, filters wastes and regulates fluid balance."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-14",
+          "question": {
+            "stem": "A vertical cut that divides the body into unequal right and left sides is described as a parasagittal cut, which is a type of ____________ plane.",
+            "answer": "sagittal",
+            "accepted_synonyms": [
+              "sagittal",
+              "sagittal plane"
+            ],
+            "explanation": "Any vertical plane dividing the body into right and left sides is sagittal; parasagittal is a sagittal plane that produces unequal sides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-15",
+          "question": {
+            "stem": "The nervous tissue found outside the skull and vertebral column belongs to the ____________ nervous system, in contrast to the tissue enclosed within those bones.",
+            "answer": "peripheral",
+            "accepted_synonyms": [
+              "peripheral"
+            ],
+            "explanation": "Peripheral describes a position toward the outer edge; the peripheral nervous system lies outside the skull and vertebral column."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-16",
+          "question": {
+            "stem": "The serous membrane that specifically surrounds the heart within its cavity is the ____________.",
+            "answer": "pericardium",
+            "accepted_synonyms": [
+              "pericardium"
+            ],
+            "explanation": "The pericardium is the serous membrane surrounding the heart in the pericardial cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-17",
+          "question": {
+            "stem": "Using correct regional terminology, the portion of the lower limb between the knee and the ankle is properly described using the term crus rather than the incorrect 'lower leg,' and this crus is ____________ to the thigh.",
+            "answer": "distal",
+            "accepted_synonyms": [
+              "distal"
+            ],
+            "explanation": "The crus (leg) lies farther from the trunk than the thigh (femur), so it is distal to it."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-18",
+          "question": {
+            "stem": "The organ system that provides the body's external covering, including the skin, is the ____________ system.",
+            "answer": "integumentary",
+            "accepted_synonyms": [
+              "integumentary",
+              "integumentary system"
+            ],
+            "explanation": "The integumentary system consists of the skin and associated structures forming the body's outer covering."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-19",
+          "question": {
+            "stem": "Because anatomical directional terms are always applied as if the body were standing upright with palms facing forward, this reference orientation is called the ____________.",
+            "answer": "anatomical position",
+            "accepted_synonyms": [
+              "anatomical position"
+            ],
+            "explanation": "The anatomical position is the standard reference orientation used regardless of how the body is actually lying."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-20",
+          "question": {
+            "stem": "The layer of a serous membrane that directly covers the surface of the organs (viscera) themselves is the ____________.",
+            "answer": "visceral layer",
+            "accepted_synonyms": [
+              "visceral layer",
+              "visceral"
+            ],
+            "explanation": "The visceral layer covers the organs, while the parietal layer lines the cavity walls."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-21",
+          "question": {
+            "stem": "The serous membrane that surrounds several organs in the abdominopelvic cavity is called the ____________.",
+            "answer": "peritoneum",
+            "accepted_synonyms": [
+              "peritoneal membrane"
+            ],
+            "explanation": "The peritoneum is the serosa of the abdominopelvic cavity, distinguishing it from the pleura (lungs) and pericardium (heart)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-22",
+          "question": {
+            "stem": "Within a serous membrane, the layer that directly covers the surface of an organ (the viscera) is the ____________.",
+            "answer": "visceral layer",
+            "accepted_synonyms": [
+              "visceral serosa",
+              "visceral membrane"
+            ],
+            "explanation": "The visceral layer covers the organs, in contrast to the parietal layer, which lines the cavity wall."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-23",
+          "question": {
+            "stem": "A plane that divides the body into anterior and posterior portions runs parallel to the forehead and is called the ____________ plane.",
+            "answer": "frontal / coronal",
+            "accepted_synonyms": [
+              "frontal",
+              "coronal",
+              "frontal plane",
+              "coronal plane"
+            ],
+            "explanation": "The frontal (coronal) plane separates front from back, unlike the sagittal (left/right) or transverse (upper/lower) planes."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-24",
+          "question": {
+            "stem": "The layer of a serous membrane that directly covers the surface of an organ, rather than lining the cavity wall, is called the ____________.",
+            "answer": "visceral layer",
+            "accepted_synonyms": [
+              "visceral",
+              "visceral serosa"
+            ],
+            "explanation": "The visceral layer covers the viscera (organs), whereas the parietal layer lines the cavity wall."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-25",
+          "question": {
+            "stem": "The body system responsible for gas exchange, allowing oxygen to enter and carbon dioxide to leave the body through the lungs, is the ____________ system.",
+            "answer": "respiratory",
+            "accepted_synonyms": [
+              "respiratory system"
+            ],
+            "explanation": "The respiratory system handles gas exchange via the lungs, distinct from the cardiovascular system that transports the gases."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-26",
+          "question": {
+            "stem": "When comparing the elbow and the wrist on the same upper limb, the elbow is nearer to the trunk, so the elbow is ____________ to the wrist.",
+            "answer": "proximal",
+            "accepted_synonyms": [
+              "proximal to"
+            ],
+            "explanation": "Proximal means nearer the point of attachment/trunk; the elbow is closer to the trunk than the wrist, which is distal."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-27",
+          "question": {
+            "stem": "A cut that divides the body horizontally into upper and lower portions, producing a cross section, is made along the ____________ plane.",
+            "answer": "transverse / horizontal",
+            "accepted_synonyms": [
+              "transverse",
+              "horizontal",
+              "transverse plane",
+              "horizontal plane"
+            ],
+            "explanation": "The transverse (horizontal) plane divides the body into superior and inferior portions and yields cross sections."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-28",
+          "question": {
+            "stem": "Because the nervous system's brain and spinal cord occupy the middle/core of that system rather than its outer edge, they are described as belonging to its ____________ division.",
+            "answer": "central",
+            "accepted_synonyms": [
+              "central nervous system",
+              "CNS"
+            ],
+            "explanation": "Central describes a position toward the middle of a structure or organ system; the CNS is the core, opposite to the peripheral division."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-29",
+          "question": {
+            "stem": "The body system that consists of the skin and its accessory structures, forming the outermost covering of the body, is the ____________ system.",
+            "answer": "integumentary",
+            "accepted_synonyms": [
+              "integumentary system"
+            ],
+            "explanation": "The integumentary system comprises the skin and associated structures, forming the body's superficial covering."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fitb-30",
+          "question": {
+            "stem": "In a serous membrane, the layer that lines the walls of the body cavity itself is the ____________.",
+            "answer": "parietal layer",
+            "accepted_synonyms": [
+              "parietal serosa",
+              "parietal membrane"
+            ],
+            "explanation": "The parietal layer lines the cavity wall (pariet- = wall), while the visceral layer covers the organs."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ],
+      "fr": [
+        {
+          "id": "u7-advanced-fr-01",
+          "question": {
+            "prompt": "Anatomical terms are built from roots, prefixes, and suffixes. Using the term 'hypertension' as an example, explain how these word parts combine to give the term its meaning. Identify what the prefix means, what the root refers to, and state the overall meaning of the term. Also explain in general how a prefix or suffix relates to the root (i.e., that the root names the condition or structure and the affix describes or modifies it).",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that the prefix 'hyper-' means 'high' or 'over'."
+              },
+              {
+                "points": 1,
+                "criterion": "States that the root 'tension' refers to pressure."
+              },
+              {
+                "points": 1,
+                "criterion": "States that the overall term means abnormally high blood pressure."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains that the prefix/suffix describes or modifies the root (i.e., the root refers to the organ/tissue/condition and the affix describes it)."
+              }
+            ],
+            "model_answer": "The prefix 'hyper-' means 'high' or 'over,' and the root 'tension' refers to pressure. The prefix describes/modifies the root, so combining them gives 'hypertension,' meaning abnormally high blood pressure."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fr-02",
+          "question": {
+            "prompt": "Define the directional terms 'proximal' and 'distal,' and give one correct example of each using structures of the upper or lower limb in anatomical position.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines proximal as a position in a limb nearer to the point of attachment or trunk of the body."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines distal as a position in a limb farther from the point of attachment or trunk of the body."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct proximal example (e.g., the brachium is proximal to the antebrachium)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct distal example (e.g., the crus/leg is distal to the femur/thigh)."
+              }
+            ],
+            "model_answer": "Proximal describes a position in a limb nearer to the point of attachment or the trunk; for example, the brachium (arm) is proximal to the antebrachium (forearm). Distal describes a position in a limb farther from the point of attachment or trunk; for example, the crus (leg) is distal to the femur (thigh)."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fr-03",
+          "question": {
+            "prompt": "A patient is asked to lie down for two different procedures. Define the terms 'prone' and 'supine,' and explain how the two positions differ in terms of which surface of the body faces upward.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines prone as a face-down orientation."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines supine as a face-up orientation."
+              },
+              {
+                "points": 1,
+                "criterion": "States that in the supine position the anterior (ventral) surface faces upward."
+              },
+              {
+                "points": 1,
+                "criterion": "States that in the prone position the posterior (dorsal) surface faces upward (i.e., the face/anterior surface faces down)."
+              }
+            ],
+            "model_answer": "Prone describes a face-down orientation, and supine describes a face-up orientation. When supine, the anterior (ventral) surface of the body faces upward; when prone, the posterior (dorsal) surface faces upward while the anterior surface faces down."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fr-04",
+          "question": {
+            "prompt": "Name the integumentary and skeletal systems as two of the eleven organ systems, and give one major function of each. Then explain what is meant by the statement that most organs contribute to more than one organ system, noting that this makes assigning organs to systems somewhat imprecise.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Gives a major function of the integumentary system (e.g., covers/protects the body surface)."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a major function of the skeletal system (e.g., provides structural support/protection)."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that a single organ can perform functions integral to more than one organ system, so assigning organs to systems is somewhat imprecise."
+              }
+            ],
+            "model_answer": "The integumentary system covers and protects the outer surface of the body. The skeletal system provides structural support and protection for the body. Assigning organs to systems is imprecise because a single organ can have functions integral to more than one system — most organs contribute to several systems at once."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fr-05",
+          "question": {
+            "prompt": "The human body contains eleven organ systems. Name any three of these systems and give one major function of each.",
+            "total_marks": 6,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Names a first valid organ system and gives an appropriate major function (1 for naming, 1 for function)."
+              },
+              {
+                "points": 2,
+                "criterion": "Names a second valid organ system and gives an appropriate major function (1 for naming, 1 for function)."
+              },
+              {
+                "points": 2,
+                "criterion": "Names a third valid organ system and gives an appropriate major function (1 for naming, 1 for function)."
+              }
+            ],
+            "model_answer": "Nervous system: senses and responds to stimuli and coordinates body activities. Cardiovascular system: transports blood, nutrients, and gases throughout the body. Respiratory system: brings in oxygen and removes carbon dioxide through gas exchange. (Any three of the eleven — integumentary, skeletal, muscular, nervous, endocrine, cardiovascular, lymphatic, respiratory, digestive, urinary, reproductive — with correct functions are acceptable.)"
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fr-06",
+          "question": {
+            "prompt": "A serous membrane has two layers separated by a fluid-filled space. Define the parietal layer and the visceral layer, and explain the role of the fluid in the serous cavity between them.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that the parietal layer lines the wall of the body cavity."
+              },
+              {
+                "points": 1,
+                "criterion": "States that the visceral layer covers the organs (viscera)."
+              },
+              {
+                "points": 2,
+                "criterion": "Explains that the serous fluid in the cavity cushions and/or reduces friction between the organ and the body wall as the organ moves."
+              }
+            ],
+            "model_answer": "The parietal layer lines the wall of the body cavity, while the visceral layer covers the surface of the organs (viscera). Between them is a fluid-filled serous cavity; the serous fluid cushions the organs and reduces friction as they move (e.g., as the lungs inflate or the heart beats), protecting them from irritation and inflammation."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fr-07",
+          "question": {
+            "prompt": "The thoracic and abdominopelvic cavities each contain a named serous membrane. Identify the serous membrane associated with the heart and the serous membrane associated with the lungs, and name the specific cavity each surrounds.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Identifies the pericardium as the serous membrane surrounding the heart."
+              },
+              {
+                "points": 1,
+                "criterion": "States that the pericardium is located in the pericardial cavity."
+              },
+              {
+                "points": 1,
+                "criterion": "Identifies the pleura as the serous membrane surrounding the lungs."
+              },
+              {
+                "points": 1,
+                "criterion": "States that the pleura is located in the pleural cavity."
+              }
+            ],
+            "model_answer": "The pericardium is the serous membrane that surrounds the heart, located in the pericardial cavity. The pleura is the serous membrane that surrounds the lungs, located in the pleural cavity."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fr-08",
+          "question": {
+            "prompt": "Distinguish between the directional terms 'superficial' and 'deep,' by defining each, and between 'central' and 'peripheral,' by defining each. Give one correct example that illustrates the superficial/deep pair.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "Defines superficial as closer to the surface of the body and deep as farther from the surface."
+              },
+              {
+                "points": 1,
+                "criterion": "Gives a correct superficial/deep example (e.g., the skin is superficial to the bones / the brain is deep to the skull)."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines central as toward the middle/centre of a structure or organ system."
+              },
+              {
+                "points": 1,
+                "criterion": "Defines peripheral as toward the outer edge/periphery of a structure or organ system."
+              }
+            ],
+            "model_answer": "Superficial means closer to the surface of the body, whereas deep means farther from the surface — for example, the skin is superficial to the bones. Central means toward the middle or centre of a structure or organ system, while peripheral means toward the outer edge or periphery of a structure or organ system."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fr-09",
+          "question": {
+            "prompt": "The unit is organized so that anatomical terminology follows the section on body systems. Explain why health professionals use standardized anatomical terminology, and describe how the 'anatomical position' contributes to this goal. In your answer, describe what the anatomical position looks like, and explain that anatomical terms are always applied as if the body is in the anatomical position regardless of the body's actual orientation.",
+            "total_marks": 4,
+            "rubric": [
+              {
+                "points": 2,
+                "criterion": "Explains that standardized terminology increases precision and reduces ambiguity/medical errors when describing locations."
+              },
+              {
+                "points": 1,
+                "criterion": "Describes the anatomical position (body upright, feet parallel/shoulder width, toes forward, upper limbs to the sides, palms facing forward)."
+              },
+              {
+                "points": 1,
+                "criterion": "Explains that terms are always applied as if the body is in anatomical position regardless of the body's actual orientation, which removes confusion."
+              }
+            ],
+            "model_answer": "Health professionals use standardized anatomical terminology to increase precision and reduce ambiguity, which helps prevent medical errors when describing the location of structures. The anatomical position is the standard reference 'map': the body stands upright with feet parallel at shoulder width and toes forward, upper limbs held to the sides, and palms facing forward. Directional terms are always applied as though the body is in this position no matter how it is actually oriented, so everyone interprets a described location the same way."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        },
+        {
+          "id": "u7-advanced-fr-10",
+          "question": {
+            "prompt": "Compare the sagittal plane and the transverse plane. State how each divides the body, and explain the difference between a midsagittal (median) plane and a parasagittal plane.",
+            "total_marks": 5,
+            "rubric": [
+              {
+                "points": 1,
+                "criterion": "States that a sagittal plane divides the body vertically into right and left sides."
+              },
+              {
+                "points": 1,
+                "criterion": "States that a transverse (horizontal) plane divides the body into upper and lower portions."
+              },
+              {
+                "points": 1,
+                "criterion": "States that a midsagittal (median) plane runs down the exact middle, producing equal right and left sides."
+              },
+              {
+                "points": 2,
+                "criterion": "States that a parasagittal plane divides the body into unequal right and left sides (i.e., off-centre)."
+              }
+            ],
+            "model_answer": "A sagittal plane divides the body vertically into right and left sides, while a transverse (horizontal) plane divides the body into upper and lower portions (producing cross sections). A midsagittal or median plane runs directly down the middle, giving equal right and left halves, whereas a parasagittal plane is off-centre and divides the body into unequal right and left sides."
+          },
+          "gen_model": "claude-opus-4-8",
+          "verified": "pass"
+        }
+      ]
+    }
+  }
+}
