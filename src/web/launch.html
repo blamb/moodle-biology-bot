@@ -679,6 +679,67 @@
         <span style="color:var(--muted);font-size:.85rem">Takes 15–30 seconds.</span>
       </div>
       <div id="teacher-concepts-output"></div>
+
+      <h3 style="margin: 1.25rem 0 .25rem; font-size: .95rem;">Exam builder</h3>
+      <div style="color:var(--muted);font-size:.85rem;margin-bottom:.4rem">
+        Generate fresh exam questions (never drawn from the students' practice bank) with full answer
+        keys, review and prune them, then export as Moodle XML or a Word document.
+      </div>
+      <button class="btn" id="teacher-examgen-open" type="button">Open exam builder</button>
+    </div>
+
+    <div class="teacher-state" data-state="examgen" hidden>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem">
+        <h3 style="margin:0;font-size:1rem">Exam builder</h3>
+        <button class="back-btn" id="examgen-back" type="button">← Back to overview</button>
+      </div>
+      <p style="color:var(--muted);font-size:.85rem;margin:.25rem 0 1rem">
+        Questions are generated fresh (not taken from the student practice bank), so students won't
+        have seen them. Review each one below — remove any you don't like — then export.
+      </p>
+      <div class="quiz-config" style="max-width:480px">
+        <label>Difficulty
+          <select id="examgen-difficulty">
+            <option value="introductory">Introductory</option>
+            <option value="intermediate" selected>Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </label>
+        <label>Multiple choice
+          <input type="number" id="examgen-count-mc" min="0" max="30" value="10">
+        </label>
+        <label>True / false
+          <input type="number" id="examgen-count-tf" min="0" max="15" value="5">
+        </label>
+        <label>Fill in the blank
+          <input type="number" id="examgen-count-fitb" min="0" max="30" value="5">
+        </label>
+        <label>Free response (slow — ~15s each)
+          <input type="number" id="examgen-count-fr" min="0" max="5" value="2">
+        </label>
+        <div style="margin-top:.5rem">
+          <strong>Units to draw from:</strong>
+          <button type="button" class="link-btn" id="examgen-units-all">All</button>
+          <button type="button" class="link-btn" id="examgen-units-none">None</button>
+        </div>
+        <div id="examgen-units-list" class="exam-units"></div>
+        <div style="margin-top:.75rem">
+          <button class="btn" id="examgen-generate" type="button">Generate questions</button>
+        </div>
+        <div class="err" id="examgen-err"></div>
+      </div>
+      <div id="examgen-review" style="margin-top:1rem"></div>
+      <div id="examgen-export" style="display:none;margin-top:1rem;padding-top:.75rem;border-top:1px solid var(--border)">
+        <label style="display:block;margin-bottom:.5rem;max-width:480px">Exam title (used in the files)
+          <input type="text" id="examgen-title" value="BIOL 1692 Exam" style="width:100%;padding:.4rem .6rem;border:1px solid var(--border);border-radius:6px;font:inherit">
+        </label>
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+          <button class="btn" id="examgen-export-xml" type="button" title="Import into a Moodle question bank: Question bank → Import → Moodle XML format">⬇ Moodle XML</button>
+          <button class="btn" id="examgen-export-docx" type="button" title="Word document: exam paper plus a page-broken answer key">⬇ Word (.docx)</button>
+          <span style="color:var(--muted);font-size:.8rem">Moodle XML imports under Question bank → Import. The Word file has the paper first, answer key after a page break.</span>
+        </div>
+        <div class="err" id="examgen-export-err"></div>
+      </div>
     </div>
 
     <div class="teacher-state" data-state="student" hidden>
@@ -953,6 +1014,210 @@
     $$('#view-teacher .teacher-state').forEach((p) => {
       p.hidden = p.dataset.state !== state;
     });
+  }
+
+  // ───── Teacher: exam builder ─────
+  const examgenState = { items: [] };
+
+  function populateExamgenUnits() {
+    const wrap = $('#examgen-units-list');
+    if (wrap.dataset.populated === '1') return;
+    wrap.innerHTML = '';
+    $$('#units-list li[data-unit-no]').forEach((li) => {
+      const label = document.createElement('label');
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.checked = true;
+      cb.value = li.dataset.unitNo;
+      cb.className = 'examgen-unit-cb';
+      label.appendChild(cb);
+      const span = document.createElement('span');
+      span.textContent = `Unit ${li.dataset.unitNo}: ${li.dataset.unitTitle}`;
+      label.appendChild(span);
+      wrap.appendChild(label);
+    });
+    wrap.dataset.populated = '1';
+  }
+
+  if ($('#teacher-examgen-open')) {
+    $('#teacher-examgen-open').addEventListener('click', () => {
+      populateExamgenUnits();
+      teacherShowState('examgen');
+    });
+    $('#examgen-back').addEventListener('click', () => teacherShowState('overview'));
+    $('#examgen-units-all').addEventListener('click', () => {
+      $$('#examgen-units-list .examgen-unit-cb').forEach((cb) => (cb.checked = true));
+    });
+    $('#examgen-units-none').addEventListener('click', () => {
+      $$('#examgen-units-list .examgen-unit-cb').forEach((cb) => (cb.checked = false));
+    });
+    $('#examgen-generate').addEventListener('click', examgenGenerate);
+    $('#examgen-export-xml').addEventListener('click', () => examgenExport('moodlexml'));
+    $('#examgen-export-docx').addEventListener('click', () => examgenExport('docx'));
+  }
+
+  async function examgenGenerate() {
+    const errEl = $('#examgen-err');
+    errEl.textContent = '';
+    const unit_nos = $$('#examgen-units-list .examgen-unit-cb:checked').map((cb) => parseInt(cb.value, 10));
+    if (unit_nos.length === 0) { errEl.textContent = 'Pick at least one unit.'; return; }
+    const counts = {
+      mc: parseInt($('#examgen-count-mc').value || '0', 10),
+      tf: parseInt($('#examgen-count-tf').value || '0', 10),
+      fitb: parseInt($('#examgen-count-fitb').value || '0', 10),
+      fr: parseInt($('#examgen-count-fr').value || '0', 10),
+    };
+    const total = counts.mc + counts.tf + counts.fitb + counts.fr;
+    if (total === 0) { errEl.textContent = 'Pick at least one question.'; return; }
+    const btn = $('#examgen-generate');
+    btn.disabled = true;
+    btn.innerHTML = `<span class="spinner"></span>Generating ~${total} questions…`;
+    try {
+      const resp = await fetch(apiUrl('/api/teacher/examgen'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ unit_nos, counts, difficulty: $('#examgen-difficulty').value }),
+      });
+      const data = await resp.json();
+      if (!resp.ok) throw new Error(data.error || `Server returned ${resp.status}`);
+      examgenState.items = data.items;
+      renderExamgenReview();
+    } catch (e) {
+      errEl.textContent = 'Generate failed: ' + friendlyError(e);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Generate questions';
+    }
+  }
+
+  function renderExamgenReview() {
+    const root = $('#examgen-review');
+    root.innerHTML = '';
+    const items = examgenState.items;
+    $('#examgen-export').style.display = items.length ? '' : 'none';
+    if (!items.length) return;
+
+    const totalMarks = items.reduce((acc, it) => acc + (it.kind === 'fr' ? it.question.total_marks : 1), 0);
+    const head = document.createElement('div');
+    head.style.cssText = 'font-weight:600;margin-bottom:.5rem';
+    head.textContent = `${items.length} question${items.length === 1 ? '' : 's'} · ${totalMarks} marks — answer keys shown for your review`;
+    root.appendChild(head);
+
+    items.forEach((item, idx) => {
+      const q = item.question;
+      const card = document.createElement('div');
+      card.style.cssText = 'border:1px solid var(--border);border-radius:8px;padding:.6rem .8rem;margin-bottom:.6rem';
+
+      const meta = document.createElement('div');
+      meta.style.cssText = 'display:flex;justify-content:space-between;align-items:baseline;gap:.5rem';
+      const metaLeft = document.createElement('span');
+      metaLeft.style.cssText = 'color:var(--muted);font-size:.8rem';
+      metaLeft.textContent = `Q${idx + 1} · Unit ${item.unit_no} · ${KIND_FULL[item.kind]}` +
+        (item.kind === 'fr' ? ` · ${q.total_marks} marks` : '');
+      meta.appendChild(metaLeft);
+      const rm = document.createElement('button');
+      rm.className = 'link-btn';
+      rm.textContent = '✕ Remove';
+      rm.addEventListener('click', () => { examgenState.items.splice(idx, 1); renderExamgenReview(); });
+      meta.appendChild(rm);
+      card.appendChild(meta);
+
+      const stem = document.createElement('div');
+      stem.style.cssText = 'margin:.35rem 0;font-weight:500';
+      stem.textContent = item.kind === 'fr' ? q.prompt : q.stem;
+      card.appendChild(stem);
+
+      const key = document.createElement('div');
+      key.style.cssText = 'font-size:.88rem';
+      if (item.kind === 'mc') {
+        q.options.forEach((opt, i) => {
+          const line = document.createElement('div');
+          const isCorrect = i === q.correct_index;
+          line.style.cssText = isCorrect ? 'color:var(--ok, #1c7c3c);font-weight:600' : 'color:var(--muted)';
+          line.textContent = `${String.fromCharCode(65 + i)}) ${opt}${isCorrect ? '  ✓' : ''}`;
+          key.appendChild(line);
+        });
+      } else if (item.kind === 'tf') {
+        key.innerHTML = `<strong>Answer:</strong> ${q.correct ? 'True' : 'False'}`;
+      } else if (item.kind === 'fitb') {
+        key.innerHTML = `<strong>Answer:</strong> ${q.answer}` +
+          (q.accepted_synonyms?.length ? ` <span style="color:var(--muted)">(also: ${q.accepted_synonyms.join(', ')})</span>` : '');
+      } else {
+        const ul = document.createElement('ul');
+        ul.style.cssText = 'margin:.25rem 0 .25rem 1.1rem;padding:0';
+        q.rubric.forEach((r) => {
+          const li = document.createElement('li');
+          li.textContent = `(${r.points} mark${r.points === 1 ? '' : 's'}) ${r.criterion}`;
+          ul.appendChild(li);
+        });
+        key.appendChild(ul);
+        const model = document.createElement('details');
+        const sum = document.createElement('summary');
+        sum.style.cssText = 'cursor:pointer;color:var(--accent)';
+        sum.textContent = 'Model answer';
+        model.appendChild(sum);
+        const body = document.createElement('div');
+        body.style.cssText = 'margin-top:.25rem';
+        body.textContent = q.model_answer;
+        model.appendChild(body);
+        key.appendChild(model);
+      }
+      card.appendChild(key);
+
+      if (item.kind !== 'fr' && q.explanation) {
+        const exp = document.createElement('details');
+        exp.style.marginTop = '.35rem';
+        const sum = document.createElement('summary');
+        sum.style.cssText = 'cursor:pointer;color:var(--accent);font-size:.85rem';
+        sum.textContent = 'Explanation';
+        exp.appendChild(sum);
+        const body = document.createElement('div');
+        body.style.cssText = 'font-size:.85rem;margin-top:.25rem';
+        setMd(body, q.explanation);
+        exp.appendChild(body);
+        card.appendChild(exp);
+      }
+      root.appendChild(card);
+    });
+  }
+
+  async function examgenExport(format) {
+    const errEl = $('#examgen-export-err');
+    errEl.textContent = '';
+    const btn = format === 'docx' ? $('#examgen-export-docx') : $('#examgen-export-xml');
+    const prior = btn.textContent;
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span>Preparing…';
+    try {
+      const resp = await fetch(apiUrl('/api/teacher/examgen/export'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          format,
+          title: $('#examgen-title').value.trim() || 'Biology Bot Exam',
+          items: examgenState.items,
+        }),
+      });
+      if (!resp.ok) {
+        const body = await resp.json().catch(() => ({}));
+        throw new Error(body.error || `Server returned ${resp.status}`);
+      }
+      const blob = await resp.blob();
+      const dispo = resp.headers.get('Content-Disposition') || '';
+      const m = /filename="([^"]+)"/.exec(dispo);
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = m ? m[1] : (format === 'docx' ? 'exam.docx' : 'exam.xml');
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+    } catch (e) {
+      errEl.textContent = 'Export failed: ' + friendlyError(e);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = prior;
+    }
   }
   $('#exam-back-btn').addEventListener('click', () => {
     examState = null;

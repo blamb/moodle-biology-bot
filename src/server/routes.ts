@@ -59,6 +59,14 @@ import {
   type ExamItem,
   type ExamCounts,
 } from './exam.js';
+import { z } from 'zod';
+import {
+  McQuestion as McQuestionSchema,
+  TfQuestion as TfQuestionSchema,
+  FitbQuestion as FitbQuestionSchema,
+  FrQuestion as FrQuestionSchema,
+} from './quiz.js';
+import { toMoodleXml, toExamDocx } from './examExport.js';
 import { isTeacher, TeacherOnlyError } from './auth.js';
 import { getCourseDashboard, analyzeClassConceptGaps } from './teacher.js';
 import type { Attribution } from './costs.js';
@@ -153,6 +161,89 @@ lti.app.get('/api/teacher/student/:id', async (req: Request, res: Response) => {
     res.json({ student: rows[0], progress });
   } catch (e) {
     console.error('GET /api/teacher/student/:id failed:', e);
+    res.status(500).json({ error: (e as Error).message });
+  }
+});
+
+// ─── Teacher: exam builder (generate with answer keys + export) ─────────────
+// Distinct from the student practice exam: no session rows are created, the
+// response includes the full answer keys, and it's gated on the LTI roles
+// claim. The export route re-validates the posted items against the question
+// schemas so it can't be used to smuggle arbitrary content into a file.
+
+lti.app.post('/api/teacher/examgen', async (req: Request, res: Response) => {
+  try {
+    const g = gateTeacher(res);
+    if (!g) return;
+    const rawUnits = Array.isArray(req.body?.unit_nos) ? req.body.unit_nos : [];
+    const unitNos = rawUnits
+      .map((v: unknown) => parseInt(String(v), 10))
+      .filter((n: number) => Number.isInteger(n) && n >= 1 && n <= 17);
+    const counts = clampCounts(req.body?.counts);
+    const difficulty = String(req.body?.difficulty ?? 'intermediate') as Difficulty;
+    if (!VALID_DIFFICULTIES.includes(difficulty)) {
+      return res.status(400).json({ error: 'invalid difficulty' });
+    }
+    if (counts.mc + counts.tf + counts.fitb + counts.fr === 0) {
+      return res.status(400).json({ error: 'no questions requested' });
+    }
+    const items = await generateExam({ unitNos, counts, difficulty });
+    res.json({ items, difficulty, counts });
+  } catch (e) {
+    console.error('POST /api/teacher/examgen failed:', e);
+    res.status(500).json({ error: (e as Error).message });
+  }
+});
+
+const ExamExportItem = z.object({
+  unit_no: z.number().int().min(1).max(17),
+  kind: z.enum(['mc', 'tf', 'fitb', 'fr']),
+  question: z.unknown(),
+});
+
+lti.app.post('/api/teacher/examgen/export', async (req: Request, res: Response) => {
+  try {
+    const g = gateTeacher(res);
+    if (!g) return;
+    const format = String(req.body?.format ?? '');
+    const title = String(req.body?.title ?? '').trim().slice(0, 120) || 'Biology Bot Exam';
+    const rawItems = Array.isArray(req.body?.items) ? req.body.items : [];
+    if (rawItems.length === 0 || rawItems.length > 100) {
+      return res.status(400).json({ error: 'items must contain 1–100 questions' });
+    }
+    // Re-validate each item's question against its kind's schema.
+    const items: ExamItem[] = rawItems.map((raw: unknown) => {
+      const base = ExamExportItem.parse(raw);
+      const question =
+        base.kind === 'mc' ? McQuestionSchema.parse(base.question)
+        : base.kind === 'tf' ? TfQuestionSchema.parse(base.question)
+        : base.kind === 'fitb' ? FitbQuestionSchema.parse(base.question)
+        : FrQuestionSchema.parse(base.question);
+      return { unit_no: base.unit_no, kind: base.kind, question };
+    });
+
+    const safeName = title.replace(/[^A-Za-z0-9 _-]+/g, '').trim().replace(/\s+/g, '-') || 'exam';
+    if (format === 'moodlexml') {
+      const xml = toMoodleXml(items, title);
+      res.setHeader('Content-Type', 'application/xml; charset=utf-8');
+      res.setHeader('Content-Disposition', `attachment; filename="${safeName}.xml"`);
+      return res.send(xml);
+    }
+    if (format === 'docx') {
+      const buf = await toExamDocx(items, title);
+      res.setHeader(
+        'Content-Type',
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+      );
+      res.setHeader('Content-Disposition', `attachment; filename="${safeName}.docx"`);
+      return res.send(buf);
+    }
+    return res.status(400).json({ error: "format must be 'moodlexml' or 'docx'" });
+  } catch (e) {
+    if (e instanceof z.ZodError) {
+      return res.status(400).json({ error: 'items failed validation: ' + e.message });
+    }
+    console.error('POST /api/teacher/examgen/export failed:', e);
     res.status(500).json({ error: (e as Error).message });
   }
 });
