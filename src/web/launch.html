@@ -1830,13 +1830,13 @@
     // Actions: discuss with tutor (esp. when wrong) + back to the grid.
     const actions = document.createElement('div');
     actions.style.cssText = 'margin-top:.9rem;display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap';
-    if (!data.correct) {
-      const tut = document.createElement('button');
-      tut.className = 'btn';
-      tut.textContent = '💬 Discuss with tutor';
-      tut.addEventListener('click', () => discussBankQuestion(kind, q, response, data));
-      actions.appendChild(tut);
-    }
+    // Offered after every attempt — right answers spark questions too (e.g.
+    // "I guessed between B and D, why is D wrong?").
+    const tut = document.createElement('button');
+    tut.className = 'btn' + (data.correct ? ' btn-ghost' : '');
+    tut.textContent = '💬 Discuss with tutor';
+    tut.addEventListener('click', () => discussBankQuestion(kind, q, response, data));
+    actions.appendChild(tut);
     if (item) {
       const retry = document.createElement('button');
       retry.className = 'btn btn-ghost';
