@@ -505,7 +505,7 @@
   }
 </style>
 </head>
-<body data-role="{{ROLE}}">
+<body data-role="{{ROLE}}" data-return-url="{{RETURN_URL}}">
 <div class="wrap">
   <header class="header-row">
     <div>
@@ -516,6 +516,8 @@
       <button class="link-btn teacher-only" id="nav-teacher" type="button">👩‍🏫 Instructor view</button>
       <button class="link-btn" id="nav-exam" type="button">📝 Practice exam</button>
       <button class="link-btn" id="nav-progress" type="button">📊 Your progress</button>
+      <button class="link-btn" id="nav-fullscreen" type="button" hidden title="Open the Biology Bot in the full browser window">⛶ Full screen</button>
+      <button class="link-btn" id="nav-return" type="button" hidden title="Leave the Biology Bot and return to the Moodle course">↩ Back to course</button>
     </div>
   </header>
 
@@ -534,7 +536,8 @@
         <span style="color:var(--muted);font-weight:normal;font-size:.85em">({{UNIT_COUNT}} total)</span>
       </h2>
       <div style="color:var(--muted);font-size:.78rem;margin:-.25rem 0 .6rem">
-        Badges show your accuracy so far per question type:
+        Click a unit to start a <strong>tutor conversation</strong>, or click one of its badges
+        to jump straight to those practice questions. Badges show your accuracy so far per question type:
         <strong>MC</strong>=Multiple choice ·
         <strong>TF</strong>=True/false ·
         <strong>FITB</strong>=Fill in the blank ·
@@ -899,6 +902,28 @@
     showView('picker');
     refreshProgress(); // re-pull stats after any quiz / tutor work
   });
+
+  // Full-window & back-to-course. Inside Moodle's iframe, offer to break out
+  // to a full-window view (same URL — the ltik query token re-authenticates).
+  // Once top-level, offer the LTI launch_presentation return_url instead.
+  const inIframe = (() => { try { return window.self !== window.top; } catch { return true; } })();
+  const returnUrl = document.body.dataset.returnUrl || '';
+  if (inIframe) {
+    const fs = $('#nav-fullscreen');
+    fs.hidden = false;
+    fs.addEventListener('click', () => {
+      try {
+        window.top.location.href = window.location.href;
+      } catch {
+        // Sandboxed iframe without top-navigation permission — open a new tab.
+        window.open(window.location.href, '_blank', 'noopener');
+      }
+    });
+  } else if (returnUrl) {
+    const ret = $('#nav-return');
+    ret.hidden = false;
+    ret.addEventListener('click', () => { window.location.href = returnUrl; });
+  }
 
   $('#nav-progress').addEventListener('click', () => {
     refreshProgress().then(() => showView('progress'));
