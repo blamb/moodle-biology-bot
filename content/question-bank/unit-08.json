@@ -9,14 +9,14 @@
           "question": {
             "stem": "Which of the following best describes what the body accomplishes through homeostasis?",
             "options": [
-              "Keeping the body's internal parameters in balance",
               "Continuously increasing metabolic rate over time",
               "Eliminating all chemical reactions in the body",
-              "Preventing any exchange of materials between cells and their surroundings",
-              "Maximizing the body's temperature above 37°C"
+              "Keeping the body's internal parameters in balance",
+              "Maximizing the body's temperature above 37°C",
+              "Preventing any exchange of materials between cells and their surroundings"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Homeostasis keeps the body's parameters (such as gases, nutrients, temperature, and pressure) in balance.\n\n**Why the other options are wrong:**\n- **(B)** Homeostasis maintains stable conditions, not an ever-increasing metabolic rate.\n- **(C)** Chemical reactions must continue; homeostasis keeps them running at proper rates.\n- **(D)** Cells continually exchange materials with their surroundings; this exchange is necessary.\n- **(E)** The body maintains a set point near 37°C, not the highest possible temperature."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Homeostasis keeps the body's parameters (such as gases, nutrients, temperature, and pressure) in balance.\n\n**Why the other options are wrong:**\n- **(A)** Homeostasis maintains stable conditions, not an ever-increasing metabolic rate.\n- **(B)** Chemical reactions must continue; homeostasis keeps them running at proper rates.\n- **(D)** The body maintains a set point near 37°C, not the highest possible temperature.\n- **(E)** Cells continually exchange materials with their surroundings; this exchange is necessary."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -27,13 +27,13 @@
             "stem": "How does a positive feedback loop differ from a negative feedback loop?",
             "options": [
               "A positive feedback loop intensifies a change, while a negative feedback loop reverses it",
+              "A positive feedback loop only occurs in the brain, while a negative feedback loop occurs in the blood",
               "A positive feedback loop reverses a change, while a negative feedback loop intensifies it",
-              "A positive feedback loop uses a sensor, while a negative feedback loop does not",
               "A positive feedback loop has no effector, while a negative feedback loop does",
-              "A positive feedback loop only occurs in the brain, while a negative feedback loop occurs in the blood"
+              "A positive feedback loop uses a sensor, while a negative feedback loop does not"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Positive feedback amplifies a deviation and moves the system farther from the set point, while negative feedback reverses the deviation to restore the set point.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the actual definitions.\n- **(C)** Both types of loops use a sensor/receptor.\n- **(D)** Both types of loops use an effector.\n- **(E)** Neither type is restricted to a single body location."
+            "explanation": "**Why (A) is correct:** Positive feedback amplifies a deviation and moves the system farther from the set point, while negative feedback reverses the deviation to restore the set point.\n\n**Why the other options are wrong:**\n- **(B)** Neither type is restricted to a single body location.\n- **(C)** This reverses the actual definitions.\n- **(D)** Both types of loops use an effector.\n- **(E)** Both types of loops use a sensor/receptor."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -43,14 +43,14 @@
           "question": {
             "stem": "Which statement most accurately defines homeostasis?",
             "options": [
-              "A relatively stable set of conditions within an organism's internal environment",
-              "The complete absence of any change in the body's chemistry",
               "The process by which cells divide to replace damaged tissue",
-              "The movement of nutrients from the digestive tract into the blood",
-              "The permanent shift of a physiological value away from its set point"
+              "The complete absence of any change in the body's chemistry",
+              "A relatively stable set of conditions within an organism's internal environment",
+              "The permanent shift of a physiological value away from its set point",
+              "The movement of nutrients from the digestive tract into the blood"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Homeostasis is defined as a relatively stable set of conditions within an organism's internal environment.\n\n**Why the other options are wrong:**\n- **(B)** Conditions fluctuate within a normal range; they are not completely unchanging.\n- **(C)** Cell division is not the definition of homeostasis.\n- **(D)** Nutrient absorption is one process, not the definition of homeostasis.\n- **(E)** A permanent shift away from set point is the opposite of homeostasis."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Homeostasis is defined as a relatively stable set of conditions within an organism's internal environment.\n\n**Why the other options are wrong:**\n- **(A)** Cell division is not the definition of homeostasis.\n- **(B)** Conditions fluctuate within a normal range; they are not completely unchanging.\n- **(D)** A permanent shift away from set point is the opposite of homeostasis.\n- **(E)** Nutrient absorption is one process, not the definition of homeostasis."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -60,14 +60,14 @@
           "question": {
             "stem": "In a feedback loop, what is the role of the component called the sensor (receptor)?",
             "options": [
-              "It detects a deviation of a physiological value away from the set point",
               "It compares the value to the normal range and decides on a response",
+              "It detects a deviation of a physiological value away from the set point",
               "It carries out the response that changes the physiological value",
               "It sets the specific set point in anticipation of a future event",
               "It stores clotting proteins until they are needed"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The sensor (receptor) detects when a stimulus produces a deviation in a physiological value away from the set point.\n\n**Why the other options are wrong:**\n- **(B)** Comparing the value to the normal range is the job of the control centre.\n- **(C)** Carrying out the response is the job of the effector.\n- **(D)** Changing the set point in anticipation describes a feed-forward mechanism.\n- **(E)** Storing clotting proteins is not the defined role of a sensor."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The sensor (receptor) detects when a stimulus produces a deviation in a physiological value away from the set point.\n\n**Why the other options are wrong:**\n- **(A)** Comparing the value to the normal range is the job of the control centre.\n- **(C)** Carrying out the response is the job of the effector.\n- **(D)** Changing the set point in anticipation describes a feed-forward mechanism.\n- **(E)** Storing clotting proteins is not the defined role of a sensor."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -77,14 +77,14 @@
           "question": {
             "stem": "Which term refers to any stimulus that causes an imbalance in the internal environment?",
             "options": [
+              "Normal range",
               "Stressor",
-              "Effector",
               "Set point",
-              "Control centre",
-              "Normal range"
+              "Effector",
+              "Control centre"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A stressor is any stimulus that causes an imbalance in the internal environment.\n\n**Why the other options are wrong:**\n- **(B)** An effector is the component that produces a response, not a disturbing stimulus.\n- **(C)** A set point is the value around which the normal range fluctuates.\n- **(D)** A control centre compares values and activates effectors.\n- **(E)** A normal range is the restricted set of healthful, stable values."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A stressor is any stimulus that causes an imbalance in the internal environment.\n\n**Why the other options are wrong:**\n- **(A)** A normal range is the restricted set of healthful, stable values.\n- **(C)** A set point is the value around which the normal range fluctuates.\n- **(D)** An effector is the component that produces a response, not a disturbing stimulus.\n- **(E)** A control centre compares values and activates effectors."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -94,14 +94,14 @@
           "question": {
             "stem": "Which of the following is an example of a feed-forward mechanism?",
             "options": [
-              "Insulin being released early, in anticipation of an upcoming meal",
-              "Sweat glands activating to cool the body when temperature rises",
-              "Glucagon being released when blood glucose has already dropped",
+              "Blood vessels constricting after the body core has cooled",
               "Shivering occurring after the body has become too cold",
-              "Blood vessels constricting after the body core has cooled"
+              "Glucagon being released when blood glucose has already dropped",
+              "Sweat glands activating to cool the body when temperature rises",
+              "Insulin being released early, in anticipation of an upcoming meal"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Feed-forward mechanisms change the set point or trigger a response in anticipation of a future event, such as releasing insulin before food arrives.\n\n**Why the other options are wrong:**\n- **(B)** Sweating in response to a temperature rise is negative feedback reacting to an existing change.\n- **(C)** Glucagon release after glucose drops is a reactive negative feedback response.\n- **(D)** Shivering after the body cools is negative feedback, not anticipatory.\n- **(E)** Vasoconstriction after the core cools is a reactive negative feedback response."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Feed-forward mechanisms change the set point or trigger a response in anticipation of a future event, such as releasing insulin before food arrives.\n\n**Why the other options are wrong:**\n- **(A)** Vasoconstriction after the core cools is a reactive negative feedback response.\n- **(B)** Shivering after the body cools is negative feedback, not anticipatory.\n- **(C)** Glucagon release after glucose drops is a reactive negative feedback response.\n- **(D)** Sweating in response to a temperature rise is negative feedback reacting to an existing change."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -111,14 +111,14 @@
           "question": {
             "stem": "According to the unit, which of the following is one of the conditions that must be maintained by homeostasis for chemical reactions to occur at proper rates?",
             "options": [
-              "An optimum temperature of about 37°C",
-              "A body pH that is strongly acidic",
               "A complete absence of carbon dioxide in body fluids",
-              "A blood pressure that continually increases with age",
-              "The elimination of all salts from the body fluids"
+              "A body pH that is strongly acidic",
+              "An optimum temperature of about 37°C",
+              "The elimination of all salts from the body fluids",
+              "A blood pressure that continually increases with age"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** An optimum temperature of about 37°C is one of the three key conditions maintained by homeostasis.\n\n**Why the other options are wrong:**\n- **(B)** Body fluids must maintain a regulated pH, not a strongly acidic one.\n- **(C)** Carbon dioxide must be present in certain amounts, not eliminated entirely.\n- **(D)** Blood pressure must be regulated within a range, not continually increased.\n- **(E)** Salts must be present to maintain fluid, electrolyte, and pH balance."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** An optimum temperature of about 37°C is one of the three key conditions maintained by homeostasis.\n\n**Why the other options are wrong:**\n- **(A)** Carbon dioxide must be present in certain amounts, not eliminated entirely.\n- **(B)** Body fluids must maintain a regulated pH, not a strongly acidic one.\n- **(D)** Salts must be present to maintain fluid, electrolyte, and pH balance.\n- **(E)** Blood pressure must be regulated within a range, not continually increased."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -129,13 +129,13 @@
             "stem": "In a negative feedback loop, which component produces the response that returns a physiological value to its normal range?",
             "options": [
               "The effector",
-              "The sensor",
-              "The stressor",
+              "The stimulus",
               "The set point",
-              "The stimulus"
+              "The sensor",
+              "The stressor"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The effector is the component that produces a response, which in negative feedback returns the physiological value to its normal range.\n\n**Why the other options are wrong:**\n- **(B)** The sensor detects the deviation; it does not carry out the response.\n- **(C)** A stressor causes the imbalance; it is not the responding component.\n- **(D)** A set point is a target value, not a component that acts.\n- **(E)** A stimulus is the deviation being detected, not the responding component."
+            "explanation": "**Why (A) is correct:** The effector is the component that produces a response, which in negative feedback returns the physiological value to its normal range.\n\n**Why the other options are wrong:**\n- **(B)** A stimulus is the deviation being detected, not the responding component.\n- **(C)** A set point is a target value, not a component that acts.\n- **(D)** The sensor detects the deviation; it does not carry out the response.\n- **(E)** A stressor causes the imbalance; it is not the responding component."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -145,14 +145,14 @@
           "question": {
             "stem": "Why is maintaining a temperature near 37°C important for homeostasis?",
             "options": [
-              "It allows proteins to retain their shape and keeps chemical reactions at proper rates",
               "It prevents the body from producing any carbon dioxide",
-              "It stops all movement of water between fluid compartments",
+              "It allows proteins to retain their shape and keeps chemical reactions at proper rates",
               "It permanently raises blood pressure to safe levels",
-              "It removes the need for nutrients in chemical reactions"
+              "It removes the need for nutrients in chemical reactions",
+              "It stops all movement of water between fluid compartments"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** At about 37°C proteins retain their functional shape and chemical reaction rates stay appropriate for the body.\n\n**Why the other options are wrong:**\n- **(B)** Carbon dioxide is a normal waste product and is not eliminated by temperature control.\n- **(C)** Water continues to exchange between compartments regardless of temperature.\n- **(D)** Blood pressure regulation is a separate homeostatic condition, not set by temperature.\n- **(E)** Nutrients are always needed as reactants, cofactors, and energy sources."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** At about 37°C proteins retain their functional shape and chemical reaction rates stay appropriate for the body.\n\n**Why the other options are wrong:**\n- **(A)** Carbon dioxide is a normal waste product and is not eliminated by temperature control.\n- **(C)** Blood pressure regulation is a separate homeostatic condition, not set by temperature.\n- **(D)** Nutrients are always needed as reactants, cofactors, and energy sources.\n- **(E)** Water continues to exchange between compartments regardless of temperature."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -162,14 +162,14 @@
           "question": {
             "stem": "The internal environment maintained by homeostasis is best defined as which of the following?",
             "options": [
-              "The fluid inside the body but outside of cells (the extracellular fluid)",
-              "The fluid contained only inside the cells",
-              "The air within the lungs and airways",
               "The contents of the digestive tract",
-              "The environment outside the body's surface"
+              "The environment outside the body's surface",
+              "The fluid contained only inside the cells",
+              "The fluid inside the body but outside of cells (the extracellular fluid)",
+              "The air within the lungs and airways"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The internal environment is defined as the fluid inside the body but outside of cells, primarily the extracellular fluids (plasma, interstitial fluid, and lymph).\n\n**Why the other options are wrong:**\n- **(B)** Intracellular fluid is inside cells, not the internal environment as defined here.\n- **(C)** Air in the lungs is not the fluid internal environment surrounding cells.\n- **(D)** The digestive tract contents are considered outside the body's true internal environment.\n- **(E)** The area outside the body's surface is the external environment."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The internal environment is defined as the fluid inside the body but outside of cells, primarily the extracellular fluids (plasma, interstitial fluid, and lymph).\n\n**Why the other options are wrong:**\n- **(A)** The digestive tract contents are considered outside the body's true internal environment.\n- **(B)** The area outside the body's surface is the external environment.\n- **(C)** Intracellular fluid is inside cells, not the internal environment as defined here.\n- **(E)** Air in the lungs is not the fluid internal environment surrounding cells."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -179,14 +179,14 @@
           "question": {
             "stem": "According to the unit outline, Unit 8 is organized into which two main parts?",
             "options": [
-              "Homeostasis and Feedback Loops",
+              "The Internal Environment and Blood Pressure",
               "Stressors and Set Points",
               "Negative Feedback and Positive Feedback",
-              "The Internal Environment and Blood Pressure",
-              "Temperature Regulation and Blood Glucose"
+              "Temperature Regulation and Blood Glucose",
+              "Homeostasis and Feedback Loops"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The unit outline lists Part 1 as Homeostasis and Part 2 as Feedback Loops.\n\n**Why the other options are wrong:**\n- **(B)** These are topics within Part 1, not the two main parts.\n- **(C)** These are subtopics within Part 2, not the overall parts.\n- **(D)** These are subtopics within Part 1, not the two main parts.\n- **(E)** These are examples of negative feedback, not the unit's two parts."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The unit outline lists Part 1 as Homeostasis and Part 2 as Feedback Loops.\n\n**Why the other options are wrong:**\n- **(A)** These are subtopics within Part 1, not the two main parts.\n- **(B)** These are topics within Part 1, not the two main parts.\n- **(C)** These are subtopics within Part 2, not the overall parts.\n- **(D)** These are examples of negative feedback, not the unit's two parts."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -196,14 +196,14 @@
           "question": {
             "stem": "Which term is defined as any stimulus that causes an imbalance in the internal environment?",
             "options": [
-              "Set point",
+              "Control centre",
               "Stressor",
-              "Effector",
+              "Set point",
               "Sensor",
-              "Control centre"
+              "Effector"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A stressor is any stimulus that causes an imbalance in the internal environment.\n\n**Why the other options are wrong:**\n- **(A)** A set point is the physiological value around which the normal range fluctuates.\n- **(C)** An effector is the component that produces a response.\n- **(D)** A sensor detects a deviation from the set point.\n- **(E)** A control centre compares the value to the normal range."
+            "explanation": "**Why (B) is correct:** A stressor is any stimulus that causes an imbalance in the internal environment.\n\n**Why the other options are wrong:**\n- **(A)** A control centre compares the value to the normal range.\n- **(C)** A set point is the physiological value around which the normal range fluctuates.\n- **(D)** A sensor detects a deviation from the set point.\n- **(E)** An effector is the component that produces a response."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -213,14 +213,14 @@
           "question": {
             "stem": "Which of the following gases is a waste product of cellular respiration that must be regulated because it makes body fluids more acidic?",
             "options": [
-              "Oxygen",
-              "Nitrogen",
               "Carbon dioxide",
-              "Hydrogen",
-              "Helium"
+              "Helium",
+              "Nitrogen",
+              "Oxygen",
+              "Hydrogen"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Carbon dioxide is a waste product of cellular respiration that makes body fluids more acidic and must be regulated.\n\n**Why the other options are wrong:**\n- **(A)** Oxygen is a reactant used in cellular respiration, not a waste product.\n- **(B)** Nitrogen is not identified as a homeostatically regulated respiratory waste gas here.\n- **(D)** Hydrogen is not the regulated waste gas described.\n- **(E)** Helium is not involved in cellular respiration."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Carbon dioxide is a waste product of cellular respiration that makes body fluids more acidic and must be regulated.\n\n**Why the other options are wrong:**\n- **(B)** Helium is not involved in cellular respiration.\n- **(C)** Nitrogen is not identified as a homeostatically regulated respiratory waste gas here.\n- **(D)** Oxygen is a reactant used in cellular respiration, not a waste product.\n- **(E)** Hydrogen is not the regulated waste gas described."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -230,14 +230,14 @@
           "question": {
             "stem": "The unit states that body temperature must be maintained at approximately 37°C. What is a major reason this temperature is important?",
             "options": [
-              "It keeps blood pressure elevated",
               "It maintains the shape of proteins and the proper speed of chemical reactions",
-              "It increases the volume of intracellular fluid",
               "It prevents any stressors from entering the body",
-              "It stops all positive feedback loops"
+              "It stops all positive feedback loops",
+              "It keeps blood pressure elevated",
+              "It increases the volume of intracellular fluid"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Around 37°C is needed for proteins to retain their shape and for chemical reactions to occur at appropriate rates.\n\n**Why the other options are wrong:**\n- **(A)** Temperature is not described as the regulator of blood pressure.\n- **(C)** Temperature is not linked to increasing intracellular fluid volume.\n- **(D)** Maintaining temperature does not prevent stressors from acting on the body.\n- **(E)** Temperature does not stop positive feedback loops."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Around 37°C is needed for proteins to retain their shape and for chemical reactions to occur at appropriate rates.\n\n**Why the other options are wrong:**\n- **(B)** Maintaining temperature does not prevent stressors from acting on the body.\n- **(C)** Temperature does not stop positive feedback loops.\n- **(D)** Temperature is not described as the regulator of blood pressure.\n- **(E)** Temperature is not linked to increasing intracellular fluid volume."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -264,14 +264,14 @@
           "question": {
             "stem": "Which of the following best defines homeostasis?",
             "options": [
-              "A relatively stable set of conditions within an organism's internal environment",
               "The complete elimination of all variation in the body",
               "The process by which cells divide to replace damaged tissue",
               "The movement of nutrients only into the intracellular fluid",
+              "A relatively stable set of conditions within an organism's internal environment",
               "A permanent increase in body temperature above the set point"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Homeostasis refers to a relatively stable set of conditions within an organism's internal environment.\n\n**Why the other options are wrong:**\n- **(B)** Homeostasis allows fluctuation within a normal range, not complete elimination of variation.\n- **(C)** This describes cell division, not homeostasis.\n- **(D)** This describes only one type of exchange, not homeostasis.\n- **(E)** A permanent temperature increase is a failure of homeostasis, not its definition."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Homeostasis refers to a relatively stable set of conditions within an organism's internal environment.\n\n**Why the other options are wrong:**\n- **(A)** Homeostasis allows fluctuation within a normal range, not complete elimination of variation.\n- **(B)** This describes cell division, not homeostasis.\n- **(C)** This describes only one type of exchange, not homeostasis.\n- **(E)** A permanent temperature increase is a failure of homeostasis, not its definition."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -281,14 +281,14 @@
           "question": {
             "stem": "Homeostasis maintains conditions so that chemical reactions in the body can occur at what?",
             "options": [
-              "The slowest possible rate",
-              "The rates necessary to maintain the body",
+              "Independent of temperature and pressure",
               "A rate that constantly increases over time",
+              "The slowest possible rate",
               "Only in the intracellular fluid",
-              "Independent of temperature and pressure"
+              "The rates necessary to maintain the body"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The constancy of the internal environment allows chemical reactions to occur at the rates necessary to maintain the body.\n\n**Why the other options are wrong:**\n- **(A)** The goal is appropriate reaction rates, not the slowest possible rate.\n- **(C)** Reaction rates are held within a normal range, not constantly increasing.\n- **(D)** Reactions occur throughout the body, not only intracellularly.\n- **(E)** Reaction rates depend heavily on temperature and pressure."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The constancy of the internal environment allows chemical reactions to occur at the rates necessary to maintain the body.\n\n**Why the other options are wrong:**\n- **(A)** Reaction rates depend heavily on temperature and pressure.\n- **(B)** Reaction rates are held within a normal range, not constantly increasing.\n- **(C)** The goal is appropriate reaction rates, not the slowest possible rate.\n- **(D)** Reactions occur throughout the body, not only intracellularly."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -298,14 +298,14 @@
           "question": {
             "stem": "In a feedback loop, which component compares the reported value to the normal range and, if needed, activates an effector?",
             "options": [
-              "Sensor",
               "Stimulus",
+              "Stressor",
+              "Sensor",
               "Control centre",
-              "Response",
-              "Stressor"
+              "Response"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The control centre compares the value to the normal range and activates an effector when the value deviates too much.\n\n**Why the other options are wrong:**\n- **(A)** The sensor detects deviation but does not compare it to the normal range.\n- **(B)** The stimulus is the change itself, not a comparing component.\n- **(D)** The response is the outcome produced by the effector.\n- **(E)** A stressor is the stimulus that causes imbalance, not a comparing component."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The control centre compares the value to the normal range and activates an effector when the value deviates too much.\n\n**Why the other options are wrong:**\n- **(A)** The stimulus is the change itself, not a comparing component.\n- **(B)** A stressor is the stimulus that causes imbalance, not a comparing component.\n- **(C)** The sensor detects deviation but does not compare it to the normal range.\n- **(E)** The response is the outcome produced by the effector."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -315,14 +315,14 @@
           "question": {
             "stem": "The internal environment of the body—the fluid outside cells—is composed primarily of which three fluids?",
             "options": [
-              "Plasma, interstitial fluid, and lymph",
-              "Plasma, cytoplasm, and lymph",
-              "Interstitial fluid, intracellular fluid, and plasma",
               "Lymph, saliva, and intracellular fluid",
-              "Cytoplasm, interstitial fluid, and lymph"
+              "Plasma, interstitial fluid, and lymph",
+              "Interstitial fluid, intracellular fluid, and plasma",
+              "Cytoplasm, interstitial fluid, and lymph",
+              "Plasma, cytoplasm, and lymph"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The three main fluid types of the extracellular (internal) environment are plasma, interstitial fluid, and lymph.\n\n**Why the other options are wrong:**\n- **(B)** Cytoplasm is intracellular, not part of the extracellular internal environment.\n- **(C)** Intracellular fluid is inside cells, not part of the internal environment as defined here.\n- **(D)** Saliva and intracellular fluid are not the three defined extracellular fluids.\n- **(E)** Cytoplasm is intracellular and is not one of the three extracellular fluids."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The three main fluid types of the extracellular (internal) environment are plasma, interstitial fluid, and lymph.\n\n**Why the other options are wrong:**\n- **(A)** Saliva and intracellular fluid are not the three defined extracellular fluids.\n- **(C)** Intracellular fluid is inside cells, not part of the internal environment as defined here.\n- **(D)** Cytoplasm is intracellular and is not one of the three extracellular fluids.\n- **(E)** Cytoplasm is intracellular, not part of the extracellular internal environment."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -332,14 +332,14 @@
           "question": {
             "stem": "Which statement correctly contrasts negative and positive feedback loops?",
             "options": [
-              "Negative feedback reverses a deviation from the set point, while positive feedback intensifies the deviation.",
-              "Negative feedback intensifies a deviation, while positive feedback reverses it.",
               "Both negative and positive feedback always return the body to its set point.",
+              "Negative feedback intensifies a deviation, while positive feedback reverses it.",
+              "Negative feedback reverses a deviation from the set point, while positive feedback intensifies the deviation.",
               "Negative feedback uses effectors, but positive feedback does not.",
               "Positive feedback maintains homeostasis, while negative feedback does not."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Negative feedback reverses a change back toward the set point, whereas positive feedback drives the system farther away from the set point, exacerbating the change.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the two definitions.\n- **(C)** Positive feedback moves the body away from the set point, not back to it.\n- **(D)** Both loops use the same five components, including effectors.\n- **(E)** Negative feedback maintains homeostasis; positive feedback does not."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Negative feedback reverses a change back toward the set point, whereas positive feedback drives the system farther away from the set point, exacerbating the change.\n\n**Why the other options are wrong:**\n- **(A)** Positive feedback moves the body away from the set point, not back to it.\n- **(B)** This reverses the two definitions.\n- **(D)** Both loops use the same five components, including effectors.\n- **(E)** Negative feedback maintains homeostasis; positive feedback does not."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -349,14 +349,14 @@
           "question": {
             "stem": "Which of the following is the best example of a feed-forward mechanism?",
             "options": [
-              "The release of saliva and insulin in anticipation of an upcoming meal.",
               "Shivering when body temperature drops below the set point.",
               "Insulin release after blood glucose has already risen.",
               "The release of oxytocin during active childbirth.",
+              "The release of saliva and insulin in anticipation of an upcoming meal.",
               "Platelet recruitment after a blood vessel is already damaged."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Feed-forward mechanisms change a set point in anticipation of a future event, such as releasing saliva and insulin before a meal is eaten.\n\n**Why the other options are wrong:**\n- **(B)** Shivering is negative feedback responding to an existing drop in temperature.\n- **(C)** This is negative feedback occurring after glucose has already risen.\n- **(D)** Oxytocin release in childbirth is positive feedback.\n- **(E)** Platelet recruitment after damage is positive feedback, not anticipatory."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Feed-forward mechanisms change a set point in anticipation of a future event, such as releasing saliva and insulin before a meal is eaten.\n\n**Why the other options are wrong:**\n- **(A)** Shivering is negative feedback responding to an existing drop in temperature.\n- **(B)** This is negative feedback occurring after glucose has already risen.\n- **(C)** Oxytocin release in childbirth is positive feedback.\n- **(E)** Platelet recruitment after damage is positive feedback, not anticipatory."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -366,14 +366,14 @@
           "question": {
             "stem": "Which statement best defines homeostasis?",
             "options": [
-              "A relatively stable set of conditions within an organism's internal environment.",
               "The complete elimination of any change in the body's internal conditions.",
               "The process by which the body amplifies deviations from a set point.",
-              "The total volume of fluid found inside the body's cells.",
-              "A single fixed value that never fluctuates in a healthy body."
+              "A single fixed value that never fluctuates in a healthy body.",
+              "A relatively stable set of conditions within an organism's internal environment.",
+              "The total volume of fluid found inside the body's cells."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Homeostasis refers to a relatively stable set of conditions within an organism's internal environment, allowing reactions to occur at rates needed to sustain life.\n\n**Why the other options are wrong:**\n- **(B)** Homeostasis allows fluctuation within a normal range, not complete elimination of change.\n- **(C)** Amplifying deviations describes positive feedback, not homeostasis.\n- **(D)** That describes intracellular fluid, not homeostasis.\n- **(E)** Physiological values fluctuate around a set point rather than staying fixed."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Homeostasis refers to a relatively stable set of conditions within an organism's internal environment, allowing reactions to occur at rates needed to sustain life.\n\n**Why the other options are wrong:**\n- **(A)** Homeostasis allows fluctuation within a normal range, not complete elimination of change.\n- **(B)** Amplifying deviations describes positive feedback, not homeostasis.\n- **(C)** Physiological values fluctuate around a set point rather than staying fixed.\n- **(E)** That describes intracellular fluid, not homeostasis."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -383,14 +383,14 @@
           "question": {
             "stem": "The unit is divided into two parts. What are the two main topics covered?",
             "options": [
-              "Homeostasis and feedback loops.",
               "Cellular respiration and blood clotting.",
               "The nervous system and the endocrine system.",
+              "Homeostasis and feedback loops.",
               "Fluid compartments and childbirth.",
               "Temperature regulation and blood pressure."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The unit outline lists Part 1 as Homeostasis and Part 2 as Feedback Loops.\n\n**Why the other options are wrong:**\n- **(B)** These are examples within the unit, not its two organizing parts.\n- **(C)** These body systems are not the two parts of this unit.\n- **(D)** These are specific examples, not the unit's two main parts.\n- **(E)** These are specific homeostatic examples, not the two main parts."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The unit outline lists Part 1 as Homeostasis and Part 2 as Feedback Loops.\n\n**Why the other options are wrong:**\n- **(A)** These are examples within the unit, not its two organizing parts.\n- **(B)** These body systems are not the two parts of this unit.\n- **(D)** These are specific examples, not the unit's two main parts.\n- **(E)** These are specific homeostatic examples, not the two main parts."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -401,13 +401,13 @@
             "stem": "Why must body temperature be maintained near 37°C for homeostasis?",
             "options": [
               "Proteins retain their shape and chemical reactions occur at proper speeds at this temperature.",
-              "It ensures blood pressure stays constant regardless of blood volume.",
               "It prevents the extracellular fluid from becoming lymph.",
+              "It ensures blood pressure stays constant regardless of blood volume.",
               "It allows carbon dioxide to be eliminated without cellular respiration.",
               "It stops all chemical reactions in the body to conserve energy."
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** At about 37°C, proteins keep their functional shapes and chemical reactions proceed at appropriate rates, both of which are temperature-dependent.\n\n**Why the other options are wrong:**\n- **(B)** Temperature does not directly hold blood pressure constant.\n- **(C)** Interstitial fluid is not converted to lymph by temperature.\n- **(D)** CO2 is a waste product of cellular respiration, not something eliminated in its absence.\n- **(E)** Homeostasis maintains reaction rates, not a halt of reactions."
+            "explanation": "**Why (A) is correct:** At about 37°C, proteins keep their functional shapes and chemical reactions proceed at appropriate rates, both of which are temperature-dependent.\n\n**Why the other options are wrong:**\n- **(B)** Interstitial fluid is not converted to lymph by temperature.\n- **(C)** Temperature does not directly hold blood pressure constant.\n- **(D)** CO2 is a waste product of cellular respiration, not something eliminated in its absence.\n- **(E)** Homeostasis maintains reaction rates, not a halt of reactions."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -417,14 +417,14 @@
           "question": {
             "stem": "Which of the following is a variable that must be maintained within a normal range by homeostasis?",
             "options": [
-              "Blood pressure.",
+              "A person's height.",
+              "The number of bones in the body.",
               "The number of chromosomes in a cell.",
               "The color of the skin.",
-              "The number of bones in the body.",
-              "A person's height."
+              "Blood pressure."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Blood pressure is a physiological parameter with a set point that homeostasis must maintain, since it affects the movement and concentration of substances in the body.\n\n**Why the other options are wrong:**\n- **(B)** Chromosome number is fixed genetically, not a homeostatically regulated variable.\n- **(C)** Skin color is not a homeostatic variable.\n- **(D)** Bone count is not maintained by feedback loops as a set point.\n- **(E)** Height is a developmental trait, not a moment-to-moment regulated variable."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Blood pressure is a physiological parameter with a set point that homeostasis must maintain, since it affects the movement and concentration of substances in the body.\n\n**Why the other options are wrong:**\n- **(A)** Height is a developmental trait, not a moment-to-moment regulated variable.\n- **(B)** Bone count is not maintained by feedback loops as a set point.\n- **(C)** Chromosome number is fixed genetically, not a homeostatically regulated variable.\n- **(D)** Skin color is not a homeostatic variable."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -434,14 +434,14 @@
           "question": {
             "stem": "In a feedback system, what is the role of the effector?",
             "options": [
-              "It produces the response that acts on the physiological value.",
-              "It detects the deviation from the set point.",
+              "It defines the set point of the system.",
               "It compares the value to the normal range.",
               "It is the stimulus that triggers the loop.",
-              "It defines the set point of the system."
+              "It produces the response that acts on the physiological value.",
+              "It detects the deviation from the set point."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The effector is the component that produces a response, which in negative feedback returns the value to its normal range.\n\n**Why the other options are wrong:**\n- **(B)** Detecting the deviation is the role of the sensor/receptor.\n- **(C)** Comparing the value to the normal range is the control centre's role.\n- **(D)** The stimulus is the deviation itself, not the effector.\n- **(E)** The set point is a reference value, not a role of the effector."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The effector is the component that produces a response, which in negative feedback returns the value to its normal range.\n\n**Why the other options are wrong:**\n- **(A)** The set point is a reference value, not a role of the effector.\n- **(B)** Comparing the value to the normal range is the control centre's role.\n- **(C)** The stimulus is the deviation itself, not the effector.\n- **(E)** Detecting the deviation is the role of the sensor/receptor."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -451,14 +451,14 @@
           "question": {
             "stem": "What is the correct definition of a stressor?",
             "options": [
-              "Any stimulus that causes an imbalance in the internal environment.",
-              "The component that reverses a deviation from the set point.",
               "The fluid found inside the body's cells.",
+              "The normal healthy range for a physiological value.",
+              "The component that reverses a deviation from the set point.",
               "The response produced by an effector.",
-              "The normal healthy range for a physiological value."
+              "Any stimulus that causes an imbalance in the internal environment."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A stressor is any stimulus—external or internal—that causes an imbalance in the internal environment.\n\n**Why the other options are wrong:**\n- **(B)** Reversing a deviation is the role of negative feedback, not a stressor.\n- **(C)** That describes intracellular fluid.\n- **(D)** A response is the outcome of an effector, not a stressor.\n- **(E)** The normal range is the healthy range of values, not a stressor."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A stressor is any stimulus—external or internal—that causes an imbalance in the internal environment.\n\n**Why the other options are wrong:**\n- **(A)** That describes intracellular fluid.\n- **(B)** The normal range is the healthy range of values, not a stressor.\n- **(C)** Reversing a deviation is the role of negative feedback, not a stressor.\n- **(D)** A response is the outcome of an effector, not a stressor."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -468,14 +468,14 @@
           "question": {
             "stem": "Homeostasis is best described as maintaining conditions in which part of the body?",
             "options": [
+              "Only the contents of the digestive tract.",
               "The internal environment surrounding the body's cells.",
               "Only the interior of nerve cells.",
               "The outside surface of the skin.",
-              "The external environment such as air temperature.",
-              "Only the contents of the digestive tract."
+              "The external environment such as air temperature."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Homeostasis is maintained within the internal environment—the extracellular fluid surrounding cells—so cells can function properly.\n\n**Why the other options are wrong:**\n- **(B)** Homeostasis concerns the extracellular environment, not just nerve cell interiors.\n- **(C)** The skin surface is not the defined internal environment.\n- **(D)** The external environment can be a source of stressors but is not what homeostasis maintains.\n- **(E)** The digestive tract contents are not the internal environment being regulated."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Homeostasis is maintained within the internal environment—the extracellular fluid surrounding cells—so cells can function properly.\n\n**Why the other options are wrong:**\n- **(A)** The digestive tract contents are not the internal environment being regulated.\n- **(C)** Homeostasis concerns the extracellular environment, not just nerve cell interiors.\n- **(D)** The skin surface is not the defined internal environment.\n- **(E)** The external environment can be a source of stressors but is not what homeostasis maintains."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -486,13 +486,13 @@
             "stem": "Which statement correctly contrasts negative feedback with positive feedback?",
             "options": [
               "Negative feedback reverses a deviation from the set point, while positive feedback intensifies the deviation.",
-              "Negative feedback intensifies a deviation, while positive feedback reverses it back to the set point.",
-              "Both negative and positive feedback act to maintain a physiological value at its set point.",
               "Negative feedback uses a sensor and control centre, while positive feedback uses neither.",
-              "Positive feedback is used continuously throughout the body, while negative feedback is rare."
+              "Both negative and positive feedback act to maintain a physiological value at its set point.",
+              "Positive feedback is used continuously throughout the body, while negative feedback is rare.",
+              "Negative feedback intensifies a deviation, while positive feedback reverses it back to the set point."
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Negative feedback returns a physiological value toward its set point, whereas positive feedback drives the value farther from the set point, amplifying the change.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the actual roles of the two loops.\n- **(C)** Only negative feedback maintains a value at its set point; positive feedback moves it away.\n- **(D)** Both loop types use the same five components, including a sensor and control centre.\n- **(E)** Negative feedback is the continuous, common mechanism; positive feedback is used only in specific situations with a definite endpoint."
+            "explanation": "**Why (A) is correct:** Negative feedback returns a physiological value toward its set point, whereas positive feedback drives the value farther from the set point, amplifying the change.\n\n**Why the other options are wrong:**\n- **(B)** Both loop types use the same five components, including a sensor and control centre.\n- **(C)** Only negative feedback maintains a value at its set point; positive feedback moves it away.\n- **(D)** Negative feedback is the continuous, common mechanism; positive feedback is used only in specific situations with a definite endpoint.\n- **(E)** This reverses the actual roles of the two loops."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -502,14 +502,14 @@
           "question": {
             "stem": "Which of the following is the best example of a feed-forward mechanism rather than a negative or positive feedback loop?",
             "options": [
-              "Release of insulin from pancreatic beta cells after blood glucose rises",
-              "The release of saliva and hydrochloric acid in anticipation of a meal",
+              "Platelets releasing clotting substances that recruit even more platelets",
               "Shivering triggered when the hypothalamus detects that body temperature is too low",
+              "Release of insulin from pancreatic beta cells after blood glucose rises",
               "Oxytocin-driven contractions intensifying during childbirth",
-              "Platelets releasing clotting substances that recruit even more platelets"
+              "The release of saliva and hydrochloric acid in anticipation of a meal"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Feed-forward mechanisms change a set point in anticipation of a future event, such as releasing saliva and HCl before food actually arrives.\n\n**Why the other options are wrong:**\n- **(A)** Insulin release reverses an existing rise in glucose, which is negative feedback.\n- **(C)** Shivering reverses a deviation in temperature, which is negative feedback.\n- **(D)** Childbirth contractions amplify the change, which is positive feedback.\n- **(E)** The clotting cascade amplifies the response, which is positive feedback."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Feed-forward mechanisms change a set point in anticipation of a future event, such as releasing saliva and HCl before food actually arrives.\n\n**Why the other options are wrong:**\n- **(A)** The clotting cascade amplifies the response, which is positive feedback.\n- **(B)** Shivering reverses a deviation in temperature, which is negative feedback.\n- **(C)** Insulin release reverses an existing rise in glucose, which is negative feedback.\n- **(D)** Childbirth contractions amplify the change, which is positive feedback."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1427,14 +1427,14 @@
           "question": {
             "stem": "A researcher measures the composition of a fluid that directly bathes and surrounds a group of skeletal muscle cells (but is not inside them). Which fluid is being sampled, and to which compartment does it belong?",
             "options": [
-              "Interstitial fluid, part of the internal environment (extracellular)",
-              "Intracellular fluid, part of the internal environment (extracellular)",
-              "Plasma, part of the intracellular compartment",
               "Interstitial fluid, part of the intracellular compartment",
+              "Plasma, part of the intracellular compartment",
+              "Intracellular fluid, part of the internal environment (extracellular)",
+              "Interstitial fluid, part of the internal environment (extracellular)",
               "Cytosol, which the body does not regulate homeostatically"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The fluid surrounding cells but outside them is interstitial fluid, which is one of the extracellular fluids that make up the body's internal environment.\n\n**Why the other options are wrong:**\n- **(B)** Intracellular fluid is inside cells and is not extracellular; the description says the fluid is outside the cells.\n- **(C)** Plasma is extracellular, not intracellular, and it is found within blood vessels rather than directly bathing muscle cells.\n- **(D)** Interstitial fluid is extracellular, not intracellular.\n- **(E)** Cytosol is intracellular fluid, and the internal environment (extracellular fluid) is precisely what is regulated homeostatically."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The fluid surrounding cells but outside them is interstitial fluid, which is one of the extracellular fluids that make up the body's internal environment.\n\n**Why the other options are wrong:**\n- **(A)** Interstitial fluid is extracellular, not intracellular.\n- **(B)** Plasma is extracellular, not intracellular, and it is found within blood vessels rather than directly bathing muscle cells.\n- **(C)** Intracellular fluid is inside cells and is not extracellular; the description says the fluid is outside the cells.\n- **(E)** Cytosol is intracellular fluid, and the internal environment (extracellular fluid) is precisely what is regulated homeostatically."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1445,13 +1445,13 @@
             "stem": "Which statement best captures the definition of homeostasis as used in this unit?",
             "options": [
               "The complete elimination of any change in the body's internal conditions",
+              "The exchange of gases and nutrients between plasma and lymph",
               "The maintenance of a relatively stable set of conditions in the internal environment so cells can function",
               "The process by which the body amplifies deviations away from a set point",
-              "The exchange of gases and nutrients between plasma and lymph",
               "The permanent fixing of body temperature at exactly 37°C"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Homeostasis is defined as maintaining a relatively stable internal environment that allows chemical reactions and cells to function properly.\n\n**Why the other options are wrong:**\n- **(A)** Homeostasis allows fluctuation within a normal range, not complete elimination of change.\n- **(C)** Amplifying deviations describes positive feedback, not homeostasis itself.\n- **(D)** Gas and nutrient exchange is one supporting process, not the definition of homeostasis.\n- **(E)** Body temperature fluctuates within a range around the set point rather than being permanently fixed."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Homeostasis is defined as maintaining a relatively stable internal environment that allows chemical reactions and cells to function properly.\n\n**Why the other options are wrong:**\n- **(A)** Homeostasis allows fluctuation within a normal range, not complete elimination of change.\n- **(B)** Gas and nutrient exchange is one supporting process, not the definition of homeostasis.\n- **(D)** Amplifying deviations describes positive feedback, not homeostasis itself.\n- **(E)** Body temperature fluctuates within a range around the set point rather than being permanently fixed."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1461,14 +1461,14 @@
           "question": {
             "stem": "Which pairing correctly distinguishes the direction of change caused by negative feedback versus positive feedback?",
             "options": [
+              "Negative feedback changes the set point itself; positive feedback holds the set point constant",
               "Negative feedback moves the value farther from the set point; positive feedback returns it to the set point",
-              "Both negative and positive feedback return the value to the set point",
               "Negative feedback reverses a deviation toward the set point; positive feedback intensifies the deviation away from the set point",
               "Both negative and positive feedback intensify deviations away from the set point",
-              "Negative feedback changes the set point itself; positive feedback holds the set point constant"
+              "Both negative and positive feedback return the value to the set point"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Negative feedback reverses a deviation to restore the set point, while positive feedback amplifies a deviation, driving the system farther from the set point.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the two mechanisms.\n- **(B)** Positive feedback does not return values to the set point; it moves them away.\n- **(D)** Negative feedback does not intensify deviations; it opposes them.\n- **(E)** Changing the set point in anticipation of an event describes feed-forward, not negative feedback."
+            "explanation": "**Why (C) is correct:** Negative feedback reverses a deviation to restore the set point, while positive feedback amplifies a deviation, driving the system farther from the set point.\n\n**Why the other options are wrong:**\n- **(A)** Changing the set point in anticipation of an event describes feed-forward, not negative feedback.\n- **(B)** This reverses the two mechanisms.\n- **(D)** Negative feedback does not intensify deviations; it opposes them.\n- **(E)** Positive feedback does not return values to the set point; it moves them away."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1478,14 +1478,14 @@
           "question": {
             "stem": "The unit states that a stable extracellular environment enables cells to maintain a stable intracellular environment. Which reasoning best explains why maintaining the internal environment matters for homeostasis?",
             "options": [
-              "Cells produce their own set points independent of surrounding fluids",
               "Proper conditions in extracellular fluids allow chemical reactions in cells to occur at necessary rates",
-              "The intracellular compartment has no exchange with extracellular fluids",
+              "Cells do not require nutrients or gas exchange to remain stable",
               "Lymph is the only fluid that cells depend on for survival",
-              "Cells do not require nutrients or gas exchange to remain stable"
+              "The intracellular compartment has no exchange with extracellular fluids",
+              "Cells produce their own set points independent of surrounding fluids"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Maintaining appropriate conditions in the extracellular fluids allows the chemical reactions cells depend on to proceed at rates needed to sustain life.\n\n**Why the other options are wrong:**\n- **(A)** Cells depend on the surrounding fluid composition, not independent set points.\n- **(C)** There is continual exchange of materials between the intracellular and extracellular compartments.\n- **(D)** Plasma and interstitial fluid, not just lymph, are all part of the extracellular environment cells depend on.\n- **(E)** Cells absolutely require nutrient delivery, waste removal, and gas exchange to remain stable."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Maintaining appropriate conditions in the extracellular fluids allows the chemical reactions cells depend on to proceed at rates needed to sustain life.\n\n**Why the other options are wrong:**\n- **(B)** Cells absolutely require nutrient delivery, waste removal, and gas exchange to remain stable.\n- **(C)** Plasma and interstitial fluid, not just lymph, are all part of the extracellular environment cells depend on.\n- **(D)** There is continual exchange of materials between the intracellular and extracellular compartments.\n- **(E)** Cells depend on the surrounding fluid composition, not independent set points."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1495,14 +1495,14 @@
           "question": {
             "stem": "The unit lists temperature as a variable maintained near 37°C. Which explanation best justifies why this specific variable must be tightly regulated?",
             "options": [
-              "Temperature has no effect on the rates of chemical reactions",
               "Temperature only matters for blood pressure regulation",
-              "Excess heat can cause proteins to dissociate and lose function, and reaction rates are temperature-dependent",
+              "Temperature is regulated purely to maintain fluid balance",
               "Cool temperatures increase protein function and speed all reactions",
-              "Temperature is regulated purely to maintain fluid balance"
+              "Temperature has no effect on the rates of chemical reactions",
+              "Excess heat can cause proteins to dissociate and lose function, and reaction rates are temperature-dependent"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Reaction rates are temperature-dependent, and overheating can cause proteins to dissociate and become non-functional, so temperature must stay near 37°C.\n\n**Why the other options are wrong:**\n- **(A)** Reaction rates are strongly temperature-dependent.\n- **(B)** Temperature is its own regulated condition, not merely a factor in blood pressure.\n- **(D)** Cooler temperatures slow reactions and do not increase protein function.\n- **(E)** Fluid balance is chiefly determined by water and salts, not by temperature regulation."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Reaction rates are temperature-dependent, and overheating can cause proteins to dissociate and become non-functional, so temperature must stay near 37°C.\n\n**Why the other options are wrong:**\n- **(A)** Temperature is its own regulated condition, not merely a factor in blood pressure.\n- **(B)** Fluid balance is chiefly determined by water and salts, not by temperature regulation.\n- **(C)** Cooler temperatures slow reactions and do not increase protein function.\n- **(D)** Reaction rates are strongly temperature-dependent."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1512,14 +1512,14 @@
           "question": {
             "stem": "In a feedback loop, which component compares the reported physiological value to the normal range and decides whether to activate a response?",
             "options": [
+              "The stressor",
               "The sensor (receptor)",
-              "The control centre",
-              "The effector",
               "The stimulus",
-              "The stressor"
+              "The control centre",
+              "The effector"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The control centre is the component that compares the value to the normal range and, if the deviation is too large, activates an effector.\n\n**Why the other options are wrong:**\n- **(A)** The sensor detects deviations but does not perform the comparison to the normal range.\n- **(C)** The effector produces the response after being activated, but does not do the comparing.\n- **(D)** The stimulus is the change that triggers the loop, not a comparing component.\n- **(E)** A stressor is the disturbance that causes the imbalance, not the comparing component."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The control centre is the component that compares the value to the normal range and, if the deviation is too large, activates an effector.\n\n**Why the other options are wrong:**\n- **(A)** A stressor is the disturbance that causes the imbalance, not the comparing component.\n- **(B)** The sensor detects deviations but does not perform the comparison to the normal range.\n- **(C)** The stimulus is the change that triggers the loop, not a comparing component.\n- **(E)** The effector produces the response after being activated, but does not do the comparing."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1529,14 +1529,14 @@
           "question": {
             "stem": "A person smells and sees a meal, and their body begins releasing saliva, HCl, and insulin before any food is actually eaten. This is best classified as which type of mechanism?",
             "options": [
-              "Negative feedback, because it reverses a rise in blood glucose",
-              "Positive feedback, because it amplifies a deviation to an end point",
               "A feed-forward mechanism, because the set point is adjusted in anticipation of a future event",
-              "A stressor response, because food is an external stressor",
-              "A negative feedback loop with the pancreas as the sensor"
+              "A negative feedback loop with the pancreas as the sensor",
+              "Positive feedback, because it amplifies a deviation to an end point",
+              "Negative feedback, because it reverses a rise in blood glucose",
+              "A stressor response, because food is an external stressor"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Releasing digestive secretions before eating adjusts the body in anticipation of a coming event, which is the definition of a feed-forward mechanism.\n\n**Why the other options are wrong:**\n- **(A)** No blood glucose rise has yet occurred to reverse; the response precedes the meal.\n- **(B)** Nothing is being amplified toward a runaway end point here.\n- **(D)** This is an anticipatory adjustment, not a reaction to an existing imbalance.\n- **(E)** No deviation has yet been detected; the response is anticipatory, not reactive negative feedback."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Releasing digestive secretions before eating adjusts the body in anticipation of a coming event, which is the definition of a feed-forward mechanism.\n\n**Why the other options are wrong:**\n- **(B)** No deviation has yet been detected; the response is anticipatory, not reactive negative feedback.\n- **(C)** Nothing is being amplified toward a runaway end point here.\n- **(D)** No blood glucose rise has yet occurred to reverse; the response precedes the meal.\n- **(E)** This is an anticipatory adjustment, not a reaction to an existing imbalance."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1548,12 +1548,12 @@
             "options": [
               "They restore a physiological value to its set point",
               "They amplify an initial change and continue until a definite end point is reached",
-              "They rely on the hypothalamus as the sole control centre",
               "They occur continuously throughout the body at all times",
-              "They use only four components rather than five"
+              "They use only four components rather than five",
+              "They rely on the hypothalamus as the sole control centre"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Both childbirth and clotting are positive feedback loops that intensify an initial change and continue until a definite end point (birth of the baby, or sealing of the wound).\n\n**Why the other options are wrong:**\n- **(A)** Restoring a value to its set point describes negative feedback like glucose control, not these examples.\n- **(C)** Clotting uses platelets, and childbirth uses the pituitary/brain, not the hypothalamus as a sole centre.\n- **(D)** These are episodic events, not continuous ongoing processes.\n- **(E)** Positive feedback loops use the same five components as negative feedback loops."
+            "explanation": "**Why (B) is correct:** Both childbirth and clotting are positive feedback loops that intensify an initial change and continue until a definite end point (birth of the baby, or sealing of the wound).\n\n**Why the other options are wrong:**\n- **(A)** Restoring a value to its set point describes negative feedback like glucose control, not these examples.\n- **(C)** These are episodic events, not continuous ongoing processes.\n- **(D)** Positive feedback loops use the same five components as negative feedback loops.\n- **(E)** Clotting uses platelets, and childbirth uses the pituitary/brain, not the hypothalamus as a sole centre."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1563,14 +1563,14 @@
           "question": {
             "stem": "Which statement correctly relates the terms 'stimulus' and 'stressor' as used in this unit?",
             "options": [
-              "A stressor is any stimulus that causes an imbalance in the internal environment",
               "A stressor is the component that produces the corrective response",
-              "A stimulus can only be internal, whereas a stressor is always external",
+              "A stressor is any stimulus that causes an imbalance in the internal environment",
               "A stressor is the set point around which values fluctuate",
-              "A stimulus is the fluid surrounding the body's cells"
+              "A stimulus is the fluid surrounding the body's cells",
+              "A stimulus can only be internal, whereas a stressor is always external"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A stressor is defined as any stimulus that causes an imbalance in the internal environment, and it may originate externally or internally.\n\n**Why the other options are wrong:**\n- **(B)** The component producing the response is the effector, not a stressor.\n- **(C)** Stressors can be either external or internal, not exclusively external.\n- **(D)** The set point is the value around which the range fluctuates, not a stressor.\n- **(E)** The surrounding fluid is the internal environment, not a stimulus."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A stressor is defined as any stimulus that causes an imbalance in the internal environment, and it may originate externally or internally.\n\n**Why the other options are wrong:**\n- **(A)** The component producing the response is the effector, not a stressor.\n- **(C)** The set point is the value around which the range fluctuates, not a stressor.\n- **(D)** The surrounding fluid is the internal environment, not a stimulus.\n- **(E)** Stressors can be either external or internal, not exclusively external."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1580,14 +1580,14 @@
           "question": {
             "stem": "A patient hemorrhages heavily and their blood pressure drops sharply. Which unit concept most directly explains why blood pressure is a homeostatically regulated variable?",
             "options": [
-              "Blood pressure has no effect on how substances move through the body",
               "Blood pressure determines only body temperature",
-              "The rates at which substances move through the body depend on blood pressure, which is affected by blood volume, vessel diameter, and cardiac contraction strength",
               "Blood pressure is set independently of blood volume and vessel diameter",
-              "Blood pressure regulation is a positive feedback process that amplifies the drop"
+              "The rates at which substances move through the body depend on blood pressure, which is affected by blood volume, vessel diameter, and cardiac contraction strength",
+              "Blood pressure regulation is a positive feedback process that amplifies the drop",
+              "Blood pressure has no effect on how substances move through the body"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Blood pressure influences the concentrations and movement of substances through the body, and it depends on blood volume, vessel diameter, and cardiac contraction strength, so a hemorrhage-induced drop threatens homeostasis.\n\n**Why the other options are wrong:**\n- **(A)** Blood pressure strongly affects how substances move through the body.\n- **(B)** Blood pressure is a distinct variable and does not solely determine temperature.\n- **(D)** Blood pressure is directly influenced by blood volume and vessel diameter.\n- **(E)** Normal blood pressure regulation is a negative feedback process that opposes the deviation, not amplifies it."
+            "explanation": "**Why (C) is correct:** Blood pressure influences the concentrations and movement of substances through the body, and it depends on blood volume, vessel diameter, and cardiac contraction strength, so a hemorrhage-induced drop threatens homeostasis.\n\n**Why the other options are wrong:**\n- **(A)** Blood pressure is a distinct variable and does not solely determine temperature.\n- **(B)** Blood pressure is directly influenced by blood volume and vessel diameter.\n- **(D)** Normal blood pressure regulation is a negative feedback process that opposes the deviation, not amplifies it.\n- **(E)** Blood pressure strongly affects how substances move through the body."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1597,14 +1597,14 @@
           "question": {
             "stem": "A student is comparing negative feedback, positive feedback, and feed-forward mechanisms. Which statement correctly distinguishes them?",
             "options": [
-              "Negative feedback reverses a deviation from the set point, positive feedback amplifies a deviation, and feed-forward changes the set point in anticipation of a future event.",
-              "Negative feedback amplifies a deviation, positive feedback reverses it, and feed-forward maintains the current set point.",
-              "All three mechanisms return a physiological variable to its original set point.",
               "Positive feedback is used continuously throughout the body, while negative feedback only occurs during childbirth and clotting.",
+              "Negative feedback reverses a deviation from the set point, positive feedback amplifies a deviation, and feed-forward changes the set point in anticipation of a future event.",
+              "All three mechanisms return a physiological variable to its original set point.",
+              "Negative feedback amplifies a deviation, positive feedback reverses it, and feed-forward maintains the current set point.",
               "Feed-forward mechanisms reverse deviations after they occur, while negative feedback prevents them entirely."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Negative feedback opposes/reverses a deviation, positive feedback intensifies it, and feed-forward adjusts the set point ahead of an anticipated event such as a meal.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the definitions of negative and positive feedback.\n- **(C)** Positive feedback moves the variable farther from the original set point, not back to it.\n- **(D)** Negative feedback (not positive) runs continuously; childbirth and clotting are examples of positive feedback.\n- **(E)** Feed-forward acts in anticipation before the event, not by reversing a deviation afterward."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Negative feedback opposes/reverses a deviation, positive feedback intensifies it, and feed-forward adjusts the set point ahead of an anticipated event such as a meal.\n\n**Why the other options are wrong:**\n- **(A)** Negative feedback (not positive) runs continuously; childbirth and clotting are examples of positive feedback.\n- **(C)** Positive feedback moves the variable farther from the original set point, not back to it.\n- **(D)** This reverses the definitions of negative and positive feedback.\n- **(E)** Feed-forward acts in anticipation before the event, not by reversing a deviation afterward."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1614,14 +1614,14 @@
           "question": {
             "stem": "Which of the following sets lists variables that the body must maintain via homeostasis, according to the unit?",
             "options": [
-              "Gas concentrations, temperature, and pressure",
-              "Hair colour, height, and eye colour",
-              "Number of chromosomes, blood type, and fingerprint pattern",
               "Bone length, tooth count, and skin pigment",
-              "Gender, ethnicity, and handedness"
+              "Hair colour, height, and eye colour",
+              "Gender, ethnicity, and handedness",
+              "Gas concentrations, temperature, and pressure",
+              "Number of chromosomes, blood type, and fingerprint pattern"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The unit identifies proper concentrations of gases/nutrients/water/salts, optimum temperature (~37°C), and optimum pressure (e.g., blood pressure) as the key homeostatically regulated variables.\n\n**Why the other options are wrong:**\n- **(B)** These are fixed genetic traits, not dynamically regulated homeostatic variables.\n- **(C)** These are static genetic/structural features, not variables kept at a set point.\n- **(D)** These are developmental/structural features, not moment-to-moment regulated conditions.\n- **(E)** These are demographic traits unrelated to physiological set points."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The unit identifies proper concentrations of gases/nutrients/water/salts, optimum temperature (~37°C), and optimum pressure (e.g., blood pressure) as the key homeostatically regulated variables.\n\n**Why the other options are wrong:**\n- **(A)** These are developmental/structural features, not moment-to-moment regulated conditions.\n- **(B)** These are fixed genetic traits, not dynamically regulated homeostatic variables.\n- **(C)** These are demographic traits unrelated to physiological set points.\n- **(E)** These are static genetic/structural features, not variables kept at a set point."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1631,14 +1631,14 @@
           "question": {
             "stem": "In feedback-loop terminology, which component is responsible for comparing a detected physiological value to the normal range and deciding whether to activate a response?",
             "options": [
-              "The control centre",
-              "The sensor (receptor)",
               "The effector",
               "The stimulus",
-              "The stressor"
+              "The sensor (receptor)",
+              "The stressor",
+              "The control centre"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The control centre compares the reported value to the normal range and, if it deviates too much, activates the effector.\n\n**Why the other options are wrong:**\n- **(B)** The sensor detects the deviation and reports it, but does not compare it to the range.\n- **(C)** The effector produces the response; it does not evaluate the value.\n- **(D)** The stimulus is the deviation itself, not a component that compares values.\n- **(E)** The stressor is the disturbance that causes the imbalance, not an evaluating component."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The control centre compares the reported value to the normal range and, if it deviates too much, activates the effector.\n\n**Why the other options are wrong:**\n- **(A)** The effector produces the response; it does not evaluate the value.\n- **(B)** The stimulus is the deviation itself, not a component that compares values.\n- **(C)** The sensor detects the deviation and reports it, but does not compare it to the range.\n- **(D)** The stressor is the disturbance that causes the imbalance, not an evaluating component."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1648,14 +1648,14 @@
           "question": {
             "stem": "According to the unit, why is maintaining a temperature of about 37°C important for homeostasis?",
             "options": [
-              "It keeps proteins in their functional shape and sets appropriate rates for chemical reactions",
+              "It stops all chemical reactions from occurring until needed",
               "It increases blood pressure by dilating all blood vessels",
+              "It keeps proteins in their functional shape and sets appropriate rates for chemical reactions",
               "It raises the acidity of body fluids to speed up cellular respiration",
-              "It prevents any water or salt from entering cells",
-              "It stops all chemical reactions from occurring until needed"
+              "It prevents any water or salt from entering cells"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Proteins retain their shape and chemical reactions proceed at appropriate rates only within the correct temperature range; overheating can denature proteins.\n\n**Why the other options are wrong:**\n- **(B)** Temperature regulation is not primarily about raising blood pressure via vasodilation.\n- **(C)** CO₂, not temperature, is described as making body fluids acidic, and acidity is not the goal of the 37°C set point.\n- **(D)** Temperature does not block water/salt movement; fluid and electrolyte balance are separate parameters.\n- **(E)** Reactions continue at 37°C; they proceed slower when cool and faster when warm, not halted."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Proteins retain their shape and chemical reactions proceed at appropriate rates only within the correct temperature range; overheating can denature proteins.\n\n**Why the other options are wrong:**\n- **(A)** Reactions continue at 37°C; they proceed slower when cool and faster when warm, not halted.\n- **(B)** Temperature regulation is not primarily about raising blood pressure via vasodilation.\n- **(D)** CO₂, not temperature, is described as making body fluids acidic, and acidity is not the goal of the 37°C set point.\n- **(E)** Temperature does not block water/salt movement; fluid and electrolyte balance are separate parameters."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1665,14 +1665,14 @@
           "question": {
             "stem": "Which statement best captures the definition of homeostasis as presented in the unit?",
             "options": [
-              "A relatively stable set of conditions within an organism's internal environment",
-              "A permanent, unchanging fixed value for every physiological parameter",
               "The complete elimination of all stressors from the body",
+              "A one-time adjustment the body makes at birth and never repeats",
               "The process by which cells divide to maintain body size",
-              "A one-time adjustment the body makes at birth and never repeats"
+              "A permanent, unchanging fixed value for every physiological parameter",
+              "A relatively stable set of conditions within an organism's internal environment"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Homeostasis is defined as a relatively stable set of internal conditions, with parameters fluctuating within a healthy range rather than being fixed.\n\n**Why the other options are wrong:**\n- **(B)** Parameters fluctuate around a set point; they are not permanently unchanging.\n- **(C)** Stressors are continually present; homeostasis counteracts them rather than eliminating them.\n- **(D)** Homeostasis concerns internal conditions, not cell division for body size.\n- **(E)** Homeostasis is maintained continuously throughout life, not a single birth-time event."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Homeostasis is defined as a relatively stable set of internal conditions, with parameters fluctuating within a healthy range rather than being fixed.\n\n**Why the other options are wrong:**\n- **(A)** Stressors are continually present; homeostasis counteracts them rather than eliminating them.\n- **(B)** Homeostasis is maintained continuously throughout life, not a single birth-time event.\n- **(C)** Homeostasis concerns internal conditions, not cell division for body size.\n- **(D)** Parameters fluctuate around a set point; they are not permanently unchanging."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1682,14 +1682,14 @@
           "question": {
             "stem": "A nursing mother's milk let-down reflex works like this: suckling stimulates milk release, which encourages more suckling and thus more milk release. This is best classified alongside which of the following?",
             "options": [
-              "Childbirth, because both are positive feedback loops that amplify a change until an end point",
+              "None of these, because it does not involve any feedback",
               "Blood glucose regulation, because both return a variable to its set point",
               "Temperature regulation, because both are negative feedback loops",
               "Feed-forward systems, because the set point is changed in anticipation of a future event",
-              "None of these, because it does not involve any feedback"
+              "Childbirth, because both are positive feedback loops that amplify a change until an end point"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Like childbirth, milk let-down is positive feedback—the response (milk release) intensifies the stimulus (suckling) until a definite end point.\n\n**Why the other options are wrong:**\n- **(B)** Blood glucose control is negative feedback returning to a set point, unlike the amplifying let-down reflex.\n- **(C)** Temperature regulation reverses deviations; let-down amplifies them.\n- **(D)** No anticipatory set-point change occurs; the response is triggered by an actual stimulus.\n- **(E)** It clearly involves a feedback loop with the standard components."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Like childbirth, milk let-down is positive feedback—the response (milk release) intensifies the stimulus (suckling) until a definite end point.\n\n**Why the other options are wrong:**\n- **(A)** It clearly involves a feedback loop with the standard components.\n- **(B)** Blood glucose control is negative feedback returning to a set point, unlike the amplifying let-down reflex.\n- **(C)** Temperature regulation reverses deviations; let-down amplifies them.\n- **(D)** No anticipatory set-point change occurs; the response is triggered by an actual stimulus."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1699,14 +1699,14 @@
           "question": {
             "stem": "The unit notes that carbon dioxide, though a waste product, must still be maintained at appropriate levels. What is the main reason its concentration matters for homeostasis?",
             "options": [
+              "It determines the diameter of all blood vessels directly",
               "It influences the acidity (pH) of body fluids",
               "It is the primary reactant for ATP production in cellular respiration",
-              "It determines the diameter of all blood vessels directly",
-              "It is the main nutrient providing enzymes and cofactors",
-              "It sets the body's temperature to 37°C"
+              "It sets the body's temperature to 37°C",
+              "It is the main nutrient providing enzymes and cofactors"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The unit states CO₂ is a waste product that makes body fluids acidic, so its concentration affects pH and must be regulated.\n\n**Why the other options are wrong:**\n- **(B)** Oxygen, not CO₂, is used in cellular respiration to produce ATP; CO₂ is the waste product.\n- **(C)** Blood vessel diameter influences pressure but is not directly set by CO₂ concentration in this unit.\n- **(D)** Nutrients (not CO₂) provide reactants, enzymes, and cofactors.\n- **(E)** Temperature regulation is a separate parameter unrelated to CO₂ concentration."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The unit states CO₂ is a waste product that makes body fluids acidic, so its concentration affects pH and must be regulated.\n\n**Why the other options are wrong:**\n- **(A)** Blood vessel diameter influences pressure but is not directly set by CO₂ concentration in this unit.\n- **(C)** Oxygen, not CO₂, is used in cellular respiration to produce ATP; CO₂ is the waste product.\n- **(D)** Temperature regulation is a separate parameter unrelated to CO₂ concentration.\n- **(E)** Nutrients (not CO₂) provide reactants, enzymes, and cofactors."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1717,13 +1717,13 @@
             "stem": "A person becomes furious during an argument and experiences a spike in blood pressure. In the terminology of this unit, the anger is best described as which type of stressor?",
             "options": [
               "An internal psychological stressor",
-              "An external physical stressor",
-              "An external psychological stressor",
+              "A negative feedback effector",
               "A feed-forward response",
-              "A negative feedback effector"
+              "An external physical stressor",
+              "An external psychological stressor"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The unit lists anger and fear as internal psychological stressors that can disturb the internal environment (e.g., raising blood pressure).\n\n**Why the other options are wrong:**\n- **(B)** Anger arises within the body, not from external physical factors like oxygen or temperature.\n- **(C)** The unit categorizes psychological stressors such as anger as internal, not external.\n- **(D)** A stressor is a disturbance, not an anticipatory set-point change.\n- **(E)** An effector produces a response; anger is the disturbing stimulus, not an effector."
+            "explanation": "**Why (A) is correct:** The unit lists anger and fear as internal psychological stressors that can disturb the internal environment (e.g., raising blood pressure).\n\n**Why the other options are wrong:**\n- **(B)** An effector produces a response; anger is the disturbing stimulus, not an effector.\n- **(C)** A stressor is a disturbance, not an anticipatory set-point change.\n- **(D)** Anger arises within the body, not from external physical factors like oxygen or temperature.\n- **(E)** The unit categorizes psychological stressors such as anger as internal, not external."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1734,13 +1734,13 @@
             "stem": "Why does the unit emphasize that maintaining a stable extracellular environment is essential for homeostasis?",
             "options": [
               "Because a stable extracellular environment allows cells to maintain a stable intracellular environment through continual exchange of materials",
-              "Because the extracellular fluid replaces the need for cells to perform chemical reactions",
               "Because cells cannot exchange nutrients, wastes, or gases once the extracellular fluid is stable",
               "Because intracellular fluid makes up the smallest fluid compartment in the body",
-              "Because the extracellular fluid is completely isolated from the intracellular compartment"
+              "Because the extracellular fluid is completely isolated from the intracellular compartment",
+              "Because the extracellular fluid replaces the need for cells to perform chemical reactions"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The internal environment is the extracellular fluid; keeping it stable enables the ongoing exchange that lets cells maintain their internal conditions.\n\n**Why the other options are wrong:**\n- **(B)** The extracellular fluid supports, but does not replace, cellular chemical reactions.\n- **(C)** A stable extracellular environment enables, not prevents, exchange of nutrients, wastes, and gases.\n- **(D)** Intracellular fluid is actually the largest fluid compartment, per the unit.\n- **(E)** The compartments are distinct but continually exchange materials, not isolated."
+            "explanation": "**Why (A) is correct:** The internal environment is the extracellular fluid; keeping it stable enables the ongoing exchange that lets cells maintain their internal conditions.\n\n**Why the other options are wrong:**\n- **(B)** A stable extracellular environment enables, not prevents, exchange of nutrients, wastes, and gases.\n- **(C)** Intracellular fluid is actually the largest fluid compartment, per the unit.\n- **(D)** The compartments are distinct but continually exchange materials, not isolated.\n- **(E)** The extracellular fluid supports, but does not replace, cellular chemical reactions."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1750,14 +1750,14 @@
           "question": {
             "stem": "In the blood-glucose example, high blood glucose triggers pancreatic beta cells to release insulin, causing effector cells to take up glucose. Which term correctly matches this description?",
             "options": [
-              "The skeletal muscle, liver, and fat cells that take up glucose are the effectors",
+              "The drop in blood glucose is the control centre",
               "The high blood glucose is the effector",
+              "The skeletal muscle, liver, and fat cells that take up glucose are the effectors",
               "The insulin uptake is the sensor",
-              "The pancreatic beta cells are the stimulus",
-              "The drop in blood glucose is the control centre"
+              "The pancreatic beta cells are the stimulus"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The effectors are the cells (skeletal muscle, liver, adipocytes) that carry out the response of taking up the excess glucose.\n\n**Why the other options are wrong:**\n- **(B)** High blood glucose is the stimulus, not the effector.\n- **(C)** The sensor detects the deviation; glucose uptake is the response, not a sensor.\n- **(D)** Pancreatic beta cells act as the sensor/control centre, not the stimulus.\n- **(E)** The drop in blood glucose is the response/outcome, not the control centre."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The effectors are the cells (skeletal muscle, liver, adipocytes) that carry out the response of taking up the excess glucose.\n\n**Why the other options are wrong:**\n- **(A)** The drop in blood glucose is the response/outcome, not the control centre.\n- **(B)** High blood glucose is the stimulus, not the effector.\n- **(D)** The sensor detects the deviation; glucose uptake is the response, not a sensor.\n- **(E)** Pancreatic beta cells act as the sensor/control centre, not the stimulus."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1767,14 +1767,14 @@
           "question": {
             "stem": "In a feedback loop, which component is responsible for comparing the reported value to the normal range and deciding whether to activate a response?",
             "options": [
-              "Sensor",
-              "Control centre",
-              "Effector",
               "Stimulus",
+              "Control centre",
+              "Sensor",
+              "Effector",
               "Stressor"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The control centre is defined as the component that compares the reported value to the normal range and activates an effector if the deviation is too large.\n\n**Why the other options are wrong:**\n- **(A)** The sensor (receptor) only detects the deviation and reports it; it does not compare to the normal range.\n- **(C)** The effector produces the response but does not evaluate the value.\n- **(D)** The stimulus is the deviation itself, not a component that evaluates.\n- **(E)** A stressor is any stimulus causing imbalance, not the evaluating component."
+            "explanation": "**Why (B) is correct:** The control centre is defined as the component that compares the reported value to the normal range and activates an effector if the deviation is too large.\n\n**Why the other options are wrong:**\n- **(A)** The stimulus is the deviation itself, not a component that evaluates.\n- **(C)** The sensor (receptor) only detects the deviation and reports it; it does not compare to the normal range.\n- **(D)** The effector produces the response but does not evaluate the value.\n- **(E)** A stressor is any stimulus causing imbalance, not the evaluating component."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1784,14 +1784,14 @@
           "question": {
             "stem": "A student must distinguish negative feedback, positive feedback, and feed-forward mechanisms. Which statement correctly contrasts them?",
             "options": [
-              "Negative feedback exacerbates a change, while positive feedback reverses it",
-              "Positive feedback returns a value to its set point, while feed-forward adjusts a value after an event occurs",
               "Negative feedback reverses a deviation, positive feedback amplifies a deviation, and feed-forward changes a set point in anticipation of a future event",
+              "Positive feedback returns a value to its set point, while feed-forward adjusts a value after an event occurs",
               "Feed-forward mechanisms reverse deviations just like negative feedback, but only during childbirth",
-              "All three types of loops ultimately maintain a value at the same fixed set point"
+              "All three types of loops ultimately maintain a value at the same fixed set point",
+              "Negative feedback exacerbates a change, while positive feedback reverses it"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Negative feedback reverses deviations, positive feedback amplifies them, and feed-forward alters a set point in anticipation of a future event—exactly as defined in the unit.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the definitions; negative feedback reverses and positive feedback amplifies.\n- **(B)** Positive feedback moves away from the set point, and feed-forward acts in anticipation, not after an event.\n- **(D)** Feed-forward anticipates future events and does not reverse deviations like negative feedback.\n- **(E)** Positive feedback and feed-forward do not maintain a value at a fixed set point."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Negative feedback reverses deviations, positive feedback amplifies them, and feed-forward alters a set point in anticipation of a future event—exactly as defined in the unit.\n\n**Why the other options are wrong:**\n- **(B)** Positive feedback moves away from the set point, and feed-forward acts in anticipation, not after an event.\n- **(C)** Feed-forward anticipates future events and does not reverse deviations like negative feedback.\n- **(D)** Positive feedback and feed-forward do not maintain a value at a fixed set point.\n- **(E)** This reverses the definitions; negative feedback reverses and positive feedback amplifies."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1801,14 +1801,14 @@
           "question": {
             "stem": "The unit identifies three broad conditions that must be maintained for chemical reactions to proceed at rates necessary for homeostasis. Which of the following is NOT one of those three conditions?",
             "options": [
-              "Proper concentration of gases, nutrients, water, and salts",
-              "Optimum temperature of about 37°C",
               "Optimum pressure, such as blood pressure",
+              "Optimum temperature of about 37°C",
+              "Two of the above are not among the three conditions",
               "Proper concentration of intracellular DNA",
-              "Two of the above are not among the three conditions"
+              "Proper concentration of gases, nutrients, water, and salts"
             ],
             "correct_index": 3,
-            "explanation": "**Why (D) is correct:** The three conditions are concentrations of gases/nutrients/water/salts, temperature, and pressure; intracellular DNA concentration is not listed.\n\n**Why the other options are wrong:**\n- **(A)** This is explicitly the first condition maintained by homeostasis.\n- **(B)** Optimum temperature (~37°C) is the second condition.\n- **(C)** Optimum pressure such as blood pressure is the third condition.\n- **(E)** Only one option (D) is not among the three conditions, so 'two of the above' is incorrect."
+            "explanation": "**Why (D) is correct:** The three conditions are concentrations of gases/nutrients/water/salts, temperature, and pressure; intracellular DNA concentration is not listed.\n\n**Why the other options are wrong:**\n- **(A)** Optimum pressure such as blood pressure is the third condition.\n- **(B)** Optimum temperature (~37°C) is the second condition.\n- **(C)** Only one option (D) is not among the three conditions, so 'two of the above' is incorrect.\n- **(E)** This is explicitly the first condition maintained by homeostasis."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1818,14 +1818,14 @@
           "question": {
             "stem": "According to the unit outline, feedback loops are studied because they serve what overall physiological purpose?",
             "options": [
-              "They are the mechanisms the body uses to maintain homeostasis",
-              "They are external stressors that disturb the internal environment",
+              "They are found only in the endocrine system",
               "They define the boundaries of the intracellular compartment",
-              "They replace the need for a stable internal environment",
-              "They are found only in the endocrine system"
+              "They are external stressors that disturb the internal environment",
+              "They are the mechanisms the body uses to maintain homeostasis",
+              "They replace the need for a stable internal environment"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The unit presents feedback loops (Part 2) specifically as the mechanisms the body uses to maintain homeostasis introduced in Part 1.\n\n**Why the other options are wrong:**\n- **(B)** Feedback loops respond to stressors; they are not themselves stressors.\n- **(C)** Feedback loops do not define fluid compartment boundaries.\n- **(D)** They support, rather than replace, a stable internal environment.\n- **(E)** Feedback loops involve the nervous, endocrine, and other systems, not only the endocrine system."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The unit presents feedback loops (Part 2) specifically as the mechanisms the body uses to maintain homeostasis introduced in Part 1.\n\n**Why the other options are wrong:**\n- **(A)** Feedback loops involve the nervous, endocrine, and other systems, not only the endocrine system.\n- **(B)** Feedback loops do not define fluid compartment boundaries.\n- **(C)** Feedback loops respond to stressors; they are not themselves stressors.\n- **(E)** They support, rather than replace, a stable internal environment."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1835,14 +1835,14 @@
           "question": {
             "stem": "Which pairing correctly matches a physiological process to its feedback type?",
             "options": [
-              "Blood clotting after a wound — negative feedback",
               "Insulin lowering high blood glucose — positive feedback",
-              "Oxytocin driving progressively stronger labor contractions — positive feedback",
+              "Blood clotting after a wound — negative feedback",
               "Shivering to raise low body temperature — positive feedback",
+              "Oxytocin driving progressively stronger labor contractions — positive feedback",
               "Salivation before a meal — negative feedback"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Oxytocin-driven labor is the classic positive feedback loop, where cervical stretch amplifies contractions until the baby is born.\n\n**Why the other options are wrong:**\n- **(A)** Blood clotting is positive feedback, not negative feedback.\n- **(B)** Insulin lowering high glucose reverses a deviation, so it is negative feedback.\n- **(D)** Shivering reverses a temperature deviation, so it is negative feedback.\n- **(E)** Pre-meal salivation is a feed-forward mechanism, not negative feedback."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Oxytocin-driven labor is the classic positive feedback loop, where cervical stretch amplifies contractions until the baby is born.\n\n**Why the other options are wrong:**\n- **(A)** Insulin lowering high glucose reverses a deviation, so it is negative feedback.\n- **(B)** Blood clotting is positive feedback, not negative feedback.\n- **(C)** Shivering reverses a temperature deviation, so it is negative feedback.\n- **(E)** Pre-meal salivation is a feed-forward mechanism, not negative feedback."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1852,14 +1852,14 @@
           "question": {
             "stem": "A stressor is best defined as which of the following?",
             "options": [
-              "Any stimulus that causes an imbalance in the internal environment",
-              "The fluid inside cells that must remain constant",
-              "The narrow set of values that is optimally healthful",
               "A hormone that returns a value to its set point",
-              "The component that compares a value to the normal range"
+              "The fluid inside cells that must remain constant",
+              "The component that compares a value to the normal range",
+              "The narrow set of values that is optimally healthful",
+              "Any stimulus that causes an imbalance in the internal environment"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The unit defines a stressor as any stimulus—external or internal—that causes an imbalance in the internal environment.\n\n**Why the other options are wrong:**\n- **(B)** That describes intracellular fluid, not a stressor.\n- **(C)** That describes the normal range, not a stressor.\n- **(D)** A hormone that restores a set point is an effector output, not a stressor.\n- **(E)** Comparing a value to the normal range describes the control centre."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The unit defines a stressor as any stimulus—external or internal—that causes an imbalance in the internal environment.\n\n**Why the other options are wrong:**\n- **(A)** A hormone that restores a set point is an effector output, not a stressor.\n- **(B)** That describes intracellular fluid, not a stressor.\n- **(C)** Comparing a value to the normal range describes the control centre.\n- **(D)** That describes the normal range, not a stressor."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1869,14 +1869,14 @@
           "question": {
             "stem": "Why is maintaining a body temperature near 37°C considered a homeostatic variable critical to physiology?",
             "options": [
-              "Because higher temperatures increase blood volume directly",
-              "Because protein shape and chemical reaction rates both depend on temperature",
-              "Because temperature determines the pH of interstitial fluid",
               "Because cool temperatures speed up all enzymatic reactions",
-              "Because 37°C is the temperature at which lymph forms"
+              "Because protein shape and chemical reaction rates both depend on temperature",
+              "Because 37°C is the temperature at which lymph forms",
+              "Because temperature determines the pH of interstitial fluid",
+              "Because higher temperatures increase blood volume directly"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The unit states that reaction rates are temperature-dependent and that proteins may denature if overheated, making ~37°C essential.\n\n**Why the other options are wrong:**\n- **(A)** Temperature does not directly increase blood volume.\n- **(C)** pH is primarily determined by water/salts and CO2, not directly by temperature.\n- **(D)** Cooler temperatures slow, not speed up, chemical reactions.\n- **(E)** Lymph formation is unrelated to a specific temperature threshold."
+            "explanation": "**Why (B) is correct:** The unit states that reaction rates are temperature-dependent and that proteins may denature if overheated, making ~37°C essential.\n\n**Why the other options are wrong:**\n- **(A)** Cooler temperatures slow, not speed up, chemical reactions.\n- **(C)** Lymph formation is unrelated to a specific temperature threshold.\n- **(D)** pH is primarily determined by water/salts and CO2, not directly by temperature.\n- **(E)** Temperature does not directly increase blood volume."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1886,14 +1886,14 @@
           "question": {
             "stem": "For the purposes of homeostasis, the body's internal environment includes all of the following EXCEPT which one?",
             "options": [
+              "Intracellular fluid",
+              "Extracellular fluid",
               "Plasma",
               "Interstitial fluid",
-              "Lymph",
-              "Intracellular fluid",
-              "Extracellular fluid"
+              "Lymph"
             ],
-            "correct_index": 3,
-            "explanation": "**Why (D) is correct:** The internal environment is defined as fluid inside the body but outside cells; intracellular fluid is inside cells and is therefore excluded.\n\n**Why the other options are wrong:**\n- **(A)** Plasma is an extracellular fluid and part of the internal environment.\n- **(B)** Interstitial fluid is extracellular and part of the internal environment.\n- **(C)** Lymph is one of the three extracellular fluid types included.\n- **(E)** Extracellular fluid, by definition, is the internal environment."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The internal environment is defined as fluid inside the body but outside cells; intracellular fluid is inside cells and is therefore excluded.\n\n**Why the other options are wrong:**\n- **(B)** Extracellular fluid, by definition, is the internal environment.\n- **(C)** Plasma is an extracellular fluid and part of the internal environment.\n- **(D)** Interstitial fluid is extracellular and part of the internal environment.\n- **(E)** Lymph is one of the three extracellular fluid types included."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1903,14 +1903,14 @@
           "question": {
             "stem": "Which statement best captures the definition of homeostasis as presented in this unit?",
             "options": [
-              "The maintenance of a relatively stable set of conditions within the internal environment",
               "The process by which cells duplicate their genetic material",
-              "The amplification of small changes into larger ones for a definite end point",
               "The permanent, unchanging fixation of all body values at exact set points",
-              "The transport of oxygen from the lungs to the tissues"
+              "The maintenance of a relatively stable set of conditions within the internal environment",
+              "The transport of oxygen from the lungs to the tissues",
+              "The amplification of small changes into larger ones for a definite end point"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Homeostasis is defined as a relatively stable set of conditions within an organism's internal environment.\n\n**Why the other options are wrong:**\n- **(B)** DNA replication is a cellular process unrelated to the homeostasis definition.\n- **(C)** Amplifying changes describes positive feedback, not homeostasis overall.\n- **(D)** Homeostasis allows fluctuation within a normal range, not permanent fixation.\n- **(E)** Gas transport is one function influenced by homeostasis, not its definition."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Homeostasis is defined as a relatively stable set of conditions within an organism's internal environment.\n\n**Why the other options are wrong:**\n- **(A)** DNA replication is a cellular process unrelated to the homeostasis definition.\n- **(B)** Homeostasis allows fluctuation within a normal range, not permanent fixation.\n- **(D)** Gas transport is one function influenced by homeostasis, not its definition.\n- **(E)** Amplifying changes describes positive feedback, not homeostasis overall."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1921,13 +1921,13 @@
             "stem": "The unit emphasizes that homeostatic values fluctuate around a set point within a normal range. Which scenario is most consistent with this description?",
             "options": [
               "Body temperature staying fixed at exactly 37.0°C at all times",
-              "Body temperature varying a few degrees around 37°C depending on activity and stress",
-              "Blood glucose rising indefinitely after a meal with no correction",
+              "Blood pressure being unaffected by blood volume or vessel diameter",
               "Cervical stretching increasing until it moves farther from the normal range",
-              "Blood pressure being unaffected by blood volume or vessel diameter"
+              "Blood glucose rising indefinitely after a meal with no correction",
+              "Body temperature varying a few degrees around 37°C depending on activity and stress"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The unit notes body temperature fluctuates within a few degrees around the 37°C set point depending on factors like activity and stress, which defines a normal range.\n\n**Why the other options are wrong:**\n- **(A)** Values fluctuate within a range rather than staying exactly fixed.\n- **(C)** Uncorrected indefinite rise contradicts homeostatic regulation.\n- **(D)** Moving farther from the normal range describes positive feedback, not homeostasis.\n- **(E)** Blood pressure is explicitly influenced by blood volume and vessel diameter."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The unit notes body temperature fluctuates within a few degrees around the 37°C set point depending on factors like activity and stress, which defines a normal range.\n\n**Why the other options are wrong:**\n- **(A)** Values fluctuate within a range rather than staying exactly fixed.\n- **(B)** Blood pressure is explicitly influenced by blood volume and vessel diameter.\n- **(C)** Moving farther from the normal range describes positive feedback, not homeostasis.\n- **(D)** Uncorrected indefinite rise contradicts homeostatic regulation."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"

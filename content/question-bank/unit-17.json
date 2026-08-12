@@ -9,14 +9,14 @@
           "question": {
             "stem": "How does a stronger stimulus change the action potential signal in a neuron?",
             "options": [
-              "It increases the frequency of action potentials, but each action potential is the same size",
               "It increases the amplitude of each action potential",
+              "It increases the frequency of action potentials, but each action potential is the same size",
+              "It converts the action potentials into larger graded potentials",
               "It changes the peak voltage of each action potential from +30 mV to a higher value",
-              "It makes the resting membrane potential more positive between action potentials",
-              "It converts the action potentials into larger graded potentials"
+              "It makes the resting membrane potential more positive between action potentials"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Action potentials are all-or-none, so stronger stimuli initiate action potentials more frequently rather than producing larger individual signals.\n\n**Why the other options are wrong:**\n- **(B)** All action potentials are the same amplitude regardless of stimulus strength.\n- **(C)** Every action potential peaks at the same voltage (+30 mV).\n- **(D)** The resting membrane potential returns to about -70 mV; stimulus strength does not raise it.\n- **(E)** Action potentials are not graded and do not convert into graded potentials."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Action potentials are all-or-none, so stronger stimuli initiate action potentials more frequently rather than producing larger individual signals.\n\n**Why the other options are wrong:**\n- **(A)** All action potentials are the same amplitude regardless of stimulus strength.\n- **(C)** Action potentials are not graded and do not convert into graded potentials.\n- **(D)** Every action potential peaks at the same voltage (+30 mV).\n- **(E)** The resting membrane potential returns to about -70 mV; stimulus strength does not raise it."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -26,14 +26,14 @@
           "question": {
             "stem": "Which neurotransmitter is classified as a biogenic amine and is synthesized from the amino acid tryptophan?",
             "options": [
-              "Serotonin",
-              "GABA",
               "Glutamate",
-              "Acetylcholine",
-              "Beta-endorphin"
+              "GABA",
+              "Beta-endorphin",
+              "Serotonin",
+              "Acetylcholine"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Serotonin is a biogenic amine made enzymatically from the amino acid tryptophan.\n\n**Why the other options are wrong:**\n- **(B)** GABA is an amino acid neurotransmitter, not a biogenic amine.\n- **(C)** Glutamate is an amino acid neurotransmitter.\n- **(D)** Acetylcholine is part of the cholinergic system, not a biogenic amine.\n- **(E)** Beta-endorphin is a neuropeptide."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Serotonin is a biogenic amine made enzymatically from the amino acid tryptophan.\n\n**Why the other options are wrong:**\n- **(A)** Glutamate is an amino acid neurotransmitter.\n- **(B)** GABA is an amino acid neurotransmitter, not a biogenic amine.\n- **(C)** Beta-endorphin is a neuropeptide.\n- **(E)** Acetylcholine is part of the cholinergic system, not a biogenic amine."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -44,13 +44,13 @@
             "stem": "Why does an action potential travel faster along a myelinated axon than along an unmyelinated axon of the same diameter?",
             "options": [
               "The signal jumps between nodes of Ranvier, regenerating only at those gaps (saltatory conduction)",
-              "Myelin adds many more voltage-gated Na+ channels along the entire axon",
               "Myelin increases the axon diameter, lowering resistance",
+              "Myelin actively pumps ions to push the signal forward",
               "Myelin allows the action potential to skip the refractory period",
-              "Myelin actively pumps ions to push the signal forward"
+              "Myelin adds many more voltage-gated Na+ channels along the entire axon"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Myelin insulates the axon so depolarization spreads without fading and only regenerates at nodes of Ranvier, producing rapid saltatory conduction.\n\n**Why the other options are wrong:**\n- **(B)** Voltage-gated Na+ channels are concentrated at the nodes, not spread everywhere; myelin reduces where regeneration is needed.\n- **(C)** Myelination does not change the axon's diameter.\n- **(D)** The refractory period still occurs and is not skipped.\n- **(E)** Myelin is insulation, not an active ion pump."
+            "explanation": "**Why (A) is correct:** Myelin insulates the axon so depolarization spreads without fading and only regenerates at nodes of Ranvier, producing rapid saltatory conduction.\n\n**Why the other options are wrong:**\n- **(B)** Myelination does not change the axon's diameter.\n- **(C)** Myelin is insulation, not an active ion pump.\n- **(D)** The refractory period still occurs and is not skipped.\n- **(E)** Voltage-gated Na+ channels are concentrated at the nodes, not spread everywhere; myelin reduces where regeneration is needed."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -60,14 +60,14 @@
           "question": {
             "stem": "Epinephrine can cause smooth muscle to either contract or relax depending on the receptor it binds. What best explains this opposite effect of the same neurotransmitter?",
             "options": [
-              "Different receptor types (α versus β adrenergic) trigger different intracellular pathways",
-              "Epinephrine changes its chemical structure at each target tissue",
-              "The neurotransmitter binds ionotropic receptors in one tissue and does not bind anything in the other",
               "Contraction occurs only when epinephrine is released as a hormone rather than a neurotransmitter",
-              "The refractory period differs between the two tissues"
+              "Epinephrine changes its chemical structure at each target tissue",
+              "The refractory period differs between the two tissues",
+              "The neurotransmitter binds ionotropic receptors in one tissue and does not bind anything in the other",
+              "Different receptor types (α versus β adrenergic) trigger different intracellular pathways"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The effect depends entirely on the receptor: α adrenergic receptors cause smooth muscle contraction while β adrenergic receptors cause relaxation.\n\n**Why the other options are wrong:**\n- **(B)** The neurotransmitter molecule itself does not change; only the receptor differs.\n- **(C)** Adrenergic receptors are metabotropic (G protein-coupled), and both tissues have functional receptors.\n- **(D)** The opposite effects are due to receptor type, not whether it acts as a hormone or neurotransmitter.\n- **(E)** The refractory period concerns action potentials, not this receptor-based difference."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The effect depends entirely on the receptor: α adrenergic receptors cause smooth muscle contraction while β adrenergic receptors cause relaxation.\n\n**Why the other options are wrong:**\n- **(A)** The opposite effects are due to receptor type, not whether it acts as a hormone or neurotransmitter.\n- **(B)** The neurotransmitter molecule itself does not change; only the receptor differs.\n- **(C)** The refractory period concerns action potentials, not this receptor-based difference.\n- **(D)** Adrenergic receptors are metabotropic (G protein-coupled), and both tissues have functional receptors."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -78,13 +78,13 @@
             "stem": "What causes a voltage-gated sodium channel at the axon hillock to open?",
             "options": [
               "The membrane depolarizing enough to reach threshold",
+              "The random intrinsic switching of a leak channel",
               "A neurotransmitter (ligand) binding to its extracellular surface",
               "A physical distortion of the cell membrane",
-              "ATP hydrolysis by the sodium-potassium pump",
-              "The random intrinsic switching of a leak channel"
+              "ATP hydrolysis by the sodium-potassium pump"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Voltage-gated channels respond to changes in membrane voltage, opening when depolarization reaches threshold.\n\n**Why the other options are wrong:**\n- **(B)** Ligand binding opens ligand-gated (ionotropic) channels, not voltage-gated ones.\n- **(C)** Physical distortion opens mechanically gated channels (mechanoreceptors).\n- **(D)** ATP hydrolysis powers the Na+/K+ pump, not the opening of voltage-gated channels.\n- **(E)** Random switching describes leakage channels, not voltage gating."
+            "explanation": "**Why (A) is correct:** Voltage-gated channels respond to changes in membrane voltage, opening when depolarization reaches threshold.\n\n**Why the other options are wrong:**\n- **(B)** Random switching describes leakage channels, not voltage gating.\n- **(C)** Ligand binding opens ligand-gated (ionotropic) channels, not voltage-gated ones.\n- **(D)** Physical distortion opens mechanically gated channels (mechanoreceptors).\n- **(E)** ATP hydrolysis powers the Na+/K+ pump, not the opening of voltage-gated channels."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -94,14 +94,14 @@
           "question": {
             "stem": "Which statement best describes temporal summation at a neuron?",
             "options": [
-              "A single presynaptic input fires rapidly in succession so its graded potentials add together over time",
               "Multiple different presynaptic inputs fire simultaneously at separate locations",
-              "Two action potentials merge into a single larger action potential",
               "The membrane hyperpolarizes and then depolarizes at the same instant",
+              "A single presynaptic input fires rapidly in succession so its graded potentials add together over time",
+              "Two action potentials merge into a single larger action potential",
               "Neurotransmitter is released from two axons onto the same receptor at once"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Temporal summation occurs when repeated inputs from the same source arrive close together in time, allowing their graded potentials to add up.\n\n**Why the other options are wrong:**\n- **(B)** Multiple inputs at different locations describes spatial summation.\n- **(C)** Action potentials are all-or-none and do not merge into larger ones.\n- **(D)** This describes membrane voltage changes, not summation of inputs.\n- **(E)** Two axons onto one receptor at once is closer to spatial summation and misstates the mechanism."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Temporal summation occurs when repeated inputs from the same source arrive close together in time, allowing their graded potentials to add up.\n\n**Why the other options are wrong:**\n- **(A)** Multiple inputs at different locations describes spatial summation.\n- **(B)** This describes membrane voltage changes, not summation of inputs.\n- **(D)** Action potentials are all-or-none and do not merge into larger ones.\n- **(E)** Two axons onto one receptor at once is closer to spatial summation and misstates the mechanism."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -111,14 +111,14 @@
           "question": {
             "stem": "In neuronal signalling, the term 'depolarization' refers to a change in the membrane potential that:",
             "options": [
-              "Makes the inside of the cell less negative, moving toward zero or positive",
               "Makes the inside of the cell more negative than the resting value",
+              "Makes the inside of the cell less negative, moving toward zero or positive",
               "Keeps the membrane exactly at -70 mV",
-              "Occurs only when the sodium-potassium pump stops working",
-              "Describes the closing of all ion channels at rest"
+              "Describes the closing of all ion channels at rest",
+              "Occurs only when the sodium-potassium pump stops working"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Depolarization is a shift toward less negative (or positive) values, typically caused by Na+ or Ca2+ entering the cell.\n\n**Why the other options are wrong:**\n- **(B)** Becoming more negative is hyperpolarization, not depolarization.\n- **(C)** Staying at -70 mV describes the resting membrane potential, not a change.\n- **(D)** Depolarization results from ion movement through channels, not pump failure.\n- **(E)** Closed channels at rest describe the resting state, not depolarization."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Depolarization is a shift toward less negative (or positive) values, typically caused by Na+ or Ca2+ entering the cell.\n\n**Why the other options are wrong:**\n- **(A)** Becoming more negative is hyperpolarization, not depolarization.\n- **(C)** Staying at -70 mV describes the resting membrane potential, not a change.\n- **(D)** Closed channels at rest describe the resting state, not depolarization.\n- **(E)** Depolarization results from ion movement through channels, not pump failure."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -130,12 +130,12 @@
             "options": [
               "Smooth muscle contraction and reduced blood flow to the GI tract",
               "Smooth muscle relaxation and increased blood flow to the GI tract",
-              "No effect because the GI tract lacks adrenergic receptors",
               "Immediate contraction of skeletal muscle in the GI wall",
-              "Release of acetylcholine to dilate the vessels"
+              "Release of acetylcholine to dilate the vessels",
+              "No effect because the GI tract lacks adrenergic receptors"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** α adrenergic receptors cause smooth muscle contraction, reducing blood flow to regions such as the GI tract during fight-or-flight.\n\n**Why the other options are wrong:**\n- **(B)** Relaxation and increased flow is the β adrenergic response, not α.\n- **(C)** The GI vasculature does have adrenergic receptors.\n- **(D)** Blood vessels contain smooth muscle, not skeletal muscle.\n- **(E)** Adrenergic receptors respond to epinephrine/norepinephrine, not acetylcholine release."
+            "explanation": "**Why (A) is correct:** α adrenergic receptors cause smooth muscle contraction, reducing blood flow to regions such as the GI tract during fight-or-flight.\n\n**Why the other options are wrong:**\n- **(B)** Relaxation and increased flow is the β adrenergic response, not α.\n- **(C)** Blood vessels contain smooth muscle, not skeletal muscle.\n- **(D)** Adrenergic receptors respond to epinephrine/norepinephrine, not acetylcholine release.\n- **(E)** The GI vasculature does have adrenergic receptors."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -145,14 +145,14 @@
           "question": {
             "stem": "As a graded potential spreads from a synapse toward the axon hillock, what happens to its magnitude?",
             "options": [
-              "It decreases in magnitude as it spreads",
-              "It increases in magnitude as it spreads",
+              "It reverses in polarity as it spreads",
               "It stays exactly the same all the way to the axon hillock",
+              "It increases in magnitude as it spreads",
               "It becomes an all-or-none signal immediately",
-              "It reverses in polarity as it spreads"
+              "It decreases in magnitude as it spreads"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Graded potentials decrease in magnitude as they spread, so only sufficient or summed depolarizations reach the action potential threshold.\n\n**Why the other options are wrong:**\n- **(B)** Graded potentials weaken rather than grow as they travel.\n- **(C)** Their magnitude decays over distance, not stays constant.\n- **(D)** Graded potentials are not all-or-none; only action potentials are.\n- **(E)** They do not reverse polarity while spreading."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Graded potentials decrease in magnitude as they spread, so only sufficient or summed depolarizations reach the action potential threshold.\n\n**Why the other options are wrong:**\n- **(A)** They do not reverse polarity while spreading.\n- **(B)** Their magnitude decays over distance, not stays constant.\n- **(C)** Graded potentials weaken rather than grow as they travel.\n- **(D)** Graded potentials are not all-or-none; only action potentials are."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -162,14 +162,14 @@
           "question": {
             "stem": "Spatial summation differs from temporal summation because spatial summation involves:",
             "options": [
-              "Graded potentials from multiple presynaptic inputs at different locations adding together",
-              "Rapid repeated inputs from a single source over time",
               "A single input reaching threshold on its own",
-              "Only inhibitory inputs cancelling excitatory ones",
-              "Action potentials summing to increase peak voltage"
+              "Rapid repeated inputs from a single source over time",
+              "Graded potentials from multiple presynaptic inputs at different locations adding together",
+              "Action potentials summing to increase peak voltage",
+              "Only inhibitory inputs cancelling excitatory ones"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Spatial summation adds together graded potentials arriving simultaneously from different locations on the neuron.\n\n**Why the other options are wrong:**\n- **(B)** Rapid repeated inputs from one source over time is temporal summation.\n- **(C)** A single input reaching threshold alone is not summation.\n- **(D)** Spatial summation is not limited to inhibitory inputs.\n- **(E)** Action potentials are all-or-none and do not sum to raise peak voltage."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Spatial summation adds together graded potentials arriving simultaneously from different locations on the neuron.\n\n**Why the other options are wrong:**\n- **(A)** A single input reaching threshold alone is not summation.\n- **(B)** Rapid repeated inputs from one source over time is temporal summation.\n- **(D)** Action potentials are all-or-none and do not sum to raise peak voltage.\n- **(E)** Spatial summation is not limited to inhibitory inputs."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -179,14 +179,14 @@
           "question": {
             "stem": "During chemical synaptic transmission, what directly triggers the release of neurotransmitter from the synaptic end bulb?",
             "options": [
-              "The influx of Ca2+ through voltage-gated calcium channels",
-              "The binding of neurotransmitter to a postsynaptic receptor",
+              "The inactivation of voltage-gated Na+ channels",
               "The efflux of K+ through leak channels",
               "The opening of nicotinic receptors on the presynaptic membrane",
-              "The inactivation of voltage-gated Na+ channels"
+              "The binding of neurotransmitter to a postsynaptic receptor",
+              "The influx of Ca2+ through voltage-gated calcium channels"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** When the action potential reaches the axon terminal, voltage-gated Ca2+ channels open and the resulting Ca2+ influx causes vesicles to merge with the presynaptic membrane and release neurotransmitter by exocytosis.\n\n**Why the other options are wrong:**\n- **(B)** Postsynaptic receptor binding happens after release, on the other cell.\n- **(C)** K+ efflux through leak channels helps set the resting potential, not vesicle release.\n- **(D)** Nicotinic receptors are on the postsynaptic membrane, not triggering presynaptic release.\n- **(E)** Na+ channel inactivation ends depolarization; it does not cause exocytosis."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** When the action potential reaches the axon terminal, voltage-gated Ca2+ channels open and the resulting Ca2+ influx causes vesicles to merge with the presynaptic membrane and release neurotransmitter by exocytosis.\n\n**Why the other options are wrong:**\n- **(A)** Na+ channel inactivation ends depolarization; it does not cause exocytosis.\n- **(B)** K+ efflux through leak channels helps set the resting potential, not vesicle release.\n- **(C)** Nicotinic receptors are on the postsynaptic membrane, not triggering presynaptic release.\n- **(D)** Postsynaptic receptor binding happens after release, on the other cell."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -199,11 +199,11 @@
               "A stronger stimulus increases the frequency of action potentials, not their amplitude",
               "A stronger stimulus produces a larger-amplitude action potential",
               "A stronger stimulus lowers the peak voltage of each action potential",
-              "A stronger stimulus makes the action potential travel more slowly",
-              "A stronger stimulus prevents any action potential from occurring"
+              "A stronger stimulus prevents any action potential from occurring",
+              "A stronger stimulus makes the action potential travel more slowly"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** All action potentials peak at the same voltage (+30 mV); a stronger stimulus encodes greater intensity by initiating more action potentials per unit time, increasing frequency rather than amplitude.\n\n**Why the other options are wrong:**\n- **(B)** Amplitude is fixed and does not grow with stimulus strength.\n- **(C)** Peak voltage is constant regardless of stimulus size.\n- **(D)** Conduction speed depends on myelination and diameter, not stimulus strength.\n- **(E)** A stronger stimulus makes action potentials more likely, not less."
+            "explanation": "**Why (A) is correct:** All action potentials peak at the same voltage (+30 mV); a stronger stimulus encodes greater intensity by initiating more action potentials per unit time, increasing frequency rather than amplitude.\n\n**Why the other options are wrong:**\n- **(B)** Amplitude is fixed and does not grow with stimulus strength.\n- **(C)** Peak voltage is constant regardless of stimulus size.\n- **(D)** A stronger stimulus makes action potentials more likely, not less.\n- **(E)** Conduction speed depends on myelination and diameter, not stimulus strength."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -213,14 +213,14 @@
           "question": {
             "stem": "Why do myelinated axons conduct action potentials faster than unmyelinated axons of the same diameter?",
             "options": [
-              "Myelin insulates the axon so depolarization only needs to be regenerated at the nodes of Ranvier",
-              "Myelin adds extra voltage-gated Na+ channels along the entire axon",
               "Myelin increases the number of leak channels, speeding repolarization",
               "Myelin removes the refractory period entirely",
+              "Myelin insulates the axon so depolarization only needs to be regenerated at the nodes of Ranvier",
+              "Myelin adds extra voltage-gated Na+ channels along the entire axon",
               "Myelin increases the concentration gradient of Na+"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Myelin acts as insulation so the depolarization spreads through the internodes without much fading, and the signal is only regenerated at the nodes of Ranvier (saltatory conduction), which is much faster than continuous conduction.\n\n**Why the other options are wrong:**\n- **(B)** Voltage-gated Na+ channels are concentrated at the nodes, not spread along the myelinated segments.\n- **(C)** Myelin does not add leak channels; leak K+ channels maintain resting potential.\n- **(D)** The refractory period still exists and helps ensure one-way propagation.\n- **(E)** Myelin does not alter ion concentration gradients."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Myelin acts as insulation so the depolarization spreads through the internodes without much fading, and the signal is only regenerated at the nodes of Ranvier (saltatory conduction), which is much faster than continuous conduction.\n\n**Why the other options are wrong:**\n- **(A)** Myelin does not add leak channels; leak K+ channels maintain resting potential.\n- **(B)** The refractory period still exists and helps ensure one-way propagation.\n- **(D)** Voltage-gated Na+ channels are concentrated at the nodes, not spread along the myelinated segments.\n- **(E)** Myelin does not alter ion concentration gradients."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -230,14 +230,14 @@
           "question": {
             "stem": "What is the primary function of the sodium-potassium pump in a neuron?",
             "options": [
-              "It uses ATP to move Na+ out of and K+ into the cell, maintaining the ion concentration gradients",
               "It opens in response to a ligand binding to allow rapid Na+ influx",
-              "It generates the rising phase of the action potential",
+              "It uses ATP to move Na+ out of and K+ into the cell, maintaining the ion concentration gradients",
               "It randomly opens and closes to set the resting potential",
-              "It releases neurotransmitter into the synaptic cleft"
+              "It releases neurotransmitter into the synaptic cleft",
+              "It generates the rising phase of the action potential"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The Na+/K+ pump is an ATPase that actively transports Na+ out and K+ in against their gradients, maintaining the concentration gradients that underlie the resting and action potentials.\n\n**Why the other options are wrong:**\n- **(B)** Ligand-gated channels, not the pump, open in response to ligand binding.\n- **(C)** The rising phase is caused by voltage-gated Na+ channels opening.\n- **(D)** Leak channels, not the pump, open and close randomly.\n- **(E)** Neurotransmitter release is by exocytosis of vesicles, not the pump."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The Na+/K+ pump is an ATPase that actively transports Na+ out and K+ in against their gradients, maintaining the concentration gradients that underlie the resting and action potentials.\n\n**Why the other options are wrong:**\n- **(A)** Ligand-gated channels, not the pump, open in response to ligand binding.\n- **(C)** Leak channels, not the pump, open and close randomly.\n- **(D)** Neurotransmitter release is by exocytosis of vesicles, not the pump.\n- **(E)** The rising phase is caused by voltage-gated Na+ channels opening."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -248,13 +248,13 @@
             "stem": "In neuronal signalling terminology, what is a 'graded potential'?",
             "options": [
               "A local change in membrane voltage whose size depends on the strength of the stimulus",
-              "A signal that always reaches the same fixed peak voltage regardless of stimulus",
               "The steady baseline voltage of a neuron at rest",
-              "The jumping of a signal from one node of Ranvier to the next",
-              "A chemical released from the axon terminal"
+              "A signal that always reaches the same fixed peak voltage regardless of stimulus",
+              "A chemical released from the axon terminal",
+              "The jumping of a signal from one node of Ranvier to the next"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A graded potential is a temporary, local change in membrane voltage (usually in the dendrites) whose magnitude is proportional to the strength of the stimulus.\n\n**Why the other options are wrong:**\n- **(B)** A fixed-peak, size-independent signal describes an action potential, which is all-or-none.\n- **(C)** The steady baseline voltage is the resting membrane potential.\n- **(D)** Jumping between nodes is saltatory conduction.\n- **(E)** A chemical released from the terminal is a neurotransmitter."
+            "explanation": "**Why (A) is correct:** A graded potential is a temporary, local change in membrane voltage (usually in the dendrites) whose magnitude is proportional to the strength of the stimulus.\n\n**Why the other options are wrong:**\n- **(B)** The steady baseline voltage is the resting membrane potential.\n- **(C)** A fixed-peak, size-independent signal describes an action potential, which is all-or-none.\n- **(D)** A chemical released from the terminal is a neurotransmitter.\n- **(E)** Jumping between nodes is saltatory conduction."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -264,14 +264,14 @@
           "question": {
             "stem": "What causes voltage-gated Na+ channels to become inactivated during an action potential?",
             "options": [
-              "The membrane reaching a positive voltage at the peak of depolarization",
               "A neurotransmitter binding to the extracellular surface of the channel",
+              "The membrane reaching a positive voltage at the peak of depolarization",
               "A physical distortion of the cell membrane",
-              "The efflux of K+ through the same channel",
-              "The return of the membrane to its resting voltage"
+              "The return of the membrane to its resting voltage",
+              "The efflux of K+ through the same channel"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** As the membrane potential reaches its positive peak (~+30 mV), the voltage-gated Na+ channels become inactivated, preventing further Na+ entry until the membrane repolarizes.\n\n**Why the other options are wrong:**\n- **(B)** Ligand binding opens ligand-gated channels, not voltage-gated Na+ inactivation.\n- **(C)** Physical distortion opens mechanically gated channels.\n- **(D)** K+ efflux occurs through separate voltage-gated K+ channels.\n- **(E)** Return to resting voltage resets the channel to 'closed,' ending inactivation rather than causing it."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** As the membrane potential reaches its positive peak (~+30 mV), the voltage-gated Na+ channels become inactivated, preventing further Na+ entry until the membrane repolarizes.\n\n**Why the other options are wrong:**\n- **(A)** Ligand binding opens ligand-gated channels, not voltage-gated Na+ inactivation.\n- **(C)** Physical distortion opens mechanically gated channels.\n- **(D)** Return to resting voltage resets the channel to 'closed,' ending inactivation rather than causing it.\n- **(E)** K+ efflux occurs through separate voltage-gated K+ channels."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -281,14 +281,14 @@
           "question": {
             "stem": "Which best describes temporal summation at a synapse?",
             "options": [
-              "Repeated firing from a single presynaptic input arriving in rapid succession adds up to reach threshold",
+              "The blocking of backward signal spread during the refractory period",
               "Signals from several different presynaptic inputs arriving at the same time add together",
               "A single large action potential fired all at once",
-              "The removal of neurotransmitter from the synaptic cleft by enzymes",
-              "The blocking of backward signal spread during the refractory period"
+              "Repeated firing from a single presynaptic input arriving in rapid succession adds up to reach threshold",
+              "The removal of neurotransmitter from the synaptic cleft by enzymes"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Temporal summation occurs when a single presynaptic neuron fires repeatedly over a short time, so successive graded potentials build on one another to reach threshold.\n\n**Why the other options are wrong:**\n- **(B)** Adding inputs from multiple locations at the same time is spatial summation.\n- **(C)** A single all-at-once action potential is not summation of graded potentials.\n- **(D)** Neurotransmitter removal ends signalling; it is not summation.\n- **(E)** Blocking backward spread is a feature of the refractory period, not summation."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Temporal summation occurs when a single presynaptic neuron fires repeatedly over a short time, so successive graded potentials build on one another to reach threshold.\n\n**Why the other options are wrong:**\n- **(A)** Blocking backward spread is a feature of the refractory period, not summation.\n- **(B)** Adding inputs from multiple locations at the same time is spatial summation.\n- **(C)** A single all-at-once action potential is not summation of graded potentials.\n- **(E)** Neurotransmitter removal ends signalling; it is not summation."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -299,13 +299,13 @@
             "stem": "How does a thermoreceptor open its ion channel in response to a stimulus?",
             "options": [
               "A temperature change alters the channel protein's structure, physically opening it",
-              "A neurotransmitter binds to the channel's extracellular receptor site",
-              "A change in membrane voltage triggers the channel to open",
               "The Na+/K+ pump uses ATP to force the channel open",
-              "The channel opens and closes at random with no stimulus"
+              "A change in membrane voltage triggers the channel to open",
+              "The channel opens and closes at random with no stimulus",
+              "A neurotransmitter binds to the channel's extracellular receptor site"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Thermoreceptors work like mechanically gated channels—a change in local tissue temperature affects the protein's structure and physically opens the channel.\n\n**Why the other options are wrong:**\n- **(B)** Ligand binding describes ligand-gated (ionotropic) channels.\n- **(C)** Voltage-triggered opening describes voltage-gated channels.\n- **(D)** The Na+/K+ pump transports ions; it does not open gated channels.\n- **(E)** Random opening with no stimulus describes leak channels."
+            "explanation": "**Why (A) is correct:** Thermoreceptors work like mechanically gated channels—a change in local tissue temperature affects the protein's structure and physically opens the channel.\n\n**Why the other options are wrong:**\n- **(B)** The Na+/K+ pump transports ions; it does not open gated channels.\n- **(C)** Voltage-triggered opening describes voltage-gated channels.\n- **(D)** Random opening with no stimulus describes leak channels.\n- **(E)** Ligand binding describes ligand-gated (ionotropic) channels."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -315,14 +315,14 @@
           "question": {
             "stem": "Epinephrine can cause smooth muscle contraction in one tissue but relaxation in another. What explains this difference?",
             "options": [
-              "The effect depends on which adrenergic receptor type (α or β) is present on the target cell",
+              "The speed of action potential propagation differs between tissues",
               "Epinephrine is chemically different in each tissue",
               "The concentration gradient of epinephrine differs between tissues",
               "Epinephrine acts only as an ionotropic receptor ligand",
-              "The speed of action potential propagation differs between tissues"
+              "The effect depends on which adrenergic receptor type (α or β) is present on the target cell"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The same neurotransmitter can have opposite effects because α adrenergic receptors cause smooth muscle contraction while β adrenergic receptors cause relaxation—the receptor type determines the response.\n\n**Why the other options are wrong:**\n- **(B)** Epinephrine is the same molecule in every tissue.\n- **(C)** The differing effect is due to receptor type, not epinephrine concentration.\n- **(D)** Adrenergic receptors are metabotropic (G protein-coupled), not ionotropic.\n- **(E)** Propagation speed does not determine whether smooth muscle contracts or relaxes."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The same neurotransmitter can have opposite effects because α adrenergic receptors cause smooth muscle contraction while β adrenergic receptors cause relaxation—the receptor type determines the response.\n\n**Why the other options are wrong:**\n- **(A)** Propagation speed does not determine whether smooth muscle contracts or relaxes.\n- **(B)** Epinephrine is the same molecule in every tissue.\n- **(C)** The differing effect is due to receptor type, not epinephrine concentration.\n- **(D)** Adrenergic receptors are metabotropic (G protein-coupled), not ionotropic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -332,14 +332,14 @@
           "question": {
             "stem": "Which of the following neurotransmitters is an amino acid neurotransmitter?",
             "options": [
-              "Glutamate",
               "Serotonin",
-              "Acetylcholine",
               "Epinephrine",
+              "Acetylcholine",
+              "Glutamate",
               "Beta-endorphin"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Glutamate is an amino acid neurotransmitter and the main excitatory transmitter in the central nervous system.\n\n**Why the other options are wrong:**\n- **(B)** Serotonin is a biogenic amine made from tryptophan.\n- **(C)** Acetylcholine belongs to the cholinergic system, not the amino acid category.\n- **(D)** Epinephrine is a biogenic amine (catecholamine) made from tyrosine.\n- **(E)** Beta-endorphin is a neuropeptide."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Glutamate is an amino acid neurotransmitter and the main excitatory transmitter in the central nervous system.\n\n**Why the other options are wrong:**\n- **(A)** Serotonin is a biogenic amine made from tryptophan.\n- **(B)** Epinephrine is a biogenic amine (catecholamine) made from tyrosine.\n- **(C)** Acetylcholine belongs to the cholinergic system, not the amino acid category.\n- **(E)** Beta-endorphin is a neuropeptide."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -349,14 +349,14 @@
           "question": {
             "stem": "In this unit, what is the correct term for a small, localized change in membrane voltage whose size depends on the strength of the stimulus?",
             "options": [
-              "Action potential",
-              "Graded potential",
               "Resting membrane potential",
               "Refractory period",
-              "Saltatory conduction"
+              "Action potential",
+              "Saltatory conduction",
+              "Graded potential"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A graded potential is a temporary, local change in membrane voltage whose magnitude is proportional to the strength of the stimulus.\n\n**Why the other options are wrong:**\n- **(A)** An action potential is all-or-none and does not vary in size with stimulus strength.\n- **(C)** The resting membrane potential is the stable baseline voltage (about -70 mV), not a stimulus-driven change.\n- **(D)** The refractory period is the time during which a new action potential cannot be initiated.\n- **(E)** Saltatory conduction is the mode of action potential propagation along myelinated axons."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A graded potential is a temporary, local change in membrane voltage whose magnitude is proportional to the strength of the stimulus.\n\n**Why the other options are wrong:**\n- **(A)** The resting membrane potential is the stable baseline voltage (about -70 mV), not a stimulus-driven change.\n- **(B)** The refractory period is the time during which a new action potential cannot be initiated.\n- **(C)** An action potential is all-or-none and does not vary in size with stimulus strength.\n- **(D)** Saltatory conduction is the mode of action potential propagation along myelinated axons."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -366,14 +366,14 @@
           "question": {
             "stem": "Two graded potentials that arrive at the same synapse very close together in time, adding onto one another to reach threshold, is an example of:",
             "options": [
-              "Temporal summation",
-              "Spatial summation",
+              "Hyperpolarization",
               "Saltatory conduction",
+              "Temporal summation",
               "Sodium channel inactivation",
-              "Hyperpolarization"
+              "Spatial summation"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Temporal summation is the adding together of graded potentials that occur close together in time at the same location.\n\n**Why the other options are wrong:**\n- **(B)** Spatial summation involves inputs from different locations arriving at the same time, not repeated inputs at one site.\n- **(C)** Saltatory conduction is the jumping of action potentials between nodes of Ranvier, unrelated to summation.\n- **(D)** Sodium channel inactivation is part of action potential termination, not summation.\n- **(E)** Hyperpolarization is a shift to a more negative voltage, not a summation phenomenon."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Temporal summation is the adding together of graded potentials that occur close together in time at the same location.\n\n**Why the other options are wrong:**\n- **(A)** Hyperpolarization is a shift to a more negative voltage, not a summation phenomenon.\n- **(B)** Saltatory conduction is the jumping of action potentials between nodes of Ranvier, unrelated to summation.\n- **(D)** Sodium channel inactivation is part of action potential termination, not summation.\n- **(E)** Spatial summation involves inputs from different locations arriving at the same time, not repeated inputs at one site."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -383,14 +383,14 @@
           "question": {
             "stem": "Graded potentials arriving simultaneously from several different presynaptic inputs at different locations on a neuron, combining to reach threshold, is an example of:",
             "options": [
-              "Spatial summation",
+              "Repolarization",
               "Temporal summation",
-              "Continuous conduction",
+              "Spatial summation",
               "The refractory period",
-              "Repolarization"
+              "Continuous conduction"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Spatial summation is the combining of graded potentials arriving at the same time from different spatial locations on the neuron.\n\n**Why the other options are wrong:**\n- **(B)** Temporal summation involves repeated inputs at one location over time, not multiple locations at once.\n- **(C)** Continuous conduction describes action potential propagation along unmyelinated axons.\n- **(D)** The refractory period is when a new action potential cannot be initiated.\n- **(E)** Repolarization is the return of membrane voltage toward rest, not a summation process."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Spatial summation is the combining of graded potentials arriving at the same time from different spatial locations on the neuron.\n\n**Why the other options are wrong:**\n- **(A)** Repolarization is the return of membrane voltage toward rest, not a summation process.\n- **(B)** Temporal summation involves repeated inputs at one location over time, not multiple locations at once.\n- **(D)** The refractory period is when a new action potential cannot be initiated.\n- **(E)** Continuous conduction describes action potential propagation along unmyelinated axons."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -400,14 +400,14 @@
           "question": {
             "stem": "Epinephrine can cause smooth muscle to contract in one tissue but relax in another. What best explains this difference?",
             "options": [
-              "The type of adrenergic receptor present on the target tissue",
-              "The concentration of epinephrine released",
               "The distance the epinephrine must diffuse",
-              "The speed of the presynaptic action potential",
-              "The number of leak channels in the target cell"
+              "The number of leak channels in the target cell",
+              "The concentration of epinephrine released",
+              "The type of adrenergic receptor present on the target tissue",
+              "The speed of the presynaptic action potential"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The effect of a neurotransmitter is entirely dependent on the receptor; α adrenergic receptors cause contraction while β adrenergic receptors cause relaxation.\n\n**Why the other options are wrong:**\n- **(B)** Concentration changes intensity but does not reverse the direction of the response.\n- **(C)** Diffusion distance affects timing, not whether the tissue contracts or relaxes.\n- **(D)** Action potential speed does not determine the direction of the target tissue's response.\n- **(E)** Leak channels set resting potential and do not determine the specific adrenergic response."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The effect of a neurotransmitter is entirely dependent on the receptor; α adrenergic receptors cause contraction while β adrenergic receptors cause relaxation.\n\n**Why the other options are wrong:**\n- **(A)** Diffusion distance affects timing, not whether the tissue contracts or relaxes.\n- **(B)** Leak channels set resting potential and do not determine the specific adrenergic response.\n- **(C)** Concentration changes intensity but does not reverse the direction of the response.\n- **(E)** Action potential speed does not determine the direction of the target tissue's response."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -417,14 +417,14 @@
           "question": {
             "stem": "Compared to an unmyelinated axon of the same diameter, a myelinated axon conducts action potentials faster because:",
             "options": [
+              "Myelin reduces the concentration gradient for sodium",
+              "The myelin allows ions to pass directly through the membrane everywhere",
               "The signal jumps between nodes of Ranvier without being regenerated along myelinated segments",
               "It has more leak potassium channels along its length",
-              "The myelin allows ions to pass directly through the membrane everywhere",
-              "It has voltage-gated sodium channels evenly distributed along the whole axon",
-              "Myelin reduces the concentration gradient for sodium"
+              "It has voltage-gated sodium channels evenly distributed along the whole axon"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Myelin insulates the axon so depolarization spreads without fading and only needs regeneration at the nodes of Ranvier, producing fast saltatory conduction.\n\n**Why the other options are wrong:**\n- **(B)** Extra leak channels would not speed conduction; they help set resting potential.\n- **(C)** Myelin restricts, rather than facilitates, ion movement along myelinated segments.\n- **(D)** Voltage-gated Na+ channels are concentrated at nodes, not spread evenly, in myelinated axons.\n- **(E)** Myelin does not change the sodium concentration gradient."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Myelin insulates the axon so depolarization spreads without fading and only needs regeneration at the nodes of Ranvier, producing fast saltatory conduction.\n\n**Why the other options are wrong:**\n- **(A)** Myelin does not change the sodium concentration gradient.\n- **(B)** Myelin restricts, rather than facilitates, ion movement along myelinated segments.\n- **(D)** Extra leak channels would not speed conduction; they help set resting potential.\n- **(E)** Voltage-gated Na+ channels are concentrated at nodes, not spread evenly, in myelinated axons."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -434,14 +434,14 @@
           "question": {
             "stem": "Which term refers to the gaps in the myelin coverage of an axon where voltage-gated sodium channels are concentrated?",
             "options": [
-              "Nodes of Ranvier",
-              "Axon hillock",
-              "Synaptic cleft",
               "Synaptic end bulbs",
-              "Dendrites"
+              "Nodes of Ranvier",
+              "Dendrites",
+              "Axon hillock",
+              "Synaptic cleft"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Nodes of Ranvier are the gaps in myelin coverage where voltage-gated Na+ (and K+) channels are located, enabling regeneration of the action potential.\n\n**Why the other options are wrong:**\n- **(B)** The axon hillock is where the action potential is first generated, not a gap in myelin.\n- **(C)** The synaptic cleft is the gap between two neurons at a synapse.\n- **(D)** Synaptic end bulbs are the swellings at axon terminals that release neurotransmitter.\n- **(E)** Dendrites receive incoming signals and are not gaps in myelin."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Nodes of Ranvier are the gaps in myelin coverage where voltage-gated Na+ (and K+) channels are located, enabling regeneration of the action potential.\n\n**Why the other options are wrong:**\n- **(A)** Synaptic end bulbs are the swellings at axon terminals that release neurotransmitter.\n- **(C)** Dendrites receive incoming signals and are not gaps in myelin.\n- **(D)** The axon hillock is where the action potential is first generated, not a gap in myelin.\n- **(E)** The synaptic cleft is the gap between two neurons at a synapse."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -451,14 +451,14 @@
           "question": {
             "stem": "Which of the following neurotransmitters is classified as an amino acid neurotransmitter?",
             "options": [
-              "Glutamate",
               "Serotonin",
-              "Acetylcholine",
               "Epinephrine",
+              "Acetylcholine",
+              "Glutamate",
               "Beta-endorphin"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Glutamate is an amino acid neurotransmitter and the main excitatory transmitter in the central nervous system.\n\n**Why the other options are wrong:**\n- **(B)** Serotonin is a biogenic amine made from tryptophan.\n- **(C)** Acetylcholine belongs to the cholinergic system, not the amino acid category.\n- **(D)** Epinephrine is a biogenic amine (catecholamine) made from tyrosine.\n- **(E)** Beta-endorphin is a neuropeptide, not a single amino acid."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Glutamate is an amino acid neurotransmitter and the main excitatory transmitter in the central nervous system.\n\n**Why the other options are wrong:**\n- **(A)** Serotonin is a biogenic amine made from tryptophan.\n- **(B)** Epinephrine is a biogenic amine (catecholamine) made from tyrosine.\n- **(C)** Acetylcholine belongs to the cholinergic system, not the amino acid category.\n- **(E)** Beta-endorphin is a neuropeptide, not a single amino acid."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -468,14 +468,14 @@
           "question": {
             "stem": "In a metabotropic receptor pathway, what is the role of the effector protein such as adenylyl cyclase?",
             "options": [
-              "It catalyzes the generation of a second messenger",
-              "It binds the neurotransmitter on the cell surface",
               "It hydrolyzes GTP to move across the membrane",
+              "It pumps sodium and potassium against their gradients",
               "It acts as the ligand-gated ion channel",
-              "It pumps sodium and potassium against their gradients"
+              "It catalyzes the generation of a second messenger",
+              "It binds the neurotransmitter on the cell surface"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The effector protein is usually an enzyme (e.g., adenylyl cyclase) that catalyzes the production of a second messenger such as cAMP.\n\n**Why the other options are wrong:**\n- **(B)** The neurotransmitter (first messenger) binds the G protein-coupled receptor, not the effector.\n- **(C)** GTP hydrolysis and movement to the effector are functions of the G protein.\n- **(D)** Ligand-gated ion channels are ionotropic receptors, a different receptor class.\n- **(E)** Pumping ions against gradients is the job of the sodium-potassium pump."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The effector protein is usually an enzyme (e.g., adenylyl cyclase) that catalyzes the production of a second messenger such as cAMP.\n\n**Why the other options are wrong:**\n- **(A)** GTP hydrolysis and movement to the effector are functions of the G protein.\n- **(B)** Pumping ions against gradients is the job of the sodium-potassium pump.\n- **(C)** Ligand-gated ion channels are ionotropic receptors, a different receptor class.\n- **(E)** The neurotransmitter (first messenger) binds the G protein-coupled receptor, not the effector."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -485,14 +485,14 @@
           "question": {
             "stem": "Which change to an axon would increase the conduction velocity of its action potentials?",
             "options": [
+              "Increasing internal resistance to charge flow",
               "Increasing the diameter of the axon",
-              "Decreasing the diameter of the axon",
               "Removing its myelin sheath",
-              "Reducing the number of nodes of Ranvier's channels",
-              "Increasing internal resistance to charge flow"
+              "Decreasing the diameter of the axon",
+              "Reducing the number of nodes of Ranvier's channels"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Wider axons offer less resistance to the spread of charge, so depolarization travels faster, increasing conduction velocity.\n\n**Why the other options are wrong:**\n- **(B)** A narrower axon has greater resistance and slower conduction.\n- **(C)** Removing myelin eliminates saltatory conduction and slows the signal.\n- **(D)** Fewer channels at nodes would impair regeneration and slow conduction.\n- **(E)** Greater internal resistance slows the spread of charge, reducing velocity."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Wider axons offer less resistance to the spread of charge, so depolarization travels faster, increasing conduction velocity.\n\n**Why the other options are wrong:**\n- **(A)** Greater internal resistance slows the spread of charge, reducing velocity.\n- **(C)** Removing myelin eliminates saltatory conduction and slows the signal.\n- **(D)** A narrower axon has greater resistance and slower conduction.\n- **(E)** Fewer channels at nodes would impair regeneration and slow conduction."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -502,14 +502,14 @@
           "question": {
             "stem": "How does the nervous system encode a stronger stimulus, given that action potentials are 'all or none'?",
             "options": [
-              "By generating action potentials at a higher frequency",
-              "By generating larger-amplitude action potentials",
-              "By raising the peak voltage of each action potential",
               "By lowering the resting membrane potential",
-              "By slowing conduction along the axon"
+              "By generating larger-amplitude action potentials",
+              "By slowing conduction along the axon",
+              "By raising the peak voltage of each action potential",
+              "By generating action potentials at a higher frequency"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Because action potentials are all-or-none and all peak at the same voltage, a stronger stimulus is encoded by initiating action potentials more frequently, not by making them bigger.\n\n**Why the other options are wrong:**\n- **(B)** All action potentials are the same amplitude; they do not get larger with stronger stimuli.\n- **(C)** All action potentials peak at the same voltage (+30 mV).\n- **(D)** Resting membrane potential is not altered to encode stimulus strength.\n- **(E)** Conduction speed depends on myelination and diameter, not on stimulus intensity."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Because action potentials are all-or-none and all peak at the same voltage, a stronger stimulus is encoded by initiating action potentials more frequently, not by making them bigger.\n\n**Why the other options are wrong:**\n- **(A)** Resting membrane potential is not altered to encode stimulus strength.\n- **(B)** All action potentials are the same amplitude; they do not get larger with stronger stimuli.\n- **(C)** Conduction speed depends on myelination and diameter, not on stimulus intensity.\n- **(D)** All action potentials peak at the same voltage (+30 mV)."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1242,26 +1242,31 @@
         {
           "id": "u17-basic-fr-01",
           "question": {
-            "prompt": "Glutamate and GABA are both amino acid neurotransmitters. State the structural category each belongs to, confirming that both are classified as amino acid neurotransmitters, and give the primary function (excitatory or inhibitory, and where relevant, location) of each in the central nervous system.",
+            "prompt": "Glutamate and GABA are two major neurotransmitters of the central nervous system. State the structural (chemical) category each belongs to, and give the primary function of each — excitatory or inhibitory — including where in the CNS each mainly acts.",
             "total_marks": 4,
             "rubric": [
               {
                 "points": 1,
-                "criterion": "Correctly classifies both glutamate and GABA as amino acid neurotransmitters."
+                "criterion": "Classifies glutamate as an amino acid neurotransmitter."
               },
               {
                 "points": 1,
-                "criterion": "States that glutamate is the main excitatory neurotransmitter in the CNS."
+                "criterion": "Classifies GABA as an amino acid neurotransmitter."
               },
               {
-                "points": 2,
-                "criterion": "States that GABA is inhibitory, functioning as the main inhibitory neurotransmitter in the brain."
+                "points": 1,
+                "criterion": "States that glutamate is excitatory in the CNS (accept 'the main/primary excitatory neurotransmitter'; do not require the word 'main')."
+              },
+              {
+                "points": 1,
+                "criterion": "States that GABA is inhibitory, acting mainly in the brain (accept 'the main/primary inhibitory neurotransmitter'; do not require the word 'main')."
               }
             ],
-            "model_answer": "Both glutamate and GABA are amino acid neurotransmitters (1 mark). Glutamate is the main excitatory neurotransmitter of the central nervous system (1 mark). GABA (gamma-aminobutyric acid) is inhibitory and serves as the main inhibitory neurotransmitter in the brain (2 marks)."
+            "model_answer": "Both glutamate and GABA are amino acid neurotransmitters (1 mark each for classifying glutamate and GABA). Glutamate is the main excitatory neurotransmitter of the central nervous system (1 mark). GABA (gamma-aminobutyric acid) is the main inhibitory neurotransmitter, acting chiefly in the brain (1 mark)."
           },
           "gen_model": "claude-opus-4-8",
-          "verified": "pass"
+          "verified": "pass",
+          "verify_note": "Hand-revised 2026-08-12 after instructor feedback: removed answer giveaway from stem, balanced mark weights, rubric no longer requires unasked wording."
         },
         {
           "id": "u17-basic-fr-02",
@@ -1480,14 +1485,14 @@
           "question": {
             "stem": "A student reads that a channel is described as an 'ionotropic receptor.' Which of the following statements correctly uses the unit's terminology to describe this structure?",
             "options": [
-              "It is a ligand-gated ion channel that opens when a neurotransmitter binds, allowing ions to cross and change the membrane's charge",
-              "It is a voltage-gated channel that opens only when the membrane depolarizes past threshold",
               "It is a G protein-coupled receptor that generates a second messenger such as cAMP",
-              "It is a leak channel that opens and closes at random regardless of ligand binding",
-              "It is a pump that uses ATP to move ions against their gradients"
+              "It is a ligand-gated ion channel that opens when a neurotransmitter binds, allowing ions to cross and change the membrane's charge",
+              "It is a pump that uses ATP to move ions against their gradients",
+              "It is a voltage-gated channel that opens only when the membrane depolarizes past threshold",
+              "It is a leak channel that opens and closes at random regardless of ligand binding"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** An ionotropic receptor is defined in the unit as a ligand-gated channel that opens when a ligand (neurotransmitter) binds, allowing ions to cross and alter the membrane charge.\n\n**Why the other options are wrong:**\n- **(B)** A voltage-gated channel responds to voltage change, not ligand binding, and is not termed ionotropic.\n- **(C)** A G protein-coupled receptor is a metabotropic, not ionotropic, receptor.\n- **(D)** A leak channel is randomly gated and is not a receptor for a ligand.\n- **(E)** A pump (e.g., Na+/K+ ATPase) is an active transporter, not an ionotropic receptor."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** An ionotropic receptor is defined in the unit as a ligand-gated channel that opens when a ligand (neurotransmitter) binds, allowing ions to cross and alter the membrane charge.\n\n**Why the other options are wrong:**\n- **(A)** A G protein-coupled receptor is a metabotropic, not ionotropic, receptor.\n- **(C)** A pump (e.g., Na+/K+ ATPase) is an active transporter, not an ionotropic receptor.\n- **(D)** A voltage-gated channel responds to voltage change, not ligand binding, and is not termed ionotropic.\n- **(E)** A leak channel is randomly gated and is not a receptor for a ligand."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1497,14 +1502,14 @@
           "question": {
             "stem": "During which phase of an action potential are voltage-gated potassium channels primarily responsible for the change in membrane voltage, and what movement of ions occurs?",
             "options": [
-              "Repolarization, as K+ exits the cell down its concentration and electrical gradients",
               "Depolarization, as K+ enters the cell down its concentration gradient",
-              "Repolarization, as K+ enters the cell driven by the electrical gradient",
               "Depolarization, as Na+ exits through K+ channels",
-              "Resting state, as K+ is pumped in by the Na+/K+ pump"
+              "Resting state, as K+ is pumped in by the Na+/K+ pump",
+              "Repolarization, as K+ exits the cell down its concentration and electrical gradients",
+              "Repolarization, as K+ enters the cell driven by the electrical gradient"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** When voltage-gated K+ channels open at the peak of the action potential, K+ leaves the cell down both its concentration gradient and the electrical gradient (inner positivity repels it), driving repolarization.\n\n**Why the other options are wrong:**\n- **(B)** K+ leaves rather than enters, and this occurs during repolarization, not depolarization.\n- **(C)** K+ exits, not enters, during repolarization.\n- **(D)** Depolarization is driven by Na+ influx through Na+ channels, not by movement through K+ channels.\n- **(E)** The Na+/K+ pump acts continuously and is not the voltage-gated K+ channel responsible for repolarization."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** When voltage-gated K+ channels open at the peak of the action potential, K+ leaves the cell down both its concentration gradient and the electrical gradient (inner positivity repels it), driving repolarization.\n\n**Why the other options are wrong:**\n- **(A)** K+ leaves rather than enters, and this occurs during repolarization, not depolarization.\n- **(B)** Depolarization is driven by Na+ influx through Na+ channels, not by movement through K+ channels.\n- **(C)** The Na+/K+ pump acts continuously and is not the voltage-gated K+ channel responsible for repolarization.\n- **(E)** K+ exits, not enters, during repolarization."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1514,14 +1519,14 @@
           "question": {
             "stem": "Two graded potentials arrive at a neuron. In one case, several signals arrive at the same synapse in rapid succession before the first fades; in another, signals arrive simultaneously at multiple different synapses. How are these two situations best distinguished?",
             "options": [
-              "The rapid-succession case is temporal summation; the simultaneous multi-synapse case is spatial summation",
-              "The rapid-succession case is spatial summation; the simultaneous multi-synapse case is temporal summation",
               "Both are examples of temporal summation because both increase depolarization",
+              "The rapid-succession case is spatial summation; the simultaneous multi-synapse case is temporal summation",
               "Both are examples of spatial summation because both involve more than one signal",
+              "The rapid-succession case is temporal summation; the simultaneous multi-synapse case is spatial summation",
               "Neither counts as summation because action potentials are all-or-none"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Temporal summation is the adding of signals arriving close together in time at the same location, while spatial summation is the adding of signals arriving at the same time from different locations (synapses).\n\n**Why the other options are wrong:**\n- **(B)** The definitions are reversed.\n- **(C)** Simultaneous inputs at different synapses are spatial, not temporal.\n- **(D)** Rapid successive inputs at one synapse are temporal, not spatial.\n- **(E)** The all-or-none nature of action potentials does not prevent graded potentials from summing to reach threshold."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Temporal summation is the adding of signals arriving close together in time at the same location, while spatial summation is the adding of signals arriving at the same time from different locations (synapses).\n\n**Why the other options are wrong:**\n- **(A)** Simultaneous inputs at different synapses are spatial, not temporal.\n- **(B)** The definitions are reversed.\n- **(C)** Rapid successive inputs at one synapse are temporal, not spatial.\n- **(E)** The all-or-none nature of action potentials does not prevent graded potentials from summing to reach threshold."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1531,14 +1536,14 @@
           "question": {
             "stem": "A neurotransmitter is described as being enzymatically synthesized from the amino acid tyrosine and can also be released from the adrenal gland into the bloodstream. Which classification and example best fits this description?",
             "options": [
-              "A biogenic amine, such as norepinephrine",
               "An amino acid neurotransmitter, such as glutamate",
-              "A neuropeptide, such as beta-endorphin",
+              "A biogenic amine, such as norepinephrine",
               "A cholinergic neurotransmitter, such as acetylcholine",
+              "A neuropeptide, such as beta-endorphin",
               "An inhibitory amino acid, such as glycine"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Norepinephrine is a biogenic amine (a catecholamine) made from tyrosine and released by the adrenal gland into the blood, matching the description.\n\n**Why the other options are wrong:**\n- **(B)** Glutamate is used directly as an amino acid neurotransmitter, not synthesized from tyrosine.\n- **(C)** Beta-endorphin is a neuropeptide (chain of amino acids), not derived from a single tyrosine.\n- **(D)** Acetylcholine is a cholinergic transmitter, not a tyrosine-derived amine.\n- **(E)** Glycine is an amino acid neurotransmitter, not a biogenic amine from tyrosine."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Norepinephrine is a biogenic amine (a catecholamine) made from tyrosine and released by the adrenal gland into the blood, matching the description.\n\n**Why the other options are wrong:**\n- **(A)** Glutamate is used directly as an amino acid neurotransmitter, not synthesized from tyrosine.\n- **(C)** Acetylcholine is a cholinergic transmitter, not a tyrosine-derived amine.\n- **(D)** Beta-endorphin is a neuropeptide (chain of amino acids), not derived from a single tyrosine.\n- **(E)** Glycine is an amino acid neurotransmitter, not a biogenic amine from tyrosine."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1549,13 +1554,13 @@
             "stem": "The sodium-potassium pump is often described as requiring ATP even though it seems to work 'against' the ion movements that occur during signalling. What best explains its role and why it needs energy?",
             "options": [
               "It moves Na+ out and K+ in against their concentration gradients, maintaining the gradients that ion channels later exploit",
+              "It opens only when voltage crosses threshold, so it requires energy to sense voltage",
               "It moves Na+ in and K+ out down their gradients, so no energy should actually be needed",
               "It generates the entire resting membrane potential directly by producing a large voltage without any leak channels",
-              "It opens only when voltage crosses threshold, so it requires energy to sense voltage",
               "It exchanges Ca2+ for Na+ to trigger neurotransmitter release"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The pump uses ATP hydrolysis to move Na+ out and K+ in against their concentration gradients, thereby maintaining the gradients that channels use to generate potentials.\n\n**Why the other options are wrong:**\n- **(B)** The pump moves ions against, not down, their gradients, which is precisely why ATP is needed.\n- **(C)** The resting potential is primarily produced by K+ leak channels, not directly by the pump.\n- **(D)** The pump is not voltage-gated; it operates continuously.\n- **(E)** Ca2+/Na+ exchange for vesicle release involves voltage-gated Ca2+ channels, not the Na+/K+ pump."
+            "explanation": "**Why (A) is correct:** The pump uses ATP hydrolysis to move Na+ out and K+ in against their concentration gradients, thereby maintaining the gradients that channels use to generate potentials.\n\n**Why the other options are wrong:**\n- **(B)** The pump is not voltage-gated; it operates continuously.\n- **(C)** The pump moves ions against, not down, their gradients, which is precisely why ATP is needed.\n- **(D)** The resting potential is primarily produced by K+ leak channels, not directly by the pump.\n- **(E)** Ca2+/Na+ exchange for vesicle release involves voltage-gated Ca2+ channels, not the Na+/K+ pump."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1582,14 +1587,14 @@
           "question": {
             "stem": "Epinephrine binding to α adrenergic receptors causes smooth muscle contraction, while binding to β adrenergic receptors causes smooth muscle relaxation. What best explains how the same neurotransmitter produces these opposite effects?",
             "options": [
-              "The different G protein-coupled receptor types trigger different intracellular pathways, so the effect depends on the receptor, not the neurotransmitter",
               "The neurotransmitter changes its chemical structure when it binds to β receptors",
-              "α receptors are ionotropic channels while β receptors are pumps",
               "The opposite effects occur because epinephrine is inactivated at α receptors but not β receptors",
+              "α receptors are ionotropic channels while β receptors are pumps",
+              "The different G protein-coupled receptor types trigger different intracellular pathways, so the effect depends on the receptor, not the neurotransmitter",
               "β receptors always hyperpolarize the cell by opening Cl- channels directly"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The effect of a neurotransmitter is entirely dependent on the receptor; α and β adrenergic receptors are different G protein-coupled receptors that activate different downstream pathways, producing opposite responses to the same molecule.\n\n**Why the other options are wrong:**\n- **(B)** Epinephrine does not change structure; the receptor determines the outcome.\n- **(C)** Both α and β adrenergic receptors are metabotropic G protein-coupled receptors, not channels or pumps.\n- **(D)** The opposite effects are due to different signalling pathways, not differential inactivation.\n- **(E)** β adrenergic effects here are relaxation via G protein signalling, not direct Cl- channel opening."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The effect of a neurotransmitter is entirely dependent on the receptor; α and β adrenergic receptors are different G protein-coupled receptors that activate different downstream pathways, producing opposite responses to the same molecule.\n\n**Why the other options are wrong:**\n- **(A)** Epinephrine does not change structure; the receptor determines the outcome.\n- **(B)** The opposite effects are due to different signalling pathways, not differential inactivation.\n- **(C)** Both α and β adrenergic receptors are metabotropic G protein-coupled receptors, not channels or pumps.\n- **(E)** β adrenergic effects here are relaxation via G protein signalling, not direct Cl- channel opening."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1599,14 +1604,14 @@
           "question": {
             "stem": "Compared with an unmyelinated axon of the same diameter, why does a myelinated axon conduct action potentials faster?",
             "options": [
-              "Myelin insulates internodal regions so the signal regenerates only at nodes of Ranvier, allowing saltatory conduction",
+              "Myelin allows the action potential to travel in both directions at once",
               "Myelin adds extra voltage-gated Na+ channels along the entire length, speeding continuous conduction",
               "Myelin increases the axon's diameter, which is the only reason for faster conduction",
-              "Myelin allows the action potential to travel in both directions at once",
-              "Myelin eliminates the refractory period, so action potentials fire without delay"
+              "Myelin eliminates the refractory period, so action potentials fire without delay",
+              "Myelin insulates internodal regions so the signal regenerates only at nodes of Ranvier, allowing saltatory conduction"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Myelin insulates the internodes so depolarization spreads passively without fading much and regenerates only at nodes of Ranvier, producing rapid saltatory conduction.\n\n**Why the other options are wrong:**\n- **(B)** Voltage-gated Na+ channels are concentrated at nodes, not spread along myelinated internodes.\n- **(C)** Diameter is a separate factor; myelination speeds conduction through insulation and saltatory jumps.\n- **(D)** Action potentials still propagate in one direction due to the refractory period.\n- **(E)** Myelin does not eliminate the refractory period."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Myelin insulates the internodes so depolarization spreads passively without fading much and regenerates only at nodes of Ranvier, producing rapid saltatory conduction.\n\n**Why the other options are wrong:**\n- **(A)** Action potentials still propagate in one direction due to the refractory period.\n- **(B)** Voltage-gated Na+ channels are concentrated at nodes, not spread along myelinated internodes.\n- **(C)** Diameter is a separate factor; myelination speeds conduction through insulation and saltatory jumps.\n- **(D)** Myelin does not eliminate the refractory period."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1616,14 +1621,14 @@
           "question": {
             "stem": "Two unmyelinated axons differ only in diameter. Predict how the wider axon's conduction velocity compares and why.",
             "options": [
-              "It conducts faster because a wider axon offers less resistance to the spread of charge along the inside of the membrane",
-              "It conducts slower because more ions are needed to depolarize the larger volume",
-              "It conducts at the same speed because diameter has no effect without myelin",
               "It conducts faster because wider axons have more nodes of Ranvier",
-              "It conducts slower because the leak channels are more numerous in wider axons"
+              "It conducts slower because the leak channels are more numerous in wider axons",
+              "It conducts at the same speed because diameter has no effect without myelin",
+              "It conducts slower because more ions are needed to depolarize the larger volume",
+              "It conducts faster because a wider axon offers less resistance to the spread of charge along the inside of the membrane"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A wider axon offers less internal resistance to charge spread—like water flowing faster in a wide river—so depolarization spreads and conduction velocity increases.\n\n**Why the other options are wrong:**\n- **(B)** Larger diameter reduces resistance and increases speed; it does not slow conduction.\n- **(C)** Diameter affects speed even in unmyelinated axons.\n- **(D)** Unmyelinated axons lack nodes of Ranvier; the effect is due to resistance.\n- **(E)** Leak channel number is not the determinant of the diameter-related speed difference."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A wider axon offers less internal resistance to charge spread—like water flowing faster in a wide river—so depolarization spreads and conduction velocity increases.\n\n**Why the other options are wrong:**\n- **(A)** Unmyelinated axons lack nodes of Ranvier; the effect is due to resistance.\n- **(B)** Leak channel number is not the determinant of the diameter-related speed difference.\n- **(C)** Diameter affects speed even in unmyelinated axons.\n- **(D)** Larger diameter reduces resistance and increases speed; it does not slow conduction."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1633,14 +1638,14 @@
           "question": {
             "stem": "Leak (leakage) channels differ from other gated channels in an important way. Which statement correctly describes leak potassium channels and their contribution to the neuron?",
             "options": [
-              "They open and close randomly, allowing steady K+ efflux that makes the inside of the cell more negative, contributing to the resting membrane potential",
+              "They allow steady Na+ efflux that hyperpolarizes the cell at rest",
               "They open only when a ligand binds, allowing K+ influx that depolarizes the cell",
+              "They open and close randomly, allowing steady K+ efflux that makes the inside of the cell more negative, contributing to the resting membrane potential",
               "They open only when the membrane depolarizes past threshold, driving the action potential upstroke",
-              "They pump K+ into the cell using ATP to establish the concentration gradient",
-              "They allow steady Na+ efflux that hyperpolarizes the cell at rest"
+              "They pump K+ into the cell using ATP to establish the concentration gradient"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Leak K+ channels are randomly gated and allow a steady efflux of K+, taking positive charge out and leaving the inside more negative, which is the primary driver of the resting membrane potential.\n\n**Why the other options are wrong:**\n- **(B)** Leak channels are not ligand-gated, and K+ moves out, not in.\n- **(C)** Leak channels are not voltage-gated and do not drive the action potential upstroke.\n- **(D)** Leak channels are passive pores, not ATP-driven pumps.\n- **(E)** They carry K+ out, not Na+; the small Na+ leak is inward and slightly opposes the resting potential."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Leak K+ channels are randomly gated and allow a steady efflux of K+, taking positive charge out and leaving the inside more negative, which is the primary driver of the resting membrane potential.\n\n**Why the other options are wrong:**\n- **(A)** They carry K+ out, not Na+; the small Na+ leak is inward and slightly opposes the resting potential.\n- **(B)** Leak channels are not ligand-gated, and K+ moves out, not in.\n- **(D)** Leak channels are not voltage-gated and do not drive the action potential upstroke.\n- **(E)** Leak channels are passive pores, not ATP-driven pumps."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1650,14 +1655,14 @@
           "question": {
             "stem": "A student reads that a signal 'jumps from one node of Ranvier to the next' along an axon. Which term precisely describes this type of propagation?",
             "options": [
-              "Continuous conduction",
+              "Repolarization",
               "Saltatory conduction",
               "Graded conduction",
-              "Temporal summation",
-              "Repolarization"
+              "Continuous conduction",
+              "Temporal summation"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Saltatory conduction (from *saltare*, 'to leap') is the term for action potentials jumping between nodes of Ranvier along a myelinated axon.\n\n**Why the other options are wrong:**\n- **(A)** Continuous conduction is the slower segment-to-segment spread seen in unmyelinated axons, not jumping.\n- **(C)** 'Graded conduction' is not a real term; graded potentials fade and do not jump between nodes.\n- **(D)** Temporal summation refers to combining postsynaptic potentials over time, not to propagation down an axon.\n- **(E)** Repolarization is the return of membrane voltage toward rest, not a mode of propagation."
+            "explanation": "**Why (B) is correct:** Saltatory conduction (from *saltare*, 'to leap') is the term for action potentials jumping between nodes of Ranvier along a myelinated axon.\n\n**Why the other options are wrong:**\n- **(A)** Repolarization is the return of membrane voltage toward rest, not a mode of propagation.\n- **(C)** 'Graded conduction' is not a real term; graded potentials fade and do not jump between nodes.\n- **(D)** Continuous conduction is the slower segment-to-segment spread seen in unmyelinated axons, not jumping.\n- **(E)** Temporal summation refers to combining postsynaptic potentials over time, not to propagation down an axon."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1667,14 +1672,14 @@
           "question": {
             "stem": "Two unmyelinated axons are identical except that axon X has a much larger diameter than axon Y. How will conduction velocity compare, and why?",
             "options": [
-              "Axon Y is faster because narrower axons have less internal charge to move",
-              "Axon X is faster because a wider axon offers less resistance to the spread of charge",
-              "They conduct at the same speed because both lack myelin",
               "Axon Y is faster because it has more nodes of Ranvier per unit length",
-              "Axon X is slower because charge must travel a greater cross-sectional area"
+              "Axon X is slower because charge must travel a greater cross-sectional area",
+              "Axon X is faster because a wider axon offers less resistance to the spread of charge",
+              "Axon Y is faster because narrower axons have less internal charge to move",
+              "They conduct at the same speed because both lack myelin"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A wider axon offers less resistance to the internal spread of depolarizing charge, so Na⁺-based depolarization spreads faster, increasing conduction velocity.\n\n**Why the other options are wrong:**\n- **(A)** Narrower axons actually offer more resistance, slowing conduction, so Y is slower not faster.\n- **(C)** Diameter affects speed independent of myelin, so the two axons do not conduct at the same speed.\n- **(D)** Unmyelinated axons have no nodes of Ranvier, so this reasoning is invalid.\n- **(E)** Greater cross-sectional area lowers resistance and speeds conduction, so X is not slower."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A wider axon offers less resistance to the internal spread of depolarizing charge, so Na⁺-based depolarization spreads faster, increasing conduction velocity.\n\n**Why the other options are wrong:**\n- **(A)** Unmyelinated axons have no nodes of Ranvier, so this reasoning is invalid.\n- **(B)** Greater cross-sectional area lowers resistance and speeds conduction, so X is not slower.\n- **(D)** Narrower axons actually offer more resistance, slowing conduction, so Y is slower not faster.\n- **(E)** Diameter affects speed independent of myelin, so the two axons do not conduct at the same speed."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1684,14 +1689,14 @@
           "question": {
             "stem": "At rest, the inside of a neuron sits at about -70 mV relative to the outside. Which statement best explains what generates this voltage?",
             "options": [
-              "A large net excess of anions is distributed evenly throughout the entire cytosol",
-              "K⁺ leaking out through leak channels makes the immediate inner surface more negative, slightly opposed by a small Na⁺ leak inward",
               "Na⁺ rushing in through voltage-gated channels charges the membrane surface",
+              "The Na⁺/K⁺ pump directly imposes -70 mV by pumping three K⁺ in per cycle",
               "Cl⁻ leaking out of the cell removes negative charge from the cytosol",
-              "The Na⁺/K⁺ pump directly imposes -70 mV by pumping three K⁺ in per cycle"
+              "A large net excess of anions is distributed evenly throughout the entire cytosol",
+              "K⁺ leaking out through leak channels makes the immediate inner surface more negative, slightly opposed by a small Na⁺ leak inward"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The resting potential is driven primarily by K⁺ efflux through leak channels (leaving the inner surface more negative), only slightly opposed by a tiny Na⁺ leak inward.\n\n**Why the other options are wrong:**\n- **(A)** The bulk cytosol and extracellular fluid are essentially net-neutral; the charge difference exists only right at the membrane surface.\n- **(C)** Voltage-gated Na⁺ influx occurs during an action potential, not at rest.\n- **(D)** Cl⁻ leaving would make the cell more positive, not more negative, and is not the resting driver.\n- **(E)** The pump maintains the gradients but does not itself directly set -70 mV; the leak K⁺ is the main contributor."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The resting potential is driven primarily by K⁺ efflux through leak channels (leaving the inner surface more negative), only slightly opposed by a tiny Na⁺ leak inward.\n\n**Why the other options are wrong:**\n- **(A)** Voltage-gated Na⁺ influx occurs during an action potential, not at rest.\n- **(B)** The pump maintains the gradients but does not itself directly set -70 mV; the leak K⁺ is the main contributor.\n- **(C)** Cl⁻ leaving would make the cell more positive, not more negative, and is not the resting driver.\n- **(D)** The bulk cytosol and extracellular fluid are essentially net-neutral; the charge difference exists only right at the membrane surface."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1701,14 +1706,14 @@
           "question": {
             "stem": "A single presynaptic neuron fires several times in rapid succession, and the individual graded potentials add together at the postsynaptic axon hillock to reach threshold. Which mechanism is this, and how does it differ from the alternative?",
             "options": [
-              "Spatial summation; it combines inputs from many neurons at one moment",
-              "Temporal summation; it combines rapid repeated inputs from one source over time, whereas spatial summation combines simultaneous inputs from different locations",
+              "All-or-none summation; both types produce identical action potential amplitudes",
               "Temporal summation; it combines inputs arriving at different membrane locations",
               "Spatial summation; it combines repeated inputs from a single synapse over time",
-              "All-or-none summation; both types produce identical action potential amplitudes"
+              "Temporal summation; it combines rapid repeated inputs from one source over time, whereas spatial summation combines simultaneous inputs from different locations",
+              "Spatial summation; it combines inputs from many neurons at one moment"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Temporal summation adds up rapidly repeated graded potentials from one source over time, while spatial summation adds simultaneous inputs from different locations.\n\n**Why the other options are wrong:**\n- **(A)** This describes spatial summation, but the scenario involves one neuron firing repeatedly (temporal).\n- **(C)** Temporal summation is about timing from one source, not different locations.\n- **(D)** Spatial summation involves multiple synapses/locations, not repeated single-source firing.\n- **(E)** 'All-or-none summation' is not a real term; summation applies to graded potentials, not fixed-amplitude action potentials."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Temporal summation adds up rapidly repeated graded potentials from one source over time, while spatial summation adds simultaneous inputs from different locations.\n\n**Why the other options are wrong:**\n- **(A)** 'All-or-none summation' is not a real term; summation applies to graded potentials, not fixed-amplitude action potentials.\n- **(B)** Temporal summation is about timing from one source, not different locations.\n- **(C)** Spatial summation involves multiple synapses/locations, not repeated single-source firing.\n- **(E)** This describes spatial summation, but the scenario involves one neuron firing repeatedly (temporal)."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1718,14 +1723,14 @@
           "question": {
             "stem": "Multiple sclerosis destroys the myelin sheaths surrounding axons. Based on how myelination affects conduction, what is the most direct predicted consequence for an affected axon?",
             "options": [
-              "Action potentials become larger in amplitude at each node",
-              "Conduction velocity decreases because saltatory conduction is impaired and depolarization may fade before reaching the next node",
               "The axon can no longer generate any graded potentials",
               "Conduction becomes faster because charge now spreads freely along the whole membrane",
-              "The resting membrane potential shifts to +30 mV permanently"
+              "The resting membrane potential shifts to +30 mV permanently",
+              "Action potentials become larger in amplitude at each node",
+              "Conduction velocity decreases because saltatory conduction is impaired and depolarization may fade before reaching the next node"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Without myelin, saltatory conduction fails; depolarization can dissipate before reaching the next set of voltage-gated Na⁺ channels, slowing or blocking conduction.\n\n**Why the other options are wrong:**\n- **(A)** Action potentials are all-or-none and do not increase in amplitude; demyelination affects speed, not size.\n- **(C)** Graded potentials depend on dendritic/receptor channels, not myelin, so they can still occur.\n- **(D)** Loss of insulation causes charge to fade faster, slowing conduction, not speeding it.\n- **(E)** Demyelination does not fix the membrane at +30 mV; the resting potential mechanisms are unchanged."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Without myelin, saltatory conduction fails; depolarization can dissipate before reaching the next set of voltage-gated Na⁺ channels, slowing or blocking conduction.\n\n**Why the other options are wrong:**\n- **(A)** Graded potentials depend on dendritic/receptor channels, not myelin, so they can still occur.\n- **(B)** Loss of insulation causes charge to fade faster, slowing conduction, not speeding it.\n- **(C)** Demyelination does not fix the membrane at +30 mV; the resting potential mechanisms are unchanged.\n- **(D)** Action potentials are all-or-none and do not increase in amplitude; demyelination affects speed, not size."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1735,14 +1740,14 @@
           "question": {
             "stem": "A researcher applies a stimulus twice: once producing a mildly warm sensation and once a scalding-hot sensation, both above threshold. How does the nervous system encode the greater intensity of the scalding stimulus?",
             "options": [
-              "By generating action potentials of larger amplitude",
               "By increasing the frequency of all-or-none action potentials while keeping their amplitude constant",
-              "By lowering the resting membrane potential of the axon",
               "By producing a single, longer-lasting action potential",
-              "By switching the neurotransmitter released at the synapse"
+              "By generating action potentials of larger amplitude",
+              "By switching the neurotransmitter released at the synapse",
+              "By lowering the resting membrane potential of the axon"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Because action potentials are all-or-none, stronger stimuli are encoded by a higher firing frequency, not by larger individual spikes.\n\n**Why the other options are wrong:**\n- **(A)** All action potentials peak at the same voltage (~+30 mV); amplitude does not scale with intensity.\n- **(C)** Stimulus intensity does not alter the resting membrane potential of the axon.\n- **(D)** Action potential duration is fixed by channel kinetics, not by stimulus strength.\n- **(E)** Intensity coding is by frequency, not by changing which neurotransmitter is released."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Because action potentials are all-or-none, stronger stimuli are encoded by a higher firing frequency, not by larger individual spikes.\n\n**Why the other options are wrong:**\n- **(B)** Action potential duration is fixed by channel kinetics, not by stimulus strength.\n- **(C)** All action potentials peak at the same voltage (~+30 mV); amplitude does not scale with intensity.\n- **(D)** Intensity coding is by frequency, not by changing which neurotransmitter is released.\n- **(E)** Stimulus intensity does not alter the resting membrane potential of the axon."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1752,14 +1757,14 @@
           "question": {
             "stem": "Complete the statement: 'The resting membrane voltage is ___ due to a ___ of ___.' Which combination is correct?",
             "options": [
-              "-70 mV, efflux, Na⁺",
+              "+30 mV, efflux, K⁺",
               "-70 mV, influx, K⁺",
+              "-70 mV, efflux, Na⁺",
               "+70 mV, influx, Na⁺",
-              "-70 mV, efflux, K⁺",
-              "+30 mV, efflux, K⁺"
+              "-70 mV, efflux, K⁺"
             ],
-            "correct_index": 3,
-            "explanation": "**Why (D) is correct:** The resting potential is about -70 mV, driven primarily by the efflux (outward leak) of K⁺, which leaves the inner surface more negative.\n\n**Why the other options are wrong:**\n- **(A)** Na⁺ efflux does not occur; Na⁺ tends to leak inward, and it is not the main driver.\n- **(B)** K⁺ flows out (efflux), not in, at rest.\n- **(C)** The resting potential is negative (-70 mV), not +70 mV, and is not set by Na⁺ influx.\n- **(E)** +30 mV is the action potential peak, not the resting value, and is caused by Na⁺ influx."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The resting potential is about -70 mV, driven primarily by the efflux (outward leak) of K⁺, which leaves the inner surface more negative.\n\n**Why the other options are wrong:**\n- **(A)** +30 mV is the action potential peak, not the resting value, and is caused by Na⁺ influx.\n- **(B)** K⁺ flows out (efflux), not in, at rest.\n- **(C)** Na⁺ efflux does not occur; Na⁺ tends to leak inward, and it is not the main driver.\n- **(D)** The resting potential is negative (-70 mV), not +70 mV, and is not set by Na⁺ influx."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1769,14 +1774,14 @@
           "question": {
             "stem": "A student groups neurotransmitters by structural category. Which pairing correctly matches a neurotransmitter to its category AND a stated function?",
             "options": [
-              "Glutamate — biogenic amine — main inhibitory transmitter in the brain",
               "Glycine — amino acid — main inhibitory transmitter in the spinal cord",
+              "Acetylcholine — amino acid — inhibitory transmitter in the spinal cord",
+              "Glutamate — biogenic amine — main inhibitory transmitter in the brain",
               "Serotonin — amino acid — main excitatory transmitter in the CNS",
-              "Beta-endorphin — biogenic amine — excitatory transmitter at the neuromuscular junction",
-              "Acetylcholine — amino acid — inhibitory transmitter in the spinal cord"
+              "Beta-endorphin — biogenic amine — excitatory transmitter at the neuromuscular junction"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Glycine is an amino acid neurotransmitter and is the main inhibitory transmitter in the spinal cord.\n\n**Why the other options are wrong:**\n- **(A)** Glutamate is an amino acid (not biogenic amine) and is excitatory, not inhibitory.\n- **(C)** Serotonin is a biogenic amine (made from tryptophan), and glutamate is the main excitatory CNS transmitter.\n- **(D)** Beta-endorphin is a neuropeptide (endogenous opioid), not a biogenic amine, and acts as an analgesic.\n- **(E)** Acetylcholine is a cholinergic transmitter, not an amino acid, and depolarizes muscle at the neuromuscular junction."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Glycine is an amino acid neurotransmitter and is the main inhibitory transmitter in the spinal cord.\n\n**Why the other options are wrong:**\n- **(B)** Acetylcholine is a cholinergic transmitter, not an amino acid, and depolarizes muscle at the neuromuscular junction.\n- **(C)** Glutamate is an amino acid (not biogenic amine) and is excitatory, not inhibitory.\n- **(D)** Serotonin is a biogenic amine (made from tryptophan), and glutamate is the main excitatory CNS transmitter.\n- **(E)** Beta-endorphin is a neuropeptide (endogenous opioid), not a biogenic amine, and acts as an analgesic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1786,14 +1791,14 @@
           "question": {
             "stem": "During an action potential, voltage-gated Na⁺ channels behave differently from voltage-gated K⁺ channels. Which comparison correctly describes their states and triggers?",
             "options": [
-              "Both open at threshold and both immediately inactivate at +30 mV",
               "Na⁺ channels open at threshold then become inactivated at positive voltage, while K⁺ channels open more slowly and later repolarize the cell",
-              "K⁺ channels open first to depolarize the cell, then Na⁺ channels open to repolarize it",
+              "Both open at threshold and both immediately inactivate at +30 mV",
+              "Both channels open only when a ligand binds to the extracellular surface",
               "Na⁺ channels are leak channels that open randomly, while K⁺ channels are voltage-gated",
-              "Both channels open only when a ligand binds to the extracellular surface"
+              "K⁺ channels open first to depolarize the cell, then Na⁺ channels open to repolarize it"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Voltage-gated Na⁺ channels open at threshold and inactivate near +30 mV, whereas voltage-gated K⁺ channels open more slowly and drive repolarization.\n\n**Why the other options are wrong:**\n- **(A)** K⁺ channels do not inactivate; they close, and they open more slowly than Na⁺ channels.\n- **(C)** Na⁺ influx (not K⁺) causes depolarization; K⁺ efflux causes repolarization — the roles are reversed here.\n- **(D)** Voltage-gated Na⁺ channels are not leak channels; they open in response to voltage change.\n- **(E)** These are voltage-gated, not ligand-gated, channels."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Voltage-gated Na⁺ channels open at threshold and inactivate near +30 mV, whereas voltage-gated K⁺ channels open more slowly and drive repolarization.\n\n**Why the other options are wrong:**\n- **(B)** K⁺ channels do not inactivate; they close, and they open more slowly than Na⁺ channels.\n- **(C)** These are voltage-gated, not ligand-gated, channels.\n- **(D)** Voltage-gated Na⁺ channels are not leak channels; they open in response to voltage change.\n- **(E)** Na⁺ influx (not K⁺) causes depolarization; K⁺ efflux causes repolarization — the roles are reversed here."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1820,14 +1825,14 @@
           "question": {
             "stem": "A researcher applies a drug that specifically blocks the sodium-potassium pump in a resting neuron. Which outcome would you predict over time, and why?",
             "options": [
-              "The concentration gradients for Na+ and K+ would gradually dissipate because the pump normally maintains those gradients using ATP",
-              "The resting membrane potential would immediately jump to +30 mV because voltage-gated Na+ channels would open",
-              "Leak K+ channels would stop opening, since they depend on the pump for activation",
               "The cell would hyperpolarize permanently because K+ would keep leaving with no way to return",
-              "Nothing would change, since the pump plays no role in the resting state"
+              "Nothing would change, since the pump plays no role in the resting state",
+              "The concentration gradients for Na+ and K+ would gradually dissipate because the pump normally maintains those gradients using ATP",
+              "Leak K+ channels would stop opening, since they depend on the pump for activation",
+              "The resting membrane potential would immediately jump to +30 mV because voltage-gated Na+ channels would open"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The Na+/K+ pump uses ATP to move Na+ out and K+ in against their gradients, so blocking it lets those gradients run down over time.\n\n**Why the other options are wrong:**\n- **(B)** An action potential requires threshold depolarization; simply blocking the pump does not open voltage-gated Na+ channels.\n- **(C)** Leak K+ channels are randomly gated and open independently of the pump.\n- **(D)** Without the pump the gradient dissipates, so the cell moves toward zero, not permanent hyperpolarization.\n- **(E)** The pump maintains the gradients that make the resting potential possible, so it is essential at rest."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The Na+/K+ pump uses ATP to move Na+ out and K+ in against their gradients, so blocking it lets those gradients run down over time.\n\n**Why the other options are wrong:**\n- **(A)** Without the pump the gradient dissipates, so the cell moves toward zero, not permanent hyperpolarization.\n- **(B)** The pump maintains the gradients that make the resting potential possible, so it is essential at rest.\n- **(D)** Leak K+ channels are randomly gated and open independently of the pump.\n- **(E)** An action potential requires threshold depolarization; simply blocking the pump does not open voltage-gated Na+ channels."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1837,14 +1842,14 @@
           "question": {
             "stem": "A student is classifying neurotransmitters by structural category. Which pairing of neurotransmitter to category AND function is correct?",
             "options": [
-              "GABA — biogenic amine — main excitatory transmitter of the brain",
-              "Serotonin — amino acid — main inhibitory transmitter of the spinal cord",
-              "Glutamate — amino acid — main excitatory transmitter of the CNS",
               "Acetylcholine — neuropeptide — endogenous opioid",
-              "Beta-endorphin — biogenic amine — released at the neuromuscular junction"
+              "Glutamate — amino acid — main excitatory transmitter of the CNS",
+              "Beta-endorphin — biogenic amine — released at the neuromuscular junction",
+              "Serotonin — amino acid — main inhibitory transmitter of the spinal cord",
+              "GABA — biogenic amine — main excitatory transmitter of the brain"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Glutamate is an amino acid neurotransmitter and is the main excitatory transmitter of the central nervous system.\n\n**Why the other options are wrong:**\n- **(A)** GABA is an amino acid (not a biogenic amine) and is inhibitory, not excitatory.\n- **(B)** Serotonin is a biogenic amine made from tryptophan, not an amino acid transmitter; glycine is the spinal inhibitory one.\n- **(D)** Acetylcholine is the cholinergic transmitter, not a neuropeptide or opioid.\n- **(E)** Beta-endorphin is a neuropeptide (endogenous opioid), and ACh is the transmitter at the neuromuscular junction."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Glutamate is an amino acid neurotransmitter and is the main excitatory transmitter of the central nervous system.\n\n**Why the other options are wrong:**\n- **(A)** Acetylcholine is the cholinergic transmitter, not a neuropeptide or opioid.\n- **(C)** Beta-endorphin is a neuropeptide (endogenous opioid), and ACh is the transmitter at the neuromuscular junction.\n- **(D)** Serotonin is a biogenic amine made from tryptophan, not an amino acid transmitter; glycine is the spinal inhibitory one.\n- **(E)** GABA is an amino acid (not a biogenic amine) and is inhibitory, not excitatory."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1854,14 +1859,14 @@
           "question": {
             "stem": "In this unit, the terms 'depolarization' and 'hyperpolarization' describe changes in membrane voltage. Which statement correctly uses these terms?",
             "options": [
-              "Depolarization makes the inside of the membrane more negative relative to the outside",
               "Hyperpolarization moves the membrane potential from -70 mV toward 0 mV",
-              "Depolarization moves the membrane potential toward zero (less negative)",
               "Hyperpolarization is caused by Na+ entering the cell",
+              "Depolarization makes the inside of the membrane more negative relative to the outside",
+              "Depolarization moves the membrane potential toward zero (less negative)",
               "Depolarization and hyperpolarization both move the voltage in the same direction"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Depolarization means the membrane potential becomes less negative, moving toward zero, typically due to positive ion influx.\n\n**Why the other options are wrong:**\n- **(A)** Making the inside more negative is hyperpolarization, not depolarization.\n- **(B)** Moving from -70 mV toward 0 mV is depolarization, not hyperpolarization.\n- **(D)** Na+ entry causes depolarization; hyperpolarization results from K+ efflux or Cl- influx.\n- **(E)** They move voltage in opposite directions by definition."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Depolarization means the membrane potential becomes less negative, moving toward zero, typically due to positive ion influx.\n\n**Why the other options are wrong:**\n- **(A)** Moving from -70 mV toward 0 mV is depolarization, not hyperpolarization.\n- **(B)** Na+ entry causes depolarization; hyperpolarization results from K+ efflux or Cl- influx.\n- **(C)** Making the inside more negative is hyperpolarization, not depolarization.\n- **(E)** They move voltage in opposite directions by definition."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1871,14 +1876,14 @@
           "question": {
             "stem": "During an action potential, after the voltage-gated Na+ channels open at threshold, what state do they enter next, and what is the functional consequence?",
             "options": [
-              "They become inactivated, which prevents further Na+ entry and helps ensure the action potential travels in one direction",
-              "They become permanently closed, so the neuron can never fire again",
-              "They become permeable to K+, directly causing repolarization",
               "They become permeable to Ca2+, triggering neurotransmitter release at that site",
-              "They remain fully open, allowing continuous Na+ influx throughout repolarization"
+              "They become inactivated, which prevents further Na+ entry and helps ensure the action potential travels in one direction",
+              "They remain fully open, allowing continuous Na+ influx throughout repolarization",
+              "They become permeable to K+, directly causing repolarization",
+              "They become permanently closed, so the neuron can never fire again"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** At the peak of depolarization voltage-gated Na+ channels become inactivated, blocking further Na+ entry and creating a refractory period that keeps propagation unidirectional.\n\n**Why the other options are wrong:**\n- **(B)** Inactivation is temporary; the channels reset to closed at resting voltage and can reopen.\n- **(C)** Repolarization is due to separate voltage-gated K+ channels; Na+ channels do not conduct K+.\n- **(D)** Na+ channels do not become Ca2+ channels; Ca2+ entry occurs via separate voltage-gated Ca2+ channels at terminals.\n- **(E)** Inactivation stops Na+ influx rather than allowing it to continue."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** At the peak of depolarization voltage-gated Na+ channels become inactivated, blocking further Na+ entry and creating a refractory period that keeps propagation unidirectional.\n\n**Why the other options are wrong:**\n- **(A)** Na+ channels do not become Ca2+ channels; Ca2+ entry occurs via separate voltage-gated Ca2+ channels at terminals.\n- **(C)** Inactivation stops Na+ influx rather than allowing it to continue.\n- **(D)** Repolarization is due to separate voltage-gated K+ channels; Na+ channels do not conduct K+.\n- **(E)** Inactivation is temporary; the channels reset to closed at resting voltage and can reopen."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1888,14 +1893,14 @@
           "question": {
             "stem": "Two graded potentials arrive at a neuron. In the first case, the same presynaptic terminal fires twice in rapid succession before the first potential fades. In the second case, two different presynaptic terminals at separate locations fire at the same moment. How are these described?",
             "options": [
-              "Both cases are examples of spatial summation",
-              "The first is temporal summation; the second is spatial summation",
               "The first is spatial summation; the second is temporal summation",
               "Both cases are examples of temporal summation",
-              "Neither can reach threshold because graded potentials cannot combine"
+              "The first is temporal summation; the second is spatial summation",
+              "Neither can reach threshold because graded potentials cannot combine",
+              "Both cases are examples of spatial summation"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Temporal summation is repeated input from one source over time, while spatial summation is simultaneous input from multiple locations.\n\n**Why the other options are wrong:**\n- **(A)** The first case involves one terminal over time, which is temporal, not spatial.\n- **(C)** The labels are reversed relative to the definitions.\n- **(D)** The second case involves separate locations at once, which is spatial, not temporal.\n- **(E)** Graded potentials do combine, which is exactly what summation describes."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Temporal summation is repeated input from one source over time, while spatial summation is simultaneous input from multiple locations.\n\n**Why the other options are wrong:**\n- **(A)** The labels are reversed relative to the definitions.\n- **(B)** The second case involves separate locations at once, which is spatial, not temporal.\n- **(D)** Graded potentials do combine, which is exactly what summation describes.\n- **(E)** The first case involves one terminal over time, which is temporal, not spatial."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1905,14 +1910,14 @@
           "question": {
             "stem": "You place your hand under progressively hotter water. As the stimulus intensity increases beyond threshold, how does the neuron encode the increased intensity?",
             "options": [
+              "The frequency of action potentials increases, but each action potential is the same size",
               "The amplitude of each action potential increases in proportion to the stimulus",
               "The peak voltage of the action potential rises above +30 mV",
-              "The frequency of action potentials increases, but each action potential is the same size",
               "The resting membrane potential shifts to a more positive baseline",
               "The action potentials become graded rather than all-or-none"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Action potentials are all-or-none, so stronger stimuli increase firing frequency rather than the size of individual action potentials.\n\n**Why the other options are wrong:**\n- **(A)** Amplitude is fixed; all action potentials change the voltage by the same amount.\n- **(B)** All action potentials peak at about +30 mV regardless of stimulus strength.\n- **(D)** Resting potential is a stable baseline restored between action potentials.\n- **(E)** Action potentials remain all-or-none; graded behavior belongs to graded potentials."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Action potentials are all-or-none, so stronger stimuli increase firing frequency rather than the size of individual action potentials.\n\n**Why the other options are wrong:**\n- **(B)** Amplitude is fixed; all action potentials change the voltage by the same amount.\n- **(C)** All action potentials peak at about +30 mV regardless of stimulus strength.\n- **(D)** Resting potential is a stable baseline restored between action potentials.\n- **(E)** Action potentials remain all-or-none; graded behavior belongs to graded potentials."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1922,14 +1927,14 @@
           "question": {
             "stem": "The neuromuscular junction produces a large end plate potential, whereas a typical CNS synapse usually requires summation to reach threshold. What best explains this difference?",
             "options": [
-              "The neuromuscular junction uses electrical synapses, while CNS synapses are chemical",
-              "The neuromuscular junction is a very large synapse, so opening its nicotinic receptor channels produces a large depolarization, while smaller regular synapses need multiple release events",
-              "The neuromuscular junction uses glutamate, which is more excitatory than acetylcholine",
               "CNS synapses use voltage-gated channels instead of ligand-gated channels",
-              "The end plate potential is smaller than a typical CNS graded potential"
+              "The neuromuscular junction uses glutamate, which is more excitatory than acetylcholine",
+              "The end plate potential is smaller than a typical CNS graded potential",
+              "The neuromuscular junction uses electrical synapses, while CNS synapses are chemical",
+              "The neuromuscular junction is a very large synapse, so opening its nicotinic receptor channels produces a large depolarization, while smaller regular synapses need multiple release events"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Because the neuromuscular junction is a very large synapse, opening its nicotinic receptor channels causes a large end plate potential, whereas smaller regular synapses require multiple neurotransmitter release events to reach threshold.\n\n**Why the other options are wrong:**\n- **(A)** Both the neuromuscular junction and CNS chemical synapses are chemical synapses.\n- **(C)** The neuromuscular junction uses acetylcholine, not glutamate.\n- **(D)** CNS synapses use ligand-gated receptors at the postsynaptic membrane, like the neuromuscular junction.\n- **(E)** The end plate potential is unusually large, not smaller than a typical graded potential."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Because the neuromuscular junction is a very large synapse, opening its nicotinic receptor channels causes a large end plate potential, whereas smaller regular synapses require multiple neurotransmitter release events to reach threshold.\n\n**Why the other options are wrong:**\n- **(A)** CNS synapses use ligand-gated receptors at the postsynaptic membrane, like the neuromuscular junction.\n- **(B)** The neuromuscular junction uses acetylcholine, not glutamate.\n- **(C)** The end plate potential is unusually large, not smaller than a typical graded potential.\n- **(D)** Both the neuromuscular junction and CNS chemical synapses are chemical synapses."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1939,14 +1944,14 @@
           "question": {
             "stem": "Compare a thick, myelinated axon to a thin, unmyelinated axon. Which conducts action potentials faster, and why?",
             "options": [
+              "Both conduct at the same speed, since all action potentials are all-or-none",
               "The thin unmyelinated axon, because narrow axons offer less resistance",
               "The thick myelinated axon, because myelin allows saltatory conduction and larger diameter lowers resistance to charge spread",
-              "Both conduct at the same speed, since all action potentials are all-or-none",
-              "The thin unmyelinated axon, because it regenerates the signal at every segment",
-              "The thick myelinated axon, but only because myelin adds more voltage-gated Na+ channels along the entire membrane"
+              "The thick myelinated axon, but only because myelin adds more voltage-gated Na+ channels along the entire membrane",
+              "The thin unmyelinated axon, because it regenerates the signal at every segment"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Myelination enables saltatory conduction (jumping between nodes of Ranvier) and a larger diameter reduces resistance to charge spread, both increasing conduction velocity.\n\n**Why the other options are wrong:**\n- **(A)** Wider axons, not narrower, offer less resistance and conduct faster.\n- **(C)** All-or-none refers to amplitude, not speed; conduction velocity varies with myelin and diameter.\n- **(D)** Regenerating at every segment (continuous conduction) is slow, not fast.\n- **(E)** Myelinated segments have essentially no channels; Na+ channels cluster only at the nodes of Ranvier."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Myelination enables saltatory conduction (jumping between nodes of Ranvier) and a larger diameter reduces resistance to charge spread, both increasing conduction velocity.\n\n**Why the other options are wrong:**\n- **(A)** All-or-none refers to amplitude, not speed; conduction velocity varies with myelin and diameter.\n- **(B)** Wider axons, not narrower, offer less resistance and conduct faster.\n- **(D)** Myelinated segments have essentially no channels; Na+ channels cluster only at the nodes of Ranvier.\n- **(E)** Regenerating at every segment (continuous conduction) is slow, not fast."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1956,14 +1961,14 @@
           "question": {
             "stem": "Epinephrine can cause smooth muscle to contract in one tissue and relax in another. Which statement best explains how one neurotransmitter produces opposite effects?",
             "options": [
+              "Both α and β receptors always produce identical downstream effects",
               "Epinephrine changes its chemical structure depending on the target tissue",
-              "The effect depends on which receptor is present: α adrenergic receptors cause contraction while β adrenergic receptors cause relaxation",
-              "Epinephrine only excites tissues; the opposite effect is due to a different molecule",
               "The concentration gradient of epinephrine determines whether it excites or inhibits",
-              "Both α and β receptors always produce identical downstream effects"
+              "The effect depends on which receptor is present: α adrenergic receptors cause contraction while β adrenergic receptors cause relaxation",
+              "Epinephrine only excites tissues; the opposite effect is due to a different molecule"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The same neurotransmitter can exert opposite effects because different receptor types (α causing smooth muscle contraction, β causing relaxation) trigger different intracellular pathways.\n\n**Why the other options are wrong:**\n- **(A)** The molecule is identical; only the receptor differs between tissues.\n- **(C)** Epinephrine itself produces both effects depending on the receptor, not a separate molecule.\n- **(D)** The receptor type, not epinephrine concentration, determines the direction of the effect.\n- **(E)** α and β receptors produce different, often opposite, downstream effects."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The same neurotransmitter can exert opposite effects because different receptor types (α causing smooth muscle contraction, β causing relaxation) trigger different intracellular pathways.\n\n**Why the other options are wrong:**\n- **(A)** α and β receptors produce different, often opposite, downstream effects.\n- **(B)** The molecule is identical; only the receptor differs between tissues.\n- **(C)** The receptor type, not epinephrine concentration, determines the direction of the effect.\n- **(E)** Epinephrine itself produces both effects depending on the receptor, not a separate molecule."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1973,14 +1978,14 @@
           "question": {
             "stem": "A student is learning terminology for metabotropic receptor signalling. Which statement correctly defines a term used in this unit?",
             "options": [
-              "A second messenger is the neurotransmitter that binds the receptor on the cell surface",
               "An ionotropic receptor generates a second messenger such as cAMP",
+              "Phospholipase C is the second messenger that opens ion channels directly",
               "A G protein-coupled receptor works through a G protein and effector protein to produce a second messenger inside the cell",
               "Adenylyl cyclase is the second messenger produced by Gs-associated receptors",
-              "Phospholipase C is the second messenger that opens ion channels directly"
+              "A second messenger is the neurotransmitter that binds the receptor on the cell surface"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A G protein-coupled (metabotropic) receptor activates a G protein that moves to an effector protein, which generates a second messenger inside the cell.\n\n**Why the other options are wrong:**\n- **(A)** The neurotransmitter is the first messenger; the second messenger is an intracellular molecule like cAMP.\n- **(B)** Ionotropic receptors are ligand-gated ion channels and do not produce second messengers.\n- **(D)** Adenylyl cyclase is the enzyme (effector) that makes cAMP, not the second messenger itself.\n- **(E)** Phospholipase C is an enzyme that makes IP3 and DAG; it is not a second messenger."
+            "explanation": "**Why (C) is correct:** A G protein-coupled (metabotropic) receptor activates a G protein that moves to an effector protein, which generates a second messenger inside the cell.\n\n**Why the other options are wrong:**\n- **(A)** Ionotropic receptors are ligand-gated ion channels and do not produce second messengers.\n- **(B)** Phospholipase C is an enzyme that makes IP3 and DAG; it is not a second messenger.\n- **(D)** Adenylyl cyclase is the enzyme (effector) that makes cAMP, not the second messenger itself.\n- **(E)** The neurotransmitter is the first messenger; the second messenger is an intracellular molecule like cAMP."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"

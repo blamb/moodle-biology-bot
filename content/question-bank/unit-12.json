@@ -9,14 +9,14 @@
           "question": {
             "stem": "In a lever system, what is the name of the fixed point around which the lever pivots?",
             "options": [
-              "Effort",
               "Fulcrum",
-              "Load",
               "Insertion",
-              "Resistance arm"
+              "Load",
+              "Resistance arm",
+              "Effort"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The fulcrum is the fixed point that force is applied to, around which the lever pivots; in the body a joint acts as the fulcrum.\n\n**Why the other options are wrong:**\n- **(A)** Effort is the applied force from muscle contraction, not the pivot point.\n- **(C)** The load is the resistance being moved, not the pivot.\n- **(D)** The insertion is the moveable muscle attachment point, not a lever component pivot.\n- **(E)** The resistance arm is a distance, not a fixed pivot point."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The fulcrum is the fixed point that force is applied to, around which the lever pivots; in the body a joint acts as the fulcrum.\n\n**Why the other options are wrong:**\n- **(B)** The insertion is the moveable muscle attachment point, not a lever component pivot.\n- **(C)** The load is the resistance being moved, not the pivot.\n- **(D)** The resistance arm is a distance, not a fixed pivot point.\n- **(E)** Effort is the applied force from muscle contraction, not the pivot point."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -26,14 +26,14 @@
           "question": {
             "stem": "When lifting a cup by flexing the forearm (hand supinated), the biceps brachii is the prime mover. What role does the brachialis play in this action?",
             "options": [
-              "Antagonist",
-              "Fulcrum",
-              "Synergist",
+              "Prime mover",
               "Fixator of the load",
-              "Prime mover"
+              "Synergist",
+              "Antagonist",
+              "Fulcrum"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The brachialis assists the biceps brachii in flexing the forearm, making it a synergist for this movement.\n\n**Why the other options are wrong:**\n- **(A)** An antagonist opposes the movement, which the brachialis does not do here.\n- **(B)** The fulcrum is the joint, not a muscle.\n- **(D)** A fixator stabilizes the origin bone; the brachialis here directly assists the movement.\n- **(E)** The biceps brachii, not the brachialis, is the prime mover in this action."
+            "explanation": "**Why (C) is correct:** The brachialis assists the biceps brachii in flexing the forearm, making it a synergist for this movement.\n\n**Why the other options are wrong:**\n- **(A)** The biceps brachii, not the brachialis, is the prime mover in this action.\n- **(B)** A fixator stabilizes the origin bone; the brachialis here directly assists the movement.\n- **(D)** An antagonist opposes the movement, which the brachialis does not do here.\n- **(E)** The fulcrum is the joint, not a muscle."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -43,14 +43,14 @@
           "question": {
             "stem": "For a muscle that moves a bone, which term describes the attachment on the fixed or stabilized bone?",
             "options": [
-              "Insertion",
-              "Origin",
               "Fulcrum",
               "Effort arm",
-              "Antagonist"
+              "Antagonist",
+              "Insertion",
+              "Origin"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The origin is the end of the muscle attached to the fixed (stabilized) bone.\n\n**Why the other options are wrong:**\n- **(A)** The insertion attaches to the moveable bone being pulled.\n- **(C)** The fulcrum is the joint acting as a pivot, not a muscle attachment.\n- **(D)** The effort arm is a distance measurement, not an attachment.\n- **(E)** An antagonist is a muscle with opposing action, not an attachment point."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The origin is the end of the muscle attached to the fixed (stabilized) bone.\n\n**Why the other options are wrong:**\n- **(A)** The fulcrum is the joint acting as a pivot, not a muscle attachment.\n- **(B)** The effort arm is a distance measurement, not an attachment.\n- **(C)** An antagonist is a muscle with opposing action, not an attachment point.\n- **(D)** The insertion attaches to the moveable bone being pulled."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -60,14 +60,14 @@
           "question": {
             "stem": "Which statement best describes how power levers and speed levers differ?",
             "options": [
-              "Power levers move light loads quickly; speed levers move heavy loads slowly",
-              "Power levers move heavy loads over short distances with little effort; speed levers move light loads over large distances quickly",
-              "Power levers always have the fulcrum in the middle; speed levers always have the load in the middle",
               "Power levers require large effort; speed levers require little effort",
-              "Power levers only occur in first-class systems; speed levers only occur in second-class systems"
+              "Power levers move light loads quickly; speed levers move heavy loads slowly",
+              "Power levers only occur in first-class systems; speed levers only occur in second-class systems",
+              "Power levers move heavy loads over short distances with little effort; speed levers move light loads over large distances quickly",
+              "Power levers always have the fulcrum in the middle; speed levers always have the load in the middle"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Power levers move heavy loads over short distances using little effort, while speed levers move light loads over large distances quickly.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the definitions of power and speed levers.\n- **(C)** Lever class is defined by component arrangement, not by power vs speed distinction.\n- **(D)** Power levers require little effort; speed levers require large effort.\n- **(E)** Power and speed lever behavior is not tied exclusively to those specific lever classes."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Power levers move heavy loads over short distances using little effort, while speed levers move light loads over large distances quickly.\n\n**Why the other options are wrong:**\n- **(A)** Power levers require little effort; speed levers require large effort.\n- **(B)** This reverses the definitions of power and speed levers.\n- **(C)** Power and speed lever behavior is not tied exclusively to those specific lever classes.\n- **(E)** Lever class is defined by component arrangement, not by power vs speed distinction."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -77,14 +77,14 @@
           "question": {
             "stem": "During knee flexion, the hamstrings are the agonists. Which muscle group serves as the antagonist in this movement?",
             "options": [
-              "Hamstrings",
-              "Calf muscles",
+              "Biceps brachii",
               "Quadriceps femoris",
               "Posterior neck muscles",
-              "Biceps brachii"
+              "Calf muscles",
+              "Hamstrings"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** During knee flexion the quadriceps femoris opposes the hamstrings, acting as the antagonist.\n\n**Why the other options are wrong:**\n- **(A)** The hamstrings are the agonists in knee flexion, not the antagonists.\n- **(B)** The calf muscles act at the ankle, not as antagonists at the knee.\n- **(D)** The posterior neck muscles move the head, not the knee.\n- **(E)** The biceps brachii flexes the forearm, unrelated to knee movement."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** During knee flexion the quadriceps femoris opposes the hamstrings, acting as the antagonist.\n\n**Why the other options are wrong:**\n- **(A)** The biceps brachii flexes the forearm, unrelated to knee movement.\n- **(C)** The posterior neck muscles move the head, not the knee.\n- **(D)** The calf muscles act at the ankle, not as antagonists at the knee.\n- **(E)** The hamstrings are the agonists in knee flexion, not the antagonists."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -94,14 +94,14 @@
           "question": {
             "stem": "When you stand up on your toes, which structure acts as the fulcrum in this second-class lever?",
             "options": [
-              "The calf muscle",
-              "The body's weight",
               "The metatarsophalangeal joints (balls of the feet)",
               "The knee joint",
-              "The atlanto-occipital joint"
+              "The calf muscle",
+              "The atlanto-occipital joint",
+              "The body's weight"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** In this second-class lever, the metatarsophalangeal joints (balls of the feet) act as the fulcrum.\n\n**Why the other options are wrong:**\n- **(A)** The calf muscle produces the effort, not the fulcrum.\n- **(B)** The body's weight is the resistance/load, not the fulcrum.\n- **(D)** The knee joint is not involved as the pivot in standing on toes.\n- **(E)** The atlanto-occipital joint is the fulcrum for raising the head, not the feet."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** In this second-class lever, the metatarsophalangeal joints (balls of the feet) act as the fulcrum.\n\n**Why the other options are wrong:**\n- **(B)** The knee joint is not involved as the pivot in standing on toes.\n- **(C)** The calf muscle produces the effort, not the fulcrum.\n- **(D)** The atlanto-occipital joint is the fulcrum for raising the head, not the feet.\n- **(E)** The body's weight is the resistance/load, not the fulcrum."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -111,14 +111,14 @@
           "question": {
             "stem": "In a lever system, if the resistance arm is shorter than the effort arm, what type of lever is present?",
             "options": [
-              "Speed lever",
-              "Power lever",
+              "A balanced lever with no movement possible",
               "First-class lever",
+              "Power lever",
               "Third-class lever",
-              "A balanced lever with no movement possible"
+              "Speed lever"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** When the resistance arm is shorter than the effort arm, the ratio is less than one, so less effort than resistance is needed—characteristic of a power lever.\n\n**Why the other options are wrong:**\n- **(A)** A speed lever occurs when the resistance arm is longer than the effort arm.\n- **(C)** First-class levers can be either power or speed depending on arm lengths.\n- **(D)** Third-class levers are always speed levers because the effort arm is shorter.\n- **(E)** Movement is possible whenever effort exceeds the resistance requirement."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** When the resistance arm is shorter than the effort arm, the ratio is less than one, so less effort than resistance is needed—characteristic of a power lever.\n\n**Why the other options are wrong:**\n- **(A)** Movement is possible whenever effort exceeds the resistance requirement.\n- **(B)** First-class levers can be either power or speed depending on arm lengths.\n- **(D)** Third-class levers are always speed levers because the effort arm is shorter.\n- **(E)** A speed lever occurs when the resistance arm is longer than the effort arm."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -128,14 +128,14 @@
           "question": {
             "stem": "Which term refers to a muscle that has the opposite action of the agonist and helps keep a limb's movement in check?",
             "options": [
-              "Synergist",
               "Fixator",
+              "Fulcrum",
               "Antagonist",
-              "Prime mover",
-              "Fulcrum"
+              "Synergist",
+              "Prime mover"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** An antagonist has the opposite action of the agonist and helps maintain position and check rapid limb movement.\n\n**Why the other options are wrong:**\n- **(A)** A synergist assists the agonist rather than opposing it.\n- **(B)** A fixator stabilizes the origin bone, not opposes the movement.\n- **(D)** The prime mover is the agonist itself.\n- **(E)** The fulcrum is a joint pivot, not a muscle."
+            "explanation": "**Why (C) is correct:** An antagonist has the opposite action of the agonist and helps maintain position and check rapid limb movement.\n\n**Why the other options are wrong:**\n- **(A)** A fixator stabilizes the origin bone, not opposes the movement.\n- **(B)** The fulcrum is a joint pivot, not a muscle.\n- **(D)** A synergist assists the agonist rather than opposing it.\n- **(E)** The prime mover is the agonist itself."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -145,14 +145,14 @@
           "question": {
             "stem": "When you flex your forearm to lift your hand, the biceps brachii produces the effort. Where is the insertion of the muscle relative to the bone that is moved?",
             "options": [
-              "On the fixed, stabilized bone away from the joint being moved",
-              "On the moveable bone (forearm) being pulled toward the arm",
-              "At the fulcrum itself, within the elbow joint",
               "In the skin overlying the elbow",
-              "On the resistance, which is the hand"
+              "On the fixed, stabilized bone away from the joint being moved",
+              "At the fulcrum itself, within the elbow joint",
+              "On the resistance, which is the hand",
+              "On the moveable bone (forearm) being pulled toward the arm"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The insertion is the moveable end of the muscle attaching to the bone being pulled, here the forearm bone that is drawn upward during flexion.\n\n**Why the other options are wrong:**\n- **(A)** The attachment on the fixed bone is the origin, not the insertion.\n- **(C)** The insertion is a muscle attachment on bone, not at the joint fulcrum.\n- **(D)** Skeletal muscles moving the skeleton insert on bone via tendons, not skin.\n- **(E)** The hand is the resistance/load, not the muscle's insertion point."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The insertion is the moveable end of the muscle attaching to the bone being pulled, here the forearm bone that is drawn upward during flexion.\n\n**Why the other options are wrong:**\n- **(A)** Skeletal muscles moving the skeleton insert on bone via tendons, not skin.\n- **(B)** The attachment on the fixed bone is the origin, not the insertion.\n- **(C)** The insertion is a muscle attachment on bone, not at the joint fulcrum.\n- **(D)** The hand is the resistance/load, not the muscle's insertion point."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -162,14 +162,14 @@
           "question": {
             "stem": "According to the relationship between arm length and lever type, a lever with the muscle insertion point close to the joint (short effort arm) and the resistance far from the joint (long resistance arm) will function as which of the following?",
             "options": [
-              "A power lever that moves loads slowly with little effort",
-              "A speed lever that moves loads quickly over a large distance but requires large effort",
               "A balanced lever that cannot produce movement",
               "A power lever that moves heavy loads over short distances",
-              "A second-class lever regardless of arm lengths"
+              "A power lever that moves loads slowly with little effort",
+              "A second-class lever regardless of arm lengths",
+              "A speed lever that moves loads quickly over a large distance but requires large effort"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A short effort arm with a long resistance arm moves the load fast over a large distance but requires a large effort—this is a speed lever.\n\n**Why the other options are wrong:**\n- **(A)** This arrangement produces fast movement, not slow movement, and needs large effort.\n- **(C)** Movement occurs when effort is sufficient; this is not a permanently balanced system.\n- **(D)** Power levers have a longer effort arm and short resistance arm, the opposite of this.\n- **(E)** Lever class depends on component arrangement, not simply on these arm lengths."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A short effort arm with a long resistance arm moves the load fast over a large distance but requires a large effort—this is a speed lever.\n\n**Why the other options are wrong:**\n- **(A)** Movement occurs when effort is sufficient; this is not a permanently balanced system.\n- **(B)** Power levers have a longer effort arm and short resistance arm, the opposite of this.\n- **(C)** This arrangement produces fast movement, not slow movement, and needs large effort.\n- **(D)** Lever class depends on component arrangement, not simply on these arm lengths."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -179,14 +179,14 @@
           "question": {
             "stem": "In a second-class lever, which arrangement of the fulcrum, effort, and resistance is present?",
             "options": [
-              "The resistance lies between the fulcrum and the effort.",
-              "The effort lies between the fulcrum and the resistance.",
               "The fulcrum lies between the effort and the resistance.",
+              "The fulcrum and effort are applied on the same side of the resistance.",
+              "The effort lies between the fulcrum and the resistance.",
               "The effort and resistance are applied at the same point.",
-              "The fulcrum and effort are applied on the same side of the resistance."
+              "The resistance lies between the fulcrum and the effort."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** In a second-class lever the resistance sits between the fulcrum and the effort, which makes the effort arm always longer than the resistance arm (a power lever).\n\n**Why the other options are wrong:**\n- **(B)** This describes a third-class lever, not a second-class lever.\n- **(C)** This describes a first-class lever.\n- **(D)** Effort and resistance are applied at distinct points in any functional lever.\n- **(E)** This vague arrangement does not describe the defining feature of a second-class lever."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** In a second-class lever the resistance sits between the fulcrum and the effort, which makes the effort arm always longer than the resistance arm (a power lever).\n\n**Why the other options are wrong:**\n- **(A)** This describes a first-class lever.\n- **(B)** This vague arrangement does not describe the defining feature of a second-class lever.\n- **(C)** This describes a third-class lever, not a second-class lever.\n- **(D)** Effort and resistance are applied at distinct points in any functional lever."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -196,14 +196,14 @@
           "question": {
             "stem": "The end of a skeletal muscle that attaches to the fixed or stabilized bone is called the:",
             "options": [
-              "Insertion",
-              "Origin",
-              "Fulcrum",
               "Synergist",
-              "Antagonist"
+              "Fulcrum",
+              "Antagonist",
+              "Origin",
+              "Insertion"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The origin is the muscle's attachment to the fixed (stabilized) bone, whereas the insertion attaches to the bone that is moved.\n\n**Why the other options are wrong:**\n- **(A)** The insertion attaches to the moveable bone, not the fixed one.\n- **(C)** The fulcrum is the joint acting as a pivot, not a muscle attachment.\n- **(D)** A synergist is an assisting muscle, not an attachment point.\n- **(E)** An antagonist is a muscle with the opposite action, not an attachment point."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The origin is the muscle's attachment to the fixed (stabilized) bone, whereas the insertion attaches to the bone that is moved.\n\n**Why the other options are wrong:**\n- **(A)** A synergist is an assisting muscle, not an attachment point.\n- **(B)** The fulcrum is the joint acting as a pivot, not a muscle attachment.\n- **(C)** An antagonist is a muscle with the opposite action, not an attachment point.\n- **(E)** The insertion attaches to the moveable bone, not the fixed one."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -213,14 +213,14 @@
           "question": {
             "stem": "When the biceps brachii flexes the forearm with the hand supinated, which muscle acts as the agonist (prime mover)?",
             "options": [
-              "Brachialis",
               "Brachioradialis",
-              "Triceps brachii",
               "Biceps brachii",
-              "Hamstrings"
+              "Triceps brachii",
+              "Hamstrings",
+              "Brachialis"
             ],
-            "correct_index": 3,
-            "explanation": "**Why (D) is correct:** The biceps brachii is the principal muscle producing forearm flexion when the hand is supinated, making it the agonist/prime mover.\n\n**Why the other options are wrong:**\n- **(A)** The brachialis assists this movement as a synergist, not the prime mover.\n- **(B)** The brachioradialis is a synergist aiding the motion, not the prime mover.\n- **(C)** The triceps brachii extends the forearm, acting as the antagonist here.\n- **(E)** The hamstrings act at the knee, not the forearm."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The biceps brachii is the principal muscle producing forearm flexion when the hand is supinated, making it the agonist/prime mover.\n\n**Why the other options are wrong:**\n- **(A)** The brachioradialis is a synergist aiding the motion, not the prime mover.\n- **(C)** The triceps brachii extends the forearm, acting as the antagonist here.\n- **(D)** The hamstrings act at the knee, not the forearm.\n- **(E)** The brachialis assists this movement as a synergist, not the prime mover."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -230,14 +230,14 @@
           "question": {
             "stem": "In lever terminology, which term refers to the fixed point around which the lever pivots?",
             "options": [
-              "Effort",
-              "Load",
-              "Fulcrum",
               "Resistance arm",
-              "Insertion"
+              "Load",
+              "Insertion",
+              "Effort",
+              "Fulcrum"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The fulcrum is the fixed pivot point of a lever, corresponding to a joint in the body.\n\n**Why the other options are wrong:**\n- **(A)** The effort is the applied force from muscle contraction, not the pivot.\n- **(B)** The load is the resistance being moved, not the pivot.\n- **(D)** The resistance arm is a distance, not a pivot point.\n- **(E)** The insertion is a muscle attachment point, not the pivot."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The fulcrum is the fixed pivot point of a lever, corresponding to a joint in the body.\n\n**Why the other options are wrong:**\n- **(A)** The resistance arm is a distance, not a pivot point.\n- **(B)** The load is the resistance being moved, not the pivot.\n- **(C)** The insertion is a muscle attachment point, not the pivot.\n- **(D)** The effort is the applied force from muscle contraction, not the pivot."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -247,14 +247,14 @@
           "question": {
             "stem": "Which of the following muscles has its origin and insertion in the skin rather than attaching to the skeleton?",
             "options": [
-              "Muscles of facial expression",
-              "Quadriceps femoris",
-              "Biceps brachii",
               "Calf muscles",
-              "Posterior neck muscles"
+              "Posterior neck muscles",
+              "Biceps brachii",
+              "Muscles of facial expression",
+              "Quadriceps femoris"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Muscles of facial expression have their origins and insertions in the skin, allowing them to produce smiles or frowns without moving the skeleton.\n\n**Why the other options are wrong:**\n- **(B)** The quadriceps femoris attaches to bone to extend the knee.\n- **(C)** The biceps brachii attaches to bone to flex the forearm.\n- **(D)** The calf muscles attach to bone to allow standing on the toes.\n- **(E)** The posterior neck muscles attach to the skeleton to raise the head."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Muscles of facial expression have their origins and insertions in the skin, allowing them to produce smiles or frowns without moving the skeleton.\n\n**Why the other options are wrong:**\n- **(A)** The calf muscles attach to bone to allow standing on the toes.\n- **(B)** The posterior neck muscles attach to the skeleton to raise the head.\n- **(C)** The biceps brachii attaches to bone to flex the forearm.\n- **(E)** The quadriceps femoris attaches to bone to extend the knee."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -265,13 +265,13 @@
             "stem": "The distance from the fulcrum to the insertion point of the muscle delivering most of the effort is called the:",
             "options": [
               "Resistance arm",
-              "Effort arm",
               "Load",
+              "Fulcrum",
               "Origin",
-              "Fulcrum"
+              "Effort arm"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The effort arm is defined as the distance from the fulcrum to the insertion point of the skeletal muscle delivering most of the effort.\n\n**Why the other options are wrong:**\n- **(A)** The resistance arm is the distance from the fulcrum to the load.\n- **(C)** The load is the resistance itself, not a distance.\n- **(D)** The origin is a muscle attachment to a fixed bone, not a lever distance.\n- **(E)** The fulcrum is the pivot point, not a distance."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The effort arm is defined as the distance from the fulcrum to the insertion point of the skeletal muscle delivering most of the effort.\n\n**Why the other options are wrong:**\n- **(A)** The resistance arm is the distance from the fulcrum to the load.\n- **(B)** The load is the resistance itself, not a distance.\n- **(C)** The fulcrum is the pivot point, not a distance.\n- **(D)** The origin is a muscle attachment to a fixed bone, not a lever distance."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -281,14 +281,14 @@
           "question": {
             "stem": "According to the unit, a lever system that can quickly move light loads over large distances using a large amount of effort is a:",
             "options": [
-              "Power lever",
-              "Speed lever",
               "Second-class lever",
               "Fixator",
+              "Speed lever",
+              "Power lever",
               "Fulcrum lever"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A speed lever moves light loads quickly over large distances while requiring a large amount of effort.\n\n**Why the other options are wrong:**\n- **(A)** A power lever moves heavy loads over short distances using little effort — the opposite trade-off.\n- **(C)** Second-class levers are always power levers, not speed levers.\n- **(D)** A fixator is a stabilizing muscle, not a lever type.\n- **(E)** \"Fulcrum lever\" is not a recognized lever category."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A speed lever moves light loads quickly over large distances while requiring a large amount of effort.\n\n**Why the other options are wrong:**\n- **(A)** Second-class levers are always power levers, not speed levers.\n- **(B)** A fixator is a stabilizing muscle, not a lever type.\n- **(D)** A power lever moves heavy loads over short distances using little effort — the opposite trade-off.\n- **(E)** \"Fulcrum lever\" is not a recognized lever category."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -298,14 +298,14 @@
           "question": {
             "stem": "During knee flexion, the hamstrings act as the agonists. In this movement, the quadriceps femoris function as the:",
             "options": [
+              "Prime mover",
               "Synergist",
               "Fixator",
               "Antagonist",
-              "Prime mover",
               "Origin"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** During knee flexion the quadriceps femoris perform the opposite action (extension), so they are the antagonists.\n\n**Why the other options are wrong:**\n- **(A)** A synergist assists the agonist's movement; the quadriceps oppose flexion.\n- **(B)** A fixator stabilizes an origin bone; that is not the quadriceps' role here.\n- **(D)** The hamstrings, not the quadriceps, are the prime movers of knee flexion.\n- **(E)** Origin is an attachment point, not a functional muscle role in a movement."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** During knee flexion the quadriceps femoris perform the opposite action (extension), so they are the antagonists.\n\n**Why the other options are wrong:**\n- **(A)** The hamstrings, not the quadriceps, are the prime movers of knee flexion.\n- **(B)** A synergist assists the agonist's movement; the quadriceps oppose flexion.\n- **(C)** A fixator stabilizes an origin bone; that is not the quadriceps' role here.\n- **(E)** Origin is an attachment point, not a functional muscle role in a movement."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -315,14 +315,14 @@
           "question": {
             "stem": "Using the formula effort = resistance × (resistance arm ÷ effort arm), when the resistance arm is shorter than the effort arm, the required effort is:",
             "options": [
-              "Greater than the resistance, indicating a speed lever",
               "Less than the resistance, indicating a power lever",
-              "Equal to the resistance, indicating a balanced first-class lever",
               "Greater than the resistance, indicating a power lever",
-              "Zero, because no effort is required"
+              "Zero, because no effort is required",
+              "Equal to the resistance, indicating a balanced first-class lever",
+              "Greater than the resistance, indicating a speed lever"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** When the resistance arm is shorter than the effort arm the ratio is less than one, so the effort needed is less than the resistance — characteristic of a power lever.\n\n**Why the other options are wrong:**\n- **(A)** Effort exceeding resistance is a speed lever, which occurs when the resistance arm is longer.\n- **(C)** Equal forces occur only when the arms are equal, not when the resistance arm is shorter.\n- **(D)** A power lever requires less effort than resistance, not more.\n- **(E)** Some effort is always required to move a load; it is not zero."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** When the resistance arm is shorter than the effort arm the ratio is less than one, so the effort needed is less than the resistance — characteristic of a power lever.\n\n**Why the other options are wrong:**\n- **(B)** A power lever requires less effort than resistance, not more.\n- **(C)** Some effort is always required to move a load; it is not zero.\n- **(D)** Equal forces occur only when the arms are equal, not when the resistance arm is shorter.\n- **(E)** Effort exceeding resistance is a speed lever, which occurs when the resistance arm is longer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -332,14 +332,14 @@
           "question": {
             "stem": "Flexing the arm at the elbow using the biceps brachii is an example of which lever class?",
             "options": [
-              "First-class lever",
               "Second-class lever",
               "Third-class lever",
-              "Power lever formed by a second-class arrangement",
-              "Balanced lever"
+              "Balanced lever",
+              "First-class lever",
+              "Power lever formed by a second-class arrangement"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Elbow flexion places the effort (biceps brachii) between the fulcrum (elbow) and resistance (hand), which defines a third-class lever.\n\n**Why the other options are wrong:**\n- **(A)** A first-class lever has the fulcrum between effort and resistance, as in raising the head.\n- **(B)** A second-class lever has the resistance in the middle, as in standing on the toes.\n- **(D)** Third-class levers are speed levers, not second-class power levers.\n- **(E)** A balanced lever produces no movement, but arm flexion produces movement."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Elbow flexion places the effort (biceps brachii) between the fulcrum (elbow) and resistance (hand), which defines a third-class lever.\n\n**Why the other options are wrong:**\n- **(A)** A second-class lever has the resistance in the middle, as in standing on the toes.\n- **(C)** A balanced lever produces no movement, but arm flexion produces movement.\n- **(D)** A first-class lever has the fulcrum between effort and resistance, as in raising the head.\n- **(E)** Third-class levers are speed levers, not second-class power levers."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -349,14 +349,14 @@
           "question": {
             "stem": "When you raise your head off your chest, which structure acts as the fulcrum of this first-class lever?",
             "options": [
-              "The posterior neck muscles",
-              "The facial skeleton",
               "The atlanto-occipital joint",
               "The metatarsophalangeal joints",
-              "The elbow joint"
+              "The elbow joint",
+              "The facial skeleton",
+              "The posterior neck muscles"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** In lifting the head, the atlanto-occipital joint is the fixed pivot point (fulcrum) around which the lever rotates.\n\n**Why the other options are wrong:**\n- **(A)** The posterior neck muscles provide the effort, not the fulcrum.\n- **(B)** The facial skeleton is the resistance being lifted.\n- **(D)** The metatarsophalangeal joints are the fulcrum in the second-class lever of standing on the toes.\n- **(E)** The elbow joint is the fulcrum in the third-class lever of flexing the arm."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** In lifting the head, the atlanto-occipital joint is the fixed pivot point (fulcrum) around which the lever rotates.\n\n**Why the other options are wrong:**\n- **(B)** The metatarsophalangeal joints are the fulcrum in the second-class lever of standing on the toes.\n- **(C)** The elbow joint is the fulcrum in the third-class lever of flexing the arm.\n- **(D)** The facial skeleton is the resistance being lifted.\n- **(E)** The posterior neck muscles provide the effort, not the fulcrum."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -367,13 +367,13 @@
             "stem": "Which statement correctly describes the difference between power levers and speed levers?",
             "options": [
               "Power levers move heavy loads over short distances using little effort",
-              "Power levers move light loads over large distances quickly",
-              "Speed levers move heavy loads slowly using little effort",
+              "Power levers always have a longer resistance arm than effort arm",
               "Speed levers always have a shorter resistance arm than effort arm",
-              "Power levers always have a longer resistance arm than effort arm"
+              "Power levers move light loads over large distances quickly",
+              "Speed levers move heavy loads slowly using little effort"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A power lever can move a heavy load over a short distance using relatively little effort because its effort arm is longer than its resistance arm.\n\n**Why the other options are wrong:**\n- **(B)** Moving light loads over large distances quickly describes a speed lever, not a power lever.\n- **(C)** Speed levers move light loads and require a large amount of effort, not little effort.\n- **(D)** Speed levers have a longer resistance arm than effort arm.\n- **(E)** Power levers have a shorter resistance arm than effort arm."
+            "explanation": "**Why (A) is correct:** A power lever can move a heavy load over a short distance using relatively little effort because its effort arm is longer than its resistance arm.\n\n**Why the other options are wrong:**\n- **(B)** Power levers have a shorter resistance arm than effort arm.\n- **(C)** Speed levers have a longer resistance arm than effort arm.\n- **(D)** Moving light loads over large distances quickly describes a speed lever, not a power lever.\n- **(E)** Speed levers move light loads and require a large amount of effort, not little effort."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -384,13 +384,13 @@
             "stem": "During knee extension, the quadriceps femoris are the agonists. What role do the hamstrings play in this same movement?",
             "options": [
               "Synergist",
-              "Fixator",
               "Antagonist",
+              "Fixator",
               "Prime mover",
               "Insertion"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The hamstrings produce the opposite action of the quadriceps during knee extension, making them the antagonists of that movement.\n\n**Why the other options are wrong:**\n- **(A)** A synergist assists the agonist rather than opposing it.\n- **(B)** A fixator stabilizes the origin bone of the agonist, not opposes the movement.\n- **(D)** The prime mover of knee extension is the quadriceps femoris, not the hamstrings.\n- **(E)** Insertion is a muscle attachment point, not a functional muscle role."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The hamstrings produce the opposite action of the quadriceps during knee extension, making them the antagonists of that movement.\n\n**Why the other options are wrong:**\n- **(A)** A synergist assists the agonist rather than opposing it.\n- **(C)** A fixator stabilizes the origin bone of the agonist, not opposes the movement.\n- **(D)** The prime mover of knee extension is the quadriceps femoris, not the hamstrings.\n- **(E)** Insertion is a muscle attachment point, not a functional muscle role."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -400,14 +400,14 @@
           "question": {
             "stem": "In lever terminology, what is defined as the resistance that must be overcome by the effort?",
             "options": [
-              "Fulcrum",
               "Load",
               "Origin",
-              "Effort arm",
-              "Synergist"
+              "Fulcrum",
+              "Synergist",
+              "Effort arm"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The load (also called the resistance) is the body part or object that must be moved by the effort.\n\n**Why the other options are wrong:**\n- **(A)** The fulcrum is the fixed pivot point of the lever, not the resistance.\n- **(C)** The origin is the fixed attachment point of a muscle.\n- **(D)** The effort arm is a distance measurement, not the resistance itself.\n- **(E)** A synergist is an assisting muscle, not a lever component."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The load (also called the resistance) is the body part or object that must be moved by the effort.\n\n**Why the other options are wrong:**\n- **(B)** The origin is the fixed attachment point of a muscle.\n- **(C)** The fulcrum is the fixed pivot point of the lever, not the resistance.\n- **(D)** A synergist is an assisting muscle, not a lever component.\n- **(E)** The effort arm is a distance measurement, not the resistance itself."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -417,14 +417,14 @@
           "question": {
             "stem": "When the biceps brachii lifts a cup with the hand supinated, its insertion is the end that attaches to which of the following?",
             "options": [
+              "The skin of the forearm",
               "The bone that is held stable during the movement",
               "The bone that is moved during the movement",
-              "The skin of the forearm",
               "The fulcrum of the joint",
               "The antagonist muscle"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The insertion is the moveable end of a muscle, attaching to the bone that is pulled and moved during contraction.\n\n**Why the other options are wrong:**\n- **(A)** The end attaching to the stabilized bone is the origin, not the insertion.\n- **(C)** The biceps brachii inserts on bone, not skin.\n- **(D)** A muscle attaches to bone, not to the fulcrum (joint) itself.\n- **(E)** A muscle does not insert onto its antagonist."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The insertion is the moveable end of a muscle, attaching to the bone that is pulled and moved during contraction.\n\n**Why the other options are wrong:**\n- **(A)** The biceps brachii inserts on bone, not skin.\n- **(B)** The end attaching to the stabilized bone is the origin, not the insertion.\n- **(D)** A muscle attaches to bone, not to the fulcrum (joint) itself.\n- **(E)** A muscle does not insert onto its antagonist."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -434,14 +434,14 @@
           "question": {
             "stem": "Which of the following best describes the origin of a skeletal muscle?",
             "options": [
-              "The moveable end attached to the bone being pulled",
-              "The end attached to a fixed or stabilized bone",
-              "The band of connective tissue connecting muscle to bone",
               "The fixed pivot point at a synovial joint",
-              "The assisting muscle in a movement"
+              "The end attached to a fixed or stabilized bone",
+              "The moveable end attached to the bone being pulled",
+              "The assisting muscle in a movement",
+              "The band of connective tissue connecting muscle to bone"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The origin is the muscle end attached to a fixed (stabilized) bone that does not move during contraction.\n\n**Why the other options are wrong:**\n- **(A)** The moveable end attached to the pulled bone is the insertion.\n- **(C)** The connective tissue connecting muscle to bone is a tendon.\n- **(D)** The pivot point at the joint is the fulcrum, not the origin.\n- **(E)** The assisting muscle is a synergist, not an origin."
+            "explanation": "**Why (B) is correct:** The origin is the muscle end attached to a fixed (stabilized) bone that does not move during contraction.\n\n**Why the other options are wrong:**\n- **(A)** The pivot point at the joint is the fulcrum, not the origin.\n- **(C)** The moveable end attached to the pulled bone is the insertion.\n- **(D)** The assisting muscle is a synergist, not an origin.\n- **(E)** The connective tissue connecting muscle to bone is a tendon."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -451,14 +451,14 @@
           "question": {
             "stem": "Skeletal muscle transfers the tension of contraction to bone through which structure?",
             "options": [
-              "Ligaments",
-              "Tendons",
-              "Cartilage",
               "Fascia only",
-              "Synovial membrane"
+              "Synovial membrane",
+              "Cartilage",
+              "Tendons",
+              "Ligaments"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Tendons are strong bands of dense, regular connective tissue that connect skeletal muscle to bone and transfer contractile tension.\n\n**Why the other options are wrong:**\n- **(A)** Ligaments connect bone to bone, not muscle to bone.\n- **(C)** Cartilage cushions joints but does not attach muscle to bone.\n- **(D)** Fascia surrounds muscle but is not the specific muscle-to-bone connector.\n- **(E)** The synovial membrane lines joint cavities and does not attach muscle to bone."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Tendons are strong bands of dense, regular connective tissue that connect skeletal muscle to bone and transfer contractile tension.\n\n**Why the other options are wrong:**\n- **(A)** Fascia surrounds muscle but is not the specific muscle-to-bone connector.\n- **(B)** The synovial membrane lines joint cavities and does not attach muscle to bone.\n- **(C)** Cartilage cushions joints but does not attach muscle to bone.\n- **(E)** Ligaments connect bone to bone, not muscle to bone."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -468,14 +468,14 @@
           "question": {
             "stem": "Which term refers to the fixed point around which a lever pivots?",
             "options": [
-              "Effort",
+              "Insertion",
               "Resistance",
               "Fulcrum",
-              "Load",
-              "Insertion"
+              "Effort",
+              "Load"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The fulcrum is the fixed point that force is applied to and around which the lever pivots, corresponding to a joint in the body.\n\n**Why the other options are wrong:**\n- **(A)** Effort is the applied force from muscle contraction, not the pivot point.\n- **(B)** Resistance is the load opposing movement, not the pivot.\n- **(D)** The load is the object being moved, not the pivot point.\n- **(E)** Insertion is a muscle attachment point on the moved bone."
+            "explanation": "**Why (C) is correct:** The fulcrum is the fixed point that force is applied to and around which the lever pivots, corresponding to a joint in the body.\n\n**Why the other options are wrong:**\n- **(A)** Insertion is a muscle attachment point on the moved bone.\n- **(B)** Resistance is the load opposing movement, not the pivot.\n- **(D)** Effort is the applied force from muscle contraction, not the pivot point.\n- **(E)** The load is the object being moved, not the pivot point."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -485,14 +485,14 @@
           "question": {
             "stem": "A synergist that stabilizes the bone serving as the attachment for the agonist's origin is specifically called a:",
             "options": [
-              "Antagonist",
-              "Prime mover",
+              "Load",
               "Fixator",
               "Insertion",
-              "Load"
+              "Prime mover",
+              "Antagonist"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A fixator is a type of synergist that stabilizes the bone to which the agonist's origin attaches.\n\n**Why the other options are wrong:**\n- **(A)** An antagonist opposes the agonist's action rather than stabilizing its origin.\n- **(B)** The prime mover is the principal muscle producing the movement.\n- **(D)** Insertion is a muscle attachment point, not a functional role.\n- **(E)** The load is the resistance being moved, not a muscle role."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A fixator is a type of synergist that stabilizes the bone to which the agonist's origin attaches.\n\n**Why the other options are wrong:**\n- **(A)** The load is the resistance being moved, not a muscle role.\n- **(C)** Insertion is a muscle attachment point, not a functional role.\n- **(D)** The prime mover is the principal muscle producing the movement.\n- **(E)** An antagonist opposes the agonist's action rather than stabilizing its origin."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -502,14 +502,14 @@
           "question": {
             "stem": "When you stand up on your toes, your calf muscles produce the effort, your body weight is the resistance, and the balls of your feet are the fulcrum. What class of lever is this?",
             "options": [
-              "First-class lever",
-              "Second-class lever",
-              "Third-class lever",
               "A speed lever with a short effort arm",
+              "First-class lever",
+              "Third-class lever",
+              "Second-class lever",
               "A lever with effort between fulcrum and resistance"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Standing on the toes places the resistance (body) between the fulcrum (metatarsophalangeal joints) and the effort (calf muscles), which defines a second-class lever.\n\n**Why the other options are wrong:**\n- **(A)** A first-class lever has the effort and resistance on opposite sides of the fulcrum.\n- **(C)** A third-class lever has the effort applied between the fulcrum and the resistance.\n- **(D)** Second-class levers are power levers with a longer effort arm, not speed levers.\n- **(E)** Effort between the fulcrum and resistance describes a third-class lever, not this arrangement."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Standing on the toes places the resistance (body) between the fulcrum (metatarsophalangeal joints) and the effort (calf muscles), which defines a second-class lever.\n\n**Why the other options are wrong:**\n- **(A)** Second-class levers are power levers with a longer effort arm, not speed levers.\n- **(B)** A first-class lever has the effort and resistance on opposite sides of the fulcrum.\n- **(C)** A third-class lever has the effort applied between the fulcrum and the resistance.\n- **(E)** Effort between the fulcrum and resistance describes a third-class lever, not this arrangement."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1494,14 +1494,14 @@
           "question": {
             "stem": "When the biceps brachii contracts to flex the forearm, the radius is pulled toward the humerus. Based on the definitions of origin and insertion, which statement is correct?",
             "options": [
-              "The scapular attachment is the insertion because it is the stronger of the two ends.",
-              "The radial attachment is the insertion because the radius is the bone that moves.",
-              "The radial attachment is the origin because the muscle contracts toward it.",
               "Both the radial and scapular attachments are origins because the muscle spans two joints.",
-              "The insertion is always the point closest to the midline of the body."
+              "The insertion is always the point closest to the midline of the body.",
+              "The scapular attachment is the insertion because it is the stronger of the two ends.",
+              "The radial attachment is the origin because the muscle contracts toward it.",
+              "The radial attachment is the insertion because the radius is the bone that moves."
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The insertion is the moveable end of the muscle attached to the bone being pulled; since the radius moves during forearm flexion, the radial attachment is the insertion.\n\n**Why the other options are wrong:**\n- **(A)** Origin/insertion is defined by which bone moves, not by relative strength.\n- **(C)** The origin is the end attached to the fixed bone, not the moving radius.\n- **(D)** The scapular (stabilized) end is the origin, not both ends.\n- **(E)** Insertion is defined by movement of the bone, not proximity to the midline."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The insertion is the moveable end of the muscle attached to the bone being pulled; since the radius moves during forearm flexion, the radial attachment is the insertion.\n\n**Why the other options are wrong:**\n- **(A)** The scapular (stabilized) end is the origin, not both ends.\n- **(B)** Insertion is defined by movement of the bone, not proximity to the midline.\n- **(C)** Origin/insertion is defined by which bone moves, not by relative strength.\n- **(D)** The origin is the end attached to the fixed bone, not the moving radius."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1511,14 +1511,14 @@
           "question": {
             "stem": "During knee flexion, the hamstrings and quadriceps femoris switch roles compared to knee extension. Which pairing correctly describes their roles during knee FLEXION?",
             "options": [
-              "Quadriceps femoris = agonist; hamstrings = antagonist",
+              "Quadriceps femoris = agonist; hamstrings = synergist",
               "Hamstrings = agonist; quadriceps femoris = antagonist",
               "Hamstrings = synergist; quadriceps femoris = fixator",
-              "Quadriceps femoris = agonist; hamstrings = synergist",
+              "Quadriceps femoris = agonist; hamstrings = antagonist",
               "Both act as agonists simultaneously to produce flexion"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** In knee flexion the hamstrings produce the movement (agonist) while the quadriceps femoris opposes it (antagonist), the reverse of their roles in extension.\n\n**Why the other options are wrong:**\n- **(A)** This describes their roles during extension, not flexion.\n- **(C)** The hamstrings are the prime mover of flexion, not merely a synergist.\n- **(D)** The quadriceps oppose flexion, so they are the antagonist, not agonist.\n- **(E)** Antagonistic pairs do not both act as agonists for the same movement."
+            "explanation": "**Why (B) is correct:** In knee flexion the hamstrings produce the movement (agonist) while the quadriceps femoris opposes it (antagonist), the reverse of their roles in extension.\n\n**Why the other options are wrong:**\n- **(A)** The quadriceps oppose flexion, so they are the antagonist, not agonist.\n- **(C)** The hamstrings are the prime mover of flexion, not merely a synergist.\n- **(D)** This describes their roles during extension, not flexion.\n- **(E)** Antagonistic pairs do not both act as agonists for the same movement."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1528,14 +1528,14 @@
           "question": {
             "stem": "A second-class lever (e.g., standing on your toes) and a third-class lever (e.g., flexing the forearm) differ in their mechanical properties. Which comparison is correct?",
             "options": [
-              "The second-class lever is a speed lever, while the third-class lever is a power lever.",
-              "Both are power levers because muscle produces the effort in each.",
               "The second-class lever is a power lever (effort arm longer), while the third-class lever is a speed lever (effort arm shorter).",
               "Both are speed levers because the fulcrum lies at one end.",
-              "The third-class lever moves loads slowly over short distances, while the second-class lever moves loads quickly."
+              "The third-class lever moves loads slowly over short distances, while the second-class lever moves loads quickly.",
+              "The second-class lever is a speed lever, while the third-class lever is a power lever.",
+              "Both are power levers because muscle produces the effort in each."
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** In a second-class lever the resistance lies between fulcrum and effort, making the effort arm longer (power lever); in a third-class lever the effort lies between fulcrum and resistance, making the effort arm shorter (speed lever).\n\n**Why the other options are wrong:**\n- **(A)** The classifications are reversed.\n- **(B)** Second-class is a power lever but third-class is a speed lever.\n- **(D)** Second-class levers are power levers, not speed levers.\n- **(E)** These descriptions are swapped; second-class moves slowly/short, third-class quickly/large distance."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** In a second-class lever the resistance lies between fulcrum and effort, making the effort arm longer (power lever); in a third-class lever the effort lies between fulcrum and resistance, making the effort arm shorter (speed lever).\n\n**Why the other options are wrong:**\n- **(B)** Second-class levers are power levers, not speed levers.\n- **(C)** These descriptions are swapped; second-class moves slowly/short, third-class quickly/large distance.\n- **(D)** The classifications are reversed.\n- **(E)** Second-class is a power lever but third-class is a speed lever."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1545,14 +1545,14 @@
           "question": {
             "stem": "In the biomechanics of a lever system, which structure corresponds to the fulcrum in the human body?",
             "options": [
-              "The contracting skeletal muscle",
-              "The tendon connecting muscle to bone",
-              "The synovial joint about which the bone pivots",
               "The body part or object being moved",
-              "The insertion point of the muscle"
+              "The insertion point of the muscle",
+              "The synovial joint about which the bone pivots",
+              "The contracting skeletal muscle",
+              "The tendon connecting muscle to bone"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The fulcrum is the fixed pivot point; in the body the articular ending of a bone within a synovial joint acts as the fulcrum.\n\n**Why the other options are wrong:**\n- **(A)** The contracting muscle provides the effort, not the fulcrum.\n- **(B)** The tendon transfers force but is not the pivot point.\n- **(D)** The moved body part or object is the load/resistance.\n- **(E)** The insertion is where effort is applied, not the pivot."
+            "explanation": "**Why (C) is correct:** The fulcrum is the fixed pivot point; in the body the articular ending of a bone within a synovial joint acts as the fulcrum.\n\n**Why the other options are wrong:**\n- **(A)** The moved body part or object is the load/resistance.\n- **(B)** The insertion is where effort is applied, not the pivot.\n- **(D)** The contracting muscle provides the effort, not the fulcrum.\n- **(E)** The tendon transfers force but is not the pivot point."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1562,14 +1562,14 @@
           "question": {
             "stem": "Which of the following skeletal muscles does NOT move the skeleton, having its origin and/or insertion in structures other than bone?",
             "options": [
-              "Biceps brachii",
-              "Quadriceps femoris",
-              "The diaphragm",
               "Hamstrings",
-              "Posterior neck muscles"
+              "Posterior neck muscles",
+              "Quadriceps femoris",
+              "Biceps brachii",
+              "The diaphragm"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The diaphragm is a skeletal muscle that changes the volume of the pleural cavities without pulling on/moving the skeleton.\n\n**Why the other options are wrong:**\n- **(A)** The biceps brachii pulls on the radius to flex the forearm, moving the skeleton.\n- **(B)** The quadriceps femoris extends the knee, moving the skeleton.\n- **(D)** The hamstrings flex the knee, moving the skeleton.\n- **(E)** The posterior neck muscles lift the head, moving the skeleton."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The diaphragm is a skeletal muscle that changes the volume of the pleural cavities without pulling on/moving the skeleton.\n\n**Why the other options are wrong:**\n- **(A)** The hamstrings flex the knee, moving the skeleton.\n- **(B)** The posterior neck muscles lift the head, moving the skeleton.\n- **(C)** The quadriceps femoris extends the knee, moving the skeleton.\n- **(D)** The biceps brachii pulls on the radius to flex the forearm, moving the skeleton."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1580,13 +1580,13 @@
             "stem": "A synergist that stabilizes the bone serving as the attachment for the agonist's origin is given a more specific name. What is that term?",
             "options": [
               "Antagonist",
-              "Fixator",
-              "Prime mover",
+              "Load",
               "Insertion",
-              "Load"
+              "Fixator",
+              "Prime mover"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A synergist that stabilizes the bone providing the agonist's origin is specifically called a fixator.\n\n**Why the other options are wrong:**\n- **(A)** An antagonist opposes the agonist's action, not stabilizes its origin.\n- **(C)** The prime mover is the principal muscle producing the movement.\n- **(D)** Insertion is the moveable attachment point of a muscle, not a muscle role.\n- **(E)** The load is the resistance to be overcome, not a muscle role."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A synergist that stabilizes the bone providing the agonist's origin is specifically called a fixator.\n\n**Why the other options are wrong:**\n- **(A)** An antagonist opposes the agonist's action, not stabilizes its origin.\n- **(B)** The load is the resistance to be overcome, not a muscle role.\n- **(C)** Insertion is the moveable attachment point of a muscle, not a muscle role.\n- **(E)** The prime mover is the principal muscle producing the movement."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1596,14 +1596,14 @@
           "question": {
             "stem": "Using the relationship Effort = Resistance × (Resistance arm ÷ Effort arm), what does it mean when this calculation gives a value LESS than the resistance?",
             "options": [
+              "The system is a third-class lever moving a light load.",
               "The system is a speed lever with a long resistance arm.",
               "The system is a power lever, since the resistance arm is shorter than the effort arm.",
               "The lever cannot move because the equation is unbalanced.",
-              "The system is a third-class lever moving a light load.",
               "More effort than resistance is required to support the load."
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** When the resistance arm is shorter than the effort arm the ratio is less than one, so the required effort is less than the resistance — the definition of a power lever.\n\n**Why the other options are wrong:**\n- **(A)** A speed lever has a resistance arm longer than the effort arm, giving effort greater than resistance.\n- **(C)** A value less than resistance simply means little effort is needed; it does not prevent movement.\n- **(D)** Third-class levers are speed levers requiring more effort than resistance.\n- **(E)** Requiring more effort than resistance describes a speed lever, the opposite scenario."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** When the resistance arm is shorter than the effort arm the ratio is less than one, so the required effort is less than the resistance — the definition of a power lever.\n\n**Why the other options are wrong:**\n- **(A)** Third-class levers are speed levers requiring more effort than resistance.\n- **(B)** A speed lever has a resistance arm longer than the effort arm, giving effort greater than resistance.\n- **(D)** A value less than resistance simply means little effort is needed; it does not prevent movement.\n- **(E)** Requiring more effort than resistance describes a speed lever, the opposite scenario."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1613,14 +1613,14 @@
           "question": {
             "stem": "According to the descriptions of lever function, which statement correctly matches a lever type to its performance characteristic?",
             "options": [
-              "Speed levers move heavy loads over short distances using little effort.",
-              "Power levers move light loads quickly over large distances.",
-              "Power levers move heavy loads over short distances using little effort.",
               "Speed levers require little effort but move loads slowly.",
+              "Speed levers move heavy loads over short distances using little effort.",
+              "Power levers move heavy loads over short distances using little effort.",
+              "Power levers move light loads quickly over large distances.",
               "Power levers require a large effort to move loads over large distances."
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Power levers can move heavy loads over short distances while requiring only a small effort, because the effort arm is longer than the resistance arm.\n\n**Why the other options are wrong:**\n- **(A)** This describes a power lever, not a speed lever.\n- **(B)** This describes a speed lever, not a power lever.\n- **(D)** Speed levers require a large effort and move loads quickly, not slowly.\n- **(E)** Power levers move loads over short distances with little effort, not large distances with large effort."
+            "explanation": "**Why (C) is correct:** Power levers can move heavy loads over short distances while requiring only a small effort, because the effort arm is longer than the resistance arm.\n\n**Why the other options are wrong:**\n- **(A)** Speed levers require a large effort and move loads quickly, not slowly.\n- **(B)** This describes a power lever, not a speed lever.\n- **(D)** This describes a speed lever, not a power lever.\n- **(E)** Power levers move loads over short distances with little effort, not large distances with large effort."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1630,14 +1630,14 @@
           "question": {
             "stem": "When lifting the head off the chest (a first-class lever), which structure serves as the resistance (load)?",
             "options": [
-              "The posterior neck muscles",
-              "The atlanto-occipital joint",
-              "The facial skeleton",
               "The cervical vertebrae",
-              "The tendon of the neck muscles"
+              "The atlanto-occipital joint",
+              "The tendon of the neck muscles",
+              "The posterior neck muscles",
+              "The facial skeleton"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** In this first-class lever the facial skeleton (the weight of the head) is the resistance being moved.\n\n**Why the other options are wrong:**\n- **(A)** The posterior neck muscles supply the effort.\n- **(B)** The atlanto-occipital joint is the fulcrum.\n- **(D)** The cervical vertebrae are not identified as the load in this example.\n- **(E)** The tendon transmits force but is not the resistance."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** In this first-class lever the facial skeleton (the weight of the head) is the resistance being moved.\n\n**Why the other options are wrong:**\n- **(A)** The cervical vertebrae are not identified as the load in this example.\n- **(B)** The atlanto-occipital joint is the fulcrum.\n- **(C)** The tendon transmits force but is not the resistance.\n- **(D)** The posterior neck muscles supply the effort."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1647,14 +1647,14 @@
           "question": {
             "stem": "To lift a cup by flexing the forearm, the biceps brachii is the prime mover and the brachialis assists. What is the correct role classification of the brachialis in this action?",
             "options": [
-              "Antagonist, because it opposes the biceps brachii",
-              "Synergist, because it assists the prime mover in the same movement",
               "Fixator, because it stabilizes the cup",
+              "Synergist, because it assists the prime mover in the same movement",
               "Agonist, because it is the principal muscle of the action",
+              "Antagonist, because it opposes the biceps brachii",
               "Insertion, because it attaches to the moving bone"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The brachialis assists the biceps brachii in producing forearm flexion, which makes it a synergist for that action.\n\n**Why the other options are wrong:**\n- **(A)** It aids, rather than opposes, the biceps brachii, so it is not an antagonist.\n- **(C)** A fixator stabilizes an origin bone, not the object being lifted.\n- **(D)** The biceps brachii is the principal muscle (agonist), not the brachialis.\n- **(E)** Insertion is an attachment point, not a functional muscle role."
+            "explanation": "**Why (B) is correct:** The brachialis assists the biceps brachii in producing forearm flexion, which makes it a synergist for that action.\n\n**Why the other options are wrong:**\n- **(A)** A fixator stabilizes an origin bone, not the object being lifted.\n- **(C)** The biceps brachii is the principal muscle (agonist), not the brachialis.\n- **(D)** It aids, rather than opposes, the biceps brachii, so it is not an antagonist.\n- **(E)** Insertion is an attachment point, not a functional muscle role."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1664,14 +1664,14 @@
           "question": {
             "stem": "A muscle inserts far from the joint (long effort arm) while the load sits close to the joint (short resistance arm). What can be predicted about this lever system?",
             "options": [
-              "It is a speed lever requiring more effort than the resistance to move the load",
-              "It is a power lever moving a heavy load over a short distance using little effort",
-              "It is a first-class lever that can only maintain posture, not create movement",
               "It is a third-class lever moving a light load quickly over a large distance",
-              "It requires effort exactly equal to the resistance regardless of arm lengths"
+              "It is a first-class lever that can only maintain posture, not create movement",
+              "It requires effort exactly equal to the resistance regardless of arm lengths",
+              "It is a power lever moving a heavy load over a short distance using little effort",
+              "It is a speed lever requiring more effort than the resistance to move the load"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** When the effort arm is longer than the resistance arm, the effort-to-resistance ratio is less than one, meaning heavy loads move over short distances with little effort — the defining feature of a power lever.\n\n**Why the other options are wrong:**\n- **(A)** A speed lever has a longer resistance arm and shorter effort arm, the opposite of what is described.\n- **(C)** Lever class is not determined here, and first-class levers can produce movement.\n- **(D)** Third-class levers are speed levers, contradicting the long effort arm described.\n- **(E)** Effort equals resistance only in a balanced system with equal arms, not this arrangement."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** When the effort arm is longer than the resistance arm, the effort-to-resistance ratio is less than one, meaning heavy loads move over short distances with little effort — the defining feature of a power lever.\n\n**Why the other options are wrong:**\n- **(A)** Third-class levers are speed levers, contradicting the long effort arm described.\n- **(B)** Lever class is not determined here, and first-class levers can produce movement.\n- **(C)** Effort equals resistance only in a balanced system with equal arms, not this arrangement.\n- **(E)** A speed lever has a longer resistance arm and shorter effort arm, the opposite of what is described."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1681,14 +1681,14 @@
           "question": {
             "stem": "Which of the following skeletal muscles produces movement WITHOUT pulling on the skeleton?",
             "options": [
-              "The biceps brachii flexing the forearm",
-              "The quadriceps femoris extending the knee",
               "The diaphragm changing the volume of the pleural cavities",
-              "The posterior neck muscles raising the head",
-              "The calf muscles raising the body onto the toes"
+              "The biceps brachii flexing the forearm",
+              "The calf muscles raising the body onto the toes",
+              "The quadriceps femoris extending the knee",
+              "The posterior neck muscles raising the head"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The diaphragm is a skeletal muscle that contracts and relaxes to change pleural cavity volume without moving the skeleton, unlike muscles with bony attachments.\n\n**Why the other options are wrong:**\n- **(A)** The biceps brachii pulls on the forearm bones to flex the arm.\n- **(B)** The quadriceps femoris pulls on the leg to extend the knee.\n- **(D)** The posterior neck muscles pull on the facial skeleton to lift the head.\n- **(E)** The calf muscles pull on the foot to raise the body onto the toes."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The diaphragm is a skeletal muscle that contracts and relaxes to change pleural cavity volume without moving the skeleton, unlike muscles with bony attachments.\n\n**Why the other options are wrong:**\n- **(B)** The biceps brachii pulls on the forearm bones to flex the arm.\n- **(C)** The calf muscles pull on the foot to raise the body onto the toes.\n- **(D)** The quadriceps femoris pulls on the leg to extend the knee.\n- **(E)** The posterior neck muscles pull on the facial skeleton to lift the head."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1698,14 +1698,14 @@
           "question": {
             "stem": "In a lever system, what is the correct definition of the 'effort arm'?",
             "options": [
-              "The distance between the fulcrum and the load being moved",
-              "The distance from the fulcrum to the insertion point of the muscle delivering the effort",
               "The straight bar that pivots around the fulcrum",
-              "The fixed point around which the lever pivots",
-              "The resistance that must be overcome for movement to occur"
+              "The distance from the fulcrum to the insertion point of the muscle delivering the effort",
+              "The distance between the fulcrum and the load being moved",
+              "The resistance that must be overcome for movement to occur",
+              "The fixed point around which the lever pivots"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The effort arm is defined as the distance from the fulcrum to the insertion point of the skeletal muscle delivering most of the effort.\n\n**Why the other options are wrong:**\n- **(A)** That describes the resistance arm, not the effort arm.\n- **(C)** That defines the lever itself, not the effort arm.\n- **(D)** That defines the fulcrum.\n- **(E)** That defines the load or resistance."
+            "explanation": "**Why (B) is correct:** The effort arm is defined as the distance from the fulcrum to the insertion point of the skeletal muscle delivering most of the effort.\n\n**Why the other options are wrong:**\n- **(A)** That defines the lever itself, not the effort arm.\n- **(C)** That describes the resistance arm, not the effort arm.\n- **(D)** That defines the load or resistance.\n- **(E)** That defines the fulcrum."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1715,14 +1715,14 @@
           "question": {
             "stem": "During knee flexion, the hamstrings act as agonists. During knee extension, the SAME muscles serve which role?",
             "options": [
-              "Synergist, because they assist the quadriceps",
-              "Fixator, because they stabilize the origin of the quadriceps",
+              "They play no role during knee extension",
               "Antagonist, because their action opposes the movement",
+              "Synergist, because they assist the quadriceps",
               "Prime mover, because they generate the principal force",
-              "They play no role during knee extension"
+              "Fixator, because they stabilize the origin of the quadriceps"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** In knee extension the quadriceps are the agonists, so the hamstrings — with the opposite action — become the antagonists; the terms reverse depending on the movement.\n\n**Why the other options are wrong:**\n- **(A)** A synergist assists the agonist's movement, whereas the hamstrings oppose extension.\n- **(B)** A fixator stabilizes an origin bone, not what the hamstrings do here.\n- **(D)** The quadriceps, not the hamstrings, are the prime movers of knee extension.\n- **(E)** The hamstrings do have a role — checking and controlling the extension as antagonists."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** In knee extension the quadriceps are the agonists, so the hamstrings — with the opposite action — become the antagonists; the terms reverse depending on the movement.\n\n**Why the other options are wrong:**\n- **(A)** The hamstrings do have a role — checking and controlling the extension as antagonists.\n- **(C)** A synergist assists the agonist's movement, whereas the hamstrings oppose extension.\n- **(D)** The quadriceps, not the hamstrings, are the prime movers of knee extension.\n- **(E)** A fixator stabilizes an origin bone, not what the hamstrings do here."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1732,14 +1732,14 @@
           "question": {
             "stem": "When the head is raised off the chest, the atlanto-occipital joint acts as the fulcrum, the facial skeleton is the resistance, and the posterior neck muscles supply the effort. Why is this classified as a first-class lever?",
             "options": [
-              "Because the effort is applied between the fulcrum and the resistance",
-              "Because the resistance lies between the effort and the fulcrum",
-              "Because the effort and resistance are on opposite sides of the fulcrum",
               "Because the effort arm is always longer than the resistance arm",
+              "Because the effort and resistance are on opposite sides of the fulcrum",
+              "Because the resistance lies between the effort and the fulcrum",
+              "Because the effort is applied between the fulcrum and the resistance",
               "Because the resistance is moved slowly over only a short distance"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A first-class lever has the effort and resistance applied on opposite sides of the fulcrum, exactly as in raising the head off the chest.\n\n**Why the other options are wrong:**\n- **(A)** That arrangement describes a third-class lever.\n- **(B)** That arrangement describes a second-class lever.\n- **(D)** Effort-arm-always-longer is a feature of second-class levers, not the defining trait of first-class levers.\n- **(E)** That describes power/second-class lever behaviour, not the classification criterion for first-class levers."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A first-class lever has the effort and resistance applied on opposite sides of the fulcrum, exactly as in raising the head off the chest.\n\n**Why the other options are wrong:**\n- **(A)** Effort-arm-always-longer is a feature of second-class levers, not the defining trait of first-class levers.\n- **(C)** That arrangement describes a second-class lever.\n- **(D)** That arrangement describes a third-class lever.\n- **(E)** That describes power/second-class lever behaviour, not the classification criterion for first-class levers."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1749,14 +1749,14 @@
           "question": {
             "stem": "For the biceps brachii, which statement correctly relates its attachment points to its function in lifting a cup?",
             "options": [
-              "Its origin attaches to the forearm (the bone being pulled) and its insertion to the fixed scapula",
-              "Its insertion attaches to the forearm (the bone being pulled) and its origin to the more fixed proximal bone",
               "Both its origin and insertion attach to the skin, so no bone moves",
               "Its origin attaches to the hand, which serves as the resistance",
-              "Its insertion attaches to the fixed shoulder while its origin moves the forearm"
+              "Its origin attaches to the forearm (the bone being pulled) and its insertion to the fixed scapula",
+              "Its insertion attaches to the fixed shoulder while its origin moves the forearm",
+              "Its insertion attaches to the forearm (the bone being pulled) and its origin to the more fixed proximal bone"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The insertion is the moveable end attaching to the bone being pulled (the forearm), while the origin attaches to the more fixed proximal bone.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the definitions of origin and insertion.\n- **(C)** The biceps brachii pulls on the skeleton; only muscles like facial or tongue muscles attach in skin.\n- **(D)** The origin attaches to a fixed bone, not the moving hand.\n- **(E)** This reverses which end is fixed and which moves."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The insertion is the moveable end attaching to the bone being pulled (the forearm), while the origin attaches to the more fixed proximal bone.\n\n**Why the other options are wrong:**\n- **(A)** The biceps brachii pulls on the skeleton; only muscles like facial or tongue muscles attach in skin.\n- **(B)** The origin attaches to a fixed bone, not the moving hand.\n- **(C)** This reverses the definitions of origin and insertion.\n- **(D)** This reverses which end is fixed and which moves."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1766,14 +1766,14 @@
           "question": {
             "stem": "A load of 60 units sits on a lever with a resistance arm of 2 cm and an effort arm of 6 cm. Using effort = resistance × (resistance arm ÷ effort arm), what is the effort required, and what type of lever is this?",
             "options": [
-              "20 units; a power lever",
               "180 units; a speed lever",
-              "60 units; a balanced lever with equal arms",
+              "20 units; a power lever",
               "20 units; a speed lever",
+              "60 units; a balanced lever with equal arms",
               "180 units; a power lever"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Effort = 60 × (2 ÷ 6) = 20 units; because the effort needed is less than the resistance (effort arm longer than resistance arm), it is a power lever.\n\n**Why the other options are wrong:**\n- **(B)** 180 units would result if the arms were reversed, and this arrangement is not a speed lever.\n- **(C)** The arms are unequal (2 cm vs 6 cm), so it is not balanced with equal arms.\n- **(D)** The math (20) is correct but a power lever, not a speed lever, results from a longer effort arm.\n- **(E)** 180 units is the wrong calculation for these arm lengths."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Effort = 60 × (2 ÷ 6) = 20 units; because the effort needed is less than the resistance (effort arm longer than resistance arm), it is a power lever.\n\n**Why the other options are wrong:**\n- **(A)** 180 units would result if the arms were reversed, and this arrangement is not a speed lever.\n- **(C)** The math (20) is correct but a power lever, not a speed lever, results from a longer effort arm.\n- **(D)** The arms are unequal (2 cm vs 6 cm), so it is not balanced with equal arms.\n- **(E)** 180 units is the wrong calculation for these arm lengths."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1783,14 +1783,14 @@
           "question": {
             "stem": "When you stand up on your toes, the metatarsophalangeal joints are the fulcrum, the calf muscles supply the effort, and body weight is the resistance. Which structure serves as the insertion point relevant to the effort in this lever?",
             "options": [
-              "The metatarsophalangeal joint, which is the fixed origin",
               "The attachment of the calf muscle onto the foot, which moves the body",
               "The body's center of mass, which is the origin",
               "The knee joint, where the calf muscles originate",
+              "The metatarsophalangeal joint, which is the fixed origin",
               "The skin of the sole, where the calf muscles insert"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The insertion is the moveable end where the calf muscle attaches to the foot bones and transfers effort to raise the body, consistent with this second-class lever.\n\n**Why the other options are wrong:**\n- **(A)** The joint is the fulcrum, not a muscle insertion.\n- **(C)** The center of mass is the resistance/load, not a muscle attachment.\n- **(D)** The knee is where these muscles originate, not their insertion for this movement.\n- **(E)** The calf muscles insert onto bone via tendon, not into the skin of the sole."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The insertion is the moveable end where the calf muscle attaches to the foot bones and transfers effort to raise the body, consistent with this second-class lever.\n\n**Why the other options are wrong:**\n- **(B)** The center of mass is the resistance/load, not a muscle attachment.\n- **(C)** The knee is where these muscles originate, not their insertion for this movement.\n- **(D)** The joint is the fulcrum, not a muscle insertion.\n- **(E)** The calf muscles insert onto bone via tendon, not into the skin of the sole."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1800,14 +1800,14 @@
           "question": {
             "stem": "A student needs to identify a 'synergist.' Which description best fits this term?",
             "options": [
-              "The principal muscle producing a given movement",
               "A muscle whose action directly opposes the prime mover",
-              "An assisting muscle that aids the movement or stabilizes the prime mover's origin",
               "The fixed point around which a bone pivots",
+              "An assisting muscle that aids the movement or stabilizes the prime mover's origin",
+              "The principal muscle producing a given movement",
               "The moveable end of a muscle attaching to the bone being pulled"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A synergist assists the movement produced by the agonist and can also act as a fixator that stabilizes the bone serving as the prime mover's origin.\n\n**Why the other options are wrong:**\n- **(A)** That defines the agonist/prime mover.\n- **(B)** That defines the antagonist.\n- **(D)** That defines the fulcrum, an anatomical term for joints in levers.\n- **(E)** That defines the insertion."
+            "explanation": "**Why (C) is correct:** A synergist assists the movement produced by the agonist and can also act as a fixator that stabilizes the bone serving as the prime mover's origin.\n\n**Why the other options are wrong:**\n- **(A)** That defines the antagonist.\n- **(B)** That defines the fulcrum, an anatomical term for joints in levers.\n- **(D)** That defines the agonist/prime mover.\n- **(E)** That defines the insertion."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1817,14 +1817,14 @@
           "question": {
             "stem": "The brachialis assists the biceps brachii during forearm flexion. Which pairing of roles for the brachialis and the triceps brachii is correct during this flexion?",
             "options": [
-              "Brachialis = antagonist; triceps brachii = synergist",
-              "Brachialis = synergist; triceps brachii = antagonist",
               "Brachialis = prime mover; triceps brachii = fixator",
-              "Brachialis = fixator; triceps brachii = agonist",
-              "Both act as agonists of forearm flexion"
+              "Brachialis = antagonist; triceps brachii = synergist",
+              "Both act as agonists of forearm flexion",
+              "Brachialis = synergist; triceps brachii = antagonist",
+              "Brachialis = fixator; triceps brachii = agonist"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The brachialis assists the biceps in flexion, making it a synergist, while the triceps brachii (an extensor) has the opposite action and acts as the antagonist.\n\n**Why the other options are wrong:**\n- **(A)** The brachialis assists flexion (synergist), and the triceps opposes it (antagonist), so both roles are reversed.\n- **(C)** The biceps brachii is the prime mover here, not the brachialis, and the triceps is not a fixator.\n- **(D)** The triceps opposes flexion and is not the agonist of this movement.\n- **(E)** The triceps opposes flexion, so it cannot be an agonist of flexion."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The brachialis assists the biceps in flexion, making it a synergist, while the triceps brachii (an extensor) has the opposite action and acts as the antagonist.\n\n**Why the other options are wrong:**\n- **(A)** The biceps brachii is the prime mover here, not the brachialis, and the triceps is not a fixator.\n- **(B)** The brachialis assists flexion (synergist), and the triceps opposes it (antagonist), so both roles are reversed.\n- **(C)** The triceps opposes flexion, so it cannot be an agonist of flexion.\n- **(E)** The triceps opposes flexion and is not the agonist of this movement."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1834,14 +1834,14 @@
           "question": {
             "stem": "A synergist can also act as a fixator. What does a fixator specifically do during a movement?",
             "options": [
-              "It produces the opposite action of the agonist to check the motion of the limb.",
-              "It stabilizes the bone that serves as the attachment for the agonist's origin.",
-              "It becomes the principal muscle responsible for the movement.",
               "It relocates the muscle's insertion to a fixed bone.",
-              "It provides the fulcrum around which the lever pivots."
+              "It provides the fulcrum around which the lever pivots.",
+              "It becomes the principal muscle responsible for the movement.",
+              "It produces the opposite action of the agonist to check the motion of the limb.",
+              "It stabilizes the bone that serves as the attachment for the agonist's origin."
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A fixator is a type of synergist that stabilizes the bone anchoring the agonist's origin so the agonist can pull effectively.\n\n**Why the other options are wrong:**\n- **(A)** That describes an antagonist, not a fixator.\n- **(C)** The principal muscle is the agonist/prime mover, not a fixator.\n- **(D)** A fixator stabilizes a bone; it does not move the insertion.\n- **(E)** The fulcrum is a joint, not a role played by a muscle."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A fixator is a type of synergist that stabilizes the bone anchoring the agonist's origin so the agonist can pull effectively.\n\n**Why the other options are wrong:**\n- **(A)** A fixator stabilizes a bone; it does not move the insertion.\n- **(B)** The fulcrum is a joint, not a role played by a muscle.\n- **(C)** The principal muscle is the agonist/prime mover, not a fixator.\n- **(D)** That describes an antagonist, not a fixator."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1851,14 +1851,14 @@
           "question": {
             "stem": "During elbow flexion with the hand supinated, the biceps brachii serves as the prime mover. Which end of this muscle is its insertion?",
             "options": [
-              "The end attached to the scapula, which remains stabilized.",
-              "The end attached to the radius, which is the bone being pulled toward the shoulder.",
               "The tendon connecting the muscle to the humerus at its midpoint.",
+              "The end attached to the scapula, which remains stabilized.",
+              "The end attached to the ulna, which serves as the origin.",
               "The end embedded in the skin over the elbow joint.",
-              "The end attached to the ulna, which serves as the origin."
+              "The end attached to the radius, which is the bone being pulled toward the shoulder."
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The insertion is the moveable end attaching to the bone being pulled—here the radius of the forearm that is drawn upward.\n\n**Why the other options are wrong:**\n- **(A)** The stabilized end (scapula) is the origin, not the insertion.\n- **(C)** The biceps brachii does not insert at the humerus midpoint, and a tendon there is not its insertion.\n- **(D)** Skin attachment applies to muscles like facial muscles, not the biceps brachii.\n- **(E)** This end is described as an origin, contradicting the question asking for insertion."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The insertion is the moveable end attaching to the bone being pulled—here the radius of the forearm that is drawn upward.\n\n**Why the other options are wrong:**\n- **(A)** The biceps brachii does not insert at the humerus midpoint, and a tendon there is not its insertion.\n- **(B)** The stabilized end (scapula) is the origin, not the insertion.\n- **(C)** This end is described as an origin, contradicting the question asking for insertion.\n- **(D)** Skin attachment applies to muscles like facial muscles, not the biceps brachii."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1869,13 +1869,13 @@
             "stem": "In the hammer/pry-bar analogy applied to the body, which set of correspondences correctly matches the lever-system components to the musculoskeletal structures?",
             "options": [
               "Lever = joint; fulcrum = bone; load = muscle.",
-              "Lever = bone; fulcrum = joint; effort = contracting muscle.",
               "Lever = tendon; fulcrum = muscle; load = joint.",
-              "Lever = muscle; fulcrum = tendon; effort = bone.",
-              "Lever = joint; fulcrum = muscle; effort = bone."
+              "Lever = bone; fulcrum = joint; effort = contracting muscle.",
+              "Lever = joint; fulcrum = muscle; effort = bone.",
+              "Lever = muscle; fulcrum = tendon; effort = bone."
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** In the body, bones act as stiff levers, joints act as fulcrums, and the effort comes from contracting skeletal muscles.\n\n**Why the other options are wrong:**\n- **(A)** The bone is the lever and the joint is the fulcrum, so these are reversed.\n- **(C)** Tendons are not levers and muscles are not fulcrums.\n- **(D)** Muscles supply effort, not the lever; bone is the lever, not the effort source.\n- **(E)** Joints are fulcrums (not levers), and effort comes from muscle, not bone."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** In the body, bones act as stiff levers, joints act as fulcrums, and the effort comes from contracting skeletal muscles.\n\n**Why the other options are wrong:**\n- **(A)** The bone is the lever and the joint is the fulcrum, so these are reversed.\n- **(B)** Tendons are not levers and muscles are not fulcrums.\n- **(D)** Joints are fulcrums (not levers), and effort comes from muscle, not bone.\n- **(E)** Muscles supply effort, not the lever; bone is the lever, not the effort source."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1885,14 +1885,14 @@
           "question": {
             "stem": "When you raise your head off your chest, this is described as a first-class lever. Which feature of this system makes it first-class rather than second- or third-class?",
             "options": [
-              "The effort and resistance are applied on opposite sides of the fulcrum.",
+              "The effort arm is always longer than the resistance arm.",
               "The resistance lies between the effort and the fulcrum.",
               "The effort is applied between the fulcrum and the resistance.",
-              "The effort arm is always longer than the resistance arm.",
+              "The effort and resistance are applied on opposite sides of the fulcrum.",
               "There is no fulcrum involved in the movement."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A first-class lever has the effort and resistance on opposite sides of the fulcrum, as with the posterior neck muscles and facial skeleton about the atlanto-occipital joint.\n\n**Why the other options are wrong:**\n- **(B)** Resistance between effort and fulcrum defines a second-class lever.\n- **(C)** Effort between fulcrum and resistance defines a third-class lever.\n- **(D)** A fixed longer effort arm characterizes second-class levers, not first-class.\n- **(E)** The atlanto-occipital joint serves as the fulcrum in this system."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A first-class lever has the effort and resistance on opposite sides of the fulcrum, as with the posterior neck muscles and facial skeleton about the atlanto-occipital joint.\n\n**Why the other options are wrong:**\n- **(A)** A fixed longer effort arm characterizes second-class levers, not first-class.\n- **(B)** Resistance between effort and fulcrum defines a second-class lever.\n- **(C)** Effort between fulcrum and resistance defines a third-class lever.\n- **(E)** The atlanto-occipital joint serves as the fulcrum in this system."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1902,14 +1902,14 @@
           "question": {
             "stem": "During knee flexion, the hamstrings contract to bend the knee while the quadriceps femoris resists overflexion. In this specific movement, how should these muscles be classified?",
             "options": [
-              "Quadriceps femoris = agonist; hamstrings = antagonist.",
               "Hamstrings = agonist; quadriceps femoris = antagonist.",
-              "Hamstrings = synergist; quadriceps femoris = agonist.",
+              "Quadriceps femoris = agonist; hamstrings = antagonist.",
+              "Hamstrings = antagonist; quadriceps femoris = fixator.",
               "Both are agonists because they act on the same joint.",
-              "Hamstrings = antagonist; quadriceps femoris = fixator."
+              "Hamstrings = synergist; quadriceps femoris = agonist."
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** During knee flexion the hamstrings produce the movement (agonist) while the quadriceps oppose it (antagonist); these roles reverse for knee extension.\n\n**Why the other options are wrong:**\n- **(A)** These roles apply to knee extension, not flexion.\n- **(C)** The quadriceps opposes flexion, so it is the antagonist, not the agonist.\n- **(D)** They have opposing actions on the joint, so they are not both agonists.\n- **(E)** The hamstrings produce the movement here, so they are the agonist, not antagonist."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** During knee flexion the hamstrings produce the movement (agonist) while the quadriceps oppose it (antagonist); these roles reverse for knee extension.\n\n**Why the other options are wrong:**\n- **(B)** These roles apply to knee extension, not flexion.\n- **(C)** The hamstrings produce the movement here, so they are the agonist, not antagonist.\n- **(D)** They have opposing actions on the joint, so they are not both agonists.\n- **(E)** The quadriceps opposes flexion, so it is the antagonist, not the agonist."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1919,14 +1919,14 @@
           "question": {
             "stem": "When lifting a cup by flexing the forearm, the biceps brachii is the prime mover and the brachialis assists. What is the correct classification of the brachialis in this action?",
             "options": [
+              "Agonist, because it is the principal muscle involved.",
               "Antagonist, because it opposes the biceps brachii.",
               "Synergist, because it assists the prime mover in the movement.",
-              "Fulcrum, because it stabilizes the elbow joint.",
-              "Agonist, because it is the principal muscle involved.",
-              "Load, because it provides the resistance to be overcome."
+              "Load, because it provides the resistance to be overcome.",
+              "Fulcrum, because it stabilizes the elbow joint."
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The brachialis assists the biceps brachii in flexing the forearm, which by definition makes it a synergist.\n\n**Why the other options are wrong:**\n- **(A)** It aids the same movement, so it does not oppose the biceps brachii.\n- **(C)** A fulcrum is a joint, not a muscle.\n- **(D)** The principal muscle (agonist) is the biceps brachii, not the brachialis.\n- **(E)** The load is the object being moved, not a muscle."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The brachialis assists the biceps brachii in flexing the forearm, which by definition makes it a synergist.\n\n**Why the other options are wrong:**\n- **(A)** The principal muscle (agonist) is the biceps brachii, not the brachialis.\n- **(B)** It aids the same movement, so it does not oppose the biceps brachii.\n- **(D)** The load is the object being moved, not a muscle.\n- **(E)** A fulcrum is a joint, not a muscle."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1936,14 +1936,14 @@
           "question": {
             "stem": "A lever system has the muscle inserting close to the joint (short effort arm) and the resistance far from the joint (long resistance arm). What type of lever is this, and what is its functional advantage?",
             "options": [
+              "Power lever; moves light loads slowly with minimal effort.",
+              "Balanced lever; keeps effort and resistance exactly equal at all times.",
               "Power lever; moves heavy loads over short distances with little effort.",
               "Speed lever; moves light loads quickly over large distances but requires large effort.",
-              "Power lever; moves light loads slowly with minimal effort.",
-              "Speed lever; moves heavy loads over short distances with minimal effort.",
-              "Balanced lever; keeps effort and resistance exactly equal at all times."
+              "Speed lever; moves heavy loads over short distances with minimal effort."
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A short effort arm and long resistance arm give a ratio greater than one, making it a speed lever that moves loads quickly over large distances while requiring more effort.\n\n**Why the other options are wrong:**\n- **(A)** Power levers have a long effort arm and short resistance arm, the opposite of this setup.\n- **(C)** A short effort arm requires more effort, not minimal effort, and this is a speed lever.\n- **(D)** Speed levers move loads over large distances quickly, not over short distances with minimal effort.\n- **(E)** This system produces movement, not a permanently balanced state."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A short effort arm and long resistance arm give a ratio greater than one, making it a speed lever that moves loads quickly over large distances while requiring more effort.\n\n**Why the other options are wrong:**\n- **(A)** A short effort arm requires more effort, not minimal effort, and this is a speed lever.\n- **(B)** This system produces movement, not a permanently balanced state.\n- **(C)** Power levers have a long effort arm and short resistance arm, the opposite of this setup.\n- **(E)** Speed levers move loads over large distances quickly, not over short distances with minimal effort."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1953,14 +1953,14 @@
           "question": {
             "stem": "Which of the following pairs correctly identifies the fulcrum and load components in a lever system?",
             "options": [
-              "Fulcrum = the contracting muscle; load = the joint.",
-              "Fulcrum = the fixed pivot point (joint); load = the resistance or body part being moved.",
-              "Fulcrum = the effort applied; load = the effort arm.",
               "Fulcrum = the tendon; load = the muscle origin.",
-              "Fulcrum = the resistance arm; load = the fulcrum."
+              "Fulcrum = the effort applied; load = the effort arm.",
+              "Fulcrum = the resistance arm; load = the fulcrum.",
+              "Fulcrum = the fixed pivot point (joint); load = the resistance or body part being moved.",
+              "Fulcrum = the contracting muscle; load = the joint."
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The fulcrum is the fixed pivot point (a joint in the body), and the load/resistance is the object or body part that must be overcome by the effort.\n\n**Why the other options are wrong:**\n- **(A)** The muscle supplies effort, not the fulcrum; the joint is the fulcrum, not the load.\n- **(C)** The effort and effort arm are not the fulcrum and load.\n- **(D)** Tendons and origins are not the fulcrum and load.\n- **(E)** The resistance arm is a distance, not the fulcrum, and the load is not the fulcrum."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The fulcrum is the fixed pivot point (a joint in the body), and the load/resistance is the object or body part that must be overcome by the effort.\n\n**Why the other options are wrong:**\n- **(A)** Tendons and origins are not the fulcrum and load.\n- **(B)** The effort and effort arm are not the fulcrum and load.\n- **(C)** The resistance arm is a distance, not the fulcrum, and the load is not the fulcrum.\n- **(E)** The muscle supplies effort, not the fulcrum; the joint is the fulcrum, not the load."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1970,14 +1970,14 @@
           "question": {
             "stem": "Standing up on your toes uses a second-class lever, while lifting your hand by flexing the biceps brachii uses a third-class lever. Which statement correctly compares these two systems?",
             "options": [
-              "Both are speed levers because both move body parts quickly.",
               "The second-class lever is always a power lever, while the third-class lever is always a speed lever.",
-              "The third-class lever is always a power lever, while the second-class lever is always a speed lever.",
+              "Both are speed levers because both move body parts quickly.",
+              "Both have the effort located between the fulcrum and the resistance.",
               "Both are power levers because both use muscles to overcome resistance.",
-              "Both have the effort located between the fulcrum and the resistance."
+              "The third-class lever is always a power lever, while the second-class lever is always a speed lever."
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Second-class levers always have a longer effort arm (power lever), while third-class levers always have a shorter effort arm (speed lever).\n\n**Why the other options are wrong:**\n- **(A)** Second-class levers are power levers, not speed levers.\n- **(C)** This reverses the correct classifications of each lever type.\n- **(D)** Third-class levers are speed levers, not power levers.\n- **(E)** Only the third-class lever has effort between fulcrum and resistance; the second-class has resistance between effort and fulcrum."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Second-class levers always have a longer effort arm (power lever), while third-class levers always have a shorter effort arm (speed lever).\n\n**Why the other options are wrong:**\n- **(B)** Second-class levers are power levers, not speed levers.\n- **(C)** Only the third-class lever has effort between fulcrum and resistance; the second-class has resistance between effort and fulcrum.\n- **(D)** Third-class levers are speed levers, not power levers.\n- **(E)** This reverses the correct classifications of each lever type."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1987,14 +1987,14 @@
           "question": {
             "stem": "Some skeletal muscles, such as those producing facial expressions, differ from the biceps brachii in where their origin and insertion attach. What is the key difference?",
             "options": [
-              "Facial muscles attach to two moveable bones rather than one fixed and one moveable bone.",
               "Facial muscles have their origins and insertions in the skin rather than pulling on the skeleton.",
+              "Facial muscles attach to two moveable bones rather than one fixed and one moveable bone.",
               "Facial muscles have no origin, only an insertion into bone.",
-              "Facial muscles attach exclusively to tendons that do not connect to any structure.",
-              "Facial muscles insert onto the skeleton but originate in cartilage."
+              "Facial muscles insert onto the skeleton but originate in cartilage.",
+              "Facial muscles attach exclusively to tendons that do not connect to any structure."
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Facial expression muscles have their origins and insertions in the skin, so contracting them moves the skin rather than pulling on bones.\n\n**Why the other options are wrong:**\n- **(A)** They attach in skin, not to two moveable bones.\n- **(C)** They possess both origins and insertions, just located in skin.\n- **(D)** Their attachments are functional (in skin), not free-floating tendons.\n- **(E)** They do not insert on the skeleton; both ends are in the skin."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Facial expression muscles have their origins and insertions in the skin, so contracting them moves the skin rather than pulling on bones.\n\n**Why the other options are wrong:**\n- **(B)** They attach in skin, not to two moveable bones.\n- **(C)** They possess both origins and insertions, just located in skin.\n- **(D)** They do not insert on the skeleton; both ends are in the skin.\n- **(E)** Their attachments are functional (in skin), not free-floating tendons."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"

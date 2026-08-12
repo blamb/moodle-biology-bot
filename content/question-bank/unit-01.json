@@ -9,14 +9,14 @@
           "question": {
             "stem": "Which of the following is correctly classified as a compound?",
             "options": [
-              "Oxygen gas (O2)",
-              "A single atom of carbon (C)",
               "Carbon dioxide (CO2)",
+              "Hydrogen gas (H2)",
+              "A single atom of carbon (C)",
               "A saltwater solution",
-              "Hydrogen gas (H2)"
+              "Oxygen gas (O2)"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A compound is a substance made of two or more DIFFERENT elements joined by chemical bonds, and CO2 contains both carbon and oxygen.\n\n**Why the other options are wrong:**\n- **(A)** O2 is a molecule, but both atoms are the same element, so it is not a compound.\n- **(B)** A single carbon atom is just an atom, the smallest unit of an element.\n- **(D)** A saltwater solution is a mixture, not a single pure substance.\n- **(E)** H2 is a molecule of one element type only, not a compound."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A compound is a substance made of two or more DIFFERENT elements joined by chemical bonds, and CO2 contains both carbon and oxygen.\n\n**Why the other options are wrong:**\n- **(B)** H2 is a molecule of one element type only, not a compound.\n- **(C)** A single carbon atom is just an atom, the smallest unit of an element.\n- **(D)** A saltwater solution is a mixture, not a single pure substance.\n- **(E)** O2 is a molecule, but both atoms are the same element, so it is not a compound."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -26,14 +26,14 @@
           "question": {
             "stem": "Which term refers to a molecule that has a negatively charged region separated from a positively charged region?",
             "options": [
-              "Anion",
-              "Cation",
-              "Dipole",
               "Isotope",
-              "Neutron"
+              "Neutron",
+              "Dipole",
+              "Anion",
+              "Cation"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A dipole is a molecule with a negatively charged portion separated from a positively charged portion, as seen in water.\n\n**Why the other options are wrong:**\n- **(A)** An anion is a single ion with an overall negative charge, not a molecule with separated charges.\n- **(B)** A cation is a single ion with an overall positive charge.\n- **(D)** An isotope is a form of an element differing in neutron number.\n- **(E)** A neutron is an uncharged subatomic particle, not a charged region of a molecule."
+            "explanation": "**Why (C) is correct:** A dipole is a molecule with a negatively charged portion separated from a positively charged portion, as seen in water.\n\n**Why the other options are wrong:**\n- **(A)** An isotope is a form of an element differing in neutron number.\n- **(B)** A neutron is an uncharged subatomic particle, not a charged region of a molecule.\n- **(D)** An anion is a single ion with an overall negative charge, not a molecule with separated charges.\n- **(E)** A cation is a single ion with an overall positive charge."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -43,14 +43,14 @@
           "question": {
             "stem": "Oxygen (O) can be classified as which of the following?",
             "options": [
-              "An atom",
-              "A compound",
-              "A nucleotide",
               "An ionic bond",
+              "A nucleotide",
+              "A compound",
+              "An atom",
               "A mixture"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A single unit of the element oxygen (O) is an atom, the smallest unit of that element.\n\n**Why the other options are wrong:**\n- **(B)** A compound requires two or more different elements bonded together.\n- **(C)** A nucleotide is a complex organic building block, not a single oxygen unit.\n- **(D)** An ionic bond is a type of chemical bond, not a substance.\n- **(E)** A mixture is a combination of substances, not a single atom."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A single unit of the element oxygen (O) is an atom, the smallest unit of that element.\n\n**Why the other options are wrong:**\n- **(A)** An ionic bond is a type of chemical bond, not a substance.\n- **(B)** A nucleotide is a complex organic building block, not a single oxygen unit.\n- **(C)** A compound requires two or more different elements bonded together.\n- **(E)** A mixture is a combination of substances, not a single atom."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -60,14 +60,14 @@
           "question": {
             "stem": "How is a cation formed from a neutral atom?",
             "options": [
-              "By donating one or more electrons, giving it a positive charge",
+              "By sharing electrons equally with another atom",
               "By accepting one or more electrons, giving it a negative charge",
-              "By gaining one or more protons",
               "By losing one or more neutrons",
-              "By sharing electrons equally with another atom"
+              "By gaining one or more protons",
+              "By donating one or more electrons, giving it a positive charge"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A cation forms when an atom donates one or more electrons, leaving its protons' positive charge dominant.\n\n**Why the other options are wrong:**\n- **(B)** Accepting electrons produces a negatively charged anion, not a cation.\n- **(C)** Protons do not change in ordinary chemical reactions; ion charge comes from electron transfer.\n- **(D)** Losing neutrons changes the isotope, not the charge.\n- **(E)** Equal sharing of electrons produces a nonpolar covalent bond, not an ion."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A cation forms when an atom donates one or more electrons, leaving its protons' positive charge dominant.\n\n**Why the other options are wrong:**\n- **(A)** Equal sharing of electrons produces a nonpolar covalent bond, not an ion.\n- **(B)** Accepting electrons produces a negatively charged anion, not a cation.\n- **(C)** Losing neutrons changes the isotope, not the charge.\n- **(D)** Protons do not change in ordinary chemical reactions; ion charge comes from electron transfer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -77,14 +77,14 @@
           "question": {
             "stem": "Which of the following correctly distinguishes organic from inorganic compounds?",
             "options": [
-              "Organic compounds contain both carbon and hydrogen, while inorganic compounds do not contain both",
               "Organic compounds contain only oxygen, while inorganic compounds contain only nitrogen",
               "Organic compounds are always ionic, while inorganic compounds are always covalent",
               "Organic compounds cannot dissolve in water, while inorganic compounds always can",
+              "Organic compounds contain both carbon and hydrogen, while inorganic compounds do not contain both",
               "Organic compounds are elements, while inorganic compounds are mixtures"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** By definition, an organic compound contains both carbon and hydrogen (e.g., glucose), while an inorganic compound lacks both together (e.g., water).\n\n**Why the other options are wrong:**\n- **(B)** Organic and inorganic classification is based on carbon-hydrogen content, not oxygen or nitrogen alone.\n- **(C)** Organic molecules are typically covalent, and bond type is not the defining feature.\n- **(D)** Solubility is not the defining criterion; some organic compounds like glucose dissolve well.\n- **(E)** Both organic and inorganic compounds are compounds, not elements or mixtures."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** By definition, an organic compound contains both carbon and hydrogen (e.g., glucose), while an inorganic compound lacks both together (e.g., water).\n\n**Why the other options are wrong:**\n- **(A)** Organic and inorganic classification is based on carbon-hydrogen content, not oxygen or nitrogen alone.\n- **(B)** Organic molecules are typically covalent, and bond type is not the defining feature.\n- **(C)** Solubility is not the defining criterion; some organic compounds like glucose dissolve well.\n- **(E)** Both organic and inorganic compounds are compounds, not elements or mixtures."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -94,14 +94,14 @@
           "question": {
             "stem": "What distinguishes a polar covalent bond from a nonpolar covalent bond?",
             "options": [
-              "A polar covalent bond involves unequal sharing of electrons, while a nonpolar covalent bond involves equal sharing",
               "A polar covalent bond involves complete transfer of electrons, while a nonpolar does not",
-              "A polar covalent bond occurs only between identical atoms, while a nonpolar occurs between different atoms",
+              "A polar covalent bond involves no electrons, while a nonpolar bond shares electrons",
               "A polar covalent bond is broken by water, while a nonpolar bond is not",
-              "A polar covalent bond involves no electrons, while a nonpolar bond shares electrons"
+              "A polar covalent bond involves unequal sharing of electrons, while a nonpolar covalent bond involves equal sharing",
+              "A polar covalent bond occurs only between identical atoms, while a nonpolar occurs between different atoms"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Polar covalent bonds share electrons unequally (creating partial charges), while nonpolar covalent bonds share them equally.\n\n**Why the other options are wrong:**\n- **(B)** Complete transfer of electrons describes ionic bonds, not polar covalent bonds.\n- **(C)** Identical atoms tend to share equally (nonpolar); this is reversed.\n- **(D)** Both types of covalent bonds are generally not broken by water.\n- **(E)** Both polar and nonpolar covalent bonds involve shared electrons."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Polar covalent bonds share electrons unequally (creating partial charges), while nonpolar covalent bonds share them equally.\n\n**Why the other options are wrong:**\n- **(A)** Complete transfer of electrons describes ionic bonds, not polar covalent bonds.\n- **(B)** Both polar and nonpolar covalent bonds involve shared electrons.\n- **(C)** Both types of covalent bonds are generally not broken by water.\n- **(E)** Identical atoms tend to share equally (nonpolar); this is reversed."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -111,14 +111,14 @@
           "question": {
             "stem": "How many electrons can the first electron shell of an atom hold?",
             "options": [
-              "Two",
-              "Eight",
               "Six",
+              "Two",
               "Eighteen",
-              "One"
+              "One",
+              "Eight"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The first electron shell holds a maximum of two electrons.\n\n**Why the other options are wrong:**\n- **(B)** Eight is the capacity of the second shell (and the count considered 'complete' for shells beyond the first).\n- **(C)** Six is not the capacity of any shell described.\n- **(D)** Eighteen is the maximum capacity of the third shell.\n- **(E)** One is the number of electrons in a hydrogen atom, not the shell's capacity."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The first electron shell holds a maximum of two electrons.\n\n**Why the other options are wrong:**\n- **(A)** Six is not the capacity of any shell described.\n- **(C)** Eighteen is the maximum capacity of the third shell.\n- **(D)** One is the number of electrons in a hydrogen atom, not the shell's capacity.\n- **(E)** Eight is the capacity of the second shell (and the count considered 'complete' for shells beyond the first)."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -128,14 +128,14 @@
           "question": {
             "stem": "In addition to being a compound, carbon dioxide (CO2) can also be classified as a(n):",
             "options": [
-              "Molecule",
               "Element",
-              "Atom",
               "Particle",
-              "Isotope"
+              "Isotope",
+              "Atom",
+              "Molecule"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** CO2 is two or more atoms covalently bonded together, which makes it a molecule as well as a compound.\n\n**Why the other options are wrong:**\n- **(B)** An element is one type of matter; CO2 contains two elements.\n- **(C)** An atom is a single unit of an element; CO2 has three atoms bonded together.\n- **(D)** 'Particle' is not a chemical classification used for CO2 here.\n- **(E)** An isotope refers to a form of a single element with a specific neutron count."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** CO2 is two or more atoms covalently bonded together, which makes it a molecule as well as a compound.\n\n**Why the other options are wrong:**\n- **(A)** An element is one type of matter; CO2 contains two elements.\n- **(B)** 'Particle' is not a chemical classification used for CO2 here.\n- **(C)** An isotope refers to a form of a single element with a specific neutron count.\n- **(D)** An atom is a single unit of an element; CO2 has three atoms bonded together."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -147,12 +147,12 @@
             "options": [
               "Ice being less dense than liquid water",
               "Water being unable to dissolve salts",
+              "Water being a nonpolar substance",
               "Water having no measurable mass",
-              "Water repelling all charged ions",
-              "Water being a nonpolar substance"
+              "Water repelling all charged ions"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Hydrogen bonds cause water to expand into a lattice when frozen, making ice less dense than liquid water—unlike most substances.\n\n**Why the other options are wrong:**\n- **(B)** Water dissolves salts well because its dipoles pull apart ions.\n- **(C)** Water molecules have mass; it is matter.\n- **(D)** Water attracts charged ions (dipole-ion interactions), not repels them.\n- **(E)** Water is polar, not nonpolar, which is why hydrogen bonds form."
+            "explanation": "**Why (A) is correct:** Hydrogen bonds cause water to expand into a lattice when frozen, making ice less dense than liquid water—unlike most substances.\n\n**Why the other options are wrong:**\n- **(B)** Water dissolves salts well because its dipoles pull apart ions.\n- **(C)** Water is polar, not nonpolar, which is why hydrogen bonds form.\n- **(D)** Water molecules have mass; it is matter.\n- **(E)** Water attracts charged ions (dipole-ion interactions), not repels them."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -163,13 +163,13 @@
             "stem": "How is the mass number of an atom defined?",
             "options": [
               "The sum of the number of protons and neutrons in the nucleus",
-              "The number of protons only",
-              "The number of electrons only",
+              "The sum of protons, neutrons, and electrons",
               "The number of neutrons minus the number of protons",
-              "The sum of protons, neutrons, and electrons"
+              "The number of protons only",
+              "The number of electrons only"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Mass number is the sum of protons and neutrons, since electrons contribute negligible mass.\n\n**Why the other options are wrong:**\n- **(B)** The number of protons alone is the atomic number, not the mass number.\n- **(C)** Electrons have negligible mass and do not define the mass number.\n- **(D)** Mass number is a sum, not a difference of subatomic particles.\n- **(E)** Electrons are excluded because their mass is negligible."
+            "explanation": "**Why (A) is correct:** Mass number is the sum of protons and neutrons, since electrons contribute negligible mass.\n\n**Why the other options are wrong:**\n- **(B)** Electrons are excluded because their mass is negligible.\n- **(C)** Mass number is a sum, not a difference of subatomic particles.\n- **(D)** The number of protons alone is the atomic number, not the mass number.\n- **(E)** Electrons have negligible mass and do not define the mass number."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -180,13 +180,13 @@
             "stem": "Which of the following is the correct list of the four most abundant elements in the human body?",
             "options": [
               "Oxygen, carbon, hydrogen, nitrogen",
-              "Carbon, calcium, sodium, potassium",
               "Hydrogen, helium, oxygen, carbon",
+              "Carbon, hydrogen, chlorine, sodium",
               "Oxygen, nitrogen, phosphorus, sulfur",
-              "Carbon, hydrogen, chlorine, sodium"
+              "Carbon, calcium, sodium, potassium"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The four most common elements found within the human body are oxygen (O), carbon (C), hydrogen (H), and nitrogen (N).\n\n**Why the other options are wrong:**\n- **(B)** Calcium, sodium, and potassium are present but are not among the four most abundant.\n- **(C)** Helium does not occur in the body.\n- **(D)** Phosphorus and sulfur are minor components, not the top four.\n- **(E)** Chlorine and sodium are minor components, not the top four."
+            "explanation": "**Why (A) is correct:** The four most common elements found within the human body are oxygen (O), carbon (B), hydrogen (H), and nitrogen (N).\n\n**Why the other options are wrong:**\n- **(B)** Helium does not occur in the body.\n- **(C)** Chlorine and sodium are minor components, not the top four.\n- **(D)** Phosphorus and sulfur are minor components, not the top four.\n- **(E)** Calcium, sodium, and potassium are present but are not among the four most abundant."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -196,14 +196,14 @@
           "question": {
             "stem": "Which statement correctly distinguishes covalent bonds from ionic bonds?",
             "options": [
-              "Covalent bonds involve sharing of electrons, while ionic bonds involve attraction between oppositely charged ions",
-              "Covalent bonds involve the transfer of electrons, while ionic bonds involve sharing",
-              "Covalent bonds only form between ions, while ionic bonds only form between neutral atoms",
               "Covalent bonds are always broken by water, while ionic bonds never are",
+              "Covalent bonds involve sharing of electrons, while ionic bonds involve attraction between oppositely charged ions",
+              "Covalent bonds only form between ions, while ionic bonds only form between neutral atoms",
+              "Covalent bonds involve the transfer of electrons, while ionic bonds involve sharing",
               "Covalent bonds form only in inorganic compounds, while ionic bonds form only in organic compounds"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** In a covalent bond atoms share electrons to fill their valence shells, whereas an ionic bond is the attraction between a cation and an anion.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the definitions; transfer describes ionic bonding.\n- **(C)** Covalent bonds form between atoms sharing electrons, not exclusively ions.\n- **(D)** Covalent bonds are strong and generally not broken by water, while ionic bonds are broken by water.\n- **(E)** Bond type is not determined by whether a compound is organic or inorganic."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** In a covalent bond atoms share electrons to fill their valence shells, whereas an ionic bond is the attraction between a cation and an anion.\n\n**Why the other options are wrong:**\n- **(A)** Covalent bonds are strong and generally not broken by water, while ionic bonds are broken by water.\n- **(C)** Covalent bonds form between atoms sharing electrons, not exclusively ions.\n- **(D)** This reverses the definitions; transfer describes ionic bonding.\n- **(E)** Bond type is not determined by whether a compound is organic or inorganic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -214,13 +214,13 @@
             "stem": "A student is told that O2 is a molecule but not a compound, while CO2 is both a molecule and a compound. What is the reason for this difference?",
             "options": [
               "A compound requires two or more different elements joined by chemical bonds, and O2 contains only one element",
-              "A compound requires only covalent bonds, and O2 is held together by ionic bonds",
               "A molecule requires atoms of different elements, and O2 has identical atoms",
+              "CO2 is an element while O2 is a compound",
               "O2 is a mixture rather than a pure substance",
-              "CO2 is an element while O2 is a compound"
+              "A compound requires only covalent bonds, and O2 is held together by ionic bonds"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A compound is a substance composed of two or more different elements bonded together; O2 has only oxygen, so it is a molecule but not a compound, whereas CO2 contains both carbon and oxygen.\n\n**Why the other options are wrong:**\n- **(B)** O2 is held together by a covalent bond, not an ionic bond.\n- **(C)** A molecule can consist of atoms of the same element, such as O2.\n- **(D)** O2 is a pure substance, not a mixture.\n- **(E)** Neither CO2 nor O2 is an element; CO2 is a compound and O2 is a molecule."
+            "explanation": "**Why (A) is correct:** A compound is a substance composed of two or more different elements bonded together; O2 has only oxygen, so it is a molecule but not a compound, whereas CO2 contains both carbon and oxygen.\n\n**Why the other options are wrong:**\n- **(B)** A molecule can consist of atoms of the same element, such as O2.\n- **(C)** Neither CO2 nor O2 is an element; CO2 is a compound and O2 is a molecule.\n- **(D)** O2 is a pure substance, not a mixture.\n- **(E)** O2 is held together by a covalent bond, not an ionic bond."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -230,14 +230,14 @@
           "question": {
             "stem": "According to the unit, when is an atom's valence shell (other than the first shell) considered \"complete\"?",
             "options": [
-              "When it holds eight electrons",
               "When it holds two electrons",
+              "When it holds eight electrons",
+              "When it holds four electrons",
               "When it holds eighteen electrons",
-              "When it holds the same number of electrons as protons",
-              "When it holds four electrons"
+              "When it holds the same number of electrons as protons"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** All electron shells apart from the first are considered complete with eight electrons, making the atom non-reactive.\n\n**Why the other options are wrong:**\n- **(B)** Only the first (smallest) shell is complete with two electrons.\n- **(C)** Eighteen is the maximum capacity of the third shell, not the criterion for a complete valence shell.\n- **(D)** Charge balance depends on electrons equalling protons, not on whether the valence shell is complete.\n- **(E)** Four electrons half-fills the second shell and makes an atom reactive, as in carbon."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** All electron shells apart from the first are considered complete with eight electrons, making the atom non-reactive.\n\n**Why the other options are wrong:**\n- **(A)** Only the first (smallest) shell is complete with two electrons.\n- **(C)** Four electrons half-fills the second shell and makes an atom reactive, as in carbon.\n- **(D)** Eighteen is the maximum capacity of the third shell, not the criterion for a complete valence shell.\n- **(E)** Charge balance depends on electrons equalling protons, not on whether the valence shell is complete."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -247,14 +247,14 @@
           "question": {
             "stem": "How is a cation formed, and what results from combining a cation with an anion?",
             "options": [
+              "An atom gains neutrons, becoming positively charged; combining with an anion forms a nonpolar bond",
               "An atom donates one or more electrons, becoming positively charged; its attraction to an anion forms an ionic bond",
-              "An atom accepts one or more electrons, becoming positively charged; combining with an anion forms a covalent bond",
-              "An atom donates electrons, becoming negatively charged; combining with an anion forms a hydrogen bond",
               "An atom shares electrons, becoming neutral; combining with an anion forms a dipole",
-              "An atom gains neutrons, becoming positively charged; combining with an anion forms a nonpolar bond"
+              "An atom donates electrons, becoming negatively charged; combining with an anion forms a hydrogen bond",
+              "An atom accepts one or more electrons, becoming positively charged; combining with an anion forms a covalent bond"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Donating electrons leaves an atom positively charged (a cation), and the mutual attraction between a cation and an anion forms an ionic bond.\n\n**Why the other options are wrong:**\n- **(B)** Accepting electrons produces an anion, not a cation, and the bond between them is ionic, not covalent.\n- **(C)** Donating electrons produces a positive charge, not a negative one, and the resulting bond is ionic.\n- **(D)** Sharing electrons produces covalent bonds, not ions.\n- **(E)** Charge is determined by electrons, not neutrons, and the resulting bond is ionic."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Donating electrons leaves an atom positively charged (a cation), and the mutual attraction between a cation and an anion forms an ionic bond.\n\n**Why the other options are wrong:**\n- **(A)** Charge is determined by electrons, not neutrons, and the resulting bond is ionic.\n- **(C)** Sharing electrons produces covalent bonds, not ions.\n- **(D)** Donating electrons produces a positive charge, not a negative one, and the resulting bond is ionic.\n- **(E)** Accepting electrons produces an anion, not a cation, and the bond between them is ionic, not covalent."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -264,14 +264,14 @@
           "question": {
             "stem": "Which pairing correctly matches a compound type with an appropriate example?",
             "options": [
-              "Organic compound — glucose (C6H12O6)",
-              "Inorganic compound — glucose (C6H12O6)",
-              "Organic compound — water (H2O)",
+              "Organic compound — sodium chloride (NaCl)",
               "Inorganic compound — a triglyceride",
-              "Organic compound — sodium chloride (NaCl)"
+              "Organic compound — glucose (C6H12O6)",
+              "Organic compound — water (H2O)",
+              "Inorganic compound — glucose (C6H12O6)"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Organic compounds contain both carbon and hydrogen, and glucose (C6H12O6) contains both, making it organic.\n\n**Why the other options are wrong:**\n- **(B)** Glucose contains carbon and hydrogen, so it is organic, not inorganic.\n- **(C)** Water lacks carbon and is an inorganic compound.\n- **(D)** A triglyceride contains carbon and hydrogen and is therefore organic.\n- **(E)** Sodium chloride contains no carbon or hydrogen and is inorganic."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Organic compounds contain both carbon and hydrogen, and glucose (C6H12O6) contains both, making it organic.\n\n**Why the other options are wrong:**\n- **(A)** Sodium chloride contains no carbon or hydrogen and is inorganic.\n- **(B)** A triglyceride contains carbon and hydrogen and is therefore organic.\n- **(D)** Water lacks carbon and is an inorganic compound.\n- **(E)** Glucose contains carbon and hydrogen, so it is organic, not inorganic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -281,14 +281,14 @@
           "question": {
             "stem": "What best describes a polar covalent bond and the dipole it can create?",
             "options": [
-              "Electrons are shared unequally, giving regions of opposite partial charges within the molecule",
               "Electrons are shared equally, giving no charged regions within the molecule",
               "Electrons are fully transferred, creating separate ions",
-              "Electrons are removed entirely, leaving a positive nucleus",
-              "Neutrons are shared unequally, creating a mass imbalance"
+              "Neutrons are shared unequally, creating a mass imbalance",
+              "Electrons are shared unequally, giving regions of opposite partial charges within the molecule",
+              "Electrons are removed entirely, leaving a positive nucleus"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** In a polar covalent bond electrons are shared unequally, producing regions of opposite partial charges known as a dipole.\n\n**Why the other options are wrong:**\n- **(B)** Equal sharing describes a nonpolar covalent bond, which has no dipole.\n- **(C)** Full transfer of electrons describes ionic bonding, not polar covalent bonding.\n- **(D)** Removing electrons entirely describes ion formation, not a dipole.\n- **(E)** Dipoles arise from electron distribution, not neutron sharing."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** In a polar covalent bond electrons are shared unequally, producing regions of opposite partial charges known as a dipole.\n\n**Why the other options are wrong:**\n- **(A)** Equal sharing describes a nonpolar covalent bond, which has no dipole.\n- **(B)** Full transfer of electrons describes ionic bonding, not polar covalent bonding.\n- **(C)** Dipoles arise from electron distribution, not neutron sharing.\n- **(E)** Removing electrons entirely describes ion formation, not a dipole."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -298,14 +298,14 @@
           "question": {
             "stem": "Which of the following is classified as a mixture rather than a pure substance?",
             "options": [
-              "Salt dissolved in body fluids",
-              "Carbon dioxide (CO2)",
+              "An atom of carbon",
               "Water (H2O)",
+              "Carbon dioxide (CO2)",
               "Oxygen gas (O2)",
-              "An atom of carbon"
+              "Salt dissolved in body fluids"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A mixture is a combination of substances that each retain their own chemical identity, such as salt dissolved in a body fluid.\n\n**Why the other options are wrong:**\n- **(B)** Carbon dioxide is a single compound, a pure substance.\n- **(C)** Water is a single compound, a pure substance.\n- **(D)** Oxygen gas is a single molecular substance, not a mixture.\n- **(E)** A single atom of an element is a pure substance."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A mixture is a combination of substances that each retain their own chemical identity, such as salt dissolved in a body fluid.\n\n**Why the other options are wrong:**\n- **(A)** A single atom of an element is a pure substance.\n- **(B)** Water is a single compound, a pure substance.\n- **(C)** Carbon dioxide is a single compound, a pure substance.\n- **(D)** Oxygen gas is a single molecular substance, not a mixture."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -315,14 +315,14 @@
           "question": {
             "stem": "Which special physical property of water is a direct result of hydrogen bonding?",
             "options": [
+              "Water has an unusually low specific heat capacity",
+              "Water conducts no electricity even when ions are dissolved in it",
               "Ice (solid water) is less dense than liquid water",
               "Water freezes at a higher temperature than any other liquid",
-              "Water conducts no electricity even when ions are dissolved in it",
-              "Water has an unusually low specific heat capacity",
               "Water boils at -90°C as predicted by chemical trends"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Hydrogen bonding causes water molecules to arrange so that ice is less dense than liquid water, unlike most substances.\n\n**Why the other options are wrong:**\n- **(B)** The unit does not describe water freezing at an unusually high temperature.\n- **(C)** Dissolved ions do produce electrical charges in water.\n- **(D)** Water has an unusually high, not low, specific heat capacity.\n- **(E)** Water actually boils at 100°C; -90°C was only the value predicted without hydrogen bonding."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Hydrogen bonding causes water molecules to arrange so that ice is less dense than liquid water, unlike most substances.\n\n**Why the other options are wrong:**\n- **(A)** Water has an unusually high, not low, specific heat capacity.\n- **(B)** Dissolved ions do produce electrical charges in water.\n- **(D)** The unit does not describe water freezing at an unusually high temperature.\n- **(E)** Water actually boils at 100°C; -90°C was only the value predicted without hydrogen bonding."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -332,14 +332,14 @@
           "question": {
             "stem": "In this unit, an atom that has gained or lost electrons and therefore carries an electrical charge is referred to by which term?",
             "options": [
-              "Ion",
-              "Isotope",
-              "Molecule",
               "Dipole",
-              "Compound"
+              "Molecule",
+              "Compound",
+              "Isotope",
+              "Ion"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** An ion is an atom that has an electrical charge, whether positive or negative, resulting from donating or accepting electrons.\n\n**Why the other options are wrong:**\n- **(B)** An isotope differs by number of neutrons, not by charge.\n- **(C)** A molecule is two or more atoms covalently bonded, not necessarily charged.\n- **(D)** A dipole is a molecule with separated partial charges, not a charged atom.\n- **(E)** A compound is two or more different elements bonded together."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** An ion is an atom that has an electrical charge, whether positive or negative, resulting from donating or accepting electrons.\n\n**Why the other options are wrong:**\n- **(A)** A dipole is a molecule with separated partial charges, not a charged atom.\n- **(B)** A molecule is two or more atoms covalently bonded, not necessarily charged.\n- **(C)** A compound is two or more different elements bonded together.\n- **(D)** An isotope differs by number of neutrons, not by charge."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -350,13 +350,13 @@
             "stem": "Which subatomic particle carries a positive charge and is found within the atom's nucleus?",
             "options": [
               "Electron",
-              "Proton",
+              "Anion",
               "Neutron",
               "Cation",
-              "Anion"
+              "Proton"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A proton is a heavy subatomic particle having a positive charge and is located in the atom's nucleus.\n\n**Why the other options are wrong:**\n- **(A)** Electrons carry a negative charge and orbit the nucleus, not sit within it.\n- **(C)** Neutrons are in the nucleus but have no electrical charge.\n- **(D)** A cation is a charged atom (an ion), not a subatomic particle.\n- **(E)** An anion is a charged atom (an ion), not a subatomic particle."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A proton is a heavy subatomic particle having a positive charge and is located in the atom's nucleus.\n\n**Why the other options are wrong:**\n- **(A)** Electrons carry a negative charge and orbit the nucleus, not sit within it.\n- **(B)** An anion is a charged atom (an ion), not a subatomic particle.\n- **(C)** Neutrons are in the nucleus but have no electrical charge.\n- **(D)** A cation is a charged atom (an ion), not a subatomic particle."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -366,14 +366,14 @@
           "question": {
             "stem": "Ice floats on liquid water because of which unusual physical property of water?",
             "options": [
-              "Its solid state is less dense than its liquid state",
               "Its solid state is denser than its liquid state",
               "It has an unusually low specific heat capacity",
+              "Its solid state is less dense than its liquid state",
               "It has a boiling point lower than predicted by chemical trends",
               "It cannot form hydrogen bonds when frozen"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Because of hydrogen bonding, ice (solid) is less dense than liquid water, which is why ice floats.\n\n**Why the other options are wrong:**\n- **(B)** This describes typical substances, not water; if true, ice would sink.\n- **(C)** Water actually has an unusually high specific heat capacity.\n- **(D)** Water's actual boiling point (100°C) is much higher than the predicted −90°C.\n- **(E)** Hydrogen bonds are precisely what hold water molecules together in ice."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Because of hydrogen bonding, ice (solid) is less dense than liquid water, which is why ice floats.\n\n**Why the other options are wrong:**\n- **(A)** This describes typical substances, not water; if true, ice would sink.\n- **(B)** Water actually has an unusually high specific heat capacity.\n- **(D)** Water's actual boiling point (100°C) is much higher than the predicted −90°C.\n- **(E)** Hydrogen bonds are precisely what hold water molecules together in ice."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -383,14 +383,14 @@
           "question": {
             "stem": "An atom that donates one or more electrons to achieve a full valence shell becomes a:",
             "options": [
-              "Anion with a negative charge",
-              "Cation with a positive charge",
               "Neutron with no charge",
+              "Cation with a positive charge",
+              "Anion with a negative charge",
               "Nonpolar molecule",
               "Dipole"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Donating electrons leaves an atom with more protons than electrons, giving it a positive charge and making it a cation.\n\n**Why the other options are wrong:**\n- **(A)** An anion is formed by accepting electrons, resulting in a negative charge.\n- **(C)** A neutron is a subatomic particle, not the product of electron donation.\n- **(D)** A nonpolar molecule results from equal electron sharing, not electron donation.\n- **(E)** A dipole is a molecule with separated partial charges, not an ion formed by electron loss."
+            "explanation": "**Why (B) is correct:** Donating electrons leaves an atom with more protons than electrons, giving it a positive charge and making it a cation.\n\n**Why the other options are wrong:**\n- **(A)** A neutron is a subatomic particle, not the product of electron donation.\n- **(C)** An anion is formed by accepting electrons, resulting in a negative charge.\n- **(D)** A nonpolar molecule results from equal electron sharing, not electron donation.\n- **(E)** A dipole is a molecule with separated partial charges, not an ion formed by electron loss."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -400,14 +400,14 @@
           "question": {
             "stem": "When a phosphate group is cleaved from a molecule of ATP, energy stored in what type of bond is released?",
             "options": [
+              "Dipole interaction",
               "Hydrogen bond",
-              "Ionic bond",
               "Covalent bond",
-              "Dipole-ion bond",
-              "Dipole interaction"
+              "Ionic bond",
+              "Dipole-ion bond"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** ATP stores energy in covalent bonds, and breaking the covalent bond to a phosphate group releases that energy for use in the body.\n\n**Why the other options are wrong:**\n- **(A)** Hydrogen bonds are weak attractions between molecules, not the energy-storing bonds of ATP.\n- **(B)** Ionic bonds form between oppositely charged ions, not the phosphate bonds of ATP.\n- **(D)** Dipole-ion bonds are attractions between water and ions, not energy storage in ATP.\n- **(E)** Dipole interactions describe attractions/repulsions from partial charges, not ATP energy storage."
+            "explanation": "**Why (C) is correct:** ATP stores energy in covalent bonds, and breaking the covalent bond to a phosphate group releases that energy for use in the body.\n\n**Why the other options are wrong:**\n- **(A)** Dipole interactions describe attractions/repulsions from partial charges, not ATP energy storage.\n- **(B)** Hydrogen bonds are weak attractions between molecules, not the energy-storing bonds of ATP.\n- **(D)** Ionic bonds form between oppositely charged ions, not the phosphate bonds of ATP.\n- **(E)** Dipole-ion bonds are attractions between water and ions, not energy storage in ATP."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -417,14 +417,14 @@
           "question": {
             "stem": "Which term refers to a molecule with a negatively charged portion separated from a positively charged portion?",
             "options": [
-              "Cation",
-              "Anion",
-              "Dipole",
+              "Electrolyte",
               "Isotope",
-              "Electrolyte"
+              "Cation",
+              "Dipole",
+              "Anion"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A dipole is a molecule that has a negatively charged region separated from a positively charged region, such as water.\n\n**Why the other options are wrong:**\n- **(A)** A cation is a single positively charged ion, not a molecule with separated charges.\n- **(B)** An anion is a single negatively charged ion, not a molecule with separated charges.\n- **(D)** An isotope is a form of an element with a different number of neutrons.\n- **(E)** An electrolyte is a dissolved ion that carries electrical charge in the body."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A dipole is a molecule that has a negatively charged region separated from a positively charged region, such as water.\n\n**Why the other options are wrong:**\n- **(A)** An electrolyte is a dissolved ion that carries electrical charge in the body.\n- **(B)** An isotope is a form of an element with a different number of neutrons.\n- **(C)** A cation is a single positively charged ion, not a molecule with separated charges.\n- **(E)** An anion is a single negatively charged ion, not a molecule with separated charges."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -434,14 +434,14 @@
           "question": {
             "stem": "By definition, an organic compound must contain:",
             "options": [
-              "Both carbon and hydrogen",
-              "Only oxygen and hydrogen",
               "Carbon but never hydrogen",
+              "Both carbon and hydrogen",
               "Only a single element",
-              "Nitrogen and oxygen"
+              "Nitrogen and oxygen",
+              "Only oxygen and hydrogen"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** An organic compound is defined as a substance that contains carbon-hydrogen bonds, meaning it has both carbon and hydrogen.\n\n**Why the other options are wrong:**\n- **(B)** Water contains only oxygen and hydrogen and is inorganic, not organic.\n- **(C)** Carbon dioxide contains carbon without hydrogen and is classified as inorganic.\n- **(D)** A single element is not a compound at all.\n- **(E)** Nitrogen and oxygen without carbon-hydrogen bonds would not make a compound organic."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** An organic compound is defined as a substance that contains carbon-hydrogen bonds, meaning it has both carbon and hydrogen.\n\n**Why the other options are wrong:**\n- **(A)** Carbon dioxide contains carbon without hydrogen and is classified as inorganic.\n- **(C)** A single element is not a compound at all.\n- **(D)** Nitrogen and oxygen without carbon-hydrogen bonds would not make a compound organic.\n- **(E)** Water contains only oxygen and hydrogen and is inorganic, not organic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -451,14 +451,14 @@
           "question": {
             "stem": "A valence shell (other than the first shell) that contains eight electrons is described as:",
             "options": [
-              "Half-filled and reactive",
-              "Complete and non-reactive",
-              "Ionized and negatively charged",
               "Empty and unstable",
-              "Polar and charged"
+              "Half-filled and reactive",
+              "Ionized and negatively charged",
+              "Polar and charged",
+              "Complete and non-reactive"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Apart from the first shell, a valence shell is considered complete with eight electrons, making the atom non-reactive (like neon).\n\n**Why the other options are wrong:**\n- **(A)** Eight electrons complete the shell; it is not half-filled, and a complete shell is non-reactive.\n- **(C)** A complete valence shell does not automatically mean the atom is ionized or charged.\n- **(D)** A shell with eight electrons is full, not empty.\n- **(E)** A complete valence shell describes reactivity, not molecular polarity."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Apart from the first shell, a valence shell is considered complete with eight electrons, making the atom non-reactive (like neon).\n\n**Why the other options are wrong:**\n- **(A)** A shell with eight electrons is full, not empty.\n- **(B)** Eight electrons complete the shell; it is not half-filled, and a complete shell is non-reactive.\n- **(C)** A complete valence shell does not automatically mean the atom is ionized or charged.\n- **(D)** A complete valence shell describes reactivity, not molecular polarity."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -468,14 +468,14 @@
           "question": {
             "stem": "How does a polar covalent bond differ from a nonpolar covalent bond?",
             "options": [
-              "Electrons are shared unequally in a polar bond but equally in a nonpolar bond",
-              "Electrons are transferred completely in a polar bond",
-              "A nonpolar bond always involves hydrogen",
               "A polar bond forms only between two ions",
-              "A nonpolar bond produces partial charges"
+              "A nonpolar bond always involves hydrogen",
+              "A nonpolar bond produces partial charges",
+              "Electrons are shared unequally in a polar bond but equally in a nonpolar bond",
+              "Electrons are transferred completely in a polar bond"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** In a polar covalent bond electrons are shared unequally, producing partial charges, whereas in a nonpolar covalent bond electrons are shared equally.\n\n**Why the other options are wrong:**\n- **(B)** Complete electron transfer describes an ionic bond, not a polar covalent bond.\n- **(C)** Nonpolar bonds can occur without hydrogen, such as in O2.\n- **(D)** Polar covalent bonds form between atoms sharing electrons, not between ions.\n- **(E)** Partial charges arise from polar (unequal) sharing, not nonpolar sharing."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** In a polar covalent bond electrons are shared unequally, producing partial charges, whereas in a nonpolar covalent bond electrons are shared equally.\n\n**Why the other options are wrong:**\n- **(A)** Polar covalent bonds form between atoms sharing electrons, not between ions.\n- **(B)** Nonpolar bonds can occur without hydrogen, such as in O2.\n- **(C)** Partial charges arise from polar (unequal) sharing, not nonpolar sharing.\n- **(E)** Complete electron transfer describes an ionic bond, not a polar covalent bond."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -486,13 +486,13 @@
             "stem": "According to the unit outline, which topic belongs to Part 2 (Chemical bonds) rather than Part 1?",
             "options": [
               "Atoms and subatomic particles",
-              "Elements and compounds",
-              "Ions and ionic bonds",
               "The four most abundant elements in the body",
-              "Definition of matter"
+              "Ions and ionic bonds",
+              "Definition of matter",
+              "Elements and compounds"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Ions and ionic bonds is listed under Part 2 (Chemical bonds) in the unit outline.\n\n**Why the other options are wrong:**\n- **(A)** Atoms and subatomic particles is a Part 1 topic.\n- **(B)** Elements and compounds is a Part 1 topic.\n- **(D)** The abundant body elements are covered under Part 1's discussion of elements.\n- **(E)** The definition of matter is introduced in Part 1, not Part 2."
+            "explanation": "**Why (C) is correct:** Ions and ionic bonds is listed under Part 2 (Chemical bonds) in the unit outline.\n\n**Why the other options are wrong:**\n- **(A)** Atoms and subatomic particles is a Part 1 topic.\n- **(B)** The abundant body elements are covered under Part 1's discussion of elements.\n- **(D)** The definition of matter is introduced in Part 1, not Part 2.\n- **(E)** Elements and compounds is a Part 1 topic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -502,14 +502,14 @@
           "question": {
             "stem": "Which of the following is classified as a compound but NOT as an element?",
             "options": [
-              "Oxygen gas (O2)",
-              "Carbon (C)",
               "Water (H2O)",
               "Helium (He)",
+              "Oxygen gas (O2)",
+              "Carbon (C)",
               "A single hydrogen atom (H)"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Water contains two different elements (hydrogen and oxygen) joined by chemical bonds, which is the definition of a compound.\n\n**Why the other options are wrong:**\n- **(A)** O2 is a molecule but not a compound because both atoms are of the same element.\n- **(B)** Carbon is a single element, not a compound.\n- **(D)** Helium is a single element, not a compound.\n- **(E)** A single hydrogen atom is an atom of one element, not a compound."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Water contains two different elements (hydrogen and oxygen) joined by chemical bonds, which is the definition of a compound.\n\n**Why the other options are wrong:**\n- **(B)** Helium is a single element, not a compound.\n- **(C)** O2 is a molecule but not a compound because both atoms are of the same element.\n- **(D)** Carbon is a single element, not a compound.\n- **(E)** A single hydrogen atom is an atom of one element, not a compound."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1457,13 +1457,13 @@
             "stem": "A student examines a container of pure carbon dioxide gas (CO₂). Which set of classifications correctly applies to this substance?",
             "options": [
               "It is a molecule and a compound, but not an element or a mixture",
-              "It is an element and a molecule, but not a compound",
-              "It is a mixture of carbon and oxygen substances",
+              "It is a single atom of a compound",
               "It is a compound but cannot be called a molecule",
-              "It is a single atom of a compound"
+              "It is a mixture of carbon and oxygen substances",
+              "It is an element and a molecule, but not a compound"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** CO₂ is two atoms of different elements covalently bonded, making it both a molecule and a compound, and because it is a single pure substance it is not a mixture.\n\n**Why the other options are wrong:**\n- **(B)** An element contains only one type of atom, but CO₂ contains carbon and oxygen, so it is a compound, not an element.\n- **(C)** A mixture retains the separate identities of its substances; CO₂ is a single bonded substance, not a mixture.\n- **(D)** Any two or more atoms joined by covalent bonds form a molecule, so CO₂ is a molecule.\n- **(E)** An atom is a single unit of one element; CO₂ contains three atoms of two elements."
+            "explanation": "**Why (A) is correct:** CO₂ is two atoms of different elements covalently bonded, making it both a molecule and a compound, and because it is a single pure substance it is not a mixture.\n\n**Why the other options are wrong:**\n- **(B)** An atom is a single unit of one element; CO₂ contains three atoms of two elements.\n- **(C)** Any two or more atoms joined by covalent bonds form a molecule, so CO₂ is a molecule.\n- **(D)** A mixture retains the separate identities of its substances; CO₂ is a single bonded substance, not a mixture.\n- **(E)** An element contains only one type of atom, but CO₂ contains carbon and oxygen, so it is a compound, not an element."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1473,14 +1473,14 @@
           "question": {
             "stem": "A researcher is told that a compound contains carbon but no hydrogen. Based on the unit's definition, how should this compound be classified, and which example fits?",
             "options": [
-              "Organic, like glucose",
-              "Inorganic, like carbon dioxide (CO₂)",
-              "Organic, like water (H₂O)",
+              "Organic, because it contains carbon",
               "Inorganic, like a triglyceride",
-              "Organic, because it contains carbon"
+              "Organic, like water (H₂O)",
+              "Organic, like glucose",
+              "Inorganic, like carbon dioxide (CO₂)"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** An organic compound must contain both carbon AND hydrogen; a compound with carbon but no hydrogen is inorganic, and CO₂ is exactly such an example.\n\n**Why the other options are wrong:**\n- **(A)** Glucose is organic, but the described compound lacks hydrogen so it cannot be organic.\n- **(C)** Water contains no carbon and is inorganic, so it does not match a carbon-containing compound.\n- **(D)** Triglycerides contain both carbon and hydrogen, making them organic, not inorganic.\n- **(E)** Containing carbon alone is not enough for the unit's definition of organic; carbon-hydrogen bonds are required."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** An organic compound must contain both carbon AND hydrogen; a compound with carbon but no hydrogen is inorganic, and CO₂ is exactly such an example.\n\n**Why the other options are wrong:**\n- **(A)** Containing carbon alone is not enough for the unit's definition of organic; carbon-hydrogen bonds are required.\n- **(B)** Triglycerides contain both carbon and hydrogen, making them organic, not inorganic.\n- **(C)** Water contains no carbon and is inorganic, so it does not match a carbon-containing compound.\n- **(D)** Glucose is organic, but the described compound lacks hydrogen so it cannot be organic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1490,14 +1490,14 @@
           "question": {
             "stem": "Which of the following correctly pairs a key term from this unit with its meaning?",
             "options": [
-              "Cation — an atom that has accepted electrons and become negative",
-              "Valence shell — the innermost electron shell nearest the nucleus",
               "Dipole — a molecule with a negatively charged portion separated from a positively charged portion",
-              "Anion — an atom that has donated electrons and become positive",
-              "Compound — two or more atoms of the same element bonded together"
+              "Compound — two or more atoms of the same element bonded together",
+              "Valence shell — the innermost electron shell nearest the nucleus",
+              "Cation — an atom that has accepted electrons and become negative",
+              "Anion — an atom that has donated electrons and become positive"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A dipole is defined in the unit as a molecule with a negatively charged region separated from a positively charged region, arising from unequal electron sharing.\n\n**Why the other options are wrong:**\n- **(A)** A cation is positive from donating electrons, not negative from accepting them.\n- **(B)** The valence shell is the outermost electron shell, not the innermost.\n- **(D)** An anion is negative from accepting electrons, not positive from donating them.\n- **(E)** A compound requires two or more DIFFERENT elements, not atoms of the same element."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A dipole is defined in the unit as a molecule with a negatively charged region separated from a positively charged region, arising from unequal electron sharing.\n\n**Why the other options are wrong:**\n- **(B)** A compound requires two or more DIFFERENT elements, not atoms of the same element.\n- **(C)** The valence shell is the outermost electron shell, not the innermost.\n- **(D)** A cation is positive from donating electrons, not negative from accepting them.\n- **(E)** An anion is negative from accepting electrons, not positive from donating them."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1507,14 +1507,14 @@
           "question": {
             "stem": "In a water molecule, oxygen pulls the shared electrons more strongly than hydrogen does. Compared with the nonpolar covalent bonds in oxygen gas (O₂), the bonds in water are best described as:",
             "options": [
-              "Nonpolar, because both bonds share electrons equally",
+              "Identical to O₂ bonds in charge distribution",
               "Ionic, because electrons are fully transferred to oxygen",
+              "Nonpolar, because both bonds share electrons equally",
               "Polar covalent, producing partial charges and a dipole",
-              "Hydrogen bonds, because hydrogen atoms are involved",
-              "Identical to O₂ bonds in charge distribution"
+              "Hydrogen bonds, because hydrogen atoms are involved"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Unequal electron sharing in water creates partial negative and partial positive regions (a dipole), the defining feature of a polar covalent bond, unlike the equal sharing in O₂.\n\n**Why the other options are wrong:**\n- **(A)** Water's bonds are unequal (polar), whereas O₂'s equal sharing is what makes O₂ nonpolar.\n- **(B)** Electrons are shared (partially shifted), not fully transferred, so the bonds are covalent not ionic.\n- **(D)** Hydrogen bonds form between molecules, not the O–H bonds within a single water molecule.\n- **(E)** O₂ has balanced sharing while water is unbalanced, so their charge distributions differ."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Unequal electron sharing in water creates partial negative and partial positive regions (a dipole), the defining feature of a polar covalent bond, unlike the equal sharing in O₂.\n\n**Why the other options are wrong:**\n- **(A)** O₂ has balanced sharing while water is unbalanced, so their charge distributions differ.\n- **(B)** Electrons are shared (partially shifted), not fully transferred, so the bonds are covalent not ionic.\n- **(C)** Water's bonds are unequal (polar), whereas O₂'s equal sharing is what makes O₂ nonpolar.\n- **(E)** Hydrogen bonds form between molecules, not the O–H bonds within a single water molecule."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1524,14 +1524,14 @@
           "question": {
             "stem": "Matter can be divided into pure substances and mixtures. Which statement correctly places elements and compounds within this framework?",
             "options": [
+              "Neither elements nor compounds qualify as matter",
+              "Elements are pure substances, but compounds are always mixtures",
               "Both elements and compounds are pure substances, and a compound is made of two or more different elements bonded together",
               "Elements are mixtures, while compounds are pure substances",
-              "Compounds are mixtures because they contain more than one element",
-              "Elements are pure substances, but compounds are always mixtures",
-              "Neither elements nor compounds qualify as matter"
+              "Compounds are mixtures because they contain more than one element"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Both elements and compounds are classified as pure substances; a compound is a single pure substance formed when two or more different elements bond together.\n\n**Why the other options are wrong:**\n- **(B)** Elements are pure substances, not mixtures.\n- **(C)** A compound is a single bonded substance, not a mixture, even though it contains more than one element.\n- **(D)** Compounds are pure substances, not mixtures.\n- **(E)** Both elements and compounds occupy space and have mass, so both are matter."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Both elements and compounds are classified as pure substances; a compound is a single pure substance formed when two or more different elements bond together.\n\n**Why the other options are wrong:**\n- **(A)** Both elements and compounds occupy space and have mass, so both are matter.\n- **(B)** Compounds are pure substances, not mixtures.\n- **(D)** Elements are pure substances, not mixtures.\n- **(E)** A compound is a single bonded substance, not a mixture, even though it contains more than one element."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1541,14 +1541,14 @@
           "question": {
             "stem": "When a phosphate group is cleaved from ATP to form ADP, why is this reaction useful to the body?",
             "options": [
-              "It creates a new element that the body can use for energy",
               "The energy released from breaking the covalent bond can be transferred to form new bonds elsewhere",
-              "It forms an ionic bond that stores charge for muscle contraction",
+              "It converts an organic molecule into an inorganic one",
+              "It creates a new element that the body can use for energy",
               "It absorbs energy, cooling the surrounding tissue",
-              "It converts an organic molecule into an inorganic one"
+              "It forms an ionic bond that stores charge for muscle contraction"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Breaking the covalent bond holding a phosphate to ATP releases energy that can be transferred to power the formation of new bonds in other bodily processes.\n\n**Why the other options are wrong:**\n- **(A)** No new element is created; elements cannot be made by ordinary chemical means.\n- **(C)** ATP's phosphate is held by covalent bonds, and the reaction releases energy rather than storing charge in ionic bonds.\n- **(D)** The reaction releases usable energy rather than absorbing energy to cool tissue.\n- **(E)** Cleaving a phosphate does not change ATP's status as an organic molecule."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Breaking the covalent bond holding a phosphate to ATP releases energy that can be transferred to power the formation of new bonds in other bodily processes.\n\n**Why the other options are wrong:**\n- **(B)** Cleaving a phosphate does not change ATP's status as an organic molecule.\n- **(C)** No new element is created; elements cannot be made by ordinary chemical means.\n- **(D)** The reaction releases usable energy rather than absorbing energy to cool tissue.\n- **(E)** ATP's phosphate is held by covalent bonds, and the reaction releases energy rather than storing charge in ionic bonds."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1558,14 +1558,14 @@
           "question": {
             "stem": "A student compares three bond types. Which comparison is accurate?",
             "options": [
-              "Ionic bonds involve electron sharing, while covalent bonds involve electron transfer",
               "Covalent bonds are usually broken apart by water, while ionic bonds are not",
               "Ionic bonds form from attraction between a cation and an anion, while covalent bonds form from shared electrons; hydrogen bonds are weaker attractions between molecules",
-              "Hydrogen bonds are the strongest of the three and hold atoms within a molecule together",
-              "Covalent and ionic bonds are both easily broken by water, but hydrogen bonds are not"
+              "Ionic bonds involve electron sharing, while covalent bonds involve electron transfer",
+              "Covalent and ionic bonds are both easily broken by water, but hydrogen bonds are not",
+              "Hydrogen bonds are the strongest of the three and hold atoms within a molecule together"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Ionic bonds arise from cation–anion attraction, covalent bonds from shared electrons, and hydrogen bonds are relatively weak attractions between a partially positive hydrogen and an electronegative atom of another molecule.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the definitions—ionic bonds transfer electrons and covalent bonds share them.\n- **(B)** Covalent bonds are strong and generally NOT broken by water, whereas ionic bonds are.\n- **(D)** Hydrogen bonds are the weakest of the three and occur between molecules, not holding atoms within a molecule.\n- **(E)** Covalent bonds resist water; ionic bonds are broken by water, so the two do not behave alike."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Ionic bonds arise from cation–anion attraction, covalent bonds from shared electrons, and hydrogen bonds are relatively weak attractions between a partially positive hydrogen and an electronegative atom of another molecule.\n\n**Why the other options are wrong:**\n- **(A)** Covalent bonds are strong and generally NOT broken by water, whereas ionic bonds are.\n- **(C)** This reverses the definitions—ionic bonds transfer electrons and covalent bonds share them.\n- **(D)** Covalent bonds resist water; ionic bonds are broken by water, so the two do not behave alike.\n- **(E)** Hydrogen bonds are the weakest of the three and occur between molecules, not holding atoms within a molecule."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1576,13 +1576,13 @@
             "stem": "Ice floats on liquid water, an unusual property compared to most substances. What accounts for this, and what other property arises from the same cause?",
             "options": [
               "Ionic bonds; water also has an unusually low specific heat capacity",
-              "Hydrogen bonds; water also has an unusually high boiling point",
-              "Nonpolar covalent bonds; water also repels salts",
               "Dipole–ion bonds; water also has a boiling point of -90°C",
-              "Covalent bonds within molecules; water also dissolves oils readily"
+              "Covalent bonds within molecules; water also dissolves oils readily",
+              "Nonpolar covalent bonds; water also repels salts",
+              "Hydrogen bonds; water also has an unusually high boiling point"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Hydrogen bonds hold water molecules apart in an open lattice when frozen (making ice less dense) and also require extra energy to overcome, giving water an unusually high boiling point of 100°C.\n\n**Why the other options are wrong:**\n- **(A)** Water's special properties come from hydrogen bonds, and its specific heat capacity is unusually HIGH, not low.\n- **(C)** Nonpolar covalent bonds do not describe water; water is polar and dissolves salts rather than a nonpolar property causing ice's density.\n- **(D)** -90°C is the predicted boiling point without hydrogen bonds; the actual boiling point is 100°C, and dipole–ion bonds are not the cause of ice's density.\n- **(E)** Intramolecular covalent bonds do not explain ice's low density, and water repels rather than dissolves oils."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Hydrogen bonds hold water molecules apart in an open lattice when frozen (making ice less dense) and also require extra energy to overcome, giving water an unusually high boiling point of 100°C.\n\n**Why the other options are wrong:**\n- **(A)** Water's special properties come from hydrogen bonds, and its specific heat capacity is unusually HIGH, not low.\n- **(B)** -90°C is the predicted boiling point without hydrogen bonds; the actual boiling point is 100°C, and dipole–ion bonds are not the cause of ice's density.\n- **(C)** Intramolecular covalent bonds do not explain ice's low density, and water repels rather than dissolves oils.\n- **(D)** Nonpolar covalent bonds do not describe water; water is polar and dissolves salts rather than a nonpolar property causing ice's density."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1592,14 +1592,14 @@
           "question": {
             "stem": "Neon has 10 electrons and is non-reactive, whereas carbon has 6 electrons and readily forms bonds. What explains this difference?",
             "options": [
-              "Neon's valence shell is complete with eight electrons, while carbon's valence shell holds only four of the eight it could hold",
-              "Neon has more neutrons, which makes it stable",
-              "Carbon's first electron shell is incomplete, forcing it to react",
               "Neon's first shell holds eight electrons, filling it completely",
-              "Carbon has a complete valence shell but reacts due to its mass"
+              "Carbon has a complete valence shell but reacts due to its mass",
+              "Neon has more neutrons, which makes it stable",
+              "Neon's valence shell is complete with eight electrons, while carbon's valence shell holds only four of the eight it could hold",
+              "Carbon's first electron shell is incomplete, forcing it to react"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Neon's outermost (valence) shell is full at eight electrons making it non-reactive, while carbon's valence shell is only half-filled (four of eight), making it reactive.\n\n**Why the other options are wrong:**\n- **(B)** Reactivity depends on valence electrons, not neutron number.\n- **(C)** Carbon's first shell is complete with two electrons; it is the half-filled second (valence) shell that drives reactivity.\n- **(D)** The first electron shell holds a maximum of two electrons, not eight.\n- **(E)** Carbon's valence shell is NOT complete; that incompleteness is why it reacts."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Neon's outermost (valence) shell is full at eight electrons making it non-reactive, while carbon's valence shell is only half-filled (four of eight), making it reactive.\n\n**Why the other options are wrong:**\n- **(A)** The first electron shell holds a maximum of two electrons, not eight.\n- **(B)** Carbon's valence shell is NOT complete; that incompleteness is why it reacts.\n- **(C)** Reactivity depends on valence electrons, not neutron number.\n- **(E)** Carbon's first shell is complete with two electrons; it is the half-filled second (valence) shell that drives reactivity."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1610,13 +1610,13 @@
             "stem": "An atom of oxygen has 8 protons and 8 neutrons. How are its atomic number and mass number determined?",
             "options": [
               "Atomic number is 16 (protons + neutrons); mass number is 8 (protons only)",
+              "Atomic number is 16 (protons + electrons); mass number is 24 (all particles)",
               "Atomic number is 8 (protons only); mass number is 16 (protons + neutrons)",
               "Atomic number is 8 (electrons only); mass number is 8 (protons only)",
-              "Atomic number is 16 (protons + electrons); mass number is 24 (all particles)",
               "Atomic number is 8 (neutrons only); mass number is 16 (protons + neutrons)"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The atomic number equals the number of protons (8), and the mass number equals the sum of protons and neutrons (8 + 8 = 16).\n\n**Why the other options are wrong:**\n- **(A)** This reverses the definitions; atomic number is protons only and mass number is protons plus neutrons.\n- **(C)** Mass number counts both protons and neutrons, not protons only, and atomic number is defined by protons.\n- **(D)** Atomic number is protons only, not protons plus electrons, and mass number excludes the negligible mass of electrons.\n- **(E)** The atomic number is set by protons, not neutrons."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The atomic number equals the number of protons (8), and the mass number equals the sum of protons and neutrons (8 + 8 = 16).\n\n**Why the other options are wrong:**\n- **(A)** This reverses the definitions; atomic number is protons only and mass number is protons plus neutrons.\n- **(B)** Atomic number is protons only, not protons plus electrons, and mass number excludes the negligible mass of electrons.\n- **(D)** Mass number counts both protons and neutrons, not protons only, and atomic number is defined by protons.\n- **(E)** The atomic number is set by protons, not neutrons."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1626,14 +1626,14 @@
           "question": {
             "stem": "A student is classifying substances. Which of the following correctly distinguishes O₂ from CO₂?",
             "options": [
-              "O₂ is a molecule but not a compound, while CO₂ is both a molecule and a compound",
               "O₂ is a compound but not a molecule, while CO₂ is only a molecule",
-              "Both O₂ and CO₂ are compounds because each contains more than one atom",
+              "Both O₂ and CO₂ are mixtures because they contain multiple atoms",
+              "O₂ is a molecule but not a compound, while CO₂ is both a molecule and a compound",
               "O₂ is an element and CO₂ is a molecule, but neither is a compound",
-              "Both O₂ and CO₂ are mixtures because they contain multiple atoms"
+              "Both O₂ and CO₂ are compounds because each contains more than one atom"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** O₂ contains two atoms of the same element so it is a molecule but not a compound, whereas CO₂ contains two different elements bonded together, making it both a molecule and a compound.\n\n**Why the other options are wrong:**\n- **(B)** A compound must contain two or more different elements, which O₂ does not, and CO₂ is also a compound.\n- **(C)** A compound requires two or more *different* elements, so O₂ (all oxygen) is not a compound.\n- **(D)** An element is a single type of matter; O₂ is a molecule of the element oxygen, not an element itself.\n- **(E)** A mixture is a combination of substances that retain their own identities, not atoms bonded into a single substance."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** O₂ contains two atoms of the same element so it is a molecule but not a compound, whereas CO₂ contains two different elements bonded together, making it both a molecule and a compound.\n\n**Why the other options are wrong:**\n- **(A)** A compound must contain two or more different elements, which O₂ does not, and CO₂ is also a compound.\n- **(B)** A mixture is a combination of substances that retain their own identities, not atoms bonded into a single substance.\n- **(D)** An element is a single type of matter; O₂ is a molecule of the element oxygen, not an element itself.\n- **(E)** A compound requires two or more *different* elements, so O₂ (all oxygen) is not a compound."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1644,13 +1644,13 @@
             "stem": "Ice floats on liquid water, an unusual property compared to most substances. Which explanation best accounts for this?",
             "options": [
               "Hydrogen bonds hold water molecules in a spaced-out arrangement in the solid state, making ice less dense than liquid water",
-              "Covalent bonds within water molecules break when water freezes, releasing trapped gas",
-              "Ionic bonds between water molecules strengthen upon freezing, packing molecules closer together",
+              "The mass number of oxygen decreases at low temperatures, lowering the density of ice",
               "The nonpolar nature of water causes molecules to repel each other more when frozen",
-              "The mass number of oxygen decreases at low temperatures, lowering the density of ice"
+              "Ionic bonds between water molecules strengthen upon freezing, packing molecules closer together",
+              "Covalent bonds within water molecules break when water freezes, releasing trapped gas"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Hydrogen bonding forces water molecules into a more open, spaced-out lattice when frozen, so ice is less dense than liquid water and floats.\n\n**Why the other options are wrong:**\n- **(B)** The covalent bonds within water molecules are not broken during freezing.\n- **(C)** Water molecules are held by hydrogen bonds, not ionic bonds, and freezing spaces them out rather than packing them tighter.\n- **(D)** Water is a polar molecule, not nonpolar, and the property arises from hydrogen bonding.\n- **(E)** Mass number is a fixed property of an atom's nucleus and does not change with temperature."
+            "explanation": "**Why (A) is correct:** Hydrogen bonding forces water molecules into a more open, spaced-out lattice when frozen, so ice is less dense than liquid water and floats.\n\n**Why the other options are wrong:**\n- **(B)** Mass number is a fixed property of an atom's nucleus and does not change with temperature.\n- **(C)** Water is a polar molecule, not nonpolar, and the property arises from hydrogen bonding.\n- **(D)** Water molecules are held by hydrogen bonds, not ionic bonds, and freezing spaces them out rather than packing them tighter.\n- **(E)** The covalent bonds within water molecules are not broken during freezing."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1660,14 +1660,14 @@
           "question": {
             "stem": "Neon (10 electrons) is chemically non-reactive, whereas carbon (6 electrons) readily forms bonds. What accounts for this difference?",
             "options": [
+              "Carbon has a positive charge that repels other atoms, while neon is neutral",
               "Neon has a complete valence shell of eight electrons, while carbon's valence shell holds only four of its possible eight electrons",
               "Neon has more neutrons than carbon, which stabilizes its nucleus against reactions",
               "Carbon has a full first shell, so it cannot participate in any chemical bonds",
-              "Neon's electrons occupy the third shell, which cannot be shared, while carbon's electrons are in the first shell",
-              "Carbon has a positive charge that repels other atoms, while neon is neutral"
+              "Neon's electrons occupy the third shell, which cannot be shared, while carbon's electrons are in the first shell"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Neon's ten electrons completely fill both shells (2 + 8), giving a complete valence shell and non-reactivity, while carbon's half-filled second shell (4 of 8) makes it reactive.\n\n**Why the other options are wrong:**\n- **(B)** Reactivity is governed by valence electrons, not neutron count.\n- **(C)** Carbon's half-filled valence shell is exactly why it readily forms bonds.\n- **(D)** Both neon's outer electrons and carbon's are in the second shell (carbon's valence), not the third or first.\n- **(E)** A neutral carbon atom has no net charge; its reactivity comes from an incomplete valence shell."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Neon's ten electrons completely fill both shells (2 + 8), giving a complete valence shell and non-reactivity, while carbon's half-filled second shell (4 of 8) makes it reactive.\n\n**Why the other options are wrong:**\n- **(A)** A neutral carbon atom has no net charge; its reactivity comes from an incomplete valence shell.\n- **(C)** Reactivity is governed by valence electrons, not neutron count.\n- **(D)** Carbon's half-filled valence shell is exactly why it readily forms bonds.\n- **(E)** Both neon's outer electrons and carbon's are in the second shell (carbon's valence), not the third or first."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1677,14 +1677,14 @@
           "question": {
             "stem": "An atom of oxygen has 8 electrons. How do these fill its electron shells, and what does this mean for its valence shell?",
             "options": [
-              "2 electrons fill the first shell and 6 occupy the second shell, leaving the valence shell incomplete and the atom reactive",
-              "8 electrons all occupy the first shell, giving a complete valence shell and making the atom non-reactive",
+              "8 electrons occupy the second shell only, leaving the first shell empty and the atom stable",
               "4 electrons fill the first shell and 4 fill the second, giving a complete valence shell",
-              "2 electrons fill the first shell and 6 fill the second, giving a complete valence shell of six",
-              "8 electrons occupy the second shell only, leaving the first shell empty and the atom stable"
+              "8 electrons all occupy the first shell, giving a complete valence shell and making the atom non-reactive",
+              "2 electrons fill the first shell and 6 occupy the second shell, leaving the valence shell incomplete and the atom reactive",
+              "2 electrons fill the first shell and 6 fill the second, giving a complete valence shell of six"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The first shell holds a maximum of 2 electrons and the second holds up to 8; oxygen's 8 electrons fill the first (2) and place 6 in the second, leaving the valence shell short of eight and thus reactive.\n\n**Why the other options are wrong:**\n- **(B)** The first shell can hold only two electrons, not eight.\n- **(C)** The first shell holds a maximum of two electrons, not four.\n- **(D)** A valence shell (other than the first) is complete at eight, so six electrons leaves it incomplete.\n- **(E)** The first shell fills before the second; it cannot remain empty while the second is occupied."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The first shell holds a maximum of 2 electrons and the second holds up to 8; oxygen's 8 electrons fill the first (2) and place 6 in the second, leaving the valence shell short of eight and thus reactive.\n\n**Why the other options are wrong:**\n- **(A)** The first shell fills before the second; it cannot remain empty while the second is occupied.\n- **(B)** The first shell holds a maximum of two electrons, not four.\n- **(C)** The first shell can hold only two electrons, not eight.\n- **(E)** A valence shell (other than the first) is complete at eight, so six electrons leaves it incomplete."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1694,14 +1694,14 @@
           "question": {
             "stem": "ATP stores energy that cells use to power processes. In terms of bonding, how is this energy stored and released?",
             "options": [
-              "Energy is stored in the covalent bonds joining phosphate groups; cleaving a phosphate off ATP releases energy for other processes",
-              "Energy is stored in ionic bonds between ATP and sodium; breaking these releases electrolytes",
-              "Energy is stored in hydrogen bonds within ATP that reform when the molecule is heated",
               "Energy is stored by keeping ATP's valence shells incomplete, which drives spontaneous reactions",
-              "Energy is stored in the dipole attractions between ATP and water molecules"
+              "Energy is stored in the covalent bonds joining phosphate groups; cleaving a phosphate off ATP releases energy for other processes",
+              "Energy is stored in the dipole attractions between ATP and water molecules",
+              "Energy is stored in hydrogen bonds within ATP that reform when the molecule is heated",
+              "Energy is stored in ionic bonds between ATP and sodium; breaking these releases electrolytes"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** ATP holds chemical energy in the covalent bonds attaching its phosphate groups, and cleaving a phosphate to form ADP transfers that energy to other bodily processes.\n\n**Why the other options are wrong:**\n- **(B)** ATP's stored energy is in its covalent phosphate bonds, not ionic bonds with sodium.\n- **(C)** Hydrogen bonds are weak intermolecular attractions, not the energy-storing bonds of ATP.\n- **(D)** Energy storage in ATP is a matter of covalent bond energy, not incomplete valence shells.\n- **(E)** Dipole attractions to water do not store the transferable chemical energy of ATP."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** ATP holds chemical energy in the covalent bonds attaching its phosphate groups, and cleaving a phosphate to form ADP transfers that energy to other bodily processes.\n\n**Why the other options are wrong:**\n- **(A)** Energy storage in ATP is a matter of covalent bond energy, not incomplete valence shells.\n- **(C)** Dipole attractions to water do not store the transferable chemical energy of ATP.\n- **(D)** Hydrogen bonds are weak intermolecular attractions, not the energy-storing bonds of ATP.\n- **(E)** ATP's stored energy is in its covalent phosphate bonds, not ionic bonds with sodium."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1711,14 +1711,14 @@
           "question": {
             "stem": "Vegetable oil forms a bead rather than dissolving when poured into water. Which comparison of bond types best explains this behavior?",
             "options": [
-              "Oil molecules have nonpolar covalent bonds with no dipoles, so the polar (dipole) water molecules repel them",
-              "Oil molecules have polar covalent bonds that attract each other more strongly than water",
               "Oil molecules are held together by ionic bonds that water cannot break",
+              "Oil is denser than water because its covalent bonds are stronger, so it sinks and clumps",
+              "Oil molecules have nonpolar covalent bonds with no dipoles, so the polar (dipole) water molecules repel them",
               "Water molecules form hydrogen bonds with the oil, pulling it into a compact bead",
-              "Oil is denser than water because its covalent bonds are stronger, so it sinks and clumps"
+              "Oil molecules have polar covalent bonds that attract each other more strongly than water"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Nonpolar covalent bonds give oil no charged regions (no dipole), so the polar water molecules repel the nonpolar oil, causing it to bead up instead of dissolving.\n\n**Why the other options are wrong:**\n- **(B)** Oil is nonpolar, not polar; if it were polar it would dissolve in water.\n- **(C)** Oil molecules are held by nonpolar covalent bonds, not ionic bonds.\n- **(D)** Water repels nonpolar oil rather than hydrogen-bonding it into a bead.\n- **(E)** The beading is due to polarity mismatch and repulsion, not bond strength or density."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Nonpolar covalent bonds give oil no charged regions (no dipole), so the polar water molecules repel the nonpolar oil, causing it to bead up instead of dissolving.\n\n**Why the other options are wrong:**\n- **(A)** Oil molecules are held by nonpolar covalent bonds, not ionic bonds.\n- **(B)** The beading is due to polarity mismatch and repulsion, not bond strength or density.\n- **(D)** Water repels nonpolar oil rather than hydrogen-bonding it into a bead.\n- **(E)** Oil is nonpolar, not polar; if it were polar it would dissolve in water."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1729,13 +1729,13 @@
             "stem": "A student examines two compounds: glucose (C₆H₁₂O₆) and hydrochloric acid (HCl). How should each be classified as organic or inorganic, and why?",
             "options": [
               "Glucose is organic because it contains both carbon and hydrogen; HCl is inorganic because it lacks carbon",
-              "Both are organic because both contain hydrogen atoms",
               "Glucose is inorganic because it contains oxygen; HCl is organic because it contains chlorine",
               "Both are inorganic because neither contains a metal element",
-              "HCl is organic because it is produced by the body, while glucose is inorganic because it comes from food"
+              "HCl is organic because it is produced by the body, while glucose is inorganic because it comes from food",
+              "Both are organic because both contain hydrogen atoms"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** An organic compound contains both carbon and hydrogen; glucose has both, so it is organic, while HCl contains no carbon and is therefore inorganic.\n\n**Why the other options are wrong:**\n- **(B)** Containing hydrogen alone is not enough; carbon must also be present for a compound to be organic.\n- **(C)** Organic/inorganic status depends on carbon-and-hydrogen content, not oxygen or chlorine.\n- **(D)** The organic/inorganic distinction is based on carbon and hydrogen, not metal content.\n- **(E)** Being body-produced or food-derived does not determine organic vs. inorganic classification."
+            "explanation": "**Why (A) is correct:** An organic compound contains both carbon and hydrogen; glucose has both, so it is organic, while HCl contains no carbon and is therefore inorganic.\n\n**Why the other options are wrong:**\n- **(B)** Organic/inorganic status depends on carbon-and-hydrogen content, not oxygen or chlorine.\n- **(C)** The organic/inorganic distinction is based on carbon and hydrogen, not metal content.\n- **(D)** Being body-produced or food-derived does not determine organic vs. inorganic classification.\n- **(E)** Containing hydrogen alone is not enough; carbon must also be present for a compound to be organic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1745,14 +1745,14 @@
           "question": {
             "stem": "Which of the following pairings of a key term with its meaning is correct?",
             "options": [
-              "Cation — an ion with a positive charge formed by donating one or more electrons",
-              "Anion — an ion with a positive charge formed by accepting electrons",
-              "Isotope — an atom that has gained or lost electrons to become charged",
               "Valence shell — the innermost electron shell closest to the nucleus",
-              "Compound — any substance made of a single type of element"
+              "Isotope — an atom that has gained or lost electrons to become charged",
+              "Anion — an ion with a positive charge formed by accepting electrons",
+              "Compound — any substance made of a single type of element",
+              "Cation — an ion with a positive charge formed by donating one or more electrons"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A cation is a positively charged ion, formed when an atom donates one or more electrons so protons outnumber electrons.\n\n**Why the other options are wrong:**\n- **(B)** An anion is *negatively* charged, formed by accepting electrons.\n- **(C)** An ion (not an isotope) is an atom that gained or lost electrons; isotopes differ in neutron number.\n- **(D)** The valence shell is the *outermost* electron shell, not the innermost.\n- **(E)** A compound contains two or more *different* elements bonded together, not a single element."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A cation is a positively charged ion, formed when an atom donates one or more electrons so protons outnumber electrons.\n\n**Why the other options are wrong:**\n- **(A)** The valence shell is the *outermost* electron shell, not the innermost.\n- **(B)** An ion (not an isotope) is an atom that gained or lost electrons; isotopes differ in neutron number.\n- **(C)** An anion is *negatively* charged, formed by accepting electrons.\n- **(D)** A compound contains two or more *different* elements bonded together, not a single element."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1762,14 +1762,14 @@
           "question": {
             "stem": "When table salt (NaCl) is placed in water, it dissolves into separate Na⁺ and Cl⁻ ions. Which interaction of water's dipole makes this possible?",
             "options": [
-              "The weakly negative (oxygen) portion of water attracts Na⁺, and the weakly positive (hydrogen) portion attracts Cl⁻, pulling the ions apart",
-              "The weakly positive portion of water attracts Na⁺, and the weakly negative portion attracts Cl⁻, packing the ions together",
               "Water forms nonpolar covalent bonds with both ions, breaking the salt crystal apart",
+              "The weakly negative (oxygen) portion of water attracts Na⁺, and the weakly positive (hydrogen) portion attracts Cl⁻, pulling the ions apart",
+              "Water repels both ions equally, so the crystal remains intact as a bead",
               "Water's hydrogen bonds link Na⁺ to Cl⁻ more tightly, preventing dissociation",
-              "Water repels both ions equally, so the crystal remains intact as a bead"
+              "The weakly positive portion of water attracts Na⁺, and the weakly negative portion attracts Cl⁻, packing the ions together"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Water's dipole means its negative (oxygen) region attracts the Na⁺ cation and its positive (hydrogen) region attracts the Cl⁻ anion, and many such dipole–ion interactions overcome the ionic bond to pull the ions apart.\n\n**Why the other options are wrong:**\n- **(B)** The polarity is reversed: water's negative end attracts the positive Na⁺, not the positive end.\n- **(C)** Water forms polar covalent bonds and dipole–ion interactions, not nonpolar covalent bonds with the ions.\n- **(D)** Water breaks the ionic bond and dissociates the ions rather than tightening it.\n- **(E)** Water attracts (dissolves) the charged ions; it repels only nonpolar substances."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Water's dipole means its negative (oxygen) region attracts the Na⁺ cation and its positive (hydrogen) region attracts the Cl⁻ anion, and many such dipole–ion interactions overcome the ionic bond to pull the ions apart.\n\n**Why the other options are wrong:**\n- **(A)** Water forms polar covalent bonds and dipole–ion interactions, not nonpolar covalent bonds with the ions.\n- **(C)** Water attracts (dissolves) the charged ions; it repels only nonpolar substances.\n- **(D)** Water breaks the ionic bond and dissociates the ions rather than tightening it.\n- **(E)** The polarity is reversed: water's negative end attracts the positive Na⁺, not the positive end."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1780,13 +1780,13 @@
             "stem": "Sodium (Na) and fluorine (F) react to form sodium fluoride. Which statement correctly describes how the ions form and the bond that results?",
             "options": [
               "Sodium donates one electron to become the cation Na⁺, fluorine accepts it to become the anion F⁻, and their opposite charges form an ionic bond",
-              "Sodium accepts one electron to become an anion, fluorine donates one to become a cation, and they form a covalent bond",
               "Both atoms share a pair of electrons equally, forming a nonpolar covalent bond",
-              "Sodium and fluorine each keep their electrons and are held together only by a hydrogen bond",
-              "Sodium donates two electrons and fluorine donates one, and the resulting neutral atoms form no bond"
+              "Sodium accepts one electron to become an anion, fluorine donates one to become a cation, and they form a covalent bond",
+              "Sodium donates two electrons and fluorine donates one, and the resulting neutral atoms form no bond",
+              "Sodium and fluorine each keep their electrons and are held together only by a hydrogen bond"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Sodium donates its single valence electron to become the positive cation Na⁺, fluorine accepts that electron to become the negative anion F⁻, and the attraction between the opposite charges is an ionic bond.\n\n**Why the other options are wrong:**\n- **(B)** Sodium donates (becomes a cation) and fluorine accepts (becomes an anion), and the result is an ionic, not covalent, bond.\n- **(C)** Electrons are transferred, not shared equally, so no nonpolar covalent bond forms.\n- **(D)** Hydrogen bonds require a hydrogen atom in a polar molecule; this reaction involves electron transfer and an ionic bond.\n- **(E)** Sodium donates only one electron and the atoms become charged ions that do bond ionically."
+            "explanation": "**Why (A) is correct:** Sodium donates its single valence electron to become the positive cation Na⁺, fluorine accepts that electron to become the negative anion F⁻, and the attraction between the opposite charges is an ionic bond.\n\n**Why the other options are wrong:**\n- **(B)** Electrons are transferred, not shared equally, so no nonpolar covalent bond forms.\n- **(C)** Sodium donates (becomes a cation) and fluorine accepts (becomes an anion), and the result is an ionic, not covalent, bond.\n- **(D)** Sodium donates only one electron and the atoms become charged ions that do bond ionically.\n- **(E)** Hydrogen bonds require a hydrogen atom in a polar molecule; this reaction involves electron transfer and an ionic bond."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1796,14 +1796,14 @@
           "question": {
             "stem": "A magnesium atom donates two electrons from its valence shell during a chemical reaction. What is the correct classification and notation for the resulting ion?",
             "options": [
-              "A cation, written Mg2+",
-              "An anion, written Mg2-",
-              "A cation, written Mg2-",
               "An anion, written Mg2+",
-              "A neutral atom, written Mg"
+              "An anion, written Mg2-",
+              "A cation, written Mg2+",
+              "A neutral atom, written Mg",
+              "A cation, written Mg2-"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Donating two electrons leaves the atom with two more protons than electrons, producing a positive charge (a cation) written Mg2+.\n\n**Why the other options are wrong:**\n- **(B)** Donating electrons produces a positive cation, not a negative anion.\n- **(C)** Losing electrons gives a positive charge, so the sign must be +, not −.\n- **(D)** Accepting electrons (not donating) would be needed to form an anion.\n- **(E)** Losing electrons unbalances the charge, so the atom is no longer neutral."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Donating two electrons leaves the atom with two more protons than electrons, producing a positive charge (a cation) written Mg2+.\n\n**Why the other options are wrong:**\n- **(A)** Accepting electrons (not donating) would be needed to form an anion.\n- **(B)** Donating electrons produces a positive cation, not a negative anion.\n- **(D)** Losing electrons unbalances the charge, so the atom is no longer neutral.\n- **(E)** Losing electrons gives a positive charge, so the sign must be +, not −."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1813,14 +1813,14 @@
           "question": {
             "stem": "Two students argue about how to classify compounds. Which pair correctly matches a compound to its category based on the definitions used in this unit?",
             "options": [
-              "Water (H2O) is organic; glucose (C6H12O6) is inorganic",
-              "Carbon dioxide (CO2) is organic; water (H2O) is organic",
-              "Glucose (C6H12O6) is organic; water (H2O) is inorganic",
               "Hydrochloric acid (HCl) is organic; glucose (C6H12O6) is inorganic",
-              "Carbon dioxide (CO2) is inorganic; glucose (C6H12O6) is inorganic"
+              "Water (H2O) is organic; glucose (C6H12O6) is inorganic",
+              "Carbon dioxide (CO2) is inorganic; glucose (C6H12O6) is inorganic",
+              "Glucose (C6H12O6) is organic; water (H2O) is inorganic",
+              "Carbon dioxide (CO2) is organic; water (H2O) is organic"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** An organic compound contains both carbon and hydrogen (glucose has C-H bonds), while water lacks carbon and is therefore inorganic.\n\n**Why the other options are wrong:**\n- **(A)** Water lacks carbon so it is inorganic, and glucose contains C and H so it is organic — both reversed.\n- **(B)** CO2 contains no hydrogen so it is inorganic, and water is also inorganic, not organic.\n- **(D)** HCl contains no carbon so it is inorganic, and glucose contains C and H so it is organic.\n- **(E)** Glucose contains both carbon and hydrogen, making it organic, not inorganic."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** An organic compound contains both carbon and hydrogen (glucose has C-H bonds), while water lacks carbon and is therefore inorganic.\n\n**Why the other options are wrong:**\n- **(A)** HCl contains no carbon so it is inorganic, and glucose contains C and H so it is organic.\n- **(B)** Water lacks carbon so it is inorganic, and glucose contains C and H so it is organic — both reversed.\n- **(C)** Glucose contains both carbon and hydrogen, making it organic, not inorganic.\n- **(E)** CO2 contains no hydrogen so it is inorganic, and water is also inorganic, not organic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1832,12 +1832,12 @@
             "options": [
               "The innermost electron shell, which always holds only two electrons",
               "The outermost electron shell, whose fullness determines an atom's reactivity",
-              "The layer of the nucleus containing protons and neutrons",
+              "The shell that holds a maximum of 18 electrons in every atom",
               "The region occupied only by an atom's neutrons",
-              "The shell that holds a maximum of 18 electrons in every atom"
+              "The layer of the nucleus containing protons and neutrons"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The valence shell is the outermost electron shell, and whether it is full or incomplete governs whether the atom is reactive.\n\n**Why the other options are wrong:**\n- **(A)** The valence shell is the outermost shell, which is not necessarily the innermost two-electron shell.\n- **(C)** The valence shell contains electrons, not the protons and neutrons of the nucleus.\n- **(D)** Neutrons are in the nucleus, not in electron shells.\n- **(E)** The 18-electron capacity applies specifically to the third shell, not to every valence shell."
+            "explanation": "**Why (B) is correct:** The valence shell is the outermost electron shell, and whether it is full or incomplete governs whether the atom is reactive.\n\n**Why the other options are wrong:**\n- **(A)** The valence shell is the outermost shell, which is not necessarily the innermost two-electron shell.\n- **(C)** The 18-electron capacity applies specifically to the third shell, not to every valence shell.\n- **(D)** Neutrons are in the nucleus, not in electron shells.\n- **(E)** The valence shell contains electrons, not the protons and neutrons of the nucleus."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1847,14 +1847,14 @@
           "question": {
             "stem": "Compared to a nonpolar covalent bond, why does a polar covalent bond in a water molecule create a dipole?",
             "options": [
-              "Electrons are transferred completely from hydrogen to oxygen, forming full charges",
-              "Electrons are shared equally, so no region carries any charge",
-              "Electrons are shared unequally, pulled toward oxygen, giving partial charges to different regions",
+              "Neutrons migrate toward the hydrogen ends, creating partial charges",
               "Hydrogen atoms donate protons to oxygen, creating opposite full charges",
-              "Neutrons migrate toward the hydrogen ends, creating partial charges"
+              "Electrons are shared unequally, pulled toward oxygen, giving partial charges to different regions",
+              "Electrons are transferred completely from hydrogen to oxygen, forming full charges",
+              "Electrons are shared equally, so no region carries any charge"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** In a polar covalent bond electrons are shared unequally and pulled toward the more attractive oxygen nucleus, giving the oxygen end a partial negative and hydrogen ends a partial positive charge — a dipole.\n\n**Why the other options are wrong:**\n- **(A)** Complete electron transfer would form an ionic bond with full charges, not a polar covalent bond.\n- **(B)** Equal sharing describes a nonpolar bond, which produces no dipole.\n- **(D)** Protons are not donated between atoms; only electrons are shared unequally.\n- **(E)** Neutrons have no charge and do not migrate to create polarity."
+            "explanation": "**Why (C) is correct:** In a polar covalent bond electrons are shared unequally and pulled toward the more attractive oxygen nucleus, giving the oxygen end a partial negative and hydrogen ends a partial positive charge — a dipole.\n\n**Why the other options are wrong:**\n- **(A)** Neutrons have no charge and do not migrate to create polarity.\n- **(B)** Protons are not donated between atoms; only electrons are shared unequally.\n- **(D)** Complete electron transfer would form an ionic bond with full charges, not a polar covalent bond.\n- **(E)** Equal sharing describes a nonpolar bond, which produces no dipole."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1864,14 +1864,14 @@
           "question": {
             "stem": "In a water molecule, the oxygen nucleus contains eight protons while each hydrogen nucleus contains only one. How does this difference explain the molecule's polarity?",
             "options": [
-              "The larger oxygen nucleus attracts the shared electrons more strongly, making the oxygen end slightly negative",
-              "The hydrogen nuclei attract electrons more strongly, making the hydrogen ends slightly negative",
-              "The equal number of neutrons balances the charge, keeping the molecule nonpolar",
+              "The protons cancel the electrons completely, leaving no partial charges",
               "The oxygen donates electrons to hydrogen, forming an ionic bond",
-              "The protons cancel the electrons completely, leaving no partial charges"
+              "The equal number of neutrons balances the charge, keeping the molecule nonpolar",
+              "The larger oxygen nucleus attracts the shared electrons more strongly, making the oxygen end slightly negative",
+              "The hydrogen nuclei attract electrons more strongly, making the hydrogen ends slightly negative"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** With eight protons, the oxygen nucleus exerts a stronger pull on the shared electrons than the single-proton hydrogen nuclei, so electrons migrate toward oxygen and its end becomes slightly negative.\n\n**Why the other options are wrong:**\n- **(B)** The hydrogen nuclei, with only one proton each, attract electrons less strongly, so their ends become slightly positive, not negative.\n- **(C)** Neutron count does not offset the unequal electron pull that makes water polar.\n- **(D)** Water's bonds are polar covalent (shared electrons), not ionic transfers.\n- **(E)** The unequal sharing creates partial charges rather than cancelling them out."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** With eight protons, the oxygen nucleus exerts a stronger pull on the shared electrons than the single-proton hydrogen nuclei, so electrons migrate toward oxygen and its end becomes slightly negative.\n\n**Why the other options are wrong:**\n- **(A)** The unequal sharing creates partial charges rather than cancelling them out.\n- **(B)** Water's bonds are polar covalent (shared electrons), not ionic transfers.\n- **(C)** Neutron count does not offset the unequal electron pull that makes water polar.\n- **(E)** The hydrogen nuclei, with only one proton each, attract electrons less strongly, so their ends become slightly positive, not negative."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1881,14 +1881,14 @@
           "question": {
             "stem": "Ice floats on liquid water, an unusual property for a substance. Which explanation best accounts for this, according to the unit?",
             "options": [
-              "Ionic bonds in ice make it lighter than liquid water",
-              "Hydrogen bonds hold water molecules in an arrangement that makes solid water less dense than liquid water",
               "Water loses mass when it freezes, reducing its density",
+              "Ionic bonds in ice make it lighter than liquid water",
+              "Covalent bonds break during freezing, lowering density",
               "The nonpolar nature of water traps air bubbles in ice",
-              "Covalent bonds break during freezing, lowering density"
+              "Hydrogen bonds hold water molecules in an arrangement that makes solid water less dense than liquid water"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Hydrogen bonding arranges water molecules so that ice (solid) is less dense than liquid water, unlike most substances whose solid state is denser.\n\n**Why the other options are wrong:**\n- **(A)** Water's special properties arise from hydrogen bonds, not ionic bonds.\n- **(C)** Freezing does not change the amount of matter, so mass is conserved.\n- **(D)** Water is polar, not nonpolar, and trapped air is not the explanation given.\n- **(E)** The covalent bonds within water molecules remain intact during freezing."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Hydrogen bonding arranges water molecules so that ice (solid) is less dense than liquid water, unlike most substances whose solid state is denser.\n\n**Why the other options are wrong:**\n- **(A)** Freezing does not change the amount of matter, so mass is conserved.\n- **(B)** Water's special properties arise from hydrogen bonds, not ionic bonds.\n- **(C)** The covalent bonds within water molecules remain intact during freezing.\n- **(D)** Water is polar, not nonpolar, and trapped air is not the explanation given."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1898,14 +1898,14 @@
           "question": {
             "stem": "When a phosphate group is cleaved from ATP to form ADP, what type of bond is broken, and how does this relate to ionic bonds in water?",
             "options": [
-              "A covalent bond is broken, releasing energy; unlike ionic bonds, covalent bonds are not broken apart by water",
-              "An ionic bond is broken, and like other ionic bonds it is easily split by water",
-              "A hydrogen bond is broken, the same weak bond found between water molecules",
               "A dipole-ion bond is broken, releasing electrons into water",
+              "A covalent bond is broken, releasing energy; unlike ionic bonds, covalent bonds are not broken apart by water",
+              "A hydrogen bond is broken, the same weak bond found between water molecules",
+              "An ionic bond is broken, and like other ionic bonds it is easily split by water",
               "No bond is broken; energy is simply released from the nucleus"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** ATP stores energy in covalent bonds, and cleaving the phosphate covalent bond releases usable energy; covalent bonds are strong and are not broken apart by water like ionic bonds are.\n\n**Why the other options are wrong:**\n- **(B)** ATP's phosphate is held by a covalent bond, not an ionic bond dissolved by water.\n- **(C)** Hydrogen bonds are the weak intermolecular attractions between water molecules, not the energy-storing bonds in ATP.\n- **(D)** Dipole-ion interactions occur between water and dissolved ions, not within ATP's phosphate linkage.\n- **(E)** Energy is released from breaking a chemical bond, not directly from the nucleus."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** ATP stores energy in covalent bonds, and cleaving the phosphate covalent bond releases usable energy; covalent bonds are strong and are not broken apart by water like ionic bonds are.\n\n**Why the other options are wrong:**\n- **(A)** Dipole-ion interactions occur between water and dissolved ions, not within ATP's phosphate linkage.\n- **(C)** Hydrogen bonds are the weak intermolecular attractions between water molecules, not the energy-storing bonds in ATP.\n- **(D)** ATP's phosphate is held by a covalent bond, not an ionic bond dissolved by water.\n- **(E)** Energy is released from breaking a chemical bond, not directly from the nucleus."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1915,14 +1915,14 @@
           "question": {
             "stem": "According to the unit outline, the study of chemical bonds includes ions, covalent bonds, hydrogen bonds, and dipole interactions. Which sequence correctly reflects how the unit builds toward these bonding topics?",
             "options": [
+              "Only covalent bonds are covered, without discussing ions or atoms",
+              "Mixtures and solutions are the main focus before any bonding is discussed",
               "Chemical bonds are covered first, then elements and atoms are introduced afterward",
               "Elements and compounds (including atoms and subatomic particles) are covered first, then chemical bonds",
-              "Only covalent bonds are covered, without discussing ions or atoms",
-              "Dipole interactions are covered before atoms are introduced",
-              "Mixtures and solutions are the main focus before any bonding is discussed"
+              "Dipole interactions are covered before atoms are introduced"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The unit outline places Part 1 (elements, compounds, atoms, and subatomic particles) before Part 2 (ions, covalent bonds, hydrogen bonds, and dipole interactions), building foundational structure before bonding.\n\n**Why the other options are wrong:**\n- **(A)** Chemical bonds are Part 2, coming after elements and atoms in Part 1.\n- **(C)** The unit explicitly covers ions and atoms in addition to covalent bonds.\n- **(D)** Atoms are introduced in Part 1, before dipole interactions in Part 2.\n- **(E)** Mixtures and solutions are noted as a later unit's topic, not this unit's main focus."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The unit outline places Part 1 (elements, compounds, atoms, and subatomic particles) before Part 2 (ions, covalent bonds, hydrogen bonds, and dipole interactions), building foundational structure before bonding.\n\n**Why the other options are wrong:**\n- **(A)** The unit explicitly covers ions and atoms in addition to covalent bonds.\n- **(B)** Mixtures and solutions are noted as a later unit's topic, not this unit's main focus.\n- **(C)** Chemical bonds are Part 2, coming after elements and atoms in Part 1.\n- **(E)** Atoms are introduced in Part 1, before dipole interactions in Part 2."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1933,13 +1933,13 @@
             "stem": "Why is carbon highly reactive while neon is non-reactive, based on how their electrons fill shells?",
             "options": [
               "Carbon has a complete valence shell, while neon's is only half-filled",
-              "Carbon has only four of eight electrons in its valence shell, while neon's valence shell is complete with eight",
+              "Carbon has no electrons in its valence shell, while neon has two",
               "Both have complete valence shells, but carbon has more neutrons",
               "Neon has fewer protons than carbon, making it more stable",
-              "Carbon has no electrons in its valence shell, while neon has two"
+              "Carbon has only four of eight electrons in its valence shell, while neon's valence shell is complete with eight"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Carbon's second (valence) shell holds only four of a possible eight electrons, making it reactive, whereas neon's valence shell is completely filled with eight electrons, making it non-reactive.\n\n**Why the other options are wrong:**\n- **(A)** It is the reverse: carbon's valence shell is incomplete and neon's is complete.\n- **(C)** Reactivity depends on valence electrons, not neutron count, and their descriptions are wrong.\n- **(D)** Neon actually has more protons than carbon, and stability comes from a full valence shell.\n- **(E)** Carbon has four valence electrons, not zero, and neon has a full outer shell of eight."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Carbon's second (valence) shell holds only four of a possible eight electrons, making it reactive, whereas neon's valence shell is completely filled with eight electrons, making it non-reactive.\n\n**Why the other options are wrong:**\n- **(A)** It is the reverse: carbon's valence shell is incomplete and neon's is complete.\n- **(B)** Carbon has four valence electrons, not zero, and neon has a full outer shell of eight.\n- **(C)** Reactivity depends on valence electrons, not neutron count, and their descriptions are wrong.\n- **(D)** Neon actually has more protons than carbon, and stability comes from a full valence shell."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1949,14 +1949,14 @@
           "question": {
             "stem": "A student lists O2 and CO2 as examples during a review. Which statement correctly distinguishes how each should be classified?",
             "options": [
-              "Both O2 and CO2 are compounds because they contain more than one atom",
-              "O2 is a molecule but not a compound; CO2 is both a molecule and a compound",
-              "O2 is a compound; CO2 is only a molecule",
               "Both are elements because they are single pure substances",
-              "O2 is an atom; CO2 is a molecule"
+              "Both O2 and CO2 are compounds because they contain more than one atom",
+              "O2 is a compound; CO2 is only a molecule",
+              "O2 is an atom; CO2 is a molecule",
+              "O2 is a molecule but not a compound; CO2 is both a molecule and a compound"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** O2 is two atoms of the same element bonded together (a molecule but not a compound), whereas CO2 contains two different elements bonded together, making it both a molecule and a compound.\n\n**Why the other options are wrong:**\n- **(A)** A compound requires two or more different elements; O2 has only one element, so it is not a compound.\n- **(C)** This reverses the definitions — O2 is not a compound and CO2 is a compound.\n- **(D)** Both consist of atoms bonded together, so they are molecules, not single-atom elements.\n- **(E)** O2 contains two bonded atoms, so it is a molecule, not a single atom."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** O2 is two atoms of the same element bonded together (a molecule but not a compound), whereas CO2 contains two different elements bonded together, making it both a molecule and a compound.\n\n**Why the other options are wrong:**\n- **(A)** Both consist of atoms bonded together, so they are molecules, not single-atom elements.\n- **(B)** A compound requires two or more different elements; O2 has only one element, so it is not a compound.\n- **(C)** This reverses the definitions — O2 is not a compound and CO2 is a compound.\n- **(D)** O2 contains two bonded atoms, so it is a molecule, not a single atom."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"

@@ -9,14 +9,14 @@
           "question": {
             "stem": "Which connective tissue subtype consists mostly of cells that store lipids in droplets, has little extracellular matrix, and provides thermal insulation?",
             "options": [
-              "Areolar tissue",
               "Adipose tissue",
+              "Hyaline cartilage",
+              "Areolar tissue",
               "Reticular tissue",
-              "Dense regular connective tissue",
-              "Hyaline cartilage"
+              "Dense regular connective tissue"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Adipose tissue is a loose connective tissue made up mostly of adipocytes storing lipids, with little extracellular matrix, and it functions in fat storage and thermal insulation.\n\n**Why the other options are wrong:**\n- **(A)** Areolar tissue is a generalist tissue with a web-like arrangement of all cell/fibre types, not primarily fat-storing cells.\n- **(C)** Reticular tissue is a mesh of reticular fibres supporting soft organs, not a fat-storage tissue.\n- **(D)** Dense regular connective tissue is packed with parallel collagen fibres for tensile strength.\n- **(E)** Hyaline cartilage is a supportive tissue with chondrocytes in a firm matrix, not a fat-storage tissue."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Adipose tissue is a loose connective tissue made up mostly of adipocytes storing lipids, with little extracellular matrix, and it functions in fat storage and thermal insulation.\n\n**Why the other options are wrong:**\n- **(B)** Hyaline cartilage is a supportive tissue with chondrocytes in a firm matrix, not a fat-storage tissue.\n- **(C)** Areolar tissue is a generalist tissue with a web-like arrangement of all cell/fibre types, not primarily fat-storing cells.\n- **(D)** Reticular tissue is a mesh of reticular fibres supporting soft organs, not a fat-storage tissue.\n- **(E)** Dense regular connective tissue is packed with parallel collagen fibres for tensile strength."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -26,14 +26,14 @@
           "question": {
             "stem": "Compared with compact bone, cancellous (spongy/trabecular) bone is best described as:",
             "options": [
+              "A fluid connective tissue with circulating cells",
+              "Avascular, healing very slowly",
               "Solid, with the greatest structural strength",
               "Lighter, containing spaces between trabeculae",
-              "Avascular, healing very slowly",
-              "Composed entirely of chondrocytes in lacunae",
-              "A fluid connective tissue with circulating cells"
+              "Composed entirely of chondrocytes in lacunae"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Cancellous bone contains empty spaces between the trabeculae (arches of bone proper), making it lighter than compact bone, and it is found in the interior and ends of long bones.\n\n**Why the other options are wrong:**\n- **(A)** Being solid with the greatest structural strength describes compact bone, not cancellous bone.\n- **(C)** Bone is highly vascularized and heals relatively quickly, unlike avascular cartilage.\n- **(D)** Bone contains osteocytes, not chondrocytes, in its lacunae.\n- **(E)** Bone is a supportive connective tissue with a mineralized matrix, not a fluid connective tissue."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Cancellous bone contains empty spaces between the trabeculae (arches of bone proper), making it lighter than compact bone, and it is found in the interior and ends of long bones.\n\n**Why the other options are wrong:**\n- **(A)** Bone is a supportive connective tissue with a mineralized matrix, not a fluid connective tissue.\n- **(B)** Bone is highly vascularized and heals relatively quickly, unlike avascular cartilage.\n- **(C)** Being solid with the greatest structural strength describes compact bone, not cancellous bone.\n- **(E)** Bone contains osteocytes, not chondrocytes, in its lacunae."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -43,14 +43,14 @@
           "question": {
             "stem": "Nervous tissue contains two main cell types. Which statement correctly distinguishes their roles?",
             "options": [
-              "Neurons support and insulate, while neuroglia carry action potentials",
-              "Neurons propagate action potentials, while neuroglia support and modulate neurons",
-              "Both neurons and neuroglia contract to generate movement",
               "Neuroglia release neurotransmitters, while neurons form the basement membrane",
+              "Neurons propagate action potentials, while neuroglia support and modulate neurons",
+              "Neurons support and insulate, while neuroglia carry action potentials",
+              "Both neurons and neuroglia contract to generate movement",
               "Neurons are found only in blood, while neuroglia line body cavities"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Neurons propagate electrochemical impulses (action potentials) linked to neurotransmitter release, while neuroglia support neurons, modulate their signaling, and some have immune functions.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the roles: neurons conduct impulses and neuroglia provide support.\n- **(C)** Neither nervous cell type contracts; contraction is a property of muscle tissue.\n- **(D)** Neurons, not neuroglia, release neurotransmitters, and neither forms the basement membrane.\n- **(E)** Nervous tissue cells are not found in blood nor lining cavities in this way."
+            "explanation": "**Why (B) is correct:** Neurons propagate electrochemical impulses (action potentials) linked to neurotransmitter release, while neuroglia support neurons, modulate their signaling, and some have immune functions.\n\n**Why the other options are wrong:**\n- **(A)** Neurons, not neuroglia, release neurotransmitters, and neither forms the basement membrane.\n- **(C)** This reverses the roles: neurons conduct impulses and neuroglia provide support.\n- **(D)** Neither nervous cell type contracts; contraction is a property of muscle tissue.\n- **(E)** Nervous tissue cells are not found in blood nor lining cavities in this way."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -60,14 +60,14 @@
           "question": {
             "stem": "Which type of epithelium is found only in the urinary system and can change cell shape as an organ such as the bladder fills?",
             "options": [
-              "Pseudostratified columnar epithelium",
-              "Simple squamous epithelium",
-              "Transitional epithelium",
               "Stratified squamous epithelium",
-              "Simple cuboidal epithelium"
+              "Pseudostratified columnar epithelium",
+              "Simple cuboidal epithelium",
+              "Simple squamous epithelium",
+              "Transitional epithelium"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Transitional epithelium is a specialized stratified epithelium found only in the urinary system whose cell shapes change as the bladder stretches while filling with urine.\n\n**Why the other options are wrong:**\n- **(A)** Pseudostratified columnar epithelium is found in the respiratory tract and secretes/moves mucus.\n- **(B)** Simple squamous epithelium is thin, for rapid diffusion, and does not change shape with stretch.\n- **(D)** Stratified squamous epithelium provides protection from abrasion, not the ability to stretch.\n- **(E)** Simple cuboidal epithelium functions in secretion and absorption, not stretching."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Transitional epithelium is a specialized stratified epithelium found only in the urinary system whose cell shapes change as the bladder stretches while filling with urine.\n\n**Why the other options are wrong:**\n- **(A)** Stratified squamous epithelium provides protection from abrasion, not the ability to stretch.\n- **(B)** Pseudostratified columnar epithelium is found in the respiratory tract and secretes/moves mucus.\n- **(C)** Simple cuboidal epithelium functions in secretion and absorption, not stretching.\n- **(D)** Simple squamous epithelium is thin, for rapid diffusion, and does not change shape with stretch."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -77,14 +77,14 @@
           "question": {
             "stem": "Which of the four tissue types is characterized by sheets of tightly packed cells that cover surfaces, line cavities, and form glands?",
             "options": [
-              "Connective tissue",
               "Muscle tissue",
+              "Connective tissue",
+              "Fluid tissue",
               "Nervous tissue",
-              "Epithelial tissue",
-              "Fluid tissue"
+              "Epithelial tissue"
             ],
-            "correct_index": 3,
-            "explanation": "**Why (D) is correct:** Epithelial tissue consists of sheets of highly cellular, closely packed cells that cover internal and external surfaces, line passageways, and form certain glands.\n\n**Why the other options are wrong:**\n- **(A)** Connective tissue binds and supports and has cells dispersed in a matrix, not tightly packed sheets.\n- **(B)** Muscle tissue is excitable and contractile, providing movement.\n- **(C)** Nervous tissue is excitable and propagates action potentials for communication.\n- **(E)** \"Fluid tissue\" is a subtype of connective tissue, not one of the four major tissue types."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Epithelial tissue consists of sheets of highly cellular, closely packed cells that cover internal and external surfaces, line passageways, and form certain glands.\n\n**Why the other options are wrong:**\n- **(A)** Muscle tissue is excitable and contractile, providing movement.\n- **(B)** Connective tissue binds and supports and has cells dispersed in a matrix, not tightly packed sheets.\n- **(C)** \"Fluid tissue\" is a subtype of connective tissue, not one of the four major tissue types.\n- **(D)** Nervous tissue is excitable and propagates action potentials for communication."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -94,14 +94,14 @@
           "question": {
             "stem": "Ciliated columnar epithelial cells in the respiratory tract carry out which primary function using their apical cilia?",
             "options": [
-              "Facilitating rapid gas exchange by diffusion",
-              "Moving particulate matter and mucus along the surface",
               "Storing lipids for energy",
+              "Producing calcified matrix",
+              "Moving particulate matter and mucus along the surface",
               "Anchoring the tissue to the basement membrane",
-              "Producing calcified matrix"
+              "Facilitating rapid gas exchange by diffusion"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Cilia on the apical surfaces of ciliated columnar epithelial cells beat to move mucus and trapped particulate matter out to where it can be coughed out or swallowed.\n\n**Why the other options are wrong:**\n- **(A)** Rapid gas exchange is a function of thin simple squamous epithelium, not ciliated columnar cells.\n- **(C)** Lipid storage is a function of adipocytes in adipose connective tissue.\n- **(D)** The basement membrane (basal lamina + reticular lamina) anchors epithelium, not the cilia.\n- **(E)** Producing calcified matrix is a role of bone-forming cells, not epithelial cells."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Cilia on the apical surfaces of ciliated columnar epithelial cells beat to move mucus and trapped particulate matter out to where it can be coughed out or swallowed.\n\n**Why the other options are wrong:**\n- **(A)** Lipid storage is a function of adipocytes in adipose connective tissue.\n- **(B)** Producing calcified matrix is a role of bone-forming cells, not epithelial cells.\n- **(D)** The basement membrane (basal lamina + reticular lamina) anchors epithelium, not the cilia.\n- **(E)** Rapid gas exchange is a function of thin simple squamous epithelium, not ciliated columnar cells."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -111,14 +111,14 @@
           "question": {
             "stem": "In epithelial tissue, the term 'apical' refers to which part of the cell?",
             "options": [
-              "The exposed surface facing the open space",
+              "The layer of underlying connective tissue",
               "The surface attached to the basement membrane",
-              "The lateral junction between adjacent cells",
+              "The exposed surface facing the open space",
               "The region containing the nucleus only",
-              "The layer of underlying connective tissue"
+              "The lateral junction between adjacent cells"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The apical surface is the exposed surface of an epithelial cell facing the open space or lumen, in contrast to the basal surface near the underlying tissue.\n\n**Why the other options are wrong:**\n- **(B)** The surface attached to the basement membrane is the basal surface, not apical.\n- **(C)** Lateral junctions are the sides between cells, not the apical surface.\n- **(D)** The nucleus location varies by cell type and does not define the apical surface.\n- **(E)** Underlying connective tissue lies beneath the basal surface, not at the apical surface."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The apical surface is the exposed surface of an epithelial cell facing the open space or lumen, in contrast to the basal surface near the underlying tissue.\n\n**Why the other options are wrong:**\n- **(A)** Underlying connective tissue lies beneath the basal surface, not at the apical surface.\n- **(B)** The surface attached to the basement membrane is the basal surface, not apical.\n- **(D)** The nucleus location varies by cell type and does not define the apical surface.\n- **(E)** Lateral junctions are the sides between cells, not the apical surface."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -128,14 +128,14 @@
           "question": {
             "stem": "Which connective tissue cell releases histamine when tissue is irritated or damaged, causing vasodilation and increased blood flow?",
             "options": [
-              "Fibroblast",
-              "Adipocyte",
+              "Macrophage",
               "Mast cell",
               "Mesenchymal cell",
-              "Macrophage"
+              "Fibroblast",
+              "Adipocyte"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Mast cells in connective tissue proper release histamine when tissue is irritated or damaged, causing vasodilation and increased blood flow along with the redness and swelling of an allergic response.\n\n**Why the other options are wrong:**\n- **(A)** Fibroblasts secrete protein fibres and matrix, not histamine.\n- **(B)** Adipocytes store lipids as droplets.\n- **(D)** Mesenchymal cells are multipotent stem cells for repair.\n- **(E)** Macrophages are phagocytic white blood cells that engulf debris and pathogens."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Mast cells in connective tissue proper release histamine when tissue is irritated or damaged, causing vasodilation and increased blood flow along with the redness and swelling of an allergic response.\n\n**Why the other options are wrong:**\n- **(A)** Macrophages are phagocytic white blood cells that engulf debris and pathogens.\n- **(C)** Mesenchymal cells are multipotent stem cells for repair.\n- **(D)** Fibroblasts secrete protein fibres and matrix, not histamine.\n- **(E)** Adipocytes store lipids as droplets."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -162,14 +162,14 @@
           "question": {
             "stem": "Which part of a neuron consists of thin extensions that receive incoming information and transfer it toward the cell body?",
             "options": [
+              "Cell soma",
               "Axon",
-              "Dendrites",
               "Myelin sheath",
               "Synapse",
-              "Cell soma"
+              "Dendrites"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Dendrites are the thin extensions branching off the neuron that receive information and carry it toward the cell body (soma).\n\n**Why the other options are wrong:**\n- **(A)** The axon carries the action potential away from the soma toward a target cell.\n- **(C)** Myelin is an insulating wrapping around the axon that speeds transmission, not a receiving structure.\n- **(D)** The synapse is the gap between a neuron and its target, not a receiving extension.\n- **(E)** The cell soma contains the nucleus and organelles but is not the thin receiving extensions."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Dendrites are the thin extensions branching off the neuron that receive information and carry it toward the cell body (soma).\n\n**Why the other options are wrong:**\n- **(A)** The cell soma contains the nucleus and organelles but is not the thin receiving extensions.\n- **(B)** The axon carries the action potential away from the soma toward a target cell.\n- **(C)** Myelin is an insulating wrapping around the axon that speeds transmission, not a receiving structure.\n- **(D)** The synapse is the gap between a neuron and its target, not a receiving extension."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -179,14 +179,14 @@
           "question": {
             "stem": "In cartilage and bone, the small spaces that house the mature cells (chondrocytes or osteocytes) are called:",
             "options": [
-              "Lacunae",
+              "Matrix",
               "Trabeculae",
               "Ground substance",
-              "Matrix",
-              "Perichondrium"
+              "Perichondrium",
+              "Lacunae"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A lacuna (plural = lacunae) is the small space in the matrix that a chondrocyte or osteocyte occupies.\n\n**Why the other options are wrong:**\n- **(B)** Trabeculae are the arches of bone proper found in cancellous/spongy bone, not cell-holding spaces.\n- **(C)** Ground substance is the fluid or mineralized component of the matrix, not a cell space.\n- **(D)** Matrix is the entire extracellular material, not the specific space holding a cell.\n- **(E)** The perichondrium is the dense irregular connective tissue layer encapsulating cartilage."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A lacuna (plural = lacunae) is the small space in the matrix that a chondrocyte or osteocyte occupies.\n\n**Why the other options are wrong:**\n- **(A)** Matrix is the entire extracellular material, not the specific space holding a cell.\n- **(B)** Trabeculae are the arches of bone proper found in cancellous/spongy bone, not cell-holding spaces.\n- **(C)** Ground substance is the fluid or mineralized component of the matrix, not a cell space.\n- **(D)** The perichondrium is the dense irregular connective tissue layer encapsulating cartilage."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -196,14 +196,14 @@
           "question": {
             "stem": "Which two cell classes make up nervous tissue, and which one propagates action potentials?",
             "options": [
-              "Neurons and neuroglia; neurons propagate action potentials",
-              "Neurons and neuroglia; neuroglia propagate action potentials",
               "Erythrocytes and neurons; erythrocytes propagate action potentials",
               "Fibroblasts and neuroglia; fibroblasts propagate action potentials",
-              "Neurons and chondrocytes; chondrocytes propagate action potentials"
+              "Neurons and neuroglia; neurons propagate action potentials",
+              "Neurons and chondrocytes; chondrocytes propagate action potentials",
+              "Neurons and neuroglia; neuroglia propagate action potentials"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Nervous tissue consists of neurons and neuroglia, and it is neurons that propagate electrochemical impulses (action potentials).\n\n**Why the other options are wrong:**\n- **(B)** Neuroglia support neurons but do not propagate action potentials.\n- **(C)** Erythrocytes are red blood cells found in connective tissue, not nervous tissue.\n- **(D)** Fibroblasts are connective tissue cells, not nervous tissue cells.\n- **(E)** Chondrocytes are cartilage cells, not part of nervous tissue."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Nervous tissue consists of neurons and neuroglia, and it is neurons that propagate electrochemical impulses (action potentials).\n\n**Why the other options are wrong:**\n- **(A)** Erythrocytes are red blood cells found in connective tissue, not nervous tissue.\n- **(B)** Fibroblasts are connective tissue cells, not nervous tissue cells.\n- **(D)** Chondrocytes are cartilage cells, not part of nervous tissue.\n- **(E)** Neuroglia support neurons but do not propagate action potentials."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -215,12 +215,12 @@
             "options": [
               "Skeletal muscle",
               "Smooth muscle",
-              "Cardiac muscle",
               "Fibrocartilage",
-              "Areolar tissue"
+              "Areolar tissue",
+              "Cardiac muscle"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Skeletal muscle is striated, multinucleated, usually attached to bones, and normally under voluntary control.\n\n**Why the other options are wrong:**\n- **(B)** Smooth muscle is uninucleate, non-striated, and involuntary.\n- **(C)** Cardiac muscle is striated but usually uninucleate and primarily involuntary.\n- **(D)** Fibrocartilage is a supportive connective tissue, not muscle.\n- **(E)** Areolar tissue is a loose connective tissue, not muscle."
+            "explanation": "**Why (A) is correct:** Skeletal muscle is striated, multinucleated, usually attached to bones, and normally under voluntary control.\n\n**Why the other options are wrong:**\n- **(B)** Smooth muscle is uninucleate, non-striated, and involuntary.\n- **(C)** Fibrocartilage is a supportive connective tissue, not muscle.\n- **(D)** Areolar tissue is a loose connective tissue, not muscle.\n- **(E)** Cardiac muscle is striated but usually uninucleate and primarily involuntary."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -230,14 +230,14 @@
           "question": {
             "stem": "Which subtype of connective tissue proper consists mostly of fat-storage cells with little extracellular matrix and functions in energy storage and insulation?",
             "options": [
-              "Adipose tissue",
               "Reticular tissue",
-              "Dense regular connective tissue",
               "Hyaline cartilage",
+              "Adipose tissue",
+              "Dense regular connective tissue",
               "Areolar tissue"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Adipose tissue is a loose connective tissue made mostly of adipocytes with little matrix, functioning in fat storage, insulation, and cushioning.\n\n**Why the other options are wrong:**\n- **(B)** Reticular tissue is a mesh of reticular fibres supporting soft organs, not a fat store.\n- **(C)** Dense regular connective tissue is parallel collagen bundles found in tendons and ligaments.\n- **(D)** Hyaline cartilage is a supportive connective tissue, not a fat store.\n- **(E)** Areolar tissue is a generalist packing tissue with many cell types, not primarily fat cells."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Adipose tissue is a loose connective tissue made mostly of adipocytes with little matrix, functioning in fat storage, insulation, and cushioning.\n\n**Why the other options are wrong:**\n- **(A)** Reticular tissue is a mesh of reticular fibres supporting soft organs, not a fat store.\n- **(B)** Hyaline cartilage is a supportive connective tissue, not a fat store.\n- **(D)** Dense regular connective tissue is parallel collagen bundles found in tendons and ligaments.\n- **(E)** Areolar tissue is a generalist packing tissue with many cell types, not primarily fat cells."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -247,14 +247,14 @@
           "question": {
             "stem": "Which type of cartilage contains short, dispersed collagen fibres, is both strong and flexible, and forms the template of the embryonic skeleton?",
             "options": [
-              "Hyaline cartilage",
-              "Fibrocartilage",
-              "Elastic cartilage",
               "Cancellous cartilage",
-              "Areolar cartilage"
+              "Areolar cartilage",
+              "Fibrocartilage",
+              "Hyaline cartilage",
+              "Elastic cartilage"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Hyaline cartilage has short dispersed collagen fibres, is strong and flexible, and forms the embryonic skeletal template.\n\n**Why the other options are wrong:**\n- **(B)** Fibrocartilage is tough due to thick collagen bundles, found in intervertebral discs and the knee.\n- **(C)** Elastic cartilage contains elastic fibres in addition to collagen, found in the external ear.\n- **(D)** \"Cancellous cartilage\" is not a real tissue type; cancellous describes spongy bone.\n- **(E)** \"Areolar cartilage\" is not a real tissue type."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Hyaline cartilage has short dispersed collagen fibres, is strong and flexible, and forms the embryonic skeletal template.\n\n**Why the other options are wrong:**\n- **(A)** \"Cancellous cartilage\" is not a real tissue type; cancellous describes spongy bone.\n- **(B)** \"Areolar cartilage\" is not a real tissue type.\n- **(C)** Fibrocartilage is tough due to thick collagen bundles, found in intervertebral discs and the knee.\n- **(E)** Elastic cartilage contains elastic fibres in addition to collagen, found in the external ear."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -264,14 +264,14 @@
           "question": {
             "stem": "Which fluid connective tissue contains white blood cells but no erythrocytes or platelets, drains interstitial fluid, and transports absorbed dietary fats?",
             "options": [
-              "Lymph",
-              "Blood",
-              "Plasma",
+              "Reticular tissue",
               "Areolar tissue",
-              "Reticular tissue"
+              "Blood",
+              "Lymph",
+              "Plasma"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Lymph is a fluid connective tissue that carries white blood cells (not erythrocytes or platelets), drains interstitial fluid, and transports absorbed fats to the blood.\n\n**Why the other options are wrong:**\n- **(B)** Blood contains erythrocytes and platelets in addition to leukocytes.\n- **(C)** Plasma is the liquid matrix of blood, not a fluid connective tissue on its own.\n- **(D)** Areolar tissue is a loose connective tissue proper, not a fluid tissue.\n- **(E)** Reticular tissue is a loose connective tissue framework, not a fluid tissue."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Lymph is a fluid connective tissue that carries white blood cells (not erythrocytes or platelets), drains interstitial fluid, and transports absorbed fats to the blood.\n\n**Why the other options are wrong:**\n- **(A)** Reticular tissue is a loose connective tissue framework, not a fluid tissue.\n- **(B)** Areolar tissue is a loose connective tissue proper, not a fluid tissue.\n- **(C)** Blood contains erythrocytes and platelets in addition to leukocytes.\n- **(E)** Plasma is the liquid matrix of blood, not a fluid connective tissue on its own."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -282,13 +282,13 @@
             "stem": "What is the role of the basement membrane in epithelial tissue?",
             "options": [
               "It anchors the epithelium to the underlying connective tissue",
-              "It supplies the epithelium with blood vessels",
               "It forms the apical cilia of epithelial cells",
               "It stores fat within the epithelium",
-              "It contracts to move the epithelial sheet"
+              "It contracts to move the epithelial sheet",
+              "It supplies the epithelium with blood vessels"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The basement membrane (basal lamina + reticular lamina) attaches the epithelium to the underlying connective tissue.\n\n**Why the other options are wrong:**\n- **(B)** Epithelium is nearly avascular; no blood vessels cross the basement membrane.\n- **(C)** Cilia are apical-surface structures, unrelated to the basal basement membrane.\n- **(D)** Fat storage is a function of adipose connective tissue, not the basement membrane.\n- **(E)** The basement membrane does not contract; it is a supporting anchoring layer."
+            "explanation": "**Why (A) is correct:** The basement membrane (basal lamina + reticular lamina) attaches the epithelium to the underlying connective tissue.\n\n**Why the other options are wrong:**\n- **(B)** Cilia are apical-surface structures, unrelated to the basal basement membrane.\n- **(C)** Fat storage is a function of adipose connective tissue, not the basement membrane.\n- **(D)** The basement membrane does not contract; it is a supporting anchoring layer.\n- **(E)** Epithelium is nearly avascular; no blood vessels cross the basement membrane."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -298,14 +298,14 @@
           "question": {
             "stem": "Which tissue type binds and supports the cells and organs of the body and characteristically has cells dispersed within an extracellular matrix?",
             "options": [
-              "Connective tissue",
               "Epithelial tissue",
-              "Muscle tissue",
               "Nervous tissue",
+              "Muscle tissue",
+              "Connective tissue",
               "Glandular tissue"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Connective tissue binds and supports organs and is defined by cells scattered within a large extracellular matrix.\n\n**Why the other options are wrong:**\n- **(B)** Epithelial tissue is highly cellular with little extracellular material and covers surfaces.\n- **(C)** Muscle tissue is excitable and contractile, not primarily a matrix-based supporting tissue.\n- **(D)** Nervous tissue is excitable and specialized for signalling, not for support via matrix.\n- **(E)** Glandular tissue is a form of epithelium, not the matrix-based supporting tissue."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Connective tissue binds and supports organs and is defined by cells scattered within a large extracellular matrix.\n\n**Why the other options are wrong:**\n- **(A)** Epithelial tissue is highly cellular with little extracellular material and covers surfaces.\n- **(B)** Nervous tissue is excitable and specialized for signalling, not for support via matrix.\n- **(C)** Muscle tissue is excitable and contractile, not primarily a matrix-based supporting tissue.\n- **(E)** Glandular tissue is a form of epithelium, not the matrix-based supporting tissue."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -315,14 +315,14 @@
           "question": {
             "stem": "Which type of epithelium is made of a single, thin layer of flattened cells and is best suited for rapid exchange by diffusion, such as in the alveoli of the lungs?",
             "options": [
-              "Simple squamous epithelium",
+              "Pseudostratified columnar epithelium",
+              "Transitional epithelium",
               "Stratified squamous epithelium",
               "Simple cuboidal epithelium",
-              "Pseudostratified columnar epithelium",
-              "Transitional epithelium"
+              "Simple squamous epithelium"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Simple squamous epithelium is a single layer of thin flat cells that facilitates rapid diffusion, as in the alveoli.\n\n**Why the other options are wrong:**\n- **(B)** Stratified squamous epithelium has many layers and functions in protection, not rapid diffusion.\n- **(C)** Simple cuboidal epithelium is specialized for secretion and absorption, not thin-barrier diffusion.\n- **(D)** Pseudostratified columnar epithelium functions in mucus secretion and movement in the respiratory tract.\n- **(E)** Transitional epithelium stretches in the urinary system and is not a thin diffusion barrier."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Simple squamous epithelium is a single layer of thin flat cells that facilitates rapid diffusion, as in the alveoli.\n\n**Why the other options are wrong:**\n- **(A)** Pseudostratified columnar epithelium functions in mucus secretion and movement in the respiratory tract.\n- **(B)** Transitional epithelium stretches in the urinary system and is not a thin diffusion barrier.\n- **(C)** Stratified squamous epithelium has many layers and functions in protection, not rapid diffusion.\n- **(D)** Simple cuboidal epithelium is specialized for secretion and absorption, not thin-barrier diffusion."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -334,12 +334,12 @@
             "options": [
               "Both are excitable, responding to stimulation",
               "Both are avascular and rely on diffusion",
+              "Both store surplus energy as fat",
               "Both are made mostly of extracellular matrix",
-              "Both primarily function to cover body surfaces",
-              "Both store surplus energy as fat"
+              "Both primarily function to cover body surfaces"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Muscle and nervous tissue are both described as excitable, meaning they respond to stimulation.\n\n**Why the other options are wrong:**\n- **(B)** Avascularity and diffusion-dependence describe epithelial and cartilage tissue, not muscle and nervous tissue.\n- **(C)** Being mostly extracellular matrix describes connective tissue, not muscle or nervous tissue.\n- **(D)** Covering body surfaces is a function of epithelial tissue.\n- **(E)** Storing energy as fat is a function of adipose connective tissue."
+            "explanation": "**Why (A) is correct:** Muscle and nervous tissue are both described as excitable, meaning they respond to stimulation.\n\n**Why the other options are wrong:**\n- **(B)** Avascularity and diffusion-dependence describe epithelial and cartilage tissue, not muscle and nervous tissue.\n- **(C)** Storing energy as fat is a function of adipose connective tissue.\n- **(D)** Being mostly extracellular matrix describes connective tissue, not muscle or nervous tissue.\n- **(E)** Covering body surfaces is a function of epithelial tissue."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -349,14 +349,14 @@
           "question": {
             "stem": "Which type of epithelium is best suited for rapid diffusion of gases, such as in the alveoli of the lungs?",
             "options": [
+              "Pseudostratified columnar epithelium",
               "Simple squamous epithelium",
-              "Simple cuboidal epithelium",
-              "Stratified squamous epithelium",
               "Transitional epithelium",
-              "Pseudostratified columnar epithelium"
+              "Stratified squamous epithelium",
+              "Simple cuboidal epithelium"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Simple squamous epithelium is a single layer of thin, flat cells, which facilitates rapid exchange by diffusion, as in the alveoli and capillaries.\n\n**Why the other options are wrong:**\n- **(B)** Simple cuboidal epithelium is specialized for secretion and absorption, not rapid diffusion.\n- **(C)** Stratified squamous epithelium is thick and functions in protection against wear and tear.\n- **(D)** Transitional epithelium stretches in the urinary system and is not a diffusion surface.\n- **(E)** Pseudostratified columnar epithelium moves mucus in the respiratory tract, not gases across a thin surface."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Simple squamous epithelium is a single layer of thin, flat cells, which facilitates rapid exchange by diffusion, as in the alveoli and capillaries.\n\n**Why the other options are wrong:**\n- **(A)** Pseudostratified columnar epithelium moves mucus in the respiratory tract, not gases across a thin surface.\n- **(C)** Transitional epithelium stretches in the urinary system and is not a diffusion surface.\n- **(D)** Stratified squamous epithelium is thick and functions in protection against wear and tear.\n- **(E)** Simple cuboidal epithelium is specialized for secretion and absorption, not rapid diffusion."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -366,14 +366,14 @@
           "question": {
             "stem": "Which two tissues are classified as fluid connective tissue?",
             "options": [
-              "Bone and cartilage",
+              "Dense regular and dense irregular tissue",
               "Blood and lymph",
               "Areolar and adipose tissue",
-              "Dense regular and dense irregular tissue",
+              "Bone and cartilage",
               "Reticular tissue and plasma"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Blood and lymph are the two fluid connective tissues, in which cells circulate in a liquid extracellular matrix.\n\n**Why the other options are wrong:**\n- **(A)** Bone and cartilage are supportive connective tissues.\n- **(C)** Areolar and adipose tissue are subtypes of loose connective tissue proper.\n- **(D)** Dense regular and dense irregular are subtypes of dense connective tissue proper.\n- **(E)** Reticular tissue is loose connective tissue, and plasma is a component of blood, not a tissue type."
+            "explanation": "**Why (B) is correct:** Blood and lymph are the two fluid connective tissues, in which cells circulate in a liquid extracellular matrix.\n\n**Why the other options are wrong:**\n- **(A)** Dense regular and dense irregular are subtypes of dense connective tissue proper.\n- **(C)** Areolar and adipose tissue are subtypes of loose connective tissue proper.\n- **(D)** Bone and cartilage are supportive connective tissues.\n- **(E)** Reticular tissue is loose connective tissue, and plasma is a component of blood, not a tissue type."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -384,13 +384,13 @@
             "stem": "Which pair of properties is shared by all three types of muscle tissue?",
             "options": [
               "Striated and multinucleated",
-              "Voluntary and striated",
               "Excitable and contractile",
               "Involuntary and uninucleate",
-              "Contains intercalated discs and intrinsic rhythms"
+              "Contains intercalated discs and intrinsic rhythms",
+              "Voluntary and striated"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** All muscle tissue is excitable (responds to stimulus) and contractile (can shorten and generate a pulling force).\n\n**Why the other options are wrong:**\n- **(A)** Smooth muscle is neither striated nor multinucleated.\n- **(B)** Only skeletal muscle is primarily voluntary; smooth and cardiac muscle are involuntary.\n- **(D)** Skeletal muscle is voluntary and multinucleated, so this is not universal.\n- **(E)** Intercalated discs are unique to cardiac muscle."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** All muscle tissue is excitable (responds to stimulus) and contractile (can shorten and generate a pulling force).\n\n**Why the other options are wrong:**\n- **(A)** Smooth muscle is neither striated nor multinucleated.\n- **(C)** Skeletal muscle is voluntary and multinucleated, so this is not universal.\n- **(D)** Intercalated discs are unique to cardiac muscle.\n- **(E)** Only skeletal muscle is primarily voluntary; smooth and cardiac muscle are involuntary."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -400,14 +400,14 @@
           "question": {
             "stem": "Which of the four tissue types is described as binding cells and organs together and functioning in protection and support?",
             "options": [
-              "Epithelial tissue",
-              "Connective tissue",
-              "Muscle tissue",
               "Nervous tissue",
-              "Glandular tissue"
+              "Epithelial tissue",
+              "Glandular tissue",
+              "Muscle tissue",
+              "Connective tissue"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Connective tissue, as its name implies, binds the cells and organs of the body together and functions in protection, support, and integration of all parts of the body.\n\n**Why the other options are wrong:**\n- **(A)** Epithelial tissue covers surfaces, lines cavities, and forms glands.\n- **(C)** Muscle tissue is excitable and provides movement.\n- **(D)** Nervous tissue propagates electrochemical signals for communication.\n- **(E)** Glandular tissue is a form of epithelium, not one of the four broad tissue categories."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Connective tissue, as its name implies, binds the cells and organs of the body together and functions in protection, support, and integration of all parts of the body.\n\n**Why the other options are wrong:**\n- **(A)** Nervous tissue propagates electrochemical signals for communication.\n- **(B)** Epithelial tissue covers surfaces, lines cavities, and forms glands.\n- **(C)** Glandular tissue is a form of epithelium, not one of the four broad tissue categories.\n- **(D)** Muscle tissue is excitable and provides movement."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -418,13 +418,13 @@
             "stem": "Which two of the four tissue types are described as excitable, meaning they respond to a stimulus?",
             "options": [
               "Epithelial and connective tissue",
-              "Muscle and nervous tissue",
-              "Connective and muscle tissue",
               "Nervous and epithelial tissue",
+              "Connective and muscle tissue",
+              "Muscle and nervous tissue",
               "Epithelial and muscle tissue"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Both muscle tissue and nervous tissue are excitable — muscle contracts in response to stimulation, and nervous tissue propagates action potentials.\n\n**Why the other options are wrong:**\n- **(A)** Neither epithelial nor connective tissue is characterized as excitable.\n- **(C)** Connective tissue is not excitable.\n- **(D)** Epithelial tissue is not excitable.\n- **(E)** Epithelial tissue is not excitable."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Both muscle tissue and nervous tissue are excitable — muscle contracts in response to stimulation, and nervous tissue propagates action potentials.\n\n**Why the other options are wrong:**\n- **(A)** Neither epithelial nor connective tissue is characterized as excitable.\n- **(B)** Epithelial tissue is not excitable.\n- **(C)** Connective tissue is not excitable.\n- **(E)** Epithelial tissue is not excitable."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -434,14 +434,14 @@
           "question": {
             "stem": "Which two cell classes make up nervous tissue?",
             "options": [
-              "Neurons and neuroglia",
-              "Fibroblasts and neurons",
-              "Neurons and osteocytes",
               "Neuroglia and chondrocytes",
-              "Neurons and mast cells"
+              "Neurons and mast cells",
+              "Neurons and neuroglia",
+              "Neurons and osteocytes",
+              "Fibroblasts and neurons"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Nervous tissue is composed of two main cell classes: neurons, which propagate action potentials, and neuroglia, which support neurons.\n\n**Why the other options are wrong:**\n- **(B)** Fibroblasts belong to connective tissue proper, not nervous tissue.\n- **(C)** Osteocytes are bone cells, not part of nervous tissue.\n- **(D)** Chondrocytes are cartilage cells, not nervous tissue cells.\n- **(E)** Mast cells belong to connective tissue proper."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Nervous tissue is composed of two main cell classes: neurons, which propagate action potentials, and neuroglia, which support neurons.\n\n**Why the other options are wrong:**\n- **(A)** Chondrocytes are cartilage cells, not nervous tissue cells.\n- **(B)** Mast cells belong to connective tissue proper.\n- **(D)** Osteocytes are bone cells, not part of nervous tissue.\n- **(E)** Fibroblasts belong to connective tissue proper, not nervous tissue."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -451,14 +451,14 @@
           "question": {
             "stem": "What is the primary role of neuroglia within nervous tissue?",
             "options": [
-              "Propagating action potentials",
               "Releasing neurotransmitters into the synapse",
-              "Supporting neurons and modulating their information propagation",
               "Receiving information through dendrites",
+              "Supporting neurons and modulating their information propagation",
+              "Propagating action potentials",
               "Storing lipids for the nervous system"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Neuroglia support neurons and modulate their information propagation, and some also have immune functions.\n\n**Why the other options are wrong:**\n- **(A)** Neurons, not neuroglia, propagate action potentials.\n- **(B)** Neurons release neurotransmitters from their axon terminals.\n- **(D)** Dendrites of neurons receive information, not neuroglia.\n- **(E)** Lipid storage is a function of adipocytes in connective tissue, not neuroglia."
+            "explanation": "**Why (C) is correct:** Neuroglia support neurons and modulate their information propagation, and some also have immune functions.\n\n**Why the other options are wrong:**\n- **(A)** Neurons release neurotransmitters from their axon terminals.\n- **(B)** Dendrites of neurons receive information, not neuroglia.\n- **(D)** Neurons, not neuroglia, propagate action potentials.\n- **(E)** Lipid storage is a function of adipocytes in connective tissue, not neuroglia."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -468,14 +468,14 @@
           "question": {
             "stem": "Which muscle type is striated, usually has a single central nucleus, and contains intercalated discs?",
             "options": [
-              "Skeletal muscle",
-              "Smooth muscle",
               "Cardiac muscle",
               "Areolar muscle",
-              "Visceral striated muscle"
+              "Visceral striated muscle",
+              "Smooth muscle",
+              "Skeletal muscle"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Cardiac muscle is striated, usually uninucleate, and uniquely contains intercalated discs that allow synchronized contraction.\n\n**Why the other options are wrong:**\n- **(A)** Skeletal muscle is striated but multinucleated and lacks intercalated discs.\n- **(B)** Smooth muscle is not striated and lacks intercalated discs.\n- **(D)** \"Areolar muscle\" is not a real muscle type; areolar refers to loose connective tissue.\n- **(E)** \"Visceral striated muscle\" is not a recognized muscle type in this unit."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Cardiac muscle is striated, usually uninucleate, and uniquely contains intercalated discs that allow synchronized contraction.\n\n**Why the other options are wrong:**\n- **(B)** \"Areolar muscle\" is not a real muscle type; areolar refers to loose connective tissue.\n- **(C)** \"Visceral striated muscle\" is not a recognized muscle type in this unit.\n- **(D)** Smooth muscle is not striated and lacks intercalated discs.\n- **(E)** Skeletal muscle is striated but multinucleated and lacks intercalated discs."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -486,13 +486,13 @@
             "stem": "The small spaces in cartilage and bone that house chondrocytes or osteocytes are called what?",
             "options": [
               "Lacunae",
-              "Trabeculae",
               "Perichondrium",
+              "Matrices",
               "Basement membranes",
-              "Matrices"
+              "Trabeculae"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Lacunae (singular = lacuna) are the small spaces within the matrix that chondrocytes and osteocytes occupy.\n\n**Why the other options are wrong:**\n- **(B)** Trabeculae are the arches of bone proper found in cancellous bone, not the cell spaces.\n- **(C)** The perichondrium is the dense irregular connective tissue layer encapsulating cartilage.\n- **(D)** The basement membrane attaches epithelium to underlying connective tissue.\n- **(E)** The matrix is the overall extracellular material, not the specific cell space."
+            "explanation": "**Why (A) is correct:** Lacunae (singular = lacuna) are the small spaces within the matrix that chondrocytes and osteocytes occupy.\n\n**Why the other options are wrong:**\n- **(B)** The perichondrium is the dense irregular connective tissue layer encapsulating cartilage.\n- **(C)** The matrix is the overall extracellular material, not the specific cell space.\n- **(D)** The basement membrane attaches epithelium to underlying connective tissue.\n- **(E)** Trabeculae are the arches of bone proper found in cancellous bone, not the cell spaces."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -502,14 +502,14 @@
           "question": {
             "stem": "Which connective tissue cell type is a multipotent adult stem cell able to differentiate into any connective tissue cell needed for repair?",
             "options": [
-              "Fibroblast",
               "Adipocyte",
-              "Mesenchymal cell",
               "Macrophage",
+              "Fibroblast",
+              "Mesenchymal cell",
               "Mast cell"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Mesenchymal cells are multipotent adult stem cells that can differentiate into any type of connective tissue cell needed for repair and healing.\n\n**Why the other options are wrong:**\n- **(A)** Fibroblasts secrete protein fibres and matrix but are not stem cells.\n- **(B)** Adipocytes store lipids as droplets and are not stem cells.\n- **(D)** Macrophages are phagocytic white blood cells that enter from blood.\n- **(E)** Mast cells release histamine and are not stem cells."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Mesenchymal cells are multipotent adult stem cells that can differentiate into any type of connective tissue cell needed for repair and healing.\n\n**Why the other options are wrong:**\n- **(A)** Adipocytes store lipids as droplets and are not stem cells.\n- **(B)** Macrophages are phagocytic white blood cells that enter from blood.\n- **(C)** Fibroblasts secrete protein fibres and matrix but are not stem cells.\n- **(E)** Mast cells release histamine and are not stem cells."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1487,14 +1487,14 @@
           "question": {
             "stem": "A researcher observes a nervous tissue cell that lacks the ability to generate action potentials but is essential for wrapping axons in myelin and supporting neurons. Which cell type is this, and what functional class does it belong to?",
             "options": [
-              "A neuron, which is the excitable cell of nervous tissue",
               "A neuroglial cell, which is a supporting (non-conducting) cell of nervous tissue",
-              "A fibroblast, which secretes matrix in nervous tissue",
+              "A chondrocyte, which forms the matrix around axons",
               "A mast cell, which releases histamine in nervous tissue",
-              "A chondrocyte, which forms the matrix around axons"
+              "A fibroblast, which secretes matrix in nervous tissue",
+              "A neuron, which is the excitable cell of nervous tissue"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Neuroglia support neurons and form the myelin that insulates axons, and they play a supporting/modulating role rather than propagating action potentials themselves.\n\n**Why the other options are wrong:**\n- **(A)** Neurons are the excitable, action-potential-conducting cells, not the myelin-forming support cells described.\n- **(C)** Fibroblasts belong to connective tissue proper, not nervous tissue.\n- **(D)** Mast cells are connective tissue cells that release histamine, not nervous tissue cells.\n- **(E)** Chondrocytes are cartilage cells, unrelated to nervous tissue."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Neuroglia support neurons and form the myelin that insulates axons, and they play a supporting/modulating role rather than propagating action potentials themselves.\n\n**Why the other options are wrong:**\n- **(B)** Chondrocytes are cartilage cells, unrelated to nervous tissue.\n- **(C)** Mast cells are connective tissue cells that release histamine, not nervous tissue cells.\n- **(D)** Fibroblasts belong to connective tissue proper, not nervous tissue.\n- **(E)** Neurons are the excitable, action-potential-conducting cells, not the myelin-forming support cells described."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1504,14 +1504,14 @@
           "question": {
             "stem": "Both muscle tissue and nervous tissue share one defining property that distinguishes them from epithelial and connective tissue. What is that shared property, and what additional property is UNIQUE to muscle among these two?",
             "options": [
-              "Both are avascular; muscle is uniquely secretory",
-              "Both are excitable; muscle is uniquely contractile",
               "Both are contractile; nervous tissue is uniquely excitable",
               "Both bind organs together; muscle is uniquely fluid",
-              "Both have abundant matrix; muscle is uniquely striated"
+              "Both are excitable; muscle is uniquely contractile",
+              "Both have abundant matrix; muscle is uniquely striated",
+              "Both are avascular; muscle is uniquely secretory"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Both muscle and nervous tissue are excitable (respond to stimuli), but only muscle is contractile, meaning it can shorten and generate a pulling force.\n\n**Why the other options are wrong:**\n- **(A)** Excitability, not avascularity, is the shared property, and muscle is not defined as secretory.\n- **(C)** Both are excitable; contractility is unique to muscle, not shared.\n- **(D)** Binding organs is a connective tissue role, and muscle is not fluid.\n- **(E)** Abundant matrix characterizes connective tissue, not muscle; striation is not shared."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Both muscle and nervous tissue are excitable (respond to stimuli), but only muscle is contractile, meaning it can shorten and generate a pulling force.\n\n**Why the other options are wrong:**\n- **(A)** Both are excitable; contractility is unique to muscle, not shared.\n- **(B)** Binding organs is a connective tissue role, and muscle is not fluid.\n- **(D)** Abundant matrix characterizes connective tissue, not muscle; striation is not shared.\n- **(E)** Excitability, not avascularity, is the shared property, and muscle is not defined as secretory."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1521,14 +1521,14 @@
           "question": {
             "stem": "A student reads that an epithelium sits atop a 'basement membrane.' Which statement correctly describes what this structure is composed of?",
             "options": [
-              "The basal lamina alone, secreted only by connective tissue",
+              "The apical surface of the epithelium bearing cilia",
               "The reticular lamina alone, secreted only by epithelial cells",
-              "The basal lamina (from epithelial cells) plus the reticular lamina (from connective tissue)",
+              "The basal lamina alone, secreted only by connective tissue",
               "A layer of collagen fibres secreted exclusively by macrophages",
-              "The apical surface of the epithelium bearing cilia"
+              "The basal lamina (from epithelial cells) plus the reticular lamina (from connective tissue)"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The basement membrane is formed by the basal lamina, produced by epithelial cells, attached to the reticular lamina, secreted by the underlying connective tissue.\n\n**Why the other options are wrong:**\n- **(A)** The basement membrane is more than just the basal lamina, and the basal lamina is made by epithelial cells.\n- **(B)** The reticular lamina is secreted by connective tissue, not epithelial cells, and is not the whole membrane.\n- **(D)** Macrophages do not secrete the basement membrane.\n- **(E)** The apical surface is the opposite (exposed) side, not the basement membrane."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The basement membrane is formed by the basal lamina, produced by epithelial cells, attached to the reticular lamina, secreted by the underlying connective tissue.\n\n**Why the other options are wrong:**\n- **(A)** The apical surface is the opposite (exposed) side, not the basement membrane.\n- **(B)** The reticular lamina is secreted by connective tissue, not epithelial cells, and is not the whole membrane.\n- **(C)** The basement membrane is more than just the basal lamina, and the basal lamina is made by epithelial cells.\n- **(D)** Macrophages do not secrete the basement membrane."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1538,14 +1538,14 @@
           "question": {
             "stem": "Which pairing of a key term with its correct definition is accurate?",
             "options": [
-              "Lacuna: a protein fibre that resists stretching",
-              "Parenchyma: the functional cells of an organ, supported by reticular fibres",
               "Ground substance: the protein fibres embedded in the matrix",
+              "Parenchyma: the functional cells of an organ, supported by reticular fibres",
               "Perichondrium: the fluid matrix of blood",
-              "Apical: the surface of an epithelial cell attached to the basement membrane"
+              "Apical: the surface of an epithelial cell attached to the basement membrane",
+              "Lacuna: a protein fibre that resists stretching"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Parenchyma refers to the functional tissue of glands and organs, which reticular fibres anchor and support.\n\n**Why the other options are wrong:**\n- **(A)** A lacuna is a space occupied by a cell (e.g., chondrocyte or osteocyte), not a fibre.\n- **(C)** Ground substance is the matrix component in which fibres are embedded, not the fibres themselves.\n- **(D)** The perichondrium is a dense irregular connective tissue layer around cartilage, not blood's matrix.\n- **(E)** The apical surface is the exposed surface, while the basal surface attaches to the basement membrane."
+            "explanation": "**Why (B) is correct:** Parenchyma refers to the functional tissue of glands and organs, which reticular fibres anchor and support.\n\n**Why the other options are wrong:**\n- **(A)** Ground substance is the matrix component in which fibres are embedded, not the fibres themselves.\n- **(C)** The perichondrium is a dense irregular connective tissue layer around cartilage, not blood's matrix.\n- **(D)** The apical surface is the exposed surface, while the basal surface attaches to the basement membrane.\n- **(E)** A lacuna is a space occupied by a cell (e.g., chondrocyte or osteocyte), not a fibre."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1555,14 +1555,14 @@
           "question": {
             "stem": "In a neuron, an electrical impulse travels toward a target cell and triggers the release of neurotransmitters. Which sequence correctly traces the flow of information through the neuron's parts?",
             "options": [
-              "Axon → soma → dendrite → synapse",
+              "Dendrite → axon → synapse → soma",
               "Dendrite → soma → axon → synapse",
-              "Synapse → axon → soma → dendrite",
+              "Axon → soma → dendrite → synapse",
               "Soma → dendrite → synapse → axon",
-              "Dendrite → axon → synapse → soma"
+              "Synapse → axon → soma → dendrite"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Dendrites receive information and transfer it to the soma, the axon carries the impulse away from the soma, and neurotransmitters are released into the synapse.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the flow; dendrites receive first, not the axon.\n- **(C)** The synapse is the endpoint of transmission, not the start.\n- **(D)** Dendrites precede the soma in receiving information, and the axon comes before the synapse.\n- **(E)** The axon must follow the soma, and the synapse follows the axon, not the reverse."
+            "explanation": "**Why (B) is correct:** Dendrites receive information and transfer it to the soma, the axon carries the impulse away from the soma, and neurotransmitters are released into the synapse.\n\n**Why the other options are wrong:**\n- **(A)** The axon must follow the soma, and the synapse follows the axon, not the reverse.\n- **(C)** This reverses the flow; dendrites receive first, not the axon.\n- **(D)** Dendrites precede the soma in receiving information, and the axon comes before the synapse.\n- **(E)** The synapse is the endpoint of transmission, not the start."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1572,14 +1572,14 @@
           "question": {
             "stem": "A tissue sample contains cells embedded in lacunae within a firm matrix, is avascular, and is surrounded by a perichondrium. Compared with bone, which functional difference would you predict for this tissue?",
             "options": [
-              "It heals faster because it is highly vascularized",
-              "It heals slowly because nutrients must diffuse through the matrix",
               "It contains a liquid matrix that circulates cells",
+              "It secretes histamine during injury",
+              "It heals faster because it is highly vascularized",
               "It is composed of multinucleated striated fibres",
-              "It secretes histamine during injury"
+              "It heals slowly because nutrients must diffuse through the matrix"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The described tissue is cartilage, which is avascular so nutrients must diffuse through the matrix to reach chondrocytes, causing slow healing—unlike highly vascularized bone that heals faster.\n\n**Why the other options are wrong:**\n- **(A)** Cartilage is avascular and heals slowly, not quickly.\n- **(C)** A liquid circulating matrix describes fluid connective tissue (blood/lymph), not cartilage.\n- **(D)** Multinucleated striated fibres describe skeletal muscle, not cartilage.\n- **(E)** Histamine secretion is a mast cell function, not a property of cartilage."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The described tissue is cartilage, which is avascular so nutrients must diffuse through the matrix to reach chondrocytes, causing slow healing—unlike highly vascularized bone that heals faster.\n\n**Why the other options are wrong:**\n- **(A)** A liquid circulating matrix describes fluid connective tissue (blood/lymph), not cartilage.\n- **(B)** Histamine secretion is a mast cell function, not a property of cartilage.\n- **(C)** Cartilage is avascular and heals slowly, not quickly.\n- **(D)** Multinucleated striated fibres describe skeletal muscle, not cartilage."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1589,14 +1589,14 @@
           "question": {
             "stem": "Because epithelial tissues are nearly avascular, how do their cells obtain nutrients and remove wastes, and what structural feature makes this possible?",
             "options": [
-              "Blood vessels cross the basement membrane directly into the epithelium",
+              "Macrophages within the epithelium deliver nutrients to each cell",
               "Nutrients diffuse from underlying connective tissue or the surface, since no vessels cross the basement membrane",
-              "The reticular lamina pumps nutrients through active transport",
               "Cilia on the apical surface absorb oxygen from the air",
-              "Macrophages within the epithelium deliver nutrients to each cell"
+              "The reticular lamina pumps nutrients through active transport",
+              "Blood vessels cross the basement membrane directly into the epithelium"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** No blood vessels cross the basement membrane, so epithelial cells rely on diffusion or absorption of nutrients from underlying tissues or the surface.\n\n**Why the other options are wrong:**\n- **(A)** No blood vessels cross the basement membrane into the epithelium.\n- **(C)** The reticular lamina is a structural attachment layer, not an active nutrient pump.\n- **(D)** Cilia move particulate matter; they do not supply nutrients.\n- **(E)** Macrophages are connective tissue immune cells, not nutrient carriers within epithelium."
+            "explanation": "**Why (B) is correct:** No blood vessels cross the basement membrane, so epithelial cells rely on diffusion or absorption of nutrients from underlying tissues or the surface.\n\n**Why the other options are wrong:**\n- **(A)** Macrophages are connective tissue immune cells, not nutrient carriers within epithelium.\n- **(C)** Cilia move particulate matter; they do not supply nutrients.\n- **(D)** The reticular lamina is a structural attachment layer, not an active nutrient pump.\n- **(E)** No blood vessels cross the basement membrane into the epithelium."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1606,14 +1606,14 @@
           "question": {
             "stem": "The lining of the respiratory tract must both trap particles in mucus and sweep them out, while appearing to have multiple cell layers even though every cell touches the basal lamina. Which epithelium best matches this description?",
             "options": [
-              "Simple squamous epithelium",
-              "Stratified squamous epithelium",
               "Pseudostratified columnar epithelium",
+              "Simple squamous epithelium",
               "Transitional epithelium",
-              "Simple cuboidal epithelium"
+              "Simple cuboidal epithelium",
+              "Stratified squamous epithelium"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Pseudostratified columnar epithelium of the respiratory tract has ciliated cells that move mucus, and all cells touch the basal lamina though not all reach the apical surface, giving a false-layered appearance.\n\n**Why the other options are wrong:**\n- **(A)** Simple squamous epithelium is a thin single layer for rapid exchange, not mucus movement.\n- **(B)** Stratified squamous epithelium has multiple true layers and functions in protection from abrasion.\n- **(D)** Transitional epithelium is found only in the urinary system and stretches.\n- **(E)** Simple cuboidal epithelium functions in secretion/absorption, not ciliary mucus clearance in the airway."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Pseudostratified columnar epithelium of the respiratory tract has ciliated cells that move mucus, and all cells touch the basal lamina though not all reach the apical surface, giving a false-layered appearance.\n\n**Why the other options are wrong:**\n- **(B)** Simple squamous epithelium is a thin single layer for rapid exchange, not mucus movement.\n- **(C)** Transitional epithelium is found only in the urinary system and stretches.\n- **(D)** Simple cuboidal epithelium functions in secretion/absorption, not ciliary mucus clearance in the airway.\n- **(E)** Stratified squamous epithelium has multiple true layers and functions in protection from abrasion."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1623,14 +1623,14 @@
           "question": {
             "stem": "A histology slide shows striated muscle cells, each with a single centrally located nucleus and joined to neighboring cells by intercalated discs. What functional consequence does the intercalated disc arrangement produce?",
             "options": [
-              "It allows the cells to be under fully voluntary control",
-              "It electrochemically links cells so they contract in synchrony",
               "It prevents the cells from having intrinsic rhythms",
+              "It allows the cells to be under fully voluntary control",
               "It makes the tissue spindle-shaped and uninucleate throughout",
+              "It electrochemically links cells so they contract in synchrony",
               "It enables the cells to store lipids for insulation"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Intercalated discs mechanically and electrochemically connect cardiac muscle cells, allowing them to work in synchronized unison.\n\n**Why the other options are wrong:**\n- **(A)** Cardiac muscle is primarily involuntary, not voluntary.\n- **(C)** Cardiac muscle does have intrinsic rhythms; intercalated discs help coordinate them.\n- **(D)** Spindle-shaped uninucleate cells describe smooth muscle, not striated cardiac muscle with intercalated discs.\n- **(E)** Lipid storage is an adipocyte function, not a role of intercalated discs."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Intercalated discs mechanically and electrochemically connect cardiac muscle cells, allowing them to work in synchronized unison.\n\n**Why the other options are wrong:**\n- **(A)** Cardiac muscle does have intrinsic rhythms; intercalated discs help coordinate them.\n- **(B)** Cardiac muscle is primarily involuntary, not voluntary.\n- **(C)** Spindle-shaped uninucleate cells describe smooth muscle, not striated cardiac muscle with intercalated discs.\n- **(E)** Lipid storage is an adipocyte function, not a role of intercalated discs."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1640,14 +1640,14 @@
           "question": {
             "stem": "Connective tissue differs from epithelial tissue largely in the abundance and nature of its matrix. Which statement about the connective tissue matrix is correct?",
             "options": [
-              "The matrix is absent, since connective tissue cells are tightly packed",
-              "The matrix consists of ground substance and protein fibres, and the ground substance may be fluid or mineralized",
-              "The matrix is always a rigid, calcified solid in every connective tissue",
               "The matrix is composed only of cilia and microvilli",
-              "The matrix is secreted exclusively by neurons"
+              "The matrix is absent, since connective tissue cells are tightly packed",
+              "The matrix is secreted exclusively by neurons",
+              "The matrix consists of ground substance and protein fibres, and the ground substance may be fluid or mineralized",
+              "The matrix is always a rigid, calcified solid in every connective tissue"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Connective tissue matrix has ground substance (the major part) plus protein fibres, and the ground substance is usually fluid but can be mineralized and solid as in bone.\n\n**Why the other options are wrong:**\n- **(A)** Abundant matrix is the defining feature of connective tissue; cells are dispersed, not tightly packed.\n- **(C)** The matrix is mineralized only in bone; in most connective tissues it is fluid or viscous.\n- **(D)** Cilia and microvilli are apical epithelial structures, not matrix components.\n- **(E)** Fibroblasts and other connective tissue cells secrete matrix, not neurons."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Connective tissue matrix has ground substance (the major part) plus protein fibres, and the ground substance is usually fluid but can be mineralized and solid as in bone.\n\n**Why the other options are wrong:**\n- **(A)** Cilia and microvilli are apical epithelial structures, not matrix components.\n- **(B)** Abundant matrix is the defining feature of connective tissue; cells are dispersed, not tightly packed.\n- **(C)** Fibroblasts and other connective tissue cells secrete matrix, not neurons.\n- **(E)** The matrix is mineralized only in bone; in most connective tissues it is fluid or viscous."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1657,14 +1657,14 @@
           "question": {
             "stem": "A histology slide is labelled as showing a 'lacuna.' Based on the unit's terminology, what does this term refer to?",
             "options": [
-              "A branching cell extension that receives incoming information",
-              "A space within cartilage or bone matrix that houses a cell",
               "A layer of dense irregular connective tissue surrounding cartilage",
+              "A branching cell extension that receives incoming information",
               "The clear, viscous ground substance surrounding fibres",
+              "A space within cartilage or bone matrix that houses a cell",
               "The insulating layer wrapped around an axon"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A lacuna is defined as the small space in cartilage or bone matrix that a chondrocyte or osteocyte occupies.\n\n**Why the other options are wrong:**\n- **(A)** This describes a dendrite, not a lacuna.\n- **(C)** This describes the perichondrium.\n- **(D)** This describes ground substance, not the space itself.\n- **(E)** This describes myelin."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A lacuna is defined as the small space in cartilage or bone matrix that a chondrocyte or osteocyte occupies.\n\n**Why the other options are wrong:**\n- **(A)** This describes the perichondrium.\n- **(B)** This describes a dendrite, not a lacuna.\n- **(C)** This describes ground substance, not the space itself.\n- **(E)** This describes myelin."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1674,14 +1674,14 @@
           "question": {
             "stem": "A researcher observes muscle tissue that is striated, has multiple nuclei located at the cell periphery, and is described as making up roughly 40% of body mass. Which tissue is this, and what best characterizes its control?",
             "options": [
-              "Cardiac muscle; purely involuntary control",
-              "Smooth muscle; purely involuntary control",
               "Skeletal muscle; usually voluntary, sometimes involuntary",
+              "Cardiac muscle; purely involuntary control",
+              "Smooth muscle; usually voluntary",
               "Cardiac muscle; both voluntary and involuntary",
-              "Smooth muscle; usually voluntary"
+              "Smooth muscle; purely involuntary control"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Striated, multinucleated fibres making up ~40% of body mass are skeletal muscle, which is usually voluntary but can be involuntary (e.g., shivering).\n\n**Why the other options are wrong:**\n- **(A)** Cardiac muscle is usually uninucleate and does not make up 40% of body mass.\n- **(B)** Smooth muscle is not striated and is uninucleate.\n- **(D)** Cardiac muscle is primarily involuntary, not both, and is not the described tissue.\n- **(E)** Smooth muscle is not striated and is involuntary, not voluntary."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Striated, multinucleated fibres making up ~40% of body mass are skeletal muscle, which is usually voluntary but can be involuntary (e.g., shivering).\n\n**Why the other options are wrong:**\n- **(B)** Cardiac muscle is usually uninucleate and does not make up 40% of body mass.\n- **(C)** Smooth muscle is not striated and is involuntary, not voluntary.\n- **(D)** Cardiac muscle is primarily involuntary, not both, and is not the described tissue.\n- **(E)** Smooth muscle is not striated and is uninucleate."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1692,13 +1692,13 @@
             "stem": "Two of the four tissue types are described in the unit as 'excitable.' Which pairing correctly identifies them and a shared feature?",
             "options": [
               "Epithelial and connective; both are highly vascularized",
-              "Muscle and nervous; both respond to a stimulus",
               "Connective and muscle; both bind organs together",
+              "Muscle and nervous; both respond to a stimulus",
               "Epithelial and nervous; both cover body surfaces",
               "Muscle and connective; both propagate action potentials"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Muscle and nervous tissue are both described as excitable, meaning they respond to stimulation.\n\n**Why the other options are wrong:**\n- **(A)** Epithelial tissue is nearly avascular, and connective tissue is not excitable.\n- **(C)** Connective tissue is not excitable, and muscle does not primarily bind organs.\n- **(D)** Epithelial tissue is not excitable.\n- **(E)** Connective tissue does not propagate action potentials."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Muscle and nervous tissue are both described as excitable, meaning they respond to stimulation.\n\n**Why the other options are wrong:**\n- **(A)** Epithelial tissue is nearly avascular, and connective tissue is not excitable.\n- **(B)** Connective tissue is not excitable, and muscle does not primarily bind organs.\n- **(D)** Epithelial tissue is not excitable.\n- **(E)** Connective tissue does not propagate action potentials."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1709,13 +1709,13 @@
             "stem": "A student compares the two main cell types of nervous tissue. Which statement correctly distinguishes their roles?",
             "options": [
               "Neurons support and insulate, while neuroglia propagate action potentials",
-              "Neurons propagate electrochemical impulses, while neuroglia support neurons and modulate their signalling",
+              "Neurons and neuroglia are both classified as contractile cells",
               "Both neurons and neuroglia release neurotransmitters to conduct impulses",
-              "Neuroglia carry information over long distances, while neurons form myelin",
-              "Neurons and neuroglia are both classified as contractile cells"
+              "Neurons propagate electrochemical impulses, while neuroglia support neurons and modulate their signalling",
+              "Neuroglia carry information over long distances, while neurons form myelin"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Neurons propagate information via action potentials, while neuroglia support neurons, modulate their signalling, and some have immune functions.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the two roles.\n- **(C)** Neuroglia do not conduct impulses via neurotransmitter release.\n- **(D)** Neurons carry information; neuroglia (not neurons) form myelin.\n- **(E)** Neither cell type is contractile; that is muscle tissue."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Neurons propagate information via action potentials, while neuroglia support neurons, modulate their signalling, and some have immune functions.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the two roles.\n- **(B)** Neither cell type is contractile; that is muscle tissue.\n- **(C)** Neuroglia do not conduct impulses via neurotransmitter release.\n- **(E)** Neurons carry information; neuroglia (not neurons) form myelin."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1725,14 +1725,14 @@
           "question": {
             "stem": "The alveoli of the lungs and the lining of blood capillaries both require rapid diffusion of gases. Which epithelial subtype is best suited to this function, and why?",
             "options": [
+              "Transitional epithelium, because its cells can stretch and change shape",
+              "Pseudostratified columnar epithelium, because its cilia move particles",
               "Simple cuboidal epithelium, because its cells specialize in secretion",
               "Stratified squamous epithelium, because multiple layers protect against wear",
-              "Simple squamous epithelium, because its thin cells facilitate rapid exchange",
-              "Transitional epithelium, because its cells can stretch and change shape",
-              "Pseudostratified columnar epithelium, because its cilia move particles"
+              "Simple squamous epithelium, because its thin cells facilitate rapid exchange"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Simple squamous epithelium consists of a single thin layer of flat cells, ideal for the rapid diffusion of gases at alveoli and capillaries.\n\n**Why the other options are wrong:**\n- **(A)** Simple cuboidal specializes in secretion and absorption, not rapid gas exchange.\n- **(B)** Stratified squamous protects but is too thick for efficient diffusion.\n- **(D)** Transitional epithelium is found only in the urinary system.\n- **(E)** Pseudostratified columnar functions in mucus movement, not gas exchange."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Simple squamous epithelium consists of a single thin layer of flat cells, ideal for the rapid diffusion of gases at alveoli and capillaries.\n\n**Why the other options are wrong:**\n- **(A)** Transitional epithelium is found only in the urinary system.\n- **(B)** Pseudostratified columnar functions in mucus movement, not gas exchange.\n- **(C)** Simple cuboidal specializes in secretion and absorption, not rapid gas exchange.\n- **(D)** Stratified squamous protects but is too thick for efficient diffusion."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1742,14 +1742,14 @@
           "question": {
             "stem": "A section of connective tissue contains chondrocytes sitting in lacunae, is surrounded by a perichondrium, and is entirely avascular. Which broad category and specific feature does this describe?",
             "options": [
+              "Loose connective tissue; highly vascularized for nutrient diffusion",
               "Fluid connective tissue; cells circulate in a liquid matrix",
               "Connective tissue proper; abundant fibroblasts in a viscous matrix",
-              "Supportive connective tissue (cartilage); avascularity causes slow healing",
               "Supportive connective tissue (bone); mineralized matrix heals rapidly",
-              "Loose connective tissue; highly vascularized for nutrient diffusion"
+              "Supportive connective tissue (cartilage); avascularity causes slow healing"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Chondrocytes in lacunae surrounded by a perichondrium describe cartilage, a supportive connective tissue whose avascularity leads to slow healing.\n\n**Why the other options are wrong:**\n- **(A)** Fluid connective tissue (blood/lymph) has cells in a liquid matrix, not lacunae.\n- **(B)** Connective tissue proper is defined by fibroblasts in ground substance, not lacunae/perichondrium.\n- **(D)** Bone contains osteocytes and is vascularized, healing faster; cartilage is not mineralized here.\n- **(E)** Loose connective tissue does not contain chondrocytes or a perichondrium."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Chondrocytes in lacunae surrounded by a perichondrium describe cartilage, a supportive connective tissue whose avascularity leads to slow healing.\n\n**Why the other options are wrong:**\n- **(A)** Loose connective tissue does not contain chondrocytes or a perichondrium.\n- **(B)** Fluid connective tissue (blood/lymph) has cells in a liquid matrix, not lacunae.\n- **(C)** Connective tissue proper is defined by fibroblasts in ground substance, not lacunae/perichondrium.\n- **(D)** Bone contains osteocytes and is vascularized, healing faster; cartilage is not mineralized here."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1759,14 +1759,14 @@
           "question": {
             "stem": "Following a bee sting, the surrounding tissue becomes red, swollen, and warm due to increased local blood flow. Which connective tissue cell is most directly responsible for triggering this response, and by what mechanism?",
             "options": [
-              "Fibroblast, by secreting collagen fibres into the matrix",
+              "Mesenchymal cell, by differentiating into new blood vessels",
+              "Erythrocyte, by transporting oxygen to the injured area",
               "Adipocyte, by releasing stored lipids for energy",
               "Mast cell, by releasing histamine that causes vasodilation",
-              "Mesenchymal cell, by differentiating into new blood vessels",
-              "Erythrocyte, by transporting oxygen to the injured area"
+              "Fibroblast, by secreting collagen fibres into the matrix"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Mast cells release histamine when tissue is irritated, causing vasodilation and increased blood flow that produces redness, swelling, and warmth.\n\n**Why the other options are wrong:**\n- **(A)** Fibroblasts secrete fibres and matrix but do not trigger vasodilation.\n- **(B)** Adipocytes store lipids and are not part of this inflammatory signalling.\n- **(D)** Mesenchymal cells are stem cells; they do not release histamine.\n- **(E)** Erythrocytes transport oxygen but do not initiate the inflammatory response."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Mast cells release histamine when tissue is irritated, causing vasodilation and increased blood flow that produces redness, swelling, and warmth.\n\n**Why the other options are wrong:**\n- **(A)** Mesenchymal cells are stem cells; they do not release histamine.\n- **(B)** Erythrocytes transport oxygen but do not initiate the inflammatory response.\n- **(C)** Adipocytes store lipids and are not part of this inflammatory signalling.\n- **(E)** Fibroblasts secrete fibres and matrix but do not trigger vasodilation."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1776,14 +1776,14 @@
           "question": {
             "stem": "The lining of the mouth cavity and the outer layer of the skin are both classified as stratified squamous epithelium, yet they differ in one key structural feature. What is this difference, and how does it relate to function?",
             "options": [
-              "Skin is keratinized for a dry protective surface, while the mouth lining is nonkeratinized",
-              "The mouth lining is ciliated to move particles, while skin is not",
-              "Skin is a single layer for diffusion, while the mouth lining is stratified",
               "The mouth lining contains transitional cells that stretch, while skin does not",
-              "Skin secretes mucus while the mouth lining does not"
+              "Skin is a single layer for diffusion, while the mouth lining is stratified",
+              "Skin is keratinized for a dry protective surface, while the mouth lining is nonkeratinized",
+              "Skin secretes mucus while the mouth lining does not",
+              "The mouth lining is ciliated to move particles, while skin is not"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Skin is keratinized, giving a dry, tough protective surface, whereas the mouth lining is nonkeratinized stratified squamous epithelium.\n\n**Why the other options are wrong:**\n- **(B)** Neither of these stratified squamous surfaces is ciliated.\n- **(C)** Skin is stratified, not a single diffusion layer.\n- **(D)** Transitional epithelium is found only in the urinary system, not the mouth.\n- **(E)** Skin does not secrete mucus for this comparison."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Skin is keratinized, giving a dry, tough protective surface, whereas the mouth lining is nonkeratinized stratified squamous epithelium.\n\n**Why the other options are wrong:**\n- **(A)** Transitional epithelium is found only in the urinary system, not the mouth.\n- **(B)** Skin is stratified, not a single diffusion layer.\n- **(D)** Skin does not secrete mucus for this comparison.\n- **(E)** Neither of these stratified squamous surfaces is ciliated."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1793,14 +1793,14 @@
           "question": {
             "stem": "Tendons must resist strong pulling forces along a single direction, while the dermis of the skin must resist stretching from many directions. Which two connective tissue subtypes match these needs?",
             "options": [
-              "Dense regular for tendons; dense irregular for the dermis",
               "Dense irregular for tendons; dense regular for the dermis",
+              "Dense regular for tendons; dense irregular for the dermis",
               "Areolar tissue for tendons; adipose tissue for the dermis",
-              "Hyaline cartilage for tendons; reticular tissue for the dermis",
-              "Dense regular for both, since both resist stretching"
+              "Dense regular for both, since both resist stretching",
+              "Hyaline cartilage for tendons; reticular tissue for the dermis"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Dense regular connective tissue has parallel collagen fibres for strength in one direction (tendons), while dense irregular has randomly oriented fibres for strength in all directions (dermis).\n\n**Why the other options are wrong:**\n- **(B)** This reverses the two subtypes.\n- **(C)** Areolar and adipose are loose connective tissues, not suited to these tensile roles.\n- **(D)** Hyaline cartilage and reticular tissue do not form tendons or the dermis.\n- **(E)** Dense irregular, not dense regular, is needed for the multidirectional dermis."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Dense regular connective tissue has parallel collagen fibres for strength in one direction (tendons), while dense irregular has randomly oriented fibres for strength in all directions (dermis).\n\n**Why the other options are wrong:**\n- **(A)** This reverses the two subtypes.\n- **(C)** Areolar and adipose are loose connective tissues, not suited to these tensile roles.\n- **(D)** Dense irregular, not dense regular, is needed for the multidirectional dermis.\n- **(E)** Hyaline cartilage and reticular tissue do not form tendons or the dermis."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1810,14 +1810,14 @@
           "question": {
             "stem": "The unit distinguishes between epithelium and endothelium. Which statement correctly describes their relationship and location?",
             "options": [
-              "Endothelium is a type of connective tissue lining bones",
               "Endothelium is a type of epithelium lining hollow organs such as blood vessels",
               "Epithelium lines only blood vessels, while endothelium covers the skin",
-              "Endothelium and epithelium are unrelated tissue types with no shared features",
-              "Epithelium is highly vascularized, while endothelium is avascular"
+              "Endothelium is a type of connective tissue lining bones",
+              "Epithelium is highly vascularized, while endothelium is avascular",
+              "Endothelium and epithelium are unrelated tissue types with no shared features"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Endothelium is described as a type of epithelium that lines hollow organs of the body, such as blood vessels.\n\n**Why the other options are wrong:**\n- **(A)** Endothelium is epithelial tissue, not connective tissue.\n- **(C)** This reverses the locations; endothelium lines vessels, not the skin.\n- **(D)** They are related, since endothelium is a type of epithelium.\n- **(E)** Epithelium in general is nearly avascular, so this contrast is incorrect."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Endothelium is described as a type of epithelium that lines hollow organs of the body, such as blood vessels.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the locations; endothelium lines vessels, not the skin.\n- **(C)** Endothelium is epithelial tissue, not connective tissue.\n- **(D)** Epithelium in general is nearly avascular, so this contrast is incorrect.\n- **(E)** They are related, since endothelium is a type of epithelium."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1827,14 +1827,14 @@
           "question": {
             "stem": "A section of tissue lining the trachea shows a single layer of cells whose nuclei appear at several different heights, giving a false impression of stacking, with cilia on the exposed surface. Which epithelial type is this, and what is its primary function here?",
             "options": [
-              "Stratified squamous epithelium; protection from abrasion",
-              "Pseudostratified columnar epithelium; secretion and movement of mucus",
               "Simple squamous epithelium; rapid diffusion of gases",
-              "Transitional epithelium; stretch to accommodate volume changes",
-              "Simple cuboidal epithelium; secretion and absorption in ducts"
+              "Simple cuboidal epithelium; secretion and absorption in ducts",
+              "Pseudostratified columnar epithelium; secretion and movement of mucus",
+              "Stratified squamous epithelium; protection from abrasion",
+              "Transitional epithelium; stretch to accommodate volume changes"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** All cells contact the basal lamina but their nuclei sit at different levels, giving a false appearance of layering; in the respiratory tract this ciliated type moves trapped mucus and particulate matter.\n\n**Why the other options are wrong:**\n- **(A)** Stratified squamous has multiple true layers and squamous apical cells for abrasion resistance.\n- **(C)** Simple squamous is a single flat layer for diffusion, not tall ciliated cells with staggered nuclei.\n- **(D)** Transitional epithelium is found only in the urinary system and changes shape with stretch.\n- **(E)** Simple cuboidal cells are box-shaped in one even layer, not staggered columnar cells."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** All cells contact the basal lamina but their nuclei sit at different levels, giving a false appearance of layering; in the respiratory tract this ciliated type moves trapped mucus and particulate matter.\n\n**Why the other options are wrong:**\n- **(A)** Simple squamous is a single flat layer for diffusion, not tall ciliated cells with staggered nuclei.\n- **(B)** Simple cuboidal cells are box-shaped in one even layer, not staggered columnar cells.\n- **(D)** Stratified squamous has multiple true layers and squamous apical cells for abrasion resistance.\n- **(E)** Transitional epithelium is found only in the urinary system and changes shape with stretch."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1844,14 +1844,14 @@
           "question": {
             "stem": "A researcher compares two muscle types: one is found in the walls of the digestive tract and one attaches to bones. Which statement correctly distinguishes them by location and control?",
             "options": [
-              "The one in the digestive tract is skeletal and voluntary; the one on bones is smooth and involuntary",
-              "The one in the digestive tract is smooth and involuntary; the one on bones is skeletal and usually voluntary",
               "Both are involuntary, but only the digestive-tract type is striated",
-              "Both are voluntary, but only the bone-attached type has intrinsic rhythms",
-              "The one in the digestive tract is cardiac and striated; the one on bones is smooth and non-striated"
+              "The one in the digestive tract is cardiac and striated; the one on bones is smooth and non-striated",
+              "The one in the digestive tract is smooth and involuntary; the one on bones is skeletal and usually voluntary",
+              "The one in the digestive tract is skeletal and voluntary; the one on bones is smooth and involuntary",
+              "Both are voluntary, but only the bone-attached type has intrinsic rhythms"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Smooth muscle forms the involuntary contractile walls of the digestive tract, while skeletal muscle attaches to bones and is usually under voluntary control.\n\n**Why the other options are wrong:**\n- **(A)** It reverses the assignments; skeletal is not in the digestive tract wall.\n- **(C)** Skeletal muscle (on bones) is voluntary and striated, not involuntary.\n- **(D)** Skeletal muscle lacks intrinsic rhythms; smooth muscle is involuntary, not voluntary.\n- **(E)** Cardiac muscle is found in the heart, not the digestive tract."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Smooth muscle forms the involuntary contractile walls of the digestive tract, while skeletal muscle attaches to bones and is usually under voluntary control.\n\n**Why the other options are wrong:**\n- **(A)** Skeletal muscle (on bones) is voluntary and striated, not involuntary.\n- **(B)** Cardiac muscle is found in the heart, not the digestive tract.\n- **(D)** It reverses the assignments; skeletal is not in the digestive tract wall.\n- **(E)** Skeletal muscle lacks intrinsic rhythms; smooth muscle is involuntary, not voluntary."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1861,14 +1861,14 @@
           "question": {
             "stem": "Cardiac muscle and skeletal muscle both appear striated under the microscope. Which feature is present in cardiac muscle but NOT in skeletal muscle, allowing the heart's cells to contract in synchronized unison?",
             "options": [
-              "Multiple peripheral nuclei per fibre",
-              "Actin and myosin arranged in regular repeating units",
               "Intercalated discs connecting adjacent cells",
               "Attachment to bone via tendons",
-              "Spindle-shaped uninucleate cells"
+              "Actin and myosin arranged in regular repeating units",
+              "Spindle-shaped uninucleate cells",
+              "Multiple peripheral nuclei per fibre"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Intercalated discs mechanically and electrochemically couple cardiomyocytes so they act as a synchronized unit, a feature absent from skeletal muscle.\n\n**Why the other options are wrong:**\n- **(A)** Multiple peripheral nuclei are a feature of skeletal muscle, not cardiac.\n- **(B)** Both muscle types have striations from actin/myosin arrangement, so this doesn't distinguish them.\n- **(D)** Skeletal muscle, not cardiac, attaches to bone via tendons.\n- **(E)** Spindle-shaped uninucleate cells describe smooth muscle."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Intercalated discs mechanically and electrochemically couple cardiomyocytes so they act as a synchronized unit, a feature absent from skeletal muscle.\n\n**Why the other options are wrong:**\n- **(B)** Skeletal muscle, not cardiac, attaches to bone via tendons.\n- **(C)** Both muscle types have striations from actin/myosin arrangement, so this doesn't distinguish them.\n- **(D)** Spindle-shaped uninucleate cells describe smooth muscle.\n- **(E)** Multiple peripheral nuclei are a feature of skeletal muscle, not cardiac."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1878,14 +1878,14 @@
           "question": {
             "stem": "The diaphragm is described as an exception among muscle types with respect to control. What makes it unusual?",
             "options": [
+              "It is smooth muscle under purely voluntary control",
               "It is smooth muscle but behaves like skeletal muscle during breathing",
-              "It is cardiac muscle located outside the heart",
-              "It is skeletal muscle under both voluntary and involuntary control",
               "It is skeletal muscle that has intrinsic rhythms like cardiac muscle",
-              "It is smooth muscle under purely voluntary control"
+              "It is cardiac muscle located outside the heart",
+              "It is skeletal muscle under both voluntary and involuntary control"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The diaphragm is a skeletal muscle used in breathing that can be controlled both voluntarily and involuntarily, unlike most skeletal muscle.\n\n**Why the other options are wrong:**\n- **(A)** The diaphragm is skeletal muscle, not smooth.\n- **(B)** Cardiac muscle is confined to the heart; the diaphragm is skeletal.\n- **(D)** Skeletal muscle, including the diaphragm, does not have intrinsic rhythms.\n- **(E)** The diaphragm is skeletal, and its control is both voluntary and involuntary, not purely voluntary."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The diaphragm is a skeletal muscle used in breathing that can be controlled both voluntarily and involuntarily, unlike most skeletal muscle.\n\n**Why the other options are wrong:**\n- **(A)** The diaphragm is skeletal, and its control is both voluntary and involuntary, not purely voluntary.\n- **(B)** The diaphragm is skeletal muscle, not smooth.\n- **(C)** Skeletal muscle, including the diaphragm, does not have intrinsic rhythms.\n- **(D)** Cardiac muscle is confined to the heart; the diaphragm is skeletal."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1895,14 +1895,14 @@
           "question": {
             "stem": "A histology text uses the terms 'lacuna,' 'chondrocyte,' and 'perichondrium' when describing a tissue. What relationship among these terms is correctly described?",
             "options": [
-              "The perichondrium is the fluid ground substance in which chondrocytes float inside lacunae",
               "Chondrocytes are the cartilage cells sitting in spaces called lacunae, and the perichondrium is the dense irregular connective tissue layer surrounding the cartilage",
+              "The perichondrium is a network of reticular fibres holding chondrocytes in lacunae",
+              "The perichondrium is the fluid ground substance in which chondrocytes float inside lacunae",
               "Lacunae are the collagen fibres that chondrocytes secrete around the perichondrium",
-              "Chondrocytes reside in the perichondrium and secrete lacunae into the matrix",
-              "The perichondrium is a network of reticular fibres holding chondrocytes in lacunae"
+              "Chondrocytes reside in the perichondrium and secrete lacunae into the matrix"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Chondrocytes are cartilage cells housed in matrix spaces called lacunae, and the perichondrium is the surrounding layer of dense irregular connective tissue.\n\n**Why the other options are wrong:**\n- **(A)** The perichondrium is a connective tissue layer, not a fluid ground substance.\n- **(C)** Lacunae are spaces, not collagen fibres.\n- **(D)** Chondrocytes reside within lacunae in the matrix, not the perichondrium, and lacunae are spaces, not secreted.\n- **(E)** The perichondrium is dense irregular connective tissue, not a reticular fibre network."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Chondrocytes are cartilage cells housed in matrix spaces called lacunae, and the perichondrium is the surrounding layer of dense irregular connective tissue.\n\n**Why the other options are wrong:**\n- **(B)** The perichondrium is dense irregular connective tissue, not a reticular fibre network.\n- **(C)** The perichondrium is a connective tissue layer, not a fluid ground substance.\n- **(D)** Lacunae are spaces, not collagen fibres.\n- **(E)** Chondrocytes reside within lacunae in the matrix, not the perichondrium, and lacunae are spaces, not secreted."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1912,14 +1912,14 @@
           "question": {
             "stem": "Simple squamous epithelium lines the alveoli of the lungs and the walls of capillaries. What structural feature most directly explains why this specific epithelial type is suited to these locations?",
             "options": [
-              "Its multiple stacked layers protect against abrasion",
+              "Its ability to stretch accommodates changing volumes",
               "Its box-shaped cells specialize in secretion of enzymes",
+              "Its multiple stacked layers protect against abrasion",
               "Its extreme thinness facilitates rapid diffusion of substances",
-              "Its cilia sweep particulate matter along the surface",
-              "Its ability to stretch accommodates changing volumes"
+              "Its cilia sweep particulate matter along the surface"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Simple squamous cells are thin, flat scales, and this thinness minimizes diffusion distance, ideal for rapid gas and fluid exchange in alveoli and capillaries.\n\n**Why the other options are wrong:**\n- **(A)** Simple squamous is a single layer, not multiple protective layers.\n- **(B)** Secretory box-shaped cells describe cuboidal epithelium.\n- **(D)** Cilia are found on some columnar epithelia, not simple squamous.\n- **(E)** Stretching to accommodate volume describes transitional epithelium."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Simple squamous cells are thin, flat scales, and this thinness minimizes diffusion distance, ideal for rapid gas and fluid exchange in alveoli and capillaries.\n\n**Why the other options are wrong:**\n- **(A)** Stretching to accommodate volume describes transitional epithelium.\n- **(B)** Secretory box-shaped cells describe cuboidal epithelium.\n- **(C)** Simple squamous is a single layer, not multiple protective layers.\n- **(E)** Cilia are found on some columnar epithelia, not simple squamous."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1929,14 +1929,14 @@
           "question": {
             "stem": "A tendon and the dermis of the skin are both dense connective tissues, but their collagen fibres are arranged differently. Which comparison correctly relates arrangement to strength?",
             "options": [
-              "The tendon has randomly oriented fibres for all-direction strength; the dermis has parallel fibres for one-direction strength",
+              "The tendon is loose connective tissue and the dermis is dense connective tissue",
               "The tendon has parallel fibres giving strength in the direction of pull; the dermis has irregularly arranged fibres giving strength in many directions",
               "Both have parallel fibres, but the dermis contains more elastic fibres",
-              "The tendon is loose connective tissue and the dermis is dense connective tissue",
+              "The tendon has randomly oriented fibres for all-direction strength; the dermis has parallel fibres for one-direction strength",
               "Both have randomly oriented fibres, but the tendon has more ground substance"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Dense regular tissue in tendons has parallel collagen fibres for strength along the line of pull, whereas dense irregular tissue in the dermis has randomly oriented fibres for strength in multiple directions.\n\n**Why the other options are wrong:**\n- **(A)** It reverses the two arrangements.\n- **(C)** The tendon has parallel fibres but the dermis fibres are irregular, not parallel.\n- **(D)** Both are dense connective tissue, not loose.\n- **(E)** The tendon has parallel, not random, fibres."
+            "explanation": "**Why (B) is correct:** Dense regular tissue in tendons has parallel collagen fibres for strength along the line of pull, whereas dense irregular tissue in the dermis has randomly oriented fibres for strength in multiple directions.\n\n**Why the other options are wrong:**\n- **(A)** Both are dense connective tissue, not loose.\n- **(C)** The tendon has parallel fibres but the dermis fibres are irregular, not parallel.\n- **(D)** It reverses the two arrangements.\n- **(E)** The tendon has parallel, not random, fibres."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1946,14 +1946,14 @@
           "question": {
             "stem": "Adipose tissue is highlighted for performing several connective tissue functions. Which combination of functions is correctly attributed to adipose tissue?",
             "options": [
-              "Transport of oxygen and immune defense",
-              "Energy storage, thermal insulation, and cushioning from impact",
               "Rapid exchange of gases and secretion of enzymes",
+              "Calcified structural support and protection of the brain",
+              "Energy storage, thermal insulation, and cushioning from impact",
               "Propagation of action potentials and neurotransmitter release",
-              "Calcified structural support and protection of the brain"
+              "Transport of oxygen and immune defense"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Adipose cells store surplus energy as fat, provide thermal insulation, and cushion the body from mechanical impact.\n\n**Why the other options are wrong:**\n- **(A)** Oxygen transport is done by erythrocytes and immune defense by leukocytes, not adipose tissue.\n- **(C)** Gas exchange and enzyme secretion are epithelial functions.\n- **(D)** Action potentials and neurotransmitter release are nervous tissue functions.\n- **(E)** Calcified structural support is a function of bone."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Adipose cells store surplus energy as fat, provide thermal insulation, and cushion the body from mechanical impact.\n\n**Why the other options are wrong:**\n- **(A)** Gas exchange and enzyme secretion are epithelial functions.\n- **(B)** Calcified structural support is a function of bone.\n- **(D)** Action potentials and neurotransmitter release are nervous tissue functions.\n- **(E)** Oxygen transport is done by erythrocytes and immune defense by leukocytes, not adipose tissue."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1965,12 +1965,12 @@
             "options": [
               "Epithelial tissue is excitable and propagates action potentials",
               "Connective tissue binds and supports the cells and organs of the body",
-              "Muscle tissue covers external surfaces and forms glands",
+              "Epithelial tissue circulates cells in a liquid matrix",
               "Nervous tissue stores fat and cushions organs",
-              "Epithelial tissue circulates cells in a liquid matrix"
+              "Muscle tissue covers external surfaces and forms glands"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Connective tissue's defining role is to bind, support, protect, and integrate the cells and organs of the body.\n\n**Why the other options are wrong:**\n- **(A)** Propagating action potentials is a nervous tissue function, not epithelial.\n- **(C)** Covering surfaces and forming glands is an epithelial function, not muscle.\n- **(D)** Fat storage is a connective (adipose) function, not nervous tissue.\n- **(E)** Circulating cells in a liquid matrix describes fluid connective tissue (blood/lymph), not epithelial."
+            "explanation": "**Why (B) is correct:** Connective tissue's defining role is to bind, support, protect, and integrate the cells and organs of the body.\n\n**Why the other options are wrong:**\n- **(A)** Propagating action potentials is a nervous tissue function, not epithelial.\n- **(C)** Circulating cells in a liquid matrix describes fluid connective tissue (blood/lymph), not epithelial.\n- **(D)** Fat storage is a connective (adipose) function, not nervous tissue.\n- **(E)** Covering surfaces and forming glands is an epithelial function, not muscle."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1980,14 +1980,14 @@
           "question": {
             "stem": "Nervous tissue contains two main cell classes. Which statement correctly distinguishes neurons from neuroglia by function?",
             "options": [
-              "Neurons only provide structural glue while neuroglia propagate action potentials",
-              "Neurons propagate electrochemical impulses and release neurotransmitters, while neuroglia support and modulate neurons and some have immune functions",
               "Both neurons and neuroglia generate action potentials and release neurotransmitters equally",
               "Neurons store lipids while neuroglia transport oxygen",
-              "Neuroglia receive information at dendrites while neurons form myelin"
+              "Neurons only provide structural glue while neuroglia propagate action potentials",
+              "Neuroglia receive information at dendrites while neurons form myelin",
+              "Neurons propagate electrochemical impulses and release neurotransmitters, while neuroglia support and modulate neurons and some have immune functions"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Neurons conduct action potentials and release neurotransmitters, whereas neuroglia support neurons, modulate their signaling, and some carry out immune functions.\n\n**Why the other options are wrong:**\n- **(A)** It reverses the roles; neurons propagate impulses, not neuroglia.\n- **(C)** Neuroglia do not propagate action potentials the way neurons do.\n- **(D)** Lipid storage and oxygen transport are connective tissue functions, not nervous.\n- **(E)** Dendrites belong to neurons, and myelin is formed by neuroglia, so this reverses the roles."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Neurons conduct action potentials and release neurotransmitters, whereas neuroglia support neurons, modulate their signaling, and some carry out immune functions.\n\n**Why the other options are wrong:**\n- **(A)** Neuroglia do not propagate action potentials the way neurons do.\n- **(B)** Lipid storage and oxygen transport are connective tissue functions, not nervous.\n- **(C)** It reverses the roles; neurons propagate impulses, not neuroglia.\n- **(D)** Dendrites belong to neurons, and myelin is formed by neuroglia, so this reverses the roles."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"

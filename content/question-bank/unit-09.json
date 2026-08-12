@@ -9,14 +9,14 @@
           "question": {
             "stem": "Which gland produces a hypotonic secretion that is released directly onto the skin surface and functions primarily in thermoregulation?",
             "options": [
-              "Apocrine sweat gland",
-              "Eccrine sweat gland",
               "Sebaceous gland",
+              "Apocrine sweat gland",
               "Ceruminous gland",
+              "Eccrine sweat gland",
               "Mammary gland"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Eccrine (merocrine) sweat glands release a hypotonic sweat through a pore onto the skin surface to cool the body by evaporation.\n\n**Why the other options are wrong:**\n- **(A)** Apocrine glands empty into hair follicles and produce a thicker, organic-compound-rich secretion, not thermoregulatory hypotonic sweat.\n- **(C)** Sebaceous glands secrete sebum (a lipid mixture), not watery sweat.\n- **(D)** Ceruminous glands produce earwax in the ear canal.\n- **(E)** Mammary glands are specialized apocrine glands that produce milk."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Eccrine (merocrine) sweat glands release a hypotonic sweat through a pore onto the skin surface to cool the body by evaporation.\n\n**Why the other options are wrong:**\n- **(A)** Sebaceous glands secrete sebum (a lipid mixture), not watery sweat.\n- **(B)** Apocrine glands empty into hair follicles and produce a thicker, organic-compound-rich secretion, not thermoregulatory hypotonic sweat.\n- **(C)** Ceruminous glands produce earwax in the ear canal.\n- **(E)** Mammary glands are specialized apocrine glands that produce milk."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -27,13 +27,13 @@
             "stem": "In a hair, which part is anchored in the follicle and lies below the skin surface, ending at the hair bulb?",
             "options": [
               "Hair shaft",
-              "Hair root",
-              "Arrector pili",
               "Hair papilla",
-              "Sebaceous duct"
+              "Arrector pili",
+              "Sebaceous duct",
+              "Hair root"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The hair root is the portion of the hair anchored within the follicle below the surface, ending deep in the dermis at the hair bulb.\n\n**Why the other options are wrong:**\n- **(A)** The hair shaft is the part not anchored to the follicle and largely exposed at the surface.\n- **(C)** The arrector pili is a smooth muscle that raises the hair, not a part of the hair itself.\n- **(D)** The hair papilla is connective tissue containing capillaries and nerves, surrounded by the hair bulb.\n- **(E)** The sebaceous duct connects an oil gland to the follicle, not a segment of the hair."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The hair root is the portion of the hair anchored within the follicle below the surface, ending deep in the dermis at the hair bulb.\n\n**Why the other options are wrong:**\n- **(A)** The hair shaft is the part not anchored to the follicle and largely exposed at the surface.\n- **(B)** The hair papilla is connective tissue containing capillaries and nerves, surrounded by the hair bulb.\n- **(C)** The arrector pili is a smooth muscle that raises the hair, not a part of the hair itself.\n- **(D)** The sebaceous duct connects an oil gland to the follicle, not a segment of the hair."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -43,14 +43,14 @@
           "question": {
             "stem": "The skin contributes to which function by synthesizing a precursor from cholesterol when exposed to UV radiation?",
             "options": [
-              "Thermoregulation",
               "Protection against abrasion",
+              "Excretion of urea",
               "Vitamin D synthesis",
               "Melanin pigmentation",
-              "Excretion of urea"
+              "Thermoregulation"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The epidermis synthesizes a vitamin D precursor from a cholesterol derivative when exposed to UV light, later converted to calcitriol in the liver and kidneys.\n\n**Why the other options are wrong:**\n- **(A)** Thermoregulation involves sweating and arteriole dilation/constriction, not cholesterol conversion.\n- **(B)** Protection against abrasion is provided by the keratinized stratum corneum.\n- **(D)** Melanin pigmentation involves melanocytes producing melanin, not cholesterol conversion.\n- **(E)** Excretion of waste is a minor skin function but unrelated to cholesterol/UV synthesis."
+            "explanation": "**Why (C) is correct:** The epidermis synthesizes a vitamin D precursor from a cholesterol derivative when exposed to UV light, later converted to calcitriol in the liver and kidneys.\n\n**Why the other options are wrong:**\n- **(A)** Protection against abrasion is provided by the keratinized stratum corneum.\n- **(B)** Excretion of waste is a minor skin function but unrelated to cholesterol/UV synthesis.\n- **(D)** Melanin pigmentation involves melanocytes producing melanin, not cholesterol conversion.\n- **(E)** Thermoregulation involves sweating and arteriole dilation/constriction, not cholesterol conversion."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -60,14 +60,14 @@
           "question": {
             "stem": "Compared to the reticular layer, the papillary layer of the dermis is best described as being composed of:",
             "options": [
-              "Dense, irregular connective tissue",
-              "Loose, areolar connective tissue",
-              "Keratinized stratified squamous epithelium",
+              "Dense, regular connective tissue",
               "Adipose tissue",
-              "Dense, regular connective tissue"
+              "Keratinized stratified squamous epithelium",
+              "Dense, irregular connective tissue",
+              "Loose, areolar connective tissue"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The papillary layer is made of loose, areolar connective tissue forming a loose mesh, whereas the reticular layer is dense, irregular connective tissue.\n\n**Why the other options are wrong:**\n- **(A)** Dense, irregular connective tissue describes the deeper reticular layer.\n- **(C)** Keratinized stratified squamous epithelium is the epidermis, not the dermis.\n- **(D)** Adipose tissue dominates the hypodermis, not the papillary layer.\n- **(E)** Dense, regular connective tissue (e.g., tendons) is not found in the papillary layer."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The papillary layer is made of loose, areolar connective tissue forming a loose mesh, whereas the reticular layer is dense, irregular connective tissue.\n\n**Why the other options are wrong:**\n- **(A)** Dense, regular connective tissue (e.g., tendons) is not found in the papillary layer.\n- **(B)** Adipose tissue dominates the hypodermis, not the papillary layer.\n- **(C)** Keratinized stratified squamous epithelium is the epidermis, not the dermis.\n- **(D)** Dense, irregular connective tissue describes the deeper reticular layer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -77,14 +77,14 @@
           "question": {
             "stem": "Which statement correctly contrasts the tissue composition of the epidermis, dermis, and hypodermis?",
             "options": [
-              "The epidermis is connective tissue, the dermis is epithelial, and the hypodermis is muscle",
-              "The epidermis is epithelial tissue, while both the dermis and hypodermis are connective tissue",
               "All three layers are made of epithelial tissue",
-              "The epidermis and dermis are connective tissue, and the hypodermis is epithelial",
-              "The dermis is epithelial tissue, and the epidermis and hypodermis are connective tissue"
+              "The epidermis is epithelial tissue, while both the dermis and hypodermis are connective tissue",
+              "The dermis is epithelial tissue, and the epidermis and hypodermis are connective tissue",
+              "The epidermis is connective tissue, the dermis is epithelial, and the hypodermis is muscle",
+              "The epidermis and dermis are connective tissue, and the hypodermis is epithelial"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The epidermis is keratinized stratified squamous epithelium, while the dermis and hypodermis are both connective tissue.\n\n**Why the other options are wrong:**\n- **(A)** The epidermis is epithelial, not connective, and the hypodermis is connective, not muscle.\n- **(C)** Only the epidermis is epithelial; the dermis and hypodermis are connective.\n- **(D)** The hypodermis is connective tissue, not epithelial.\n- **(E)** The dermis is connective tissue, not epithelial."
+            "explanation": "**Why (B) is correct:** The epidermis is keratinized stratified squamous epithelium, while the dermis and hypodermis are both connective tissue.\n\n**Why the other options are wrong:**\n- **(A)** Only the epidermis is epithelial; the dermis and hypodermis are connective.\n- **(C)** The dermis is connective tissue, not epithelial.\n- **(D)** The epidermis is epithelial, not connective, and the hypodermis is connective, not muscle.\n- **(E)** The hypodermis is connective tissue, not epithelial."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -94,14 +94,14 @@
           "question": {
             "stem": "Which touch receptor is located in the papillary layer of the dermis and responds to light touch and transient (low-frequency) vibration?",
             "options": [
-              "Merkel cell",
-              "Tactile (Meissner) corpuscle",
-              "Lamellated (Pacinian) corpuscle",
               "Melanocyte",
-              "Langerhans cell"
+              "Tactile (Meissner) corpuscle",
+              "Langerhans cell",
+              "Merkel cell",
+              "Lamellated (Pacinian) corpuscle"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The tactile (Meissner) corpuscle is found in the papillary layer and detects light touch and transient, low-frequency vibrations (fast-adapting).\n\n**Why the other options are wrong:**\n- **(A)** Merkel cells reside in the stratum basale of the epidermis, not the papillary dermis.\n- **(C)** Lamellated (Pacinian) corpuscles detect heavier pressure and high-frequency vibration.\n- **(D)** Melanocytes produce pigment and are not touch receptors.\n- **(E)** Langerhans cells are macrophages involved in immune defense, not touch."
+            "explanation": "**Why (B) is correct:** The tactile (Meissner) corpuscle is found in the papillary layer and detects light touch and transient, low-frequency vibrations (fast-adapting).\n\n**Why the other options are wrong:**\n- **(A)** Melanocytes produce pigment and are not touch receptors.\n- **(C)** Langerhans cells are macrophages involved in immune defense, not touch.\n- **(D)** Merkel cells reside in the stratum basale of the epidermis, not the papillary dermis.\n- **(E)** Lamellated (Pacinian) corpuscles detect heavier pressure and high-frequency vibration."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -111,14 +111,14 @@
           "question": {
             "stem": "The stratum lucidum is found only in thick skin and is characterized by dead, flattened cells densely packed with which clear protein?",
             "options": [
-              "Keratohyalin",
               "Melanin",
+              "Sebum",
               "Eleidin",
-              "Collagen",
-              "Sebum"
+              "Keratohyalin",
+              "Collagen"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The stratum lucidum contains eleidin, a clear protein derived from keratohyalin that gives the cells a transparent appearance and provides a water barrier.\n\n**Why the other options are wrong:**\n- **(A)** Keratohyalin accumulates as granules in the stratum granulosum, not eleidin's role in the lucidum.\n- **(B)** Melanin is a pigment produced by melanocytes, not the protein defining the stratum lucidum.\n- **(D)** Collagen is a dermal connective tissue fiber, not an epidermal protein.\n- **(E)** Sebum is an oily secretion from sebaceous glands, not a cellular protein."
+            "explanation": "**Why (C) is correct:** The stratum lucidum contains eleidin, a clear protein derived from keratohyalin that gives the cells a transparent appearance and provides a water barrier.\n\n**Why the other options are wrong:**\n- **(A)** Melanin is a pigment produced by melanocytes, not the protein defining the stratum lucidum.\n- **(B)** Sebum is an oily secretion from sebaceous glands, not a cellular protein.\n- **(D)** Keratohyalin accumulates as granules in the stratum granulosum, not eleidin's role in the lucidum.\n- **(E)** Collagen is a dermal connective tissue fiber, not an epidermal protein."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -128,14 +128,14 @@
           "question": {
             "stem": "Which epidermal layer is the deepest and contains stem cells (basal cells) that continuously divide to produce new keratinocytes?",
             "options": [
-              "Stratum corneum",
+              "Stratum lucidum",
               "Stratum granulosum",
-              "Stratum spinosum",
+              "Stratum corneum",
               "Stratum basale",
-              "Stratum lucidum"
+              "Stratum spinosum"
             ],
             "correct_index": 3,
-            "explanation": "**Why (D) is correct:** The stratum basale is the deepest epidermal layer and contains basal cells (stem cells) that undergo mitosis to generate new keratinocytes.\n\n**Why the other options are wrong:**\n- **(A)** The stratum corneum is the most superficial layer of dead, cornified cells.\n- **(B)** The stratum granulosum contains dying cells filled with keratohyalin granules.\n- **(C)** The stratum spinosum lies above the basale and is where keratin synthesis begins.\n- **(E)** The stratum lucidum is a superficial layer found only in thick skin."
+            "explanation": "**Why (D) is correct:** The stratum basale is the deepest epidermal layer and contains basal cells (stem cells) that undergo mitosis to generate new keratinocytes.\n\n**Why the other options are wrong:**\n- **(A)** The stratum lucidum is a superficial layer found only in thick skin.\n- **(B)** The stratum granulosum contains dying cells filled with keratohyalin granules.\n- **(C)** The stratum corneum is the most superficial layer of dead, cornified cells.\n- **(E)** The stratum spinosum lies above the basale and is where keratin synthesis begins."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -145,14 +145,14 @@
           "question": {
             "stem": "Which sensory cell of the integumentary system responds to heavier pressure and high-frequency vibration?",
             "options": [
-              "Merkel cell",
               "Tactile (Meissner) corpuscle",
-              "Lamellated (Pacinian) corpuscle",
               "Melanocyte",
-              "Basal cell"
+              "Basal cell",
+              "Merkel cell",
+              "Lamellated (Pacinian) corpuscle"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The lamellated (Pacinian) corpuscle detects heavier pressure and high-frequency vibration.\n\n**Why the other options are wrong:**\n- **(A)** Merkel cells detect light touch and sustained low-frequency vibration (slow-adapting).\n- **(B)** Tactile (Meissner) corpuscles detect light touch and transient low-frequency vibration.\n- **(D)** Melanocytes produce pigment and are not sensory receptors.\n- **(E)** Basal cells are stem cells that produce keratinocytes, not sensory cells."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The lamellated (Pacinian) corpuscle detects heavier pressure and high-frequency vibration.\n\n**Why the other options are wrong:**\n- **(A)** Tactile (Meissner) corpuscles detect light touch and transient low-frequency vibration.\n- **(B)** Melanocytes produce pigment and are not sensory receptors.\n- **(C)** Basal cells are stem cells that produce keratinocytes, not sensory cells.\n- **(D)** Merkel cells detect light touch and sustained low-frequency vibration (slow-adapting)."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -162,14 +162,14 @@
           "question": {
             "stem": "The term 'keratinization' (also called cornification) refers to which process in the epidermis?",
             "options": [
-              "The transfer of melanin pigment into keratinocytes",
-              "The whole process of cell differentiation from stem cells to dead, hardened, protein-filled cells",
               "The dilation of dermal arterioles to release heat",
-              "The secretion of sebum onto the skin surface",
-              "The formation of granules of keratohyalin only"
+              "The formation of granules of keratohyalin only",
+              "The whole process of cell differentiation from stem cells to dead, hardened, protein-filled cells",
+              "The transfer of melanin pigment into keratinocytes",
+              "The secretion of sebum onto the skin surface"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Keratinization/cornification is the entire process by which keratinocytes differentiate from stem cells into dead, hardened cells filled with keratin.\n\n**Why the other options are wrong:**\n- **(A)** Melanin transfer via melanosomes is pigmentation, not keratinization.\n- **(C)** Arteriole dilation is a thermoregulatory response, unrelated to cornification.\n- **(D)** Sebum secretion is a function of sebaceous glands, not keratinization.\n- **(E)** Keratohyalin granule formation is only one step in the granulosum, not the whole process."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Keratinization/cornification is the entire process by which keratinocytes differentiate from stem cells into dead, hardened cells filled with keratin.\n\n**Why the other options are wrong:**\n- **(A)** Arteriole dilation is a thermoregulatory response, unrelated to cornification.\n- **(B)** Keratohyalin granule formation is only one step in the granulosum, not the whole process.\n- **(D)** Melanin transfer via melanosomes is pigmentation, not keratinization.\n- **(E)** Sebum secretion is a function of sebaceous glands, not keratinization."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -180,13 +180,13 @@
             "stem": "Which cutaneous sensory receptor responds primarily to deep pressure and high-frequency vibration?",
             "options": [
               "Merkel cell",
+              "Basal cell",
               "Tactile (Meissner) corpuscle",
               "Lamellated (Pacinian) corpuscle",
-              "Melanocyte",
-              "Basal cell"
+              "Melanocyte"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The lamellated (Pacinian) corpuscle detects heavier pressure and high-frequency vibration.\n\n**Why the other options are wrong:**\n- **(A)** Merkel cells detect light touch and sustained low-frequency vibration (slow-adapting).\n- **(B)** Tactile (Meissner) corpuscles detect light touch and transient low-frequency vibration (fast-adapting).\n- **(D)** Melanocytes produce pigment, not sensory information.\n- **(E)** Basal cells are stem cells, not sensory receptors."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The lamellated (Pacinian) corpuscle detects heavier pressure and high-frequency vibration.\n\n**Why the other options are wrong:**\n- **(A)** Merkel cells detect light touch and sustained low-frequency vibration (slow-adapting).\n- **(B)** Basal cells are stem cells, not sensory receptors.\n- **(C)** Tactile (Meissner) corpuscles detect light touch and transient low-frequency vibration (fast-adapting).\n- **(E)** Melanocytes produce pigment, not sensory information."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -196,14 +196,14 @@
           "question": {
             "stem": "Which gland of the integumentary system produces a hypotonic secretion used mainly for thermoregulation?",
             "options": [
-              "Apocrine sweat gland",
-              "Eccrine sweat gland",
               "Sebaceous gland",
-              "Ceruminous gland",
-              "Mammary gland"
+              "Eccrine sweat gland",
+              "Apocrine sweat gland",
+              "Mammary gland",
+              "Ceruminous gland"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Eccrine sweat glands secrete a hypotonic, mostly watery sweat that cools the body for thermoregulation.\n\n**Why the other options are wrong:**\n- **(A)** Apocrine glands produce a thicker, organic-rich sweat linked to odour, not thermoregulation.\n- **(C)** Sebaceous glands secrete oily sebum for lubrication.\n- **(D)** Ceruminous glands produce earwax.\n- **(E)** Mammary glands produce milk."
+            "explanation": "**Why (B) is correct:** Eccrine sweat glands secrete a hypotonic, mostly watery sweat that cools the body for thermoregulation.\n\n**Why the other options are wrong:**\n- **(A)** Sebaceous glands secrete oily sebum for lubrication.\n- **(C)** Apocrine glands produce a thicker, organic-rich sweat linked to odour, not thermoregulation.\n- **(D)** Mammary glands produce milk.\n- **(E)** Ceruminous glands produce earwax."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -213,14 +213,14 @@
           "question": {
             "stem": "Which statement correctly distinguishes the reticular layer from the papillary layer of the dermis?",
             "options": [
+              "The reticular layer is avascular, whereas the papillary layer is well vascularized",
               "The reticular layer is made of dense irregular connective tissue, whereas the papillary layer is loose areolar connective tissue",
               "The reticular layer forms the dermal papillae, whereas the papillary layer provides tensile strength",
-              "The reticular layer contains tactile (Meissner) corpuscles, whereas the papillary layer has none",
               "The reticular layer is superficial to the papillary layer",
-              "The reticular layer is avascular, whereas the papillary layer is well vascularized"
+              "The reticular layer contains tactile (Meissner) corpuscles, whereas the papillary layer has none"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The reticular layer is thick, dense irregular connective tissue, while the papillary layer is loose areolar connective tissue.\n\n**Why the other options are wrong:**\n- **(B)** The papillary layer forms the dermal papillae; the reticular layer provides most of the tensile strength.\n- **(C)** Tactile (Meissner) corpuscles are located in the papillary layer.\n- **(D)** The papillary layer is superficial to the reticular layer.\n- **(E)** Both layers are vascularized; the reticular layer is well vascularized."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The reticular layer is thick, dense irregular connective tissue, while the papillary layer is loose areolar connective tissue.\n\n**Why the other options are wrong:**\n- **(A)** Both layers are vascularized; the reticular layer is well vascularized.\n- **(C)** The papillary layer forms the dermal papillae; the reticular layer provides most of the tensile strength.\n- **(D)** The papillary layer is superficial to the reticular layer.\n- **(E)** Tactile (Meissner) corpuscles are located in the papillary layer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -230,14 +230,14 @@
           "question": {
             "stem": "Which type of sweat gland typically empties its secretion into a hair follicle?",
             "options": [
-              "Eccrine",
-              "Apocrine",
               "Sebaceous",
+              "Apocrine",
               "Ceruminous",
+              "Eccrine",
               "Merocrine"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Apocrine sweat glands are associated with hair follicles in hairy regions and their ducts empty into the follicle.\n\n**Why the other options are wrong:**\n- **(A)** Eccrine glands open directly onto the skin surface through pores.\n- **(C)** Sebaceous glands are oil glands, not sweat glands.\n- **(D)** Ceruminous glands secrete cerumen into the ear canal.\n- **(E)** Merocrine is another name for eccrine glands, which open onto the surface."
+            "explanation": "**Why (B) is correct:** Apocrine sweat glands are associated with hair follicles in hairy regions and their ducts empty into the follicle.\n\n**Why the other options are wrong:**\n- **(A)** Sebaceous glands are oil glands, not sweat glands.\n- **(C)** Ceruminous glands secrete cerumen into the ear canal.\n- **(D)** Eccrine glands open directly onto the skin surface through pores.\n- **(E)** Merocrine is another name for eccrine glands, which open onto the surface."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -248,13 +248,13 @@
             "stem": "In the skin, vitamin D synthesis begins with a precursor derived from which molecule?",
             "options": [
               "Keratin",
-              "Cholesterol",
+              "Eleidin",
               "Melanin",
               "Collagen",
-              "Eleidin"
+              "Cholesterol"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** In the presence of UV light, the skin synthesizes a vitamin D precursor from a derivative of cholesterol.\n\n**Why the other options are wrong:**\n- **(A)** Keratin is a structural protein of keratinocytes, not a vitamin D precursor.\n- **(C)** Melanin is a pigment and can interfere with vitamin D production.\n- **(D)** Collagen is a connective tissue fibre.\n- **(E)** Eleidin is a clear protein in the stratum lucidum."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** In the presence of UV light, the skin synthesizes a vitamin D precursor from a derivative of cholesterol.\n\n**Why the other options are wrong:**\n- **(A)** Keratin is a structural protein of keratinocytes, not a vitamin D precursor.\n- **(B)** Eleidin is a clear protein in the stratum lucidum.\n- **(C)** Melanin is a pigment and can interfere with vitamin D production.\n- **(D)** Collagen is a connective tissue fibre."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -264,14 +264,14 @@
           "question": {
             "stem": "By which structure is melanin transferred from a melanocyte into surrounding keratinocytes?",
             "options": [
-              "Desmosome",
-              "Melanosome",
-              "Basement membrane",
+              "Keratohyalin granule",
               "Dermal papilla",
-              "Keratohyalin granule"
+              "Desmosome",
+              "Basement membrane",
+              "Melanosome"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Melanin is packaged and transferred into keratinocytes via cellular vesicles called melanosomes.\n\n**Why the other options are wrong:**\n- **(A)** Desmosomes link adjacent keratinocytes together, especially in the stratum spinosum.\n- **(C)** The basement membrane anchors the epidermis to the dermis.\n- **(D)** Dermal papillae are folds of the dermis that strengthen the dermal-epidermal junction.\n- **(E)** Keratohyalin granules accumulate in the stratum granulosum and help dehydrate cells."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Melanin is packaged and transferred into keratinocytes via cellular vesicles called melanosomes.\n\n**Why the other options are wrong:**\n- **(A)** Keratohyalin granules accumulate in the stratum granulosum and help dehydrate cells.\n- **(B)** Dermal papillae are folds of the dermis that strengthen the dermal-epidermal junction.\n- **(C)** Desmosomes link adjacent keratinocytes together, especially in the stratum spinosum.\n- **(D)** The basement membrane anchors the epidermis to the dermis."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -281,14 +281,14 @@
           "question": {
             "stem": "Which epidermal layer is composed of dead, flattened keratinocytes filled with the clear protein eleidin and is found only in thick skin?",
             "options": [
+              "Stratum spinosum",
               "Stratum corneum",
               "Stratum lucidum",
               "Stratum granulosum",
-              "Stratum spinosum",
               "Stratum basale"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The stratum lucidum contains dead, flattened cells densely packed with eleidin and is present only in thick skin.\n\n**Why the other options are wrong:**\n- **(A)** The stratum corneum is the outermost layer of fully keratinized cells and is present in all skin.\n- **(C)** The stratum granulosum contains keratohyalin granules, not eleidin.\n- **(D)** The stratum spinosum has living keratinocytes joined by desmosomes.\n- **(E)** The stratum basale is a single layer of stem cells."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The stratum lucidum contains dead, flattened cells densely packed with eleidin and is present only in thick skin.\n\n**Why the other options are wrong:**\n- **(A)** The stratum spinosum has living keratinocytes joined by desmosomes.\n- **(B)** The stratum corneum is the outermost layer of fully keratinized cells and is present in all skin.\n- **(D)** The stratum granulosum contains keratohyalin granules, not eleidin.\n- **(E)** The stratum basale is a single layer of stem cells."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -298,14 +298,14 @@
           "question": {
             "stem": "In a strand of hair, which part contains the actively dividing basal cells that produce new hair?",
             "options": [
-              "Hair shaft",
               "Hair matrix",
+              "Sebaceous duct",
               "Arrector pili",
               "Hair root plexus",
-              "Sebaceous duct"
+              "Hair shaft"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The hair matrix, located in the hair bulb, contains actively dividing basal cells that generate the growing hair.\n\n**Why the other options are wrong:**\n- **(A)** The hair shaft is the dead, exposed portion of the hair.\n- **(C)** The arrector pili is a smooth muscle that makes hair stand up.\n- **(D)** The hair root plexus is a sensory network around the follicle.\n- **(E)** The sebaceous duct delivers sebum, not new hair cells."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The hair matrix, located in the hair bulb, contains actively dividing basal cells that generate the growing hair.\n\n**Why the other options are wrong:**\n- **(B)** The sebaceous duct delivers sebum, not new hair cells.\n- **(C)** The arrector pili is a smooth muscle that makes hair stand up.\n- **(D)** The hair root plexus is a sensory network around the follicle.\n- **(E)** The hair shaft is the dead, exposed portion of the hair."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -315,14 +315,14 @@
           "question": {
             "stem": "The term \"keratinization\" (also called cornification) refers to which process?",
             "options": [
-              "The transfer of pigment from melanocytes to keratinocytes",
-              "The differentiation of cells from stem cells into dead, hardened, protein-filled cells",
+              "The engulfing of bacteria by Langerhans cells",
               "The dilation of dermal arterioles during overheating",
               "The secretion of sebum onto the skin surface",
-              "The engulfing of bacteria by Langerhans cells"
+              "The differentiation of cells from stem cells into dead, hardened, protein-filled cells",
+              "The transfer of pigment from melanocytes to keratinocytes"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Keratinization/cornification is the whole process of cell differentiation from stem cells into dead, hardened cells filled with protein.\n\n**Why the other options are wrong:**\n- **(A)** Pigment transfer describes melanosome activity, not keratinization.\n- **(C)** Arteriole dilation is part of thermoregulation.\n- **(D)** Sebum secretion is a function of sebaceous glands.\n- **(E)** Phagocytosis of bacteria describes Langerhans cell activity."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Keratinization/cornification is the whole process of cell differentiation from stem cells into dead, hardened cells filled with protein.\n\n**Why the other options are wrong:**\n- **(A)** Phagocytosis of bacteria describes Langerhans cell activity.\n- **(B)** Arteriole dilation is part of thermoregulation.\n- **(C)** Sebum secretion is a function of sebaceous glands.\n- **(E)** Pigment transfer describes melanosome activity, not keratinization."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -332,14 +332,14 @@
           "question": {
             "stem": "Which sequence correctly matches each skin layer with its dominant tissue type from superficial to deep?",
             "options": [
-              "Epidermis = connective tissue; dermis = epithelial tissue; hypodermis = adipose tissue",
-              "Epidermis = epithelial tissue; dermis = connective tissue; hypodermis = mostly loose connective and adipose tissue",
               "Epidermis = adipose tissue; dermis = epithelial tissue; hypodermis = connective tissue",
+              "Epidermis = muscle tissue; dermis = epithelial tissue; hypodermis = connective tissue",
               "Epidermis = connective tissue; dermis = adipose tissue; hypodermis = epithelial tissue",
-              "Epidermis = muscle tissue; dermis = epithelial tissue; hypodermis = connective tissue"
+              "Epidermis = epithelial tissue; dermis = connective tissue; hypodermis = mostly loose connective and adipose tissue",
+              "Epidermis = connective tissue; dermis = epithelial tissue; hypodermis = adipose tissue"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The epidermis is epithelial tissue, the dermis is connective tissue, and the hypodermis is mainly loose connective and adipose tissue.\n\n**Why the other options are wrong:**\n- **(A)** It reverses the epidermis and dermis tissue types.\n- **(C)** The epidermis is not adipose tissue.\n- **(D)** The epidermis is not connective tissue and the hypodermis is not epithelial.\n- **(E)** The epidermis is epithelial, not muscle, tissue."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The epidermis is epithelial tissue, the dermis is connective tissue, and the hypodermis is mainly loose connective and adipose tissue.\n\n**Why the other options are wrong:**\n- **(A)** The epidermis is not adipose tissue.\n- **(B)** The epidermis is epithelial, not muscle, tissue.\n- **(C)** The epidermis is not connective tissue and the hypodermis is not epithelial.\n- **(E)** It reverses the epidermis and dermis tissue types."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -350,13 +350,13 @@
             "stem": "Which statement correctly distinguishes the papillary layer from the reticular layer of the dermis?",
             "options": [
               "The papillary layer is dense irregular connective tissue, while the reticular layer is areolar connective tissue",
-              "The papillary layer is made of loose areolar connective tissue, while the reticular layer is dense irregular connective tissue",
               "Both layers are made of dense regular connective tissue",
-              "The papillary layer contains no blood vessels, while the reticular layer is avascular",
-              "The reticular layer forms dermal papillae, while the papillary layer provides tensile strength"
+              "The reticular layer forms dermal papillae, while the papillary layer provides tensile strength",
+              "The papillary layer is made of loose areolar connective tissue, while the reticular layer is dense irregular connective tissue",
+              "The papillary layer contains no blood vessels, while the reticular layer is avascular"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The papillary layer is loose, areolar connective tissue forming the dermal papillae, whereas the deeper reticular layer is thick, dense irregular connective tissue that provides strength.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the tissue types of the two layers.\n- **(C)** Neither layer is dense regular connective tissue.\n- **(D)** Both layers contain blood vessels; the papillary layer has abundant small vessels.\n- **(E)** The papillary layer forms the dermal papillae, and the reticular layer provides tensile strength."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The papillary layer is loose, areolar connective tissue forming the dermal papillae, whereas the deeper reticular layer is thick, dense irregular connective tissue that provides strength.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the tissue types of the two layers.\n- **(B)** Neither layer is dense regular connective tissue.\n- **(C)** The papillary layer forms the dermal papillae, and the reticular layer provides tensile strength.\n- **(E)** Both layers contain blood vessels; the papillary layer has abundant small vessels."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -366,14 +366,14 @@
           "question": {
             "stem": "Which gland produces a hypotonic sweat used mainly for thermoregulation and is especially abundant on the palms, soles, and forehead?",
             "options": [
-              "Apocrine sweat gland",
-              "Eccrine sweat gland",
-              "Sebaceous gland",
               "Ceruminous gland",
-              "Mammary gland"
+              "Mammary gland",
+              "Sebaceous gland",
+              "Apocrine sweat gland",
+              "Eccrine sweat gland"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Eccrine (merocrine) sweat glands secrete a watery, hypotonic sweat for cooling the body and are most abundant on the palms, soles, and forehead.\n\n**Why the other options are wrong:**\n- **(A)** Apocrine glands empty into hair follicles in the armpits and anogenital regions and produce thicker sweat, not primarily for thermoregulation.\n- **(C)** Sebaceous glands secrete oily sebum, not sweat.\n- **(D)** Ceruminous glands produce earwax in the ear canal.\n- **(E)** Mammary glands produce milk."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Eccrine (merocrine) sweat glands secrete a watery, hypotonic sweat for cooling the body and are most abundant on the palms, soles, and forehead.\n\n**Why the other options are wrong:**\n- **(A)** Ceruminous glands produce earwax in the ear canal.\n- **(B)** Mammary glands produce milk.\n- **(C)** Sebaceous glands secrete oily sebum, not sweat.\n- **(D)** Apocrine glands empty into hair follicles in the armpits and anogenital regions and produce thicker sweat, not primarily for thermoregulation."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -383,14 +383,14 @@
           "question": {
             "stem": "In the stratum granulosum, which protein accumulates as granules and helps dehydrate the keratinocytes, causing them to shrink and die?",
             "options": [
-              "Eleidin",
               "Keratohyalin",
+              "Eleidin",
+              "Melanin",
               "Elastin",
-              "Collagen",
-              "Melanin"
+              "Collagen"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Keratohyalin accumulates as granules in the stratum granulosum and helps dehydrate the cells so they shrink and die.\n\n**Why the other options are wrong:**\n- **(A)** Eleidin is the clear protein found later in the stratum lucidum, derived from keratohyalin.\n- **(C)** Elastin is a dermal fibre, not a granular protein in the epidermis.\n- **(D)** Collagen is a connective tissue fibre of the dermis.\n- **(E)** Melanin is the pigment made by melanocytes, not a dehydrating granular protein."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Keratohyalin accumulates as granules in the stratum granulosum and helps dehydrate the cells so they shrink and die.\n\n**Why the other options are wrong:**\n- **(B)** Eleidin is the clear protein found later in the stratum lucidum, derived from keratohyalin.\n- **(C)** Melanin is the pigment made by melanocytes, not a dehydrating granular protein.\n- **(D)** Elastin is a dermal fibre, not a granular protein in the epidermis.\n- **(E)** Collagen is a connective tissue fibre of the dermis."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -400,14 +400,14 @@
           "question": {
             "stem": "Which sequence correctly matches each skin layer to its primary tissue composition?",
             "options": [
-              "Epidermis = connective tissue; dermis = epithelial tissue; hypodermis = adipose tissue",
-              "Epidermis = epithelial tissue; dermis = connective tissue; hypodermis = loose/adipose connective tissue",
-              "Epidermis = muscle tissue; dermis = epithelial tissue; hypodermis = connective tissue",
               "Epidermis = adipose tissue; dermis = epithelial tissue; hypodermis = connective tissue",
-              "Epidermis = connective tissue; dermis = connective tissue; hypodermis = epithelial tissue"
+              "Epidermis = epithelial tissue; dermis = connective tissue; hypodermis = loose/adipose connective tissue",
+              "Epidermis = connective tissue; dermis = connective tissue; hypodermis = epithelial tissue",
+              "Epidermis = muscle tissue; dermis = epithelial tissue; hypodermis = connective tissue",
+              "Epidermis = connective tissue; dermis = epithelial tissue; hypodermis = adipose tissue"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The epidermis is keratinized stratified squamous epithelium, the dermis is connective tissue, and the hypodermis is loose areolar and adipose connective tissue.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the epidermis and dermis tissue types.\n- **(C)** The epidermis is epithelial, not muscle tissue.\n- **(D)** The epidermis is epithelial, not adipose tissue.\n- **(E)** The epidermis is epithelial, not connective tissue."
+            "explanation": "**Why (B) is correct:** The epidermis is keratinized stratified squamous epithelium, the dermis is connective tissue, and the hypodermis is loose areolar and adipose connective tissue.\n\n**Why the other options are wrong:**\n- **(A)** The epidermis is epithelial, not adipose tissue.\n- **(C)** The epidermis is epithelial, not connective tissue.\n- **(D)** The epidermis is epithelial, not muscle tissue.\n- **(E)** This reverses the epidermis and dermis tissue types."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -417,14 +417,14 @@
           "question": {
             "stem": "The term 'cornification' (keratinization) refers to which process in the epidermis?",
             "options": [
-              "The transfer of melanin into keratinocytes via melanosomes",
               "The whole process of cell differentiation from stem cells into dead, hardened, keratin-filled cells",
-              "The folding of the dermis into finger-like projections",
               "The contraction of the arrector pili muscle",
+              "The transfer of melanin into keratinocytes via melanosomes",
+              "The folding of the dermis into finger-like projections",
               "The secretion of sebum onto the skin surface"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Keratinization/cornification is the whole process by which keratinocytes differentiate from basal stem cells into dead, hardened cells filled with keratin.\n\n**Why the other options are wrong:**\n- **(A)** Melanin transfer is pigmentation, not cornification.\n- **(C)** The folds are dermal papillae, unrelated to cornification.\n- **(D)** Arrector pili contraction produces goosebumps, not cornification.\n- **(E)** Sebum secretion is a function of sebaceous glands, not the keratinization process."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Keratinization/cornification is the whole process by which keratinocytes differentiate from basal stem cells into dead, hardened cells filled with keratin.\n\n**Why the other options are wrong:**\n- **(B)** Arrector pili contraction produces goosebumps, not cornification.\n- **(C)** Melanin transfer is pigmentation, not cornification.\n- **(D)** The folds are dermal papillae, unrelated to cornification.\n- **(E)** Sebum secretion is a function of sebaceous glands, not the keratinization process."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -434,14 +434,14 @@
           "question": {
             "stem": "Which cutaneous sensory receptor responds to heavier pressure and high-frequency vibration?",
             "options": [
-              "Merkel cell",
+              "Langerhans cell",
               "Tactile (Meissner) corpuscle",
               "Lamellated (Pacinian) corpuscle",
-              "Melanocyte",
-              "Langerhans cell"
+              "Merkel cell",
+              "Melanocyte"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The lamellated (Pacinian) corpuscle detects heavier pressure and high-frequency vibration.\n\n**Why the other options are wrong:**\n- **(A)** Merkel cells detect light touch and sustained low-frequency vibration (slow-adapting).\n- **(B)** Meissner corpuscles detect light touch and transient low-frequency vibration (fast-adapting).\n- **(D)** Melanocytes produce pigment and are not sensory receptors.\n- **(E)** Langerhans cells are macrophages that perform phagocytosis, not sensation."
+            "explanation": "**Why (C) is correct:** The lamellated (Pacinian) corpuscle detects heavier pressure and high-frequency vibration.\n\n**Why the other options are wrong:**\n- **(A)** Langerhans cells are macrophages that perform phagocytosis, not sensation.\n- **(B)** Meissner corpuscles detect light touch and transient low-frequency vibration (fast-adapting).\n- **(D)** Merkel cells detect light touch and sustained low-frequency vibration (slow-adapting).\n- **(E)** Melanocytes produce pigment and are not sensory receptors."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -451,14 +451,14 @@
           "question": {
             "stem": "Thick skin, which includes a fifth epidermal layer, is found only in which locations?",
             "options": [
-              "The face and scalp",
-              "The back and abdomen",
               "The palms of the hands and soles of the feet",
               "The eyelids and lips",
+              "The back and abdomen",
+              "The face and scalp",
               "The armpits and anogenital regions"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Thick skin, which contains the extra stratum lucidum, is found only on the palms of the hands and the soles of the feet (and digits).\n\n**Why the other options are wrong:**\n- **(A)** The face and scalp have thin skin (four layers).\n- **(B)** The back and abdomen have thin skin.\n- **(D)** The eyelids and lips are covered by thin skin.\n- **(E)** The armpits and anogenital regions are thin skin with abundant apocrine glands."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Thick skin, which contains the extra stratum lucidum, is found only on the palms of the hands and the soles of the feet (and digits).\n\n**Why the other options are wrong:**\n- **(B)** The eyelids and lips are covered by thin skin.\n- **(C)** The back and abdomen have thin skin.\n- **(D)** The face and scalp have thin skin (four layers).\n- **(E)** The armpits and anogenital regions are thin skin with abundant apocrine glands."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -485,14 +485,14 @@
           "question": {
             "stem": "Which structure of a hair is the actively growing layer of dividing basal cells located at the deep end of the hair root?",
             "options": [
-              "Hair shaft",
               "Hair matrix",
-              "Arrector pili",
               "Sebaceous gland",
-              "Hair follicle"
+              "Hair follicle",
+              "Arrector pili",
+              "Hair shaft"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The hair matrix, within the hair bulb at the deep end of the root, is the layer of actively dividing basal cells that produce the hair.\n\n**Why the other options are wrong:**\n- **(A)** The hair shaft is the dead, exposed portion of the hair, not the growth region.\n- **(C)** The arrector pili is a smooth muscle that makes hair stand up.\n- **(D)** The sebaceous gland secretes sebum and does not produce hair.\n- **(E)** The hair follicle is the sac from which hair grows, not the dividing cell layer itself."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The hair matrix, within the hair bulb at the deep end of the root, is the layer of actively dividing basal cells that produce the hair.\n\n**Why the other options are wrong:**\n- **(B)** The sebaceous gland secretes sebum and does not produce hair.\n- **(C)** The hair follicle is the sac from which hair grows, not the dividing cell layer itself.\n- **(D)** The arrector pili is a smooth muscle that makes hair stand up.\n- **(E)** The hair shaft is the dead, exposed portion of the hair, not the growth region."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -503,13 +503,13 @@
             "stem": "Which sweat gland produces a hypotonic sweat that is released directly onto the skin surface for thermoregulation?",
             "options": [
               "Apocrine sweat gland",
-              "Eccrine sweat gland",
               "Ceruminous gland",
+              "Eccrine sweat gland",
               "Sebaceous gland",
               "Mammary gland"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Eccrine (merocrine) sweat glands secrete a hypotonic, watery sweat through a duct opening onto the skin surface and are the primary glands involved in thermoregulation.\n\n**Why the other options are wrong:**\n- **(A)** Apocrine glands empty into hair follicles and produce a thicker, organic-rich secretion, not thermoregulatory hypotonic sweat.\n- **(C)** Ceruminous glands are modified apocrine glands that produce cerumen (earwax) in the ear canal.\n- **(D)** Sebaceous glands secrete oily sebum, not sweat.\n- **(E)** Mammary glands are modified apocrine glands that produce milk."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Eccrine (merocrine) sweat glands secrete a hypotonic, watery sweat through a duct opening onto the skin surface and are the primary glands involved in thermoregulation.\n\n**Why the other options are wrong:**\n- **(A)** Apocrine glands empty into hair follicles and produce a thicker, organic-rich secretion, not thermoregulatory hypotonic sweat.\n- **(B)** Ceruminous glands are modified apocrine glands that produce cerumen (earwax) in the ear canal.\n- **(D)** Sebaceous glands secrete oily sebum, not sweat.\n- **(E)** Mammary glands are modified apocrine glands that produce milk."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1473,14 +1473,14 @@
           "question": {
             "stem": "On a hot day during vigorous exercise, a person's skin becomes visibly red and they begin sweating heavily. Which combination of dermal responses is responsible for these two observations?",
             "options": [
-              "Arterioles in the dermis dilate, and eccrine sweat glands increase secretion",
-              "Arterioles in the dermis constrict, and sebaceous glands increase secretion",
-              "Arterioles in the dermis dilate, and apocrine sweat glands empty into hair follicles",
+              "Arrector pili muscles contract, and ceruminous glands increase secretion",
               "Arterioles in the dermis constrict, and eccrine sweat glands increase secretion",
-              "Arrector pili muscles contract, and ceruminous glands increase secretion"
+              "Arterioles in the dermis dilate, and apocrine sweat glands empty into hair follicles",
+              "Arterioles in the dermis constrict, and sebaceous glands increase secretion",
+              "Arterioles in the dermis dilate, and eccrine sweat glands increase secretion"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** When the body overheats, dermal arterioles dilate to dissipate heat through the skin (causing redness), while eccrine sweat glands secrete large volumes of watery sweat that cools the body as it evaporates.\n\n**Why the other options are wrong:**\n- **(B)** Constriction conserves heat and causes pallor, not redness, and sebaceous glands secrete oil, not cooling sweat.\n- **(C)** Apocrine glands are for the poorly understood pheromone/odor response, not primary thermoregulation.\n- **(D)** Arteriole constriction would produce a whitish hue and reduce heat loss, opposite to the observed redness.\n- **(E)** Arrector pili contraction traps air for warmth, and ceruminous glands make earwax, neither of which cools the body."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** When the body overheats, dermal arterioles dilate to dissipate heat through the skin (causing redness), while eccrine sweat glands secrete large volumes of watery sweat that cools the body as it evaporates.\n\n**Why the other options are wrong:**\n- **(A)** Arrector pili contraction traps air for warmth, and ceruminous glands make earwax, neither of which cools the body.\n- **(B)** Arteriole constriction would produce a whitish hue and reduce heat loss, opposite to the observed redness.\n- **(C)** Apocrine glands are for the poorly understood pheromone/odor response, not primary thermoregulation.\n- **(D)** Constriction conserves heat and causes pallor, not redness, and sebaceous glands secrete oil, not cooling sweat."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1490,14 +1490,14 @@
           "question": {
             "stem": "A patient with severe vitamin D deficiency also shows poor calcium absorption from the small intestine. How does the integumentary system normally contribute to preventing this problem?",
             "options": [
-              "The dermis stores calcium that is released into blood during sunlight exposure",
-              "The epidermis synthesizes a vitamin D precursor from a cholesterol derivative when exposed to UV radiation",
               "Sebaceous glands secrete calcitriol directly onto the skin surface",
               "Melanocytes convert melanin into calcitriol in the presence of sunlight",
+              "The dermis stores calcium that is released into blood during sunlight exposure",
+              "The epidermis synthesizes a vitamin D precursor from a cholesterol derivative when exposed to UV radiation",
               "Eccrine sweat glands reabsorb calcium and return it to the blood"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** UV radiation triggers the epidermis to synthesize a vitamin D precursor from a cholesterol derivative, which is later converted to calcitriol in the liver and kidneys to aid calcium absorption.\n\n**Why the other options are wrong:**\n- **(A)** The dermis does not store or release calcium in this way.\n- **(C)** Sebaceous glands secrete sebum (lipids), not calcitriol.\n- **(D)** Melanocytes produce melanin for UV protection, not calcitriol.\n- **(E)** Eccrine glands release sweat and cannot synthesize or reabsorb vitamin D-related calcium."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** UV radiation triggers the epidermis to synthesize a vitamin D precursor from a cholesterol derivative, which is later converted to calcitriol in the liver and kidneys to aid calcium absorption.\n\n**Why the other options are wrong:**\n- **(A)** Sebaceous glands secrete sebum (lipids), not calcitriol.\n- **(B)** Melanocytes produce melanin for UV protection, not calcitriol.\n- **(C)** The dermis does not store or release calcium in this way.\n- **(E)** Eccrine glands release sweat and cannot synthesize or reabsorb vitamin D-related calcium."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1507,14 +1507,14 @@
           "question": {
             "stem": "An electrologist aims to permanently prevent a hair from regrowing. Which part of the hair must be destroyed, and why?",
             "options": [
-              "The hair shaft, because it contains the actively dividing cells",
-              "The hair bulb, because it contains the matrix of dividing basal cells",
               "The arrector pili muscle, because it produces new keratinocytes",
               "The sebaceous gland, because it generates the keratin of the hair",
+              "The hair shaft, because it contains the actively dividing cells",
+              "The hair bulb, because it contains the matrix of dividing basal cells",
               "The stratum corneum, because it anchors the hair to the follicle"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The hair bulb contains the hair matrix of dividing basal cells that produce new hair cells, so destroying it prevents further growth.\n\n**Why the other options are wrong:**\n- **(A)** The hair shaft is dead keratinized cells with no dividing cells; cutting it is only superficial.\n- **(C)** The arrector pili is a smooth muscle for goosebumps, not for producing hair cells.\n- **(D)** Sebaceous glands secrete sebum and do not generate hair keratin.\n- **(E)** The stratum corneum is dead surface epidermis and does not anchor hair."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The hair bulb contains the hair matrix of dividing basal cells that produce new hair cells, so destroying it prevents further growth.\n\n**Why the other options are wrong:**\n- **(A)** The arrector pili is a smooth muscle for goosebumps, not for producing hair cells.\n- **(B)** Sebaceous glands secrete sebum and do not generate hair keratin.\n- **(C)** The hair shaft is dead keratinized cells with no dividing cells; cutting it is only superficial.\n- **(E)** The stratum corneum is dead surface epidermis and does not anchor hair."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1524,14 +1524,14 @@
           "question": {
             "stem": "A dermatologist examines a patient with several dark skin spots and must distinguish freckles from moles. Which statement correctly describes the difference?",
             "options": [
-              "Freckles are larger masses of melanocytes, while moles are irregular scatterings of keratinocytes",
+              "Freckles are always malignant, while moles are always benign",
               "Freckles result from irregular accumulation of melanocytes, while moles are larger masses of melanocytes that should be monitored for cancer",
               "Freckles are caused by excess carotene, while moles are caused by excess hemoglobin",
-              "Freckles are always malignant, while moles are always benign",
+              "Freckles are larger masses of melanocytes, while moles are irregular scatterings of keratinocytes",
               "Freckles form in the reticular layer, while moles form in the stratum corneum"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Freckles are irregular accumulations of melanocytes, whereas moles are larger masses of melanocytes that are mostly benign but should be watched for cancerous changes.\n\n**Why the other options are wrong:**\n- **(A)** The sizes are reversed and both involve melanocytes, not keratinocytes.\n- **(C)** Both freckles and moles arise from melanocytes/melanin, not carotene or hemoglobin.\n- **(D)** Freckles are not malignant, and moles are only mostly benign, not always.\n- **(E)** Both involve melanocytes in the epidermis, not those specific layers."
+            "explanation": "**Why (B) is correct:** Freckles are irregular accumulations of melanocytes, whereas moles are larger masses of melanocytes that are mostly benign but should be watched for cancerous changes.\n\n**Why the other options are wrong:**\n- **(A)** Freckles are not malignant, and moles are only mostly benign, not always.\n- **(C)** Both freckles and moles arise from melanocytes/melanin, not carotene or hemoglobin.\n- **(D)** The sizes are reversed and both involve melanocytes, not keratinocytes.\n- **(E)** Both involve melanocytes in the epidermis, not those specific layers."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1541,14 +1541,14 @@
           "question": {
             "stem": "A student compares an eccrine sweat gland with an apocrine sweat gland. Which statement correctly distinguishes them?",
             "options": [
-              "Eccrine glands empty into hair follicles, while apocrine glands open directly onto the skin surface",
-              "Eccrine glands produce a hypotonic sweat for thermoregulation, while apocrine glands produce a thicker secretion that empties into hair follicles",
-              "Eccrine glands are found only in the armpits, while apocrine glands cover the entire body",
               "Eccrine glands secrete sebum, while apocrine glands secrete cerumen",
-              "Eccrine glands lie deeper in the dermis than apocrine glands"
+              "Eccrine glands are found only in the armpits, while apocrine glands cover the entire body",
+              "Eccrine glands produce a hypotonic sweat for thermoregulation, while apocrine glands produce a thicker secretion that empties into hair follicles",
+              "Eccrine glands lie deeper in the dermis than apocrine glands",
+              "Eccrine glands empty into hair follicles, while apocrine glands open directly onto the skin surface"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Eccrine glands release a watery, hypotonic sweat onto the skin surface for cooling, whereas apocrine glands are larger, deeper, produce a thicker organic secretion, and typically empty into hair follicles.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the ducts; eccrine open to the surface and apocrine empty into follicles.\n- **(C)** Eccrine glands are widespread (palms, soles, forehead), while apocrine are in armpits/anogenital regions.\n- **(D)** Neither secretes sebum; sebaceous glands make sebum and ceruminous glands make cerumen.\n- **(E)** Apocrine glands lie deeper in the dermis than eccrine glands, not the reverse."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Eccrine glands release a watery, hypotonic sweat onto the skin surface for cooling, whereas apocrine glands are larger, deeper, produce a thicker organic secretion, and typically empty into hair follicles.\n\n**Why the other options are wrong:**\n- **(A)** Neither secretes sebum; sebaceous glands make sebum and ceruminous glands make cerumen.\n- **(B)** Eccrine glands are widespread (palms, soles, forehead), while apocrine are in armpits/anogenital regions.\n- **(D)** Apocrine glands lie deeper in the dermis than eccrine glands, not the reverse.\n- **(E)** This reverses the ducts; eccrine open to the surface and apocrine empty into follicles."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1558,14 +1558,14 @@
           "question": {
             "stem": "A histology slide shows three skin regions: one is avascular epithelial tissue, one is dense connective tissue with blood vessels, and one is mostly adipose tissue anchoring the skin to muscle. Which identification is correct?",
             "options": [
-              "Epidermis = avascular epithelium; dermis = connective tissue with vessels; hypodermis = adipose tissue",
-              "Epidermis = adipose tissue; dermis = avascular epithelium; hypodermis = connective tissue with vessels",
               "Epidermis = connective tissue with vessels; dermis = adipose tissue; hypodermis = avascular epithelium",
+              "All three regions are composed of avascular epithelial tissue",
+              "Epidermis = avascular epithelium; dermis = connective tissue with vessels; hypodermis = adipose tissue",
               "Epidermis = adipose tissue; dermis = connective tissue with vessels; hypodermis = avascular epithelium",
-              "All three regions are composed of avascular epithelial tissue"
+              "Epidermis = adipose tissue; dermis = avascular epithelium; hypodermis = connective tissue with vessels"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The epidermis is avascular keratinized epithelium, the dermis is vascularized connective tissue, and the hypodermis is largely adipose (fatty) connective tissue that connects skin to underlying fascia.\n\n**Why the other options are wrong:**\n- **(B)** The tissue types are mismatched to the wrong layers.\n- **(C)** The epidermis is epithelium, not connective tissue, and identifications are scrambled.\n- **(D)** The epidermis is not adipose tissue.\n- **(E)** Only the epidermis is avascular epithelium; the dermis and hypodermis are connective tissue."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The epidermis is avascular keratinized epithelium, the dermis is vascularized connective tissue, and the hypodermis is largely adipose (fatty) connective tissue that connects skin to underlying fascia.\n\n**Why the other options are wrong:**\n- **(A)** The epidermis is epithelium, not connective tissue, and identifications are scrambled.\n- **(B)** Only the epidermis is avascular epithelium; the dermis and hypodermis are connective tissue.\n- **(D)** The epidermis is not adipose tissue.\n- **(E)** The tissue types are mismatched to the wrong layers."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1575,14 +1575,14 @@
           "question": {
             "stem": "As a keratinocyte migrates from the stratum spinosum through the stratum granulosum, which change occurs in this transition?",
             "options": [
-              "The cell begins mitosis to produce more basal cells",
-              "The cell accumulates keratohyalin granules, dehydrates, and its nucleus and organelles begin to disintegrate",
-              "The cell becomes filled with eleidin and forms the translucent layer",
               "The cell gains desmosomes for the first time to create a spiny appearance",
+              "The cell accumulates keratohyalin granules, dehydrates, and its nucleus and organelles begin to disintegrate",
+              "The cell begins mitosis to produce more basal cells",
+              "The cell becomes filled with eleidin and forms the translucent layer",
               "The cell transforms into a melanocyte to produce pigment"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** In the stratum granulosum, keratinocytes accumulate keratohyalin granules that help dehydrate the cells, causing them to flatten, shrink, and lose their nuclei and organelles as they die.\n\n**Why the other options are wrong:**\n- **(A)** Mitosis producing basal cells occurs in the stratum basale, not the granulosum.\n- **(C)** Eleidin and the translucent layer characterize the stratum lucidum, which is more superficial.\n- **(D)** Desmosomes give the deeper stratum spinosum its spiny look, not this transition.\n- **(E)** Keratinocytes do not become melanocytes; melanocytes are a separate cell line."
+            "explanation": "**Why (B) is correct:** In the stratum granulosum, keratinocytes accumulate keratohyalin granules that help dehydrate the cells, causing them to flatten, shrink, and lose their nuclei and organelles as they die.\n\n**Why the other options are wrong:**\n- **(A)** Desmosomes give the deeper stratum spinosum its spiny look, not this transition.\n- **(C)** Mitosis producing basal cells occurs in the stratum basale, not the granulosum.\n- **(D)** Eleidin and the translucent layer characterize the stratum lucidum, which is more superficial.\n- **(E)** Keratinocytes do not become melanocytes; melanocytes are a separate cell line."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1592,14 +1592,14 @@
           "question": {
             "stem": "Two touch receptors in the skin respond to light touch, but one adapts slowly to sustained pressure while the other adapts quickly to transient touch. Which pairing correctly identifies them?",
             "options": [
-              "Merkel cells = fast-adapting to transient touch; tactile (Meissner) corpuscles = slow-adapting to sustained touch",
-              "Merkel cells = slow-adapting to sustained touch; tactile (Meissner) corpuscles = fast-adapting to transient touch",
+              "Merkel cells and tactile corpuscles both respond only to high-frequency vibration",
               "Lamellated (Pacinian) corpuscles = slow-adapting to sustained touch; Merkel cells = fast-adapting to transient touch",
               "Tactile (Meissner) corpuscles = respond only to deep pressure; lamellated (Pacinian) corpuscles = respond only to light touch",
-              "Merkel cells and tactile corpuscles both respond only to high-frequency vibration"
+              "Merkel cells = fast-adapting to transient touch; tactile (Meissner) corpuscles = slow-adapting to sustained touch",
+              "Merkel cells = slow-adapting to sustained touch; tactile (Meissner) corpuscles = fast-adapting to transient touch"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Merkel cells are slow-adapting receptors for sustained light touch and low-frequency vibration, whereas tactile (Meissner) corpuscles are fast-adapting receptors for light touch and transient changes.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the adaptation properties of the two receptors.\n- **(C)** Lamellated corpuscles respond to heavy pressure and high-frequency vibration, not slow sustained touch.\n- **(D)** Meissner corpuscles respond to light touch, and Pacinian corpuscles respond to vibration/deep pressure, not the reverse.\n- **(E)** Neither Merkel cells nor Meissner corpuscles specialize in high-frequency vibration."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Merkel cells are slow-adapting receptors for sustained light touch and low-frequency vibration, whereas tactile (Meissner) corpuscles are fast-adapting receptors for light touch and transient changes.\n\n**Why the other options are wrong:**\n- **(A)** Neither Merkel cells nor Meissner corpuscles specialize in high-frequency vibration.\n- **(B)** Lamellated corpuscles respond to heavy pressure and high-frequency vibration, not slow sustained touch.\n- **(C)** Meissner corpuscles respond to light touch, and Pacinian corpuscles respond to vibration/deep pressure, not the reverse.\n- **(D)** This reverses the adaptation properties of the two receptors."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1609,14 +1609,14 @@
           "question": {
             "stem": "A student needs to define the term 'keratinization' (cornification) as used in this unit. Which definition is correct?",
             "options": [
-              "The transfer of melanin from melanocytes into keratinocytes via melanosomes",
-              "The whole process of cell differentiation from stem cells into dead, hardened cells filled with keratin",
               "The dilation of dermal arterioles to release excess body heat",
               "The secretion of sebum onto the surface of the stratum corneum",
+              "The transfer of melanin from melanocytes into keratinocytes via melanosomes",
+              "The whole process of cell differentiation from stem cells into dead, hardened cells filled with keratin",
               "The folding of the papillary layer into dermal papillae"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Keratinization (cornification) refers to the entire process by which keratinocytes differentiate from basal stem cells into dead, hardened, keratin-filled cells at the surface.\n\n**Why the other options are wrong:**\n- **(A)** This describes pigment transfer via melanosomes, a separate process.\n- **(C)** This describes a thermoregulatory response, not keratinization.\n- **(D)** This describes sebaceous gland secretion, not keratinization.\n- **(E)** This describes dermal papilla formation, unrelated to keratinization."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Keratinization (cornification) refers to the entire process by which keratinocytes differentiate from basal stem cells into dead, hardened, keratin-filled cells at the surface.\n\n**Why the other options are wrong:**\n- **(A)** This describes a thermoregulatory response, not keratinization.\n- **(B)** This describes sebaceous gland secretion, not keratinization.\n- **(C)** This describes pigment transfer via melanosomes, a separate process.\n- **(E)** This describes dermal papilla formation, unrelated to keratinization."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1626,14 +1626,14 @@
           "question": {
             "stem": "When comparing the papillary and reticular layers of the dermis, which statement is accurate?",
             "options": [
-              "The papillary layer is dense irregular connective tissue, while the reticular layer is loose areolar tissue",
               "The papillary layer is loose areolar tissue containing tactile corpuscles, while the reticular layer is thick, dense irregular tissue providing tensile strength",
-              "The papillary layer is avascular, while the reticular layer contains no nerves",
               "The papillary layer forms the hair bulb, while the reticular layer forms the dermal papillae",
-              "Both layers are composed entirely of adipose tissue for insulation"
+              "The papillary layer is avascular, while the reticular layer contains no nerves",
+              "Both layers are composed entirely of adipose tissue for insulation",
+              "The papillary layer is dense irregular connective tissue, while the reticular layer is loose areolar tissue"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The superficial papillary layer is loose areolar connective tissue containing tactile (Meissner) corpuscles and small vessels, while the deeper reticular layer is thick, dense irregular connective tissue giving the skin its strength and elasticity.\n\n**Why the other options are wrong:**\n- **(A)** The tissue types are reversed; the papillary layer is loose and the reticular is dense.\n- **(C)** Both layers are vascularized, and the reticular layer has rich innervation.\n- **(D)** The papillary layer forms dermal papillae; the hair bulb is a hair structure, not formed by the reticular layer.\n- **(E)** Neither dermal layer is composed entirely of adipose tissue; that describes the hypodermis."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The superficial papillary layer is loose areolar connective tissue containing tactile (Meissner) corpuscles and small vessels, while the deeper reticular layer is thick, dense irregular connective tissue giving the skin its strength and elasticity.\n\n**Why the other options are wrong:**\n- **(B)** The papillary layer forms dermal papillae; the hair bulb is a hair structure, not formed by the reticular layer.\n- **(C)** Both layers are vascularized, and the reticular layer has rich innervation.\n- **(D)** Neither dermal layer is composed entirely of adipose tissue; that describes the hypodermis.\n- **(E)** The tissue types are reversed; the papillary layer is loose and the reticular is dense."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1643,14 +1643,14 @@
           "question": {
             "stem": "A student examines a hair follicle and identifies the deep, actively dividing region responsible for producing the cells of the hair shaft. Which part of the hair is this, and what does it do?",
             "options": [
+              "The hair root plexus, which produces melanin for the growing hair",
               "The hair matrix, a layer of dividing basal cells that pushes new cells outward to form the hair",
-              "The hair papilla, which contains keratinocytes that produce the exposed shaft",
               "The hair shaft, where new cells are generated before being pushed into the root",
               "The arrector pili, which produces new keratinized cells during goosebumps",
-              "The hair root plexus, which produces melanin for the growing hair"
+              "The hair papilla, which contains keratinocytes that produce the exposed shaft"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The hair matrix is the layer of actively growing basal cells in the hair bulb that divides and pushes cells outward to build the hair root and shaft.\n\n**Why the other options are wrong:**\n- **(B)** The hair papilla is connective tissue containing capillaries and nerve endings, not the dividing cell layer.\n- **(C)** The hair shaft is fully dead keratinized cells and does not generate new cells.\n- **(D)** The arrector pili is a smooth muscle that raises the hair, not a producer of hair cells.\n- **(E)** The hair root plexus is a sensory nerve network, not a source of melanin or new cells."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The hair matrix is the layer of actively growing basal cells in the hair bulb that divides and pushes cells outward to build the hair root and shaft.\n\n**Why the other options are wrong:**\n- **(A)** The hair root plexus is a sensory nerve network, not a source of melanin or new cells.\n- **(C)** The hair shaft is fully dead keratinized cells and does not generate new cells.\n- **(D)** The arrector pili is a smooth muscle that raises the hair, not a producer of hair cells.\n- **(E)** The hair papilla is connective tissue containing capillaries and nerve endings, not the dividing cell layer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1660,14 +1660,14 @@
           "question": {
             "stem": "Eccrine sweat glands are especially important for one particular function. Based on their secretion and distribution, what is their primary role?",
             "options": [
-              "Producing pheromone-rich secretions decomposed by bacteria",
               "Thermoregulation by releasing hypotonic sweat that cools the body as it evaporates",
-              "Lubricating and waterproofing the skin surface with lipids",
               "Emptying secretions into hair follicles in the armpits",
-              "Producing cerumen to protect the eardrum"
+              "Lubricating and waterproofing the skin surface with lipids",
+              "Producing cerumen to protect the eardrum",
+              "Producing pheromone-rich secretions decomposed by bacteria"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Eccrine glands produce a hypotonic sweat that is released onto the skin surface for thermoregulation, cooling the body as it evaporates.\n\n**Why the other options are wrong:**\n- **(A)** Pheromone-related, bacterially-decomposed secretions are characteristic of apocrine glands.\n- **(C)** Lubricating lipid secretion is the function of sebaceous glands.\n- **(D)** Emptying into hair follicles in the armpits describes apocrine glands.\n- **(E)** Cerumen production is done by ceruminous glands, a modified apocrine gland."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Eccrine glands produce a hypotonic sweat that is released onto the skin surface for thermoregulation, cooling the body as it evaporates.\n\n**Why the other options are wrong:**\n- **(B)** Emptying into hair follicles in the armpits describes apocrine glands.\n- **(C)** Lubricating lipid secretion is the function of sebaceous glands.\n- **(D)** Cerumen production is done by ceruminous glands, a modified apocrine gland.\n- **(E)** Pheromone-related, bacterially-decomposed secretions are characteristic of apocrine glands."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1678,13 +1678,13 @@
             "stem": "Compared to the reticular layer, the papillary layer of the dermis is best characterized by which of the following?",
             "options": [
               "Dense, irregular connective tissue that provides most of the skin's tensile strength",
-              "Loose, areolar connective tissue containing tactile (Meissner) corpuscles and dermal papillae",
               "Keratinized, stratified squamous epithelium that is avascular",
+              "Loose, areolar connective tissue containing tactile (Meissner) corpuscles and dermal papillae",
               "Adipose-rich connective tissue that anchors skin to underlying fascia",
               "A layer entirely lacking blood vessels or nerve fibres"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The papillary layer is made of loose, areolar connective tissue and contains dermal papillae and tactile (Meissner) corpuscles.\n\n**Why the other options are wrong:**\n- **(A)** Dense irregular connective tissue with high tensile strength describes the reticular layer.\n- **(C)** Keratinized stratified squamous epithelium is the epidermis, not dermis.\n- **(D)** Adipose-rich tissue anchoring skin to fascia is the hypodermis.\n- **(E)** The papillary layer is richly supplied with small blood vessels and nerve fibres."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The papillary layer is made of loose, areolar connective tissue and contains dermal papillae and tactile (Meissner) corpuscles.\n\n**Why the other options are wrong:**\n- **(A)** Dense irregular connective tissue with high tensile strength describes the reticular layer.\n- **(B)** Keratinized stratified squamous epithelium is the epidermis, not dermis.\n- **(D)** Adipose-rich tissue anchoring skin to fascia is the hypodermis.\n- **(E)** The papillary layer is richly supplied with small blood vessels and nerve fibres."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1694,14 +1694,14 @@
           "question": {
             "stem": "A student encounters the terms 'keratinization' and 'cornification' in the unit. Which statement correctly describes what these terms refer to?",
             "options": [
-              "The same process: cell differentiation from stem cells into dead, hardened, protein-filled cells",
+              "The production of sebum by sebaceous glands to waterproof the skin",
               "Two opposing processes, where keratinization builds cells and cornification destroys them",
-              "The transfer of melanin from melanocytes to keratinocytes via melanosomes",
+              "The same process: cell differentiation from stem cells into dead, hardened, protein-filled cells",
               "The dehydration of cells specifically caused by eleidin in the stratum lucidum",
-              "The production of sebum by sebaceous glands to waterproof the skin"
+              "The transfer of melanin from melanocytes to keratinocytes via melanosomes"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Keratinization and cornification are synonyms describing the whole process of cell differentiation from stem cells into dead, hardened cells filled with keratin.\n\n**Why the other options are wrong:**\n- **(B)** They are the same process, not opposing ones.\n- **(C)** Melanin transfer via melanosomes is pigmentation, a different concept.\n- **(D)** Eleidin's role is specific to the stratum lucidum and is not the definition of keratinization.\n- **(E)** Sebum production is a function of sebaceous glands, unrelated to these terms."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Keratinization and cornification are synonyms describing the whole process of cell differentiation from stem cells into dead, hardened cells filled with keratin.\n\n**Why the other options are wrong:**\n- **(A)** Sebum production is a function of sebaceous glands, unrelated to these terms.\n- **(B)** They are the same process, not opposing ones.\n- **(D)** Eleidin's role is specific to the stratum lucidum and is not the definition of keratinization.\n- **(E)** Melanin transfer via melanosomes is pigmentation, a different concept."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1711,14 +1711,14 @@
           "question": {
             "stem": "Which of the following correctly distinguishes sebaceous glands from apocrine sweat glands?",
             "options": [
+              "Both glands secrete cerumen, but sebaceous glands do so only in the ear canal",
               "Sebaceous glands secrete a hypotonic watery sweat, whereas apocrine glands secrete lipids",
               "Sebaceous glands secrete sebum to lubricate hair and skin, whereas apocrine glands secrete an odor-producing sweat into hair follicles",
-              "Both glands secrete cerumen, but sebaceous glands do so only in the ear canal",
-              "Sebaceous glands are found only in the palms and soles, whereas apocrine glands are widespread",
-              "Apocrine glands are inactive until puberty, whereas sebaceous glands are active from birth onward without change"
+              "Apocrine glands are inactive until puberty, whereas sebaceous glands are active from birth onward without change",
+              "Sebaceous glands are found only in the palms and soles, whereas apocrine glands are widespread"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Sebaceous glands secrete lipid-rich sebum to lubricate and waterproof, whereas apocrine glands empty an organic-rich sweat into hair follicles that bacteria decompose to produce odor.\n\n**Why the other options are wrong:**\n- **(A)** Hypotonic watery sweat is produced by eccrine glands, not sebaceous glands.\n- **(C)** Cerumen is produced by ceruminous glands (modified apocrine), not sebaceous glands generally.\n- **(D)** Sebaceous glands are found all over the body associated with hair follicles, not just palms and soles.\n- **(E)** Sebaceous gland secretion is stimulated by hormones and becomes active at puberty, not unchanged from birth."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Sebaceous glands secrete lipid-rich sebum to lubricate and waterproof, whereas apocrine glands empty an organic-rich sweat into hair follicles that bacteria decompose to produce odor.\n\n**Why the other options are wrong:**\n- **(A)** Cerumen is produced by ceruminous glands (modified apocrine), not sebaceous glands generally.\n- **(B)** Hypotonic watery sweat is produced by eccrine glands, not sebaceous glands.\n- **(D)** Sebaceous gland secretion is stimulated by hormones and becomes active at puberty, not unchanged from birth.\n- **(E)** Sebaceous glands are found all over the body associated with hair follicles, not just palms and soles."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1728,14 +1728,14 @@
           "question": {
             "stem": "A researcher records that a receptor in the skin responds strongly to sustained, unchanging light pressure (slow-adapting) and is located in the stratum basale. Which sensory structure is this?",
             "options": [
-              "Lamellated (Pacinian) corpuscle",
-              "Tactile (Meissner) corpuscle",
               "Merkel cell",
+              "Tactile (Meissner) corpuscle",
+              "Lamellated (Pacinian) corpuscle",
               "Arrector pili muscle",
               "Hair root plexus"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Merkel cells are located in the stratum basale and are slow-adapting receptors for light touch and sustained low-frequency vibration.\n\n**Why the other options are wrong:**\n- **(A)** Lamellated (Pacinian) corpuscles respond to heavy pressure and high-frequency vibration, not sustained light pressure.\n- **(B)** Tactile (Meissner) corpuscles are fast-adapting, responding to transient touch, and lie in the papillary dermis.\n- **(D)** The arrector pili is a muscle, not a sensory receptor.\n- **(E)** The hair root plexus senses hair movement, not sustained skin pressure."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Merkel cells are located in the stratum basale and are slow-adapting receptors for light touch and sustained low-frequency vibration.\n\n**Why the other options are wrong:**\n- **(B)** Tactile (Meissner) corpuscles are fast-adapting, responding to transient touch, and lie in the papillary dermis.\n- **(C)** Lamellated (Pacinian) corpuscles respond to heavy pressure and high-frequency vibration, not sustained light pressure.\n- **(D)** The arrector pili is a muscle, not a sensory receptor.\n- **(E)** The hair root plexus senses hair movement, not sustained skin pressure."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1745,14 +1745,14 @@
           "question": {
             "stem": "Which pairing correctly links a function of the integumentary system with the mechanism that accomplishes it?",
             "options": [
+              "Excretion — eleidin in the stratum lucidum removes metabolic waste",
               "Vitamin D synthesis — arterioles in the dermis dilate to release the vitamin",
-              "Thermoregulation — the stratum corneum synthesizes calcitriol from cholesterol",
               "Protection against water loss — keratin and glycolipids in the stratum corneum",
               "Sensation — melanocytes in the stratum basale detect surface temperature",
-              "Excretion — eleidin in the stratum lucidum removes metabolic waste"
+              "Thermoregulation — the stratum corneum synthesizes calcitriol from cholesterol"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The stratum corneum resists water loss because of its layers of keratin and water-repelling glycolipids.\n\n**Why the other options are wrong:**\n- **(A)** Vitamin D synthesis begins in the epidermis from cholesterol, not via arteriole dilation.\n- **(B)** Thermoregulation involves sweat and arteriole dilation, not calcitriol synthesis.\n- **(D)** Melanocytes produce pigment; sensory receptors (not melanocytes) detect temperature.\n- **(E)** Excretion of waste occurs through sweat, not through eleidin."
+            "explanation": "**Why (C) is correct:** The stratum corneum resists water loss because of its layers of keratin and water-repelling glycolipids.\n\n**Why the other options are wrong:**\n- **(A)** Excretion of waste occurs through sweat, not through eleidin.\n- **(B)** Vitamin D synthesis begins in the epidermis from cholesterol, not via arteriole dilation.\n- **(D)** Melanocytes produce pigment; sensory receptors (not melanocytes) detect temperature.\n- **(E)** Thermoregulation involves sweat and arteriole dilation, not calcitriol synthesis."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1762,14 +1762,14 @@
           "question": {
             "stem": "A histology sample shows a tissue layer that is avascular and composed of keratinized stratified squamous epithelium. Which skin layer is this, and how does its composition differ from the layer immediately deep to it?",
             "options": [
-              "The dermis; it is epithelial, whereas the deeper epidermis is connective tissue",
-              "The epidermis; it is avascular epithelial tissue, whereas the deeper dermis is vascularized connective tissue",
               "The hypodermis; it is epithelial, whereas the deeper dermis is adipose",
+              "The epidermis; it is avascular epithelial tissue, whereas the deeper dermis is vascularized connective tissue",
               "The reticular layer; it is epithelial, whereas the papillary layer is areolar",
+              "The dermis; it is epithelial, whereas the deeper epidermis is connective tissue",
               "The stratum basale; it is connective tissue, whereas the deeper dermis is epithelial"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The epidermis is avascular keratinized stratified squamous epithelium, and the layer immediately deep to it is the vascularized connective tissue dermis.\n\n**Why the other options are wrong:**\n- **(A)** The dermis is connective tissue, not epithelium, so the description is reversed.\n- **(C)** The hypodermis is loose/adipose connective tissue, not epithelial.\n- **(D)** The reticular layer is dense connective tissue, not epithelial.\n- **(E)** The stratum basale is a layer of epithelial cells, not connective tissue."
+            "explanation": "**Why (B) is correct:** The epidermis is avascular keratinized stratified squamous epithelium, and the layer immediately deep to it is the vascularized connective tissue dermis.\n\n**Why the other options are wrong:**\n- **(A)** The hypodermis is loose/adipose connective tissue, not epithelial.\n- **(C)** The reticular layer is dense connective tissue, not epithelial.\n- **(D)** The dermis is connective tissue, not epithelium, so the description is reversed.\n- **(E)** The stratum basale is a layer of epithelial cells, not connective tissue."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1779,14 +1779,14 @@
           "question": {
             "stem": "The skin acts as a first line of defense against microbes. Besides forming a physical barrier, how does sweat contribute to this protective function?",
             "options": [
-              "It contains dermicidin, an antimicrobial peptide that deters microbial colonization",
-              "It contains melanin that kills bacteria on contact",
               "It secretes calcitriol that dissolves bacterial cell walls",
-              "It contains eleidin that blocks microbial entry through the stratum lucidum",
-              "It secretes keratohyalin that phagocytoses invading microbes"
+              "It contains melanin that kills bacteria on contact",
+              "It secretes keratohyalin that phagocytoses invading microbes",
+              "It contains dermicidin, an antimicrobial peptide that deters microbial colonization",
+              "It contains eleidin that blocks microbial entry through the stratum lucidum"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Sweat contains dermicidin, an antimicrobial peptide with antibiotic properties that deters microbes from over-colonizing the skin surface.\n\n**Why the other options are wrong:**\n- **(B)** Melanin protects against UV radiation, not bacteria.\n- **(C)** Calcitriol is the active form of vitamin D involved in calcium absorption, not antimicrobial defense.\n- **(D)** Eleidin provides a water barrier in the stratum lucidum but is not secreted in sweat.\n- **(E)** Keratohyalin is a cellular protein, not a phagocytic agent; phagocytes carry out engulfment."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Sweat contains dermicidin, an antimicrobial peptide with antibiotic properties that deters microbes from over-colonizing the skin surface.\n\n**Why the other options are wrong:**\n- **(A)** Calcitriol is the active form of vitamin D involved in calcium absorption, not antimicrobial defense.\n- **(B)** Melanin protects against UV radiation, not bacteria.\n- **(C)** Keratohyalin is a cellular protein, not a phagocytic agent; phagocytes carry out engulfment.\n- **(E)** Eleidin provides a water barrier in the stratum lucidum but is not secreted in sweat."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1796,14 +1796,14 @@
           "question": {
             "stem": "Which statement correctly matches an epidermal layer with a distinctive feature that occurs there?",
             "options": [
-              "Stratum spinosum — keratinocytes are fully dead and continuously sloughed off",
+              "Stratum lucidum — basal stem cells undergo mitosis to produce keratinocytes",
               "Stratum granulosum — keratohyalin granules accumulate and cells begin to die",
               "Stratum basale — cells are densely packed with eleidin, making them transparent",
-              "Stratum lucidum — basal stem cells undergo mitosis to produce keratinocytes",
-              "Stratum corneum — desmosomes give the cells a spiny stained appearance"
+              "Stratum corneum — desmosomes give the cells a spiny stained appearance",
+              "Stratum spinosum — keratinocytes are fully dead and continuously sloughed off"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** In the stratum granulosum, keratohyalin accumulates as granules and helps dehydrate the flattening keratinocytes as they die.\n\n**Why the other options are wrong:**\n- **(A)** Fully dead, sloughing keratinocytes are the stratum corneum, not the stratum spinosum.\n- **(C)** Cells densely packed with eleidin describe the stratum lucidum, not the stratum basale.\n- **(D)** Basal stem cell mitosis occurs in the stratum basale, not the stratum lucidum.\n- **(E)** The spiny stained (desmosome) appearance characterizes the stratum spinosum, not the stratum corneum."
+            "explanation": "**Why (B) is correct:** In the stratum granulosum, keratohyalin accumulates as granules and helps dehydrate the flattening keratinocytes as they die.\n\n**Why the other options are wrong:**\n- **(A)** Basal stem cell mitosis occurs in the stratum basale, not the stratum lucidum.\n- **(C)** Cells densely packed with eleidin describe the stratum lucidum, not the stratum basale.\n- **(D)** The spiny stained (desmosome) appearance characterizes the stratum spinosum, not the stratum corneum.\n- **(E)** Fully dead, sloughing keratinocytes are the stratum corneum, not the stratum spinosum."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1814,13 +1814,13 @@
             "stem": "A hair is plucked in an attempt to permanently prevent it from regrowing. Which part of the hair must be destroyed for this to succeed, and why?",
             "options": [
               "The hair shaft, because it is the actively dividing region of the hair",
-              "The hair bulb, because it contains the hair matrix of dividing basal cells",
+              "The stratum corneum, because it is where new hair cells are generated",
               "The hair papilla, because it is composed entirely of dead keratinized cells",
               "The arrector pili, because it produces the keratin that forms the shaft",
-              "The stratum corneum, because it is where new hair cells are generated"
+              "The hair bulb, because it contains the hair matrix of dividing basal cells"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The hair bulb at the deep end of the root contains the hair matrix, a layer of actively growing basal cells that divide to produce the hair; destroying it prevents regrowth.\n\n**Why the other options are wrong:**\n- **(A)** The hair shaft is the exposed, completely dead portion, so cutting or damaging it does not stop growth.\n- **(C)** The papilla is connective tissue with blood vessels and nerves, not dead keratinized cells, and is not the dividing region.\n- **(D)** The arrector pili is a smooth muscle that causes goosebumps, not a keratin-producing structure.\n- **(E)** The stratum corneum is the superficial dead epidermal layer, not the site of hair cell generation."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The hair bulb at the deep end of the root contains the hair matrix, a layer of actively growing basal cells that divide to produce the hair; destroying it prevents regrowth.\n\n**Why the other options are wrong:**\n- **(A)** The hair shaft is the exposed, completely dead portion, so cutting or damaging it does not stop growth.\n- **(B)** The stratum corneum is the superficial dead epidermal layer, not the site of hair cell generation.\n- **(C)** The papilla is connective tissue with blood vessels and nerves, not dead keratinized cells, and is not the dividing region.\n- **(D)** The arrector pili is a smooth muscle that causes goosebumps, not a keratin-producing structure."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1830,14 +1830,14 @@
           "question": {
             "stem": "A researcher compares the secretion of an eccrine sweat gland with that of an apocrine sweat gland. Which statement correctly distinguishes them?",
             "options": [
-              "Eccrine glands empty into hair follicles, while apocrine glands empty onto the skin surface via a pore",
-              "Eccrine secretions are thick and prone to bacterial decomposition, while apocrine secretions are hypotonic water",
-              "Eccrine glands produce hypotonic sweat for thermoregulation, while apocrine glands produce thicker sweat that bacteria decompose to produce odor",
+              "Apocrine glands are the primary component of thermoregulation, while eccrine glands respond to hormones and pheromones",
               "Both glands are found only in the palms and soles",
-              "Apocrine glands are the primary component of thermoregulation, while eccrine glands respond to hormones and pheromones"
+              "Eccrine secretions are thick and prone to bacterial decomposition, while apocrine secretions are hypotonic water",
+              "Eccrine glands empty into hair follicles, while apocrine glands empty onto the skin surface via a pore",
+              "Eccrine glands produce hypotonic sweat for thermoregulation, while apocrine glands produce thicker sweat that bacteria decompose to produce odor"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Eccrine glands secrete a hypotonic sweat used for cooling the body, whereas apocrine glands secrete thicker sweat containing organic compounds that bacteria decompose, producing body odor.\n\n**Why the other options are wrong:**\n- **(A)** This is reversed: apocrine glands empty into hair follicles while eccrine ducts rise to a surface pore.\n- **(B)** This reverses the two secretions.\n- **(D)** Eccrine glands are found all over the skin, not only palms and soles.\n- **(E)** Eccrine glands are the primary thermoregulators; apocrine glands are the ones under hormonal control and linked to pheromones."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Eccrine glands secrete a hypotonic sweat used for cooling the body, whereas apocrine glands secrete thicker sweat containing organic compounds that bacteria decompose, producing body odor.\n\n**Why the other options are wrong:**\n- **(A)** Eccrine glands are the primary thermoregulators; apocrine glands are the ones under hormonal control and linked to pheromones.\n- **(B)** Eccrine glands are found all over the skin, not only palms and soles.\n- **(C)** This reverses the two secretions.\n- **(D)** This is reversed: apocrine glands empty into hair follicles while eccrine ducts rise to a surface pore."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1847,14 +1847,14 @@
           "question": {
             "stem": "You gently press and hold a finger against a patch of skin (sustained, unchanging pressure) versus feeling a fine, rapidly changing flutter across the skin. Which two receptors respectively best detect these two stimuli?",
             "options": [
-              "Merkel cells for the sustained pressure; tactile (Meissner) corpuscles for the flutter",
-              "Tactile (Meissner) corpuscles for the sustained pressure; Merkel cells for the flutter",
               "Lamellated (Pacinian) corpuscles for the sustained pressure; Merkel cells for the flutter",
+              "Tactile (Meissner) corpuscles for the sustained pressure; Merkel cells for the flutter",
               "Merkel cells for both stimuli",
-              "Melanocytes for the sustained pressure; lamellated corpuscles for the flutter"
+              "Melanocytes for the sustained pressure; lamellated corpuscles for the flutter",
+              "Merkel cells for the sustained pressure; tactile (Meissner) corpuscles for the flutter"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Merkel cells are slow-adapting and detect sustained light touch/low-frequency vibration, while tactile (Meissner) corpuscles are fast-adapting and detect transient light touch and changing stimuli.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the two receptors' adaptation properties.\n- **(C)** Lamellated corpuscles respond to heavier pressure and high-frequency vibration, not sustained pressure.\n- **(D)** Merkel cells are slow-adapting and cannot best detect a rapidly changing flutter.\n- **(E)** Melanocytes produce pigment and are not sensory receptors."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Merkel cells are slow-adapting and detect sustained light touch/low-frequency vibration, while tactile (Meissner) corpuscles are fast-adapting and detect transient light touch and changing stimuli.\n\n**Why the other options are wrong:**\n- **(A)** Lamellated corpuscles respond to heavier pressure and high-frequency vibration, not sustained pressure.\n- **(B)** This reverses the two receptors' adaptation properties.\n- **(C)** Merkel cells are slow-adapting and cannot best detect a rapidly changing flutter.\n- **(D)** Melanocytes produce pigment and are not sensory receptors."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1864,14 +1864,14 @@
           "question": {
             "stem": "A person exercises vigorously and their skin becomes noticeably red. Based on thermoregulation mechanisms in the dermis, what causes this redness?",
             "options": [
+              "The stratum corneum thickens and reflects red light",
               "Melanocytes rapidly release melanin into the blood, tinting the skin",
-              "Arterioles in the dermis dilate, allowing more warm blood near the surface to dissipate heat",
               "Arterioles in the dermis constrict, trapping heat in the skin",
-              "Sebaceous glands flood the surface with red-tinted sebum",
-              "The stratum corneum thickens and reflects red light"
+              "Arterioles in the dermis dilate, allowing more warm blood near the surface to dissipate heat",
+              "Sebaceous glands flood the surface with red-tinted sebum"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** When the body is hot, dermal arterioles dilate so warm blood flows near the surface and dissipates heat, producing the visible skin redness.\n\n**Why the other options are wrong:**\n- **(A)** Melanocytes produce pigment for UV protection, not blood-tinting during exercise.\n- **(C)** Constriction occurs in cold conditions and produces a whitish hue, not redness.\n- **(D)** Sebum lubricates and waterproofs; it does not cause exercise-induced redness.\n- **(E)** The stratum corneum does not thicken during exercise, and this is not the cause of redness."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** When the body is hot, dermal arterioles dilate so warm blood flows near the surface and dissipates heat, producing the visible skin redness.\n\n**Why the other options are wrong:**\n- **(A)** The stratum corneum does not thicken during exercise, and this is not the cause of redness.\n- **(B)** Melanocytes produce pigment for UV protection, not blood-tinting during exercise.\n- **(C)** Constriction occurs in cold conditions and produces a whitish hue, not redness.\n- **(E)** Sebum lubricates and waterproofs; it does not cause exercise-induced redness."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1881,14 +1881,14 @@
           "question": {
             "stem": "The term 'keratinization' (also called cornification) refers to which process in the epidermis?",
             "options": [
-              "The transfer of melanin from melanocytes to keratinocytes in melanosomes",
               "The whole process by which cells differentiate from stem cells into dead, hardened, protein-filled cells",
-              "The dilation of dermal arterioles to dissipate excess heat",
+              "The folding of dermal papillae into the stratum basale",
+              "The transfer of melanin from melanocytes to keratinocytes in melanosomes",
               "The production of hypotonic sweat by eccrine glands",
-              "The folding of dermal papillae into the stratum basale"
+              "The dilation of dermal arterioles to dissipate excess heat"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Keratinization/cornification is the entire process from stem-cell differentiation to dead, hardened cells filled with keratin, culminating in the stratum corneum.\n\n**Why the other options are wrong:**\n- **(A)** Melanin transfer via melanosomes is pigmentation, not keratinization.\n- **(C)** Arteriole dilation is a thermoregulatory process unrelated to keratinization.\n- **(D)** Sweat production is a gland function, not keratinization.\n- **(E)** Dermal papilla folding strengthens the dermal-epidermal junction and is not keratinization."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Keratinization/cornification is the entire process from stem-cell differentiation to dead, hardened cells filled with keratin, culminating in the stratum corneum.\n\n**Why the other options are wrong:**\n- **(B)** Dermal papilla folding strengthens the dermal-epidermal junction and is not keratinization.\n- **(C)** Melanin transfer via melanosomes is pigmentation, not keratinization.\n- **(D)** Sweat production is a gland function, not keratinization.\n- **(E)** Arteriole dilation is a thermoregulatory process unrelated to keratinization."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1898,14 +1898,14 @@
           "question": {
             "stem": "In the skin's role in vitamin D synthesis, which sequence correctly describes what happens after the epidermis is exposed to UV radiation?",
             "options": [
-              "The kidney synthesizes a cholesterol precursor, which the skin converts directly to calcitriol",
               "A cholesterol derivative in the skin forms a vitamin D precursor, which the liver and kidney then convert to calcitriol",
               "The skin produces calcitriol, which is then converted to cholesterol in the liver",
+              "The kidney synthesizes a cholesterol precursor, which the skin converts directly to calcitriol",
               "Melanin is converted into calcitriol within keratinocytes",
               "The dermis absorbs calcium directly, bypassing vitamin D entirely"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Sunlight lets the skin synthesize a vitamin D precursor from a cholesterol derivative, and the liver and kidney then convert it to the active hormone calcitriol, which aids calcium absorption.\n\n**Why the other options are wrong:**\n- **(A)** The skin, not the kidney, makes the initial precursor, and the conversion to calcitriol requires liver and kidney.\n- **(C)** The pathway produces calcitriol from a cholesterol derivative, not the reverse.\n- **(D)** Melanin is a protective pigment and is not converted into calcitriol.\n- **(E)** Calcium absorption occurs in the small intestine and depends on calcitriol, not direct dermal absorption."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Sunlight lets the skin synthesize a vitamin D precursor from a cholesterol derivative, and the liver and kidney then convert it to the active hormone calcitriol, which aids calcium absorption.\n\n**Why the other options are wrong:**\n- **(B)** The pathway produces calcitriol from a cholesterol derivative, not the reverse.\n- **(C)** The skin, not the kidney, makes the initial precursor, and the conversion to calcitriol requires liver and kidney.\n- **(D)** Melanin is a protective pigment and is not converted into calcitriol.\n- **(E)** Calcium absorption occurs in the small intestine and depends on calcitriol, not direct dermal absorption."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1916,13 +1916,13 @@
             "stem": "A histologist examines the dermis and must distinguish the papillary layer from the reticular layer. Which pairing of feature and layer is correct?",
             "options": [
               "The papillary layer is thick, dense irregular connective tissue providing tensile strength",
-              "The reticular layer contains dermal papillae and tactile (Meissner) corpuscles",
               "The papillary layer is loose areolar connective tissue containing tactile (Meissner) corpuscles, while the reticular layer is dense irregular connective tissue providing tensile strength",
               "Both layers are avascular and lack any nerve supply",
+              "The reticular layer contains dermal papillae and tactile (Meissner) corpuscles",
               "The reticular layer forms the finger-like projections that increase epidermal attachment"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The papillary layer is loose areolar tissue housing Meissner corpuscles and dermal papillae, while the deeper reticular layer is dense irregular connective tissue that gives the skin its structure and tensile strength.\n\n**Why the other options are wrong:**\n- **(A)** Dense irregular tissue describes the reticular layer, not the papillary layer.\n- **(B)** Dermal papillae and Meissner corpuscles are in the papillary layer, not the reticular layer.\n- **(D)** Both dermal layers are vascularized and richly innervated.\n- **(E)** Dermal papillae are formed by the papillary layer, not the reticular layer."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The papillary layer is loose areolar tissue housing Meissner corpuscles and dermal papillae, while the deeper reticular layer is dense irregular connective tissue that gives the skin its structure and tensile strength.\n\n**Why the other options are wrong:**\n- **(A)** Dense irregular tissue describes the reticular layer, not the papillary layer.\n- **(C)** Both dermal layers are vascularized and richly innervated.\n- **(D)** Dermal papillae and Meissner corpuscles are in the papillary layer, not the reticular layer.\n- **(E)** Dermal papillae are formed by the papillary layer, not the reticular layer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1932,14 +1932,14 @@
           "question": {
             "stem": "As a keratinocyte moves from the stratum spinosum toward the surface, in which layer does the accumulation of keratohyalin granules cause the cell to dehydrate, shrink, and die?",
             "options": [
-              "Stratum basale",
-              "Stratum spinosum",
               "Stratum granulosum",
+              "Stratum corneum",
+              "Stratum basale",
               "Stratum lucidum",
-              "Stratum corneum"
+              "Stratum spinosum"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** In the stratum granulosum, keratohyalin accumulates as granules that help dehydrate the keratinocytes, causing them to shrink and die, with organelles disintegrating.\n\n**Why the other options are wrong:**\n- **(A)** The stratum basale contains living dividing stem cells, not dying, keratohyalin-filled cells.\n- **(B)** The stratum spinosum keratinocytes are still living and only beginning keratin synthesis.\n- **(D)** The stratum lucidum contains already-dead cells filled with eleidin, occurring after granulosum.\n- **(E)** The stratum corneum cells are already fully keratinized and dead, past the dehydration stage."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** In the stratum granulosum, keratohyalin accumulates as granules that help dehydrate the keratinocytes, causing them to shrink and die, with organelles disintegrating.\n\n**Why the other options are wrong:**\n- **(B)** The stratum corneum cells are already fully keratinized and dead, past the dehydration stage.\n- **(C)** The stratum basale contains living dividing stem cells, not dying, keratohyalin-filled cells.\n- **(D)** The stratum lucidum contains already-dead cells filled with eleidin, occurring after granulosum.\n- **(E)** The stratum spinosum keratinocytes are still living and only beginning keratin synthesis."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1950,13 +1950,13 @@
             "stem": "The papillary layer of the dermis contains defensive cells and receptors that reflect its superficial location near the epidermis. Which combination of components is most characteristic of this layer?",
             "options": [
               "Dense collagen bundles, few nerves, and no blood vessels",
-              "Phagocytes, an abundance of small blood vessels, and tactile (Meissner) corpuscles",
-              "Melanocytes, keratinocytes, and eleidin-filled cells",
               "Adipose tissue forming the bulk of the layer and connecting to underlying fascia",
+              "Melanocytes, keratinocytes, and eleidin-filled cells",
+              "Phagocytes, an abundance of small blood vessels, and tactile (Meissner) corpuscles",
               "Lamellated (Pacinian) corpuscles and dense irregular connective tissue"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The papillary layer is loose areolar tissue containing phagocytes that fight breaching microbes, abundant small blood vessels, and touch receptors called tactile (Meissner) corpuscles.\n\n**Why the other options are wrong:**\n- **(A)** Dense collagen with few nerves and no vessels describes neither dermal layer; the papillary layer is vascularized.\n- **(C)** Melanocytes, keratinocytes, and eleidin-filled cells are epidermal features, not papillary dermis.\n- **(D)** The adipose-rich layer connecting to fascia is the hypodermis, not the papillary layer.\n- **(E)** Lamellated corpuscles and dense irregular tissue are associated with deeper layers, not the papillary layer."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The papillary layer is loose areolar tissue containing phagocytes that fight breaching microbes, abundant small blood vessels, and touch receptors called tactile (Meissner) corpuscles.\n\n**Why the other options are wrong:**\n- **(A)** Dense collagen with few nerves and no vessels describes neither dermal layer; the papillary layer is vascularized.\n- **(B)** The adipose-rich layer connecting to fascia is the hypodermis, not the papillary layer.\n- **(C)** Melanocytes, keratinocytes, and eleidin-filled cells are epidermal features, not papillary dermis.\n- **(E)** Lamellated corpuscles and dense irregular tissue are associated with deeper layers, not the papillary layer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1966,14 +1966,14 @@
           "question": {
             "stem": "A student is asked to contrast the three skin layers by their primary tissue composition. Which set of pairings is entirely correct?",
             "options": [
-              "Epidermis = connective tissue; dermis = epithelial tissue; hypodermis = adipose tissue",
-              "Epidermis = keratinized stratified squamous epithelium; dermis = connective tissue; hypodermis = loose areolar and adipose connective tissue",
               "Epidermis = adipose tissue; dermis = epithelial tissue; hypodermis = connective tissue",
+              "Epidermis = connective tissue; dermis = adipose tissue; hypodermis = epithelial tissue",
+              "Epidermis = connective tissue; dermis = epithelial tissue; hypodermis = adipose tissue",
               "All three layers are composed primarily of epithelial tissue",
-              "Epidermis = connective tissue; dermis = adipose tissue; hypodermis = epithelial tissue"
+              "Epidermis = keratinized stratified squamous epithelium; dermis = connective tissue; hypodermis = loose areolar and adipose connective tissue"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The epidermis is keratinized stratified squamous epithelium, the dermis is connective tissue, and the hypodermis is loose areolar connective tissue with abundant adipose.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the epidermis and dermis tissue types.\n- **(C)** The epidermis is epithelium, not adipose, and the dermis is connective tissue, not epithelium.\n- **(D)** Only the epidermis is epithelial; the dermis and hypodermis are connective tissue.\n- **(E)** The epidermis is epithelial and the hypodermis is connective tissue, so this set is incorrect."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The epidermis is keratinized stratified squamous epithelium, the dermis is connective tissue, and the hypodermis is loose areolar connective tissue with abundant adipose.\n\n**Why the other options are wrong:**\n- **(A)** The epidermis is epithelium, not adipose, and the dermis is connective tissue, not epithelium.\n- **(B)** The epidermis is epithelial and the hypodermis is connective tissue, so this set is incorrect.\n- **(C)** This reverses the epidermis and dermis tissue types.\n- **(D)** Only the epidermis is epithelial; the dermis and hypodermis are connective tissue."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"

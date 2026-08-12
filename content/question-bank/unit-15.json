@@ -9,14 +9,14 @@
           "question": {
             "stem": "Nervous tissue is composed of two basic types of cells. Which pair correctly names them?",
             "options": [
-              "Neurons and glial cells",
               "Axons and dendrites",
-              "Nuclei and ganglia",
               "Tracts and nerves",
-              "Somas and synapses"
+              "Somas and synapses",
+              "Neurons and glial cells",
+              "Nuclei and ganglia"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Nervous tissue in both the CNS and PNS contains neurons (for communication) and glial cells (for support).\n\n**Why the other options are wrong:**\n- **(B)** Axons and dendrites are parts of a neuron, not distinct cell types.\n- **(C)** Nuclei and ganglia are clusters of cell bodies, not cell types.\n- **(D)** Tracts and nerves are bundles of axons, not cell types.\n- **(E)** Somas and synapses are structures within/between neurons, not cell types."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Nervous tissue in both the CNS and PNS contains neurons (for communication) and glial cells (for support).\n\n**Why the other options are wrong:**\n- **(A)** Axons and dendrites are parts of a neuron, not distinct cell types.\n- **(B)** Tracts and nerves are bundles of axons, not cell types.\n- **(C)** Somas and synapses are structures within/between neurons, not cell types.\n- **(E)** Nuclei and ganglia are clusters of cell bodies, not cell types."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -26,14 +26,14 @@
           "question": {
             "stem": "In which lobe of the cerebral cortex is the primary somatosensory cortex located?",
             "options": [
+              "Cerebellum",
               "Occipital lobe",
-              "Parietal lobe",
               "Temporal lobe",
-              "Frontal lobe",
-              "Cerebellum"
+              "Parietal lobe",
+              "Frontal lobe"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The primary somatosensory cortex is located in the parietal lobe, just posterior to the central sulcus.\n\n**Why the other options are wrong:**\n- **(A)** The occipital lobe houses the primary visual cortex.\n- **(C)** The temporal lobe handles auditory processing and memory.\n- **(D)** The frontal lobe contains the primary motor cortex.\n- **(E)** The cerebellum coordinates movement, not somatosensation."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The primary somatosensory cortex is located in the parietal lobe, just posterior to the central sulcus.\n\n**Why the other options are wrong:**\n- **(A)** The cerebellum coordinates movement, not somatosensation.\n- **(B)** The occipital lobe houses the primary visual cortex.\n- **(C)** The temporal lobe handles auditory processing and memory.\n- **(E)** The frontal lobe contains the primary motor cortex."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -43,14 +43,14 @@
           "question": {
             "stem": "Which three structures make up the brain stem?",
             "options": [
-              "Cerebrum, diencephalon, and cerebellum",
+              "Midbrain, cerebrum, and diencephalon",
               "Midbrain, pons, and medulla oblongata",
-              "Thalamus, hypothalamus, and pons",
+              "Cerebrum, diencephalon, and cerebellum",
               "Pons, medulla oblongata, and cerebellum",
-              "Midbrain, cerebrum, and diencephalon"
+              "Thalamus, hypothalamus, and pons"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The brain stem consists of the midbrain, pons, and medulla oblongata.\n\n**Why the other options are wrong:**\n- **(A)** The cerebrum, diencephalon, and cerebellum are separate major brain regions, not the brain stem.\n- **(C)** The thalamus and hypothalamus are part of the diencephalon, not the brain stem.\n- **(D)** The cerebellum is a separate region, not part of the brain stem.\n- **(E)** The cerebrum and diencephalon are not brain stem components."
+            "explanation": "**Why (B) is correct:** The brain stem consists of the midbrain, pons, and medulla oblongata.\n\n**Why the other options are wrong:**\n- **(A)** The cerebrum and diencephalon are not brain stem components.\n- **(C)** The cerebrum, diencephalon, and cerebellum are separate major brain regions, not the brain stem.\n- **(D)** The cerebellum is a separate region, not part of the brain stem.\n- **(E)** The thalamus and hypothalamus are part of the diencephalon, not the brain stem."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -60,14 +60,14 @@
           "question": {
             "stem": "A localized cluster of neuron cell bodies located within the central nervous system is called a:",
             "options": [
-              "Ganglion",
+              "Sulcus",
               "Nerve",
               "Nucleus",
               "Tract",
-              "Sulcus"
+              "Ganglion"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A cluster of neuron cell bodies within the CNS is termed a nucleus.\n\n**Why the other options are wrong:**\n- **(A)** A ganglion is a cluster of cell bodies in the PNS, not the CNS.\n- **(B)** A nerve is a bundle of axons in the PNS.\n- **(D)** A tract is a bundle of axons in the CNS, not a cluster of cell bodies.\n- **(E)** A sulcus is a groove in the cerebral cortex, not a cell body cluster."
+            "explanation": "**Why (C) is correct:** A cluster of neuron cell bodies within the CNS is termed a nucleus.\n\n**Why the other options are wrong:**\n- **(A)** A sulcus is a groove in the cerebral cortex, not a cell body cluster.\n- **(B)** A nerve is a bundle of axons in the PNS.\n- **(D)** A tract is a bundle of axons in the CNS, not a cluster of cell bodies.\n- **(E)** A ganglion is a cluster of cell bodies in the PNS, not the CNS."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -77,14 +77,14 @@
           "question": {
             "stem": "Which glial cell produces myelin in the peripheral nervous system?",
             "options": [
+              "Microglia",
               "Oligodendrocyte",
               "Astrocyte",
               "Schwann cell",
-              "Ependymal cell",
-              "Microglia"
+              "Ependymal cell"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Schwann cells produce the myelin that insulates axons in the peripheral nervous system.\n\n**Why the other options are wrong:**\n- **(A)** Oligodendrocytes produce myelin in the CNS, not the PNS.\n- **(B)** Astrocytes support neurons and help form the blood-brain barrier in the CNS.\n- **(D)** Ependymal cells line ventricles and help form CSF in the CNS.\n- **(E)** Microglia are immune cells of the CNS."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Schwann cells produce the myelin that insulates axons in the peripheral nervous system.\n\n**Why the other options are wrong:**\n- **(A)** Microglia are immune cells of the CNS.\n- **(B)** Oligodendrocytes produce myelin in the CNS, not the PNS.\n- **(C)** Astrocytes support neurons and help form the blood-brain barrier in the CNS.\n- **(E)** Ependymal cells line ventricles and help form CSF in the CNS."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -94,14 +94,14 @@
           "question": {
             "stem": "Which function is primarily associated with the cerebellum?",
             "options": [
-              "Regulation of homeostasis such as body temperature",
-              "Coordination and precise execution of motor activities",
+              "Long-term memory storage",
               "Production of cerebrospinal fluid",
               "Control of heart rate and breathing",
-              "Long-term memory storage"
+              "Regulation of homeostasis such as body temperature",
+              "Coordination and precise execution of motor activities"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The cerebellum integrates motor commands with sensory feedback to coordinate and precisely execute movements.\n\n**Why the other options are wrong:**\n- **(A)** Homeostatic regulation is a function of the hypothalamus.\n- **(C)** CSF is produced by the choroid plexus (ependymal cells).\n- **(D)** Heart rate and breathing are controlled by the medulla oblongata.\n- **(E)** Long-term memory is stored in cortical regions, not the cerebellum."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The cerebellum integrates motor commands with sensory feedback to coordinate and precisely execute movements.\n\n**Why the other options are wrong:**\n- **(A)** Long-term memory is stored in cortical regions, not the cerebellum.\n- **(B)** CSF is produced by the choroid plexus (ependymal cells).\n- **(C)** Heart rate and breathing are controlled by the medulla oblongata.\n- **(D)** Homeostatic regulation is a function of the hypothalamus."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -111,14 +111,14 @@
           "question": {
             "stem": "The third ventricle is located in which region of the brain?",
             "options": [
-              "Deep within the cerebrum",
-              "Between the diencephalon's left and right sides",
               "Between the cerebellum and brainstem",
+              "Between the diencephalon's left and right sides",
+              "Within the spinal cord",
               "Within the midbrain",
-              "Within the spinal cord"
+              "Deep within the cerebrum"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The third ventricle is the space between the left and right sides of the diencephalon.\n\n**Why the other options are wrong:**\n- **(A)** The lateral ventricles are deep within the cerebrum.\n- **(C)** The fourth ventricle lies between the cerebellum and brainstem.\n- **(D)** The cerebral aqueduct, not a ventricle proper, passes through the midbrain.\n- **(E)** The central canal, not the third ventricle, runs through the spinal cord."
+            "explanation": "**Why (B) is correct:** The third ventricle is the space between the left and right sides of the diencephalon.\n\n**Why the other options are wrong:**\n- **(A)** The fourth ventricle lies between the cerebellum and brainstem.\n- **(C)** The central canal, not the third ventricle, runs through the spinal cord.\n- **(D)** The cerebral aqueduct, not a ventricle proper, passes through the midbrain.\n- **(E)** The lateral ventricles are deep within the cerebrum."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -128,14 +128,14 @@
           "question": {
             "stem": "Which of the following is a function of the somatic nervous system?",
             "options": [
-              "Involuntary control of cardiac muscle",
               "Voluntary motor responses of skeletal muscle",
+              "Regulation of blood vessel diameter",
+              "Involuntary control of cardiac muscle",
               "Regulation of glandular secretion for homeostasis",
-              "Control of smooth muscle in the digestive tract",
-              "Regulation of blood vessel diameter"
+              "Control of smooth muscle in the digestive tract"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The somatic nervous system governs voluntary motor responses involving skeletal muscle (and some reflexes).\n\n**Why the other options are wrong:**\n- **(A)** Cardiac muscle control is an autonomic function.\n- **(C)** Homeostatic glandular regulation is autonomic.\n- **(D)** Digestive smooth muscle control is enteric/autonomic.\n- **(E)** Blood vessel diameter is regulated by the autonomic nervous system."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The somatic nervous system governs voluntary motor responses involving skeletal muscle (and some reflexes).\n\n**Why the other options are wrong:**\n- **(B)** Blood vessel diameter is regulated by the autonomic nervous system.\n- **(C)** Cardiac muscle control is an autonomic function.\n- **(D)** Homeostatic glandular regulation is autonomic.\n- **(E)** Digestive smooth muscle control is enteric/autonomic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -145,14 +145,14 @@
           "question": {
             "stem": "Which structure produces cerebrospinal fluid within the ventricles?",
             "options": [
-              "Arachnoid granulations",
-              "Choroid plexus",
-              "Dural sinuses",
               "Subarachnoid space",
-              "Central canal"
+              "Dural sinuses",
+              "Central canal",
+              "Arachnoid granulations",
+              "Choroid plexus"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The choroid plexus, made of ependymal cells surrounding capillaries, filters blood to produce CSF within the ventricles.\n\n**Why the other options are wrong:**\n- **(A)** Arachnoid granulations reabsorb CSF into the blood, not produce it.\n- **(C)** Dural sinuses are venous channels where CSF is reabsorbed.\n- **(D)** The subarachnoid space is where CSF circulates around the CNS, not where it is made.\n- **(E)** The central canal is a passage for CSF in the spinal cord, not a production site."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The choroid plexus, made of ependymal cells surrounding capillaries, filters blood to produce CSF within the ventricles.\n\n**Why the other options are wrong:**\n- **(A)** The subarachnoid space is where CSF circulates around the CNS, not where it is made.\n- **(B)** Dural sinuses are venous channels where CSF is reabsorbed.\n- **(C)** The central canal is a passage for CSF in the spinal cord, not a production site.\n- **(D)** Arachnoid granulations reabsorb CSF into the blood, not produce it."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -162,14 +162,14 @@
           "question": {
             "stem": "In the spinal cord grey matter, which horn is responsible for sending motor output to skeletal muscle?",
             "options": [
-              "Dorsal (posterior) horn",
-              "Lateral horn",
+              "White columns",
               "Ventral (anterior) horn",
+              "Lateral horn",
               "Central canal",
-              "White columns"
+              "Dorsal (posterior) horn"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The ventral (anterior) horn sends out motor signals to skeletal muscles.\n\n**Why the other options are wrong:**\n- **(A)** The dorsal (posterior) horn handles sensory processing.\n- **(B)** The lateral horn is the CNS component of the sympathetic nervous system.\n- **(D)** The central canal carries CSF, not motor output.\n- **(E)** White columns contain ascending and descending tracts, not grey matter motor cell bodies."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The ventral (anterior) horn sends out motor signals to skeletal muscles.\n\n**Why the other options are wrong:**\n- **(A)** White columns contain ascending and descending tracts, not grey matter motor cell bodies.\n- **(C)** The lateral horn is the CNS component of the sympathetic nervous system.\n- **(D)** The central canal carries CSF, not motor output.\n- **(E)** The dorsal (posterior) horn handles sensory processing."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -180,13 +180,13 @@
             "stem": "Which glial cell is responsible for producing myelin in the central nervous system?",
             "options": [
               "Astrocyte",
+              "Satellite cell",
               "Oligodendrocyte",
               "Schwann cell",
-              "Microglia",
-              "Satellite cell"
+              "Microglia"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Oligodendrocytes produce the myelin sheath around axons within the central nervous system.\n\n**Why the other options are wrong:**\n- **(A)** Astrocytes regulate synapses, provide nutrients, and help form the blood-brain barrier, not myelin.\n- **(C)** Schwann cells produce myelin, but in the peripheral nervous system, not the CNS.\n- **(D)** Microglia are immune cells that phagocytose pathogens and debris.\n- **(E)** Satellite cells nourish neurons in peripheral ganglia."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Oligodendrocytes produce the myelin sheath around axons within the central nervous system.\n\n**Why the other options are wrong:**\n- **(A)** Astrocytes regulate synapses, provide nutrients, and help form the blood-brain barrier, not myelin.\n- **(B)** Satellite cells nourish neurons in peripheral ganglia.\n- **(D)** Schwann cells produce myelin, but in the peripheral nervous system, not the CNS.\n- **(E)** Microglia are immune cells that phagocytose pathogens and debris."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -196,14 +196,14 @@
           "question": {
             "stem": "In the peripheral nervous system, a localized cluster of neuron cell bodies is called a:",
             "options": [
-              "nucleus",
-              "tract",
-              "ganglion",
               "nerve",
-              "gyrus"
+              "ganglion",
+              "gyrus",
+              "tract",
+              "nucleus"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A cluster of neuron cell bodies in the PNS is called a ganglion.\n\n**Why the other options are wrong:**\n- **(A)** A nucleus is a cluster of cell bodies in the CNS, not the PNS.\n- **(B)** A tract is a bundle of axons in the CNS.\n- **(D)** A nerve is a bundle of axons in the PNS.\n- **(E)** A gyrus is a ridge of a fold in the cerebral cortex."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A cluster of neuron cell bodies in the PNS is called a ganglion.\n\n**Why the other options are wrong:**\n- **(A)** A nerve is a bundle of axons in the PNS.\n- **(C)** A gyrus is a ridge of a fold in the cerebral cortex.\n- **(D)** A tract is a bundle of axons in the CNS.\n- **(E)** A nucleus is a cluster of cell bodies in the CNS, not the PNS."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -213,14 +213,14 @@
           "question": {
             "stem": "A bundle of axons located within the central nervous system is called a tract, whereas the same bundle in the peripheral nervous system is called a:",
             "options": [
-              "ganglion",
-              "nucleus",
-              "nerve",
               "soma",
-              "sulcus"
+              "nucleus",
+              "ganglion",
+              "sulcus",
+              "nerve"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A bundle of axons in the PNS is called a nerve, the peripheral equivalent of a CNS tract.\n\n**Why the other options are wrong:**\n- **(A)** A ganglion is a cluster of cell bodies in the PNS, not a bundle of axons.\n- **(B)** A nucleus is a cluster of cell bodies in the CNS.\n- **(D)** The soma is the cell body of an individual neuron.\n- **(E)** A sulcus is a groove between two gyri in the cortex."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A bundle of axons in the PNS is called a nerve, the peripheral equivalent of a CNS tract.\n\n**Why the other options are wrong:**\n- **(A)** The soma is the cell body of an individual neuron.\n- **(B)** A nucleus is a cluster of cell bodies in the CNS.\n- **(C)** A ganglion is a cluster of cell bodies in the PNS, not a bundle of axons.\n- **(D)** A sulcus is a groove between two gyri in the cortex."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -230,14 +230,14 @@
           "question": {
             "stem": "Which meningeal layer is the outermost, thick, fibrous, strong protective sheath over the brain and spinal cord?",
             "options": [
-              "Pia mater",
-              "Arachnoid mater",
               "Dura mater",
-              "Choroid plexus",
-              "Arachnoid trabeculae"
+              "Arachnoid trabeculae",
+              "Arachnoid mater",
+              "Pia mater",
+              "Choroid plexus"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The dura mater is the thick, fibrous, outermost protective sheath anchored to the cranium and vertebral cavity.\n\n**Why the other options are wrong:**\n- **(A)** The pia mater is the innermost layer directly on the CNS surface.\n- **(B)** The arachnoid mater is the middle, thin fibrous layer forming a loose sac.\n- **(D)** The choroid plexus produces CSF and is not a meningeal layer.\n- **(E)** The arachnoid trabeculae are the web-like mesh in the subarachnoid space."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The dura mater is the thick, fibrous, outermost protective sheath anchored to the cranium and vertebral cavity.\n\n**Why the other options are wrong:**\n- **(B)** The arachnoid trabeculae are the web-like mesh in the subarachnoid space.\n- **(C)** The arachnoid mater is the middle, thin fibrous layer forming a loose sac.\n- **(D)** The pia mater is the innermost layer directly on the CNS surface.\n- **(E)** The choroid plexus produces CSF and is not a meningeal layer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -247,14 +247,14 @@
           "question": {
             "stem": "Parkinson's disease is caused by the loss of dopamine-producing neurons in which structure?",
             "options": [
-              "Hippocampus",
+              "Ventral tegmental area",
               "Substantia nigra",
               "Amygdala",
-              "Ventral tegmental area",
+              "Hippocampus",
               "Nucleus accumbens"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Parkinson's disease is due to loss of substantia nigra neurons that release dopamine into the basal nuclei, impairing motor control.\n\n**Why the other options are wrong:**\n- **(A)** The hippocampus is involved in memory formation, and its damage causes amnesia.\n- **(C)** The amygdala processes emotional memories.\n- **(D)** The ventral tegmental area is involved in motivation, reward, and drug addiction.\n- **(E)** The nucleus accumbens is a reward target of VTA dopamine, not the source lost in Parkinson's."
+            "explanation": "**Why (B) is correct:** Parkinson's disease is due to loss of substantia nigra neurons that release dopamine into the basal nuclei, impairing motor control.\n\n**Why the other options are wrong:**\n- **(A)** The ventral tegmental area is involved in motivation, reward, and drug addiction.\n- **(C)** The amygdala processes emotional memories.\n- **(D)** The hippocampus is involved in memory formation, and its damage causes amnesia.\n- **(E)** The nucleus accumbens is a reward target of VTA dopamine, not the source lost in Parkinson's."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -264,14 +264,14 @@
           "question": {
             "stem": "In a cross-section of the spinal cord, which grey matter horn is responsible for motor output to skeletal muscle?",
             "options": [
-              "Dorsal (posterior) horn",
               "Ventral (anterior) horn",
               "Lateral horn",
+              "Descending tract",
               "Ascending tract",
-              "Descending tract"
+              "Dorsal (posterior) horn"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The ventral (anterior) horn sends out motor signals to skeletal muscles.\n\n**Why the other options are wrong:**\n- **(A)** The dorsal (posterior) horn is responsible for sensory processing.\n- **(C)** The lateral horn is the CNS component of the sympathetic nervous system.\n- **(D)** Ascending tracts are white matter carrying sensory info to the brain, not a grey horn.\n- **(E)** Descending tracts are white matter carrying motor commands, not a grey horn."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The ventral (anterior) horn sends out motor signals to skeletal muscles.\n\n**Why the other options are wrong:**\n- **(B)** The lateral horn is the CNS component of the sympathetic nervous system.\n- **(C)** Descending tracts are white matter carrying motor commands, not a grey horn.\n- **(D)** Ascending tracts are white matter carrying sensory info to the brain, not a grey horn.\n- **(E)** The dorsal (posterior) horn is responsible for sensory processing."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -281,14 +281,14 @@
           "question": {
             "stem": "Which part of a neuron is specialized to receive information from other neurons at synapses?",
             "options": [
-              "Axon",
+              "Axon hillock",
+              "Node of Ranvier",
               "Soma",
               "Dendrite",
-              "Axon hillock",
-              "Node of Ranvier"
+              "Axon"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Dendrites are the highly branched processes that receive most of the input from other neurons at synapses.\n\n**Why the other options are wrong:**\n- **(A)** The axon sends information away from the cell toward target cells.\n- **(B)** The soma is the cell body containing the nucleus and most organelles.\n- **(D)** The axon hillock is where the axon begins and action potentials propagate.\n- **(E)** The node of Ranvier is a gap in myelin where action potentials are regenerated."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Dendrites are the highly branched processes that receive most of the input from other neurons at synapses.\n\n**Why the other options are wrong:**\n- **(A)** The axon hillock is where the axon begins and action potentials propagate.\n- **(B)** The node of Ranvier is a gap in myelin where action potentials are regenerated.\n- **(C)** The soma is the cell body containing the nucleus and most organelles.\n- **(E)** The axon sends information away from the cell toward target cells."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -299,13 +299,13 @@
             "stem": "Primary visual perception is localized to which lobe of the cerebral cortex?",
             "options": [
               "Frontal lobe",
-              "Parietal lobe",
-              "Temporal lobe",
+              "Cerebellum",
               "Occipital lobe",
-              "Cerebellum"
+              "Temporal lobe",
+              "Parietal lobe"
             ],
-            "correct_index": 3,
-            "explanation": "**Why (D) is correct:** The occipital lobe contains the primary visual cortex responsible for primary visual perception.\n\n**Why the other options are wrong:**\n- **(A)** The frontal lobe handles motor functions and higher cognition like decision-making.\n- **(B)** The parietal lobe processes somatosensation.\n- **(C)** The temporal lobe handles auditory sensation and language understanding.\n- **(E)** The cerebellum coordinates movement and is not a cerebral lobe."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The occipital lobe contains the primary visual cortex responsible for primary visual perception.\n\n**Why the other options are wrong:**\n- **(A)** The frontal lobe handles motor functions and higher cognition like decision-making.\n- **(B)** The cerebellum coordinates movement and is not a cerebral lobe.\n- **(D)** The temporal lobe handles auditory sensation and language understanding.\n- **(E)** The parietal lobe processes somatosensation."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -316,13 +316,13 @@
             "stem": "Cerebrospinal fluid is produced by ependymal cells within a structure called the:",
             "options": [
               "choroid plexus",
-              "arachnoid granulation",
-              "subarachnoid space",
+              "dural sinus",
               "central canal",
-              "dural sinus"
+              "arachnoid granulation",
+              "subarachnoid space"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The choroid plexus is made of ependymal cells that filter blood to produce CSF within the ventricles.\n\n**Why the other options are wrong:**\n- **(B)** Arachnoid granulations are where CSF is reabsorbed into the blood, not produced.\n- **(C)** The subarachnoid space is where CSF flows around the CNS, not where it is made.\n- **(D)** The central canal is a passage in the spinal cord for CSF flow, not production.\n- **(E)** The dural sinus is a venous channel where CSF drains back into blood."
+            "explanation": "**Why (A) is correct:** The choroid plexus is made of ependymal cells that filter blood to produce CSF within the ventricles.\n\n**Why the other options are wrong:**\n- **(B)** The dural sinus is a venous channel where CSF drains back into blood.\n- **(C)** The central canal is a passage in the spinal cord for CSF flow, not production.\n- **(D)** Arachnoid granulations are where CSF is reabsorbed into the blood, not produced.\n- **(E)** The subarachnoid space is where CSF flows around the CNS, not where it is made."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -333,13 +333,13 @@
             "stem": "White matter appears white in fresh nervous tissue primarily because it contains many axons that are:",
             "options": [
               "densely packed with cell bodies",
-              "insulated by lipid-rich myelin",
-              "filled with cerebrospinal fluid",
               "surrounded by blood vessels",
-              "composed of dendrites"
+              "insulated by lipid-rich myelin",
+              "composed of dendrites",
+              "filled with cerebrospinal fluid"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** White matter is white because its axons are insulated by myelin, a lipid-rich substance that appears white like fat.\n\n**Why the other options are wrong:**\n- **(A)** Grey matter, not white matter, is dominated by cell bodies.\n- **(C)** White matter is not defined by CSF content.\n- **(D)** Blood content can make grey matter pinkish, not what makes white matter white.\n- **(E)** Dendrites are concentrated in grey matter, not white matter."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** White matter is white because its axons are insulated by myelin, a lipid-rich substance that appears white like fat.\n\n**Why the other options are wrong:**\n- **(A)** Grey matter, not white matter, is dominated by cell bodies.\n- **(B)** Blood content can make grey matter pinkish, not what makes white matter white.\n- **(D)** Dendrites are concentrated in grey matter, not white matter.\n- **(E)** White matter is not defined by CSF content."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -349,14 +349,14 @@
           "question": {
             "stem": "Which meningeal layer is the thick, fibrous, strong protective sheath anchored to the inner surface of the cranium?",
             "options": [
+              "Arachnoid trabeculae",
+              "Choroid plexus",
               "Pia mater",
               "Arachnoid mater",
-              "Dura mater",
-              "Choroid plexus",
-              "Arachnoid trabeculae"
+              "Dura mater"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The dura mater is the thick, outermost fibrous layer that forms a strong protective sheath and is anchored to the inner surface of the cranium and vertebral cavity.\n\n**Why the other options are wrong:**\n- **(A)** The pia mater is the thin innermost layer that follows the convolutions of gyri and sulci.\n- **(B)** The arachnoid mater is a thin, loose fibrous sac, not a thick sheath.\n- **(D)** The choroid plexus produces CSF and is not a meningeal layer.\n- **(E)** The arachnoid trabeculae are the web-like mesh in the subarachnoid space, not a protective sheath."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The dura mater is the thick, outermost fibrous layer that forms a strong protective sheath and is anchored to the inner surface of the cranium and vertebral cavity.\n\n**Why the other options are wrong:**\n- **(A)** The arachnoid trabeculae are the web-like mesh in the subarachnoid space, not a protective sheath.\n- **(B)** The choroid plexus produces CSF and is not a meningeal layer.\n- **(C)** The pia mater is the thin innermost layer that follows the convolutions of gyri and sulci.\n- **(D)** The arachnoid mater is a thin, loose fibrous sac, not a thick sheath."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -366,14 +366,14 @@
           "question": {
             "stem": "Where in the central nervous system is cerebrospinal fluid (CSF) produced?",
             "options": [
-              "At the arachnoid granulations",
               "By the choroid plexus in the ventricles",
+              "At the arachnoid granulations",
               "In the subarachnoid space",
-              "In the dural sinuses",
-              "Within the grey matter horns of the spinal cord"
+              "Within the grey matter horns of the spinal cord",
+              "In the dural sinuses"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** CSF is produced by the choroid plexus, a network of ependymal cells surrounding capillaries, found in all four ventricles, which filters the blood.\n\n**Why the other options are wrong:**\n- **(A)** Arachnoid granulations are where CSF is reabsorbed into the blood, not made.\n- **(C)** The subarachnoid space is where CSF circulates around the CNS, not where it is produced.\n- **(D)** The dural sinuses receive blood and reabsorbed CSF, they do not produce it.\n- **(E)** The grey matter horns process sensory and motor signals and do not make CSF."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** CSF is produced by the choroid plexus, a network of ependymal cells surrounding capillaries, found in all four ventricles, which filters the blood.\n\n**Why the other options are wrong:**\n- **(B)** Arachnoid granulations are where CSF is reabsorbed into the blood, not made.\n- **(C)** The subarachnoid space is where CSF circulates around the CNS, not where it is produced.\n- **(D)** The grey matter horns process sensory and motor signals and do not make CSF.\n- **(E)** The dural sinuses receive blood and reabsorbed CSF, they do not produce it."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -383,14 +383,14 @@
           "question": {
             "stem": "Which pair of glial cells produces myelin, one in the central nervous system and one in the peripheral nervous system?",
             "options": [
-              "Astrocytes (CNS) and satellite cells (PNS)",
+              "Oligodendrocytes (CNS) and satellite cells (PNS)",
               "Oligodendrocytes (CNS) and Schwann cells (PNS)",
+              "Astrocytes (CNS) and satellite cells (PNS)",
               "Microglia (CNS) and Schwann cells (PNS)",
-              "Ependymal cells (CNS) and satellite cells (PNS)",
-              "Oligodendrocytes (CNS) and satellite cells (PNS)"
+              "Ependymal cells (CNS) and satellite cells (PNS)"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Oligodendrocytes produce myelin in the CNS, and Schwann cells produce myelin in the PNS.\n\n**Why the other options are wrong:**\n- **(A)** Astrocytes form the blood-brain barrier and satellite cells nourish ganglia; neither makes myelin.\n- **(C)** Microglia are immune phagocytes and do not produce myelin.\n- **(D)** Ependymal cells make CSF and satellite cells support ganglia; neither makes myelin.\n- **(E)** Oligodendrocytes are correct for the CNS, but satellite cells do not produce myelin in the PNS."
+            "explanation": "**Why (B) is correct:** Oligodendrocytes produce myelin in the CNS, and Schwann cells produce myelin in the PNS.\n\n**Why the other options are wrong:**\n- **(A)** Oligodendrocytes are correct for the CNS, but satellite cells do not produce myelin in the PNS.\n- **(C)** Astrocytes form the blood-brain barrier and satellite cells nourish ganglia; neither makes myelin.\n- **(D)** Microglia are immune phagocytes and do not produce myelin.\n- **(E)** Ependymal cells make CSF and satellite cells support ganglia; neither makes myelin."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -401,13 +401,13 @@
             "stem": "Which three structures collectively make up the brain stem?",
             "options": [
               "Cerebrum, diencephalon, and cerebellum",
+              "Cerebrum, midbrain, and pons",
               "Midbrain, pons, and medulla oblongata",
               "Thalamus, hypothalamus, and midbrain",
-              "Pons, medulla oblongata, and cerebellum",
-              "Cerebrum, midbrain, and pons"
+              "Pons, medulla oblongata, and cerebellum"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The brain stem is composed of the midbrain, the pons, and the medulla oblongata, which connect the brain to the spinal cord.\n\n**Why the other options are wrong:**\n- **(A)** The cerebrum, diencephalon, and cerebellum are separate major brain regions, not the brain stem.\n- **(C)** The thalamus and hypothalamus are part of the diencephalon, not the brain stem.\n- **(D)** The cerebellum is a separate hindbrain region and is not part of the brain stem.\n- **(E)** The cerebrum is not part of the brain stem."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The brain stem is composed of the midbrain, the pons, and the medulla oblongata, which connect the brain to the spinal cord.\n\n**Why the other options are wrong:**\n- **(A)** The cerebrum, diencephalon, and cerebellum are separate major brain regions, not the brain stem.\n- **(B)** The cerebrum is not part of the brain stem.\n- **(D)** The thalamus and hypothalamus are part of the diencephalon, not the brain stem.\n- **(E)** The cerebellum is a separate hindbrain region and is not part of the brain stem."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -417,14 +417,14 @@
           "question": {
             "stem": "What is the primary function of the cerebellum?",
             "options": [
-              "Producing cerebrospinal fluid",
-              "Regulating homeostasis and the endocrine system",
               "Coordinating and precisely executing motor activities",
+              "Regulating homeostasis and the endocrine system",
+              "Producing cerebrospinal fluid",
               "Relaying sensory information to the cerebrum",
               "Controlling heart rate and breathing"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The cerebellum integrates motor commands from the cerebral cortex with sensory feedback from the periphery, allowing coordinated, precise movements such as walking or playing an instrument.\n\n**Why the other options are wrong:**\n- **(A)** CSF is produced by the choroid plexus, not the cerebellum.\n- **(B)** The hypothalamus regulates homeostasis and the endocrine system.\n- **(D)** The thalamus relays sensory information to the cerebrum.\n- **(E)** The medulla oblongata controls heart rate and breathing."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The cerebellum integrates motor commands from the cerebral cortex with sensory feedback from the periphery, allowing coordinated, precise movements such as walking or playing an instrument.\n\n**Why the other options are wrong:**\n- **(B)** The hypothalamus regulates homeostasis and the endocrine system.\n- **(C)** CSF is produced by the choroid plexus, not the cerebellum.\n- **(D)** The thalamus relays sensory information to the cerebrum.\n- **(E)** The medulla oblongata controls heart rate and breathing."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -434,14 +434,14 @@
           "question": {
             "stem": "Which part of a neuron is responsible for receiving information from other neurons at synapses?",
             "options": [
+              "Axon hillock",
+              "Soma",
               "Axon",
               "Dendrite",
-              "Soma",
-              "Axon hillock",
               "Node of Ranvier"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Dendrites are the usually highly branched processes that receive most of the input from other neurons at synapses.\n\n**Why the other options are wrong:**\n- **(A)** The axon sends information toward target cells, propagating the action potential.\n- **(C)** The soma is the cell body containing the nucleus and organelles.\n- **(D)** The axon hillock is where the action potential begins, not where input is received.\n- **(E)** The node of Ranvier is a gap in the myelin where action potentials are regenerated."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Dendrites are the usually highly branched processes that receive most of the input from other neurons at synapses.\n\n**Why the other options are wrong:**\n- **(A)** The axon hillock is where the action potential begins, not where input is received.\n- **(B)** The soma is the cell body containing the nucleus and organelles.\n- **(C)** The axon sends information toward target cells, propagating the action potential.\n- **(E)** The node of Ranvier is a gap in the myelin where action potentials are regenerated."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -451,14 +451,14 @@
           "question": {
             "stem": "The famous case study of Phineas Gage, whose personality changed after an iron rod passed through his brain, illustrates the function of which region?",
             "options": [
-              "The prefrontal cortex of the frontal lobe",
               "The primary visual cortex of the occipital lobe",
-              "The hippocampus of the temporal lobe",
+              "The cerebellum",
               "The primary motor cortex of the frontal lobe",
-              "The cerebellum"
+              "The hippocampus of the temporal lobe",
+              "The prefrontal cortex of the frontal lobe"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Gage's accident damaged the anterior (prefrontal) part of his left frontal cortex, which serves personality, decision-making, and higher cognitive functions.\n\n**Why the other options are wrong:**\n- **(B)** The occipital lobe handles vision, which was not the focus of the personality changes.\n- **(C)** The hippocampus is associated with memory formation, as seen in patient H.M., not personality.\n- **(D)** The primary motor cortex controls voluntary movement, not personality.\n- **(E)** The cerebellum coordinates movement, not personality or cognition."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Gage's accident damaged the anterior (prefrontal) part of his left frontal cortex, which serves personality, decision-making, and higher cognitive functions.\n\n**Why the other options are wrong:**\n- **(A)** The occipital lobe handles vision, which was not the focus of the personality changes.\n- **(B)** The cerebellum coordinates movement, not personality or cognition.\n- **(C)** The primary motor cortex controls voluntary movement, not personality.\n- **(D)** The hippocampus is associated with memory formation, as seen in patient H.M., not personality."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -468,14 +468,14 @@
           "question": {
             "stem": "On the surface of the cerebral cortex, what is the correct name for the ridge of a fold, versus the groove between two folds?",
             "options": [
-              "A sulcus is the ridge; a gyrus is the groove",
-              "A gyrus is the ridge; a sulcus is the groove",
-              "A nucleus is the ridge; a tract is the groove",
               "A cortex is the ridge; a nucleus is the groove",
-              "A hemisphere is the ridge; a commissure is the groove"
+              "A nucleus is the ridge; a tract is the groove",
+              "A sulcus is the ridge; a gyrus is the groove",
+              "A hemisphere is the ridge; a commissure is the groove",
+              "A gyrus is the ridge; a sulcus is the groove"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A gyrus (plural: gyri) is the ridge of a wrinkle in the cerebral cortex, and a sulcus (plural: sulci) is the groove between two gyri.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the definitions; the gyrus is the ridge and the sulcus is the groove.\n- **(C)** A nucleus is a cluster of cell bodies and a tract is a bundle of axons, not surface features.\n- **(D)** The cortex is the outer layer of grey matter, not a ridge.\n- **(E)** A hemisphere is half the cerebrum and a commissure connects the two halves; neither describes surface folds."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A gyrus (plural: gyri) is the ridge of a wrinkle in the cerebral cortex, and a sulcus (plural: sulci) is the groove between two gyri.\n\n**Why the other options are wrong:**\n- **(A)** The cortex is the outer layer of grey matter, not a ridge.\n- **(B)** A nucleus is a cluster of cell bodies and a tract is a bundle of axons, not surface features.\n- **(C)** This reverses the definitions; the gyrus is the ridge and the sulcus is the groove.\n- **(D)** A hemisphere is half the cerebrum and a commissure connects the two halves; neither describes surface folds."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -485,14 +485,14 @@
           "question": {
             "stem": "Which statement best describes the two basic cell types found in nervous tissue?",
             "options": [
-              "Neurons carry out computation and communication, while glia play a supporting role.",
-              "Glia carry out computation and communication, while neurons provide support.",
-              "Both neurons and glia are electrically active and function identically.",
               "Neurons make up almost 50% of the cells in the brain, while glia are rare.",
+              "Both neurons and glia are electrically active and function identically.",
+              "Glia carry out computation and communication, while neurons provide support.",
+              "Neurons carry out computation and communication, while glia play a supporting role.",
               "Glia are the only cells that release chemical signals onto target cells."
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Neurons are electrically active cells responsible for computation and communication, whereas glia (Greek for \"glue\") provide support to nervous tissue.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the roles; neurons, not glia, are the basis of communication.\n- **(C)** Glia are not the primary electrically active signalling cells; they mainly support neurons.\n- **(D)** It is glia, not neurons, that make up nearly 50% of the cells in the brain.\n- **(E)** It is neurons, not glia, that (mostly) release chemical signals onto target cells."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Neurons are electrically active cells responsible for computation and communication, whereas glia (Greek for \"glue\") provide support to nervous tissue.\n\n**Why the other options are wrong:**\n- **(A)** It is glia, not neurons, that make up nearly 50% of the cells in the brain.\n- **(B)** Glia are not the primary electrically active signalling cells; they mainly support neurons.\n- **(C)** This reverses the roles; neurons, not glia, are the basis of communication.\n- **(E)** It is neurons, not glia, that (mostly) release chemical signals onto target cells."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -502,14 +502,14 @@
           "question": {
             "stem": "A bundle of axons located within the peripheral nervous system is correctly called a:",
             "options": [
-              "tract",
-              "nerve",
-              "nucleus",
               "ganglion",
-              "gyrus"
+              "nucleus",
+              "nerve",
+              "gyrus",
+              "tract"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** In the PNS, a bundle of axons is called a nerve, while the same bundle in the CNS would be called a tract.\n\n**Why the other options are wrong:**\n- **(A)** A tract is a bundle of axons in the CNS, not the PNS.\n- **(C)** A nucleus is a cluster of cell bodies in the CNS, not a bundle of axons.\n- **(D)** A ganglion is a cluster of cell bodies in the PNS, not a bundle of axons.\n- **(E)** A gyrus is a ridge in the folds of the cerebral cortex, not a bundle of axons."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** In the PNS, a bundle of axons is called a nerve, while the same bundle in the CNS would be called a tract.\n\n**Why the other options are wrong:**\n- **(A)** A ganglion is a cluster of cell bodies in the PNS, not a bundle of axons.\n- **(B)** A nucleus is a cluster of cell bodies in the CNS, not a bundle of axons.\n- **(D)** A gyrus is a ridge in the folds of the cerebral cortex, not a bundle of axons.\n- **(E)** A tract is a bundle of axons in the CNS, not the PNS."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1476,14 +1476,14 @@
           "question": {
             "stem": "A patient sustains damage to the lateral horn of the grey matter in a thoracic segment of the spinal cord. Which function is most likely to be directly affected?",
             "options": [
-              "Conscious perception of touch on the skin",
-              "Sympathetic (autonomic) output",
+              "Production of cerebrospinal fluid",
               "Voluntary contraction of skeletal muscle in the leg",
               "Reflexive processing of incoming sensory input",
-              "Production of cerebrospinal fluid"
+              "Conscious perception of touch on the skin",
+              "Sympathetic (autonomic) output"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The lateral horn, found only in certain spinal segments such as the thoracic region, is the central nervous system component of the sympathetic division of the autonomic nervous system.\n\n**Why the other options are wrong:**\n- **(A)** Conscious perception of touch involves ascending pathways to the somatosensory cortex, not the lateral horn.\n- **(C)** Voluntary skeletal muscle control originates in the ventral (anterior) horn.\n- **(D)** Sensory processing occurs in the dorsal (posterior) horn.\n- **(E)** CSF is produced by the choroid plexus, not by any spinal grey matter horn."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The lateral horn, found only in certain spinal segments such as the thoracic region, is the central nervous system component of the sympathetic division of the autonomic nervous system.\n\n**Why the other options are wrong:**\n- **(A)** CSF is produced by the choroid plexus, not by any spinal grey matter horn.\n- **(B)** Voluntary skeletal muscle control originates in the ventral (anterior) horn.\n- **(C)** Sensory processing occurs in the dorsal (posterior) horn.\n- **(D)** Conscious perception of touch involves ascending pathways to the somatosensory cortex, not the lateral horn."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1493,14 +1493,14 @@
           "question": {
             "stem": "A patient loses the ability to form new short-term memories after bilateral surgical removal of a medial temporal-lobe structure, while retaining memories formed years earlier. This outcome is most consistent with damage to which structure, mirroring the case of patient H.M.?",
             "options": [
-              "Substantia nigra",
-              "Amygdala",
               "Hippocampus",
               "Prefrontal cortex",
-              "Basal nuclei"
+              "Substantia nigra",
+              "Basal nuclei",
+              "Amygdala"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The hippocampus is necessary for forming new short-term memories; its bilateral removal (as in H.M.) prevents new memory formation while leaving already-consolidated long-term memories intact.\n\n**Why the other options are wrong:**\n- **(A)** Loss of substantia nigra neurons causes Parkinson's disease, a movement disorder.\n- **(B)** The amygdala is primarily involved in emotional memories, not general fact/short-term memory formation.\n- **(D)** Prefrontal cortex damage alters personality and decision-making, as in Phineas Gage.\n- **(E)** The basal nuclei regulate movement, not the formation of new memories."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The hippocampus is necessary for forming new short-term memories; its bilateral removal (as in H.M.) prevents new memory formation while leaving already-consolidated long-term memories intact.\n\n**Why the other options are wrong:**\n- **(B)** Prefrontal cortex damage alters personality and decision-making, as in Phineas Gage.\n- **(C)** Loss of substantia nigra neurons causes Parkinson's disease, a movement disorder.\n- **(D)** The basal nuclei regulate movement, not the formation of new memories.\n- **(E)** The amygdala is primarily involved in emotional memories, not general fact/short-term memory formation."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1510,14 +1510,14 @@
           "question": {
             "stem": "A researcher is comparing glial cells that produce myelin. Which statement correctly distinguishes the two myelinating glial cell types?",
             "options": [
-              "Oligodendrocytes myelinate axons in the PNS, while Schwann cells myelinate axons in the CNS",
-              "Both oligodendrocytes and Schwann cells are found only in the CNS",
+              "Ependymal cells myelinate CNS axons, while microglia myelinate PNS axons",
               "Oligodendrocytes myelinate CNS axons, while Schwann cells myelinate PNS axons",
+              "Both oligodendrocytes and Schwann cells are found only in the CNS",
               "Astrocytes myelinate CNS axons, while satellite cells myelinate PNS axons",
-              "Ependymal cells myelinate CNS axons, while microglia myelinate PNS axons"
+              "Oligodendrocytes myelinate axons in the PNS, while Schwann cells myelinate axons in the CNS"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Oligodendrocytes produce myelin in the central nervous system, whereas Schwann cells produce myelin in the peripheral nervous system.\n\n**Why the other options are wrong:**\n- **(A)** The locations are reversed; oligodendrocytes are CNS and Schwann cells are PNS.\n- **(B)** Schwann cells are found in the PNS, not the CNS.\n- **(D)** Astrocytes and satellite cells do not produce myelin; they provide nutritive/support functions.\n- **(E)** Ependymal cells make CSF and microglia are immune cells; neither produces myelin."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Oligodendrocytes produce myelin in the central nervous system, whereas Schwann cells produce myelin in the peripheral nervous system.\n\n**Why the other options are wrong:**\n- **(A)** Ependymal cells make CSF and microglia are immune cells; neither produces myelin.\n- **(C)** Schwann cells are found in the PNS, not the CNS.\n- **(D)** Astrocytes and satellite cells do not produce myelin; they provide nutritive/support functions.\n- **(E)** The locations are reversed; oligodendrocytes are CNS and Schwann cells are PNS."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1527,14 +1527,14 @@
           "question": {
             "stem": "A bipolar neuron and a multipolar neuron are compared based on the number of processes emerging from the soma. Which statement correctly describes this difference?",
             "options": [
-              "A bipolar neuron has two processes (one axon and one dendrite), while a multipolar neuron has one axon and two or more dendrites",
-              "A bipolar neuron has only one process, while a multipolar neuron has two processes",
+              "A multipolar neuron has two processes, while a bipolar neuron has more than two",
               "Both have a single process that splits into axon and dendrite ends",
               "A bipolar neuron has no axon, while a multipolar neuron has no dendrites",
-              "A multipolar neuron has two processes, while a bipolar neuron has more than two"
+              "A bipolar neuron has only one process, while a multipolar neuron has two processes",
+              "A bipolar neuron has two processes (one axon and one dendrite), while a multipolar neuron has one axon and two or more dendrites"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Bipolar neurons have exactly two processes (an axon and a dendrite), while multipolar neurons have more than two processes: one axon plus two or more dendrites.\n\n**Why the other options are wrong:**\n- **(B)** A single process describes a unipolar neuron, not a bipolar neuron.\n- **(C)** A single process that splits describes a unipolar neuron.\n- **(D)** Every neuron has one axon; bipolar neurons do have an axon and multipolar neurons do have dendrites.\n- **(E)** The descriptions are reversed; multipolar neurons have more than two processes."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Bipolar neurons have exactly two processes (an axon and a dendrite), while multipolar neurons have more than two processes: one axon plus two or more dendrites.\n\n**Why the other options are wrong:**\n- **(A)** The descriptions are reversed; multipolar neurons have more than two processes.\n- **(B)** A single process that splits describes a unipolar neuron.\n- **(C)** Every neuron has one axon; bipolar neurons do have an axon and multipolar neurons do have dendrites.\n- **(D)** A single process describes a unipolar neuron, not a bipolar neuron."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1546,12 +1546,12 @@
             "options": [
               "It exits through the interventricular foramina and is reabsorbed at the choroid plexus",
               "It exits through the median and lateral apertures of the fourth ventricle and is reabsorbed at the arachnoid granulations",
-              "It exits through the cerebral aqueduct and is reabsorbed at the pia mater",
               "It exits through the central canal and is reabsorbed at the third ventricle",
+              "It exits through the cerebral aqueduct and is reabsorbed at the pia mater",
               "It exits through the arachnoid granulations and is reabsorbed at the choroid plexus"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Most CSF leaves the fourth ventricle through the single median aperture and paired lateral apertures into the subarachnoid space, then is reabsorbed into the dural sinuses at the arachnoid granulations.\n\n**Why the other options are wrong:**\n- **(A)** The interventricular foramina connect lateral to third ventricles; the choroid plexus produces, not reabsorbs, CSF.\n- **(C)** The cerebral aqueduct connects third to fourth ventricles internally; the pia mater is not a reabsorption site.\n- **(D)** The central canal is essentially a cul-de-sac, not the main exit route.\n- **(E)** The arachnoid granulations are the reabsorption site, not the exit route, and the choroid plexus produces CSF."
+            "explanation": "**Why (B) is correct:** Most CSF leaves the fourth ventricle through the single median aperture and paired lateral apertures into the subarachnoid space, then is reabsorbed into the dural sinuses at the arachnoid granulations.\n\n**Why the other options are wrong:**\n- **(A)** The interventricular foramina connect lateral to third ventricles; the choroid plexus produces, not reabsorbs, CSF.\n- **(C)** The central canal is essentially a cul-de-sac, not the main exit route.\n- **(D)** The cerebral aqueduct connects third to fourth ventricles internally; the pia mater is not a reabsorption site.\n- **(E)** The arachnoid granulations are the reabsorption site, not the exit route, and the choroid plexus produces CSF."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1562,13 +1562,13 @@
             "stem": "Moving from the outermost to the innermost meningeal layer surrounding the CNS, which sequence is correct, and which layer directly follows the convolutions of the gyri and sulci?",
             "options": [
               "Pia mater → arachnoid mater → dura mater; the dura mater follows the gyri and sulci",
-              "Dura mater → arachnoid mater → pia mater; the pia mater follows the gyri and sulci",
-              "Arachnoid mater → dura mater → pia mater; the arachnoid follows the gyri and sulci",
               "Dura mater → pia mater → arachnoid mater; the arachnoid follows the gyri and sulci",
-              "Pia mater → dura mater → arachnoid mater; the pia mater follows the gyri and sulci"
+              "Pia mater → dura mater → arachnoid mater; the pia mater follows the gyri and sulci",
+              "Dura mater → arachnoid mater → pia mater; the pia mater follows the gyri and sulci",
+              "Arachnoid mater → dura mater → pia mater; the arachnoid follows the gyri and sulci"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** From outer to inner, the meninges are the dura mater, arachnoid mater, and pia mater; the pia mater lies directly on the CNS surface and follows the convolutions of the gyri and sulci.\n\n**Why the other options are wrong:**\n- **(A)** The order is reversed, and the dura is the outermost, tough layer, not the one following gyri.\n- **(C)** The dura is outermost, not the arachnoid.\n- **(D)** The arachnoid lies between dura and pia, and the pia (not arachnoid) follows the gyri.\n- **(E)** The dura is outermost and the arachnoid lies between dura and pia; this order is incorrect."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** From outer to inner, the meninges are the dura mater, arachnoid mater, and pia mater; the pia mater lies directly on the CNS surface and follows the convolutions of the gyri and sulci.\n\n**Why the other options are wrong:**\n- **(A)** The order is reversed, and the dura is the outermost, tough layer, not the one following gyri.\n- **(B)** The arachnoid lies between dura and pia, and the pia (not arachnoid) follows the gyri.\n- **(C)** The dura is outermost and the arachnoid lies between dura and pia; this order is incorrect.\n- **(E)** The dura is outermost, not the arachnoid."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1578,14 +1578,14 @@
           "question": {
             "stem": "In the primary somatosensory cortex, body regions with a denser concentration of sensory receptors (such as the fingers and lips) are represented by disproportionately large cortical areas. This arrangement is an example of what organizational principle?",
             "options": [
-              "Random distribution of sensory input across the cortex",
               "Topographic organization, where adjacent body parts map to adjacent cortical areas and receptor density influences cortical area",
               "Localization of function, where the whole lobe processes one sensory modality equally",
               "Lateralization, where each body region maps only to one hemisphere",
+              "Random distribution of sensory input across the cortex",
               "Modularity, where all body regions receive equal cortical representation"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The primary somatosensory cortex is topographically organized so that adjacent body parts project to adjacent cortical areas, and regions with denser receptors receive proportionally larger cortical representation.\n\n**Why the other options are wrong:**\n- **(A)** The mapping is orderly and topographic, not random.\n- **(C)** Localization of function refers to lobes handling different functions, not the within-map receptor-density relationship.\n- **(D)** Lateralization refers to hemisphere specialization, not receptor-density mapping.\n- **(E)** Cortical representation is unequal, being larger for denser-receptor regions."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The primary somatosensory cortex is topographically organized so that adjacent body parts project to adjacent cortical areas, and regions with denser receptors receive proportionally larger cortical representation.\n\n**Why the other options are wrong:**\n- **(B)** Localization of function refers to lobes handling different functions, not the within-map receptor-density relationship.\n- **(C)** Lateralization refers to hemisphere specialization, not receptor-density mapping.\n- **(D)** The mapping is orderly and topographic, not random.\n- **(E)** Cortical representation is unequal, being larger for denser-receptor regions."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1595,14 +1595,14 @@
           "question": {
             "stem": "A student is asked to identify which three regions collectively form the brain stem. Which grouping is correct?",
             "options": [
-              "Cerebrum, diencephalon, and cerebellum",
-              "Midbrain, pons, and medulla oblongata",
-              "Thalamus, hypothalamus, and midbrain",
               "Pons, medulla oblongata, and cerebellum",
-              "Diencephalon, midbrain, and pons"
+              "Diencephalon, midbrain, and pons",
+              "Midbrain, pons, and medulla oblongata",
+              "Cerebrum, diencephalon, and cerebellum",
+              "Thalamus, hypothalamus, and midbrain"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The brain stem consists of the midbrain plus the pons and medulla oblongata of the hindbrain, which together look like a stem holding up the forebrain.\n\n**Why the other options are wrong:**\n- **(A)** The cerebrum, diencephalon, and cerebellum are separate major brain regions, not the brain stem.\n- **(C)** The thalamus and hypothalamus are part of the diencephalon, not the brain stem.\n- **(D)** The cerebellum is part of the hindbrain but sits behind the brain stem and is not part of it.\n- **(E)** The diencephalon is not part of the brain stem."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The brain stem consists of the midbrain plus the pons and medulla oblongata of the hindbrain, which together look like a stem holding up the forebrain.\n\n**Why the other options are wrong:**\n- **(A)** The cerebellum is part of the hindbrain but sits behind the brain stem and is not part of it.\n- **(B)** The diencephalon is not part of the brain stem.\n- **(D)** The cerebrum, diencephalon, and cerebellum are separate major brain regions, not the brain stem.\n- **(E)** The thalamus and hypothalamus are part of the diencephalon, not the brain stem."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1612,14 +1612,14 @@
           "question": {
             "stem": "Consider the same bundle of retinal axons that is called the optic nerve as it leaves the eye but the optic tract once inside the cranium. Which pair of terms correctly generalizes this CNS-versus-PNS distinction for bundles of axons AND for clusters of cell bodies?",
             "options": [
-              "Tract (CNS) vs. nerve (PNS); nucleus (CNS) vs. ganglion (PNS)",
-              "Nerve (CNS) vs. tract (PNS); ganglion (CNS) vs. nucleus (PNS)",
               "Tract (CNS) vs. nerve (PNS); ganglion (CNS) vs. nucleus (PNS)",
               "Nucleus (CNS) vs. ganglion (PNS); nerve (CNS) vs. tract (PNS)",
-              "Both a nerve and a tract are found only in the PNS; both nuclei and ganglia are found only in the CNS"
+              "Tract (CNS) vs. nerve (PNS); nucleus (CNS) vs. ganglion (PNS)",
+              "Both a nerve and a tract are found only in the PNS; both nuclei and ganglia are found only in the CNS",
+              "Nerve (CNS) vs. tract (PNS); ganglion (CNS) vs. nucleus (PNS)"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A bundle of axons is a tract in the CNS and a nerve in the PNS, while a cluster of cell bodies is a nucleus in the CNS and a ganglion in the PNS.\n\n**Why the other options are wrong:**\n- **(B)** The CNS/PNS assignments for both term pairs are reversed.\n- **(C)** The axon-bundle terms are correct, but the cell-body terms are reversed.\n- **(D)** The first pair (nucleus/ganglion) is correct but the second pair (nerve/tract) is reversed.\n- **(E)** Tracts and nuclei are CNS structures, not PNS-only, and ganglia are PNS, not CNS."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A bundle of axons is a tract in the CNS and a nerve in the PNS, while a cluster of cell bodies is a nucleus in the CNS and a ganglion in the PNS.\n\n**Why the other options are wrong:**\n- **(A)** The axon-bundle terms are correct, but the cell-body terms are reversed.\n- **(B)** The first pair (nucleus/ganglion) is correct but the second pair (nerve/tract) is reversed.\n- **(D)** Tracts and nuclei are CNS structures, not PNS-only, and ganglia are PNS, not CNS.\n- **(E)** The CNS/PNS assignments for both term pairs are reversed."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1629,14 +1629,14 @@
           "question": {
             "stem": "Which of the following correctly matches a ventricle with its location within the brain?",
             "options": [
-              "The third ventricle lies deep within the cerebrum",
+              "The lateral ventricles are located between the left and right sides of the diencephalon",
               "The lateral ventricles form the space between the cerebellum and the brainstem",
+              "The third ventricle lies deep within the cerebrum",
               "The third ventricle is the space between the left and right sides of the diencephalon",
-              "The fourth ventricle lies deep within each cerebral hemisphere",
-              "The lateral ventricles are located between the left and right sides of the diencephalon"
+              "The fourth ventricle lies deep within each cerebral hemisphere"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The third ventricle is the CSF-filled space between the left and right sides of the diencephalon.\n\n**Why the other options are wrong:**\n- **(A)** The lateral ventricles, not the third ventricle, lie deep within the cerebrum.\n- **(B)** The fourth ventricle, not the lateral ventricles, lies between the cerebellum and brainstem.\n- **(D)** The lateral ventricles, not the fourth ventricle, lie deep within the cerebral hemispheres.\n- **(E)** The third ventricle, not the lateral ventricles, is located between the sides of the diencephalon."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The third ventricle is the CSF-filled space between the left and right sides of the diencephalon.\n\n**Why the other options are wrong:**\n- **(A)** The third ventricle, not the lateral ventricles, is located between the sides of the diencephalon.\n- **(B)** The fourth ventricle, not the lateral ventricles, lies between the cerebellum and brainstem.\n- **(C)** The lateral ventricles, not the third ventricle, lie deep within the cerebrum.\n- **(E)** The lateral ventricles, not the fourth ventricle, lie deep within the cerebral hemispheres."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1646,14 +1646,14 @@
           "question": {
             "stem": "A neurosurgeon inserts a needle into the space that contains circulating cerebrospinal fluid and the web-like arachnoid trabeculae. Between which two meningeal layers is this space located?",
             "options": [
-              "Between the dura mater and the skull",
-              "Between the dura mater and the arachnoid mater",
               "Between the arachnoid mater and the pia mater",
+              "Between two layers of pia mater",
+              "Between the dura mater and the skull",
               "Between the pia mater and the surface of the brain",
-              "Between two layers of pia mater"
+              "Between the dura mater and the arachnoid mater"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The subarachnoid space lies between the arachnoid mater and the pia mater, and it contains circulating CSF and the filamentous arachnoid trabeculae.\n\n**Why the other options are wrong:**\n- **(A)** This describes an epidural location, not the CSF-filled subarachnoid space.\n- **(B)** The space between dura and arachnoid is the subdural space, which does not normally hold circulating CSF or trabeculae.\n- **(D)** The pia mater lies directly on the brain surface, leaving no CSF-filled space beneath it.\n- **(E)** The pia mater is a single thin layer, not two layers enclosing a space."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The subarachnoid space lies between the arachnoid mater and the pia mater, and it contains circulating CSF and the filamentous arachnoid trabeculae.\n\n**Why the other options are wrong:**\n- **(B)** The pia mater is a single thin layer, not two layers enclosing a space.\n- **(C)** This describes an epidural location, not the CSF-filled subarachnoid space.\n- **(D)** The pia mater lies directly on the brain surface, leaving no CSF-filled space beneath it.\n- **(E)** The space between dura and arachnoid is the subdural space, which does not normally hold circulating CSF or trabeculae."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1663,14 +1663,14 @@
           "question": {
             "stem": "A bipolar neuron and a multipolar neuron are compared. Which statement correctly distinguishes them based on the number and type of processes?",
             "options": [
-              "A bipolar neuron has one process total, while a multipolar neuron has two",
-              "A bipolar neuron has two processes (one axon and one dendrite), while a multipolar neuron has one axon plus two or more dendrites",
-              "A bipolar neuron has no axon, while a multipolar neuron has one axon",
+              "Both neuron types have exactly one process that splits into an axon and dendrite",
               "A bipolar neuron has many dendrites but no axon, while a multipolar neuron has one dendrite",
-              "Both neuron types have exactly one process that splits into an axon and dendrite"
+              "A bipolar neuron has no axon, while a multipolar neuron has one axon",
+              "A bipolar neuron has one process total, while a multipolar neuron has two",
+              "A bipolar neuron has two processes (one axon and one dendrite), while a multipolar neuron has one axon plus two or more dendrites"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A bipolar neuron has two processes—an axon and a dendrite—whereas a multipolar neuron has one axon plus two or more dendrites.\n\n**Why the other options are wrong:**\n- **(A)** A single process describes a unipolar neuron, not a bipolar one.\n- **(C)** Every neuron, including bipolar neurons, has one axon.\n- **(D)** Bipolar neurons have a single dendrite, not many, and they do possess an axon.\n- **(E)** A single splitting process describes a unipolar neuron, not both types."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A bipolar neuron has two processes—an axon and a dendrite—whereas a multipolar neuron has one axon plus two or more dendrites.\n\n**Why the other options are wrong:**\n- **(A)** A single splitting process describes a unipolar neuron, not both types.\n- **(B)** Bipolar neurons have a single dendrite, not many, and they do possess an axon.\n- **(C)** Every neuron, including bipolar neurons, has one axon.\n- **(D)** A single process describes a unipolar neuron, not a bipolar one."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1680,14 +1680,14 @@
           "question": {
             "stem": "A patient with damage to the medulla oblongata develops irregular heart rate, unstable blood pressure, and disrupted breathing depth. Which functional feature of the medulla best explains this cluster of symptoms?",
             "options": [
-              "It contains the primary motor cortex controlling skeletal muscle",
+              "It produces cerebrospinal fluid via the choroid plexus",
               "It houses autonomic control centres for heart rate, respiration, and blood vessel diameter",
               "It relays all sensory information (except smell) to the cerebrum",
-              "It produces cerebrospinal fluid via the choroid plexus",
+              "It contains the primary motor cortex controlling skeletal muscle",
               "It coordinates motor commands with sensory feedback for smooth movement"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The medulla contains control centres for heart rate and contraction strength, respiratory rate and depth, and blood vessel constriction/dilation, explaining these cardiovascular and respiratory symptoms.\n\n**Why the other options are wrong:**\n- **(A)** The primary motor cortex is in the frontal lobe of the cerebrum, not the medulla.\n- **(C)** Sensory relay to the cerebrum is the role of the thalamus.\n- **(D)** CSF is produced by choroid plexus in the ventricles, not by the medulla itself.\n- **(E)** Coordinating motor commands with sensory feedback is a cerebellar function."
+            "explanation": "**Why (B) is correct:** The medulla contains control centres for heart rate and contraction strength, respiratory rate and depth, and blood vessel constriction/dilation, explaining these cardiovascular and respiratory symptoms.\n\n**Why the other options are wrong:**\n- **(A)** CSF is produced by choroid plexus in the ventricles, not by the medulla itself.\n- **(C)** Sensory relay to the cerebrum is the role of the thalamus.\n- **(D)** The primary motor cortex is in the frontal lobe of the cerebrum, not the medulla.\n- **(E)** Coordinating motor commands with sensory feedback is a cerebellar function."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1699,12 +1699,12 @@
             "options": [
               "At the choroid plexus in the lateral ventricles",
               "At the central canal of the spinal cord",
-              "At the arachnoid granulations projecting into the dural sinuses",
               "At the median and lateral apertures of the fourth ventricle",
-              "At the cerebral aqueduct in the midbrain"
+              "At the cerebral aqueduct in the midbrain",
+              "At the arachnoid granulations projecting into the dural sinuses"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The arachnoid granulations are outpocketings of the arachnoid membrane into the dural sinuses, where CSF (with wastes) is reabsorbed into the blood.\n\n**Why the other options are wrong:**\n- **(A)** The choroid plexus produces CSF; it does not reabsorb it.\n- **(B)** The central canal is a cul-de-sac where CSF flows, not a reabsorption site.\n- **(D)** The apertures allow CSF to exit the ventricles into the subarachnoid space, not to be reabsorbed.\n- **(E)** The cerebral aqueduct is a passage between the third and fourth ventricles, not a reabsorption site."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The arachnoid granulations are outpocketings of the arachnoid membrane into the dural sinuses, where CSF (with wastes) is reabsorbed into the blood.\n\n**Why the other options are wrong:**\n- **(A)** The choroid plexus produces CSF; it does not reabsorb it.\n- **(B)** The central canal is a cul-de-sac where CSF flows, not a reabsorption site.\n- **(C)** The apertures allow CSF to exit the ventricles into the subarachnoid space, not to be reabsorbed.\n- **(D)** The cerebral aqueduct is a passage between the third and fourth ventricles, not a reabsorption site."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1731,14 +1731,14 @@
           "question": {
             "stem": "In the thoracic region of the spinal cord, a cross-section reveals a lateral horn of grey matter that is absent in most cervical segments. What function does this lateral horn serve?",
             "options": [
-              "Sensory processing of incoming information",
+              "Carrying ascending sensory tracts to the brain",
               "Motor output to skeletal muscle",
               "The central nervous system component of the sympathetic nervous system",
-              "Carrying ascending sensory tracts to the brain",
+              "Sensory processing of incoming information",
               "Producing cerebrospinal fluid"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The lateral horn, found only in certain segments (thoracic and upper lumbar), is the central nervous system component of the sympathetic division of the autonomic nervous system.\n\n**Why the other options are wrong:**\n- **(A)** Sensory processing is the function of the dorsal (posterior) horn.\n- **(B)** Motor output to skeletal muscle is the function of the ventral (anterior) horn.\n- **(D)** Ascending sensory tracts are found in the white matter columns, not the lateral horn.\n- **(E)** CSF is produced by the choroid plexus in the ventricles, not by spinal grey matter."
+            "explanation": "**Why (C) is correct:** The lateral horn, found only in certain segments (thoracic and upper lumbar), is the central nervous system component of the sympathetic division of the autonomic nervous system.\n\n**Why the other options are wrong:**\n- **(A)** Ascending sensory tracts are found in the white matter columns, not the lateral horn.\n- **(B)** Motor output to skeletal muscle is the function of the ventral (anterior) horn.\n- **(D)** Sensory processing is the function of the dorsal (posterior) horn.\n- **(E)** CSF is produced by the choroid plexus in the ventricles, not by spinal grey matter."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1748,14 +1748,14 @@
           "question": {
             "stem": "Parkinson's disease and drug addiction both involve dopamine pathways originating in the midbrain, yet they target different structures. Which comparison correctly matches the disorder to the affected pathway?",
             "options": [
+              "Both disorders result from loss of neurons in the hippocampus",
               "Parkinson's involves loss of substantia nigra neurons that release dopamine into the basal nuclei; addiction involves VTA dopamine release into the nucleus accumbens",
               "Parkinson's involves VTA dopamine loss into the prefrontal cortex; addiction involves substantia nigra dopamine into the basal nuclei",
-              "Both disorders result from loss of neurons in the hippocampus",
-              "Parkinson's involves excess dopamine in the nucleus accumbens; addiction involves too little dopamine in the basal nuclei",
-              "Both involve degeneration of the corpus callosum connecting the hemispheres"
+              "Both involve degeneration of the corpus callosum connecting the hemispheres",
+              "Parkinson's involves excess dopamine in the nucleus accumbens; addiction involves too little dopamine in the basal nuclei"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Parkinson's is caused by loss of substantia nigra neurons that release dopamine into the basal nuclei (impairing movement), while addiction involves VTA dopamine release into the nucleus accumbens (reward pathway).\n\n**Why the other options are wrong:**\n- **(B)** This reverses the two pathways—the substantia nigra projects to basal nuclei, and the VTA to prefrontal cortex/nucleus accumbens.\n- **(C)** Neither disorder primarily results from hippocampal neuron loss.\n- **(D)** Parkinson's involves too little dopamine in the basal nuclei, not excess in the accumbens.\n- **(E)** Corpus callosum degeneration relates to split-brain conditions, not these disorders."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Parkinson's is caused by loss of substantia nigra neurons that release dopamine into the basal nuclei (impairing movement), while addiction involves VTA dopamine release into the nucleus accumbens (reward pathway).\n\n**Why the other options are wrong:**\n- **(A)** Neither disorder primarily results from hippocampal neuron loss.\n- **(C)** This reverses the two pathways—the substantia nigra projects to basal nuclei, and the VTA to prefrontal cortex/nucleus accumbens.\n- **(D)** Corpus callosum degeneration relates to split-brain conditions, not these disorders.\n- **(E)** Parkinson's involves too little dopamine in the basal nuclei, not excess in the accumbens."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1766,13 +1766,13 @@
             "stem": "An oligodendrocyte and a Schwann cell are compared for their functions. Which statement is accurate?",
             "options": [
               "Both produce myelin, but oligodendrocytes do so in the CNS and Schwann cells in the PNS",
-              "Both phagocytose pathogens as immune cells of the nervous system",
               "Oligodendrocytes form the blood-brain barrier, while Schwann cells filter blood to make CSF",
-              "Oligodendrocytes surround ganglia in the PNS, while Schwann cells line the ventricles",
-              "Both regulate the contents of synapses in the CNS"
+              "Both phagocytose pathogens as immune cells of the nervous system",
+              "Both regulate the contents of synapses in the CNS",
+              "Oligodendrocytes surround ganglia in the PNS, while Schwann cells line the ventricles"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Both cell types produce myelin, but oligodendrocytes myelinate axons in the central nervous system while Schwann cells do so in the peripheral nervous system.\n\n**Why the other options are wrong:**\n- **(B)** Phagocytosis of pathogens is the role of microglia, not myelin-producing cells.\n- **(C)** Blood-brain barrier formation is an astrocyte function and CSF production is an ependymal cell function.\n- **(D)** Satellite cells surround ganglia and ependymal cells line ventricles, not these two.\n- **(E)** Regulating synapse contents is a function of astrocytes."
+            "explanation": "**Why (A) is correct:** Both cell types produce myelin, but oligodendrocytes myelinate axons in the central nervous system while Schwann cells do so in the peripheral nervous system.\n\n**Why the other options are wrong:**\n- **(B)** Blood-brain barrier formation is an astrocyte function and CSF production is an ependymal cell function.\n- **(C)** Phagocytosis of pathogens is the role of microglia, not myelin-producing cells.\n- **(D)** Regulating synapse contents is a function of astrocytes.\n- **(E)** Satellite cells surround ganglia and ependymal cells line ventricles, not these two."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1782,14 +1782,14 @@
           "question": {
             "stem": "A student is asked which structures make up the brainstem. Which grouping is correct?",
             "options": [
-              "Cerebrum, diencephalon, and cerebellum",
               "Midbrain, pons, and medulla oblongata",
+              "Cerebrum, diencephalon, and cerebellum",
               "Pons, medulla oblongata, and cerebellum",
-              "Thalamus, hypothalamus, and midbrain",
-              "Cerebrum and diencephalon only"
+              "Cerebrum and diencephalon only",
+              "Thalamus, hypothalamus, and midbrain"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The brainstem consists of the midbrain plus the pons and medulla oblongata of the hindbrain.\n\n**Why the other options are wrong:**\n- **(A)** The cerebrum, diencephalon, and cerebellum are separate major brain regions, not the brainstem.\n- **(C)** The cerebellum is part of the hindbrain but sits behind the brain stem and is not counted within it.\n- **(D)** The thalamus and hypothalamus are part of the diencephalon, not the brainstem.\n- **(E)** The cerebrum and diencephalon form the forebrain, not the brainstem."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The brainstem consists of the midbrain plus the pons and medulla oblongata of the hindbrain.\n\n**Why the other options are wrong:**\n- **(B)** The cerebrum, diencephalon, and cerebellum are separate major brain regions, not the brainstem.\n- **(C)** The cerebellum is part of the hindbrain but sits behind the brain stem and is not counted within it.\n- **(D)** The cerebrum and diencephalon form the forebrain, not the brainstem.\n- **(E)** The thalamus and hypothalamus are part of the diencephalon, not the brainstem."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1799,14 +1799,14 @@
           "question": {
             "stem": "A patient loses the ability to relay nearly all incoming sensory information to the cerebral cortex for conscious perception, though their sense of smell remains intact. Damage to which brain structure best explains this pattern?",
             "options": [
-              "The cerebellum",
               "The hypothalamus",
-              "The thalamus",
               "The medulla oblongata",
-              "The primary visual cortex"
+              "The primary visual cortex",
+              "The cerebellum",
+              "The thalamus"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The thalamus relays and processes all sensory information except smell before it reaches the cerebral cortex for conscious perception, so damage would disrupt sensory relay while sparing olfaction.\n\n**Why the other options are wrong:**\n- **(A)** The cerebellum coordinates motor activity, not sensory relay to the cortex.\n- **(B)** The hypothalamus regulates homeostasis and the autonomic/endocrine systems, not general sensory relay.\n- **(D)** The medulla controls autonomic functions like heart rate and breathing, not sensory relay to the cortex.\n- **(E)** The primary visual cortex processes only vision, not nearly all senses."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The thalamus relays and processes all sensory information except smell before it reaches the cerebral cortex for conscious perception, so damage would disrupt sensory relay while sparing olfaction.\n\n**Why the other options are wrong:**\n- **(A)** The hypothalamus regulates homeostasis and the autonomic/endocrine systems, not general sensory relay.\n- **(B)** The medulla controls autonomic functions like heart rate and breathing, not sensory relay to the cortex.\n- **(C)** The primary visual cortex processes only vision, not nearly all senses.\n- **(D)** The cerebellum coordinates motor activity, not sensory relay to the cortex."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1817,13 +1817,13 @@
             "stem": "A patient has a blockage of the cerebral aqueduct that prevents CSF from reaching the fourth ventricle. Which downstream event would be most directly disrupted?",
             "options": [
               "Production of CSF by the choroid plexus in the lateral ventricles",
-              "Filtration of blood by ependymal cells in the third ventricle",
-              "Passage of CSF into the subarachnoid space through the median and lateral apertures",
               "Formation of the interstitial fluid within the diencephalon",
-              "Reabsorption of blood into the jugular veins at the choroid plexus"
+              "Passage of CSF into the subarachnoid space through the median and lateral apertures",
+              "Reabsorption of blood into the jugular veins at the choroid plexus",
+              "Filtration of blood by ependymal cells in the third ventricle"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The apertures that let CSF leave the ventricular system into the subarachnoid space open from the fourth ventricle, so a block upstream at the aqueduct would prevent CSF from reaching them.\n\n**Why the other options are wrong:**\n- **(A)** The lateral ventricles are upstream of the aqueduct, so their production continues.\n- **(B)** The third ventricle is also upstream of the aqueduct and would still function.\n- **(D)** Interstitial fluid formation in the diencephalon is not a direct function tied to the aqueduct.\n- **(E)** Reabsorption into blood occurs at the arachnoid granulations, not the choroid plexus."
+            "explanation": "**Why (C) is correct:** The apertures that let CSF leave the ventricular system into the subarachnoid space open from the fourth ventricle, so a block upstream at the aqueduct would prevent CSF from reaching them.\n\n**Why the other options are wrong:**\n- **(A)** The lateral ventricles are upstream of the aqueduct, so their production continues.\n- **(B)** Interstitial fluid formation in the diencephalon is not a direct function tied to the aqueduct.\n- **(D)** Reabsorption into blood occurs at the arachnoid granulations, not the choroid plexus.\n- **(E)** The third ventricle is also upstream of the aqueduct and would still function."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1833,14 +1833,14 @@
           "question": {
             "stem": "A student is asked to list the structures that make up the brain stem. Which grouping is correct?",
             "options": [
-              "Midbrain, pons, and medulla oblongata",
-              "Pons, medulla oblongata, and cerebellum",
-              "Cerebrum, diencephalon, and midbrain",
+              "Thalamus, hypothalamus, and pons",
               "Midbrain, cerebellum, and diencephalon",
-              "Thalamus, hypothalamus, and pons"
+              "Pons, medulla oblongata, and cerebellum",
+              "Midbrain, pons, and medulla oblongata",
+              "Cerebrum, diencephalon, and midbrain"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The brain stem consists of the midbrain plus the pons and medulla oblongata of the hindbrain.\n\n**Why the other options are wrong:**\n- **(B)** The cerebellum is part of the hindbrain but is not part of the brain stem.\n- **(C)** The cerebrum and diencephalon are forebrain structures, not brain stem.\n- **(D)** The cerebellum and diencephalon are not brain stem components.\n- **(E)** The thalamus and hypothalamus belong to the diencephalon, not the brain stem."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The brain stem consists of the midbrain plus the pons and medulla oblongata of the hindbrain.\n\n**Why the other options are wrong:**\n- **(A)** The thalamus and hypothalamus belong to the diencephalon, not the brain stem.\n- **(B)** The cerebellum and diencephalon are not brain stem components.\n- **(C)** The cerebellum is part of the hindbrain but is not part of the brain stem.\n- **(E)** The cerebrum and diencephalon are forebrain structures, not brain stem."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1850,14 +1850,14 @@
           "question": {
             "stem": "Compared to an oligodendrocyte, an astrocyte performs which distinct function in the CNS?",
             "options": [
-              "Producing myelin that insulates multiple axon segments",
               "Filtering blood in the ventricles to make cerebrospinal fluid",
-              "Contributing to the blood-brain barrier and regulating the synaptic environment",
+              "Producing myelin that insulates multiple axon segments",
               "Phagocytosing pathogens and damaged cells as an immune cell",
+              "Contributing to the blood-brain barrier and regulating the synaptic environment",
               "Enveloping neuron cell bodies within peripheral ganglia"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Astrocytes help form the blood-brain barrier and regulate ions and neurotransmitters at synapses, functions distinct from oligodendrocytes' myelination role.\n\n**Why the other options are wrong:**\n- **(A)** Myelin production in the CNS is the job of oligodendrocytes.\n- **(B)** Blood filtration into CSF is performed by ependymal cells.\n- **(D)** Phagocytosis of pathogens is the role of microglia.\n- **(E)** Enveloping ganglion cell bodies is done by satellite cells in the PNS."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Astrocytes help form the blood-brain barrier and regulate ions and neurotransmitters at synapses, functions distinct from oligodendrocytes' myelination role.\n\n**Why the other options are wrong:**\n- **(A)** Blood filtration into CSF is performed by ependymal cells.\n- **(B)** Myelin production in the CNS is the job of oligodendrocytes.\n- **(C)** Phagocytosis of pathogens is the role of microglia.\n- **(E)** Enveloping ganglion cell bodies is done by satellite cells in the PNS."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1868,13 +1868,13 @@
             "stem": "A neurologist notes that a lesion sits in the postcentral gyrus of the parietal lobe. Which function is most likely impaired?",
             "options": [
               "Production of spoken language",
-              "Conscious perception of touch, pressure, and proprioception",
-              "Primary visual perception",
               "Voluntary contraction of skeletal muscles",
-              "Formation of new short-term memories"
+              "Primary visual perception",
+              "Formation of new short-term memories",
+              "Conscious perception of touch, pressure, and proprioception"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The postcentral gyrus of the parietal lobe is the primary somatosensory cortex, which processes touch, pressure, and proprioception.\n\n**Why the other options are wrong:**\n- **(A)** Speech production is controlled by Broca's area in the frontal lobe.\n- **(C)** Visual perception is localized to the occipital lobe.\n- **(D)** Voluntary skeletal muscle movement is initiated in the primary motor cortex of the frontal lobe.\n- **(E)** Short-term memory formation depends on the hippocampus."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The postcentral gyrus of the parietal lobe is the primary somatosensory cortex, which processes touch, pressure, and proprioception.\n\n**Why the other options are wrong:**\n- **(A)** Speech production is controlled by Broca's area in the frontal lobe.\n- **(B)** Voluntary skeletal muscle movement is initiated in the primary motor cortex of the frontal lobe.\n- **(C)** Visual perception is localized to the occipital lobe.\n- **(D)** Short-term memory formation depends on the hippocampus."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1884,14 +1884,14 @@
           "question": {
             "stem": "Which of the following correctly pairs a ventricle with its location?",
             "options": [
-              "Lateral ventricles — between the cerebellum and the brainstem",
               "Third ventricle — deep within the cerebrum",
+              "Fourth ventricle — deep within the diencephalon",
               "Fourth ventricle — between the cerebellum and the brainstem",
-              "Third ventricle — within the midbrain",
-              "Fourth ventricle — deep within the diencephalon"
+              "Lateral ventricles — between the cerebellum and the brainstem",
+              "Third ventricle — within the midbrain"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The fourth ventricle is the space between the cerebellum and the pons/upper medulla of the brainstem.\n\n**Why the other options are wrong:**\n- **(A)** The lateral ventricles are deep within the cerebrum, not near the cerebellum.\n- **(B)** The third ventricle lies between the two halves of the diencephalon, not deep in the cerebrum.\n- **(D)** The cerebral aqueduct, not the third ventricle, passes through the midbrain.\n- **(E)** The fourth ventricle is not within the diencephalon."
+            "explanation": "**Why (C) is correct:** The fourth ventricle is the space between the cerebellum and the pons/upper medulla of the brainstem.\n\n**Why the other options are wrong:**\n- **(A)** The third ventricle lies between the two halves of the diencephalon, not deep in the cerebrum.\n- **(B)** The fourth ventricle is not within the diencephalon.\n- **(D)** The lateral ventricles are deep within the cerebrum, not near the cerebellum.\n- **(E)** The cerebral aqueduct, not the third ventricle, passes through the midbrain."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1901,14 +1901,14 @@
           "question": {
             "stem": "Parkinson's disease results from the loss of neurons that produce dopamine and project to the basal nuclei. Where are these degenerating neurons located?",
             "options": [
-              "The substantia nigra of the midbrain",
               "The ventral tegmental area projecting to the nucleus accumbens",
-              "The hippocampus of the temporal lobe",
+              "The reticular formation of the medulla",
+              "The substantia nigra of the midbrain",
               "The basal forebrain that produces acetylcholine",
-              "The reticular formation of the medulla"
+              "The hippocampus of the temporal lobe"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The substantia nigra in the midbrain produces dopamine that it releases into the basal nuclei, and its loss causes Parkinson's disease.\n\n**Why the other options are wrong:**\n- **(B)** The VTA is involved in reward/addiction and targets the prefrontal cortex and nucleus accumbens, not motor control via basal nuclei.\n- **(C)** Hippocampal loss relates to memory, not Parkinson's.\n- **(D)** Loss of basal forebrain acetylcholine neurons is associated with Alzheimer's disease.\n- **(E)** The reticular formation governs sleep/wakefulness, not the dopamine deficit of Parkinson's."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The substantia nigra in the midbrain produces dopamine that it releases into the basal nuclei, and its loss causes Parkinson's disease.\n\n**Why the other options are wrong:**\n- **(A)** The VTA is involved in reward/addiction and targets the prefrontal cortex and nucleus accumbens, not motor control via basal nuclei.\n- **(B)** The reticular formation governs sleep/wakefulness, not the dopamine deficit of Parkinson's.\n- **(D)** Loss of basal forebrain acetylcholine neurons is associated with Alzheimer's disease.\n- **(E)** Hippocampal loss relates to memory, not Parkinson's."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1918,14 +1918,14 @@
           "question": {
             "stem": "A tissue sample from the PNS contains a cluster of neuron cell bodies and a bundle of axons. Which pair of terms correctly names these structures?",
             "options": [
-              "Nucleus and tract",
               "Ganglion and nerve",
+              "Nucleus and tract",
               "Ganglion and tract",
-              "Nucleus and nerve",
-              "Nucleus and ganglion"
+              "Nucleus and ganglion",
+              "Nucleus and nerve"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** In the PNS, a cluster of cell bodies is a ganglion and a bundle of axons is a nerve.\n\n**Why the other options are wrong:**\n- **(A)** Nucleus and tract are the CNS terms.\n- **(C)** Tract is the CNS term for an axon bundle.\n- **(D)** Nucleus is the CNS term for a cluster of cell bodies.\n- **(E)** Both nucleus (CNS) and ganglion cannot describe the same PNS structure with a bundle of axons."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** In the PNS, a cluster of cell bodies is a ganglion and a bundle of axons is a nerve.\n\n**Why the other options are wrong:**\n- **(B)** Nucleus and tract are the CNS terms.\n- **(C)** Tract is the CNS term for an axon bundle.\n- **(D)** Both nucleus (CNS) and ganglion cannot describe the same PNS structure with a bundle of axons.\n- **(E)** Nucleus is the CNS term for a cluster of cell bodies."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1935,14 +1935,14 @@
           "question": {
             "stem": "According to the anatomical organization of the nervous system, which pairing of a functional division with its correct branch is accurate?",
             "options": [
+              "Autonomic nervous system — conscious perception of the big five senses",
               "Somatic nervous system — involuntary control of cardiac muscle",
               "Autonomic nervous system — voluntary control of skeletal muscle",
               "Enteric nervous system — control of smooth muscle and glands of the digestive tract",
-              "Somatic nervous system — regulation of the anterior pituitary gland",
-              "Autonomic nervous system — conscious perception of the big five senses"
+              "Somatic nervous system — regulation of the anterior pituitary gland"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The enteric nervous system controls the smooth muscle and glandular tissue of the digestive system.\n\n**Why the other options are wrong:**\n- **(A)** The somatic system controls voluntary skeletal muscle, not cardiac muscle.\n- **(B)** The autonomic system handles involuntary control, not voluntary skeletal muscle.\n- **(D)** Pituitary regulation is done by the hypothalamus, not the somatic system.\n- **(E)** Conscious sensory perception is not the defining role of the autonomic system's motor output."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The enteric nervous system controls the smooth muscle and glandular tissue of the digestive system.\n\n**Why the other options are wrong:**\n- **(A)** Conscious sensory perception is not the defining role of the autonomic system's motor output.\n- **(B)** The somatic system controls voluntary skeletal muscle, not cardiac muscle.\n- **(C)** The autonomic system handles involuntary control, not voluntary skeletal muscle.\n- **(E)** Pituitary regulation is done by the hypothalamus, not the somatic system."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1952,14 +1952,14 @@
           "question": {
             "stem": "A student draws a neuron with a single process that extends from the soma and then splits, one end forming dendrites and the other acting as an axon terminal. Which neuron type is being drawn?",
             "options": [
-              "Multipolar neuron",
-              "Bipolar neuron",
+              "Pyramidal cell",
               "Unipolar neuron",
               "Purkinje cell",
-              "Pyramidal cell"
+              "Bipolar neuron",
+              "Multipolar neuron"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A unipolar neuron has one process extending from the soma that splits into a dendritic end and an axon terminal end.\n\n**Why the other options are wrong:**\n- **(A)** A multipolar neuron has many processes leaving the soma plus one axon.\n- **(B)** A bipolar neuron has two separate processes: a dendrite and an axon.\n- **(D)** A Purkinje cell is a specific multipolar neuron of the cerebellum.\n- **(E)** A pyramidal cell is a multipolar neuron named for its shape."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A unipolar neuron has one process extending from the soma that splits into a dendritic end and an axon terminal end.\n\n**Why the other options are wrong:**\n- **(A)** A pyramidal cell is a multipolar neuron named for its shape.\n- **(C)** A Purkinje cell is a specific multipolar neuron of the cerebellum.\n- **(D)** A bipolar neuron has two separate processes: a dendrite and an axon.\n- **(E)** A multipolar neuron has many processes leaving the soma plus one axon."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1969,14 +1969,14 @@
           "question": {
             "stem": "Which statement correctly relates the developmental organization of the brain to its adult structures?",
             "options": [
-              "The forebrain gives rise to the cerebrum and the diencephalon",
-              "The hindbrain gives rise to the cerebrum and the midbrain",
               "The midbrain gives rise to the pons and the cerebellum",
               "The forebrain gives rise to the medulla oblongata and the pons",
+              "The hindbrain gives rise to the cerebrum and the midbrain",
+              "The forebrain gives rise to the cerebrum and the diencephalon",
               "The hindbrain gives rise only to the diencephalon"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The forebrain develops into the cerebrum and diencephalon.\n\n**Why the other options are wrong:**\n- **(B)** The cerebrum arises from the forebrain, and the midbrain is its own primary vesicle.\n- **(C)** The pons and cerebellum are hindbrain structures, not midbrain derivatives.\n- **(D)** The medulla oblongata and pons are hindbrain, not forebrain, structures.\n- **(E)** The diencephalon is a forebrain, not hindbrain, structure."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The forebrain develops into the cerebrum and diencephalon.\n\n**Why the other options are wrong:**\n- **(A)** The pons and cerebellum are hindbrain structures, not midbrain derivatives.\n- **(B)** The medulla oblongata and pons are hindbrain, not forebrain, structures.\n- **(C)** The cerebrum arises from the forebrain, and the midbrain is its own primary vesicle.\n- **(E)** The diencephalon is a forebrain, not hindbrain, structure."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"

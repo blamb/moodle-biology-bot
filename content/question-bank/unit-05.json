@@ -9,14 +9,14 @@
           "question": {
             "stem": "Which type of transport across the cell membrane requires the cell to hydrolyze ATP?",
             "options": [
-              "Simple diffusion",
-              "Facilitated diffusion",
+              "Channel-mediated diffusion of Na+",
               "Osmosis",
+              "Simple diffusion",
               "Phagocytosis",
-              "Channel-mediated diffusion of Na+"
+              "Facilitated diffusion"
             ],
             "correct_index": 3,
-            "explanation": "**Why (D) is correct:** Phagocytosis is a form of endocytosis, which is active transport and therefore requires energy from ATP hydrolysis.\n\n**Why the other options are wrong:**\n- **(A)** Simple diffusion is passive and uses the molecule's own kinetic energy, not ATP.\n- **(B)** Facilitated diffusion is passive and does not require ATP.\n- **(C)** Osmosis is the passive movement of water and requires no ATP.\n- **(E)** Movement of Na+ through a channel down its gradient is passive facilitated diffusion, not ATP-driven."
+            "explanation": "**Why (D) is correct:** Phagocytosis is a form of endocytosis, which is active transport and therefore requires energy from ATP hydrolysis.\n\n**Why the other options are wrong:**\n- **(A)** Movement of Na+ through a channel down its gradient is passive facilitated diffusion, not ATP-driven.\n- **(B)** Osmosis is the passive movement of water and requires no ATP.\n- **(C)** Simple diffusion is passive and uses the molecule's own kinetic energy, not ATP.\n- **(E)** Facilitated diffusion is passive and does not require ATP."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -26,14 +26,14 @@
           "question": {
             "stem": "By definition, simple diffusion moves substances across the membrane:",
             "options": [
-              "Down their concentration gradient, using a carrier protein",
               "Down their concentration gradient, without the use of a membrane protein",
-              "Against their concentration gradient, using ATP",
+              "Down their concentration gradient, using a carrier protein",
               "Against their concentration gradient, through a channel",
+              "Against their concentration gradient, using ATP",
               "Only through aquaporins"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** In simple diffusion, small nonpolar molecules slip between the lipid tails and move down their concentration gradient without any membrane protein.\n\n**Why the other options are wrong:**\n- **(A)** Carrier proteins are used in facilitated diffusion, not simple diffusion.\n- **(C)** Movement against the gradient using ATP describes active transport.\n- **(D)** Channels are used in facilitated diffusion, and it does not go against the gradient without energy.\n- **(E)** Aquaporins facilitate water movement (a form of osmosis), not simple diffusion of solutes."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** In simple diffusion, small nonpolar molecules slip between the lipid tails and move down their concentration gradient without any membrane protein.\n\n**Why the other options are wrong:**\n- **(B)** Carrier proteins are used in facilitated diffusion, not simple diffusion.\n- **(C)** Channels are used in facilitated diffusion, and it does not go against the gradient without energy.\n- **(D)** Movement against the gradient using ATP describes active transport.\n- **(E)** Aquaporins facilitate water movement (a form of osmosis), not simple diffusion of solutes."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -44,13 +44,13 @@
             "stem": "Which molecule is the primary structural component of the cell membrane, forming its bilayer?",
             "options": [
               "Cholesterol",
+              "Aquaporin",
               "Phospholipid",
               "Glycoprotein",
-              "Peripheral protein",
-              "Aquaporin"
+              "Peripheral protein"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The cell membrane is primarily composed of a phospholipid bilayer, with other molecules embedded within it.\n\n**Why the other options are wrong:**\n- **(A)** Cholesterol is present but only helps maintain fluidity; it is not the primary structural component.\n- **(C)** Glycoproteins are embedded proteins involved in cell recognition, not the main bilayer.\n- **(D)** Peripheral proteins are only temporarily attached and perform specific functions.\n- **(E)** Aquaporins are specific channel proteins for water, not the structural basis of the membrane."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The cell membrane is primarily composed of a phospholipid bilayer, with other molecules embedded within it.\n\n**Why the other options are wrong:**\n- **(A)** Cholesterol is present but only helps maintain fluidity; it is not the primary structural component.\n- **(B)** Aquaporins are specific channel proteins for water, not the structural basis of the membrane.\n- **(D)** Glycoproteins are embedded proteins involved in cell recognition, not the main bilayer.\n- **(E)** Peripheral proteins are only temporarily attached and perform specific functions."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -60,14 +60,14 @@
           "question": {
             "stem": "A molecule that contains both a hydrophilic region and a hydrophobic region is best described as:",
             "options": [
-              "Amphipathic",
-              "Isotonic",
-              "Nonpolar",
               "Peripheral",
-              "Hypertonic"
+              "Amphipathic",
+              "Hypertonic",
+              "Nonpolar",
+              "Isotonic"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** An amphipathic molecule, like a phospholipid, has both a hydrophilic and a hydrophobic region.\n\n**Why the other options are wrong:**\n- **(B)** Isotonic describes solutions with equal solute concentrations, not a molecule's structure.\n- **(C)** Nonpolar refers only to a hydrophobic character, not both regions.\n- **(D)** Peripheral describes a protein's location relative to the membrane, not a molecule's polarity.\n- **(E)** Hypertonic describes a solution with a higher solute concentration."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** An amphipathic molecule, like a phospholipid, has both a hydrophilic and a hydrophobic region.\n\n**Why the other options are wrong:**\n- **(A)** Peripheral describes a protein's location relative to the membrane, not a molecule's polarity.\n- **(C)** Hypertonic describes a solution with a higher solute concentration.\n- **(D)** Nonpolar refers only to a hydrophobic character, not both regions.\n- **(E)** Isotonic describes solutions with equal solute concentrations, not a molecule's structure."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -77,14 +77,14 @@
           "question": {
             "stem": "Which statement correctly contrasts facilitated diffusion with primary active transport?",
             "options": [
-              "Facilitated diffusion moves substances against their gradient; primary active transport moves them down their gradient",
               "Both processes require the hydrolysis of ATP",
-              "Facilitated diffusion uses no ATP, while primary active transport uses ATP directly to power a pump",
               "Facilitated diffusion uses vesicles, while primary active transport uses channels",
-              "Neither process involves membrane proteins"
+              "Neither process involves membrane proteins",
+              "Facilitated diffusion uses no ATP, while primary active transport uses ATP directly to power a pump",
+              "Facilitated diffusion moves substances against their gradient; primary active transport moves them down their gradient"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Facilitated diffusion is passive and uses no ATP, whereas primary active transport directly uses ATP to drive a pump against the gradient.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the two: facilitated diffusion goes down the gradient and active transport goes against it.\n- **(B)** Facilitated diffusion does not require ATP.\n- **(D)** Facilitated diffusion uses channels/carriers, not vesicles; vesicles are used in endo/exocytosis.\n- **(E)** Both processes involve membrane proteins."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Facilitated diffusion is passive and uses no ATP, whereas primary active transport directly uses ATP to drive a pump against the gradient.\n\n**Why the other options are wrong:**\n- **(A)** Facilitated diffusion does not require ATP.\n- **(B)** Facilitated diffusion uses channels/carriers, not vesicles; vesicles are used in endo/exocytosis.\n- **(C)** Both processes involve membrane proteins.\n- **(E)** This reverses the two: facilitated diffusion goes down the gradient and active transport goes against it."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -94,14 +94,14 @@
           "question": {
             "stem": "A solution that has a LOWER solute concentration than the inside of a cell is described as:",
             "options": [
-              "Isotonic",
-              "Hypertonic",
               "Hypotonic",
+              "Hypertonic",
+              "Selectively permeable",
               "Amphipathic",
-              "Selectively permeable"
+              "Isotonic"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A hypotonic solution has a lower solute concentration than the reference (here, the cell interior).\n\n**Why the other options are wrong:**\n- **(A)** Isotonic means equal solute concentration on both sides.\n- **(B)** Hypertonic means a higher solute concentration than the reference solution.\n- **(D)** Amphipathic describes a molecule with both hydrophilic and hydrophobic regions.\n- **(E)** Selectively permeable describes a membrane property, not a solution's concentration."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A hypotonic solution has a lower solute concentration than the reference (here, the cell interior).\n\n**Why the other options are wrong:**\n- **(B)** Hypertonic means a higher solute concentration than the reference solution.\n- **(C)** Selectively permeable describes a membrane property, not a solution's concentration.\n- **(D)** Amphipathic describes a molecule with both hydrophilic and hydrophobic regions.\n- **(E)** Isotonic means equal solute concentration on both sides."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -111,14 +111,14 @@
           "question": {
             "stem": "Why is it important for cells to regulate the concentrations of ions such as Na+ and K+ across their membranes?",
             "options": [
-              "Because these ions form the phospholipid bilayer",
               "Because incorrect concentrations of simple ions can be lethal",
-              "Because ions can only cross by simple diffusion",
               "Because ions provide the membrane's fluidity",
+              "Because these ions form the phospholipid bilayer",
+              "Because ions can only cross by simple diffusion",
               "Because ions are the receptors for hormones"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The notes emphasize that having incorrect concentrations of simple ions such as sodium or potassium can be lethal, so regulation is essential.\n\n**Why the other options are wrong:**\n- **(A)** Ions do not form the phospholipid bilayer; phospholipids do.\n- **(C)** Charged ions cannot cross by simple diffusion; they require channels or pumps.\n- **(D)** Membrane fluidity is maintained by cholesterol, not ions.\n- **(E)** Receptors are typically proteins, not simple ions."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The notes emphasize that having incorrect concentrations of simple ions such as sodium or potassium can be lethal, so regulation is essential.\n\n**Why the other options are wrong:**\n- **(B)** Membrane fluidity is maintained by cholesterol, not ions.\n- **(C)** Ions do not form the phospholipid bilayer; phospholipids do.\n- **(D)** Charged ions cannot cross by simple diffusion; they require channels or pumps.\n- **(E)** Receptors are typically proteins, not simple ions."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -128,14 +128,14 @@
           "question": {
             "stem": "A protein that is permanently embedded in the membrane and usually spans its entire width is called a(n):",
             "options": [
-              "Peripheral protein",
               "Integral protein",
-              "Glycolipid",
               "Cholesterol molecule",
-              "Digestive enzyme"
+              "Digestive enzyme",
+              "Glycolipid",
+              "Peripheral protein"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Integral proteins are permanently embedded and usually span the entire membrane; channel proteins are an example.\n\n**Why the other options are wrong:**\n- **(A)** Peripheral proteins are only temporarily attached to one surface of the membrane.\n- **(C)** A glycolipid is a lipid with carbohydrate attached, not a membrane-spanning protein.\n- **(D)** Cholesterol maintains fluidity and is not a protein.\n- **(E)** Digestive enzymes on cell surfaces are typically examples of peripheral proteins."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Integral proteins are permanently embedded and usually span the entire membrane; channel proteins are an example.\n\n**Why the other options are wrong:**\n- **(B)** Cholesterol maintains fluidity and is not a protein.\n- **(C)** Digestive enzymes on cell surfaces are typically examples of peripheral proteins.\n- **(D)** A glycolipid is a lipid with carbohydrate attached, not a membrane-spanning protein.\n- **(E)** Peripheral proteins are only temporarily attached to one surface of the membrane."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -145,14 +145,14 @@
           "question": {
             "stem": "Which of the following substances can cross the cell membrane by simple diffusion, WITHOUT the assistance of a membrane protein?",
             "options": [
-              "Glucose",
-              "Sodium ions (Na+)",
-              "Amino acids",
+              "Chloride ions (Cl-)",
               "Oxygen gas (O2)",
-              "Chloride ions (Cl-)"
+              "Glucose",
+              "Amino acids",
+              "Sodium ions (Na+)"
             ],
-            "correct_index": 3,
-            "explanation": "**Why (D) is correct:** O2 is small and nonpolar, so it can slip between the lipid tails and cross by simple diffusion without assistance.\n\n**Why the other options are wrong:**\n- **(A)** Glucose is large and polar, so it needs a carrier protein (facilitated diffusion).\n- **(B)** Sodium ions are charged and require channels to cross.\n- **(C)** Amino acids are polar and require facilitated diffusion.\n- **(E)** Chloride ions are charged and cannot cross the nonpolar interior unaided."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** O2 is small and nonpolar, so it can slip between the lipid tails and cross by simple diffusion without assistance.\n\n**Why the other options are wrong:**\n- **(A)** Chloride ions are charged and cannot cross the nonpolar interior unaided.\n- **(C)** Glucose is large and polar, so it needs a carrier protein (facilitated diffusion).\n- **(D)** Amino acids are polar and require facilitated diffusion.\n- **(E)** Sodium ions are charged and require channels to cross."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -162,14 +162,14 @@
           "question": {
             "stem": "Why do water-soluble materials like glucose and ions require assistance to cross the cell membrane?",
             "options": [
-              "They are too small to be detected by the membrane",
-              "They are repelled by the hydrophobic lipid tails in the membrane's interior",
               "They dissolve the phospholipid heads",
+              "They can only move by exocytosis",
               "They are attracted to cholesterol",
-              "They can only move by exocytosis"
+              "They are too small to be detected by the membrane",
+              "They are repelled by the hydrophobic lipid tails in the membrane's interior"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Water-soluble (polar or charged) substances are repelled by the hydrophobic fatty acid tails in the interior of the bilayer, so they need channels or carriers.\n\n**Why the other options are wrong:**\n- **(A)** They need help because of their charge/polarity, not because they are too small.\n- **(C)** These substances do not dissolve the phospholipid heads.\n- **(D)** Attraction to cholesterol is not why they need assistance.\n- **(E)** Exocytosis exports materials in vesicles; it is not the general route for glucose and ions."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Water-soluble (polar or charged) substances are repelled by the hydrophobic fatty acid tails in the interior of the bilayer, so they need channels or carriers.\n\n**Why the other options are wrong:**\n- **(A)** These substances do not dissolve the phospholipid heads.\n- **(B)** Exocytosis exports materials in vesicles; it is not the general route for glucose and ions.\n- **(C)** Attraction to cholesterol is not why they need assistance.\n- **(D)** They need help because of their charge/polarity, not because they are too small."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -179,14 +179,14 @@
           "question": {
             "stem": "Which molecule makes up the majority of the cell membrane and forms its basic bilayer structure?",
             "options": [
+              "Peripheral proteins",
               "Cholesterol",
               "Phospholipids",
-              "Glycoproteins",
-              "Peripheral proteins",
-              "Carbohydrates"
+              "Carbohydrates",
+              "Glycoproteins"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The cell membrane is primarily composed of a phospholipid bilayer, with two adjacent sheets of phospholipids arranged tail to tail.\n\n**Why the other options are wrong:**\n- **(A)** Cholesterol is present to maintain fluidity but is not the main structural component.\n- **(C)** Glycoproteins are a type of integral protein, present but not the majority.\n- **(D)** Peripheral proteins are only temporarily attached and are a minor component.\n- **(E)** Carbohydrates form the glycocalyx but do not make up the bilayer."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The cell membrane is primarily composed of a phospholipid bilayer, with two adjacent sheets of phospholipids arranged tail to tail.\n\n**Why the other options are wrong:**\n- **(A)** Peripheral proteins are only temporarily attached and are a minor component.\n- **(B)** Cholesterol is present to maintain fluidity but is not the main structural component.\n- **(D)** Carbohydrates form the glycocalyx but do not make up the bilayer.\n- **(E)** Glycoproteins are a type of integral protein, present but not the majority."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -196,14 +196,14 @@
           "question": {
             "stem": "Which of the following substances can cross the cell membrane by simple diffusion without any assistance from proteins?",
             "options": [
-              "Glucose",
-              "Sodium ions",
               "Oxygen gas",
               "Amino acids",
-              "Chloride ions"
+              "Glucose",
+              "Chloride ions",
+              "Sodium ions"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Oxygen is small and nonpolar, so it can slip between the hydrophobic lipid tails and cross the membrane unaided by simple diffusion.\n\n**Why the other options are wrong:**\n- **(A)** Glucose is large and polar, requiring a carrier protein for facilitated diffusion.\n- **(B)** Sodium ions are charged and require channel proteins to cross.\n- **(D)** Amino acids are polar and require facilitated diffusion.\n- **(E)** Chloride ions are charged and cannot pass through the nonpolar interior unaided."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Oxygen is small and nonpolar, so it can slip between the hydrophobic lipid tails and cross the membrane unaided by simple diffusion.\n\n**Why the other options are wrong:**\n- **(B)** Amino acids are polar and require facilitated diffusion.\n- **(C)** Glucose is large and polar, requiring a carrier protein for facilitated diffusion.\n- **(D)** Chloride ions are charged and cannot pass through the nonpolar interior unaided.\n- **(E)** Sodium ions are charged and require channel proteins to cross."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -213,14 +213,14 @@
           "question": {
             "stem": "The term 'amphipathic' is used to describe a molecule that:",
             "options": [
-              "Contains both a hydrophilic and a hydrophobic region",
-              "Is entirely water-loving",
               "Is entirely water-fearing",
+              "Is entirely water-loving",
+              "Requires ATP to function",
               "Carries a net positive charge",
-              "Requires ATP to function"
+              "Contains both a hydrophilic and a hydrophobic region"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** An amphipathic molecule, like a phospholipid, contains both a hydrophilic region (the phosphate head) and a hydrophobic region (the lipid tails).\n\n**Why the other options are wrong:**\n- **(B)** A fully water-loving molecule is simply hydrophilic, not amphipathic.\n- **(C)** A fully water-fearing molecule is simply hydrophobic, not amphipathic.\n- **(D)** Amphipathic refers to water interaction, not net charge.\n- **(E)** Amphipathic describes a structural property, not an energy requirement."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** An amphipathic molecule, like a phospholipid, contains both a hydrophilic region (the phosphate head) and a hydrophobic region (the lipid tails).\n\n**Why the other options are wrong:**\n- **(A)** A fully water-fearing molecule is simply hydrophobic, not amphipathic.\n- **(B)** A fully water-loving molecule is simply hydrophilic, not amphipathic.\n- **(C)** Amphipathic describes a structural property, not an energy requirement.\n- **(D)** Amphipathic refers to water interaction, not net charge."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -230,14 +230,14 @@
           "question": {
             "stem": "Which of the following processes requires the cell to expend energy from ATP hydrolysis?",
             "options": [
-              "Osmosis",
-              "Simple diffusion",
-              "Facilitated diffusion",
+              "Diffusion of oxygen into a cell",
               "Exocytosis",
-              "Diffusion of oxygen into a cell"
+              "Simple diffusion",
+              "Osmosis",
+              "Facilitated diffusion"
             ],
-            "correct_index": 3,
-            "explanation": "**Why (D) is correct:** Exocytosis is a form of active transport that uses cellular energy to package and export materials via vesicles.\n\n**Why the other options are wrong:**\n- **(A)** Osmosis is passive movement of water down its gradient, requiring no ATP.\n- **(B)** Simple diffusion is passive and uses the molecules' own kinetic energy.\n- **(C)** Facilitated diffusion is passive and does not require ATP.\n- **(E)** Oxygen diffusion is simple diffusion, a passive process."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Exocytosis is a form of active transport that uses cellular energy to package and export materials via vesicles.\n\n**Why the other options are wrong:**\n- **(A)** Oxygen diffusion is simple diffusion, a passive process.\n- **(C)** Simple diffusion is passive and uses the molecules' own kinetic energy.\n- **(D)** Osmosis is passive movement of water down its gradient, requiring no ATP.\n- **(E)** Facilitated diffusion is passive and does not require ATP."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -247,14 +247,14 @@
           "question": {
             "stem": "Why must glucose cross the cell membrane by facilitated diffusion rather than simple diffusion?",
             "options": [
-              "It is small and nonpolar",
-              "It is large and polar",
+              "It is a gas at body temperature",
               "It carries a strong negative charge",
               "It is a lipid-soluble molecule",
-              "It is a gas at body temperature"
+              "It is small and nonpolar",
+              "It is large and polar"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Glucose is both large and polar, so it is repelled by the hydrophobic lipid tails and requires a carrier protein (glucose transporter) to cross.\n\n**Why the other options are wrong:**\n- **(A)** Small nonpolar molecules cross by simple diffusion; glucose is neither.\n- **(C)** Glucose is polar but not charged like an ion.\n- **(D)** Glucose is water-soluble, not lipid-soluble.\n- **(E)** Glucose is not a gas; gases like O2 and CO2 cross freely."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Glucose is both large and polar, so it is repelled by the hydrophobic lipid tails and requires a carrier protein (glucose transporter) to cross.\n\n**Why the other options are wrong:**\n- **(A)** Glucose is not a gas; gases like O2 and CO2 cross freely.\n- **(B)** Glucose is polar but not charged like an ion.\n- **(C)** Glucose is water-soluble, not lipid-soluble.\n- **(D)** Small nonpolar molecules cross by simple diffusion; glucose is neither."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -264,14 +264,14 @@
           "question": {
             "stem": "Which type of endocytosis is described as 'cell eating' and involves the intake of large particles such as invading pathogens?",
             "options": [
-              "Pinocytosis",
-              "Phagocytosis",
-              "Receptor-mediated endocytosis",
               "Exocytosis",
-              "Facilitated diffusion"
+              "Phagocytosis",
+              "Facilitated diffusion",
+              "Receptor-mediated endocytosis",
+              "Pinocytosis"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Phagocytosis (\"cell eating\") is the endocytosis of large particles, commonly performed by immune cells engulfing pathogens.\n\n**Why the other options are wrong:**\n- **(A)** Pinocytosis (\"cell drinking\") brings in fluid with dissolved substances, not large particles.\n- **(C)** Receptor-mediated endocytosis is highly specific and binds particular ligands, not large particles generally.\n- **(D)** Exocytosis exports material out of the cell.\n- **(E)** Facilitated diffusion is a passive process using membrane proteins, not vesicles."
+            "explanation": "**Why (B) is correct:** Phagocytosis (\"cell eating\") is the endocytosis of large particles, commonly performed by immune cells engulfing pathogens.\n\n**Why the other options are wrong:**\n- **(A)** Exocytosis exports material out of the cell.\n- **(C)** Facilitated diffusion is a passive process using membrane proteins, not vesicles.\n- **(D)** Receptor-mediated endocytosis is highly specific and binds particular ligands, not large particles generally.\n- **(E)** Pinocytosis (\"cell drinking\") brings in fluid with dissolved substances, not large particles."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -281,14 +281,14 @@
           "question": {
             "stem": "A red blood cell is placed in a hypotonic solution. What will happen to the cell?",
             "options": [
-              "It will shrivel as water leaves",
-              "It will swell and may burst as water enters",
-              "It will remain unchanged in shape",
               "It will actively pump out solutes",
-              "It will stop performing osmosis"
+              "It will shrivel as water leaves",
+              "It will remain unchanged in shape",
+              "It will stop performing osmosis",
+              "It will swell and may burst as water enters"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A hypotonic solution has fewer solutes than the cell interior, so water moves into the cell by osmosis, causing it to swell and risk bursting.\n\n**Why the other options are wrong:**\n- **(A)** Shriveling occurs in a hypertonic solution, where water leaves the cell.\n- **(C)** Remaining unchanged occurs in an isotonic solution.\n- **(D)** Osmosis is passive; the cell does not pump solutes in this scenario.\n- **(E)** Osmosis continues as long as a water concentration difference exists."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A hypotonic solution has fewer solutes than the cell interior, so water moves into the cell by osmosis, causing it to swell and risk bursting.\n\n**Why the other options are wrong:**\n- **(A)** Osmosis is passive; the cell does not pump solutes in this scenario.\n- **(B)** Shriveling occurs in a hypertonic solution, where water leaves the cell.\n- **(C)** Remaining unchanged occurs in an isotonic solution.\n- **(D)** Osmosis continues as long as a water concentration difference exists."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -298,14 +298,14 @@
           "question": {
             "stem": "Which term describes two solutions that have the same concentration of solutes?",
             "options": [
-              "Hypertonic",
-              "Hypotonic",
-              "Isotonic",
               "Amphipathic",
-              "Selectively permeable"
+              "Isotonic",
+              "Hypertonic",
+              "Selectively permeable",
+              "Hypotonic"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Isotonic means \"equal tension,\" describing two solutions with the same solute concentration, so there is no net water movement between them.\n\n**Why the other options are wrong:**\n- **(A)** Hypertonic describes a solution with a higher solute concentration than another.\n- **(B)** Hypotonic describes a solution with a lower solute concentration than another.\n- **(D)** Amphipathic describes a molecule with both hydrophilic and hydrophobic regions.\n- **(E)** Selectively permeable describes a membrane, not a comparison of solute concentrations."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Isotonic means \"equal tension,\" describing two solutions with the same solute concentration, so there is no net water movement between them.\n\n**Why the other options are wrong:**\n- **(A)** Amphipathic describes a molecule with both hydrophilic and hydrophobic regions.\n- **(C)** Hypertonic describes a solution with a higher solute concentration than another.\n- **(D)** Selectively permeable describes a membrane, not a comparison of solute concentrations.\n- **(E)** Hypotonic describes a solution with a lower solute concentration than another."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -315,14 +315,14 @@
           "question": {
             "stem": "In diffusion, what is meant by the statement that molecules reach 'equilibrium'?",
             "options": [
-              "All molecular movement stops completely",
+              "The concentration gradient becomes steeper",
+              "Molecules require ATP to keep moving",
               "Molecules move only from high to low concentration",
               "Molecules are equally distributed with no net movement",
-              "The concentration gradient becomes steeper",
-              "Molecules require ATP to keep moving"
+              "All molecular movement stops completely"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** At equilibrium, molecules are equally distributed and, although they still move randomly in both directions, there is no net movement.\n\n**Why the other options are wrong:**\n- **(A)** Molecules continue moving randomly even at equilibrium; movement never stops.\n- **(B)** Directional net movement occurs before equilibrium, not at it.\n- **(D)** At equilibrium the concentration gradient has disappeared, not steepened.\n- **(E)** Diffusion is passive and never requires ATP."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** At equilibrium, molecules are equally distributed and, although they still move randomly in both directions, there is no net movement.\n\n**Why the other options are wrong:**\n- **(A)** At equilibrium the concentration gradient has disappeared, not steepened.\n- **(B)** Diffusion is passive and never requires ATP.\n- **(C)** Directional net movement occurs before equilibrium, not at it.\n- **(E)** Molecules continue moving randomly even at equilibrium; movement never stops."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -333,13 +333,13 @@
             "stem": "What is the primary function of cholesterol in the cell membrane?",
             "options": [
               "To transport ions across the membrane",
-              "To help maintain membrane fluidity",
+              "To form ion channels",
               "To act as a digestive enzyme",
-              "To bind hormones as a receptor",
-              "To form ion channels"
+              "To help maintain membrane fluidity",
+              "To bind hormones as a receptor"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Cholesterol is present in the membrane and helps maintain its fluidity so molecules can move within it.\n\n**Why the other options are wrong:**\n- **(A)** Ion transport is carried out by channel and carrier proteins, not cholesterol.\n- **(C)** Digestive enzymes are typically peripheral proteins, not cholesterol.\n- **(D)** Hormone binding is done by receptor proteins in the glycocalyx.\n- **(E)** Ion channels are formed by integral proteins, not cholesterol."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Cholesterol is present in the membrane and helps maintain its fluidity so molecules can move within it.\n\n**Why the other options are wrong:**\n- **(A)** Ion transport is carried out by channel and carrier proteins, not cholesterol.\n- **(B)** Ion channels are formed by integral proteins, not cholesterol.\n- **(C)** Digestive enzymes are typically peripheral proteins, not cholesterol.\n- **(E)** Hormone binding is done by receptor proteins in the glycocalyx."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -349,14 +349,14 @@
           "question": {
             "stem": "According to the concept of diffusion, what is happening at the point of equilibrium across a membrane?",
             "options": [
-              "Molecules stop moving entirely because there is no concentration gradient",
-              "Molecules continue to move randomly in both directions, but there is no net movement",
+              "All molecules gather in the center of the membrane",
               "Molecules move only from the low-concentration side to the high-concentration side",
               "ATP hydrolysis begins in order to maintain the balance",
-              "All molecules gather in the center of the membrane"
+              "Molecules stop moving entirely because there is no concentration gradient",
+              "Molecules continue to move randomly in both directions, but there is no net movement"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** At equilibrium molecules are still moving randomly in both directions, but equal numbers cross each way, so there is no net movement.\n\n**Why the other options are wrong:**\n- **(A)** Molecules never stop moving; they keep moving even at equilibrium.\n- **(C)** Movement against the gradient alone would not describe equilibrium and requires energy.\n- **(D)** Diffusion is passive and does not use ATP.\n- **(E)** Molecules become evenly distributed, not clustered in one location."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** At equilibrium molecules are still moving randomly in both directions, but equal numbers cross each way, so there is no net movement.\n\n**Why the other options are wrong:**\n- **(A)** Molecules become evenly distributed, not clustered in one location.\n- **(B)** Movement against the gradient alone would not describe equilibrium and requires energy.\n- **(C)** Diffusion is passive and does not use ATP.\n- **(D)** Molecules never stop moving; they keep moving even at equilibrium."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -366,14 +366,14 @@
           "question": {
             "stem": "Which of the following is the primary structural component that makes up most of the cell membrane?",
             "options": [
-              "Cholesterol",
               "Integral proteins",
+              "Peripheral proteins",
               "A phospholipid bilayer",
-              "Glycoproteins",
-              "Peripheral proteins"
+              "Cholesterol",
+              "Glycoproteins"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The cell membrane is primarily composed of a phospholipid bilayer, with other molecules embedded within it.\n\n**Why the other options are wrong:**\n- **(A)** Cholesterol is present but only helps maintain fluidity; it is not the main component.\n- **(B)** Integral proteins are embedded in the membrane but do not make up the bulk of it.\n- **(D)** Glycoproteins are a minor category of integral protein involved in cell recognition.\n- **(E)** Peripheral proteins are only temporarily attached and are not the main component."
+            "explanation": "**Why (C) is correct:** The cell membrane is primarily composed of a phospholipid bilayer, with other molecules embedded within it.\n\n**Why the other options are wrong:**\n- **(A)** Integral proteins are embedded in the membrane but do not make up the bulk of it.\n- **(B)** Peripheral proteins are only temporarily attached and are not the main component.\n- **(D)** Cholesterol is present but only helps maintain fluidity; it is not the main component.\n- **(E)** Glycoproteins are a minor category of integral protein involved in cell recognition."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -383,14 +383,14 @@
           "question": {
             "stem": "Which transport process moves substances against their concentration gradient and requires energy from ATP hydrolysis?",
             "options": [
+              "Active transport",
+              "Osmosis",
               "Simple diffusion",
               "Facilitated diffusion",
-              "Osmosis",
-              "Active transport",
               "Channel-mediated diffusion"
             ],
-            "correct_index": 3,
-            "explanation": "**Why (D) is correct:** Active transport uses energy from ATP hydrolysis to move substances up (against) their concentration gradient.\n\n**Why the other options are wrong:**\n- **(A)** Simple diffusion is passive and moves substances down their gradient.\n- **(B)** Facilitated diffusion is passive and moves substances down their gradient.\n- **(C)** Osmosis is the passive movement of water down its gradient.\n- **(E)** Channel-mediated diffusion is a form of passive facilitated diffusion."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Active transport uses energy from ATP hydrolysis to move substances up (against) their concentration gradient.\n\n**Why the other options are wrong:**\n- **(B)** Osmosis is the passive movement of water down its gradient.\n- **(C)** Simple diffusion is passive and moves substances down their gradient.\n- **(D)** Facilitated diffusion is passive and moves substances down their gradient.\n- **(E)** Channel-mediated diffusion is a form of passive facilitated diffusion."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -400,14 +400,14 @@
           "question": {
             "stem": "Which of the following molecules can cross the cell membrane unaided by simple diffusion?",
             "options": [
-              "Glucose",
-              "Sodium ions",
+              "Chloride ions",
               "Oxygen gas",
-              "Amino acids",
-              "Chloride ions"
+              "Sodium ions",
+              "Glucose",
+              "Amino acids"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Oxygen is a small, nonpolar molecule that can slip between the lipid tails and cross by simple diffusion.\n\n**Why the other options are wrong:**\n- **(A)** Glucose is large and polar, so it requires a transporter (facilitated diffusion).\n- **(B)** Sodium ions are charged and require channels to cross.\n- **(D)** Amino acids are polar and require facilitated diffusion.\n- **(E)** Chloride ions are charged and cannot cross the nonpolar interior unaided."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Oxygen is a small, nonpolar molecule that can slip between the lipid tails and cross by simple diffusion.\n\n**Why the other options are wrong:**\n- **(A)** Chloride ions are charged and cannot cross the nonpolar interior unaided.\n- **(C)** Sodium ions are charged and require channels to cross.\n- **(D)** Glucose is large and polar, so it requires a transporter (facilitated diffusion).\n- **(E)** Amino acids are polar and require facilitated diffusion."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -417,14 +417,14 @@
           "question": {
             "stem": "Why do water-soluble materials such as glucose and ions require assistance to cross the cell membrane?",
             "options": [
-              "They are too small to interact with the membrane",
-              "They are repelled by the hydrophobic fatty acid tails in the membrane interior",
-              "They are attracted too strongly to cholesterol",
               "They dissolve the phospholipid heads",
+              "They are attracted too strongly to cholesterol",
+              "They are repelled by the hydrophobic fatty acid tails in the membrane interior",
+              "They are too small to interact with the membrane",
               "They are nonpolar and therefore trapped in the tails"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Water-soluble (polar or charged) substances are repelled by the hydrophobic lipid tails of the membrane interior, so they need protein assistance.\n\n**Why the other options are wrong:**\n- **(A)** These substances are often too large and polar, not too small.\n- **(C)** Cholesterol does not attract or block these solutes in this way.\n- **(D)** They do not dissolve the phosphate heads.\n- **(E)** These substances are polar, not nonpolar."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Water-soluble (polar or charged) substances are repelled by the hydrophobic lipid tails of the membrane interior, so they need protein assistance.\n\n**Why the other options are wrong:**\n- **(A)** They do not dissolve the phosphate heads.\n- **(B)** Cholesterol does not attract or block these solutes in this way.\n- **(D)** These substances are often too large and polar, not too small.\n- **(E)** These substances are polar, not nonpolar."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -434,14 +434,14 @@
           "question": {
             "stem": "In a phospholipid molecule, which region is hydrophilic and interacts with the watery fluids inside and outside the cell?",
             "options": [
-              "The nonpolar fatty acid tails",
-              "The polar phosphate head",
-              "The unsaturated kinks in the tails",
               "The cholesterol ring",
-              "The carbohydrate chain"
+              "The carbohydrate chain",
+              "The polar phosphate head",
+              "The nonpolar fatty acid tails",
+              "The unsaturated kinks in the tails"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The phosphate head is negatively charged, making it polar and hydrophilic, so it faces and interacts with the watery environments.\n\n**Why the other options are wrong:**\n- **(A)** The fatty acid tails are nonpolar and hydrophobic, avoiding water.\n- **(C)** The kinks are features of the hydrophobic tails, not a hydrophilic region.\n- **(D)** Cholesterol is a separate molecule, not a region of the phospholipid.\n- **(E)** Carbohydrate chains are found on glycoproteins/glycolipids, not this part of a phospholipid."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The phosphate head is negatively charged, making it polar and hydrophilic, so it faces and interacts with the watery environments.\n\n**Why the other options are wrong:**\n- **(A)** Cholesterol is a separate molecule, not a region of the phospholipid.\n- **(B)** Carbohydrate chains are found on glycoproteins/glycolipids, not this part of a phospholipid.\n- **(D)** The fatty acid tails are nonpolar and hydrophobic, avoiding water.\n- **(E)** The kinks are features of the hydrophobic tails, not a hydrophilic region."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -451,14 +451,14 @@
           "question": {
             "stem": "Which form of endocytosis is described as 'cell eating' and involves taking in large particles, such as when immune cells engulf pathogens?",
             "options": [
-              "Pinocytosis",
-              "Phagocytosis",
               "Receptor-mediated endocytosis",
               "Exocytosis",
-              "Facilitated diffusion"
+              "Phagocytosis",
+              "Facilitated diffusion",
+              "Pinocytosis"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Phagocytosis ('cell eating') is the endocytosis of large particles, such as pathogens engulfed by leukocytes.\n\n**Why the other options are wrong:**\n- **(A)** Pinocytosis ('cell drinking') brings in fluid with dissolved substances.\n- **(C)** Receptor-mediated endocytosis is highly specific and uses receptors to bind a particular substance.\n- **(D)** Exocytosis exports material out of the cell.\n- **(E)** Facilitated diffusion is passive transport through membrane proteins, not vesicle formation."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Phagocytosis ('cell eating') is the endocytosis of large particles, such as pathogens engulfed by leukocytes.\n\n**Why the other options are wrong:**\n- **(A)** Receptor-mediated endocytosis is highly specific and uses receptors to bind a particular substance.\n- **(B)** Exocytosis exports material out of the cell.\n- **(D)** Facilitated diffusion is passive transport through membrane proteins, not vesicle formation.\n- **(E)** Pinocytosis ('cell drinking') brings in fluid with dissolved substances."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -468,14 +468,14 @@
           "question": {
             "stem": "A cell is placed in a solution that has a lower solute concentration than the cell's cytoplasm. This external solution is described as:",
             "options": [
-              "Isotonic",
               "Hypertonic",
-              "Hypotonic",
               "Amphipathic",
-              "Nonpolar"
+              "Isotonic",
+              "Nonpolar",
+              "Hypotonic"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A solution with a lower solute concentration than another is hypotonic, and water will move into the cell, causing it to swell.\n\n**Why the other options are wrong:**\n- **(A)** Isotonic means equal solute concentrations on both sides.\n- **(B)** Hypertonic means a higher solute concentration, which would shrink the cell.\n- **(D)** Amphipathic describes a molecule with hydrophilic and hydrophobic regions, not a solution.\n- **(E)** Nonpolar describes a molecule's polarity, not a solution's tonicity."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A solution with a lower solute concentration than another is hypotonic, and water will move into the cell, causing it to swell.\n\n**Why the other options are wrong:**\n- **(A)** Hypertonic means a higher solute concentration, which would shrink the cell.\n- **(B)** Amphipathic describes a molecule with hydrophilic and hydrophobic regions, not a solution.\n- **(C)** Isotonic means equal solute concentrations on both sides.\n- **(D)** Nonpolar describes a molecule's polarity, not a solution's tonicity."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -485,14 +485,14 @@
           "question": {
             "stem": "Which molecule in the plasma membrane is described as helping to maintain the membrane's fluidity?",
             "options": [
-              "Cholesterol",
               "Integral protein",
+              "Peripheral protein",
               "Glycoprotein",
-              "Phospholipid head",
-              "Peripheral protein"
+              "Cholesterol",
+              "Phospholipid head"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Cholesterol is present in the membrane and is specifically described as helping to maintain membrane fluidity.\n\n**Why the other options are wrong:**\n- **(B)** Integral proteins are permanently embedded and often act as channels, not fluidity regulators.\n- **(C)** Glycoproteins have attached carbohydrates that aid in cell recognition, not fluidity.\n- **(D)** The phospholipid head is the hydrophilic polar region that contacts water, not a fluidity regulator.\n- **(E)** Peripheral proteins are temporarily attached and typically perform functions like digestion."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Cholesterol is present in the membrane and is specifically described as helping to maintain membrane fluidity.\n\n**Why the other options are wrong:**\n- **(A)** Integral proteins are permanently embedded and often act as channels, not fluidity regulators.\n- **(B)** Peripheral proteins are temporarily attached and typically perform functions like digestion.\n- **(C)** Glycoproteins have attached carbohydrates that aid in cell recognition, not fluidity.\n- **(E)** The phospholipid head is the hydrophilic polar region that contacts water, not a fluidity regulator."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -502,14 +502,14 @@
           "question": {
             "stem": "Which of the following substances can cross the lipid bilayer unaided by simple diffusion?",
             "options": [
-              "Oxygen gas",
-              "Glucose",
               "Sodium ions",
               "Amino acids",
-              "Chloride ions"
+              "Chloride ions",
+              "Oxygen gas",
+              "Glucose"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Oxygen is a small, nonpolar molecule, so it can slip between the lipid tails and cross the membrane without assistance.\n\n**Why the other options are wrong:**\n- **(B)** Glucose is large and polar, so it requires a carrier protein (facilitated diffusion).\n- **(C)** Sodium ions are charged and are repelled by the hydrophobic interior, needing channels.\n- **(D)** Amino acids are polar and require facilitated diffusion.\n- **(E)** Chloride ions are charged and cannot pass unaided through the nonpolar interior."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Oxygen is a small, nonpolar molecule, so it can slip between the lipid tails and cross the membrane without assistance.\n\n**Why the other options are wrong:**\n- **(A)** Sodium ions are charged and are repelled by the hydrophobic interior, needing channels.\n- **(B)** Amino acids are polar and require facilitated diffusion.\n- **(C)** Chloride ions are charged and cannot pass unaided through the nonpolar interior.\n- **(E)** Glucose is large and polar, so it requires a carrier protein (facilitated diffusion)."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1483,14 +1483,14 @@
           "question": {
             "stem": "A molecule is described as amphipathic. Which statement correctly explains why this property is essential for a phospholipid's role in the cell membrane?",
             "options": [
-              "It has both a hydrophilic head and a hydrophobic tail, allowing the tails to face inward while the heads contact the watery fluids on both sides",
-              "It is entirely hydrophobic, so it repels both intracellular and extracellular fluid",
               "It is entirely hydrophilic, so it dissolves fully in the cytoplasm",
               "It carries no charge anywhere on the molecule, preventing interaction with water",
-              "It contains carbohydrate groups that project into the extracellular matrix"
+              "It contains carbohydrate groups that project into the extracellular matrix",
+              "It is entirely hydrophobic, so it repels both intracellular and extracellular fluid",
+              "It has both a hydrophilic head and a hydrophobic tail, allowing the tails to face inward while the heads contact the watery fluids on both sides"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** An amphipathic molecule contains both a hydrophilic and a hydrophobic region, so phospholipid tails cluster inward while the polar heads face the aqueous ICF and ECF.\n\n**Why the other options are wrong:**\n- **(B)** A fully hydrophobic molecule could not orient its heads toward water and would not be amphipathic.\n- **(C)** A fully hydrophilic molecule would dissolve rather than form a stable bilayer.\n- **(D)** The phosphate head is negatively charged and does interact with water.\n- **(E)** Carbohydrate groups describe glycoproteins, not the amphipathic nature of phospholipids."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** An amphipathic molecule contains both a hydrophilic and a hydrophobic region, so phospholipid tails cluster inward while the polar heads face the aqueous ICF and ECF.\n\n**Why the other options are wrong:**\n- **(A)** A fully hydrophilic molecule would dissolve rather than form a stable bilayer.\n- **(B)** The phosphate head is negatively charged and does interact with water.\n- **(C)** Carbohydrate groups describe glycoproteins, not the amphipathic nature of phospholipids.\n- **(D)** A fully hydrophobic molecule could not orient its heads toward water and would not be amphipathic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1500,14 +1500,14 @@
           "question": {
             "stem": "Using the rule that \"water follows solute,\" predict the direction of net water movement when a cell is surrounded by extracellular fluid that has a higher solute concentration than the cytoplasm.",
             "options": [
-              "Water will move out of the cell, following the higher solute concentration outside",
-              "Water will move into the cell, opposing the solute gradient",
               "Water will not move at all because the solutes cannot cross",
+              "Solutes will move into the cell to equalize the gradient",
+              "Water will move into the cell, opposing the solute gradient",
               "Water will move into the cell until it bursts",
-              "Solutes will move into the cell to equalize the gradient"
+              "Water will move out of the cell, following the higher solute concentration outside"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Water moves toward the region of higher solute (lower free-water) concentration, so it exits the cell into the more concentrated extracellular fluid.\n\n**Why the other options are wrong:**\n- **(B)** Water follows solute toward higher solute concentration, not away from it.\n- **(C)** Even when solutes cannot cross, water still moves via osmosis.\n- **(D)** Bursting occurs in hypotonic conditions where water enters, the opposite scenario.\n- **(E)** Osmosis concerns water movement; the described condition drives water, not solutes, across."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Water moves toward the region of higher solute (lower free-water) concentration, so it exits the cell into the more concentrated extracellular fluid.\n\n**Why the other options are wrong:**\n- **(A)** Even when solutes cannot cross, water still moves via osmosis.\n- **(B)** Osmosis concerns water movement; the described condition drives water, not solutes, across.\n- **(C)** Water follows solute toward higher solute concentration, not away from it.\n- **(D)** Bursting occurs in hypotonic conditions where water enters, the opposite scenario."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1517,14 +1517,14 @@
           "question": {
             "stem": "Two substances need to enter a cell: oxygen gas (O2) and glucose. Which correctly describes how each crosses the membrane?",
             "options": [
-              "O2 crosses unassisted by simple diffusion; glucose requires a carrier protein via facilitated diffusion",
-              "Both cross unassisted by simple diffusion",
-              "Both require carrier proteins via facilitated diffusion",
               "O2 requires a channel protein; glucose crosses unassisted",
+              "O2 crosses unassisted by simple diffusion; glucose requires a carrier protein via facilitated diffusion",
+              "Both require carrier proteins via facilitated diffusion",
+              "Both cross unassisted by simple diffusion",
               "O2 requires ATP-powered pumping; glucose crosses by simple diffusion"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** O2 is small and nonpolar so it slips through the bilayer unaided, while glucose is large and polar and needs a carrier (glucose transporter).\n\n**Why the other options are wrong:**\n- **(B)** Glucose cannot cross unassisted because it is large and polar.\n- **(C)** O2 does not need a carrier; it diffuses freely.\n- **(D)** O2 does not need a channel, and glucose cannot cross unaided.\n- **(E)** O2 diffusion is passive, requiring no ATP; glucose cannot simply diffuse."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** O2 is small and nonpolar so it slips through the bilayer unaided, while glucose is large and polar and needs a carrier (glucose transporter).\n\n**Why the other options are wrong:**\n- **(A)** O2 does not need a channel, and glucose cannot cross unaided.\n- **(C)** O2 does not need a carrier; it diffuses freely.\n- **(D)** Glucose cannot cross unassisted because it is large and polar.\n- **(E)** O2 diffusion is passive, requiring no ATP; glucose cannot simply diffuse."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1534,14 +1534,14 @@
           "question": {
             "stem": "A student lists four molecules: a steroid hormone, carbon dioxide, a chloride ion, and an amino acid. Which molecules can cross the phospholipid bilayer WITHOUT assistance from membrane proteins?",
             "options": [
+              "The carbon dioxide and chloride ion only",
+              "All four molecules",
               "The steroid hormone and carbon dioxide only",
               "The chloride ion and amino acid only",
-              "All four molecules",
-              "The carbon dioxide and chloride ion only",
               "The steroid hormone and amino acid only"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Lipid-soluble steroids and small nonpolar CO2 pass unaided through the hydrophobic interior, whereas the charged chloride ion and polar amino acid require assistance.\n\n**Why the other options are wrong:**\n- **(B)** Charged and polar molecules are repelled by the hydrophobic tails and need proteins.\n- **(C)** CO2 crosses unaided but chloride ions cannot.\n- **(D)** Chloride ions are charged and cannot cross unassisted.\n- **(E)** Amino acids are polar and require facilitated diffusion."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Lipid-soluble steroids and small nonpolar CO2 pass unaided through the hydrophobic interior, whereas the charged chloride ion and polar amino acid require assistance.\n\n**Why the other options are wrong:**\n- **(A)** Chloride ions are charged and cannot cross unassisted.\n- **(B)** CO2 crosses unaided but chloride ions cannot.\n- **(D)** Charged and polar molecules are repelled by the hydrophobic tails and need proteins.\n- **(E)** Amino acids are polar and require facilitated diffusion."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1552,13 +1552,13 @@
             "stem": "At equilibrium during simple diffusion across a membrane, which statement best describes what is happening to the molecules?",
             "options": [
               "Molecules continue moving in both directions, but there is no net movement across the membrane",
+              "Net movement continues down the gradient until all molecules are on the low side",
               "All molecular movement stops completely once concentrations are equal",
               "Molecules move only from the former high-concentration side to the former low-concentration side",
-              "Net movement continues down the gradient until all molecules are on the low side",
               "Molecules begin moving up the concentration gradient to reverse the process"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** At equilibrium molecules are still moving randomly in both directions, but equal numbers cross each way so there is no net movement.\n\n**Why the other options are wrong:**\n- **(B)** Molecular motion never stops; only net movement ceases.\n- **(C)** Movement occurs in both directions, not just one way.\n- **(D)** Once equilibrium is reached there is no continued net movement.\n- **(E)** Diffusion does not drive molecules up their gradient without energy input."
+            "explanation": "**Why (A) is correct:** At equilibrium molecules are still moving randomly in both directions, but equal numbers cross each way so there is no net movement.\n\n**Why the other options are wrong:**\n- **(B)** Once equilibrium is reached there is no continued net movement.\n- **(C)** Molecular motion never stops; only net movement ceases.\n- **(D)** Movement occurs in both directions, not just one way.\n- **(E)** Diffusion does not drive molecules up their gradient without energy input."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1569,13 +1569,13 @@
             "stem": "A process is defined as \"the movement of substances across the membrane using energy from the hydrolysis of ATP.\" Which term matches this definition, and which example fits it?",
             "options": [
               "Active transport; the sodium-potassium pump",
-              "Passive transport; simple diffusion of O2",
-              "Facilitated diffusion; glucose transporter",
               "Osmosis; movement of water through aquaporins",
+              "Facilitated diffusion; glucose transporter",
+              "Passive transport; simple diffusion of O2",
               "Passive transport; movement of Na+ down its gradient through a channel"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Active transport uses ATP hydrolysis to move substances, and the sodium-potassium pump is a primary active transport example.\n\n**Why the other options are wrong:**\n- **(B)** Passive transport and simple diffusion do not use ATP.\n- **(C)** Facilitated diffusion is passive and requires no ATP.\n- **(D)** Osmosis is passive water movement, not ATP-driven.\n- **(E)** Movement down a gradient through a channel is passive, not ATP-driven."
+            "explanation": "**Why (A) is correct:** Active transport uses ATP hydrolysis to move substances, and the sodium-potassium pump is a primary active transport example.\n\n**Why the other options are wrong:**\n- **(B)** Osmosis is passive water movement, not ATP-driven.\n- **(C)** Facilitated diffusion is passive and requires no ATP.\n- **(D)** Passive transport and simple diffusion do not use ATP.\n- **(E)** Movement down a gradient through a channel is passive, not ATP-driven."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1585,14 +1585,14 @@
           "question": {
             "stem": "How does receptor-mediated endocytosis differ from simple diffusion in terms of energy use and selectivity?",
             "options": [
-              "Receptor-mediated endocytosis is active (uses ATP) and highly selective; simple diffusion is passive and nonselective",
               "Both are passive, but receptor-mediated endocytosis is more selective",
-              "Both use ATP, but simple diffusion is more selective",
               "Receptor-mediated endocytosis is passive; simple diffusion is active",
-              "Both are nonselective, but simple diffusion uses ATP"
+              "Both are nonselective, but simple diffusion uses ATP",
+              "Receptor-mediated endocytosis is active (uses ATP) and highly selective; simple diffusion is passive and nonselective",
+              "Both use ATP, but simple diffusion is more selective"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Receptor-mediated endocytosis is a form of active transport requiring energy and is highly specific due to receptor binding, whereas simple diffusion is passive and depends only on gradients and molecule properties.\n\n**Why the other options are wrong:**\n- **(B)** Endocytosis is active, not passive.\n- **(C)** Simple diffusion does not use ATP.\n- **(D)** Endocytosis is active and simple diffusion is passive, reversing the truth.\n- **(E)** Simple diffusion uses no ATP, and it is not receptor-selective."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Receptor-mediated endocytosis is a form of active transport requiring energy and is highly specific due to receptor binding, whereas simple diffusion is passive and depends only on gradients and molecule properties.\n\n**Why the other options are wrong:**\n- **(A)** Endocytosis is active, not passive.\n- **(B)** Endocytosis is active and simple diffusion is passive, reversing the truth.\n- **(C)** Simple diffusion uses no ATP, and it is not receptor-selective.\n- **(E)** Simple diffusion does not use ATP."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1602,14 +1602,14 @@
           "question": {
             "stem": "A cell needs to import iron bound to transferrin and, separately, export digestive enzymes. Which pair of processes accomplishes these two tasks respectively?",
             "options": [
-              "Receptor-mediated endocytosis; exocytosis",
-              "Phagocytosis; pinocytosis",
               "Exocytosis; receptor-mediated endocytosis",
+              "Pinocytosis; phagocytosis",
+              "Phagocytosis; pinocytosis",
               "Simple diffusion; facilitated diffusion",
-              "Pinocytosis; phagocytosis"
+              "Receptor-mediated endocytosis; exocytosis"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Iron-transferrin is brought in by highly specific receptor-mediated endocytosis, while enzymes are secreted outward via exocytosis.\n\n**Why the other options are wrong:**\n- **(B)** Phagocytosis and pinocytosis are both intake processes and are nonselective.\n- **(C)** The order is reversed; import needs endocytosis and export needs exocytosis.\n- **(D)** Neither diffusion process handles large complexes like iron-transferrin or enzyme secretion.\n- **(E)** Both listed processes are nonselective intake, matching neither task."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Iron-transferrin is brought in by highly specific receptor-mediated endocytosis, while enzymes are secreted outward via exocytosis.\n\n**Why the other options are wrong:**\n- **(A)** The order is reversed; import needs endocytosis and export needs exocytosis.\n- **(B)** Both listed processes are nonselective intake, matching neither task.\n- **(C)** Phagocytosis and pinocytosis are both intake processes and are nonselective.\n- **(D)** Neither diffusion process handles large complexes like iron-transferrin or enzyme secretion."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1619,14 +1619,14 @@
           "question": {
             "stem": "Which molecular component of the plasma membrane is primarily responsible for maintaining membrane fluidity?",
             "options": [
-              "Cholesterol",
-              "Integral channel proteins",
               "Glycoproteins",
+              "Cholesterol",
               "Peripheral digestive enzymes",
+              "Integral channel proteins",
               "Phosphate head groups"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Cholesterol is embedded in the bilayer specifically to help maintain the membrane's fluidity.\n\n**Why the other options are wrong:**\n- **(B)** Integral channel proteins transport ions rather than regulating fluidity.\n- **(C)** Glycoproteins function in cell recognition, not fluidity control.\n- **(D)** Peripheral digestive enzymes act on nutrients, not membrane fluidity.\n- **(E)** Phosphate heads anchor to water but do not primarily govern fluidity."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Cholesterol is embedded in the bilayer specifically to help maintain the membrane's fluidity.\n\n**Why the other options are wrong:**\n- **(A)** Glycoproteins function in cell recognition, not fluidity control.\n- **(C)** Peripheral digestive enzymes act on nutrients, not membrane fluidity.\n- **(D)** Integral channel proteins transport ions rather than regulating fluidity.\n- **(E)** Phosphate heads anchor to water but do not primarily govern fluidity."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1636,14 +1636,14 @@
           "question": {
             "stem": "A protein is permanently embedded in the membrane, spans the entire bilayer, and selectively allows certain ions to pass. This protein is best classified as which type, and what is the given example?",
             "options": [
-              "Integral protein; a channel protein",
-              "Peripheral protein; a digestive enzyme",
-              "Peripheral protein; a channel protein",
               "Integral protein; a digestive enzyme",
-              "Glycolipid; a receptor"
+              "Peripheral protein; a channel protein",
+              "Integral protein; a channel protein",
+              "Glycolipid; a receptor",
+              "Peripheral protein; a digestive enzyme"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Integral proteins are permanently embedded and usually span the whole membrane, and a channel protein is the classic example allowing selective ion passage.\n\n**Why the other options are wrong:**\n- **(B)** Peripheral proteins only temporarily attach and do not span the bilayer.\n- **(C)** A channel is integral, not peripheral.\n- **(D)** Digestive enzymes are examples of peripheral proteins, not integral ones.\n- **(E)** A glycolipid is not a membrane-spanning protein and does not fit the description."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Integral proteins are permanently embedded and usually span the whole membrane, and a channel protein is the classic example allowing selective ion passage.\n\n**Why the other options are wrong:**\n- **(A)** Digestive enzymes are examples of peripheral proteins, not integral ones.\n- **(B)** A channel is integral, not peripheral.\n- **(D)** A glycolipid is not a membrane-spanning protein and does not fit the description.\n- **(E)** Peripheral proteins only temporarily attach and do not span the bilayer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1653,14 +1653,14 @@
           "question": {
             "stem": "A red blood cell is placed into a beaker of pure distilled water. What will happen to the cell, and why?",
             "options": [
-              "It will shrivel, because water leaves the cell moving toward the higher solute concentration outside",
-              "It will swell and possibly burst, because water enters the cell moving toward the higher solute concentration inside",
               "It will maintain its normal shape, because the solutions are isotonic",
+              "It will swell, because the sodium-potassium pump actively drives water inward",
+              "It will swell and possibly burst, because water enters the cell moving toward the higher solute concentration inside",
               "It will shrivel, because solutes rush out of the cell into the water",
-              "It will swell, because the sodium-potassium pump actively drives water inward"
+              "It will shrivel, because water leaves the cell moving toward the higher solute concentration outside"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Distilled water is hypotonic relative to the cell's cytoplasm, so water diffuses into the cell (toward higher solute concentration), causing it to swell and potentially burst.\n\n**Why the other options are wrong:**\n- **(A)** Shriveling occurs in a hypertonic solution, not a hypotonic one.\n- **(C)** Distilled water and cytoplasm are not isotonic; the water is hypotonic.\n- **(D)** Osmosis moves water, not solutes, and solutes are not driven out here.\n- **(E)** The sodium-potassium pump moves ions, not water, and does not drive osmotic swelling."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Distilled water is hypotonic relative to the cell's cytoplasm, so water diffuses into the cell (toward higher solute concentration), causing it to swell and potentially burst.\n\n**Why the other options are wrong:**\n- **(A)** Distilled water and cytoplasm are not isotonic; the water is hypotonic.\n- **(B)** The sodium-potassium pump moves ions, not water, and does not drive osmotic swelling.\n- **(D)** Osmosis moves water, not solutes, and solutes are not driven out here.\n- **(E)** Shriveling occurs in a hypertonic solution, not a hypotonic one."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1670,14 +1670,14 @@
           "question": {
             "stem": "Which of the following correctly describes a structural component of the plasma membrane and its function?",
             "options": [
-              "Cholesterol forms the primary bilayer structure that separates intracellular and extracellular fluids",
-              "Peripheral proteins are permanently embedded and span the entire membrane",
+              "Phospholipid tails face outward to contact the intracellular and extracellular fluids",
               "Cholesterol is embedded in the membrane and helps maintain membrane fluidity",
-              "Integral proteins are only temporarily adhered to the outer surface of the membrane",
-              "Phospholipid tails face outward to contact the intracellular and extracellular fluids"
+              "Peripheral proteins are permanently embedded and span the entire membrane",
+              "Cholesterol forms the primary bilayer structure that separates intracellular and extracellular fluids",
+              "Integral proteins are only temporarily adhered to the outer surface of the membrane"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Cholesterol is present within the membrane and helps maintain its fluidity.\n\n**Why the other options are wrong:**\n- **(A)** The phospholipid bilayer, not cholesterol, forms the primary structure.\n- **(B)** Permanently embedded, membrane-spanning proteins are integral proteins, not peripheral.\n- **(D)** Integral proteins are permanently embedded, not temporarily adhered.\n- **(E)** The hydrophilic phosphate heads (not the tails) face outward to contact the fluids."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Cholesterol is present within the membrane and helps maintain its fluidity.\n\n**Why the other options are wrong:**\n- **(A)** The hydrophilic phosphate heads (not the tails) face outward to contact the fluids.\n- **(C)** Permanently embedded, membrane-spanning proteins are integral proteins, not peripheral.\n- **(D)** The phospholipid bilayer, not cholesterol, forms the primary structure.\n- **(E)** Integral proteins are permanently embedded, not temporarily adhered."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1688,13 +1688,13 @@
             "stem": "Based on the unit outline, which of the following best describes how the unit's two main parts relate to one another?",
             "options": [
               "Part 1 covers the structure of the membrane, which explains the selective permeability that governs the transport processes in Part 2",
-              "Part 1 covers active transport and Part 2 covers passive transport",
               "Part 1 and Part 2 address unrelated topics that happen to appear in the same unit",
-              "Part 2 describes the membrane's phospholipid components while Part 1 describes ion pumps",
-              "Both parts deal exclusively with the movement of water across membranes"
+              "Both parts deal exclusively with the movement of water across membranes",
+              "Part 1 covers active transport and Part 2 covers passive transport",
+              "Part 2 describes the membrane's phospholipid components while Part 1 describes ion pumps"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Part 1 establishes membrane structure (the bilayer and proteins), and that hydrophobic, selectively permeable structure directly determines the transport mechanisms explored in Part 2.\n\n**Why the other options are wrong:**\n- **(B)** Both active and passive transport are covered in Part 2, not split between parts.\n- **(C)** The parts are closely related; structure explains transport.\n- **(D)** Part 1 covers membrane components; Part 2 covers transport including pumps.\n- **(E)** Water transport is only one of many topics addressed."
+            "explanation": "**Why (A) is correct:** Part 1 establishes membrane structure (the bilayer and proteins), and that hydrophobic, selectively permeable structure directly determines the transport mechanisms explored in Part 2.\n\n**Why the other options are wrong:**\n- **(B)** The parts are closely related; structure explains transport.\n- **(C)** Water transport is only one of many topics addressed.\n- **(D)** Both active and passive transport are covered in Part 2, not split between parts.\n- **(E)** Part 1 covers membrane components; Part 2 covers transport including pumps."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1704,14 +1704,14 @@
           "question": {
             "stem": "A student is comparing facilitated diffusion with primary active transport. Which statement correctly distinguishes them?",
             "options": [
-              "Both require ATP hydrolysis, but only facilitated diffusion uses a protein",
+              "Facilitated diffusion requires a vesicle, whereas primary active transport requires a channel",
               "Facilitated diffusion moves substances down their concentration gradient without ATP, whereas primary active transport uses ATP to move substances against their gradient",
               "Facilitated diffusion moves substances against their gradient, whereas primary active transport moves them down their gradient",
-              "Both move substances against their concentration gradient, but only primary active transport uses a membrane protein",
-              "Facilitated diffusion requires a vesicle, whereas primary active transport requires a channel"
+              "Both require ATP hydrolysis, but only facilitated diffusion uses a protein",
+              "Both move substances against their concentration gradient, but only primary active transport uses a membrane protein"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Facilitated diffusion is passive (down the gradient, no ATP), while primary active transport directly uses ATP hydrolysis to move substances against their gradient.\n\n**Why the other options are wrong:**\n- **(A)** Facilitated diffusion does not require ATP.\n- **(C)** The directions are reversed; facilitated diffusion goes down, active transport goes up the gradient.\n- **(D)** Facilitated diffusion moves substances down their gradient, not against it.\n- **(E)** Facilitated diffusion uses channels/carriers, not vesicles; vesicles are for endo/exocytosis."
+            "explanation": "**Why (B) is correct:** Facilitated diffusion is passive (down the gradient, no ATP), while primary active transport directly uses ATP hydrolysis to move substances against their gradient.\n\n**Why the other options are wrong:**\n- **(A)** Facilitated diffusion uses channels/carriers, not vesicles; vesicles are for endo/exocytosis.\n- **(C)** The directions are reversed; facilitated diffusion goes down, active transport goes up the gradient.\n- **(D)** Facilitated diffusion does not require ATP.\n- **(E)** Facilitated diffusion moves substances down their gradient, not against it."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1721,14 +1721,14 @@
           "question": {
             "stem": "The term \"amphipathic\" is essential vocabulary in this unit. Which statement correctly applies this term to a phospholipid?",
             "options": [
-              "The phospholipid is amphipathic because it is entirely hydrophobic",
-              "The phospholipid is amphipathic because it can move freely within the fluid membrane",
+              "The phospholipid is amphipathic because it contains attached carbohydrate groups",
               "The phospholipid is amphipathic because it has a hydrophilic phosphate head and hydrophobic lipid tails",
+              "The phospholipid is amphipathic because it can move freely within the fluid membrane",
               "The phospholipid is amphipathic because it carries an overall neutral charge",
-              "The phospholipid is amphipathic because it contains attached carbohydrate groups"
+              "The phospholipid is amphipathic because it is entirely hydrophobic"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** An amphipathic molecule contains both a hydrophilic region (the phosphate head) and a hydrophobic region (the lipid tails).\n\n**Why the other options are wrong:**\n- **(A)** An entirely hydrophobic molecule would not be amphipathic.\n- **(B)** Fluidity of the membrane is unrelated to the definition of amphipathic.\n- **(D)** Amphipathic refers to having both water-loving and water-fearing regions, not to net charge.\n- **(E)** Attached carbohydrates describe glycoproteins/glycolipids, not the meaning of amphipathic."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** An amphipathic molecule contains both a hydrophilic region (the phosphate head) and a hydrophobic region (the lipid tails).\n\n**Why the other options are wrong:**\n- **(A)** Attached carbohydrates describe glycoproteins/glycolipids, not the meaning of amphipathic.\n- **(C)** Fluidity of the membrane is unrelated to the definition of amphipathic.\n- **(D)** Amphipathic refers to having both water-loving and water-fearing regions, not to net charge.\n- **(E)** An entirely hydrophobic molecule would not be amphipathic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1738,14 +1738,14 @@
           "question": {
             "stem": "A macrophage engulfs a large invading bacterium by wrapping a portion of its membrane around it and pinching it off into a vesicle. Which process is this, and how does it compare to exocytosis?",
             "options": [
-              "Pinocytosis; it moves fluids inward, whereas exocytosis moves fluids outward",
               "Phagocytosis; it is an active transport process bringing material into the cell, whereas exocytosis is an active transport process exporting material out of the cell",
+              "Simple diffusion; both processes occur without ATP",
               "Receptor-mediated endocytosis; it is highly specific, whereas exocytosis is nonspecific",
               "Facilitated diffusion; it is passive, whereas exocytosis is active",
-              "Simple diffusion; both processes occur without ATP"
+              "Pinocytosis; it moves fluids inward, whereas exocytosis moves fluids outward"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Engulfing a large particle is phagocytosis, a form of endocytosis (active transport) that brings material in, while exocytosis is the reverse active-transport process that exports material.\n\n**Why the other options are wrong:**\n- **(A)** Pinocytosis brings in dissolved substances in fluid, not large particles like bacteria.\n- **(C)** This is nonselective engulfment of a large particle, not receptor-mediated endocytosis.\n- **(D)** Facilitated diffusion involves proteins, not membrane engulfment, and is passive.\n- **(E)** This process requires ATP and is not simple diffusion."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Engulfing a large particle is phagocytosis, a form of endocytosis (active transport) that brings material in, while exocytosis is the reverse active-transport process that exports material.\n\n**Why the other options are wrong:**\n- **(B)** This process requires ATP and is not simple diffusion.\n- **(C)** This is nonselective engulfment of a large particle, not receptor-mediated endocytosis.\n- **(D)** Facilitated diffusion involves proteins, not membrane engulfment, and is passive.\n- **(E)** Pinocytosis brings in dissolved substances in fluid, not large particles like bacteria."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1756,13 +1756,13 @@
             "stem": "Which pairing of a key term with its correct definition would a student need to navigate this unit successfully?",
             "options": [
               "Hypertonic: a solution with a lower solute concentration than another solution",
-              "Osmosis: the active pumping of solutes against their gradient using ATP",
               "Isotonic: two solutions having equal solute concentrations, so cells maintain normal shape",
+              "Osmosis: the active pumping of solutes against their gradient using ATP",
               "Concentration gradient: the movement of water toward a region of low solute concentration",
               "Passive transport: movement of a substance that always requires ATP hydrolysis"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Isotonic means two solutions have equal solute concentrations, so a cell in an isotonic environment maintains its normal shape.\n\n**Why the other options are wrong:**\n- **(A)** Hypertonic means a higher (not lower) solute concentration.\n- **(B)** Osmosis is the passive movement of water, not the pumping of solutes.\n- **(D)** A concentration gradient is a difference in concentration across a space, not a movement of water.\n- **(E)** Passive transport does not require ATP."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Isotonic means two solutions have equal solute concentrations, so a cell in an isotonic environment maintains its normal shape.\n\n**Why the other options are wrong:**\n- **(A)** Hypertonic means a higher (not lower) solute concentration.\n- **(C)** Osmosis is the passive movement of water, not the pumping of solutes.\n- **(D)** A concentration gradient is a difference in concentration across a space, not a movement of water.\n- **(E)** Passive transport does not require ATP."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1772,14 +1772,14 @@
           "question": {
             "stem": "Two substances need to move into a cell: oxygen gas (small, nonpolar) and glucose (large, polar). Which statement correctly describes how each crosses the membrane?",
             "options": [
-              "Both cross by simple diffusion through the lipid bilayer without assistance",
-              "Oxygen crosses by simple diffusion unaided, while glucose requires a carrier protein for facilitated diffusion",
+              "Oxygen requires a carrier protein, while glucose crosses unaided through the tails",
               "Glucose crosses by simple diffusion, while oxygen requires a channel protein",
               "Both require ATP-powered pumps to enter the cell",
-              "Oxygen requires a carrier protein, while glucose crosses unaided through the tails"
+              "Both cross by simple diffusion through the lipid bilayer without assistance",
+              "Oxygen crosses by simple diffusion unaided, while glucose requires a carrier protein for facilitated diffusion"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Small nonpolar oxygen passes freely through the hydrophobic bilayer by simple diffusion, while large polar glucose is repelled by the tails and needs a carrier protein (facilitated diffusion).\n\n**Why the other options are wrong:**\n- **(A)** Glucose cannot cross the bilayer unaided because it is large and polar.\n- **(C)** Oxygen crosses unaided; glucose is the one needing assistance.\n- **(D)** Both are moving down their gradients, so no ATP pump is needed.\n- **(E)** The roles are reversed; glucose cannot cross unaided."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Small nonpolar oxygen passes freely through the hydrophobic bilayer by simple diffusion, while large polar glucose is repelled by the tails and needs a carrier protein (facilitated diffusion).\n\n**Why the other options are wrong:**\n- **(A)** The roles are reversed; glucose cannot cross unaided.\n- **(B)** Oxygen crosses unaided; glucose is the one needing assistance.\n- **(C)** Both are moving down their gradients, so no ATP pump is needed.\n- **(D)** Glucose cannot cross the bilayer unaided because it is large and polar."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1789,14 +1789,14 @@
           "question": {
             "stem": "A researcher lists four molecules: carbon dioxide, a steroid hormone, a sodium ion, and an amino acid. Which grouping correctly separates those that can cross the membrane unassisted from those that need assistance?",
             "options": [
-              "Unassisted: sodium ion and amino acid; Assisted: carbon dioxide and steroid hormone",
-              "Unassisted: carbon dioxide and steroid hormone; Assisted: sodium ion and amino acid",
-              "Unassisted: all four molecules; Assisted: none",
+              "Unassisted: sodium ion and carbon dioxide; Assisted: steroid hormone and amino acid",
               "Unassisted: amino acid and steroid hormone; Assisted: carbon dioxide and sodium ion",
-              "Unassisted: sodium ion and carbon dioxide; Assisted: steroid hormone and amino acid"
+              "Unassisted: carbon dioxide and steroid hormone; Assisted: sodium ion and amino acid",
+              "Unassisted: sodium ion and amino acid; Assisted: carbon dioxide and steroid hormone",
+              "Unassisted: all four molecules; Assisted: none"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Carbon dioxide (small nonpolar) and steroid hormones (lipid-soluble) cross the bilayer unaided, while the charged sodium ion and the polar amino acid require membrane proteins for facilitated diffusion.\n\n**Why the other options are wrong:**\n- **(A)** The groupings are reversed; ions and amino acids need assistance.\n- **(C)** Charged and large polar molecules cannot cross unassisted.\n- **(D)** Amino acids need assistance, and CO2 crosses unaided.\n- **(E)** Sodium ions need assistance, and steroid hormones cross unaided."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Carbon dioxide (small nonpolar) and steroid hormones (lipid-soluble) cross the bilayer unaided, while the charged sodium ion and the polar amino acid require membrane proteins for facilitated diffusion.\n\n**Why the other options are wrong:**\n- **(A)** Sodium ions need assistance, and steroid hormones cross unaided.\n- **(B)** Amino acids need assistance, and CO2 crosses unaided.\n- **(D)** The groupings are reversed; ions and amino acids need assistance.\n- **(E)** Charged and large polar molecules cannot cross unassisted."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1806,14 +1806,14 @@
           "question": {
             "stem": "A protein embedded permanently in the membrane has carbohydrate chains extending outward that help the immune system recognize the cell as belonging to the body. What type of membrane component is this?",
             "options": [
-              "A peripheral protein temporarily attached to the inner membrane surface",
-              "A cholesterol molecule maintaining membrane fluidity",
-              "An integral glycoprotein, part of the glycocalyx",
               "A phospholipid with an amphipathic head",
-              "A carrier protein used for secondary active transport"
+              "A carrier protein used for secondary active transport",
+              "A peripheral protein temporarily attached to the inner membrane surface",
+              "An integral glycoprotein, part of the glycocalyx",
+              "A cholesterol molecule maintaining membrane fluidity"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A permanently embedded protein with attached carbohydrate chains that aids cell recognition is an integral glycoprotein, which is part of the glycocalyx.\n\n**Why the other options are wrong:**\n- **(A)** Peripheral proteins are temporarily attached and not permanently embedded.\n- **(B)** Cholesterol has no carbohydrate chains and does not function in cell recognition.\n- **(D)** A phospholipid is a lipid, not a protein with carbohydrate tags.\n- **(E)** A carrier protein transports molecules but is not defined by carbohydrate recognition tags."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A permanently embedded protein with attached carbohydrate chains that aids cell recognition is an integral glycoprotein, which is part of the glycocalyx.\n\n**Why the other options are wrong:**\n- **(A)** A phospholipid is a lipid, not a protein with carbohydrate tags.\n- **(B)** A carrier protein transports molecules but is not defined by carbohydrate recognition tags.\n- **(C)** Peripheral proteins are temporarily attached and not permanently embedded.\n- **(E)** Cholesterol has no carbohydrate chains and does not function in cell recognition."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1823,14 +1823,14 @@
           "question": {
             "stem": "A researcher finds a membrane protein that is only loosely attached to the inner surface of the lipid bilayer, does not span the membrane, and functions to break down a substrate. This protein is best classified as which of the following?",
             "options": [
-              "An integral protein",
-              "A peripheral protein",
               "A channel protein",
+              "An integral protein",
               "A glycoprotein",
+              "A peripheral protein",
               "A cholesterol molecule"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Peripheral proteins are only temporarily attached to one surface of the membrane (or to an integral protein) rather than spanning it, and often act as enzymes.\n\n**Why the other options are wrong:**\n- **(A)** Integral proteins are permanently embedded and usually span the entire membrane.\n- **(C)** A channel protein is an integral protein that spans the membrane to allow ions through.\n- **(D)** A glycoprotein is an integral protein bearing carbohydrate groups, not a loosely attached enzyme.\n- **(E)** Cholesterol is a lipid, not a protein."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Peripheral proteins are only temporarily attached to one surface of the membrane (or to an integral protein) rather than spanning it, and often act as enzymes.\n\n**Why the other options are wrong:**\n- **(A)** A channel protein is an integral protein that spans the membrane to allow ions through.\n- **(B)** Integral proteins are permanently embedded and usually span the entire membrane.\n- **(C)** A glycoprotein is an integral protein bearing carbohydrate groups, not a loosely attached enzyme.\n- **(E)** Cholesterol is a lipid, not a protein."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1840,14 +1840,14 @@
           "question": {
             "stem": "A molecule is described as amphipathic. Which statement best explains why this property is essential to the structure of the plasma membrane?",
             "options": [
+              "It makes the molecule charged overall so it dissolves entirely in the cytoplasm",
               "It allows the molecule to be attracted to water only, forming a single sheet",
               "It allows the molecule to repel water on both ends, keeping the membrane dry",
               "It contains both a hydrophilic region and a hydrophobic region, allowing phospholipids to arrange into a bilayer with heads facing the water and tails hiding from it",
-              "It makes the molecule charged overall so it dissolves entirely in the cytoplasm",
               "It allows the molecule to actively pump ions using ATP"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** An amphipathic molecule has both a hydrophilic and a hydrophobic region, so phospholipids self-arrange with polar heads toward water and nonpolar tails clustered inward, forming the bilayer.\n\n**Why the other options are wrong:**\n- **(A)** Amphipathic means it is attracted to water AND repelled by it, not water-attracted only.\n- **(B)** The polar heads are attracted to water, so the membrane is not dry on its surfaces.\n- **(D)** Phospholipids are not overall charged in a way that dissolves them in cytoplasm; the tails are nonpolar.\n- **(E)** Amphipathic character describes solubility, not ATP-driven pumping."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** An amphipathic molecule has both a hydrophilic and a hydrophobic region, so phospholipids self-arrange with polar heads toward water and nonpolar tails clustered inward, forming the bilayer.\n\n**Why the other options are wrong:**\n- **(A)** Phospholipids are not overall charged in a way that dissolves them in cytoplasm; the tails are nonpolar.\n- **(B)** Amphipathic means it is attracted to water AND repelled by it, not water-attracted only.\n- **(C)** The polar heads are attracted to water, so the membrane is not dry on its surfaces.\n- **(E)** Amphipathic character describes solubility, not ATP-driven pumping."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1857,14 +1857,14 @@
           "question": {
             "stem": "Two substances are presented to a cell membrane: molecule X is a small nonpolar gas (oxygen), and molecule Y is a large polar molecule (glucose). Which statement correctly predicts how each crosses the membrane?",
             "options": [
-              "Both cross unaided by simple diffusion",
               "X crosses unaided; Y requires a transport protein",
+              "Neither can cross the membrane under any circumstance",
               "Y crosses unaided; X requires a transport protein",
-              "Both require ATP-powered pumps",
-              "Neither can cross the membrane under any circumstance"
+              "Both cross unaided by simple diffusion",
+              "Both require ATP-powered pumps"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Small nonpolar molecules like oxygen slip between the lipid tails unaided (simple diffusion), whereas large polar glucose is repelled by the hydrophobic interior and needs a carrier protein.\n\n**Why the other options are wrong:**\n- **(A)** Glucose cannot cross unaided because it is large and polar.\n- **(C)** Oxygen crosses unaided, not glucose.\n- **(D)** Neither example moves against its gradient here, so no ATP-powered pump is required.\n- **(E)** Both can cross—oxygen unaided and glucose with assistance."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Small nonpolar molecules like oxygen slip between the lipid tails unaided (simple diffusion), whereas large polar glucose is repelled by the hydrophobic interior and needs a carrier protein.\n\n**Why the other options are wrong:**\n- **(B)** Both can cross—oxygen unaided and glucose with assistance.\n- **(C)** Oxygen crosses unaided, not glucose.\n- **(D)** Glucose cannot cross unaided because it is large and polar.\n- **(E)** Neither example moves against its gradient here, so no ATP-powered pump is required."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1874,14 +1874,14 @@
           "question": {
             "stem": "Which of the following substances would be UNABLE to cross the phospholipid bilayer by simple diffusion and would instead require assistance from a membrane protein?",
             "options": [
-              "Carbon dioxide gas",
-              "A steroid hormone",
-              "A sodium ion",
               "Oxygen gas",
-              "Alcohol"
+              "Carbon dioxide gas",
+              "Alcohol",
+              "A sodium ion",
+              "A steroid hormone"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Sodium ions are charged and hydrophilic, so they are repelled by the nonpolar interior and must move through channels or transporters.\n\n**Why the other options are wrong:**\n- **(A)** CO2 is small and nonpolar and crosses unaided by simple diffusion.\n- **(B)** Steroid hormones are lipid-soluble and cross the bilayer directly.\n- **(D)** Oxygen is a small nonpolar gas that diffuses through unaided.\n- **(E)** Alcohol is lipid-soluble and can pass through the bilayer unaided."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Sodium ions are charged and hydrophilic, so they are repelled by the nonpolar interior and must move through channels or transporters.\n\n**Why the other options are wrong:**\n- **(A)** Oxygen is a small nonpolar gas that diffuses through unaided.\n- **(B)** CO2 is small and nonpolar and crosses unaided by simple diffusion.\n- **(C)** Alcohol is lipid-soluble and can pass through the bilayer unaided.\n- **(E)** Steroid hormones are lipid-soluble and cross the bilayer directly."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1891,14 +1891,14 @@
           "question": {
             "stem": "According to the fluid mosaic model, what is the primary role of cholesterol within the plasma membrane?",
             "options": [
-              "It provides the main structural bilayer of the membrane",
-              "It helps maintain the fluidity of the membrane",
-              "It forms channels for ions to pass through",
+              "It hydrolyzes ATP to power active transport",
               "It attaches carbohydrate tags for cell recognition",
-              "It hydrolyzes ATP to power active transport"
+              "It helps maintain the fluidity of the membrane",
+              "It provides the main structural bilayer of the membrane",
+              "It forms channels for ions to pass through"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Cholesterol is present within the bilayer specifically to help maintain the membrane's fluidity.\n\n**Why the other options are wrong:**\n- **(A)** The phospholipid bilayer, not cholesterol, forms the main structural component.\n- **(C)** Channel proteins, not cholesterol, allow ions through.\n- **(D)** Glycoproteins provide carbohydrate recognition tags.\n- **(E)** Pump proteins, not cholesterol, hydrolyze ATP."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Cholesterol is present within the bilayer specifically to help maintain the membrane's fluidity.\n\n**Why the other options are wrong:**\n- **(A)** Pump proteins, not cholesterol, hydrolyze ATP.\n- **(B)** Glycoproteins provide carbohydrate recognition tags.\n- **(D)** The phospholipid bilayer, not cholesterol, forms the main structural component.\n- **(E)** Channel proteins, not cholesterol, allow ions through."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1908,14 +1908,14 @@
           "question": {
             "stem": "The sodium-potassium pump maintains a high concentration of sodium ions outside the cell. If a cell then opens a passive sodium channel and allows Na+ to rush back in, using that gradient to drag glucose along with it, this glucose movement is best described as:",
             "options": [
-              "Primary active transport",
+              "Exocytosis",
               "Simple diffusion",
-              "Secondary active transport",
               "Osmosis",
-              "Exocytosis"
+              "Primary active transport",
+              "Secondary active transport"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Secondary active transport uses the concentration gradient established by an ATP-powered pump to drive the movement of another substance, exactly as described here.\n\n**Why the other options are wrong:**\n- **(A)** Primary active transport directly uses ATP; here the movement is powered by a pre-existing gradient.\n- **(B)** Simple diffusion involves small nonpolar molecules slipping through the bilayer, not glucose coupled to Na+.\n- **(D)** Osmosis is the movement of water, not glucose.\n- **(E)** Exocytosis exports material in vesicles, not this coupled import."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Secondary active transport uses the concentration gradient established by an ATP-powered pump to drive the movement of another substance, exactly as described here.\n\n**Why the other options are wrong:**\n- **(A)** Exocytosis exports material in vesicles, not this coupled import.\n- **(B)** Simple diffusion involves small nonpolar molecules slipping through the bilayer, not glucose coupled to Na+.\n- **(C)** Osmosis is the movement of water, not glucose.\n- **(D)** Primary active transport directly uses ATP; here the movement is powered by a pre-existing gradient."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1925,14 +1925,14 @@
           "question": {
             "stem": "The carbohydrate tags that extend from glycoproteins and glycolipids into the extracellular space collectively form the glycocalyx. Which function is a direct role of this glycocalyx?",
             "options": [
-              "Providing the hydrophobic core of the membrane",
               "Allowing the immune system to recognize a cell as belonging to the body",
-              "Hydrolyzing ATP to move ions against their gradient",
               "Maintaining membrane fluidity like cholesterol",
-              "Forming vesicles for exocytosis"
+              "Providing the hydrophobic core of the membrane",
+              "Forming vesicles for exocytosis",
+              "Hydrolyzing ATP to move ions against their gradient"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The glycocalyx acts as a cell 'identity,' letting immune cells recognize the cell as one's own body cell rather than a pathogen.\n\n**Why the other options are wrong:**\n- **(A)** The hydrophobic core is formed by the lipid tails, not the glycocalyx.\n- **(C)** ATP hydrolysis for active transport is a role of pump proteins.\n- **(D)** Cholesterol, not the glycocalyx, maintains fluidity.\n- **(E)** Vesicle formation for exocytosis is not a glycocalyx function."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The glycocalyx acts as a cell 'identity,' letting immune cells recognize the cell as one's own body cell rather than a pathogen.\n\n**Why the other options are wrong:**\n- **(B)** Cholesterol, not the glycocalyx, maintains fluidity.\n- **(C)** The hydrophobic core is formed by the lipid tails, not the glycocalyx.\n- **(D)** Vesicle formation for exocytosis is not a glycocalyx function.\n- **(E)** ATP hydrolysis for active transport is a role of pump proteins."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1943,13 +1943,13 @@
             "stem": "A red blood cell is placed into a solution and immediately begins to swell and eventually bursts. Which term best describes the solution relative to the cell's cytoplasm?",
             "options": [
               "Isotonic",
+              "Selectively permeable",
               "Hypertonic",
               "Hypotonic",
-              "Amphipathic",
-              "Selectively permeable"
+              "Amphipathic"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** A hypotonic solution has a lower solute concentration than the cytoplasm, so water moves into the cell by osmosis, causing it to swell and possibly burst.\n\n**Why the other options are wrong:**\n- **(A)** In an isotonic solution the cell keeps its normal shape with no net water movement.\n- **(B)** In a hypertonic solution the cell shrivels as water leaves it.\n- **(D)** Amphipathic describes a molecule with both hydrophilic and hydrophobic regions, not a solution.\n- **(E)** Selective permeability describes the membrane's property, not the solution's tonicity."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A hypotonic solution has a lower solute concentration than the cytoplasm, so water moves into the cell by osmosis, causing it to swell and possibly burst.\n\n**Why the other options are wrong:**\n- **(A)** In an isotonic solution the cell keeps its normal shape with no net water movement.\n- **(B)** Selective permeability describes the membrane's property, not the solution's tonicity.\n- **(C)** In a hypertonic solution the cell shrivels as water leaves it.\n- **(E)** Amphipathic describes a molecule with both hydrophilic and hydrophobic regions, not a solution."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1960,13 +1960,13 @@
             "stem": "How does facilitated diffusion differ from primary active transport with respect to energy and direction of movement?",
             "options": [
               "Facilitated diffusion uses ATP and moves substances up their gradient; primary active transport is energy-free and moves down the gradient",
+              "Facilitated diffusion moves only water while primary active transport moves only ions",
               "Both use ATP but only facilitated diffusion moves against the gradient",
-              "Facilitated diffusion is energy-free and moves substances down their gradient; primary active transport uses ATP to move substances against their gradient",
               "Both are energy-free processes that move substances down their gradients",
-              "Facilitated diffusion moves only water while primary active transport moves only ions"
+              "Facilitated diffusion is energy-free and moves substances down their gradient; primary active transport uses ATP to move substances against their gradient"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Facilitated diffusion is passive—it uses the substance's own kinetic energy to move down the gradient—while primary active transport hydrolyzes ATP to move substances against their gradient.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the two processes' energy use and direction.\n- **(B)** Facilitated diffusion uses no ATP and moves down the gradient.\n- **(D)** Primary active transport does require ATP and moves against the gradient.\n- **(E)** Facilitated diffusion moves many polar/ionic solutes, and water movement is osmosis via aquaporins."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Facilitated diffusion is passive—it uses the substance's own kinetic energy to move down the gradient—while primary active transport hydrolyzes ATP to move substances against their gradient.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the two processes' energy use and direction.\n- **(B)** Facilitated diffusion moves many polar/ionic solutes, and water movement is osmosis via aquaporins.\n- **(C)** Facilitated diffusion uses no ATP and moves down the gradient.\n- **(D)** Primary active transport does require ATP and moves against the gradient."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1976,14 +1976,14 @@
           "question": {
             "stem": "A white blood cell engulfs a large invading bacterium by wrapping a portion of its membrane around it and pinching it off into a vesicle. Compared to the export of a hormone from an endocrine cell, this process:",
             "options": [
-              "Is the same process, both called exocytosis",
-              "Is phagocytosis (endocytosis), which brings material in, while the hormone export is exocytosis, which sends material out",
               "Is exocytosis, while the hormone export is phagocytosis",
               "Requires no energy, unlike the hormone export which needs ATP",
-              "Uses simple diffusion, while the hormone export uses facilitated diffusion"
+              "Is phagocytosis (endocytosis), which brings material in, while the hormone export is exocytosis, which sends material out",
+              "Uses simple diffusion, while the hormone export uses facilitated diffusion",
+              "Is the same process, both called exocytosis"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Engulfing a large particle like a bacterium is phagocytosis (a form of endocytosis bringing material in), whereas secreting a hormone via a vesicle fusing with the membrane is exocytosis (sending material out); both are active transport.\n\n**Why the other options are wrong:**\n- **(A)** They are opposite processes, not the same.\n- **(C)** The labels are reversed—engulfing is endocytosis, secreting is exocytosis.\n- **(D)** Both endocytosis and exocytosis are active transport requiring energy.\n- **(E)** Neither uses simple or facilitated diffusion; both use vesicular transport."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Engulfing a large particle like a bacterium is phagocytosis (a form of endocytosis bringing material in), whereas secreting a hormone via a vesicle fusing with the membrane is exocytosis (sending material out); both are active transport.\n\n**Why the other options are wrong:**\n- **(A)** The labels are reversed—engulfing is endocytosis, secreting is exocytosis.\n- **(B)** Both endocytosis and exocytosis are active transport requiring energy.\n- **(D)** Neither uses simple or facilitated diffusion; both use vesicular transport.\n- **(E)** They are opposite processes, not the same."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"

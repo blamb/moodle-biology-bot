@@ -9,14 +9,14 @@
           "question": {
             "stem": "Which compound is an exogenous antagonist of muscarinic receptors that is used clinically to raise heart rate?",
             "options": [
-              "Curare",
               "Atropine",
-              "Muscarine",
               "Nicotine",
-              "Acetylcholine"
+              "Acetylcholine",
+              "Curare",
+              "Muscarine"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Atropine, extracted from deadly nightshade and related plants, blocks muscarinic receptors, and because the parasympathetic muscarinic receptor at cardiac muscle slows the heart, blocking it raises heart rate.\n\n**Why the other options are wrong:**\n- **(A)** Curare is a nicotinic antagonist at skeletal muscle, not a muscarinic antagonist.\n- **(C)** Muscarine is a muscarinic agonist, not an antagonist.\n- **(D)** Nicotine is a nicotinic agonist.\n- **(E)** Acetylcholine is the endogenous agonist of both cholinergic receptor types, not an antagonist."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Atropine, extracted from deadly nightshade and related plants, blocks muscarinic receptors, and because the parasympathetic muscarinic receptor at cardiac muscle slows the heart, blocking it raises heart rate.\n\n**Why the other options are wrong:**\n- **(B)** Nicotine is a nicotinic agonist.\n- **(C)** Acetylcholine is the endogenous agonist of both cholinergic receptor types, not an antagonist.\n- **(D)** Curare is a nicotinic antagonist at skeletal muscle, not a muscarinic antagonist.\n- **(E)** Muscarine is a muscarinic agonist, not an antagonist."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -44,13 +44,13 @@
             "stem": "In a spinal nerve, sensory axons enter the spinal cord through which structure?",
             "options": [
               "Ventral root",
+              "Terminal ganglion",
               "Dorsal root",
               "Sympathetic chain ganglion",
-              "Terminal ganglion",
               "Collateral ganglion"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The sensory (afferent) axons of a spinal nerve enter the spinal cord as the dorsal root, whose cell bodies sit in the dorsal root ganglion.\n\n**Why the other options are wrong:**\n- **(A)** The ventral root carries motor (efferent) fibres out of the cord, not sensory fibres in.\n- **(C)** The sympathetic chain ganglion is an autonomic relay, not the entry point for sensory axons.\n- **(D)** Terminal ganglia are parasympathetic structures near target organs.\n- **(E)** Collateral ganglia are autonomic ganglia anterior to the vertebral column."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The sensory (afferent) axons of a spinal nerve enter the spinal cord as the dorsal root, whose cell bodies sit in the dorsal root ganglion.\n\n**Why the other options are wrong:**\n- **(A)** The ventral root carries motor (efferent) fibres out of the cord, not sensory fibres in.\n- **(B)** Terminal ganglia are parasympathetic structures near target organs.\n- **(D)** The sympathetic chain ganglion is an autonomic relay, not the entry point for sensory axons.\n- **(E)** Collateral ganglia are autonomic ganglia anterior to the vertebral column."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -60,14 +60,14 @@
           "question": {
             "stem": "Norepinephrine is considered both a neurotransmitter and a hormone because it is:",
             "options": [
-              "Released only into the bloodstream by the adrenal medulla",
               "Released at synapses by postganglionic sympathetic fibres and into the blood by the adrenal medulla",
-              "Released only at synapses by somatic motor neurons",
+              "Released only by parasympathetic postganglionic fibres",
               "Never released by neurons, only by glands",
-              "Released only by parasympathetic postganglionic fibres"
+              "Released only into the bloodstream by the adrenal medulla",
+              "Released only at synapses by somatic motor neurons"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Norepinephrine acts as a neurotransmitter when released at synapses by postganglionic sympathetic fibres and as a hormone when released into circulation by the adrenal medulla.\n\n**Why the other options are wrong:**\n- **(A)** It is released both at synapses and into the blood, not only into blood.\n- **(C)** Somatic motor neurons release acetylcholine, not norepinephrine.\n- **(D)** It is released by neurons, so this is incorrect.\n- **(E)** Parasympathetic postganglionic fibres release acetylcholine."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Norepinephrine acts as a neurotransmitter when released at synapses by postganglionic sympathetic fibres and as a hormone when released into circulation by the adrenal medulla.\n\n**Why the other options are wrong:**\n- **(B)** Parasympathetic postganglionic fibres release acetylcholine.\n- **(C)** It is released by neurons, so this is incorrect.\n- **(D)** It is released both at synapses and into the blood, not only into blood.\n- **(E)** Somatic motor neurons release acetylcholine, not norepinephrine."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -77,14 +77,14 @@
           "question": {
             "stem": "The patellar (knee-jerk) reflex is an example of which type of reflex?",
             "options": [
-              "Withdrawal reflex",
-              "Stretch reflex",
-              "Cross extension reflex",
               "Autonomic reflex",
-              "Cranial reflex"
+              "Cross extension reflex",
+              "Withdrawal reflex",
+              "Cranial reflex",
+              "Stretch reflex"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Tapping the patellar tendon stretches the quadriceps and triggers its contraction, which is the defining feature of a stretch reflex.\n\n**Why the other options are wrong:**\n- **(A)** A withdrawal reflex responds to a painful stimulus by pulling away, not to muscle stretch.\n- **(C)** Cross extension involves counterbalancing movement on the opposite limb.\n- **(D)** The patellar reflex uses somatic motor neurons and skeletal muscle, not autonomic pathways.\n- **(E)** It is a spinal reflex, not a cranial one."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Tapping the patellar tendon stretches the quadriceps and triggers its contraction, which is the defining feature of a stretch reflex.\n\n**Why the other options are wrong:**\n- **(A)** The patellar reflex uses somatic motor neurons and skeletal muscle, not autonomic pathways.\n- **(B)** Cross extension involves counterbalancing movement on the opposite limb.\n- **(C)** A withdrawal reflex responds to a painful stimulus by pulling away, not to muscle stretch.\n- **(D)** It is a spinal reflex, not a cranial one."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -95,13 +95,13 @@
             "stem": "The motor fibres of a spinal nerve, which emerge as the ventral root, include which types?",
             "options": [
               "Only somatic motor fibres",
-              "Only sensory fibres",
-              "Both somatic and autonomic motor fibres",
               "Only autonomic motor fibres",
-              "Only cranial nerve fibres"
+              "Only cranial nerve fibres",
+              "Both somatic and autonomic motor fibres",
+              "Only sensory fibres"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The ventral root carries both somatic and autonomic motor fibres out of the spinal cord.\n\n**Why the other options are wrong:**\n- **(A)** The ventral root carries autonomic motor fibres as well as somatic ones.\n- **(B)** Sensory fibres enter through the dorsal root, not the ventral root.\n- **(D)** The ventral root also carries somatic motor fibres.\n- **(E)** Cranial nerve fibres are associated with the brain, not spinal nerve roots."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The ventral root carries both somatic and autonomic motor fibres out of the spinal cord.\n\n**Why the other options are wrong:**\n- **(A)** The ventral root carries autonomic motor fibres as well as somatic ones.\n- **(B)** The ventral root also carries somatic motor fibres.\n- **(C)** Cranial nerve fibres are associated with the brain, not spinal nerve roots.\n- **(E)** Sensory fibres enter through the dorsal root, not the ventral root."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -112,13 +112,13 @@
             "stem": "In the basic withdrawal reflex (e.g., pulling a hand from a hot stove), which muscle contracts to flex the forearm?",
             "options": [
               "Quadriceps",
-              "Biceps brachii",
-              "Triceps brachii",
               "Hamstring",
-              "Extensor muscles of the contralateral limb"
+              "Extensor muscles of the contralateral limb",
+              "Triceps brachii",
+              "Biceps brachii"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** In the withdrawal reflex, the motor neuron stimulates the biceps brachii, causing forearm flexion that pulls the hand away.\n\n**Why the other options are wrong:**\n- **(A)** The quadriceps contracts in the patellar stretch reflex, not the hand-withdrawal reflex.\n- **(C)** The triceps brachii is the antagonist that is inhibited during forearm flexion.\n- **(D)** The hamstring is a leg muscle unrelated to withdrawing the hand.\n- **(E)** Contralateral extensor contraction is part of cross extension, not the basic flexion response."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** In the withdrawal reflex, the motor neuron stimulates the biceps brachii, causing forearm flexion that pulls the hand away.\n\n**Why the other options are wrong:**\n- **(A)** The quadriceps contracts in the patellar stretch reflex, not the hand-withdrawal reflex.\n- **(B)** The hamstring is a leg muscle unrelated to withdrawing the hand.\n- **(C)** Contralateral extensor contraction is part of cross extension, not the basic flexion response.\n- **(D)** The triceps brachii is the antagonist that is inhibited during forearm flexion."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -128,14 +128,14 @@
           "question": {
             "stem": "Which cranial nerve is part of the parasympathetic nervous system and targets organs in the thoracic and abdominal cavities?",
             "options": [
-              "Optic (CN II)",
-              "Trigeminal (CN V)",
-              "Vagus (CN X)",
+              "Vestibulocochlear (CN VIII)",
               "Hypoglossal (CN XII)",
-              "Vestibulocochlear (CN VIII)"
+              "Vagus (CN X)",
+              "Trigeminal (CN V)",
+              "Optic (CN II)"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The vagus nerve (CN X) is the main parasympathetic cranial nerve and regulates digestive, respiratory, and cardiovascular organs beyond the head and neck.\n\n**Why the other options are wrong:**\n- **(A)** The optic nerve is purely sensory for vision.\n- **(B)** The trigeminal provides facial sensation and controls chewing, staying in the head region.\n- **(D)** The hypoglossal is a motor nerve for tongue movement.\n- **(E)** The vestibulocochlear is a sensory nerve for hearing and balance."
+            "explanation": "**Why (C) is correct:** The vagus nerve (CN X) is the main parasympathetic cranial nerve and regulates digestive, respiratory, and cardiovascular organs beyond the head and neck.\n\n**Why the other options are wrong:**\n- **(A)** The vestibulocochlear is a sensory nerve for hearing and balance.\n- **(B)** The hypoglossal is a motor nerve for tongue movement.\n- **(D)** The trigeminal provides facial sensation and controls chewing, staying in the head region.\n- **(E)** The optic nerve is purely sensory for vision."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -146,13 +146,13 @@
             "stem": "A ganglion is best defined as:",
             "options": [
               "A bundle of axons within the central nervous system",
-              "A group of neuron cell bodies located in the periphery",
+              "A synapse between a motor neuron and skeletal muscle",
               "A group of neuron cell bodies within the brain",
-              "A connective tissue sheath surrounding a nerve",
-              "A synapse between a motor neuron and skeletal muscle"
+              "A group of neuron cell bodies located in the periphery",
+              "A connective tissue sheath surrounding a nerve"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A ganglion is defined as a group of neuron cell bodies in the peripheral nervous system.\n\n**Why the other options are wrong:**\n- **(A)** A bundle of axons in the CNS is a tract, not a ganglion.\n- **(C)** A group of cell bodies within the CNS is called a nucleus, not a ganglion.\n- **(D)** Connective tissue sheaths wrap nerves but are not ganglia.\n- **(E)** A motor neuron-to-muscle contact is a neuromuscular junction, not a ganglion."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A ganglion is defined as a group of neuron cell bodies in the peripheral nervous system.\n\n**Why the other options are wrong:**\n- **(A)** A bundle of axons in the CNS is a tract, not a ganglion.\n- **(B)** A motor neuron-to-muscle contact is a neuromuscular junction, not a ganglion.\n- **(C)** A group of cell bodies within the CNS is called a nucleus, not a ganglion.\n- **(E)** Connective tissue sheaths wrap nerves but are not ganglia."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -162,14 +162,14 @@
           "question": {
             "stem": "The term used to describe a signaling molecule that is produced outside of the body, such as nicotine or curare, is:",
             "options": [
-              "Endogenous",
-              "Exogenous",
+              "Cholinergic",
               "Agonist",
+              "Exogenous",
               "Adrenergic",
-              "Cholinergic"
+              "Endogenous"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Exogenous describes molecules made outside the body, such as nicotine and curare that bind cholinergic receptors.\n\n**Why the other options are wrong:**\n- **(A)** Endogenous refers to molecules produced inside the body, such as acetylcholine.\n- **(C)** Agonist describes a molecule that activates a receptor, not where it is made.\n- **(D)** Adrenergic refers to receptors/signaling using norepinephrine or epinephrine.\n- **(E)** Cholinergic refers to acetylcholine signaling, not the source of a molecule."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Exogenous describes molecules made outside the body, such as nicotine and curare that bind cholinergic receptors.\n\n**Why the other options are wrong:**\n- **(A)** Cholinergic refers to acetylcholine signaling, not the source of a molecule.\n- **(B)** Agonist describes a molecule that activates a receptor, not where it is made.\n- **(D)** Adrenergic refers to receptors/signaling using norepinephrine or epinephrine.\n- **(E)** Endogenous refers to molecules produced inside the body, such as acetylcholine."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -181,12 +181,12 @@
             "options": [
               "The ventral root",
               "The dorsal root",
-              "The sympathetic chain ganglion",
               "The terminal ganglion",
+              "The sympathetic chain ganglion",
               "The adrenal medulla"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Sensory axons enter the spinal cord through the dorsal root, whose cell bodies sit in the dorsal root ganglion.\n\n**Why the other options are wrong:**\n- **(A)** The ventral root carries motor (efferent) fibres out of the cord, not sensory input.\n- **(C)** The sympathetic chain ganglion is an autonomic relay, not the sensory entry point of a spinal nerve.\n- **(D)** Terminal ganglia belong to the parasympathetic division and lie near target organs.\n- **(E)** The adrenal medulla is a modified sympathetic ganglion, not a sensory root."
+            "explanation": "**Why (B) is correct:** Sensory axons enter the spinal cord through the dorsal root, whose cell bodies sit in the dorsal root ganglion.\n\n**Why the other options are wrong:**\n- **(A)** The ventral root carries motor (efferent) fibres out of the cord, not sensory input.\n- **(C)** Terminal ganglia belong to the parasympathetic division and lie near target organs.\n- **(D)** The sympathetic chain ganglion is an autonomic relay, not the sensory entry point of a spinal nerve.\n- **(E)** The adrenal medulla is a modified sympathetic ganglion, not a sensory root."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -196,14 +196,14 @@
           "question": {
             "stem": "Compared with sympathetic preganglionic fibres, parasympathetic preganglionic fibres are generally:",
             "options": [
-              "Shorter, because their ganglia lie next to the spinal cord",
-              "Longer, because their terminal ganglia lie near or within the target organ",
-              "Absent, because the parasympathetic system has no preganglionic neurons",
               "Adrenergic, releasing norepinephrine",
-              "Identical in length to somatic motor neurons"
+              "Longer, because their terminal ganglia lie near or within the target organ",
+              "Identical in length to somatic motor neurons",
+              "Absent, because the parasympathetic system has no preganglionic neurons",
+              "Shorter, because their ganglia lie next to the spinal cord"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Parasympathetic terminal ganglia sit near or inside the target organ, so the preganglionic fibre must travel a long distance while the postganglionic fibre is short.\n\n**Why the other options are wrong:**\n- **(A)** Short preganglionic fibres describe the sympathetic division, whose chain ganglia lie beside the vertebral column.\n- **(C)** The parasympathetic system does have preganglionic neurons in the brainstem and sacral cord.\n- **(D)** All preganglionic fibres, including parasympathetic ones, release acetylcholine, not norepinephrine.\n- **(E)** Somatic motor neurons have no ganglionic relay, so they are not comparable in this two-neuron chain."
+            "explanation": "**Why (B) is correct:** Parasympathetic terminal ganglia sit near or inside the target organ, so the preganglionic fibre must travel a long distance while the postganglionic fibre is short.\n\n**Why the other options are wrong:**\n- **(A)** All preganglionic fibres, including parasympathetic ones, release acetylcholine, not norepinephrine.\n- **(C)** Somatic motor neurons have no ganglionic relay, so they are not comparable in this two-neuron chain.\n- **(D)** The parasympathetic system does have preganglionic neurons in the brainstem and sacral cord.\n- **(E)** Short preganglionic fibres describe the sympathetic division, whose chain ganglia lie beside the vertebral column."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -213,14 +213,14 @@
           "question": {
             "stem": "Which molecule is the endogenous ligand and agonist of BOTH nicotinic and muscarinic receptors?",
             "options": [
-              "Nicotine",
-              "Muscarine",
+              "Atropine",
               "Acetylcholine",
+              "Nicotine",
               "Curare",
-              "Atropine"
+              "Muscarine"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Acetylcholine is the body's own (endogenous) ligand and acts as an agonist at both nicotinic and muscarinic cholinergic receptors.\n\n**Why the other options are wrong:**\n- **(A)** Nicotine is an exogenous agonist selective for nicotinic receptors.\n- **(B)** Muscarine is an exogenous agonist selective for muscarinic receptors.\n- **(D)** Curare is an exogenous nicotinic antagonist.\n- **(E)** Atropine is an exogenous muscarinic antagonist."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Acetylcholine is the body's own (endogenous) ligand and acts as an agonist at both nicotinic and muscarinic cholinergic receptors.\n\n**Why the other options are wrong:**\n- **(A)** Atropine is an exogenous muscarinic antagonist.\n- **(C)** Nicotine is an exogenous agonist selective for nicotinic receptors.\n- **(D)** Curare is an exogenous nicotinic antagonist.\n- **(E)** Muscarine is an exogenous agonist selective for muscarinic receptors."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -231,13 +231,13 @@
             "stem": "Curare, used traditionally on hunting darts, causes paralysis because it acts as a(n):",
             "options": [
               "Nicotinic antagonist at skeletal muscle receptors",
-              "Muscarinic agonist at cardiac muscle receptors",
               "Adrenergic agonist at blood vessels",
               "Nicotinic agonist that overstimulates muscle",
-              "Muscarinic antagonist in the eye"
+              "Muscarinic antagonist in the eye",
+              "Muscarinic agonist at cardiac muscle receptors"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Curare blocks the nicotinic receptors at the skeletal neuromuscular junction, preventing acetylcholine from binding and causing paralysis.\n\n**Why the other options are wrong:**\n- **(B)** A muscarinic cardiac agonist would slow the heart, not paralyze muscle.\n- **(C)** Curare acts on cholinergic, not adrenergic, receptors.\n- **(D)** As an antagonist, curare blocks rather than overstimulates the receptor.\n- **(E)** Blocking muscarinic receptors in the eye describes atropine, not curare."
+            "explanation": "**Why (A) is correct:** Curare blocks the nicotinic receptors at the skeletal neuromuscular junction, preventing acetylcholine from binding and causing paralysis.\n\n**Why the other options are wrong:**\n- **(B)** Curare acts on cholinergic, not adrenergic, receptors.\n- **(C)** As an antagonist, curare blocks rather than overstimulates the receptor.\n- **(D)** Blocking muscarinic receptors in the eye describes atropine, not curare.\n- **(E)** A muscarinic cardiac agonist would slow the heart, not paralyze muscle."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -247,14 +247,14 @@
           "question": {
             "stem": "According to the unit, which statement best describes the parasympathetic ('rest and digest') division's typical effects on organs?",
             "options": [
-              "Increases heart rate and dilates the bronchi",
               "Decreases digestive and urinary activity",
+              "Diverts blood away from the digestive tract to skeletal muscle",
+              "Increases heart rate and dilates the bronchi",
               "Decreases respiratory, cardiovascular, and musculoskeletal activity while increasing digestive activity",
-              "Dilates pupils and increases sweating",
-              "Diverts blood away from the digestive tract to skeletal muscle"
+              "Dilates pupils and increases sweating"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Parasympathetic activation generally lowers respiratory, cardiovascular, and musculoskeletal activity while raising digestive (and urinary) activity.\n\n**Why the other options are wrong:**\n- **(A)** Increased heart rate and bronchodilation are sympathetic (fight-or-flight) responses.\n- **(B)** The parasympathetic system increases, not decreases, digestive and urinary activity.\n- **(D)** Pupil dilation and sweating are sympathetic effects.\n- **(E)** Diverting blood from the gut to skeletal muscle is a sympathetic response."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Parasympathetic activation generally lowers respiratory, cardiovascular, and musculoskeletal activity while raising digestive (and urinary) activity.\n\n**Why the other options are wrong:**\n- **(A)** The parasympathetic system increases, not decreases, digestive and urinary activity.\n- **(B)** Diverting blood from the gut to skeletal muscle is a sympathetic response.\n- **(C)** Increased heart rate and bronchodilation are sympathetic (fight-or-flight) responses.\n- **(E)** Pupil dilation and sweating are sympathetic effects."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -264,14 +264,14 @@
           "question": {
             "stem": "In the terminology of this unit, what is a 'ganglion'?",
             "options": [
+              "A synapse between two neurons in the spinal cord",
+              "A single sensory ending in the skin",
               "A bundle of axons found within the central nervous system",
               "A group of neuron cell bodies located in the periphery",
-              "A connective tissue sheath surrounding a nerve",
-              "A single sensory ending in the skin",
-              "A synapse between two neurons in the spinal cord"
+              "A connective tissue sheath surrounding a nerve"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A ganglion is defined as a cluster of neuron cell bodies located in the peripheral nervous system.\n\n**Why the other options are wrong:**\n- **(A)** A bundle of axons in the CNS is a tract, not a ganglion.\n- **(C)** The connective tissue sheath is a nerve wrapping, not a collection of cell bodies.\n- **(D)** A sensory ending is the terminal of one axon, not a group of cell bodies.\n- **(E)** A synapse is a junction between neurons, not a cluster of cell bodies."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A ganglion is defined as a cluster of neuron cell bodies located in the peripheral nervous system.\n\n**Why the other options are wrong:**\n- **(A)** A synapse is a junction between neurons, not a cluster of cell bodies.\n- **(B)** A sensory ending is the terminal of one axon, not a group of cell bodies.\n- **(C)** A bundle of axons in the CNS is a tract, not a ganglion.\n- **(E)** The connective tissue sheath is a nerve wrapping, not a collection of cell bodies."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -281,14 +281,14 @@
           "question": {
             "stem": "Which cranial nerve extends beyond the head and neck to help regulate organs of the digestive, respiratory, and cardiovascular systems as part of the parasympathetic division?",
             "options": [
+              "Hypoglossal (CN XII)",
               "Trigeminal (CN V)",
               "Facial (CN VII)",
-              "Vagus (CN X)",
-              "Hypoglossal (CN XII)",
-              "Optic (CN II)"
+              "Optic (CN II)",
+              "Vagus (CN X)"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The vagus nerve (CN X) targets thoracic and abdominal organs and is the main nerve of the parasympathetic division.\n\n**Why the other options are wrong:**\n- **(A)** The trigeminal nerve handles facial sensation and chewing, confined to the head.\n- **(B)** The facial nerve controls taste and facial expression, not visceral organs.\n- **(D)** The hypoglossal nerve controls tongue movement only.\n- **(E)** The optic nerve is purely sensory for vision."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The vagus nerve (CN X) targets thoracic and abdominal organs and is the main nerve of the parasympathetic division.\n\n**Why the other options are wrong:**\n- **(A)** The hypoglossal nerve controls tongue movement only.\n- **(B)** The trigeminal nerve handles facial sensation and chewing, confined to the head.\n- **(C)** The facial nerve controls taste and facial expression, not visceral organs.\n- **(D)** The optic nerve is purely sensory for vision."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -299,13 +299,13 @@
             "stem": "A postganglionic sympathetic fibre projecting to most target organs usually releases which signaling molecule?",
             "options": [
               "Acetylcholine",
-              "Norepinephrine",
-              "Muscarine",
               "Curare",
-              "Atropine"
+              "Norepinephrine",
+              "Atropine",
+              "Muscarine"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Postganglionic sympathetic fibres usually release norepinephrine (sometimes epinephrine) onto adrenergic receptors.\n\n**Why the other options are wrong:**\n- **(A)** Acetylcholine is released by preganglionic fibres and postganglionic parasympathetic fibres, not most sympathetic postganglionic fibres.\n- **(C)** Muscarine is an exogenous drug, not a neurotransmitter released by neurons.\n- **(D)** Curare is an exogenous receptor antagonist, not a released transmitter.\n- **(E)** Atropine is a drug, not a neurotransmitter."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Postganglionic sympathetic fibres usually release norepinephrine (sometimes epinephrine) onto adrenergic receptors.\n\n**Why the other options are wrong:**\n- **(A)** Acetylcholine is released by preganglionic fibres and postganglionic parasympathetic fibres, not most sympathetic postganglionic fibres.\n- **(B)** Curare is an exogenous receptor antagonist, not a released transmitter.\n- **(D)** Atropine is a drug, not a neurotransmitter.\n- **(E)** Muscarine is an exogenous drug, not a neurotransmitter released by neurons."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -316,13 +316,13 @@
             "stem": "In a cross extension reflex, what happens on the side of the body opposite (contralateral to) the stimulus?",
             "options": [
               "Flexor muscles contract to withdraw the limb",
-              "Extensor muscles contract to provide counterbalancing support",
-              "All muscles relax to prevent movement",
+              "The sympathetic nervous system is activated",
               "Sensory neurons are inhibited",
-              "The sympathetic nervous system is activated"
+              "All muscles relax to prevent movement",
+              "Extensor muscles contract to provide counterbalancing support"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Cross extension activates extensor muscles in the contralateral limb to counterbalance the body while the stimulated side withdraws.\n\n**Why the other options are wrong:**\n- **(A)** Flexor contraction and withdrawal occur on the ipsilateral (same) side, not the contralateral side.\n- **(C)** The contralateral side actively contracts extensors rather than relaxing everything.\n- **(D)** Sensory neurons are stimulated, not inhibited, to trigger the reflex.\n- **(E)** Cross extension is a somatic spinal reflex, not a sympathetic autonomic response."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Cross extension activates extensor muscles in the contralateral limb to counterbalance the body while the stimulated side withdraws.\n\n**Why the other options are wrong:**\n- **(A)** Flexor contraction and withdrawal occur on the ipsilateral (same) side, not the contralateral side.\n- **(B)** Cross extension is a somatic spinal reflex, not a sympathetic autonomic response.\n- **(C)** Sensory neurons are stimulated, not inhibited, to trigger the reflex.\n- **(D)** The contralateral side actively contracts extensors rather than relaxing everything."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -332,14 +332,14 @@
           "question": {
             "stem": "How does the stimulus of the stretch (patellar) reflex differ from that of the withdrawal reflex?",
             "options": [
-              "The stretch reflex is triggered by stretching of a muscle, while the withdrawal reflex is triggered by a painful/harmful stimulus to the skin",
-              "The stretch reflex is triggered by pain, while the withdrawal reflex is triggered by muscle stretch",
               "Both reflexes are triggered only by visual input",
+              "The stretch reflex is triggered by pain, while the withdrawal reflex is triggered by muscle stretch",
+              "Neither reflex involves sensory neurons",
               "The stretch reflex uses cranial nerves, while the withdrawal reflex uses no nerves",
-              "Neither reflex involves sensory neurons"
+              "The stretch reflex is triggered by stretching of a muscle, while the withdrawal reflex is triggered by a painful/harmful stimulus to the skin"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The stretch reflex responds to stretching of a muscle (e.g., a tendon tap), whereas the withdrawal reflex responds to a painful or harmful stimulus such as touching a hot stove.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the two stimuli.\n- **(C)** Both reflexes use somatosensory input, not visual input.\n- **(D)** Both reflexes are spinal reflexes using spinal nerves and sensory/motor neurons.\n- **(E)** Both reflexes begin with sensory neurons detecting a stimulus."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The stretch reflex responds to stretching of a muscle (e.g., a tendon tap), whereas the withdrawal reflex responds to a painful or harmful stimulus such as touching a hot stove.\n\n**Why the other options are wrong:**\n- **(A)** Both reflexes use somatosensory input, not visual input.\n- **(B)** This reverses the two stimuli.\n- **(C)** Both reflexes begin with sensory neurons detecting a stimulus.\n- **(D)** Both reflexes are spinal reflexes using spinal nerves and sensory/motor neurons."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -349,14 +349,14 @@
           "question": {
             "stem": "In the context of this unit, what is a ganglion?",
             "options": [
-              "A bundle of axons located within the central nervous system",
-              "A group of neuron cell bodies located in the periphery",
               "A connective tissue sheath surrounding a peripheral nerve",
+              "A specialized synapse between a neuron and a skeletal muscle",
+              "A bundle of axons located within the central nervous system",
               "A region of the spinal cord containing motor neuron cell bodies",
-              "A specialized synapse between a neuron and a skeletal muscle"
+              "A group of neuron cell bodies located in the periphery"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A ganglion is defined as a group of neuron cell bodies located in the periphery (outside the CNS).\n\n**Why the other options are wrong:**\n- **(A)** A bundle of axons in the CNS is a tract, not a ganglion.\n- **(C)** Connective tissue sheaths are components of a nerve, not a ganglion.\n- **(D)** Motor neuron cell bodies in the spinal cord form nuclei/horns, which are CNS structures, not ganglia.\n- **(E)** A neuron-to-skeletal-muscle synapse is a neuromuscular junction, not a ganglion."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** A ganglion is defined as a group of neuron cell bodies located in the periphery (outside the CNS).\n\n**Why the other options are wrong:**\n- **(A)** Connective tissue sheaths are components of a nerve, not a ganglion.\n- **(B)** A neuron-to-skeletal-muscle synapse is a neuromuscular junction, not a ganglion.\n- **(C)** A bundle of axons in the CNS is a tract, not a ganglion.\n- **(D)** Motor neuron cell bodies in the spinal cord form nuclei/horns, which are CNS structures, not ganglia."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -367,13 +367,13 @@
             "stem": "Which neurotransmitter is released by ALL preganglionic fibres of both the sympathetic and parasympathetic divisions?",
             "options": [
               "Norepinephrine",
-              "Epinephrine",
-              "Acetylcholine",
               "Muscarine",
+              "Acetylcholine",
+              "Epinephrine",
               "Dopamine"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** All preganglionic autonomic fibres (and somatic motor neurons) release acetylcholine, which binds nicotinic receptors at the ganglia.\n\n**Why the other options are wrong:**\n- **(A)** Norepinephrine is typically released by postganglionic sympathetic fibres, not preganglionic fibres.\n- **(B)** Epinephrine is released by the adrenal medulla into the blood, not by preganglionic fibres at synapses.\n- **(D)** Muscarine is an exogenous drug, not a neurotransmitter released by fibres.\n- **(E)** Dopamine is not the neurotransmitter of autonomic preganglionic fibres in this unit."
+            "explanation": "**Why (C) is correct:** All preganglionic autonomic fibres (and somatic motor neurons) release acetylcholine, which binds nicotinic receptors at the ganglia.\n\n**Why the other options are wrong:**\n- **(A)** Norepinephrine is typically released by postganglionic sympathetic fibres, not preganglionic fibres.\n- **(B)** Muscarine is an exogenous drug, not a neurotransmitter released by fibres.\n- **(D)** Epinephrine is released by the adrenal medulla into the blood, not by preganglionic fibres at synapses.\n- **(E)** Dopamine is not the neurotransmitter of autonomic preganglionic fibres in this unit."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -383,14 +383,14 @@
           "question": {
             "stem": "Which statement correctly distinguishes the stretch reflex from the withdrawal reflex?",
             "options": [
+              "The stretch reflex is a voluntary movement, whereas the withdrawal reflex is involuntary",
               "The stretch reflex responds to stretching of a muscle with contraction of that same muscle, whereas the withdrawal reflex pulls a limb away from a painful stimulus",
               "The stretch reflex responds to painful stimuli, whereas the withdrawal reflex maintains posture and balance",
-              "The stretch reflex uses only motor neurons, whereas the withdrawal reflex uses only sensory neurons",
-              "The stretch reflex is a voluntary movement, whereas the withdrawal reflex is involuntary",
-              "The stretch reflex occurs in the brain stem, whereas the withdrawal reflex occurs entirely in the periphery"
+              "The stretch reflex occurs in the brain stem, whereas the withdrawal reflex occurs entirely in the periphery",
+              "The stretch reflex uses only motor neurons, whereas the withdrawal reflex uses only sensory neurons"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The stretch reflex contracts the stretched muscle (e.g., patellar reflex), while the withdrawal reflex pulls a limb away from a painful stimulus (e.g., hand off a hot stove).\n\n**Why the other options are wrong:**\n- **(B)** This reverses the two reflexes' stimuli and functions.\n- **(C)** Both reflexes require both sensory and motor neurons.\n- **(D)** Both are involuntary reflexes, not voluntary movements.\n- **(E)** Both of these spinal reflexes involve the spinal cord, not the brain stem alone or the periphery alone."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The stretch reflex contracts the stretched muscle (e.g., patellar reflex), while the withdrawal reflex pulls a limb away from a painful stimulus (e.g., hand off a hot stove).\n\n**Why the other options are wrong:**\n- **(A)** Both are involuntary reflexes, not voluntary movements.\n- **(C)** This reverses the two reflexes' stimuli and functions.\n- **(D)** Both of these spinal reflexes involve the spinal cord, not the brain stem alone or the periphery alone.\n- **(E)** Both reflexes require both sensory and motor neurons."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -401,13 +401,13 @@
             "stem": "Which of the following cranial nerves carries sensory information?",
             "options": [
               "Oculomotor",
+              "Abducens",
               "Trochlear",
               "Trigeminal",
-              "Abducens",
               "Accessory"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The trigeminal nerve (CN V) has a sensory component that provides sensation from the face.\n\n**Why the other options are wrong:**\n- **(A)** The oculomotor nerve is purely motor, controlling eye and eyelid movement.\n- **(B)** The trochlear nerve is purely motor, controlling an eye muscle.\n- **(D)** The abducens nerve is purely motor, controlling an eye muscle.\n- **(E)** The accessory nerve is purely motor, controlling neck and upper back muscles."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The trigeminal nerve (CN V) has a sensory component that provides sensation from the face.\n\n**Why the other options are wrong:**\n- **(A)** The oculomotor nerve is purely motor, controlling eye and eyelid movement.\n- **(B)** The abducens nerve is purely motor, controlling an eye muscle.\n- **(C)** The trochlear nerve is purely motor, controlling an eye muscle.\n- **(E)** The accessory nerve is purely motor, controlling neck and upper back muscles."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -417,14 +417,14 @@
           "question": {
             "stem": "Compared with the sympathetic division, which arrangement of fibre lengths is characteristic of the parasympathetic division?",
             "options": [
-              "Long preganglionic fibres and short postganglionic fibres",
+              "There are no preganglionic fibres, only postganglionic fibres",
               "Short preganglionic fibres and long postganglionic fibres",
-              "Both preganglionic and postganglionic fibres are short",
+              "Long preganglionic fibres and short postganglionic fibres",
               "Both preganglionic and postganglionic fibres are long",
-              "There are no preganglionic fibres, only postganglionic fibres"
+              "Both preganglionic and postganglionic fibres are short"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** In the parasympathetic division the ganglia (terminal ganglia) lie near or within the target organ, so preganglionic fibres are long and postganglionic fibres are short.\n\n**Why the other options are wrong:**\n- **(B)** Short preganglionic and long postganglionic fibres describe the sympathetic division.\n- **(C)** Preganglionic parasympathetic fibres are long, not short.\n- **(D)** Postganglionic parasympathetic fibres are short, not long.\n- **(E)** The parasympathetic division has both preganglionic and postganglionic fibres."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** In the parasympathetic division the ganglia (terminal ganglia) lie near or within the target organ, so preganglionic fibres are long and postganglionic fibres are short.\n\n**Why the other options are wrong:**\n- **(A)** The parasympathetic division has both preganglionic and postganglionic fibres.\n- **(B)** Short preganglionic and long postganglionic fibres describe the sympathetic division.\n- **(D)** Postganglionic parasympathetic fibres are short, not long.\n- **(E)** Preganglionic parasympathetic fibres are long, not short."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -435,13 +435,13 @@
             "stem": "Which cranial nerve is the main nerve of the parasympathetic division and targets organs of the digestive, respiratory, and cardiovascular systems?",
             "options": [
               "Vagus (CN X)",
-              "Optic (CN II)",
               "Hypoglossal (CN XII)",
-              "Vestibulocochlear (CN VIII)",
-              "Olfactory (CN I)"
+              "Olfactory (CN I)",
+              "Optic (CN II)",
+              "Vestibulocochlear (CN VIII)"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The vagus nerve (CN X) provides parasympathetic output to and sensory input from thoracic and abdominal organs.\n\n**Why the other options are wrong:**\n- **(B)** The optic nerve is purely sensory, responsible for vision.\n- **(C)** The hypoglossal nerve is motor, controlling tongue movement.\n- **(D)** The vestibulocochlear nerve is sensory, for hearing and balance.\n- **(E)** The olfactory nerve is sensory, responsible for smell."
+            "explanation": "**Why (A) is correct:** The vagus nerve (CN X) provides parasympathetic output to and sensory input from thoracic and abdominal organs.\n\n**Why the other options are wrong:**\n- **(B)** The hypoglossal nerve is motor, controlling tongue movement.\n- **(C)** The olfactory nerve is sensory, responsible for smell.\n- **(D)** The optic nerve is purely sensory, responsible for vision.\n- **(E)** The vestibulocochlear nerve is sensory, for hearing and balance."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -454,11 +454,11 @@
               "Increased digestive activity",
               "Increased heart rate",
               "Dilation of the pupils",
-              "Dilation of the bronchi of the lungs",
-              "Increased blood flow to skeletal muscles"
+              "Increased blood flow to skeletal muscles",
+              "Dilation of the bronchi of the lungs"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The parasympathetic division increases digestive (and urinary) activity as part of the rest-and-digest response.\n\n**Why the other options are wrong:**\n- **(B)** Increased heart rate is a sympathetic effect.\n- **(C)** Pupil dilation is a sympathetic effect.\n- **(D)** Bronchial dilation is a sympathetic effect.\n- **(E)** Increased blood flow to skeletal muscles is a sympathetic effect."
+            "explanation": "**Why (A) is correct:** The parasympathetic division increases digestive (and urinary) activity as part of the rest-and-digest response.\n\n**Why the other options are wrong:**\n- **(B)** Increased heart rate is a sympathetic effect.\n- **(C)** Pupil dilation is a sympathetic effect.\n- **(D)** Increased blood flow to skeletal muscles is a sympathetic effect.\n- **(E)** Bronchial dilation is a sympathetic effect."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -468,14 +468,14 @@
           "question": {
             "stem": "The sympathetic division is often called the \"thoracolumbar system\" because its central neurons are located in which regions of the spinal cord?",
             "options": [
-              "The thoracic and upper lumbar spinal cord",
-              "The cervical and thoracic spinal cord",
               "The brain stem and sacral spinal cord",
               "The sacral spinal cord only",
+              "The cervical and thoracic spinal cord",
+              "The thoracic and upper lumbar spinal cord",
               "The lumbar and sacral spinal cord"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Sympathetic central neurons arise from the lateral horn of the thoracic and upper lumbar spinal cord, giving the division its \"thoracolumbar\" name.\n\n**Why the other options are wrong:**\n- **(B)** The cervical region is not the origin of the thoracolumbar system.\n- **(C)** The brain stem and sacral cord describe the parasympathetic (craniosacral) outflow.\n- **(D)** The sacral cord alone is part of parasympathetic outflow, not sympathetic.\n- **(E)** The sympathetic origin is thoracic and upper lumbar, not lumbar and sacral."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Sympathetic central neurons arise from the lateral horn of the thoracic and upper lumbar spinal cord, giving the division its \"thoracolumbar\" name.\n\n**Why the other options are wrong:**\n- **(A)** The brain stem and sacral cord describe the parasympathetic (craniosacral) outflow.\n- **(B)** The sacral cord alone is part of parasympathetic outflow, not sympathetic.\n- **(C)** The cervical region is not the origin of the thoracolumbar system.\n- **(E)** The sympathetic origin is thoracic and upper lumbar, not lumbar and sacral."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -485,14 +485,14 @@
           "question": {
             "stem": "According to this unit, which substance is an exogenous antagonist of nicotinic receptors that blocks acetylcholine at skeletal muscle and causes paralysis?",
             "options": [
-              "Curare",
               "Nicotine",
-              "Muscarine",
+              "Curare",
               "Atropine",
-              "Acetylcholine"
+              "Acetylcholine",
+              "Muscarine"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Curare, derived from South American liana vines, blocks nicotinic receptors at skeletal muscle, causing paralysis, making it a nicotinic antagonist.\n\n**Why the other options are wrong:**\n- **(B)** Nicotine is an agonist of nicotinic receptors, not an antagonist.\n- **(C)** Muscarine is an agonist of muscarinic receptors.\n- **(D)** Atropine is an antagonist of muscarinic (not nicotinic) receptors.\n- **(E)** Acetylcholine is the endogenous agonist of nicotinic receptors, not an antagonist."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Curare, derived from South American liana vines, blocks nicotinic receptors at skeletal muscle, causing paralysis, making it a nicotinic antagonist.\n\n**Why the other options are wrong:**\n- **(A)** Nicotine is an agonist of nicotinic receptors, not an antagonist.\n- **(C)** Atropine is an antagonist of muscarinic (not nicotinic) receptors.\n- **(D)** Acetylcholine is the endogenous agonist of nicotinic receptors, not an antagonist.\n- **(E)** Muscarine is an agonist of muscarinic receptors."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -505,11 +505,11 @@
               "Sensory axons enter through the dorsal root; motor fibres emerge through the ventral root",
               "Sensory axons enter through the ventral root; motor fibres emerge through the dorsal root",
               "Both sensory and motor axons travel only through the dorsal root",
-              "Both sensory and motor axons travel only through the ventral root",
-              "Sensory axons enter through the ventral horn; motor fibres emerge through the dorsal horn"
+              "Sensory axons enter through the ventral horn; motor fibres emerge through the dorsal horn",
+              "Both sensory and motor axons travel only through the ventral root"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Sensory (afferent) axons enter via the dorsal root, while motor (efferent) fibres—both somatic and autonomic—emerge via the ventral root.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the correct roles of the dorsal and ventral roots.\n- **(C)** Motor fibres do not travel through the dorsal root.\n- **(D)** Sensory axons do not travel through the ventral root.\n- **(E)** The horns are internal spinal cord regions, not the roots that sensory and motor axons pass through."
+            "explanation": "**Why (A) is correct:** Sensory (afferent) axons enter via the dorsal root, while motor (efferent) fibres—both somatic and autonomic—emerge via the ventral root.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the correct roles of the dorsal and ventral roots.\n- **(C)** Motor fibres do not travel through the dorsal root.\n- **(D)** The horns are internal spinal cord regions, not the roots that sensory and motor axons pass through.\n- **(E)** Sensory axons do not travel through the ventral root."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1496,14 +1496,14 @@
           "question": {
             "stem": "A histologist examines a bundle of axons taken from within the brain and compares it to a bundle of axons taken from the arm. Which observation would confirm that the arm sample is a nerve (PNS) rather than a tract (CNS)?",
             "options": [
-              "The arm sample contains myelinated axons, whereas the brain sample does not",
               "The arm sample contains connective tissue sheaths and blood vessels invested in its structure",
+              "The arm sample lacks any axons and is composed purely of glial cells",
               "The arm sample carries only motor information, whereas the brain sample carries only sensory information",
-              "The arm sample contains neuron cell bodies clustered along its length",
-              "The arm sample lacks any axons and is composed purely of glial cells"
+              "The arm sample contains myelinated axons, whereas the brain sample does not",
+              "The arm sample contains neuron cell bodies clustered along its length"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Nerves in the PNS differ from CNS tracts in that they contain connective tissue sheaths and blood vessels in addition to nervous tissue.\n\n**Why the other options are wrong:**\n- **(A)** Both CNS tracts and PNS nerves can contain myelinated axons, so myelination does not distinguish them.\n- **(C)** Nerves can be afferent, efferent, or mixed, so carrying only motor information is not a defining feature.\n- **(D)** Clustered cell bodies would be a ganglion, not a defining feature of a nerve.\n- **(E)** A nerve is by definition a bundle of axons, so it cannot lack axons."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Nerves in the PNS differ from CNS tracts in that they contain connective tissue sheaths and blood vessels in addition to nervous tissue.\n\n**Why the other options are wrong:**\n- **(B)** A nerve is by definition a bundle of axons, so it cannot lack axons.\n- **(C)** Nerves can be afferent, efferent, or mixed, so carrying only motor information is not a defining feature.\n- **(D)** Both CNS tracts and PNS nerves can contain myelinated axons, so myelination does not distinguish them.\n- **(E)** Clustered cell bodies would be a ganglion, not a defining feature of a nerve."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1514,13 +1514,13 @@
             "stem": "A spinal nerve is severed at its dorsal root only, leaving the ventral root intact. What functional consequence would you predict in the region served by that nerve?",
             "options": [
               "Loss of both sensation and voluntary muscle control",
-              "Loss of sensation, but voluntary muscle control is retained",
               "Loss of voluntary muscle control, but sensation is retained",
               "No change, because both roots carry identical information",
+              "Loss of sensation, but voluntary muscle control is retained",
               "Loss of sensation and increased muscle tone due to reflex hyperactivity"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The dorsal root carries sensory (afferent) axons, so cutting it eliminates sensation while the motor ventral root remains functional.\n\n**Why the other options are wrong:**\n- **(A)** Motor output would be preserved because the ventral (motor) root is intact.\n- **(C)** The dorsal root is sensory, not motor, so motor control is not lost.\n- **(D)** The dorsal and ventral roots carry different information (sensory vs. motor).\n- **(E)** Reflex arcs would be disrupted, not hyperactive, because the sensory limb is severed."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The dorsal root carries sensory (afferent) axons, so cutting it eliminates sensation while the motor ventral root remains functional.\n\n**Why the other options are wrong:**\n- **(A)** Motor output would be preserved because the ventral (motor) root is intact.\n- **(B)** The dorsal root is sensory, not motor, so motor control is not lost.\n- **(C)** The dorsal and ventral roots carry different information (sensory vs. motor).\n- **(E)** Reflex arcs would be disrupted, not hyperactive, because the sensory limb is severed."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1530,14 +1530,14 @@
           "question": {
             "stem": "Which of the following correctly distinguishes the patellar (stretch) reflex from the withdrawal reflex?",
             "options": [
-              "The patellar reflex is triggered by a painful skin stimulus, whereas the withdrawal reflex is triggered by muscle stretch",
               "The patellar reflex responds to stretch of a muscle by contracting that same muscle, whereas the withdrawal reflex responds to a painful stimulus by flexing the limb away",
-              "The patellar reflex requires an interneuron in the pathway, whereas the withdrawal reflex never does",
               "The patellar reflex uses motor output while the withdrawal reflex uses only sensory input",
+              "The patellar reflex requires an interneuron in the pathway, whereas the withdrawal reflex never does",
+              "The patellar reflex is triggered by a painful skin stimulus, whereas the withdrawal reflex is triggered by muscle stretch",
               "The patellar reflex causes forearm flexion, whereas the withdrawal reflex causes leg extension"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The stretch (patellar) reflex contracts the stretched muscle, while the withdrawal reflex responds to a painful stimulus by flexing the limb to pull it away.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the two reflexes' stimuli.\n- **(C)** The withdrawal reflex (and cross extension) can involve interneurons; the simple patellar reflex is often monosynaptic.\n- **(D)** Both reflexes involve sensory input and motor output.\n- **(E)** This swaps the responses of the two reflexes."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The stretch (patellar) reflex contracts the stretched muscle, while the withdrawal reflex responds to a painful stimulus by flexing the limb to pull it away.\n\n**Why the other options are wrong:**\n- **(B)** Both reflexes involve sensory input and motor output.\n- **(C)** The withdrawal reflex (and cross extension) can involve interneurons; the simple patellar reflex is often monosynaptic.\n- **(D)** This reverses the two reflexes' stimuli.\n- **(E)** This swaps the responses of the two reflexes."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1547,14 +1547,14 @@
           "question": {
             "stem": "A patient is unable to move their tongue and also has difficulty producing facial expressions on one side. Damage to which pair of cranial nerves would best explain BOTH deficits?",
             "options": [
+              "Optic (CN II) and oculomotor (CN III)",
               "Trigeminal (CN V) and vestibulocochlear (CN VIII)",
               "Hypoglossal (CN XII) and facial (CN VII)",
-              "Optic (CN II) and oculomotor (CN III)",
-              "Accessory (CN XI) and glossopharyngeal (CN IX)",
-              "Abducens (CN VI) and trochlear (CN IV)"
+              "Abducens (CN VI) and trochlear (CN IV)",
+              "Accessory (CN XI) and glossopharyngeal (CN IX)"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The hypoglossal nerve controls tongue movement and the facial nerve controls muscles of facial expression, matching both deficits.\n\n**Why the other options are wrong:**\n- **(A)** The trigeminal handles facial sensation/chewing and CN VIII handles hearing/balance, neither controlling the tongue.\n- **(C)** These serve vision and eye movement, not tongue or facial expression.\n- **(D)** The accessory controls neck/upper back and glossopharyngeal handles swallowing/salivation, not tongue movement or facial expression.\n- **(E)** Both control extraocular eye muscles, not the tongue or face."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The hypoglossal nerve controls tongue movement and the facial nerve controls muscles of facial expression, matching both deficits.\n\n**Why the other options are wrong:**\n- **(A)** These serve vision and eye movement, not tongue or facial expression.\n- **(B)** The trigeminal handles facial sensation/chewing and CN VIII handles hearing/balance, neither controlling the tongue.\n- **(D)** Both control extraocular eye muscles, not the tongue or face.\n- **(E)** The accessory controls neck/upper back and glossopharyngeal handles swallowing/salivation, not tongue movement or facial expression."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1564,14 +1564,14 @@
           "question": {
             "stem": "In this unit's terminology, a drug is described as an \"exogenous antagonist\" of a receptor. Which statement correctly interprets this description?",
             "options": [
-              "The drug is produced within the body and increases the receptor's activation",
               "The drug is produced outside the body and blocks the receptor's activation",
+              "The drug is produced outside the body and has no effect on the receptor",
+              "The drug is produced within the body and increases the receptor's activation",
               "The drug is produced within the body and blocks the receptor's activation",
-              "The drug is produced outside the body and increases the receptor's activation",
-              "The drug is produced outside the body and has no effect on the receptor"
+              "The drug is produced outside the body and increases the receptor's activation"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** \"Exogenous\" means made outside the body, and \"antagonist\" means it blocks receptor activation.\n\n**Why the other options are wrong:**\n- **(A)** Exogenous means outside the body, and an antagonist blocks rather than increases activation.\n- **(C)** Endogenous, not exogenous, would mean produced within the body.\n- **(D)** An agonist, not an antagonist, increases activation.\n- **(E)** An antagonist does affect the receptor by blocking its activation."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** \"Exogenous\" means made outside the body, and \"antagonist\" means it blocks receptor activation.\n\n**Why the other options are wrong:**\n- **(B)** An antagonist does affect the receptor by blocking its activation.\n- **(C)** Exogenous means outside the body, and an antagonist blocks rather than increases activation.\n- **(D)** Endogenous, not exogenous, would mean produced within the body.\n- **(E)** An agonist, not an antagonist, increases activation."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1581,14 +1581,14 @@
           "question": {
             "stem": "The vagus nerve (CN X) is unusual among the cranial nerves for one particular reason. What is it?",
             "options": [
-              "It is the only cranial nerve that is purely sensory",
-              "It targets organs in the thoracic and abdominal cavities as part of the parasympathetic nervous system",
-              "It is the only cranial nerve that controls extraocular muscles",
               "It is the only cranial nerve not connected to the brain at all",
-              "It carries only motor axons and no sensory axons"
+              "It carries only motor axons and no sensory axons",
+              "It is the only cranial nerve that controls extraocular muscles",
+              "It targets organs in the thoracic and abdominal cavities as part of the parasympathetic nervous system",
+              "It is the only cranial nerve that is purely sensory"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Unlike other cranial nerves, which mainly serve the head and neck, the vagus targets thoracic and abdominal organs as the main parasympathetic cranial nerve.\n\n**Why the other options are wrong:**\n- **(A)** The vagus is a mixed sensory and motor nerve, not purely sensory.\n- **(C)** Extraocular muscles are controlled by CN III, IV, and VI.\n- **(D)** All cranial nerves (including the vagus) connect to the brain/brainstem.\n- **(E)** The vagus carries both sensory and motor axons."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Unlike other cranial nerves, which mainly serve the head and neck, the vagus targets thoracic and abdominal organs as the main parasympathetic cranial nerve.\n\n**Why the other options are wrong:**\n- **(A)** All cranial nerves (including the vagus) connect to the brain/brainstem.\n- **(B)** The vagus carries both sensory and motor axons.\n- **(C)** Extraocular muscles are controlled by CN III, IV, and VI.\n- **(E)** The vagus is a mixed sensory and motor nerve, not purely sensory."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1598,14 +1598,14 @@
           "question": {
             "stem": "Acetylcholine and nicotine both activate the nicotinic receptor, yet they are classified differently. Which classification is correct?",
             "options": [
+              "Both acetylcholine and nicotine are endogenous ligands of the receptor",
               "Acetylcholine is an exogenous agonist and nicotine is an endogenous agonist",
-              "Acetylcholine is the endogenous agonist and nicotine is an exogenous agonist",
               "Both acetylcholine and nicotine are exogenous antagonists",
               "Acetylcholine is an endogenous antagonist and nicotine is an exogenous agonist",
-              "Both acetylcholine and nicotine are endogenous ligands of the receptor"
+              "Acetylcholine is the endogenous agonist and nicotine is an exogenous agonist"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** ACh is the body's own (endogenous) agonist of nicotinic receptors, whereas nicotine comes from outside the body (exogenous) and also acts as an agonist.\n\n**Why the other options are wrong:**\n- **(A)** ACh is endogenous and nicotine is exogenous, not the reverse.\n- **(C)** Both activate (agonize) rather than block the receptor.\n- **(D)** ACh activates rather than blocks the receptor.\n- **(E)** Nicotine is exogenous, so both cannot be endogenous."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** ACh is the body's own (endogenous) agonist of nicotinic receptors, whereas nicotine comes from outside the body (exogenous) and also acts as an agonist.\n\n**Why the other options are wrong:**\n- **(A)** Nicotine is exogenous, so both cannot be endogenous.\n- **(B)** ACh is endogenous and nicotine is exogenous, not the reverse.\n- **(C)** Both activate (agonize) rather than block the receptor.\n- **(D)** ACh activates rather than blocks the receptor."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1615,14 +1615,14 @@
           "question": {
             "stem": "The sympathetic division is often called the \"thoracolumbar system.\" Which anatomical feature justifies this name?",
             "options": [
-              "Its preganglionic neurons originate in the brainstem and sacral spinal cord",
-              "Its central neurons emerge from the thoracic and upper lumbar regions of the spinal cord",
-              "Its terminal ganglia are located within the walls of the target organs",
               "It releases its neurotransmitter directly into the bloodstream from the thorax",
-              "It uses only cranial nerves to reach thoracic and abdominal organs"
+              "Its central neurons emerge from the thoracic and upper lumbar regions of the spinal cord",
+              "It uses only cranial nerves to reach thoracic and abdominal organs",
+              "Its terminal ganglia are located within the walls of the target organs",
+              "Its preganglionic neurons originate in the brainstem and sacral spinal cord"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The sympathetic connections emerge from the thoracic and upper lumbar spinal cord, giving rise to the name thoracolumbar system.\n\n**Why the other options are wrong:**\n- **(A)** Brainstem and sacral origins describe the parasympathetic (craniosacral) system.\n- **(C)** Terminal ganglia within target organs are a parasympathetic feature.\n- **(D)** Only the adrenal medulla releases into blood; this does not define the name.\n- **(E)** The sympathetic division does not use cranial nerves for output."
+            "explanation": "**Why (B) is correct:** The sympathetic connections emerge from the thoracic and upper lumbar spinal cord, giving rise to the name thoracolumbar system.\n\n**Why the other options are wrong:**\n- **(A)** Only the adrenal medulla releases into blood; this does not define the name.\n- **(C)** The sympathetic division does not use cranial nerves for output.\n- **(D)** Terminal ganglia within target organs are a parasympathetic feature.\n- **(E)** Brainstem and sacral origins describe the parasympathetic (craniosacral) system."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1632,14 +1632,14 @@
           "question": {
             "stem": "Comparing a somatic motor neuron to an autonomic motor pathway, which structural difference is correct?",
             "options": [
-              "The somatic pathway contains two neurons in series, whereas the autonomic pathway contains only one",
-              "The somatic pathway has no relay ganglion, whereas the autonomic pathway relays through a ganglion between the CNS and target",
-              "Both pathways relay through a ganglion, but only the somatic one releases acetylcholine",
+              "The autonomic pathway connects directly from the spinal cord to the target with no synapse in between",
               "The somatic pathway releases norepinephrine onto muscarinic receptors, whereas the autonomic pathway releases acetylcholine",
-              "The autonomic pathway connects directly from the spinal cord to the target with no synapse in between"
+              "Both pathways relay through a ganglion, but only the somatic one releases acetylcholine",
+              "The somatic pathway contains two neurons in series, whereas the autonomic pathway contains only one",
+              "The somatic pathway has no relay ganglion, whereas the autonomic pathway relays through a ganglion between the CNS and target"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The somatic nervous system has a single neuron running directly from the CNS to skeletal muscle with no relay ganglion, while the autonomic pathway relays through a ganglion (pre- and postganglionic fibres).\n\n**Why the other options are wrong:**\n- **(A)** This reverses the arrangement; the autonomic pathway has two neurons in series.\n- **(C)** The somatic pathway has no relay ganglion.\n- **(D)** Somatic motor neurons release ACh onto nicotinic receptors, not norepinephrine.\n- **(E)** The autonomic pathway does synapse in a ganglion; it is the somatic pathway that is direct."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The somatic nervous system has a single neuron running directly from the CNS to skeletal muscle with no relay ganglion, while the autonomic pathway relays through a ganglion (pre- and postganglionic fibres).\n\n**Why the other options are wrong:**\n- **(A)** The autonomic pathway does synapse in a ganglion; it is the somatic pathway that is direct.\n- **(B)** Somatic motor neurons release ACh onto nicotinic receptors, not norepinephrine.\n- **(C)** The somatic pathway has no relay ganglion.\n- **(D)** This reverses the arrangement; the autonomic pathway has two neurons in series."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1649,14 +1649,14 @@
           "question": {
             "stem": "Atropine is used clinically to raise a dangerously slow heart rate. Based on its pharmacology, how does it achieve this effect?",
             "options": [
-              "It acts as a muscarinic agonist, mimicking parasympathetic slowing of the heart",
               "It acts as a muscarinic antagonist, blocking parasympathetic slowing of the heart",
-              "It acts as a nicotinic agonist at the cardiac muscle receptors",
+              "It acts as an adrenergic agonist that directly stimulates the sympathetic receptors",
               "It acts as a nicotinic antagonist, paralyzing the cardiac muscle",
-              "It acts as an adrenergic agonist that directly stimulates the sympathetic receptors"
+              "It acts as a muscarinic agonist, mimicking parasympathetic slowing of the heart",
+              "It acts as a nicotinic agonist at the cardiac muscle receptors"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Atropine is a muscarinic antagonist; by blocking the parasympathetic (muscarinic) receptors on cardiac muscle, it removes the parasympathetic braking effect and allows heart rate to rise.\n\n**Why the other options are wrong:**\n- **(A)** A muscarinic agonist (like muscarine) would further slow the heart, not speed it.\n- **(C)** Cardiac parasympathetic receptors are muscarinic, and atropine is not a nicotinic agonist.\n- **(D)** Atropine acts on muscarinic, not nicotinic, receptors, and cardiac muscle receptors here are muscarinic.\n- **(E)** Atropine works on cholinergic (muscarinic) receptors, not adrenergic receptors."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Atropine is a muscarinic antagonist; by blocking the parasympathetic (muscarinic) receptors on cardiac muscle, it removes the parasympathetic braking effect and allows heart rate to rise.\n\n**Why the other options are wrong:**\n- **(B)** Atropine works on cholinergic (muscarinic) receptors, not adrenergic receptors.\n- **(C)** Atropine acts on muscarinic, not nicotinic, receptors, and cardiac muscle receptors here are muscarinic.\n- **(D)** A muscarinic agonist (like muscarine) would further slow the heart, not speed it.\n- **(E)** Cardiac parasympathetic receptors are muscarinic, and atropine is not a nicotinic agonist."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1666,14 +1666,14 @@
           "question": {
             "stem": "A researcher applies a compound to a preparation and observes that skeletal muscle can no longer contract in response to acetylcholine, causing paralysis. Which compound best matches this effect, and how is it classified?",
             "options": [
-              "Curare, a nicotinic antagonist",
               "Muscarine, a muscarinic agonist",
               "Nicotine, a nicotinic agonist",
               "Atropine, a muscarinic antagonist",
-              "Acetylcholine, an endogenous agonist"
+              "Acetylcholine, an endogenous agonist",
+              "Curare, a nicotinic antagonist"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Curare blocks nicotinic receptors at skeletal muscle, preventing acetylcholine from binding and causing paralysis, making it a nicotinic antagonist.\n\n**Why the other options are wrong:**\n- **(B)** Muscarine activates muscarinic receptors on smooth/cardiac muscle, not nicotinic receptors at skeletal muscle.\n- **(C)** Nicotine is an agonist that would increase, not block, nicotinic receptor activation.\n- **(D)** Atropine blocks muscarinic receptors, which are not found at skeletal muscle.\n- **(E)** Acetylcholine is the endogenous agonist that activates the receptor, not blocks it."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Curare blocks nicotinic receptors at skeletal muscle, preventing acetylcholine from binding and causing paralysis, making it a nicotinic antagonist.\n\n**Why the other options are wrong:**\n- **(A)** Muscarine activates muscarinic receptors on smooth/cardiac muscle, not nicotinic receptors at skeletal muscle.\n- **(B)** Nicotine is an agonist that would increase, not block, nicotinic receptor activation.\n- **(C)** Atropine blocks muscarinic receptors, which are not found at skeletal muscle.\n- **(D)** Acetylcholine is the endogenous agonist that activates the receptor, not blocks it."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1683,14 +1683,14 @@
           "question": {
             "stem": "A spinal nerve is severed at its dorsal root before it joins the ventral root. Which functional deficit would be expected distal to the injury?",
             "options": [
-              "Loss of sensory input from that region, but motor output preserved",
-              "Loss of motor output to that region, but sensation preserved",
+              "Loss of autonomic motor output only",
               "Loss of both sensory and motor function",
               "No deficit, because dorsal and ventral roots carry identical fibres",
-              "Loss of autonomic motor output only"
+              "Loss of sensory input from that region, but motor output preserved",
+              "Loss of motor output to that region, but sensation preserved"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The dorsal root carries sensory (afferent) axons only, so cutting it eliminates sensory input while the motor fibres of the ventral root remain intact.\n\n**Why the other options are wrong:**\n- **(B)** Motor fibres travel in the ventral root, which is undamaged, so motor output is preserved.\n- **(C)** Only the sensory root was cut, so motor function is not lost.\n- **(D)** Dorsal and ventral roots carry different fibre types (sensory vs. motor).\n- **(E)** Autonomic motor fibres emerge via the ventral root, which is intact."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The dorsal root carries sensory (afferent) axons only, so cutting it eliminates sensory input while the motor fibres of the ventral root remain intact.\n\n**Why the other options are wrong:**\n- **(A)** Autonomic motor fibres emerge via the ventral root, which is intact.\n- **(B)** Only the sensory root was cut, so motor function is not lost.\n- **(C)** Dorsal and ventral roots carry different fibre types (sensory vs. motor).\n- **(E)** Motor fibres travel in the ventral root, which is undamaged, so motor output is preserved."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1700,14 +1700,14 @@
           "question": {
             "stem": "Where are the cell bodies of the sensory neurons of a spinal nerve located, and how does this differ from the motor neuron cell bodies?",
             "options": [
-              "Sensory cell bodies in the dorsal root ganglion (in the periphery); motor cell bodies in the spinal cord grey matter",
               "Both sensory and motor cell bodies in the dorsal root ganglion",
+              "Sensory cell bodies in the spinal cord; motor cell bodies in a peripheral ganglion",
+              "Sensory cell bodies in the dorsal root ganglion (in the periphery); motor cell bodies in the spinal cord grey matter",
               "Sensory cell bodies in the ventral horn; motor cell bodies in the dorsal root ganglion",
-              "Both sensory and motor cell bodies in the ventral horn",
-              "Sensory cell bodies in the spinal cord; motor cell bodies in a peripheral ganglion"
+              "Both sensory and motor cell bodies in the ventral horn"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Sensory neuron cell bodies sit in the dorsal root ganglion outside the CNS, whereas somatic motor neuron cell bodies are located in the ventral horn grey matter of the spinal cord.\n\n**Why the other options are wrong:**\n- **(B)** Motor cell bodies are in the cord, not the dorsal root ganglion.\n- **(C)** The locations are reversed; sensory bodies are in the ganglion and motor bodies in the ventral horn.\n- **(D)** Sensory cell bodies are in the ganglion, not the ventral horn.\n- **(E)** Sensory cell bodies are peripheral (ganglion) and somatic motor bodies are central (cord), so this reverses them."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Sensory neuron cell bodies sit in the dorsal root ganglion outside the CNS, whereas somatic motor neuron cell bodies are located in the ventral horn grey matter of the spinal cord.\n\n**Why the other options are wrong:**\n- **(A)** Motor cell bodies are in the cord, not the dorsal root ganglion.\n- **(B)** Sensory cell bodies are peripheral (ganglion) and somatic motor bodies are central (cord), so this reverses them.\n- **(D)** The locations are reversed; sensory bodies are in the ganglion and motor bodies in the ventral horn.\n- **(E)** Sensory cell bodies are in the ganglion, not the ventral horn."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1717,14 +1717,14 @@
           "question": {
             "stem": "Compared to a somatic motor pathway, how does a parasympathetic pathway to a target organ differ in structure?",
             "options": [
-              "The parasympathetic pathway has a relay ganglion (long preganglionic, short postganglionic fibre); the somatic pathway has no ganglion and a single direct neuron",
-              "The parasympathetic pathway has a short preganglionic and long postganglionic fibre; the somatic has a single direct neuron",
-              "Both use a two-neuron relay through a ganglion",
               "The somatic pathway relays through a chain ganglion, while the parasympathetic goes directly to the effector",
+              "The parasympathetic pathway has a short preganglionic and long postganglionic fibre; the somatic has a single direct neuron",
+              "The parasympathetic pathway has a relay ganglion (long preganglionic, short postganglionic fibre); the somatic pathway has no ganglion and a single direct neuron",
+              "Both use a two-neuron relay through a ganglion",
               "Both release norepinephrine at their final target"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The parasympathetic system uses a two-neuron relay with a long preganglionic fibre and short postganglionic fibre (terminal ganglia are near/within the organ), whereas the somatic system uses a single neuron directly from the spinal cord to skeletal muscle with no ganglion.\n\n**Why the other options are wrong:**\n- **(B)** In the parasympathetic system the preganglionic fibre is long and postganglionic short, not the reverse.\n- **(C)** The somatic pathway has no relay ganglion.\n- **(D)** The somatic pathway does not use a chain ganglion; that is the sympathetic arrangement.\n- **(E)** Somatic neurons release acetylcholine, and parasympathetic postganglionic fibres also release ACh, not norepinephrine."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The parasympathetic system uses a two-neuron relay with a long preganglionic fibre and short postganglionic fibre (terminal ganglia are near/within the organ), whereas the somatic system uses a single neuron directly from the spinal cord to skeletal muscle with no ganglion.\n\n**Why the other options are wrong:**\n- **(A)** The somatic pathway does not use a chain ganglion; that is the sympathetic arrangement.\n- **(B)** In the parasympathetic system the preganglionic fibre is long and postganglionic short, not the reverse.\n- **(D)** The somatic pathway has no relay ganglion.\n- **(E)** Somatic neurons release acetylcholine, and parasympathetic postganglionic fibres also release ACh, not norepinephrine."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1734,14 +1734,14 @@
           "question": {
             "stem": "During a relaxed, well-fed state, which set of effects best reflects dominant parasympathetic activity?",
             "options": [
-              "Decreased heart rate, decreased respiratory activity, and increased digestive activity",
+              "Decreased digestive activity and decreased urinary activity",
+              "Increased musculoskeletal tone and dilated blood vessels in skeletal muscle",
               "Increased heart rate, dilated bronchi, and decreased digestive activity",
               "Increased heart rate, increased digestive activity, and dilated pupils",
-              "Decreased digestive activity and decreased urinary activity",
-              "Increased musculoskeletal tone and dilated blood vessels in skeletal muscle"
+              "Decreased heart rate, decreased respiratory activity, and increased digestive activity"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The parasympathetic 'rest and digest' division decreases cardiovascular and respiratory activity while increasing digestive and urinary activity.\n\n**Why the other options are wrong:**\n- **(B)** Increased heart rate, dilated bronchi, and reduced digestion are sympathetic effects.\n- **(C)** Increased heart rate and dilated pupils are sympathetic, not parasympathetic.\n- **(D)** Parasympathetic activation increases (not decreases) digestive and urinary activity.\n- **(E)** Increased musculoskeletal tone and skeletal muscle vasodilation are sympathetic responses."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The parasympathetic 'rest and digest' division decreases cardiovascular and respiratory activity while increasing digestive and urinary activity.\n\n**Why the other options are wrong:**\n- **(A)** Parasympathetic activation increases (not decreases) digestive and urinary activity.\n- **(B)** Increased musculoskeletal tone and skeletal muscle vasodilation are sympathetic responses.\n- **(C)** Increased heart rate, dilated bronchi, and reduced digestion are sympathetic effects.\n- **(D)** Increased heart rate and dilated pupils are sympathetic, not parasympathetic."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1751,14 +1751,14 @@
           "question": {
             "stem": "A patient's heart rate is dangerously slow, and a physician administers atropine to raise it. Which mechanism explains this effect?",
             "options": [
-              "Atropine blocks muscarinic receptors, removing parasympathetic slowing of the heart",
+              "Atropine activates nicotinic receptors at cardiac muscle",
               "Atropine activates muscarinic receptors on cardiac muscle to speed the heart",
+              "Atropine blocks muscarinic receptors, removing parasympathetic slowing of the heart",
               "Atropine blocks nicotinic receptors, stimulating the sympathetic division",
-              "Atropine mimics norepinephrine at adrenergic receptors on the heart",
-              "Atropine activates nicotinic receptors at cardiac muscle"
+              "Atropine mimics norepinephrine at adrenergic receptors on the heart"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Atropine is a muscarinic antagonist; by blocking the parasympathetic (vagal) muscarinic receptors that slow the heart, it allows heart rate to rise.\n\n**Why the other options are wrong:**\n- **(B)** Atropine blocks rather than activates muscarinic receptors.\n- **(C)** Atropine acts on muscarinic, not nicotinic, receptors.\n- **(D)** Atropine acts at cholinergic (muscarinic) receptors, not adrenergic ones.\n- **(E)** Cardiac autonomic input uses muscarinic receptors, and atropine blocks them rather than activating nicotinic receptors."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Atropine is a muscarinic antagonist; by blocking the parasympathetic (vagal) muscarinic receptors that slow the heart, it allows heart rate to rise.\n\n**Why the other options are wrong:**\n- **(A)** Cardiac autonomic input uses muscarinic receptors, and atropine blocks them rather than activating nicotinic receptors.\n- **(B)** Atropine blocks rather than activates muscarinic receptors.\n- **(D)** Atropine acts on muscarinic, not nicotinic, receptors.\n- **(E)** Atropine acts at cholinergic (muscarinic) receptors, not adrenergic ones."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1770,12 +1770,12 @@
             "options": [
               "The stretch reflex is triggered by stretching of a muscle, while the withdrawal reflex is triggered by a painful/damaging stimulus in the skin",
               "The stretch reflex is triggered by pain, while the withdrawal reflex is triggered by muscle stretch",
-              "Both are triggered by the same painful skin stimulus",
               "The stretch reflex is triggered by temperature, while the withdrawal reflex requires no stimulus",
+              "Both are triggered by the same painful skin stimulus",
               "Both require interneurons and are triggered by muscle stretch"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The stretch reflex responds to stretching of a muscle (e.g., tapping the patellar tendon), whereas the withdrawal reflex responds to a painful or tissue-damaging stimulus such as a hot stove.\n\n**Why the other options are wrong:**\n- **(B)** The triggers are reversed; stretch reflex = muscle stretch, withdrawal = pain.\n- **(C)** The two reflexes are triggered by different stimuli.\n- **(D)** The withdrawal reflex does require a stimulus (a painful one).\n- **(E)** The stretch reflex is triggered by muscle stretch, not both by stretch, and the simplest stretch reflex need not involve interneurons."
+            "explanation": "**Why (A) is correct:** The stretch reflex responds to stretching of a muscle (e.g., tapping the patellar tendon), whereas the withdrawal reflex responds to a painful or tissue-damaging stimulus such as a hot stove.\n\n**Why the other options are wrong:**\n- **(B)** The triggers are reversed; stretch reflex = muscle stretch, withdrawal = pain.\n- **(C)** The withdrawal reflex does require a stimulus (a painful one).\n- **(D)** The two reflexes are triggered by different stimuli.\n- **(E)** The stretch reflex is triggered by muscle stretch, not both by stretch, and the simplest stretch reflex need not involve interneurons."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1785,14 +1785,14 @@
           "question": {
             "stem": "A student reads that a 'ganglion' and a 'nucleus' both contain neuron cell bodies. What distinguishes a ganglion from a nucleus?",
             "options": [
-              "A ganglion is a cluster of cell bodies in the peripheral nervous system, while a nucleus is a cluster of cell bodies in the CNS",
               "A ganglion is in the CNS, while a nucleus is in the periphery",
+              "A ganglion is a cluster of cell bodies in the peripheral nervous system, while a nucleus is a cluster of cell bodies in the CNS",
               "A ganglion contains axons only, while a nucleus contains cell bodies",
               "A ganglion is sensory, while a nucleus is always motor",
               "There is no difference; the terms are interchangeable"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A ganglion is a group of neuron cell bodies located in the peripheral nervous system, whereas a cluster of cell bodies within the CNS is called a nucleus.\n\n**Why the other options are wrong:**\n- **(B)** The locations are reversed; ganglia are peripheral and nuclei are central.\n- **(C)** A ganglion contains cell bodies, not axons only.\n- **(D)** Ganglia can be sensory or autonomic, and nuclei are not defined by being motor.\n- **(E)** The terms differ specifically by CNS vs. peripheral location."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A ganglion is a group of neuron cell bodies located in the peripheral nervous system, whereas a cluster of cell bodies within the CNS is called a nucleus.\n\n**Why the other options are wrong:**\n- **(A)** The locations are reversed; ganglia are peripheral and nuclei are central.\n- **(C)** A ganglion contains cell bodies, not axons only.\n- **(D)** Ganglia can be sensory or autonomic, and nuclei are not defined by being motor.\n- **(E)** The terms differ specifically by CNS vs. peripheral location."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1802,14 +1802,14 @@
           "question": {
             "stem": "A patient can taste food on their tongue and make facial expressions, but a lesion has abolished chewing (mastication) and facial sensation on one side. Which cranial nerve pairing best explains the intact versus lost functions?",
             "options": [
-              "The trigeminal (CN V) is damaged (loss of face sensation and mastication), while the facial nerve (CN VII) is intact (taste and facial expression preserved)",
               "The facial nerve (CN VII) is damaged, while the trigeminal (CN V) is intact",
-              "The glossopharyngeal (CN IX) is damaged, while the vagus (CN X) is intact",
+              "The trigeminal (CN V) is damaged (loss of face sensation and mastication), while the facial nerve (CN VII) is intact (taste and facial expression preserved)",
               "The hypoglossal (CN XII) is damaged, while the accessory (CN XI) is intact",
-              "The optic nerve (CN II) is damaged, while the trigeminal (CN V) is intact"
+              "The optic nerve (CN II) is damaged, while the trigeminal (CN V) is intact",
+              "The glossopharyngeal (CN IX) is damaged, while the vagus (CN X) is intact"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The trigeminal nerve provides face sensation and controls mastication, so its damage explains both lost functions, while the facial nerve (taste and facial expression) remains intact.\n\n**Why the other options are wrong:**\n- **(B)** Facial nerve damage would impair facial expression and taste, which are preserved here.\n- **(C)** The glossopharyngeal and vagus do not control mastication or provide facial sensation.\n- **(D)** The hypoglossal controls tongue movement and the accessory controls neck/upper back, not chewing or facial sensation.\n- **(E)** The optic nerve is purely visual and unrelated to chewing or facial sensation."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The trigeminal nerve provides face sensation and controls mastication, so its damage explains both lost functions, while the facial nerve (taste and facial expression) remains intact.\n\n**Why the other options are wrong:**\n- **(A)** Facial nerve damage would impair facial expression and taste, which are preserved here.\n- **(C)** The hypoglossal controls tongue movement and the accessory controls neck/upper back, not chewing or facial sensation.\n- **(D)** The optic nerve is purely visual and unrelated to chewing or facial sensation.\n- **(E)** The glossopharyngeal and vagus do not control mastication or provide facial sensation."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1819,14 +1819,14 @@
           "question": {
             "stem": "At a synapse between a postganglionic sympathetic fibre and a typical target organ such as the heart, which signaling molecule and receptor class are usually involved?",
             "options": [
-              "Norepinephrine binding an adrenergic receptor",
-              "Acetylcholine binding a nicotinic receptor",
               "Acetylcholine binding a muscarinic receptor",
-              "Epinephrine binding a nicotinic receptor",
-              "Norepinephrine binding a muscarinic receptor"
+              "Acetylcholine binding a nicotinic receptor",
+              "Norepinephrine binding a muscarinic receptor",
+              "Norepinephrine binding an adrenergic receptor",
+              "Epinephrine binding a nicotinic receptor"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Postganglionic sympathetic fibres usually release norepinephrine onto adrenergic receptors on their target organs.\n\n**Why the other options are wrong:**\n- **(B)** Nicotinic receptors receive ACh at ganglia and skeletal muscle, not at typical sympathetic targets.\n- **(C)** Muscarinic receptors receive ACh from postganglionic parasympathetic fibres, not sympathetic ones.\n- **(D)** Nicotinic receptors bind acetylcholine, not epinephrine.\n- **(E)** Norepinephrine binds adrenergic receptors, not muscarinic receptors."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Postganglionic sympathetic fibres usually release norepinephrine onto adrenergic receptors on their target organs.\n\n**Why the other options are wrong:**\n- **(A)** Muscarinic receptors receive ACh from postganglionic parasympathetic fibres, not sympathetic ones.\n- **(B)** Nicotinic receptors receive ACh at ganglia and skeletal muscle, not at typical sympathetic targets.\n- **(C)** Norepinephrine binds adrenergic receptors, not muscarinic receptors.\n- **(E)** Nicotinic receptors bind acetylcholine, not epinephrine."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1836,14 +1836,14 @@
           "question": {
             "stem": "A patient can move their eyes normally but is unable to chew and reports numbness across the face. Which cranial nerve is most likely impaired?",
             "options": [
-              "Oculomotor (CN III)",
-              "Trigeminal (CN V)",
               "Facial (CN VII)",
+              "Trigeminal (CN V)",
+              "Vagus (CN X)",
               "Hypoglossal (CN XII)",
-              "Vagus (CN X)"
+              "Oculomotor (CN III)"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The trigeminal nerve carries sensory information for face sensation and motor control for mastication (chewing), so both deficits point to CN V.\n\n**Why the other options are wrong:**\n- **(A)** The oculomotor nerve controls eye and eyelid movement, which is intact here.\n- **(C)** The facial nerve controls facial expressions and taste, not chewing or general face sensation.\n- **(D)** The hypoglossal nerve controls tongue movement only.\n- **(E)** The vagus targets thoracic and abdominal organs, not facial sensation or chewing."
+            "explanation": "**Why (B) is correct:** The trigeminal nerve carries sensory information for face sensation and motor control for mastication (chewing), so both deficits point to CN V.\n\n**Why the other options are wrong:**\n- **(A)** The facial nerve controls facial expressions and taste, not chewing or general face sensation.\n- **(C)** The vagus targets thoracic and abdominal organs, not facial sensation or chewing.\n- **(D)** The hypoglossal nerve controls tongue movement only.\n- **(E)** The oculomotor nerve controls eye and eyelid movement, which is intact here."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1854,13 +1854,13 @@
             "stem": "Which of the following correctly pairs a cholinergic receptor drug with its action?",
             "options": [
               "Curare is an agonist of muscarinic receptors",
-              "Atropine is an agonist of nicotinic receptors",
+              "Acetylcholine is an antagonist of both nicotinic and muscarinic receptors",
               "Muscarine is an antagonist of muscarinic receptors",
-              "Nicotine is an agonist of nicotinic receptors",
-              "Acetylcholine is an antagonist of both nicotinic and muscarinic receptors"
+              "Atropine is an agonist of nicotinic receptors",
+              "Nicotine is an agonist of nicotinic receptors"
             ],
-            "correct_index": 3,
-            "explanation": "**Why (D) is correct:** Nicotine is an exogenous agonist of nicotinic receptors, increasing their activation.\n\n**Why the other options are wrong:**\n- **(A)** Curare is an antagonist of nicotinic (not muscarinic) receptors.\n- **(B)** Atropine is an antagonist of muscarinic (not nicotinic) receptors.\n- **(C)** Muscarine is an agonist of muscarinic receptors.\n- **(E)** Acetylcholine is the endogenous agonist of both receptor types, not an antagonist."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Nicotine is an exogenous agonist of nicotinic receptors, increasing their activation.\n\n**Why the other options are wrong:**\n- **(A)** Curare is an antagonist of nicotinic (not muscarinic) receptors.\n- **(B)** Acetylcholine is the endogenous agonist of both receptor types, not an antagonist.\n- **(C)** Muscarine is an agonist of muscarinic receptors.\n- **(D)** Atropine is an antagonist of muscarinic (not nicotinic) receptors."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1870,14 +1870,14 @@
           "question": {
             "stem": "A patient suffers damage that selectively destroys the dorsal root of a single spinal nerve, while the ventral root remains intact. What is the most likely functional consequence?",
             "options": [
-              "Loss of sensory information from the region served by that nerve, with motor output preserved",
               "Loss of motor output to the region served by that nerve, with sensation preserved",
-              "Loss of both sensory input and motor output equally",
+              "No functional change, because sensory and motor axons travel together in both roots",
+              "Loss of sensory information from the region served by that nerve, with motor output preserved",
               "Loss of only autonomic motor output, with somatic motor and sensory intact",
-              "No functional change, because sensory and motor axons travel together in both roots"
+              "Loss of both sensory input and motor output equally"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The dorsal root carries sensory (afferent) axons into the spinal cord, so destroying it eliminates sensory input while the motor axons of the intact ventral root continue to function.\n\n**Why the other options are wrong:**\n- **(B)** Motor axons exit through the ventral root, which is intact, so motor output is preserved.\n- **(C)** Only the dorsal (sensory) root is destroyed, so the loss is not equal for both.\n- **(D)** The ventral root carries both somatic and autonomic motor fibres and is intact; autonomic output is not lost.\n- **(E)** Sensory and motor axons only combine after the roots merge; each root is functionally distinct, so damage does have an effect."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The dorsal root carries sensory (afferent) axons into the spinal cord, so destroying it eliminates sensory input while the motor axons of the intact ventral root continue to function.\n\n**Why the other options are wrong:**\n- **(A)** Motor axons exit through the ventral root, which is intact, so motor output is preserved.\n- **(B)** Sensory and motor axons only combine after the roots merge; each root is functionally distinct, so damage does have an effect.\n- **(D)** The ventral root carries both somatic and autonomic motor fibres and is intact; autonomic output is not lost.\n- **(E)** Only the dorsal (sensory) root is destroyed, so the loss is not equal for both."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1887,14 +1887,14 @@
           "question": {
             "stem": "The vagus nerve (CN X) differs from most other cranial nerves in that it:",
             "options": [
-              "Carries only sensory information from the head",
-              "Targets organs in the thoracic and abdominal cavities as part of the parasympathetic nervous system",
-              "Controls only extraocular muscle movement",
               "Is purely motor with no sensory component",
-              "Is one of the newly numbered CN0 nerves"
+              "Targets organs in the thoracic and abdominal cavities as part of the parasympathetic nervous system",
+              "Is one of the newly numbered CN0 nerves",
+              "Controls only extraocular muscle movement",
+              "Carries only sensory information from the head"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** While most cranial nerves serve the head and neck, the vagus extends to thoracic and abdominal organs and is the main nerve of the parasympathetic division.\n\n**Why the other options are wrong:**\n- **(A)** The vagus is a mixed sensory and motor nerve, not sensory-only, and it does not serve only the head.\n- **(C)** Extraocular movement is controlled by CN III, IV, and VI.\n- **(D)** The vagus has both sensory and motor components.\n- **(E)** CN0 is the terminal nerve near CN I, not the vagus."
+            "explanation": "**Why (B) is correct:** While most cranial nerves serve the head and neck, the vagus extends to thoracic and abdominal organs and is the main nerve of the parasympathetic division.\n\n**Why the other options are wrong:**\n- **(A)** The vagus has both sensory and motor components.\n- **(C)** CN0 is the terminal nerve near CN I, not the vagus.\n- **(D)** Extraocular movement is controlled by CN III, IV, and VI.\n- **(E)** The vagus is a mixed sensory and motor nerve, not sensory-only, and it does not serve only the head."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1904,14 +1904,14 @@
           "question": {
             "stem": "A key difference between the patellar (stretch) reflex and the withdrawal reflex is that:",
             "options": [
+              "The stretch reflex sends its sensory signal through the ventral root",
+              "The stretch reflex produces limb flexion while the withdrawal reflex produces limb extension",
               "The stretch reflex is stimulated by muscle stretch and contracts that same muscle, whereas the withdrawal reflex is triggered by a painful skin stimulus and flexes a limb away",
               "Only the withdrawal reflex uses a motor neuron in the ventral horn",
-              "The stretch reflex sends its sensory signal through the ventral root",
-              "The withdrawal reflex does not involve the spinal cord",
-              "The stretch reflex produces limb flexion while the withdrawal reflex produces limb extension"
+              "The withdrawal reflex does not involve the spinal cord"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The stretch reflex responds to stretching of a muscle by contracting that same muscle, while the withdrawal reflex responds to a painful stimulus by flexing a limb to pull it away.\n\n**Why the other options are wrong:**\n- **(B)** Both reflexes use a motor neuron in the ventral horn.\n- **(C)** Both reflexes send sensory input through the dorsal root, not the ventral root.\n- **(D)** The withdrawal reflex is a spinal reflex that synapses in the spinal cord.\n- **(E)** The stretch reflex (patellar) produces leg extension, while withdrawal produces flexion — the reverse of what is stated."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The stretch reflex responds to stretching of a muscle by contracting that same muscle, while the withdrawal reflex responds to a painful stimulus by flexing a limb to pull it away.\n\n**Why the other options are wrong:**\n- **(A)** Both reflexes send sensory input through the dorsal root, not the ventral root.\n- **(B)** The stretch reflex (patellar) produces leg extension, while withdrawal produces flexion — the reverse of what is stated.\n- **(D)** Both reflexes use a motor neuron in the ventral horn.\n- **(E)** The withdrawal reflex is a spinal reflex that synapses in the spinal cord."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1921,14 +1921,14 @@
           "question": {
             "stem": "At the nicotinic receptor, why can acetylcholine and nicotine both increase receptor activation while curare does not?",
             "options": [
-              "Acetylcholine and nicotine are agonists, whereas curare is an antagonist that blocks the receptor",
-              "All three are agonists but curare acts too slowly",
               "Curare binds a completely different receptor family than acetylcholine",
+              "Acetylcholine and nicotine are agonists, whereas curare is an antagonist that blocks the receptor",
               "Acetylcholine is an antagonist and only nicotine is an agonist",
-              "Nicotine blocks the receptor while acetylcholine and curare activate it"
+              "Nicotine blocks the receptor while acetylcholine and curare activate it",
+              "All three are agonists but curare acts too slowly"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Acetylcholine (endogenous agonist) and nicotine (exogenous agonist) both activate nicotinic receptors, while curare is an exogenous antagonist that blocks acetylcholine from binding.\n\n**Why the other options are wrong:**\n- **(B)** Curare is an antagonist, not a slow agonist.\n- **(C)** Curare binds the same nicotinic receptor — that is how it blocks acetylcholine.\n- **(D)** Acetylcholine is an agonist of the nicotinic receptor, not an antagonist.\n- **(E)** Nicotine is an agonist and curare is the blocker, so this reverses their roles."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Acetylcholine (endogenous agonist) and nicotine (exogenous agonist) both activate nicotinic receptors, while curare is an exogenous antagonist that blocks acetylcholine from binding.\n\n**Why the other options are wrong:**\n- **(A)** Curare binds the same nicotinic receptor — that is how it blocks acetylcholine.\n- **(C)** Acetylcholine is an agonist of the nicotinic receptor, not an antagonist.\n- **(D)** Nicotine is an agonist and curare is the blocker, so this reverses their roles.\n- **(E)** Curare is an antagonist, not a slow agonist."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1938,14 +1938,14 @@
           "question": {
             "stem": "In a spinal nerve, where do the sensory (afferent) axons enter the spinal cord, and where are their cell bodies located?",
             "options": [
+              "Ventral root; cell bodies in a sympathetic chain ganglion",
+              "Ventral root; cell bodies in the dorsal root ganglion",
               "Ventral root; cell bodies in the ventral horn",
               "Dorsal root; cell bodies in the dorsal root ganglion",
-              "Ventral root; cell bodies in the dorsal root ganglion",
-              "Dorsal root; cell bodies in the lateral horn",
-              "Ventral root; cell bodies in a sympathetic chain ganglion"
+              "Dorsal root; cell bodies in the lateral horn"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Sensory axons enter the cord through the dorsal root, and their cell bodies sit in the dorsal root ganglion.\n\n**Why the other options are wrong:**\n- **(A)** The ventral root carries motor axons; the ventral horn houses motor neuron cell bodies.\n- **(C)** Sensory axons enter via the dorsal root, not the ventral root.\n- **(D)** The lateral horn contains autonomic (motor) neurons, not sensory cell bodies.\n- **(E)** Sympathetic chain ganglia hold autonomic ganglionic neurons, not spinal sensory cell bodies."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Sensory axons enter the cord through the dorsal root, and their cell bodies sit in the dorsal root ganglion.\n\n**Why the other options are wrong:**\n- **(A)** Sympathetic chain ganglia hold autonomic ganglionic neurons, not spinal sensory cell bodies.\n- **(B)** Sensory axons enter via the dorsal root, not the ventral root.\n- **(C)** The ventral root carries motor axons; the ventral horn houses motor neuron cell bodies.\n- **(E)** The lateral horn contains autonomic (motor) neurons, not sensory cell bodies."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1955,14 +1955,14 @@
           "question": {
             "stem": "A spinal nerve is described as carrying both somatic and autonomic motor fibres out of the cord. Through which root do these motor fibres emerge?",
             "options": [
-              "The dorsal root, alongside the sensory fibres",
               "The ventral root",
-              "The dorsal root ganglion",
+              "The dorsal root, alongside the sensory fibres",
+              "They exit through the cranial nerves",
               "The sympathetic chain ganglion directly",
-              "They exit through the cranial nerves"
+              "The dorsal root ganglion"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Both somatic and autonomic motor fibres leave the spinal cord through the ventral root.\n\n**Why the other options are wrong:**\n- **(A)** The dorsal root carries sensory (afferent) fibres into the cord.\n- **(C)** The dorsal root ganglion contains sensory neuron cell bodies, not the motor exit route.\n- **(D)** The sympathetic chain ganglion is a relay downstream, not the initial exit from the cord.\n- **(E)** Cranial nerves connect to the brain, not to spinal nerve roots."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Both somatic and autonomic motor fibres leave the spinal cord through the ventral root.\n\n**Why the other options are wrong:**\n- **(B)** The dorsal root carries sensory (afferent) fibres into the cord.\n- **(C)** Cranial nerves connect to the brain, not to spinal nerve roots.\n- **(D)** The sympathetic chain ganglion is a relay downstream, not the initial exit from the cord.\n- **(E)** The dorsal root ganglion contains sensory neuron cell bodies, not the motor exit route."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1972,14 +1972,14 @@
           "question": {
             "stem": "A student reads that a preganglionic fibre releases ACh onto a nicotinic receptor. Using unit terminology, which statement is correct?",
             "options": [
-              "A 'ganglion' here means a cluster of neuron cell bodies located in the CNS",
-              "A preganglionic fibre is the axon carrying output from a central neuron to a ganglion",
-              "'Nicotinic' means the receptor binds only norepinephrine",
+              "A postganglionic fibre carries signals from the periphery into the CNS",
               "'Cholinergic' refers to receptors that bind epinephrine",
-              "A postganglionic fibre carries signals from the periphery into the CNS"
+              "'Nicotinic' means the receptor binds only norepinephrine",
+              "A preganglionic fibre is the axon carrying output from a central neuron to a ganglion",
+              "A 'ganglion' here means a cluster of neuron cell bodies located in the CNS"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A preganglionic fibre is defined as the axon from a central neuron that projects to a ganglion, representing the CNS output to that ganglion.\n\n**Why the other options are wrong:**\n- **(A)** A ganglion is a cluster of cell bodies in the periphery (PNS), not the CNS.\n- **(C)** Nicotinic receptors are cholinergic receptors that bind acetylcholine, not norepinephrine.\n- **(D)** Cholinergic receptors bind acetylcholine; adrenergic receptors bind epinephrine.\n- **(E)** A postganglionic fibre carries the ganglionic output toward the target effector, not back into the CNS."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A preganglionic fibre is defined as the axon from a central neuron that projects to a ganglion, representing the CNS output to that ganglion.\n\n**Why the other options are wrong:**\n- **(A)** A postganglionic fibre carries the ganglionic output toward the target effector, not back into the CNS.\n- **(B)** Cholinergic receptors bind acetylcholine; adrenergic receptors bind epinephrine.\n- **(C)** Nicotinic receptors are cholinergic receptors that bind acetylcholine, not norepinephrine.\n- **(E)** A ganglion is a cluster of cell bodies in the periphery (PNS), not the CNS."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1989,14 +1989,14 @@
           "question": {
             "stem": "Atropine is used clinically to raise heart rate. Based on receptor pharmacology, this occurs because atropine:",
             "options": [
-              "Is a muscarinic antagonist that blocks parasympathetic slowing of the heart",
               "Is a muscarinic agonist that mimics acetylcholine at the heart",
-              "Is a nicotinic antagonist that blocks skeletal muscle",
+              "Blocks nicotinic receptors on the sympathetic ganglia",
               "Directly stimulates adrenergic receptors on cardiac muscle",
-              "Blocks nicotinic receptors on the sympathetic ganglia"
+              "Is a nicotinic antagonist that blocks skeletal muscle",
+              "Is a muscarinic antagonist that blocks parasympathetic slowing of the heart"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The muscarinic receptor is the parasympathetic cholinergic receptor at cardiac muscle; atropine blocks it, preventing the parasympathetic 'rest' signal and allowing heart rate to rise.\n\n**Why the other options are wrong:**\n- **(B)** Atropine is an antagonist, not an agonist — muscarine is the muscarinic agonist.\n- **(C)** Atropine acts on muscarinic, not nicotinic, receptors; curare blocks skeletal muscle nicotinic receptors.\n- **(D)** Atropine acts on cholinergic receptors, not by stimulating adrenergic receptors.\n- **(E)** Atropine is a muscarinic antagonist, not a nicotinic ganglionic blocker."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The muscarinic receptor is the parasympathetic cholinergic receptor at cardiac muscle; atropine blocks it, preventing the parasympathetic 'rest' signal and allowing heart rate to rise.\n\n**Why the other options are wrong:**\n- **(A)** Atropine is an antagonist, not an agonist — muscarine is the muscarinic agonist.\n- **(B)** Atropine is a muscarinic antagonist, not a nicotinic ganglionic blocker.\n- **(C)** Atropine acts on cholinergic receptors, not by stimulating adrenergic receptors.\n- **(D)** Atropine acts on muscarinic, not nicotinic, receptors; curare blocks skeletal muscle nicotinic receptors."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"

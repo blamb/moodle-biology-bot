@@ -9,14 +9,14 @@
           "question": {
             "stem": "Which layer of mysia organizes muscle fibres into bundles called fascicles?",
             "options": [
-              "Epimysium",
-              "Perimysium",
+              "Periosteum",
               "Endomysium",
+              "Perimysium",
               "Sarcolemma",
-              "Periosteum"
+              "Epimysium"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The perimysium is the middle connective tissue layer that groups muscle fibres into bundles called fascicles and allows blood and nerves to reach the fibres.\n\n**Why the other options are wrong:**\n- **(A)** The epimysium is the outer sheath wrapping the entire muscle, not the layer that forms fascicles.\n- **(C)** The endomysium encases each individual muscle fibre, not bundles.\n- **(D)** The sarcolemma is the plasma membrane of a single muscle fibre, not a connective tissue layer.\n- **(E)** The periosteum coats bone, not muscle fascicles."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The perimysium is the middle connective tissue layer that groups muscle fibres into bundles called fascicles and allows blood and nerves to reach the fibres.\n\n**Why the other options are wrong:**\n- **(A)** The periosteum coats bone, not muscle fascicles.\n- **(B)** The endomysium encases each individual muscle fibre, not bundles.\n- **(D)** The sarcolemma is the plasma membrane of a single muscle fibre, not a connective tissue layer.\n- **(E)** The epimysium is the outer sheath wrapping the entire muscle, not the layer that forms fascicles."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -26,14 +26,14 @@
           "question": {
             "stem": "Which term describes muscle fibres that run straight along the axis of the body or a limb?",
             "options": [
+              "Deltoid",
               "Brevis",
-              "Oblique",
               "Longus",
               "Rectus",
-              "Deltoid"
+              "Oblique"
             ],
             "correct_index": 3,
-            "explanation": "**Why (D) is correct:** \"Rectus\" means straight and describes muscle fibres oriented along the longitudinal axis, as in the rectus abdominis.\n\n**Why the other options are wrong:**\n- **(A)** Brevis refers to a short muscle, not fibre direction.\n- **(B)** Oblique describes fibres running at an angle, not straight.\n- **(C)** Longus refers to a long muscle, not fibre direction.\n- **(E)** Deltoid describes a triangular shape, not fibre direction."
+            "explanation": "**Why (D) is correct:** \"Rectus\" means straight and describes muscle fibres oriented along the longitudinal axis, as in the rectus abdominis.\n\n**Why the other options are wrong:**\n- **(A)** Deltoid describes a triangular shape, not fibre direction.\n- **(B)** Brevis refers to a short muscle, not fibre direction.\n- **(C)** Longus refers to a long muscle, not fibre direction.\n- **(E)** Oblique describes fibres running at an angle, not straight."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -45,12 +45,12 @@
             "options": [
               "Two origins and be located along the femur",
               "Three origins and be short",
+              "Fibres running at an angle across the abdomen",
               "One origin along the tibia",
-              "A ring shape near the eye",
-              "Fibres running at an angle across the abdomen"
+              "A ring shape near the eye"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The prefix \"bi\" indicates two origins, \"femoris\" indicates a relationship to the femur, and \"longus\" indicates a long muscle.\n\n**Why the other options are wrong:**\n- **(B)** \"Bi\" means two origins, not three, and \"longus\" means long, not short.\n- **(C)** \"Bi\" indicates two origins, and \"femoris\" refers to the femur, not the tibia.\n- **(D)** A ring shape would be indicated by \"orbicularis,\" not these roots.\n- **(E)** Angled abdominal fibres would be indicated by \"oblique\" and \"abdominis,\" not these roots."
+            "explanation": "**Why (A) is correct:** The prefix \"bi\" indicates two origins, \"femoris\" indicates a relationship to the femur, and \"longus\" indicates a long muscle.\n\n**Why the other options are wrong:**\n- **(B)** \"Bi\" means two origins, not three, and \"longus\" means long, not short.\n- **(C)** Angled abdominal fibres would be indicated by \"oblique\" and \"abdominis,\" not these roots.\n- **(D)** \"Bi\" indicates two origins, and \"femoris\" refers to the femur, not the tibia.\n- **(E)** A ring shape would be indicated by \"orbicularis,\" not these roots."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -60,14 +60,14 @@
           "question": {
             "stem": "Which property is shared by all three muscle tissue types (skeletal, cardiac, and smooth)?",
             "options": [
-              "Striations visible under a microscope",
               "Multinucleated fibres",
-              "Excitability",
               "Complete dependence on nervous system signaling",
-              "Electrical coupling into a syncytium"
+              "Excitability",
+              "Electrical coupling into a syncytium",
+              "Striations visible under a microscope"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** All three muscle types exhibit excitability, meaning their plasma membranes can change electrical state and propagate an action potential.\n\n**Why the other options are wrong:**\n- **(A)** Smooth muscle is nonstriated, so striations are not shared by all three.\n- **(B)** Only skeletal fibres are reliably multinucleated; smooth fibres are uninucleated.\n- **(D)** Only skeletal muscle completely depends on nervous system signaling.\n- **(E)** Syncytial electrical coupling is a feature of cardiac (and some smooth) muscle, not all three."
+            "explanation": "**Why (C) is correct:** All three muscle types exhibit excitability, meaning their plasma membranes can change electrical state and propagate an action potential.\n\n**Why the other options are wrong:**\n- **(A)** Only skeletal fibres are reliably multinucleated; smooth fibres are uninucleated.\n- **(B)** Only skeletal muscle completely depends on nervous system signaling.\n- **(D)** Syncytial electrical coupling is a feature of cardiac (and some smooth) muscle, not all three.\n- **(E)** Smooth muscle is nonstriated, so striations are not shared by all three."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -77,14 +77,14 @@
           "question": {
             "stem": "Which muscle is named for its triangular shape and forms the rounded contour of the shoulder?",
             "options": [
-              "Latissimus dorsi",
-              "Deltoid",
               "Rectus abdominis",
-              "Sternocleidomastoid",
-              "Gluteus maximus"
+              "Deltoid",
+              "Latissimus dorsi",
+              "Gluteus maximus",
+              "Sternocleidomastoid"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The deltoid is named after the Greek letter delta (a triangle) and creates the rounded lines of the shoulder while acting as the major abductor of the arm.\n\n**Why the other options are wrong:**\n- **(A)** The latissimus dorsi is located on the inferior back, not the shoulder cap.\n- **(C)** The rectus abdominis is located on the anterior abdomen.\n- **(D)** The sternocleidomastoid is located in the neck and rotates/flexes the head.\n- **(E)** The gluteus maximus is located in the buttocks."
+            "explanation": "**Why (B) is correct:** The deltoid is named after the Greek letter delta (a triangle) and creates the rounded lines of the shoulder while acting as the major abductor of the arm.\n\n**Why the other options are wrong:**\n- **(A)** The rectus abdominis is located on the anterior abdomen.\n- **(C)** The latissimus dorsi is located on the inferior back, not the shoulder cap.\n- **(D)** The gluteus maximus is located in the buttocks.\n- **(E)** The sternocleidomastoid is located in the neck and rotates/flexes the head."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -94,14 +94,14 @@
           "question": {
             "stem": "Which feature is characteristic of cardiac muscle but NOT of skeletal muscle?",
             "options": [
-              "Presence of striations",
               "Actin and myosin filaments",
-              "Physical and electrical coupling of fibres into a syncytium",
+              "Presence of striations",
               "Excitability",
-              "Contractility"
+              "Contractility",
+              "Physical and electrical coupling of fibres into a syncytium"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Cardiac muscle fibres are physically and electrically connected so the heart contracts as a single unit (syncytium); skeletal muscle fibres are not coupled in this way.\n\n**Why the other options are wrong:**\n- **(A)** Both cardiac and skeletal muscle are striated.\n- **(B)** Both contain regularly arranged actin and myosin.\n- **(D)** Excitability is shared by all three muscle types.\n- **(E)** Contractility is shared by all three muscle types."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Cardiac muscle fibres are physically and electrically connected so the heart contracts as a single unit (syncytium); skeletal muscle fibres are not coupled in this way.\n\n**Why the other options are wrong:**\n- **(A)** Both contain regularly arranged actin and myosin.\n- **(B)** Both cardiac and skeletal muscle are striated.\n- **(C)** Excitability is shared by all three muscle types.\n- **(D)** Contractility is shared by all three muscle types."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -111,14 +111,14 @@
           "question": {
             "stem": "What is the functional (contractile) unit of a skeletal muscle fibre?",
             "options": [
-              "Myofibril",
-              "Sarcomere",
-              "Fascicle",
               "Sarcolemma",
-              "Endomysium"
+              "Fascicle",
+              "Endomysium",
+              "Myofibril",
+              "Sarcomere"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The sarcomere is the highly organized arrangement of myofilaments that serves as the functional (contractile) unit of the muscle fibre.\n\n**Why the other options are wrong:**\n- **(A)** A myofibril is a long strand made up of many sarcomeres, not the single functional unit.\n- **(C)** A fascicle is a bundle of muscle fibres, not a subcellular contractile unit.\n- **(D)** The sarcolemma is the plasma membrane of the fibre.\n- **(E)** The endomysium is a connective tissue layer around a fibre."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The sarcomere is the highly organized arrangement of myofilaments that serves as the functional (contractile) unit of the muscle fibre.\n\n**Why the other options are wrong:**\n- **(A)** The sarcolemma is the plasma membrane of the fibre.\n- **(B)** A fascicle is a bundle of muscle fibres, not a subcellular contractile unit.\n- **(C)** The endomysium is a connective tissue layer around a fibre.\n- **(D)** A myofibril is a long strand made up of many sarcomeres, not the single functional unit."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -128,14 +128,14 @@
           "question": {
             "stem": "Within a skeletal muscle fibre, what is the specialized structure that stores, releases, and retrieves calcium ions?",
             "options": [
-              "Sarcolemma",
-              "Sarcoplasm",
-              "Sarcoplasmic reticulum",
               "Myofibril",
-              "Z-disc"
+              "Sarcoplasm",
+              "Z-disc",
+              "Sarcoplasmic reticulum",
+              "Sarcolemma"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The sarcoplasmic reticulum is the specialized smooth endoplasmic reticulum of muscle fibres that stores, releases, and retrieves calcium ions.\n\n**Why the other options are wrong:**\n- **(A)** The sarcolemma is the plasma membrane, not a calcium store.\n- **(B)** The sarcoplasm is the cytoplasm of the fibre.\n- **(D)** A myofibril is a contractile strand of sarcomeres.\n- **(E)** A Z-disc anchors actin myofilaments; it does not store calcium."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The sarcoplasmic reticulum is the specialized smooth endoplasmic reticulum of muscle fibres that stores, releases, and retrieves calcium ions.\n\n**Why the other options are wrong:**\n- **(A)** A myofibril is a contractile strand of sarcomeres.\n- **(B)** The sarcoplasm is the cytoplasm of the fibre.\n- **(C)** A Z-disc anchors actin myofilaments; it does not store calcium.\n- **(E)** The sarcolemma is the plasma membrane, not a calcium store."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -145,14 +145,14 @@
           "question": {
             "stem": "The prefix \"sarco-\" used throughout this unit is derived from a Greek word meaning what?",
             "options": [
-              "Muscle",
               "Flesh",
               "Fibre",
               "Straight",
+              "Muscle",
               "Bundle"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** \"Sarco\" comes from the Greek word for \"flesh,\" as in sarcolemma, sarcoplasm, and sarcomere.\n\n**Why the other options are wrong:**\n- **(A)** \"Muscle\" is not the meaning of the sarco- root.\n- **(C)** \"Fibre\" is not the meaning of sarco-.\n- **(D)** \"Straight\" corresponds to the root \"rectus.\"\n- **(E)** \"Bundle\" corresponds to \"fascicle,\" not sarco-."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** \"Sarco\" comes from the Greek word for \"flesh,\" as in sarcolemma, sarcoplasm, and sarcomere.\n\n**Why the other options are wrong:**\n- **(B)** \"Fibre\" is not the meaning of sarco-.\n- **(C)** \"Straight\" corresponds to the root \"rectus.\"\n- **(D)** \"Muscle\" is not the meaning of the sarco- root.\n- **(E)** \"Bundle\" corresponds to \"fascicle,\" not sarco-."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -162,14 +162,14 @@
           "question": {
             "stem": "In the context of muscle fibre terminology, what is the sarcolemma?",
             "options": [
-              "The cytoplasm of the muscle fibre",
+              "A bundle of muscle fibres",
               "The plasma membrane of the muscle fibre",
               "The calcium-storing reticulum",
               "The contractile unit of the fibre",
-              "A bundle of muscle fibres"
+              "The cytoplasm of the muscle fibre"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The sarcolemma is the plasma membrane of a muscle fibre.\n\n**Why the other options are wrong:**\n- **(A)** The cytoplasm of a muscle fibre is the sarcoplasm.\n- **(C)** The calcium-storing structure is the sarcoplasmic reticulum.\n- **(D)** The contractile unit is the sarcomere.\n- **(E)** A bundle of muscle fibres is a fascicle."
+            "explanation": "**Why (B) is correct:** The sarcolemma is the plasma membrane of a muscle fibre.\n\n**Why the other options are wrong:**\n- **(A)** A bundle of muscle fibres is a fascicle.\n- **(C)** The calcium-storing structure is the sarcoplasmic reticulum.\n- **(D)** The contractile unit is the sarcomere.\n- **(E)** The cytoplasm of a muscle fibre is the sarcoplasm."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -180,13 +180,13 @@
             "stem": "The gluteus maximus is best described as which of the following?",
             "options": [
               "The largest muscle of the buttocks, which extends the thigh",
-              "A small muscle of the neck that rotates the head",
-              "A muscle of the abdomen that flexes the trunk",
               "A muscle of the shoulder that abducts the arm",
-              "A muscle of the lower leg that raises the front of the foot"
+              "A muscle of the lower leg that raises the front of the foot",
+              "A small muscle of the neck that rotates the head",
+              "A muscle of the abdomen that flexes the trunk"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The gluteus maximus is the largest of the gluteal muscles located in the buttocks, and it is a powerful extensor of the thigh (femur).\n\n**Why the other options are wrong:**\n- **(B)** That describes the sternocleidomastoid, not a gluteal muscle.\n- **(C)** That describes the rectus abdominis, not the gluteus maximus.\n- **(D)** That describes the deltoid of the shoulder.\n- **(E)** That describes the tibialis anterior of the leg."
+            "explanation": "**Why (A) is correct:** The gluteus maximus is the largest of the gluteal muscles located in the buttocks, and it is a powerful extensor of the thigh (femur).\n\n**Why the other options are wrong:**\n- **(B)** That describes the deltoid of the shoulder.\n- **(C)** That describes the tibialis anterior of the leg.\n- **(D)** That describes the sternocleidomastoid, not a gluteal muscle.\n- **(E)** That describes the rectus abdominis, not the gluteus maximus."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -197,13 +197,13 @@
             "stem": "Which layer of connective tissue organizes muscle fibres into bundles called fascicles?",
             "options": [
               "Epimysium",
-              "Perimysium",
+              "Periosteum",
               "Endomysium",
               "Sarcolemma",
-              "Periosteum"
+              "Perimysium"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The perimysium is the middle connective tissue layer that groups individual muscle fibres into bundles called fascicles.\n\n**Why the other options are wrong:**\n- **(A)** The epimysium wraps the entire muscle, not individual fascicles.\n- **(C)** The endomysium surrounds each single muscle fibre, not a bundle.\n- **(D)** The sarcolemma is the plasma membrane of a muscle fibre, not a connective tissue layer.\n- **(E)** The periosteum covers bone, not muscle fascicles."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The perimysium is the middle connective tissue layer that groups individual muscle fibres into bundles called fascicles.\n\n**Why the other options are wrong:**\n- **(A)** The epimysium wraps the entire muscle, not individual fascicles.\n- **(B)** The periosteum covers bone, not muscle fascicles.\n- **(C)** The endomysium surrounds each single muscle fibre, not a bundle.\n- **(D)** The sarcolemma is the plasma membrane of a muscle fibre, not a connective tissue layer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -213,14 +213,14 @@
           "question": {
             "stem": "According to the mysia layers, the endomysium performs which function?",
             "options": [
-              "Wraps the entire muscle in dense irregular connective tissue",
               "Separates muscle from other organs so it can move independently",
               "Encases each individual muscle fibre and holds extracellular fluid supporting it",
+              "Wraps the entire muscle in dense irregular connective tissue",
               "Groups muscle fibres into fascicles for graded stimulation",
               "Attaches skin to the underlying muscle"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The endomysium is made of collagen and reticular fibres that encase each muscle fibre and contains the extracellular fluid that supports it.\n\n**Why the other options are wrong:**\n- **(A)** Wrapping the whole muscle is the role of the epimysium.\n- **(B)** Separating muscle from surrounding organs is a role of the epimysium.\n- **(D)** Grouping fibres into fascicles is the role of the perimysium.\n- **(E)** Attaching skin to muscle is the role of the superficial fascia (hypodermis)."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The endomysium is made of collagen and reticular fibres that encase each muscle fibre and contains the extracellular fluid that supports it.\n\n**Why the other options are wrong:**\n- **(A)** Separating muscle from surrounding organs is a role of the epimysium.\n- **(C)** Wrapping the whole muscle is the role of the epimysium.\n- **(D)** Grouping fibres into fascicles is the role of the perimysium.\n- **(E)** Attaching skin to muscle is the role of the superficial fascia (hypodermis)."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -230,14 +230,14 @@
           "question": {
             "stem": "Based on muscle-naming terminology, a muscle named \"biceps\" indicates that the muscle has which feature?",
             "options": [
-              "Two origins",
               "A triangular shape",
               "The largest size in its area",
+              "A location closest to the midline",
               "Fibres running straight along the limb",
-              "A location closest to the midline"
+              "Two origins"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The prefix \"bi\" indicates the muscle has two origins, as in the biceps brachii.\n\n**Why the other options are wrong:**\n- **(B)** Triangular shape is indicated by \"deltoid.\"\n- **(C)** Largest size is indicated by \"maximus.\"\n- **(D)** Straight fibres are indicated by \"rectus.\"\n- **(E)** Closest to the midline is indicated by \"medialis.\""
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The prefix \"bi\" indicates the muscle has two origins, as in the biceps brachii.\n\n**Why the other options are wrong:**\n- **(A)** Triangular shape is indicated by \"deltoid.\"\n- **(B)** Largest size is indicated by \"maximus.\"\n- **(C)** Closest to the midline is indicated by \"medialis.\"\n- **(D)** Straight fibres are indicated by \"rectus.\""
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -250,11 +250,11 @@
               "The ability of muscle to be passively stretched by another force",
               "The ability of muscle to actively shorten and pull on its attachment points",
               "The ability of muscle to return to its resting length after being stretched",
-              "The ability of a membrane to change electrical states and send an action potential",
-              "The ability of muscle to store and release calcium ions"
+              "The ability of muscle to store and release calcium ions",
+              "The ability of a membrane to change electrical states and send an action potential"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Contractility is the property that allows muscle tissue to actively shorten and pull on its attachment points.\n\n**Why the other options are wrong:**\n- **(A)** Being passively stretched is extensibility.\n- **(C)** Returning to resting length is elasticity.\n- **(D)** Changing electrical states and sending an action potential is excitability.\n- **(E)** Storing and releasing calcium is a function of the sarcoplasmic reticulum, not a general muscle property."
+            "explanation": "**Why (B) is correct:** Contractility is the property that allows muscle tissue to actively shorten and pull on its attachment points.\n\n**Why the other options are wrong:**\n- **(A)** Being passively stretched is extensibility.\n- **(C)** Returning to resting length is elasticity.\n- **(D)** Storing and releasing calcium is a function of the sarcoplasmic reticulum, not a general muscle property.\n- **(E)** Changing electrical states and sending an action potential is excitability."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -264,14 +264,14 @@
           "question": {
             "stem": "Which component of a skeletal muscle fibre is the functional unit responsible for contraction?",
             "options": [
-              "Sarcolemma",
-              "Sarcoplasm",
-              "Sarcomere",
               "Sarcoplasmic reticulum",
-              "Endomysium"
+              "Sarcomere",
+              "Sarcolemma",
+              "Endomysium",
+              "Sarcoplasm"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The sarcomere is the functional (contractile) unit of the muscle fibre, composed of an organized arrangement of myofilaments.\n\n**Why the other options are wrong:**\n- **(A)** The sarcolemma is the plasma membrane of the muscle fibre.\n- **(B)** The sarcoplasm is the cytoplasm of the muscle cell.\n- **(D)** The sarcoplasmic reticulum stores calcium but is not the contractile unit.\n- **(E)** The endomysium is a connective tissue layer around the fibre, not an internal contractile unit."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The sarcomere is the functional (contractile) unit of the muscle fibre, composed of an organized arrangement of myofilaments.\n\n**Why the other options are wrong:**\n- **(A)** The sarcoplasmic reticulum stores calcium but is not the contractile unit.\n- **(C)** The sarcolemma is the plasma membrane of the muscle fibre.\n- **(D)** The endomysium is a connective tissue layer around the fibre, not an internal contractile unit.\n- **(E)** The sarcoplasm is the cytoplasm of the muscle cell."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -281,14 +281,14 @@
           "question": {
             "stem": "Within a sarcomere, the thin myofilament is composed of which protein?",
             "options": [
-              "Myosin",
               "Actin",
-              "Collagen",
+              "Myosin",
+              "Titin",
               "Reticulin",
-              "Titin"
+              "Collagen"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Actin forms the thin myofilaments of the sarcomere and is anchored to the Z-discs.\n\n**Why the other options are wrong:**\n- **(A)** Myosin forms the thick myofilament, not the thin one.\n- **(C)** Collagen is a connective tissue fibre found in the mysia, not a sarcomere myofilament.\n- **(D)** Reticulin (reticular fibre) is found in the endomysium, not the sarcomere.\n- **(E)** Titin is not among the terms introduced in this unit for the thin filament."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Actin forms the thin myofilaments of the sarcomere and is anchored to the Z-discs.\n\n**Why the other options are wrong:**\n- **(B)** Myosin forms the thick myofilament, not the thin one.\n- **(C)** Titin is not among the terms introduced in this unit for the thin filament.\n- **(D)** Reticulin (reticular fibre) is found in the endomysium, not the sarcomere.\n- **(E)** Collagen is a connective tissue fibre found in the mysia, not a sarcomere myofilament."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -298,14 +298,14 @@
           "question": {
             "stem": "The Greek prefix \"sarco-\" used throughout this unit means what?",
             "options": [
-              "Muscle bundle",
-              "Flesh",
               "Straight",
               "Ring",
+              "Muscle bundle",
+              "Flesh",
               "Away from"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The prefix \"sarco\" comes from the Greek word meaning \"flesh,\" as in sarcolemma, sarcoplasm, and sarcomere.\n\n**Why the other options are wrong:**\n- **(A)** \"Muscle bundle\" corresponds to fascicle, not sarco.\n- **(C)** \"Straight\" corresponds to rectus.\n- **(D)** \"Ring\" corresponds to orbicularis.\n- **(E)** \"Away from\" corresponds to the prefix ab-."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The prefix \"sarco\" comes from the Greek word meaning \"flesh,\" as in sarcolemma, sarcoplasm, and sarcomere.\n\n**Why the other options are wrong:**\n- **(A)** \"Straight\" corresponds to rectus.\n- **(B)** \"Ring\" corresponds to orbicularis.\n- **(C)** \"Muscle bundle\" corresponds to fascicle, not sarco.\n- **(E)** \"Away from\" corresponds to the prefix ab-."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -315,14 +315,14 @@
           "question": {
             "stem": "Which statement correctly contrasts the three main muscle tissue types?",
             "options": [
-              "Skeletal and cardiac muscle are striated, while smooth muscle is not",
-              "Only smooth muscle exhibits excitability",
-              "Skeletal muscle fibres are uninucleated while smooth muscle fibres are multinucleated",
               "Cardiac muscle can only be activated by the nervous system",
-              "Smooth muscle is found in the heart and pumps blood"
+              "Only smooth muscle exhibits excitability",
+              "Smooth muscle is found in the heart and pumps blood",
+              "Skeletal and cardiac muscle are striated, while smooth muscle is not",
+              "Skeletal muscle fibres are uninucleated while smooth muscle fibres are multinucleated"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Skeletal and cardiac muscle both show striations due to the regular arrangement of actin and myosin, whereas smooth muscle has a nonstriated appearance.\n\n**Why the other options are wrong:**\n- **(B)** All three muscle types exhibit excitability.\n- **(C)** Skeletal fibres are multinucleated and smooth fibres are uninucleated—the reverse of the statement.\n- **(D)** Skeletal muscle depends entirely on the nervous system; cardiac muscle also responds to hormones and local stimuli.\n- **(E)** Cardiac muscle, not smooth muscle, is found in the heart and pumps blood."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Skeletal and cardiac muscle both show striations due to the regular arrangement of actin and myosin, whereas smooth muscle has a nonstriated appearance.\n\n**Why the other options are wrong:**\n- **(A)** Skeletal muscle depends entirely on the nervous system; cardiac muscle also responds to hormones and local stimuli.\n- **(B)** All three muscle types exhibit excitability.\n- **(C)** Cardiac muscle, not smooth muscle, is found in the heart and pumps blood.\n- **(E)** Skeletal fibres are multinucleated and smooth fibres are uninucleated—the reverse of the statement."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -333,13 +333,13 @@
             "stem": "In this unit, the naming of skeletal muscles primarily relies on roots from which languages?",
             "options": [
               "French and German",
+              "English and Spanish",
               "Latin and Greek",
               "Arabic and Hebrew",
-              "English and Spanish",
               "Sanskrit and Chinese"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Because the Greeks and Romans conducted the first Western studies of the body, anatomical muscle naming uses Latin and Greek terminology or roots.\n\n**Why the other options are wrong:**\n- **(A)** French and German are not the basis of anatomical muscle nomenclature.\n- **(C)** Arabic and Hebrew are not the source languages described.\n- **(D)** English and Spanish are not the classical roots used in naming.\n- **(E)** Sanskrit and Chinese are not the source languages for muscle names."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Because the Greeks and Romans conducted the first Western studies of the body, anatomical muscle naming uses Latin and Greek terminology or roots.\n\n**Why the other options are wrong:**\n- **(A)** French and German are not the basis of anatomical muscle nomenclature.\n- **(B)** English and Spanish are not the classical roots used in naming.\n- **(D)** Arabic and Hebrew are not the source languages described.\n- **(E)** Sanskrit and Chinese are not the source languages for muscle names."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -349,14 +349,14 @@
           "question": {
             "stem": "The gluteus maximus is the largest muscle of the buttocks. Based on its name and location, what is its general role?",
             "options": [
+              "It expands the rib cage during inhalation",
+              "It rotates the head at the neck",
               "It moves the femur (thigh) at the hip",
               "It flexes the forearm at the elbow",
-              "It rotates the head at the neck",
-              "It expands the rib cage during inhalation",
               "It moves the little finger away from the others"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The gluteus maximus is a large, powerful gluteal muscle that originates on the pelvic girdle and moves the femur at the hip.\n\n**Why the other options are wrong:**\n- **(B)** Forearm flexion is performed by the biceps brachii and brachioradialis, not a gluteal muscle.\n- **(C)** Head rotation is a function of the sternocleidomastoid.\n- **(D)** Expanding the rib cage is done by the external intercostals and diaphragm.\n- **(E)** Moving the little finger away is the abductor digiti minimi's job."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The gluteus maximus is a large, powerful gluteal muscle that originates on the pelvic girdle and moves the femur at the hip.\n\n**Why the other options are wrong:**\n- **(A)** Expanding the rib cage is done by the external intercostals and diaphragm.\n- **(B)** Head rotation is a function of the sternocleidomastoid.\n- **(D)** Forearm flexion is performed by the biceps brachii and brachioradialis, not a gluteal muscle.\n- **(E)** Moving the little finger away is the abductor digiti minimi's job."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -366,14 +366,14 @@
           "question": {
             "stem": "Which layer of mysia wraps the entire muscle in dense, irregular connective tissue and helps maintain its shape?",
             "options": [
-              "Endomysium",
-              "Perimysium",
               "Epimysium",
               "Sarcolemma",
-              "Periosteum"
+              "Periosteum",
+              "Perimysium",
+              "Endomysium"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The epimysium is the outermost sheath of dense, irregular connective tissue that wraps the whole muscle and maintains its shape.\n\n**Why the other options are wrong:**\n- **(A)** The endomysium surrounds each individual muscle fibre, not the whole muscle.\n- **(B)** The perimysium organizes muscle fibres into fascicles, an intermediate layer.\n- **(D)** The sarcolemma is the plasma membrane of a muscle fibre, not a connective tissue layer.\n- **(E)** The periosteum coats bone, not muscle."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The epimysium is the outermost sheath of dense, irregular connective tissue that wraps the whole muscle and maintains its shape.\n\n**Why the other options are wrong:**\n- **(B)** The sarcolemma is the plasma membrane of a muscle fibre, not a connective tissue layer.\n- **(C)** The periosteum coats bone, not muscle.\n- **(D)** The perimysium organizes muscle fibres into fascicles, an intermediate layer.\n- **(E)** The endomysium surrounds each individual muscle fibre, not the whole muscle."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -383,14 +383,14 @@
           "question": {
             "stem": "A student invents the nonsense muscle name \"flexor femoris longus.\" Based on muscle terminology, what does the \"longus\" portion indicate?",
             "options": [
-              "The muscle is short compared to others nearby",
-              "The muscle is long compared to others nearby",
-              "The muscle runs straight along the body axis",
               "The muscle has two origins",
-              "The muscle is located away from the midline"
+              "The muscle is short compared to others nearby",
+              "The muscle is located away from the midline",
+              "The muscle runs straight along the body axis",
+              "The muscle is long compared to others nearby"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** \"Longus\" means long, describing the muscle's size relative to other muscles in the area.\n\n**Why the other options are wrong:**\n- **(A)** \"Brevis,\" not \"longus,\" indicates short.\n- **(C)** \"Rectus\" describes fibres running straight along the axis.\n- **(D)** The prefix \"bi-\" indicates two origins.\n- **(E)** \"Lateralis\" indicates a position away from the midline."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** \"Longus\" means long, describing the muscle's size relative to other muscles in the area.\n\n**Why the other options are wrong:**\n- **(A)** The prefix \"bi-\" indicates two origins.\n- **(B)** \"Brevis,\" not \"longus,\" indicates short.\n- **(C)** \"Lateralis\" indicates a position away from the midline.\n- **(D)** \"Rectus\" describes fibres running straight along the axis."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -400,14 +400,14 @@
           "question": {
             "stem": "Within a muscle fibre, which structure is the functional (contractile) unit responsible for shortening?",
             "options": [
-              "Myofibril",
-              "Sarcomere",
-              "Sarcoplasmic reticulum",
               "Sarcolemma",
-              "Endomysium"
+              "Endomysium",
+              "Sarcomere",
+              "Myofibril",
+              "Sarcoplasmic reticulum"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The sarcomere is the functional unit of the muscle fibre and is the part that produces contraction via its arranged myofilaments.\n\n**Why the other options are wrong:**\n- **(A)** A myofibril is a long strand made up of many sarcomeres, not the functional unit itself.\n- **(C)** The sarcoplasmic reticulum stores and releases calcium ions but does not contract.\n- **(D)** The sarcolemma is the plasma membrane of the fibre.\n- **(E)** The endomysium is a connective tissue layer surrounding the fibre."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The sarcomere is the functional unit of the muscle fibre and is the part that produces contraction via its arranged myofilaments.\n\n**Why the other options are wrong:**\n- **(A)** The sarcolemma is the plasma membrane of the fibre.\n- **(B)** The endomysium is a connective tissue layer surrounding the fibre.\n- **(D)** A myofibril is a long strand made up of many sarcomeres, not the functional unit itself.\n- **(E)** The sarcoplasmic reticulum stores and releases calcium ions but does not contract."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -419,12 +419,12 @@
             "options": [
               "Sarcolemma",
               "Sarcoplasm",
-              "Sarcomere",
               "Sarcoplasmic reticulum",
+              "Sarcomere",
               "Sarcophagus"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Sarcoplasm is the cytoplasm of a muscle cell (fibre).\n\n**Why the other options are wrong:**\n- **(A)** The sarcolemma is the plasma membrane of the fibre, not the cytoplasm.\n- **(C)** The sarcomere is the contractile functional unit.\n- **(D)** The sarcoplasmic reticulum is the calcium-storing endoplasmic reticulum.\n- **(E)** \"Sarcophagus\" is not a muscle structure."
+            "explanation": "**Why (B) is correct:** Sarcoplasm is the cytoplasm of a muscle cell (fibre).\n\n**Why the other options are wrong:**\n- **(A)** The sarcolemma is the plasma membrane of the fibre, not the cytoplasm.\n- **(C)** The sarcoplasmic reticulum is the calcium-storing endoplasmic reticulum.\n- **(D)** The sarcomere is the contractile functional unit.\n- **(E)** \"Sarcophagus\" is not a muscle structure."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -434,14 +434,14 @@
           "question": {
             "stem": "Which muscle type has striations AND fibres that are physically and electrically connected so the tissue contracts as one unit?",
             "options": [
-              "Skeletal muscle",
-              "Cardiac muscle",
               "Smooth muscle",
+              "Skeletal muscle",
               "Both skeletal and smooth muscle",
-              "Both smooth and cardiac muscle"
+              "Both smooth and cardiac muscle",
+              "Cardiac muscle"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Cardiac muscle is striated and its fibres are physically and electrically coupled, allowing the entire heart to contract as one unit (a syncytium).\n\n**Why the other options are wrong:**\n- **(A)** Skeletal muscle is striated but its fibres are not electrically coupled to contract as one unit.\n- **(C)** Smooth muscle is not striated.\n- **(D)** Smooth muscle lacks striations, so this pairing is incorrect.\n- **(E)** Smooth muscle is not striated, so this pairing is incorrect."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Cardiac muscle is striated and its fibres are physically and electrically coupled, allowing the entire heart to contract as one unit (a syncytium).\n\n**Why the other options are wrong:**\n- **(A)** Smooth muscle is not striated.\n- **(B)** Skeletal muscle is striated but its fibres are not electrically coupled to contract as one unit.\n- **(C)** Smooth muscle lacks striations, so this pairing is incorrect.\n- **(D)** Smooth muscle is not striated, so this pairing is incorrect."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -451,14 +451,14 @@
           "question": {
             "stem": "The property that allows a muscle to be passively stretched by an outside force is called:",
             "options": [
-              "Contractility",
+              "Striation",
+              "Excitability",
               "Elasticity",
               "Extensibility",
-              "Excitability",
-              "Striation"
+              "Contractility"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Extensibility is the ability of muscle tissue to be passively stretched or extended when acted on by another force.\n\n**Why the other options are wrong:**\n- **(A)** Contractility is the ability to actively shorten.\n- **(B)** Elasticity is the ability to recoil back to resting length.\n- **(D)** Excitability is the ability to change electrical state and conduct an action potential.\n- **(E)** Striation is a visual banding appearance, not a functional property."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Extensibility is the ability of muscle tissue to be passively stretched or extended when acted on by another force.\n\n**Why the other options are wrong:**\n- **(A)** Striation is a visual banding appearance, not a functional property.\n- **(B)** Excitability is the ability to change electrical state and conduct an action potential.\n- **(C)** Elasticity is the ability to recoil back to resting length.\n- **(E)** Contractility is the ability to actively shorten."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -470,12 +470,12 @@
             "options": [
               "Vastus medialis is along the midline; vastus lateralis is away from the midline",
               "Vastus medialis is away from the midline; vastus lateralis is along the midline",
-              "Vastus medialis is anterior; vastus lateralis is posterior",
+              "Vastus medialis is short; vastus lateralis is long",
               "Vastus medialis is the largest; vastus lateralis is the smallest",
-              "Vastus medialis is short; vastus lateralis is long"
+              "Vastus medialis is anterior; vastus lateralis is posterior"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** \"Medialis\" means along the midline while \"lateralis\" means away from the midline, describing their locations.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the correct meanings of medialis and lateralis.\n- **(C)** Anterior/posterior refers to front/rear, not medial/lateral.\n- **(D)** Size differences are indicated by terms like maximus and minimus.\n- **(E)** Length differences are indicated by brevis and longus."
+            "explanation": "**Why (A) is correct:** \"Medialis\" means along the midline while \"lateralis\" means away from the midline, describing their locations.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the correct meanings of medialis and lateralis.\n- **(C)** Length differences are indicated by brevis and longus.\n- **(D)** Size differences are indicated by terms like maximus and minimus.\n- **(E)** Anterior/posterior refers to front/rear, not medial/lateral."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -485,14 +485,14 @@
           "question": {
             "stem": "In a sarcomere, which structures anchor the thin (actin) myofilaments?",
             "options": [
-              "Z-discs (Z-lines)",
-              "Myosin heads",
-              "Tropomyosin strands",
+              "Troponin complexes",
               "The sarcolemma",
-              "Troponin complexes"
+              "Z-discs (Z-lines)",
+              "Tropomyosin strands",
+              "Myosin heads"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The actin (thin) myofilaments are anchored to Z-discs, also called Z-lines, which border each sarcomere.\n\n**Why the other options are wrong:**\n- **(B)** Myosin heads are part of the thick filament and interact with actin, but do not anchor it.\n- **(C)** Tropomyosin is a regulatory protein on the actin filament, not an anchoring structure.\n- **(D)** The sarcolemma is the muscle fibre's plasma membrane, not the anchor point within a sarcomere.\n- **(E)** Troponin is a regulatory protein, not an anchoring structure."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The actin (thin) myofilaments are anchored to Z-discs, also called Z-lines, which border each sarcomere.\n\n**Why the other options are wrong:**\n- **(A)** Troponin is a regulatory protein, not an anchoring structure.\n- **(B)** The sarcolemma is the muscle fibre's plasma membrane, not the anchor point within a sarcomere.\n- **(D)** Tropomyosin is a regulatory protein on the actin filament, not an anchoring structure.\n- **(E)** Myosin heads are part of the thick filament and interact with actin, but do not anchor it."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -502,14 +502,14 @@
           "question": {
             "stem": "Based on your knowledge of anatomical terminology, a muscle named \"abdominis obliquus lateralis\" would be located:",
             "options": [
-              "along the midline of the body",
-              "further away from the midline",
               "on the posterior surface of the trunk",
               "within the thoracic cavity",
+              "along the midline of the body",
+              "further away from the midline",
               "attached to the sternum"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The term \"lateralis\" means lateral, which describes a position away from the midline of the body.\n\n**Why the other options are wrong:**\n- **(A)** Positioning along the midline would be indicated by \"medialis,\" not \"lateralis.\"\n- **(C)** The name does not include any posterior/dorsi term, and \"abdominis\" places it on the abdomen.\n- **(D)** \"Abdominis\" indicates the abdominal region, not the thorax.\n- **(E)** No attachment term (such as sterno) appears in the name."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The term \"lateralis\" means lateral, which describes a position away from the midline of the body.\n\n**Why the other options are wrong:**\n- **(A)** The name does not include any posterior/dorsi term, and \"abdominis\" places it on the abdomen.\n- **(B)** \"Abdominis\" indicates the abdominal region, not the thorax.\n- **(C)** Positioning along the midline would be indicated by \"medialis,\" not \"lateralis.\"\n- **(E)** No attachment term (such as sterno) appears in the name."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1417,14 +1417,14 @@
           "question": {
             "stem": "Both skeletal and cardiac muscle share a striated appearance, yet they differ in how their fibres are electrically connected. Which statement correctly captures this comparison?",
             "options": [
-              "Both are striated, but only cardiac muscle fibres are physically and electrically connected so the heart contracts as one unit",
-              "Both are striated, but only skeletal muscle fibres are physically and electrically connected into a syncytium",
-              "Neither is striated, and both contract as a single electrically coupled unit",
               "Both are striated, and both depend entirely on the nervous system to contract",
-              "Both are non-striated, but only cardiac muscle can be influenced by hormones"
+              "Both are striated, but only skeletal muscle fibres are physically and electrically connected into a syncytium",
+              "Both are non-striated, but only cardiac muscle can be influenced by hormones",
+              "Neither is striated, and both contract as a single electrically coupled unit",
+              "Both are striated, but only cardiac muscle fibres are physically and electrically connected so the heart contracts as one unit"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Skeletal and cardiac muscle are both striated, but only cardiac fibres are physically and electrically connected so the heart contracts as one unit called a syncytium.\n\n**Why the other options are wrong:**\n- **(B)** Skeletal muscle fibres are not electrically coupled into a syncytium; that is a cardiac feature.\n- **(C)** Both skeletal and cardiac muscle ARE striated.\n- **(D)** Only skeletal muscle depends entirely on the nervous system; cardiac muscle also responds to hormones and local stimuli.\n- **(E)** Both are striated, not non-striated."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Skeletal and cardiac muscle are both striated, but only cardiac fibres are physically and electrically connected so the heart contracts as one unit called a syncytium.\n\n**Why the other options are wrong:**\n- **(A)** Only skeletal muscle depends entirely on the nervous system; cardiac muscle also responds to hormones and local stimuli.\n- **(B)** Skeletal muscle fibres are not electrically coupled into a syncytium; that is a cardiac feature.\n- **(C)** Both are striated, not non-striated.\n- **(D)** Both skeletal and cardiac muscle ARE striated."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1436,12 +1436,12 @@
             "options": [
               "A short muscle with three origins, associated with the femur",
               "A long muscle with two origins, associated with the humerus",
-              "A short muscle located away from the midline of the thigh",
               "A triangular muscle with three insertions on the tibia",
+              "A short muscle located away from the midline of the thigh",
               "A muscle with three origins that runs straight along the body's long axis"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** 'Tri' indicates three origins, 'femoris' associates it with the femur, and 'brevis' means short.\n\n**Why the other options are wrong:**\n- **(B)** 'Tri' means three (not two), and 'femoris' refers to the femur (not humerus).\n- **(C)** 'Brevis' means short but nothing in the name indicates lateral position (that would be lateralis).\n- **(D)** A triangular shape would be 'deltoid,' and 'tibia' is not referenced in the name.\n- **(E)** Straight orientation would be indicated by 'rectus,' which is absent here."
+            "explanation": "**Why (A) is correct:** 'Tri' indicates three origins, 'femoris' associates it with the femur, and 'brevis' means short.\n\n**Why the other options are wrong:**\n- **(B)** 'Tri' means three (not two), and 'femoris' refers to the femur (not humerus).\n- **(C)** A triangular shape would be 'deltoid,' and 'tibia' is not referenced in the name.\n- **(D)** 'Brevis' means short but nothing in the name indicates lateral position (that would be lateralis).\n- **(E)** Straight orientation would be indicated by 'rectus,' which is absent here."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1451,14 +1451,14 @@
           "question": {
             "stem": "A pathology weakens the middle connective-tissue layer that bundles muscle fibres and carries blood vessels and nerves to them. Which layer is affected, and what functional consequence would most directly follow?",
             "options": [
-              "Perimysium; fascicles could no longer be organized or independently activated for graded contraction",
               "Epimysium; individual muscle fibres would lose their extracellular fluid support",
               "Endomysium; the whole muscle would lose its overall shape",
+              "Superficial fascia; deep muscles would detach from the vertebrae",
               "Sarcolemma; the muscle would no longer attach to its tendon",
-              "Superficial fascia; deep muscles would detach from the vertebrae"
+              "Perimysium; fascicles could no longer be organized or independently activated for graded contraction"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The perimysium organizes fibres into fascicles and provides the pathway for blood and nerves, enabling independent fascicle activation for graded contraction.\n\n**Why the other options are wrong:**\n- **(B)** The epimysium wraps the whole muscle to maintain shape, not supply extracellular fluid to individual fibres.\n- **(C)** The endomysium encases individual fibres; overall muscle shape is maintained by the epimysium.\n- **(D)** The sarcolemma is the plasma membrane of a fibre, not a mysial connective-tissue layer.\n- **(E)** Superficial fascia (hypodermis) attaches skin to muscle and is not a mysial layer."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The perimysium organizes fibres into fascicles and provides the pathway for blood and nerves, enabling independent fascicle activation for graded contraction.\n\n**Why the other options are wrong:**\n- **(A)** The epimysium wraps the whole muscle to maintain shape, not supply extracellular fluid to individual fibres.\n- **(B)** The endomysium encases individual fibres; overall muscle shape is maintained by the epimysium.\n- **(C)** Superficial fascia (hypodermis) attaches skin to muscle and is not a mysial layer.\n- **(D)** The sarcolemma is the plasma membrane of a fibre, not a mysial connective-tissue layer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1469,13 +1469,13 @@
             "stem": "During an exam a student is asked to identify the muscle that forms the rounded contour of the shoulder and serves as the major abductor of the arm. Which muscle is it, and how does its name relate to its shape?",
             "options": [
               "Deltoid; named for the triangular Greek letter delta it resembles",
-              "Orbicularis; named for the ring shape it forms around the shoulder",
-              "Latissimus dorsi; named because it is the widest muscle of the arm",
               "Rectus femoris; named because its fibres run straight down the shoulder",
-              "Gluteus maximus; named because it is the largest muscle in the region"
+              "Latissimus dorsi; named because it is the widest muscle of the arm",
+              "Gluteus maximus; named because it is the largest muscle in the region",
+              "Orbicularis; named for the ring shape it forms around the shoulder"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The deltoid creates the rounded lines of the shoulder, is the major abductor of the arm, and is named for the triangular Greek letter delta.\n\n**Why the other options are wrong:**\n- **(B)** Orbicularis means ring-shaped and applies to muscles like orbicularis oculi, not the shoulder.\n- **(C)** Latissimus dorsi is on the back ('dorsi'), not the shoulder contour.\n- **(D)** Rectus femoris is a straight thigh muscle along the femur, not the shoulder.\n- **(E)** Gluteus maximus is the largest buttock muscle, not the shoulder abductor."
+            "explanation": "**Why (A) is correct:** The deltoid creates the rounded lines of the shoulder, is the major abductor of the arm, and is named for the triangular Greek letter delta.\n\n**Why the other options are wrong:**\n- **(B)** Rectus femoris is a straight thigh muscle along the femur, not the shoulder.\n- **(C)** Latissimus dorsi is on the back ('dorsi'), not the shoulder contour.\n- **(D)** Gluteus maximus is the largest buttock muscle, not the shoulder abductor.\n- **(E)** Orbicularis means ring-shaped and applies to muscles like orbicularis oculi, not the shoulder."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1485,14 +1485,14 @@
           "question": {
             "stem": "Within a single muscle fibre, which structure is the functional unit responsible for contraction, and which term describes the long strands that bundle many of these units end-to-end throughout the fibre?",
             "options": [
-              "Sarcomere is the functional unit; myofibrils are the long strands bundling sarcomeres end-to-end",
-              "Myofibril is the functional unit; sarcomeres are the strands bundling myofibrils together",
               "Sarcolemma is the functional unit; myofilaments are the long bundling strands",
+              "Myofibril is the functional unit; sarcomeres are the strands bundling myofibrils together",
+              "Sarcomere is the functional unit; myofibrils are the long strands bundling sarcomeres end-to-end",
               "Myofilament is the functional unit; the sarcoplasm bundles them end-to-end",
               "Sarcoplasmic reticulum is the functional unit; Z-discs bundle it end-to-end"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The sarcomere is the functional (contractile) unit, and myofibrils are the long contractile segments made of sarcomeres arranged end-to-end running the length of the fibre.\n\n**Why the other options are wrong:**\n- **(B)** The relationship is reversed; sarcomeres make up myofibrils, not vice versa.\n- **(C)** The sarcolemma is the plasma membrane, not the contractile unit.\n- **(D)** Myofilaments (actin and myosin) build the sarcomere but are not themselves the functional unit.\n- **(E)** The sarcoplasmic reticulum stores calcium and does not contract."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** The sarcomere is the functional (contractile) unit, and myofibrils are the long contractile segments made of sarcomeres arranged end-to-end running the length of the fibre.\n\n**Why the other options are wrong:**\n- **(A)** The sarcolemma is the plasma membrane, not the contractile unit.\n- **(B)** The relationship is reversed; sarcomeres make up myofibrils, not vice versa.\n- **(D)** Myofilaments (actin and myosin) build the sarcomere but are not themselves the functional unit.\n- **(E)** The sarcoplasmic reticulum stores calcium and does not contract."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1502,14 +1502,14 @@
           "question": {
             "stem": "A muscle fibre's smooth endoplasmic reticulum has been specialized for a particular ion-handling role. What is this structure called, and what is its function?",
             "options": [
-              "Sarcoplasmic reticulum; it stores, releases, and retrieves calcium ions",
-              "Sarcolemma; it stores and releases calcium ions across the membrane",
+              "Endomysium; it supplies calcium-rich extracellular fluid to the fibre",
               "Sarcoplasm; it retrieves sodium ions during relaxation",
               "Sarcomere; it stores calcium ions between contractions",
-              "Endomysium; it supplies calcium-rich extracellular fluid to the fibre"
+              "Sarcoplasmic reticulum; it stores, releases, and retrieves calcium ions",
+              "Sarcolemma; it stores and releases calcium ions across the membrane"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The sarcoplasmic reticulum is the specialized smooth endoplasmic reticulum that stores, releases, and retrieves calcium ions.\n\n**Why the other options are wrong:**\n- **(B)** The sarcolemma is the plasma membrane, not a calcium-storing organelle.\n- **(C)** The sarcoplasm is the cytoplasm, not a specialized ion-handling organelle.\n- **(D)** The sarcomere is the contractile functional unit, not a calcium store.\n- **(E)** The endomysium is a connective-tissue layer, not an intracellular calcium store."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The sarcoplasmic reticulum is the specialized smooth endoplasmic reticulum that stores, releases, and retrieves calcium ions.\n\n**Why the other options are wrong:**\n- **(A)** The endomysium is a connective-tissue layer, not an intracellular calcium store.\n- **(B)** The sarcoplasm is the cytoplasm, not a specialized ion-handling organelle.\n- **(C)** The sarcomere is the contractile functional unit, not a calcium store.\n- **(E)** The sarcolemma is the plasma membrane, not a calcium-storing organelle."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1520,13 +1520,13 @@
             "stem": "The lumbar fascia binds the deep muscles of the back to the spine and vertebrae while serving as an attachment point for more superficial muscles. Based on this role, how should it be classified compared with the hypodermis?",
             "options": [
               "It is deep fascia, which connects musculoskeletal tissues at deeper levels, unlike the superficial fascia (hypodermis) that attaches skin to muscle",
-              "It is superficial fascia, which attaches skin to muscle, unlike deep fascia that wraps individual fibres",
+              "It is epimysium, identical in role to the hypodermis in holding skin to bone",
               "It is endomysium, which wraps each muscle fibre, unlike the hypodermis that wraps whole muscles",
               "It is perimysium, which bundles fascicles, unlike the hypodermis that separates muscles",
-              "It is epimysium, identical in role to the hypodermis in holding skin to bone"
+              "It is superficial fascia, which attaches skin to muscle, unlike deep fascia that wraps individual fibres"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The lumbar fascia is deep fascia, which connects deeper musculoskeletal tissues, whereas the superficial fascia (hypodermis) attaches skin to underlying muscle.\n\n**Why the other options are wrong:**\n- **(B)** The lumbar fascia is deep, not superficial, fascia; the hypodermis is the superficial one.\n- **(C)** Endomysium wraps individual fibres inside a muscle, not the back-to-spine binding described.\n- **(D)** Perimysium organizes fascicles inside a muscle, not deep fascia binding regions.\n- **(E)** Epimysium wraps a single whole muscle and is not equivalent to the hypodermis."
+            "explanation": "**Why (A) is correct:** The lumbar fascia is deep fascia, which connects deeper musculoskeletal tissues, whereas the superficial fascia (hypodermis) attaches skin to underlying muscle.\n\n**Why the other options are wrong:**\n- **(B)** Epimysium wraps a single whole muscle and is not equivalent to the hypodermis.\n- **(C)** Endomysium wraps individual fibres inside a muscle, not the back-to-spine binding described.\n- **(D)** Perimysium organizes fascicles inside a muscle, not deep fascia binding regions.\n- **(E)** The lumbar fascia is deep, not superficial, fascia; the hypodermis is the superficial one."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1536,14 +1536,14 @@
           "question": {
             "stem": "A muscle is named \"sternocleidomastoid.\" Applying the rule that origins are named before insertions, which interpretation is correct?",
             "options": [
-              "It originates on the sternum and clavicle and inserts on the mastoid process",
-              "It originates on the mastoid process and inserts on the sternum and clavicle",
               "It originates and inserts entirely on the mastoid process of the temporal bone",
+              "It originates on the mastoid process and inserts on the sternum and clavicle",
               "It originates on the clavicle and inserts on the sternum",
+              "It originates on the sternum and clavicle and inserts on the mastoid process",
               "It has three origins named in sequence with no listed insertion"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Because origins are named first, the sternum ('sterno') and clavicle ('cleido') are origins and the mastoid process is the insertion.\n\n**Why the other options are wrong:**\n- **(B)** This reverses the origin-first convention.\n- **(C)** The muscle spans from the sternum/clavicle to the mastoid; it does not originate and insert on the same point.\n- **(D)** Both the sternum and clavicle are origins, and the insertion is the mastoid process, not the sternum.\n- **(E)** The name specifies both origins and an insertion (mastoid), not three unnamed origins."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Because origins are named first, the sternum ('sterno') and clavicle ('cleido') are origins and the mastoid process is the insertion.\n\n**Why the other options are wrong:**\n- **(A)** The muscle spans from the sternum/clavicle to the mastoid; it does not originate and insert on the same point.\n- **(B)** This reverses the origin-first convention.\n- **(C)** Both the sternum and clavicle are origins, and the insertion is the mastoid process, not the sternum.\n- **(E)** The name specifies both origins and an insertion (mastoid), not three unnamed origins."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1553,14 +1553,14 @@
           "question": {
             "stem": "All three muscle types share excitability, yet they differ in nervous-system dependence and nucleation. Which combination correctly distinguishes smooth muscle from skeletal muscle?",
             "options": [
-              "Smooth muscle is uninucleated and can respond to hormones, whereas skeletal muscle is multinucleated and depends entirely on nervous stimulation",
-              "Smooth muscle is multinucleated and hormone-independent, whereas skeletal muscle is uninucleated and hormone-dependent",
-              "Both are multinucleated, but only smooth muscle is striated",
               "Both depend entirely on the nervous system, but only skeletal muscle responds to hormones",
-              "Smooth muscle is striated and uninucleated, whereas skeletal muscle is non-striated and multinucleated"
+              "Smooth muscle is striated and uninucleated, whereas skeletal muscle is non-striated and multinucleated",
+              "Both are multinucleated, but only smooth muscle is striated",
+              "Smooth muscle is uninucleated and can respond to hormones, whereas skeletal muscle is multinucleated and depends entirely on nervous stimulation",
+              "Smooth muscle is multinucleated and hormone-independent, whereas skeletal muscle is uninucleated and hormone-dependent"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Smooth muscle fibres are uninucleated and can respond to hormones and local stimuli, while skeletal muscle fibres are multinucleated and rely entirely on nervous-system signalling.\n\n**Why the other options are wrong:**\n- **(B)** This reverses both the nucleation and hormone-dependence facts.\n- **(C)** Smooth muscle is non-striated, and skeletal muscle is multinucleated while smooth is uninucleated.\n- **(D)** Skeletal muscle does not respond to hormones; smooth and cardiac do.\n- **(E)** Smooth muscle is non-striated, and skeletal muscle is striated and multinucleated."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Smooth muscle fibres are uninucleated and can respond to hormones and local stimuli, while skeletal muscle fibres are multinucleated and rely entirely on nervous-system signalling.\n\n**Why the other options are wrong:**\n- **(A)** Skeletal muscle does not respond to hormones; smooth and cardiac do.\n- **(B)** Smooth muscle is non-striated, and skeletal muscle is striated and multinucleated.\n- **(C)** Smooth muscle is non-striated, and skeletal muscle is multinucleated while smooth is uninucleated.\n- **(E)** This reverses both the nucleation and hormone-dependence facts."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1570,14 +1570,14 @@
           "question": {
             "stem": "A student encounters the term \"myofilaments\" and must relate it to other 'sarco-' and myo- terms. Which pairing of term and meaning is correct?",
             "options": [
-              "Myofilaments are the actin and myosin proteins, whereas sarcolemma refers to the plasma membrane of the fibre",
-              "Myofilaments are the plasma membrane, whereas sarcoplasm refers to the contractile proteins",
-              "Myofilaments are the cytoplasm of the fibre, whereas myofibril refers to the calcium store",
               "Myofilaments are bundles of sarcomeres, whereas the sarcomere refers to a single protein strand",
-              "Myofilaments are the connective-tissue sheath, whereas endomysium refers to actin and myosin"
+              "Myofilaments are the connective-tissue sheath, whereas endomysium refers to actin and myosin",
+              "Myofilaments are the actin and myosin proteins, whereas sarcolemma refers to the plasma membrane of the fibre",
+              "Myofilaments are the cytoplasm of the fibre, whereas myofibril refers to the calcium store",
+              "Myofilaments are the plasma membrane, whereas sarcoplasm refers to the contractile proteins"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Myofilaments are the contractile proteins actin (thin) and myosin (thick), and the sarcolemma is the plasma membrane of the muscle fibre.\n\n**Why the other options are wrong:**\n- **(B)** Myofilaments are not the membrane, and sarcoplasm is the cytoplasm, not the proteins.\n- **(C)** Sarcoplasm is the cytoplasm, and the sarcoplasmic reticulum (not myofibril) stores calcium.\n- **(D)** Myofilaments build sarcomeres; myofibrils are the bundles of sarcomeres.\n- **(E)** Endomysium is a connective-tissue layer, not the actin and myosin filaments."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Myofilaments are the contractile proteins actin (thin) and myosin (thick), and the sarcolemma is the plasma membrane of the muscle fibre.\n\n**Why the other options are wrong:**\n- **(A)** Myofilaments build sarcomeres; myofibrils are the bundles of sarcomeres.\n- **(B)** Endomysium is a connective-tissue layer, not the actin and myosin filaments.\n- **(D)** Sarcoplasm is the cytoplasm, and the sarcoplasmic reticulum (not myofibril) stores calcium.\n- **(E)** Myofilaments are not the membrane, and sarcoplasm is the cytoplasm, not the proteins."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1587,14 +1587,14 @@
           "question": {
             "stem": "A student invents a nonsense muscle name: \"biceps radialis brevis.\" Based on the meanings of these roots, which description best fits this hypothetical muscle?",
             "options": [
+              "A short muscle that abducts the radius away from the midline",
               "A long muscle with two origins located near the radius",
               "A short muscle with two origins located near the radius",
               "A short muscle with three origins that runs straight along the radius",
-              "A large muscle near the midline with two origins",
-              "A short muscle that abducts the radius away from the midline"
+              "A large muscle near the midline with two origins"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** \"Bi\" indicates two origins, \"radialis\" refers to the radius bone, and \"brevis\" means short, so the name describes a short, two-origin muscle near the radius.\n\n**Why the other options are wrong:**\n- **(A)** \"Brevis\" means short, not long.\n- **(C)** \"Bi\" indicates two origins, not three (that would be \"tri\").\n- **(D)** No root in the name refers to the midline (that would be medialis).\n- **(E)** No root in the name refers to abduction or the midline."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** \"Bi\" indicates two origins, \"radialis\" refers to the radius bone, and \"brevis\" means short, so the name describes a short, two-origin muscle near the radius.\n\n**Why the other options are wrong:**\n- **(A)** No root in the name refers to abduction or the midline.\n- **(B)** \"Brevis\" means short, not long.\n- **(D)** \"Bi\" indicates two origins, not three (that would be \"tri\").\n- **(E)** No root in the name refers to the midline (that would be medialis)."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1604,14 +1604,14 @@
           "question": {
             "stem": "According to the unit outline, the two main parts of Unit 13 are best described as covering which of the following?",
             "options": [
-              "The mechanism of muscle contraction, followed by muscle metabolism",
-              "The properties of the three muscle tissue types, followed by the naming of skeletal muscles",
               "The skeletal system, followed by the muscular system",
+              "The properties of the three muscle tissue types, followed by the naming of skeletal muscles",
               "The nervous control of muscle, followed by joint movement",
-              "The gross anatomy of every muscle, followed by muscle physiology"
+              "The gross anatomy of every muscle, followed by muscle physiology",
+              "The mechanism of muscle contraction, followed by muscle metabolism"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The unit outline lists Part 1 as Muscle Tissue (the three types and their properties) and Part 2 as The Muscular System (nomenclature/naming of skeletal muscles).\n\n**Why the other options are wrong:**\n- **(A)** The contraction mechanism is deferred to the next unit, not covered here.\n- **(C)** The skeletal system is a separate unit, not Part 1.\n- **(D)** Nervous control and joint movement mechanics are not the two parts of this unit.\n- **(E)** Students are explicitly not responsible for every muscle, and physiology is deferred."
+            "explanation": "**Why (B) is correct:** The unit outline lists Part 1 as Muscle Tissue (the three types and their properties) and Part 2 as The Muscular System (nomenclature/naming of skeletal muscles).\n\n**Why the other options are wrong:**\n- **(A)** The skeletal system is a separate unit, not Part 1.\n- **(C)** Nervous control and joint movement mechanics are not the two parts of this unit.\n- **(D)** Students are explicitly not responsible for every muscle, and physiology is deferred.\n- **(E)** The contraction mechanism is deferred to the next unit, not covered here."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1621,14 +1621,14 @@
           "question": {
             "stem": "A researcher observes that a certain connective tissue layer in muscle organizes fibres into bundles and provides the pathway through which blood vessels and nerves reach the fibres. Which layer is being described, and what advantage does this arrangement provide?",
             "options": [
-              "Epimysium; it wraps the entire muscle to maintain its overall shape",
               "Perimysium; it groups fibres into fascicles that can be independently activated for graded contraction",
               "Endomysium; it encases each individual fibre with extracellular fluid",
               "Deep fascia; it separates whole muscles from one another",
+              "Epimysium; it wraps the entire muscle to maintain its overall shape",
               "Sarcolemma; it conducts the action potential along the fibre"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The perimysium organizes fibres into fascicles, allows vessels and nerves to reach the fibres, and permits fascicles to be independently stimulated for graded control of contraction strength.\n\n**Why the other options are wrong:**\n- **(A)** The epimysium wraps the whole muscle but does not form fascicles.\n- **(C)** The endomysium surrounds single fibres, not bundles.\n- **(D)** Deep fascia separates muscles from each other, not fibres into fascicles.\n- **(E)** The sarcolemma is the plasma membrane of a fibre, not a connective tissue layer."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The perimysium organizes fibres into fascicles, allows vessels and nerves to reach the fibres, and permits fascicles to be independently stimulated for graded control of contraction strength.\n\n**Why the other options are wrong:**\n- **(B)** The endomysium surrounds single fibres, not bundles.\n- **(C)** Deep fascia separates muscles from each other, not fibres into fascicles.\n- **(D)** The epimysium wraps the whole muscle but does not form fascicles.\n- **(E)** The sarcolemma is the plasma membrane of a fibre, not a connective tissue layer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1638,14 +1638,14 @@
           "question": {
             "stem": "Within a single skeletal muscle fibre, which relationship between components is correctly stated?",
             "options": [
-              "The sarcomere is the functional contractile unit, and many sarcomeres are bundled end-to-end within a myofibril",
               "The myofibril is the functional contractile unit, and it is bundled within a sarcomere",
-              "The sarcoplasmic reticulum stores the actin and myosin myofilaments",
+              "The sarcomere is the functional contractile unit, and many sarcomeres are bundled end-to-end within a myofibril",
+              "A myofibril is the plasma membrane that surrounds each sarcomere",
               "The sarcolemma is the cytoplasm in which the myofibrils float",
-              "A myofibril is the plasma membrane that surrounds each sarcomere"
+              "The sarcoplasmic reticulum stores the actin and myosin myofilaments"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The sarcomere is the functional (contractile) unit, and sarcomeres are arranged sequentially within a myofibril that runs the length of the fibre.\n\n**Why the other options are wrong:**\n- **(B)** The relationship is reversed; sarcomeres are bundled within myofibrils.\n- **(C)** The sarcoplasmic reticulum stores calcium ions, not the myofilaments.\n- **(D)** The sarcolemma is the plasma membrane; the cytoplasm is the sarcoplasm.\n- **(E)** A myofibril is a contractile strand, not a plasma membrane."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The sarcomere is the functional (contractile) unit, and sarcomeres are arranged sequentially within a myofibril that runs the length of the fibre.\n\n**Why the other options are wrong:**\n- **(A)** The relationship is reversed; sarcomeres are bundled within myofibrils.\n- **(C)** A myofibril is a contractile strand, not a plasma membrane.\n- **(D)** The sarcolemma is the plasma membrane; the cytoplasm is the sarcoplasm.\n- **(E)** The sarcoplasmic reticulum stores calcium ions, not the myofilaments."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1655,14 +1655,14 @@
           "question": {
             "stem": "The Greek prefix \"sarco-\" (flesh) appears in several muscle terms. Which pairing of a \"sarco-\" term with its meaning is correct?",
             "options": [
-              "Sarcolemma = the cytoplasm of the muscle fibre",
-              "Sarcoplasm = the specialized reticulum that stores calcium",
               "Sarcoplasmic reticulum = the plasma membrane of the muscle fibre",
+              "Sarcolemma = the functional contractile unit of the muscle fibre",
+              "Sarcolemma = the cytoplasm of the muscle fibre",
               "Sarcomere = the functional contractile unit of the muscle fibre",
-              "Sarcolemma = the functional contractile unit of the muscle fibre"
+              "Sarcoplasm = the specialized reticulum that stores calcium"
             ],
             "correct_index": 3,
-            "explanation": "**Why (D) is correct:** The sarcomere is the highly organized arrangement of myofilaments that serves as the functional contractile unit of the fibre.\n\n**Why the other options are wrong:**\n- **(A)** The sarcolemma is the plasma membrane, not the cytoplasm.\n- **(B)** The sarcoplasm is the cytoplasm, not the calcium-storing reticulum.\n- **(C)** The sarcoplasmic reticulum stores calcium; it is not the plasma membrane.\n- **(E)** The sarcolemma is the plasma membrane, not the contractile unit."
+            "explanation": "**Why (D) is correct:** The sarcomere is the highly organized arrangement of myofilaments that serves as the functional contractile unit of the fibre.\n\n**Why the other options are wrong:**\n- **(A)** The sarcoplasmic reticulum stores calcium; it is not the plasma membrane.\n- **(B)** The sarcolemma is the plasma membrane, not the contractile unit.\n- **(C)** The sarcolemma is the plasma membrane, not the cytoplasm.\n- **(E)** The sarcoplasm is the cytoplasm, not the calcium-storing reticulum."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1672,14 +1672,14 @@
           "question": {
             "stem": "In a muscle that pulls on a bone via a tendon, tension generated by the contracting fibres is transferred to the skeleton in which sequence?",
             "options": [
-              "Tendon → periosteum → mysia → sarcolemma → bone",
-              "Mysia → tendon → periosteum → bone",
-              "Periosteum → tendon → mysia → bone",
               "Sarcoplasm → endomysium → tendon → bone directly",
-              "Epimysium → deep fascia → hypodermis → bone"
+              "Mysia → tendon → periosteum → bone",
+              "Epimysium → deep fascia → hypodermis → bone",
+              "Periosteum → tendon → mysia → bone",
+              "Tendon → periosteum → mysia → sarcolemma → bone"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Collagen of the mysia intertwines with the tendon's collagen, which fuses with the periosteum, so tension passes from mysia to tendon to periosteum to pull on the bone.\n\n**Why the other options are wrong:**\n- **(A)** The order is reversed and the sarcolemma is not part of the tension-transfer chain to bone.\n- **(C)** The sequence is reversed; force originates in the muscle, not the periosteum.\n- **(D)** The tendon connects to the periosteum, not directly to bone, and the sequence omits the tendon-periosteum link.\n- **(E)** The hypodermis (superficial fascia) attaches skin to muscle and is not in the force-transfer path."
+            "explanation": "**Why (B) is correct:** Collagen of the mysia intertwines with the tendon's collagen, which fuses with the periosteum, so tension passes from mysia to tendon to periosteum to pull on the bone.\n\n**Why the other options are wrong:**\n- **(A)** The tendon connects to the periosteum, not directly to bone, and the sequence omits the tendon-periosteum link.\n- **(C)** The hypodermis (superficial fascia) attaches skin to muscle and is not in the force-transfer path.\n- **(D)** The sequence is reversed; force originates in the muscle, not the periosteum.\n- **(E)** The order is reversed and the sarcolemma is not part of the tension-transfer chain to bone."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1689,14 +1689,14 @@
           "question": {
             "stem": "A slide shows a striated muscle tissue whose fibres are each multinucleated and are NOT electrically coupled to one another. Which muscle type is this, and how does it differ from cardiac muscle?",
             "options": [
-              "Smooth muscle; unlike cardiac muscle it lacks striations",
-              "Cardiac muscle; unlike skeletal muscle it is uninucleated only",
-              "Skeletal muscle; unlike cardiac muscle its fibres are multinucleated and not joined into a syncytium",
               "Smooth muscle; unlike cardiac muscle it is multinucleated",
-              "Skeletal muscle; like cardiac muscle it contracts as a single syncytium"
+              "Skeletal muscle; like cardiac muscle it contracts as a single syncytium",
+              "Cardiac muscle; unlike skeletal muscle it is uninucleated only",
+              "Smooth muscle; unlike cardiac muscle it lacks striations",
+              "Skeletal muscle; unlike cardiac muscle its fibres are multinucleated and not joined into a syncytium"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Skeletal muscle fibres are striated, multinucleated, and are not physically/electrically coupled, whereas cardiac fibres form a syncytium and are usually uninucleated.\n\n**Why the other options are wrong:**\n- **(A)** Smooth muscle is non-striated, contradicting the striated observation.\n- **(B)** Cardiac fibres are electrically coupled, contradicting the \"not coupled\" observation.\n- **(D)** Smooth muscle is non-striated and uninucleated.\n- **(E)** Skeletal muscle does not form a syncytium; only cardiac muscle does."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Skeletal muscle fibres are striated, multinucleated, and are not physically/electrically coupled, whereas cardiac fibres form a syncytium and are usually uninucleated.\n\n**Why the other options are wrong:**\n- **(A)** Smooth muscle is non-striated and uninucleated.\n- **(B)** Skeletal muscle does not form a syncytium; only cardiac muscle does.\n- **(C)** Cardiac fibres are electrically coupled, contradicting the \"not coupled\" observation.\n- **(D)** Smooth muscle is non-striated, contradicting the striated observation."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1706,14 +1706,14 @@
           "question": {
             "stem": "Using the meanings of anatomical roots, a muscle named \"tibialis posterior\" and a muscle named \"vastus lateralis\" differ in that:",
             "options": [
-              "\"Posterior\" indicates the rear while \"lateralis\" indicates a position away from the midline",
+              "\"Posterior\" indicates a position near the midline while \"lateralis\" indicates the front",
               "\"Posterior\" indicates size while \"lateralis\" indicates shape",
-              "\"Posterior\" indicates the number of origins while \"lateralis\" indicates action",
+              "\"Posterior\" indicates the rear while \"lateralis\" indicates a position away from the midline",
               "Both roots describe the direction the muscle fibres run",
-              "\"Posterior\" indicates a position near the midline while \"lateralis\" indicates the front"
+              "\"Posterior\" indicates the number of origins while \"lateralis\" indicates action"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** \"Posterior\" means toward the rear and \"lateralis\" means lateral (away from the midline); both are anatomical-position roots but specify different positions.\n\n**Why the other options are wrong:**\n- **(B)** Neither root refers to size or shape.\n- **(C)** Neither root refers to number of origins or action.\n- **(D)** These roots indicate position, not fibre direction (that would be rectus/oblique).\n- **(E)** \"Posterior\" is the rear and \"lateralis\" is away from the midline, so both meanings are stated incorrectly here."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** \"Posterior\" means toward the rear and \"lateralis\" means lateral (away from the midline); both are anatomical-position roots but specify different positions.\n\n**Why the other options are wrong:**\n- **(A)** \"Posterior\" is the rear and \"lateralis\" is away from the midline, so both meanings are stated incorrectly here.\n- **(B)** Neither root refers to size or shape.\n- **(D)** These roots indicate position, not fibre direction (that would be rectus/oblique).\n- **(E)** Neither root refers to number of origins or action."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1724,13 +1724,13 @@
             "stem": "The gluteus maximus, gluteus medius, and gluteus minimus are found in the buttock region. Which statement about this group is correct?",
             "options": [
               "Their names indicate their direction of fibres, and the maximus flexes the forearm",
-              "Their names indicate relative size, and the gluteus maximus is the largest of the three",
-              "Their names indicate their number of origins, with maximus having the most",
               "The gluteus minimus is the largest and the gluteus maximus is the smallest",
-              "All three are located in the anterior thorax and move the humerus"
+              "All three are located in the anterior thorax and move the humerus",
+              "Their names indicate relative size, and the gluteus maximus is the largest of the three",
+              "Their names indicate their number of origins, with maximus having the most"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** \"Maximus,\" \"medius,\" and \"minimus\" indicate relative size, with the gluteus maximus being the largest gluteal muscle.\n\n**Why the other options are wrong:**\n- **(A)** These names indicate size, not fibre direction, and none flexes the forearm.\n- **(C)** The roots refer to size, not number of origins.\n- **(D)** This reverses the sizes; maximus is largest and minimus is smallest.\n- **(E)** The gluteal muscles are in the buttock region and move the femur, not the humerus."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** \"Maximus,\" \"medius,\" and \"minimus\" indicate relative size, with the gluteus maximus being the largest gluteal muscle.\n\n**Why the other options are wrong:**\n- **(A)** These names indicate size, not fibre direction, and none flexes the forearm.\n- **(B)** This reverses the sizes; maximus is largest and minimus is smallest.\n- **(C)** The gluteal muscles are in the buttock region and move the femur, not the humerus.\n- **(E)** The roots refer to size, not number of origins."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1740,14 +1740,14 @@
           "question": {
             "stem": "A histology image shows a muscle fibre encased in a thin sheath of collagen and reticular fibres that holds extracellular fluid supporting that single fibre. Which layer is shown, and how does it relate to the fascicle?",
             "options": [
-              "Epimysium; it lies outside and surrounds the whole muscle including all fascicles",
+              "Deep fascia; it separates this fascicle from adjacent muscles",
               "Perimysium; it surrounds the fascicle within which this fibre lies",
               "Endomysium; it lies inside the fascicle and wraps this individual fibre",
-              "Deep fascia; it separates this fascicle from adjacent muscles",
+              "Epimysium; it lies outside and surrounds the whole muscle including all fascicles",
               "Sarcolemma; it is the connective tissue layer between adjacent fascicles"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The endomysium is the thin collagen/reticular layer around each individual fibre, located inside the fascicle, and it holds the extracellular fluid supporting that fibre.\n\n**Why the other options are wrong:**\n- **(A)** The epimysium wraps the entire muscle, not a single fibre.\n- **(B)** The perimysium wraps the bundle (fascicle), not the individual fibre inside it.\n- **(D)** Deep fascia separates whole muscles, not individual fibres.\n- **(E)** The sarcolemma is the fibre's plasma membrane, not a connective tissue layer."
+            "explanation": "**Why (C) is correct:** The endomysium is the thin collagen/reticular layer around each individual fibre, located inside the fascicle, and it holds the extracellular fluid supporting that fibre.\n\n**Why the other options are wrong:**\n- **(A)** Deep fascia separates whole muscles, not individual fibres.\n- **(B)** The perimysium wraps the bundle (fascicle), not the individual fibre inside it.\n- **(D)** The epimysium wraps the entire muscle, not a single fibre.\n- **(E)** The sarcolemma is the fibre's plasma membrane, not a connective tissue layer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1757,14 +1757,14 @@
           "question": {
             "stem": "A researcher observes that within a single skeletal muscle, the nervous system can activate one subgroup of muscle fibres independently from another subgroup, allowing a graded contraction. Which connective tissue layer is most directly responsible for organizing fibres into these independently activatable bundles?",
             "options": [
-              "Epimysium",
-              "Perimysium",
               "Endomysium",
+              "Epimysium",
               "Superficial fascia",
-              "Sarcolemma"
+              "Sarcolemma",
+              "Perimysium"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The perimysium organizes muscle fibres into bundles called fascicles and permits blood and nerves to reach them, so fascicles can be stimulated independently for a graded response.\n\n**Why the other options are wrong:**\n- **(A)** The epimysium wraps the entire muscle and maintains its shape rather than dividing fibres into fascicles.\n- **(C)** The endomysium encases individual fibres, not bundles.\n- **(D)** Superficial fascia (hypodermis) attaches skin to muscle and is not a mysial layer.\n- **(E)** The sarcolemma is the plasma membrane of one fibre, not a connective tissue layer."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The perimysium organizes muscle fibres into bundles called fascicles and permits blood and nerves to reach them, so fascicles can be stimulated independently for a graded response.\n\n**Why the other options are wrong:**\n- **(A)** The endomysium encases individual fibres, not bundles.\n- **(B)** The epimysium wraps the entire muscle and maintains its shape rather than dividing fibres into fascicles.\n- **(C)** Superficial fascia (hypodermis) attaches skin to muscle and is not a mysial layer.\n- **(D)** The sarcolemma is the plasma membrane of one fibre, not a connective tissue layer."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1774,14 +1774,14 @@
           "question": {
             "stem": "Using the Greek prefix 'sarco-' meaning 'flesh,' which pairing of muscle-fibre term to its meaning is correct?",
             "options": [
+              "Sarcomere = the entire muscle fibre membrane",
+              "Sarcoplasmic reticulum = specialized structure for Ca2+ storage",
               "Sarcolemma = cytoplasm of the muscle fibre",
               "Sarcoplasm = plasma membrane of the muscle fibre",
-              "Sarcoplasmic reticulum = specialized structure for Ca2+ storage",
-              "Sarcomere = the entire muscle fibre membrane",
               "Sarcolemma = the functional contractile unit"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The sarcoplasmic reticulum is the specialized smooth endoplasmic reticulum that stores, releases, and retrieves calcium ions.\n\n**Why the other options are wrong:**\n- **(A)** The sarcolemma is the plasma membrane, not the cytoplasm.\n- **(B)** The sarcoplasm is the cytoplasm, not the plasma membrane.\n- **(D)** The sarcomere is the functional contractile unit, not a membrane.\n- **(E)** The functional contractile unit is the sarcomere, not the sarcolemma."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The sarcoplasmic reticulum is the specialized smooth endoplasmic reticulum that stores, releases, and retrieves calcium ions.\n\n**Why the other options are wrong:**\n- **(A)** The sarcomere is the functional contractile unit, not a membrane.\n- **(C)** The sarcolemma is the plasma membrane, not the cytoplasm.\n- **(D)** The sarcoplasm is the cytoplasm, not the plasma membrane.\n- **(E)** The functional contractile unit is the sarcomere, not the sarcolemma."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1791,14 +1791,14 @@
           "question": {
             "stem": "Compared to the epimysium, the endomysium differs in that it:",
             "options": [
-              "Wraps the entire muscle to maintain its overall shape",
-              "Encases each individual muscle fibre and holds extracellular fluid that supports the fibre",
-              "Divides the muscle into fascicles for graded nervous activation",
               "Is composed of dense irregular connective tissue surrounding fascicles",
-              "Attaches the skin to the underlying muscle"
+              "Wraps the entire muscle to maintain its overall shape",
+              "Divides the muscle into fascicles for graded nervous activation",
+              "Attaches the skin to the underlying muscle",
+              "Encases each individual muscle fibre and holds extracellular fluid that supports the fibre"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The endomysium is a thin layer of collagen and reticular fibres encasing each individual muscle fibre and containing the extracellular fluid that supports it.\n\n**Why the other options are wrong:**\n- **(A)** Wrapping the whole muscle to maintain shape is the epimysium's role.\n- **(C)** Dividing the muscle into fascicles is the perimysium's role.\n- **(D)** The dense irregular connective tissue sheath around the whole muscle is the epimysium.\n- **(E)** Attaching skin to muscle is the role of superficial fascia, not endomysium."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The endomysium is a thin layer of collagen and reticular fibres encasing each individual muscle fibre and containing the extracellular fluid that supports it.\n\n**Why the other options are wrong:**\n- **(A)** The dense irregular connective tissue sheath around the whole muscle is the epimysium.\n- **(B)** Wrapping the whole muscle to maintain shape is the epimysium's role.\n- **(C)** Dividing the muscle into fascicles is the perimysium's role.\n- **(D)** Attaching skin to muscle is the role of superficial fascia, not endomysium."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1808,14 +1808,14 @@
           "question": {
             "stem": "A student points to the large, rounded muscle capping the shoulder and states that it is the primary abductor of the arm. Based on its shape-derived name, this muscle is the:",
             "options": [
-              "Orbicularis",
-              "Deltoid",
               "Latissimus dorsi",
-              "Gluteus maximus",
-              "Rectus femoris"
+              "Orbicularis",
+              "Rectus femoris",
+              "Deltoid",
+              "Gluteus maximus"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The deltoid is named for the triangular Greek letter delta, caps the shoulder, and is the major abductor of the arm.\n\n**Why the other options are wrong:**\n- **(A)** Orbicularis muscles form rings (e.g., around the eye), not the shoulder cap.\n- **(C)** The latissimus dorsi is a broad muscle of the lower back, not the shoulder cap.\n- **(D)** The gluteus maximus is in the buttocks.\n- **(E)** The rectus femoris lies along the anterior thigh, not the shoulder."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The deltoid is named for the triangular Greek letter delta, caps the shoulder, and is the major abductor of the arm.\n\n**Why the other options are wrong:**\n- **(A)** The latissimus dorsi is a broad muscle of the lower back, not the shoulder cap.\n- **(B)** Orbicularis muscles form rings (e.g., around the eye), not the shoulder cap.\n- **(C)** The rectus femoris lies along the anterior thigh, not the shoulder.\n- **(E)** The gluteus maximus is in the buttocks."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1825,14 +1825,14 @@
           "question": {
             "stem": "Within a single skeletal muscle fibre, which statement correctly relates the sarcomere to the myofibril?",
             "options": [
-              "A myofibril is a single sarcomere, and thousands of myofibrils make up one sarcomere",
               "Sarcomeres are arranged end-to-end within a myofibril, and hundreds to thousands of myofibrils fill one fibre",
-              "The sarcomere surrounds many myofibrils as a connective tissue sheath",
               "Myofibrils store calcium while sarcomeres transmit action potentials",
+              "A myofibril is a single sarcomere, and thousands of myofibrils make up one sarcomere",
+              "The sarcomere surrounds many myofibrils as a connective tissue sheath",
               "Each fibre contains exactly one myofibril made of one sarcomere"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Sarcomeres are the functional units arranged in sequence along a myofibril, and hundreds to thousands of myofibrils are packed side by side within one muscle fibre.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the hierarchy; sarcomeres compose myofibrils, not the other way around.\n- **(C)** The sarcomere is intracellular contractile machinery, not a connective tissue sheath.\n- **(D)** Calcium storage is the sarcoplasmic reticulum's role and action potentials travel along the sarcolemma.\n- **(E)** A fibre contains many myofibrils, each with many sarcomeres."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Sarcomeres are the functional units arranged in sequence along a myofibril, and hundreds to thousands of myofibrils are packed side by side within one muscle fibre.\n\n**Why the other options are wrong:**\n- **(B)** Calcium storage is the sarcoplasmic reticulum's role and action potentials travel along the sarcolemma.\n- **(C)** This reverses the hierarchy; sarcomeres compose myofibrils, not the other way around.\n- **(D)** The sarcomere is intracellular contractile machinery, not a connective tissue sheath.\n- **(E)** A fibre contains many myofibrils, each with many sarcomeres."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1844,12 +1844,12 @@
             "options": [
               "The mastoid process is one of the origins",
               "The sternum and clavicle are origins, and the mastoid process is the insertion",
-              "The muscle has three origins, one for each named part",
               "The insertion is always the first part named",
+              "The muscle has three origins, one for each named part",
               "The muscle acts only on the clavicle"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** By convention the origin is named first, so 'sterno-' and 'cleido-' are the origins (sternum and clavicle) and '-mastoid' is the insertion (mastoid process).\n\n**Why the other options are wrong:**\n- **(A)** The mastoid process is the insertion, named last, not an origin.\n- **(C)** The muscle has two named origin sites (sternum and clavicle), not three.\n- **(D)** The origin, not the insertion, is named first.\n- **(E)** The muscle moves the head at its mastoid insertion, not solely acting on the clavicle."
+            "explanation": "**Why (B) is correct:** By convention the origin is named first, so 'sterno-' and 'cleido-' are the origins (sternum and clavicle) and '-mastoid' is the insertion (mastoid process).\n\n**Why the other options are wrong:**\n- **(A)** The mastoid process is the insertion, named last, not an origin.\n- **(C)** The origin, not the insertion, is named first.\n- **(D)** The muscle has two named origin sites (sternum and clavicle), not three.\n- **(E)** The muscle moves the head at its mastoid insertion, not solely acting on the clavicle."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1859,14 +1859,14 @@
           "question": {
             "stem": "A histologist examines an unlabeled muscle sample and finds striated fibres, each with a single central nucleus, that are physically and electrically connected to one another. This combination best fits which muscle type?",
             "options": [
-              "Skeletal muscle",
-              "Cardiac muscle",
               "Smooth muscle",
+              "Cardiac muscle",
+              "Skeletal muscle",
               "Both skeletal and smooth muscle",
               "None of the above"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Cardiac muscle is striated, is usually uninucleated, and is physically and electrically coupled so the heart contracts as one unit (a syncytium).\n\n**Why the other options are wrong:**\n- **(A)** Skeletal muscle is striated but multinucleated and is not electrically coupled cell-to-cell.\n- **(C)** Smooth muscle is uninucleated but non-striated.\n- **(D)** Neither skeletal nor smooth muscle matches all three features together.\n- **(E)** Cardiac muscle does match, so this is incorrect."
+            "explanation": "**Why (B) is correct:** Cardiac muscle is striated, is usually uninucleated, and is physically and electrically coupled so the heart contracts as one unit (a syncytium).\n\n**Why the other options are wrong:**\n- **(A)** Smooth muscle is uninucleated but non-striated.\n- **(C)** Skeletal muscle is striated but multinucleated and is not electrically coupled cell-to-cell.\n- **(D)** Neither skeletal nor smooth muscle matches all three features together.\n- **(E)** Cardiac muscle does match, so this is incorrect."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1877,13 +1877,13 @@
             "stem": "A student invents the nonsense muscle name 'biceps femoris brevis anterior.' Breaking down the roots, which interpretation is most consistent with the terminology of muscle naming?",
             "options": [
               "A short, forward-lying muscle with two origins associated with the femur",
+              "A muscle named only for its triangular shape",
               "A long muscle with three origins located on the back",
-              "A ring-shaped muscle located along the midline",
               "A large muscle with a single origin on the humerus",
-              "A muscle named only for its triangular shape"
+              "A ring-shaped muscle located along the midline"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** 'Bi-' = two origins, 'femoris' = associated with the femur, 'brevis' = short, and 'anterior' = forward-lying, giving a short forward two-origin femoral muscle.\n\n**Why the other options are wrong:**\n- **(B)** 'Brevis' means short (not long), 'bi-' means two (not three) origins, and 'anterior' means forward (not back).\n- **(C)** No root in the name means ring-shaped or midline; those would be 'orbicularis' and 'medialis.'\n- **(D)** 'Bi-' indicates two origins, not one, and the name references the femur, not the humerus.\n- **(E)** No shape root (like deltoid) appears in the name."
+            "explanation": "**Why (A) is correct:** 'Bi-' = two origins, 'femoris' = associated with the femur, 'brevis' = short, and 'anterior' = forward-lying, giving a short forward two-origin femoral muscle.\n\n**Why the other options are wrong:**\n- **(B)** No shape root (like deltoid) appears in the name.\n- **(C)** 'Brevis' means short (not long), 'bi-' means two (not three) origins, and 'anterior' means forward (not back).\n- **(D)** 'Bi-' indicates two origins, not one, and the name references the femur, not the humerus.\n- **(E)** No root in the name means ring-shaped or midline; those would be 'orbicularis' and 'medialis.'"
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1894,13 +1894,13 @@
             "stem": "In the sarcomere, actin and myosin play distinct roles. Which statement correctly identifies a component and its function or feature?",
             "options": [
               "Myosin forms the thin filament anchored to the Z-discs",
-              "Actin forms the thin filament and is anchored at the Z-discs",
+              "Actin is the thick filament with heads projecting toward the Z-discs",
               "Troponin and tropomyosin are the thick filaments of the sarcomere",
               "Myosin is anchored at the Z-discs while actin projects from the center",
-              "Actin is the thick filament with heads projecting toward the Z-discs"
+              "Actin forms the thin filament and is anchored at the Z-discs"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Actin is the thinner myofilament and is anchored to the Z-discs at the borders of each sarcomere.\n\n**Why the other options are wrong:**\n- **(A)** Myosin is the thick filament, not the thin filament anchored to Z-discs.\n- **(C)** Troponin and tropomyosin are regulatory proteins associated with actin, not thick filaments.\n- **(D)** Actin (thin) is anchored at the Z-discs; myosin projects from the center.\n- **(E)** Actin is the thin filament; the heads belong to the thick myosin filament."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Actin is the thinner myofilament and is anchored to the Z-discs at the borders of each sarcomere.\n\n**Why the other options are wrong:**\n- **(A)** Myosin is the thick filament, not the thin filament anchored to Z-discs.\n- **(B)** Actin is the thin filament; the heads belong to the thick myosin filament.\n- **(C)** Troponin and tropomyosin are regulatory proteins associated with actin, not thick filaments.\n- **(D)** Actin (thin) is anchored at the Z-discs; myosin projects from the center."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1911,13 +1911,13 @@
             "stem": "A muscle is named 'vastus lateralis' and its partner is named 'vastus medialis.' What does comparing their location-based names tell you about their positions on the thigh?",
             "options": [
               "The lateralis lies along the midline and the medialis lies away from it",
+              "The names describe their shape rather than their position",
               "The lateralis lies away from the midline and the medialis lies along the midline",
               "Both muscles lie posterior to the femur",
-              "The lateralis is larger and the medialis is smaller",
-              "The names describe their shape rather than their position"
+              "The lateralis is larger and the medialis is smaller"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** 'Lateralis' indicates a position away from the midline, while 'medialis' indicates a position along (toward) the midline.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the meanings of lateralis and medialis.\n- **(C)** These terms describe medial/lateral position, not anterior/posterior placement.\n- **(D)** 'Lateralis' and 'medialis' denote position, not relative size (that would be maximus/minimus).\n- **(E)** These roots describe location relative to the midline, not shape."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** 'Lateralis' indicates a position away from the midline, while 'medialis' indicates a position along (toward) the midline.\n\n**Why the other options are wrong:**\n- **(A)** This reverses the meanings of lateralis and medialis.\n- **(B)** These roots describe location relative to the midline, not shape.\n- **(D)** These terms describe medial/lateral position, not anterior/posterior placement.\n- **(E)** 'Lateralis' and 'medialis' denote position, not relative size (that would be maximus/minimus)."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"

@@ -9,14 +9,14 @@
           "question": {
             "stem": "Which type of fluid acts as a lubricant at synovial joints in your body?",
             "options": [
-              "Mucus",
-              "Synovial fluid",
               "Pleural fluid",
+              "Plasma",
+              "Mucus",
               "Cerebrospinal fluid",
-              "Plasma"
+              "Synovial fluid"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Synovial fluid is the thick fluid that lubricates synovial joints, allowing them to move smoothly.\n\n**Why the other options are wrong:**\n- **(A)** Mucus lubricates the digestive tract and other surfaces, not joints.\n- **(C)** Pleural fluid allows the lungs to expand and recoil without friction.\n- **(D)** Cerebrospinal fluid cushions the central nervous system.\n- **(E)** Plasma is the fluid portion of blood, not a joint lubricant."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Synovial fluid is the thick fluid that lubricates synovial joints, allowing them to move smoothly.\n\n**Why the other options are wrong:**\n- **(A)** Pleural fluid allows the lungs to expand and recoil without friction.\n- **(B)** Plasma is the fluid portion of blood, not a joint lubricant.\n- **(C)** Mucus lubricates the digestive tract and other surfaces, not joints.\n- **(D)** Cerebrospinal fluid cushions the central nervous system."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -26,14 +26,14 @@
           "question": {
             "stem": "Which of the following is the single largest water-containing compartment in the body?",
             "options": [
-              "Interstitial fluid",
               "Plasma",
+              "Cerebrospinal fluid",
               "Intracellular fluid",
-              "Lymph",
-              "Cerebrospinal fluid"
+              "Interstitial fluid",
+              "Lymph"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Intracellular fluid makes up about 55% of the body's total water, more than any other compartment.\n\n**Why the other options are wrong:**\n- **(A)** Interstitial fluid is the largest portion of extracellular fluid but is smaller than intracellular fluid overall.\n- **(B)** Plasma is only about 16% of the extracellular fluid.\n- **(D)** Lymph is one of the minor extracellular fluids.\n- **(E)** Cerebrospinal fluid is one of the minor extracellular fluids."
+            "explanation": "**Why (C) is correct:** Intracellular fluid makes up about 55% of the body's total water, more than any other compartment.\n\n**Why the other options are wrong:**\n- **(A)** Plasma is only about 16% of the extracellular fluid.\n- **(B)** Cerebrospinal fluid is one of the minor extracellular fluids.\n- **(D)** Interstitial fluid is the largest portion of extracellular fluid but is smaller than intracellular fluid overall.\n- **(E)** Lymph is one of the minor extracellular fluids."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -43,14 +43,14 @@
           "question": {
             "stem": "Which of the following is a function performed by ions (electrolytes) in the body?",
             "options": [
-              "Serving as the primary source of ATP",
-              "Assisting in the transmission of electrical impulses along cell membranes",
-              "Acting as the solvent in body fluids",
+              "Providing the main lubricant in synovial joints",
               "Forming the covalent backbone of water molecules",
-              "Providing the main lubricant in synovial joints"
+              "Serving as the primary source of ATP",
+              "Acting as the solvent in body fluids",
+              "Assisting in the transmission of electrical impulses along cell membranes"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Ions such as sodium and potassium assist in transmitting electrical impulses along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(A)** ATP is a nucleotide energy carrier, not produced by ions themselves.\n- **(C)** Water, not ions, is the solvent in body fluids.\n- **(D)** Water molecules are formed by covalent bonds between hydrogen and oxygen, not ions.\n- **(E)** Synovial fluid, based on water, is the joint lubricant, not ions."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Ions such as sodium and potassium assist in transmitting electrical impulses along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(A)** Synovial fluid, based on water, is the joint lubricant, not ions.\n- **(B)** Water molecules are formed by covalent bonds between hydrogen and oxygen, not ions.\n- **(C)** ATP is a nucleotide energy carrier, not produced by ions themselves.\n- **(D)** Water, not ions, is the solvent in body fluids."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -60,14 +60,14 @@
           "question": {
             "stem": "In a saltwater solution, water is best described as the:",
             "options": [
-              "Solute",
               "Solvent",
+              "Solute",
               "Ion",
               "Buffer",
               "Electrolyte"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The solvent is the substance that dissolves the solute; water dissolves salt, so water is the solvent.\n\n**Why the other options are wrong:**\n- **(A)** The solute is the dissolved substance (salt), not water.\n- **(C)** An ion is a charged atom, such as Na+ or Cl-, not water.\n- **(D)** A buffer resists pH change and is not the same as the solvent.\n- **(E)** An electrolyte is an ion-containing solution, not the solvent itself."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The solvent is the substance that dissolves the solute; water dissolves salt, so water is the solvent.\n\n**Why the other options are wrong:**\n- **(B)** The solute is the dissolved substance (salt), not water.\n- **(C)** An ion is a charged atom, such as Na+ or Cl-, not water.\n- **(D)** A buffer resists pH change and is not the same as the solvent.\n- **(E)** An electrolyte is an ion-containing solution, not the solvent itself."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -77,14 +77,14 @@
           "question": {
             "stem": "Water helps regulate body temperature primarily by functioning as a:",
             "options": [
-              "Buffer",
-              "Solute",
               "Heat sink",
+              "Electrolyte",
+              "Buffer",
               "Conjugate base",
-              "Electrolyte"
+              "Solute"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Water acts as a heat sink, absorbing heat from metabolic reactions and transporting it to the body surface without a large rise in its own temperature.\n\n**Why the other options are wrong:**\n- **(A)** A buffer resists changes in pH, not temperature.\n- **(B)** A solute is a dissolved substance, unrelated to temperature regulation as a role of water.\n- **(D)** A conjugate base is part of a buffer system for pH, not heat regulation.\n- **(E)** An electrolyte is an ion-containing solution, not water's heat-regulating role."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Water acts as a heat sink, absorbing heat from metabolic reactions and transporting it to the body surface without a large rise in its own temperature.\n\n**Why the other options are wrong:**\n- **(B)** An electrolyte is an ion-containing solution, not water's heat-regulating role.\n- **(C)** A buffer resists changes in pH, not temperature.\n- **(D)** A conjugate base is part of a buffer system for pH, not heat regulation.\n- **(E)** A solute is a dissolved substance, unrelated to temperature regulation as a role of water."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -94,14 +94,14 @@
           "question": {
             "stem": "A buffer is best defined as a solution of a:",
             "options": [
-              "Strong acid and a strong base",
+              "Salt and pure water",
               "Weak acid and its conjugate base",
               "Solvent and its solute",
-              "Salt and pure water",
+              "Strong acid and a strong base",
               "Cation and its matching anion"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A buffer is a solution of a weak acid and its conjugate base, which allows it to resist sudden changes in pH.\n\n**Why the other options are wrong:**\n- **(A)** A strong acid and strong base fully dissociate and would not buffer effectively.\n- **(C)** A solvent and solute simply describe a solution, not a buffer.\n- **(D)** Salt in pure water forms a neutral solution without buffering capacity.\n- **(E)** A cation and anion pair describe a salt, not a buffer system."
+            "explanation": "**Why (B) is correct:** A buffer is a solution of a weak acid and its conjugate base, which allows it to resist sudden changes in pH.\n\n**Why the other options are wrong:**\n- **(A)** Salt in pure water forms a neutral solution without buffering capacity.\n- **(C)** A solvent and solute simply describe a solution, not a buffer.\n- **(D)** A strong acid and strong base fully dissociate and would not buffer effectively.\n- **(E)** A cation and anion pair describe a salt, not a buffer system."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -111,14 +111,14 @@
           "question": {
             "stem": "According to the pH scale, a solution with a pH of 4 compared to a solution with a pH of 5 has a hydrogen ion concentration that is:",
             "options": [
-              "Half as high",
-              "The same",
               "10 times higher",
+              "5 times lower",
               "100 times higher",
-              "5 times lower"
+              "Half as high",
+              "The same"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Each pH unit represents a tenfold change, so a pH 4 solution has 10 times the H+ concentration of a pH 5 solution.\n\n**Why the other options are wrong:**\n- **(A)** Lower pH means more, not less, H+.\n- **(B)** Different pH values have different H+ concentrations.\n- **(D)** A 100-fold difference would correspond to a two-unit pH change.\n- **(E)** Lower pH means higher H+, not lower."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Each pH unit represents a tenfold change, so a pH 4 solution has 10 times the H+ concentration of a pH 5 solution.\n\n**Why the other options are wrong:**\n- **(B)** Lower pH means higher H+, not lower.\n- **(C)** A 100-fold difference would correspond to a two-unit pH change.\n- **(D)** Lower pH means more, not less, H+.\n- **(E)** Different pH values have different H+ concentrations."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -128,14 +128,14 @@
           "question": {
             "stem": "Which ion is present at higher concentration inside cells (intracellular fluid) than in the extracellular fluid?",
             "options": [
-              "Sodium (Na+)",
               "Chloride (Cl-)",
-              "Potassium (K+)",
               "Bicarbonate (HCO3-)",
+              "Sodium (Na+)",
+              "Potassium (K+)",
               "Calcium (Ca2+)"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Intracellular fluid has high concentrations of potassium (and phosphate), whereas extracellular fluid is high in sodium and chloride.\n\n**Why the other options are wrong:**\n- **(A)** Sodium is concentrated in the extracellular fluid.\n- **(B)** Chloride is concentrated in the extracellular fluid.\n- **(D)** Bicarbonate is a major extracellular anion.\n- **(E)** Calcium is largely stored in bone and not the defining intracellular ion here."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Intracellular fluid has high concentrations of potassium (and phosphate), whereas extracellular fluid is high in sodium and chloride.\n\n**Why the other options are wrong:**\n- **(A)** Chloride is concentrated in the extracellular fluid.\n- **(B)** Bicarbonate is a major extracellular anion.\n- **(C)** Sodium is concentrated in the extracellular fluid.\n- **(E)** Calcium is largely stored in bone and not the defining intracellular ion here."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -146,13 +146,13 @@
             "stem": "Which of the following correctly pairs a body fluid compartment with its location?",
             "options": [
               "Intracellular fluid — the fluid between cells",
+              "Extracellular fluid — the fluid found only inside cells",
               "Interstitial fluid — the fluid within cells",
-              "Plasma — the fluid portion of blood",
               "Cytosol — the fluid found in blood vessels",
-              "Extracellular fluid — the fluid found only inside cells"
+              "Plasma — the fluid portion of blood"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Plasma is the fluid portion of blood and is a component of the extracellular fluid.\n\n**Why the other options are wrong:**\n- **(A)** Intracellular fluid is inside cells, not between them.\n- **(B)** Interstitial fluid surrounds cells; it is not inside them.\n- **(D)** Cytosol is the fluid inside cells, not in blood vessels.\n- **(E)** Extracellular fluid is found outside cells, not inside them."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Plasma is the fluid portion of blood and is a component of the extracellular fluid.\n\n**Why the other options are wrong:**\n- **(A)** Intracellular fluid is inside cells, not between them.\n- **(B)** Extracellular fluid is found outside cells, not inside them.\n- **(C)** Interstitial fluid surrounds cells; it is not inside them.\n- **(D)** Cytosol is the fluid inside cells, not in blood vessels."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -162,14 +162,14 @@
           "question": {
             "stem": "During dehydration synthesis (condensation), what is released as a byproduct as two molecules become joined by a covalent bond?",
             "options": [
+              "A phosphate group",
               "A hydrogen ion",
               "A molecule of water",
-              "A hydroxyl ion only",
               "A molecule of ATP",
-              "A phosphate group"
+              "A hydroxyl ion only"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** In dehydration synthesis, one reactant gives up a hydrogen and the other a hydroxyl group, which combine to release a molecule of water as the covalent bond forms.\n\n**Why the other options are wrong:**\n- **(A)** A single hydrogen ion alone is not the released product; the hydrogen and hydroxyl combine into water.\n- **(C)** The hydroxyl combines with hydrogen to form water rather than being released alone.\n- **(D)** ATP is not a byproduct of dehydration synthesis.\n- **(E)** A phosphate group is not released in a general dehydration synthesis reaction."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** In dehydration synthesis, one reactant gives up a hydrogen and the other a hydroxyl group, which combine to release a molecule of water as the covalent bond forms.\n\n**Why the other options are wrong:**\n- **(A)** A phosphate group is not released in a general dehydration synthesis reaction.\n- **(B)** A single hydrogen ion alone is not the released product; the hydrogen and hydroxyl combine into water.\n- **(D)** ATP is not a byproduct of dehydration synthesis.\n- **(E)** The hydroxyl combines with hydrogen to form water rather than being released alone."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -180,13 +180,13 @@
             "stem": "In a saltwater solution where sodium and chloride ions are dissolved in water, which component is acting as the solvent?",
             "options": [
               "The sodium ions",
-              "The chloride ions",
               "The water",
               "The dissolved gases",
-              "The combined salt crystal"
+              "The combined salt crystal",
+              "The chloride ions"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** In a solution, the solvent is the substance that dissolves the solute; here water dissolves the ions, so water is the solvent.\n\n**Why the other options are wrong:**\n- **(A)** Sodium ions are a solute, the substance dissolved in the solvent.\n- **(B)** Chloride ions are a solute, not the dissolving medium.\n- **(D)** Dissolved gases are not the dissolving medium in this example.\n- **(E)** The salt crystal dissociates into solutes; it is not the solvent."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** In a solution, the solvent is the substance that dissolves the solute; here water dissolves the ions, so water is the solvent.\n\n**Why the other options are wrong:**\n- **(A)** Sodium ions are a solute, the substance dissolved in the solvent.\n- **(C)** Dissolved gases are not the dissolving medium in this example.\n- **(D)** The salt crystal dissociates into solutes; it is not the solvent.\n- **(E)** Chloride ions are a solute, not the dissolving medium."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -196,14 +196,14 @@
           "question": {
             "stem": "What distinguishes a strong acid from a weak acid in aqueous solution?",
             "options": [
+              "A strong acid contains no hydrogen while a weak acid contains hydrogen",
               "A strong acid releases hydroxyl ions while a weak acid releases hydrogen ions",
-              "A strong acid ionizes completely, releasing all of its H+, while a weak acid does not ionize completely",
-              "A strong acid has a pH above 7 while a weak acid has a pH below 7",
               "A strong acid accepts protons while a weak acid donates protons",
-              "A strong acid contains no hydrogen while a weak acid contains hydrogen"
+              "A strong acid ionizes completely, releasing all of its H+, while a weak acid does not ionize completely",
+              "A strong acid has a pH above 7 while a weak acid has a pH below 7"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Strong acids ionize completely and release all their H+ (e.g., HCl), whereas weak acids only partially ionize (e.g., acetic acid).\n\n**Why the other options are wrong:**\n- **(A)** Both strong and weak acids release hydrogen ions; hydroxyl ions come from bases.\n- **(C)** Both acids are below pH 7; strength refers to degree of ionization, not being above 7.\n- **(D)** Acids donate protons; accepting protons describes bases.\n- **(E)** Both acids contain hydrogen that they release as H+."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Strong acids ionize completely and release all their H+ (e.g., HCl), whereas weak acids only partially ionize (e.g., acetic acid).\n\n**Why the other options are wrong:**\n- **(A)** Both acids contain hydrogen that they release as H+.\n- **(B)** Both strong and weak acids release hydrogen ions; hydroxyl ions come from bases.\n- **(C)** Acids donate protons; accepting protons describes bases.\n- **(E)** Both acids are below pH 7; strength refers to degree of ionization, not being above 7."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -213,14 +213,14 @@
           "question": {
             "stem": "According to the unit, why is a positively charged hydrogen ion (H+) simply referred to as a \"proton\"?",
             "options": [
-              "Because it has gained an extra electron",
+              "Because it carries a negative charge like an electron",
+              "Because it is the smallest neutron in the body",
               "Because a hydrogen atom has one proton and one electron, so losing the electron leaves only a proton",
               "Because it contains one proton and one neutron",
-              "Because it is the smallest neutron in the body",
-              "Because it carries a negative charge like an electron"
+              "Because it has gained an extra electron"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Hydrogen's common isotope has one proton and one electron; when it loses the electron to become H+, only the single proton remains.\n\n**Why the other options are wrong:**\n- **(A)** H+ has lost, not gained, its electron.\n- **(C)** The most common hydrogen isotope has no neutrons.\n- **(D)** H+ is a proton, not a neutron.\n- **(E)** H+ carries a positive charge, not a negative one."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Hydrogen's common isotope has one proton and one electron; when it loses the electron to become H+, only the single proton remains.\n\n**Why the other options are wrong:**\n- **(A)** H+ carries a positive charge, not a negative one.\n- **(B)** H+ is a proton, not a neutron.\n- **(D)** The most common hydrogen isotope has no neutrons.\n- **(E)** H+ has lost, not gained, its electron."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -230,14 +230,14 @@
           "question": {
             "stem": "Which of the following is a function of ions (electrolytes) in the body as described in this unit?",
             "options": [
-              "Serving as the primary genetic material",
-              "Assisting in the transmission of electrical impulses in neurons and muscles",
+              "Producing water during hydrolysis reactions",
               "Directly breaking hydrogen bonds to cool the body",
+              "Assisting in the transmission of electrical impulses in neurons and muscles",
               "Acting as the main solvent for body fluids",
-              "Producing water during hydrolysis reactions"
+              "Serving as the primary genetic material"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Ions such as sodium and potassium assist in transmitting electrical impulses along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(A)** Genetic material is nucleic acid, not a role of ions listed here.\n- **(C)** Cooling the body via hydrogen bonds is a function of water, not ions.\n- **(D)** Water, not ions, is the main solvent of body fluids.\n- **(E)** Water is a product of dehydration synthesis and a reactant in hydrolysis, not a role of ions."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Ions such as sodium and potassium assist in transmitting electrical impulses along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(A)** Water is a product of dehydration synthesis and a reactant in hydrolysis, not a role of ions.\n- **(B)** Cooling the body via hydrogen bonds is a function of water, not ions.\n- **(D)** Water, not ions, is the main solvent of body fluids.\n- **(E)** Genetic material is nucleic acid, not a role of ions listed here."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -247,14 +247,14 @@
           "question": {
             "stem": "Which fluid compartment holds the largest proportion of water in the human body?",
             "options": [
-              "Plasma",
-              "Interstitial fluid",
               "Intracellular fluid",
+              "Lymph",
+              "Interstitial fluid",
               "Cerebrospinal fluid",
-              "Lymph"
+              "Plasma"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Intracellular fluid makes up about 55% of the body's water, the largest single compartment.\n\n**Why the other options are wrong:**\n- **(A)** Plasma is only about 16% of extracellular fluid (~7% of total water).\n- **(B)** Interstitial fluid is the largest extracellular portion but still less than intracellular fluid overall.\n- **(D)** Cerebrospinal fluid is a minor extracellular fluid.\n- **(E)** Lymph is a minor component of extracellular fluid."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Intracellular fluid makes up about 55% of the body's water, the largest single compartment.\n\n**Why the other options are wrong:**\n- **(B)** Lymph is a minor component of extracellular fluid.\n- **(C)** Interstitial fluid is the largest extracellular portion but still less than intracellular fluid overall.\n- **(D)** Cerebrospinal fluid is a minor extracellular fluid.\n- **(E)** Plasma is only about 16% of extracellular fluid (~7% of total water)."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -266,12 +266,12 @@
             "options": [
               "Passive leaking of ions through membrane pores",
               "Sodium-potassium pumps powered by ATP",
-              "Dehydration synthesis reactions",
               "Buffering by bicarbonate ions",
+              "Dehydration synthesis reactions",
               "Evaporation of water at the skin surface"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Sodium-potassium pumps use ATP energy to pump sodium out of and potassium into cells, maintaining these gradients.\n\n**Why the other options are wrong:**\n- **(A)** Leaking works against the gradient and would erode it, not maintain it.\n- **(C)** Dehydration synthesis is a chemical reaction unrelated to ion pumping.\n- **(D)** Bicarbonate buffering regulates pH, not sodium/potassium gradients.\n- **(E)** Evaporation is a cooling mechanism, not an ion-transport mechanism."
+            "explanation": "**Why (B) is correct:** Sodium-potassium pumps use ATP energy to pump sodium out of and potassium into cells, maintaining these gradients.\n\n**Why the other options are wrong:**\n- **(A)** Leaking works against the gradient and would erode it, not maintain it.\n- **(C)** Bicarbonate buffering regulates pH, not sodium/potassium gradients.\n- **(D)** Dehydration synthesis is a chemical reaction unrelated to ion pumping.\n- **(E)** Evaporation is a cooling mechanism, not an ion-transport mechanism."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -281,14 +281,14 @@
           "question": {
             "stem": "Compared with intracellular fluid, the extracellular fluid (plasma and interstitial fluid) is characterized by:",
             "options": [
-              "High concentrations of potassium and phosphate",
               "High concentrations of sodium and chloride",
-              "Higher magnesium than any other compartment",
               "A complete absence of all ions",
-              "Identical composition to intracellular fluid"
+              "High concentrations of potassium and phosphate",
+              "Identical composition to intracellular fluid",
+              "Higher magnesium than any other compartment"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Extracellular fluids contain high concentrations of sodium and chloride ions.\n\n**Why the other options are wrong:**\n- **(A)** Potassium and phosphate are elevated inside cells (intracellular fluid).\n- **(C)** Magnesium is elevated in intracellular fluid, not extracellular.\n- **(D)** Extracellular fluid is rich in ions, not free of them.\n- **(E)** Extracellular and intracellular fluid compositions differ significantly."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** Extracellular fluids contain high concentrations of sodium and chloride ions.\n\n**Why the other options are wrong:**\n- **(B)** Extracellular fluid is rich in ions, not free of them.\n- **(C)** Potassium and phosphate are elevated inside cells (intracellular fluid).\n- **(D)** Extracellular and intracellular fluid compositions differ significantly.\n- **(E)** Magnesium is elevated in intracellular fluid, not extracellular."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -298,14 +298,14 @@
           "question": {
             "stem": "A buffer is best described as:",
             "options": [
-              "A strong acid that fully ionizes in water",
-              "A solution of a weak acid and its conjugate base that resists sudden pH changes",
-              "A strong base that releases all its hydroxyl ions",
               "A pure water solution at pH 7",
-              "An enzyme that produces hydrogen ions"
+              "A solution of a weak acid and its conjugate base that resists sudden pH changes",
+              "An enzyme that produces hydrogen ions",
+              "A strong base that releases all its hydroxyl ions",
+              "A strong acid that fully ionizes in water"
             ],
             "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A buffer is a solution of a weak acid and its conjugate base that resists sudden changes in acidity or alkalinity.\n\n**Why the other options are wrong:**\n- **(A)** A strong acid does not resist pH change; it drives it.\n- **(C)** A strong base is not a buffer system.\n- **(D)** Pure water is not a buffer and cannot resist pH shifts.\n- **(E)** Enzymes are proteins, not defined here as buffers producing H+."
+            "explanation": "**Why (B) is correct:** A buffer is a solution of a weak acid and its conjugate base that resists sudden changes in acidity or alkalinity.\n\n**Why the other options are wrong:**\n- **(A)** Pure water is not a buffer and cannot resist pH shifts.\n- **(C)** Enzymes are proteins, not defined here as buffers producing H+.\n- **(D)** A strong base is not a buffer system.\n- **(E)** A strong acid does not resist pH change; it drives it."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -316,13 +316,13 @@
             "stem": "Which of the following is described in this unit as a function of water in the body?",
             "options": [
               "Storing genetic information",
-              "Acting as a heat sink that absorbs heat without a large temperature increase",
+              "Directly generating electrical impulses in neurons",
               "Catalyzing all metabolic reactions as an enzyme",
-              "Serving as the primary building block of bone",
-              "Directly generating electrical impulses in neurons"
+              "Acting as a heat sink that absorbs heat without a large temperature increase",
+              "Serving as the primary building block of bone"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Water acts as a heat sink, absorbing and dissipating heat without experiencing a large temperature increase.\n\n**Why the other options are wrong:**\n- **(A)** Genetic information is stored in nucleic acids, not water.\n- **(C)** Enzymes are proteins; water is not an enzyme.\n- **(D)** Bone is strengthened by minerals like calcium and phosphate, not water.\n- **(E)** Ions, not water itself, drive electrical impulses."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Water acts as a heat sink, absorbing and dissipating heat without experiencing a large temperature increase.\n\n**Why the other options are wrong:**\n- **(A)** Genetic information is stored in nucleic acids, not water.\n- **(B)** Ions, not water itself, drive electrical impulses.\n- **(C)** Enzymes are proteins; water is not an enzyme.\n- **(E)** Bone is strengthened by minerals like calcium and phosphate, not water."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -332,14 +332,14 @@
           "question": {
             "stem": "Which term refers specifically to the fluid portion of the blood?",
             "options": [
-              "Cytosol",
-              "Lymph",
-              "Plasma",
               "Synovial fluid",
-              "Interstitial fluid"
+              "Cytosol",
+              "Interstitial fluid",
+              "Lymph",
+              "Plasma"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Plasma is the fluid portion of the blood and a subdivision of extracellular fluid.\n\n**Why the other options are wrong:**\n- **(A)** Cytosol is the fluid portion inside cells (intracellular fluid).\n- **(B)** Lymph is excess interstitial fluid returning to the blood via lymphatic vessels.\n- **(D)** Synovial fluid lubricates joints, not the fluid of blood.\n- **(E)** Interstitial fluid surrounds cells outside the bloodstream."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Plasma is the fluid portion of the blood and a subdivision of extracellular fluid.\n\n**Why the other options are wrong:**\n- **(A)** Synovial fluid lubricates joints, not the fluid of blood.\n- **(B)** Cytosol is the fluid portion inside cells (intracellular fluid).\n- **(C)** Interstitial fluid surrounds cells outside the bloodstream.\n- **(D)** Lymph is excess interstitial fluid returning to the blood via lymphatic vessels."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -349,14 +349,14 @@
           "question": {
             "stem": "Which of the following is a function of ions (electrolytes) in the body?",
             "options": [
-              "Transmitting electrical impulses along neuron and muscle cell membranes",
               "Serving as the primary energy currency for cellular reactions",
-              "Carrying oxygen bound within red blood cells",
               "Forming the hydrogen bonds that make water a good heat sink",
-              "Splitting covalent bonds during dehydration synthesis"
+              "Splitting covalent bonds during dehydration synthesis",
+              "Carrying oxygen bound within red blood cells",
+              "Transmitting electrical impulses along neuron and muscle cell membranes"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Ions such as sodium and potassium assist in transmitting electrical impulses along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(B)** ATP, not ions, is the primary energy currency.\n- **(C)** Oxygen is carried by hemoglobin, a protein, not by ions themselves.\n- **(D)** Hydrogen bonds between water molecules give water its heat-sink property, not ions.\n- **(E)** Dehydration synthesis forms bonds and releases water; it is not a function of ions."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Ions such as sodium and potassium assist in transmitting electrical impulses along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(A)** ATP, not ions, is the primary energy currency.\n- **(B)** Hydrogen bonds between water molecules give water its heat-sink property, not ions.\n- **(C)** Dehydration synthesis forms bonds and releases water; it is not a function of ions.\n- **(D)** Oxygen is carried by hemoglobin, a protein, not by ions themselves."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -368,12 +368,12 @@
             "options": [
               "Interstitial fluid",
               "Plasma",
+              "Synovial fluid",
               "Intracellular fluid",
-              "Lymph",
-              "Synovial fluid"
+              "Lymph"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Intracellular fluid is the water found within cells and is the principal component of the cytosol/cytoplasm.\n\n**Why the other options are wrong:**\n- **(A)** Interstitial fluid surrounds cells and is extracellular.\n- **(B)** Plasma is the fluid portion of blood and is extracellular.\n- **(D)** Lymph is extracellular fluid returning to the blood via lymphatic vessels.\n- **(E)** Synovial fluid lubricates joints and is extracellular."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Intracellular fluid is the water found within cells and is the principal component of the cytosol/cytoplasm.\n\n**Why the other options are wrong:**\n- **(A)** Interstitial fluid surrounds cells and is extracellular.\n- **(B)** Plasma is the fluid portion of blood and is extracellular.\n- **(C)** Synovial fluid lubricates joints and is extracellular.\n- **(E)** Lymph is extracellular fluid returning to the blood via lymphatic vessels."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -384,13 +384,13 @@
             "stem": "During a hydrolysis reaction, what happens to a molecule of water and the bond between two monomers?",
             "options": [
               "Water is released as a byproduct as a new covalent bond forms",
-              "A water molecule is split and its parts break a covalent bond",
               "Water evaporates while a hydrogen bond forms",
+              "Water is consumed to build a larger polymer without breaking bonds",
               "A water molecule strengthens an existing ionic bond",
-              "Water is consumed to build a larger polymer without breaking bonds"
+              "A water molecule is split and its parts break a covalent bond"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** In hydrolysis, a water molecule is split into H and OH, which are added to break the covalent bond between two monomers.\n\n**Why the other options are wrong:**\n- **(A)** This describes dehydration synthesis, where water is released and a bond forms.\n- **(C)** Hydrolysis breaks a covalent bond, not a hydrogen bond, and involves no evaporation.\n- **(D)** Hydrolysis breaks a covalent bond; it does not strengthen ionic bonds.\n- **(E)** Hydrolysis breaks bonds rather than building larger polymers."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** In hydrolysis, a water molecule is split into H and OH, which are added to break the covalent bond between two monomers.\n\n**Why the other options are wrong:**\n- **(A)** This describes dehydration synthesis, where water is released and a bond forms.\n- **(B)** Hydrolysis breaks a covalent bond, not a hydrogen bond, and involves no evaporation.\n- **(C)** Hydrolysis breaks bonds rather than building larger polymers.\n- **(D)** Hydrolysis breaks a covalent bond; it does not strengthen ionic bonds."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -400,14 +400,14 @@
           "question": {
             "stem": "According to the definition given in this unit, an acid is a substance that:",
             "options": [
-              "Releases hydroxyl ions (OH–) in solution",
-              "Releases hydrogen ions (H+) in solution",
               "Accepts hydrogen ions (H+) from solution",
+              "Releases hydroxyl ions (OH–) in solution",
               "Has a pH greater than 7",
+              "Releases hydrogen ions (H+) in solution",
               "Does not dissociate in water"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** An acid is defined as a substance that releases hydrogen ions (H+, which are protons) in solution.\n\n**Why the other options are wrong:**\n- **(A)** Releasing hydroxyl ions describes a base.\n- **(C)** Accepting H+ describes a base.\n- **(D)** A pH greater than 7 is basic, not acidic.\n- **(E)** Acids do dissociate in water; strong acids dissociate completely."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** An acid is defined as a substance that releases hydrogen ions (H+, which are protons) in solution.\n\n**Why the other options are wrong:**\n- **(A)** Accepting H+ describes a base.\n- **(B)** Releasing hydroxyl ions describes a base.\n- **(C)** A pH greater than 7 is basic, not acidic.\n- **(E)** Acids do dissociate in water; strong acids dissociate completely."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -417,14 +417,14 @@
           "question": {
             "stem": "A buffer is best described as a solution of:",
             "options": [
-              "A strong acid and a strong base",
+              "A solvent with no dissolved solutes",
+              "Pure water and dissolved oxygen",
               "A weak acid and its conjugate base",
               "Two salts that fully dissociate",
-              "Pure water and dissolved oxygen",
-              "A solvent with no dissolved solutes"
+              "A strong acid and a strong base"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A buffer is a solution of a weak acid and its conjugate base that resists sudden changes in pH.\n\n**Why the other options are wrong:**\n- **(A)** Strong acids and bases dissociate completely and cannot buffer pH.\n- **(C)** Fully dissociating salts do not resist pH changes as a buffer does.\n- **(D)** Pure water with oxygen is not a buffer system.\n- **(E)** A solvent alone provides no buffering capacity."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** A buffer is a solution of a weak acid and its conjugate base that resists sudden changes in pH.\n\n**Why the other options are wrong:**\n- **(A)** A solvent alone provides no buffering capacity.\n- **(B)** Pure water with oxygen is not a buffer system.\n- **(D)** Fully dissociating salts do not resist pH changes as a buffer does.\n- **(E)** Strong acids and bases dissociate completely and cannot buffer pH."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -434,14 +434,14 @@
           "question": {
             "stem": "Which fluid compartment holds the largest proportion of the body's total water?",
             "options": [
-              "Plasma",
-              "Interstitial fluid",
+              "Lymph",
               "Intracellular fluid",
-              "Cerebrospinal fluid",
-              "Lymph"
+              "Interstitial fluid",
+              "Plasma",
+              "Cerebrospinal fluid"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Intracellular fluid makes up about 55% of total body water, the largest single compartment.\n\n**Why the other options are wrong:**\n- **(A)** Plasma is only about 7% of body water.\n- **(B)** Interstitial fluid is about 36% of body water, second largest but not the largest.\n- **(D)** Cerebrospinal fluid is a small fraction of extracellular fluid.\n- **(E)** Lymph is a minor extracellular fluid, not the largest compartment."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Intracellular fluid makes up about 55% of total body water, the largest single compartment.\n\n**Why the other options are wrong:**\n- **(A)** Lymph is a minor extracellular fluid, not the largest compartment.\n- **(C)** Interstitial fluid is about 36% of body water, second largest but not the largest.\n- **(D)** Plasma is only about 7% of body water.\n- **(E)** Cerebrospinal fluid is a small fraction of extracellular fluid."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -451,14 +451,14 @@
           "question": {
             "stem": "Which fluid lubricates the movement of synovial joints?",
             "options": [
-              "Pleural fluid",
-              "Cerebrospinal fluid",
-              "Synovial fluid",
               "Pericardial fluid",
-              "Plasma"
+              "Pleural fluid",
+              "Synovial fluid",
+              "Plasma",
+              "Cerebrospinal fluid"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Synovial fluid is the thick fluid that lubricates synovial joints.\n\n**Why the other options are wrong:**\n- **(A)** Pleural fluid lubricates the pleural membranes around the lungs.\n- **(B)** Cerebrospinal fluid cushions the brain and spinal cord.\n- **(D)** Pericardial fluid allows the heart to move without friction.\n- **(E)** Plasma is the fluid portion of blood, not a joint lubricant."
+            "explanation": "**Why (C) is correct:** Synovial fluid is the thick fluid that lubricates synovial joints.\n\n**Why the other options are wrong:**\n- **(A)** Pericardial fluid allows the heart to move without friction.\n- **(B)** Pleural fluid lubricates the pleural membranes around the lungs.\n- **(D)** Plasma is the fluid portion of blood, not a joint lubricant.\n- **(E)** Cerebrospinal fluid cushions the brain and spinal cord."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -468,14 +468,14 @@
           "question": {
             "stem": "Which of the following describes water's role as a heat sink in the body?",
             "options": [
-              "It absorbs heat from the core and helps transport it to peripheral tissues and skin",
-              "It chemically bonds with metabolic wastes to neutralize them",
-              "It donates protons to lower body pH",
+              "It cushions the developing fetus from physical trauma",
               "It provides the covalent bonds that store ATP energy",
-              "It cushions the developing fetus from physical trauma"
+              "It donates protons to lower body pH",
+              "It absorbs heat from the core and helps transport it to peripheral tissues and skin",
+              "It chemically bonds with metabolic wastes to neutralize them"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** As a heat sink, water in blood absorbs heat from the warm core and carries it to peripheral capillaries and skin for radiant and evaporative loss.\n\n**Why the other options are wrong:**\n- **(B)** Water does not chemically bond with wastes to neutralize them as its heat-sink role.\n- **(C)** Donating protons describes an acid, not water's heat-sink function.\n- **(D)** ATP energy is stored in its bonds, which is unrelated to water as a heat sink.\n- **(E)** Cushioning a fetus is water's protective/cushioning role, not its heat-sink role."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** As a heat sink, water in blood absorbs heat from the warm core and carries it to peripheral capillaries and skin for radiant and evaporative loss.\n\n**Why the other options are wrong:**\n- **(A)** Cushioning a fetus is water's protective/cushioning role, not its heat-sink role.\n- **(B)** ATP energy is stored in its bonds, which is unrelated to water as a heat sink.\n- **(C)** Donating protons describes an acid, not water's heat-sink function.\n- **(E)** Water does not chemically bond with wastes to neutralize them as its heat-sink role."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -485,14 +485,14 @@
           "question": {
             "stem": "What distinguishes a strong acid from a weak acid?",
             "options": [
-              "A strong acid releases hydroxyl ions while a weak acid releases hydrogen ions",
               "A strong acid ionizes completely while a weak acid does not release all of its H+",
-              "A strong acid has a pH above 7 while a weak acid has a pH below 7",
+              "A strong acid dissolves only in nonpolar solvents while a weak acid dissolves in water",
               "A strong acid contains a buffer while a weak acid does not",
-              "A strong acid dissolves only in nonpolar solvents while a weak acid dissolves in water"
+              "A strong acid releases hydroxyl ions while a weak acid releases hydrogen ions",
+              "A strong acid has a pH above 7 while a weak acid has a pH below 7"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A strong acid such as HCl ionizes completely, releasing all its H+, whereas a weak acid such as acetic acid does not release all of its hydrogen ions.\n\n**Why the other options are wrong:**\n- **(A)** Both acids release H+; releasing OH– describes bases.\n- **(C)** Both strong and weak acids have pH below 7; that is not the distinction.\n- **(D)** A buffer is a separate concept and does not define acid strength.\n- **(E)** Both acids dissolve in water; solvent polarity is not the distinguishing factor."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A strong acid such as HCl ionizes completely, releasing all its H+, whereas a weak acid such as acetic acid does not release all of its hydrogen ions.\n\n**Why the other options are wrong:**\n- **(B)** Both acids dissolve in water; solvent polarity is not the distinguishing factor.\n- **(C)** A buffer is a separate concept and does not define acid strength.\n- **(D)** Both acids release H+; releasing OH– describes bases.\n- **(E)** Both strong and weak acids have pH below 7; that is not the distinction."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -502,14 +502,14 @@
           "question": {
             "stem": "On the pH scale, a solution with a pH of 4 compared to a solution with a pH of 5 has:",
             "options": [
-              "Ten times higher H+ concentration",
-              "Ten times lower H+ concentration",
-              "The same H+ concentration",
               "One hundred times higher H+ concentration",
+              "Ten times higher H+ concentration",
+              "The same H+ concentration",
+              "Ten times lower H+ concentration",
               "Half the H+ concentration"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Each step down the pH scale represents a tenfold increase in H+ concentration, so pH 4 has ten times more H+ than pH 5.\n\n**Why the other options are wrong:**\n- **(B)** Lower pH means more, not less, H+.\n- **(C)** Different pH values necessarily have different H+ concentrations.\n- **(D)** A hundredfold difference would correspond to a two-unit pH change (e.g., pH 4 vs pH 6).\n- **(E)** Halving is not how the logarithmic pH scale works."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Each step down the pH scale represents a tenfold increase in H+ concentration, so pH 4 has ten times more H+ than pH 5.\n\n**Why the other options are wrong:**\n- **(A)** A hundredfold difference would correspond to a two-unit pH change (e.g., pH 4 vs pH 6).\n- **(C)** Different pH values necessarily have different H+ concentrations.\n- **(D)** Lower pH means more, not less, H+.\n- **(E)** Halving is not how the logarithmic pH scale works."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1499,13 +1499,13 @@
             "stem": "A student ranks the body's fluid compartments from largest to smallest by volume. Which of the following correctly identifies the two largest?",
             "options": [
               "Plasma is the largest, followed by intracellular fluid",
+              "Extracellular fluid is the largest, followed by cerebrospinal fluid",
               "Intracellular fluid is the largest, followed by interstitial fluid",
               "Interstitial fluid is the largest, followed by plasma",
-              "Extracellular fluid is the largest, followed by cerebrospinal fluid",
               "Intracellular fluid is the largest, followed by plasma"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Intracellular fluid holds about 55% of body water (the single largest compartment), and within the extracellular fluid the interstitial fluid (about 80% of ECF) is the next largest volume.\n\n**Why the other options are wrong:**\n- **(A)** Plasma is only about 16% of ECF, far smaller than intracellular fluid.\n- **(C)** Interstitial fluid is the largest ECF subdivision but is smaller than intracellular fluid overall.\n- **(D)** Cerebrospinal fluid is a minor 'other' extracellular fluid, not the second largest.\n- **(E)** Plasma is much smaller than interstitial fluid, so it is not the second largest."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Intracellular fluid holds about 55% of body water (the single largest compartment), and within the extracellular fluid the interstitial fluid (about 80% of ECF) is the next largest volume.\n\n**Why the other options are wrong:**\n- **(A)** Plasma is only about 16% of ECF, far smaller than intracellular fluid.\n- **(B)** Cerebrospinal fluid is a minor 'other' extracellular fluid, not the second largest.\n- **(D)** Interstitial fluid is the largest ECF subdivision but is smaller than intracellular fluid overall.\n- **(E)** Plasma is much smaller than interstitial fluid, so it is not the second largest."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1515,14 +1515,14 @@
           "question": {
             "stem": "Which statement best captures why water is considered biologically indispensable to human functioning?",
             "options": [
-              "Water is chemically bonded into every nutrient molecule the body absorbs",
-              "Water performs only a single essential role: dissolving nutrients",
-              "Water serves multiple roles including lubrication, cushioning, temperature regulation, and acting as a solvent",
               "Water functions solely as a structural material in bones and teeth",
-              "Water is important only because it makes up the majority of body weight"
+              "Water is important only because it makes up the majority of body weight",
+              "Water performs only a single essential role: dissolving nutrients",
+              "Water is chemically bonded into every nutrient molecule the body absorbs",
+              "Water serves multiple roles including lubrication, cushioning, temperature regulation, and acting as a solvent"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** The unit stresses that water's indispensability comes from several distinct functions—lubricating fluids, cushioning organs, acting as a heat sink, and serving as a solvent for solutions.\n\n**Why the other options are wrong:**\n- **(A)** Water is a mixture component and reaction participant, not chemically bonded into every nutrient.\n- **(B)** Water has many roles, not just dissolving nutrients.\n- **(D)** Minerals, not water, are the structural material of bone and teeth.\n- **(E)** Body-weight proportion is a fact, not the reason water is functionally essential."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The unit stresses that water's indispensability comes from several distinct functions—lubricating fluids, cushioning organs, acting as a heat sink, and serving as a solvent for solutions.\n\n**Why the other options are wrong:**\n- **(A)** Minerals, not water, are the structural material of bone and teeth.\n- **(B)** Body-weight proportion is a fact, not the reason water is functionally essential.\n- **(C)** Water has many roles, not just dissolving nutrients.\n- **(D)** Water is a mixture component and reaction participant, not chemically bonded into every nutrient."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1533,13 +1533,13 @@
             "stem": "During intense exercise on a hot day, blood carries heat from the body's core to peripheral capillaries and sweat evaporates from the skin. Which functional property of water is being demonstrated?",
             "options": [
               "Water acting as a solvent",
-              "Water acting as a heat sink",
-              "Water acting as a lubricant",
               "Water participating in hydrolysis",
-              "Water acting as a cushion"
+              "Water acting as a cushion",
+              "Water acting as a heat sink",
+              "Water acting as a lubricant"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** Absorbing metabolic heat without a large temperature rise, transporting it to the periphery, and losing it through evaporation are the hallmarks of water functioning as a heat sink.\n\n**Why the other options are wrong:**\n- **(A)** Dissolving solutes is unrelated to heat transport and evaporative cooling.\n- **(C)** Lubrication involves reducing friction in fluids like synovial fluid, not thermoregulation.\n- **(D)** Hydrolysis is a bond-breaking chemical reaction, not heat dissipation.\n- **(E)** Cushioning protects organs from trauma, not from temperature change."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Absorbing metabolic heat without a large temperature rise, transporting it to the periphery, and losing it through evaporation are the hallmarks of water functioning as a heat sink.\n\n**Why the other options are wrong:**\n- **(A)** Dissolving solutes is unrelated to heat transport and evaporative cooling.\n- **(B)** Hydrolysis is a bond-breaking chemical reaction, not heat dissipation.\n- **(C)** Cushioning protects organs from trauma, not from temperature change.\n- **(E)** Lubrication involves reducing friction in fluids like synovial fluid, not thermoregulation."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1549,14 +1549,14 @@
           "question": {
             "stem": "Two amino acids join to form a larger molecule, and a molecule of water is released. If this product is later split back into its two building blocks, what must happen, and what bond is involved?",
             "options": [
-              "Dehydration synthesis splits the covalent bond by removing water",
               "Hydrolysis splits the covalent bond by adding water",
-              "Hydrolysis forms an ionic bond by removing water",
+              "Dehydration synthesis splits the covalent bond by removing water",
               "Dehydration synthesis forms a hydrogen bond by adding water",
+              "Hydrolysis forms an ionic bond by removing water",
               "Hydrolysis splits a hydrogen bond by releasing water"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The joining that releases water is dehydration synthesis; reversing it requires hydrolysis, which uses a water molecule to break the covalent bond between the two units.\n\n**Why the other options are wrong:**\n- **(A)** Dehydration synthesis forms (not splits) the bond and releases water.\n- **(C)** The bond broken is covalent, not ionic, and hydrolysis adds water.\n- **(D)** Dehydration synthesis releases water and forms a covalent bond, not a hydrogen bond.\n- **(E)** Hydrolysis breaks the covalent bond and consumes (does not release) water."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The joining that releases water is dehydration synthesis; reversing it requires hydrolysis, which uses a water molecule to break the covalent bond between the two units.\n\n**Why the other options are wrong:**\n- **(B)** Dehydration synthesis forms (not splits) the bond and releases water.\n- **(C)** Dehydration synthesis releases water and forms a covalent bond, not a hydrogen bond.\n- **(D)** The bond broken is covalent, not ionic, and hydrolysis adds water.\n- **(E)** Hydrolysis breaks the covalent bond and consumes (does not release) water."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1566,14 +1566,14 @@
           "question": {
             "stem": "Solution X has a pH of 3 and solution Y has a pH of 5. How do their hydrogen ion concentrations compare?",
             "options": [
-              "X has 2 times more H+ than Y",
               "X has 10 times more H+ than Y",
-              "X has 100 times more H+ than Y",
+              "X has 2 times more H+ than Y",
               "X has 100 times less H+ than Y",
+              "X has 100 times more H+ than Y",
               "X and Y have equal H+ because both are acidic"
             ],
-            "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Each pH unit represents a tenfold change in H+ concentration, so a two-unit difference (pH 3 vs pH 5) means 10 × 10 = 100 times more H+ in the more acidic solution X.\n\n**Why the other options are wrong:**\n- **(A)** A twofold difference would only apply if pH were logarithmic base 2, which it is not.\n- **(B)** Tenfold applies to a one-unit difference, not two units.\n- **(D)** Lower pH means MORE H+, so X has more, not less.\n- **(E)** Different pH values mean different H+ concentrations, not equal ones."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Each pH unit represents a tenfold change in H+ concentration, so a two-unit difference (pH 3 vs pH 5) means 10 × 10 = 100 times more H+ in the more acidic solution X.\n\n**Why the other options are wrong:**\n- **(A)** Tenfold applies to a one-unit difference, not two units.\n- **(B)** A twofold difference would only apply if pH were logarithmic base 2, which it is not.\n- **(C)** Lower pH means MORE H+, so X has more, not less.\n- **(E)** Different pH values mean different H+ concentrations, not equal ones."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1583,14 +1583,14 @@
           "question": {
             "stem": "In a glass of iced tea, sugar is dissolved in water. Which statement correctly identifies the components of this solution?",
             "options": [
+              "Sugar is a solute only if the mixture is heterogeneous",
               "Water is the solute, sugar is the solvent, and the mixture is a solvent",
-              "Sugar is the solute, water is the solvent, and the mixture is a solution",
               "Sugar is the solvent, water is the solute, and the mixture is homogeneous",
               "Both sugar and water are solutes dissolved in a separate solvent",
-              "Sugar is a solute only if the mixture is heterogeneous"
+              "Sugar is the solute, water is the solvent, and the mixture is a solution"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The substance that dissolves (sugar) is the solute, the substance doing the dissolving (water) is the solvent, and the resulting homogeneous mixture is the solution.\n\n**Why the other options are wrong:**\n- **(A)** Water is the solvent, not the solute, and the mixture is a solution, not a solvent.\n- **(C)** Water dissolves sugar, so water is the solvent and sugar the solute—the roles are reversed here.\n- **(D)** Water serves as the solvent, so both cannot be solutes.\n- **(E)** A solution is by definition homogeneous, and sugar is the solute regardless."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** The substance that dissolves (sugar) is the solute, the substance doing the dissolving (water) is the solvent, and the resulting homogeneous mixture is the solution.\n\n**Why the other options are wrong:**\n- **(A)** A solution is by definition homogeneous, and sugar is the solute regardless.\n- **(B)** Water is the solvent, not the solute, and the mixture is a solution, not a solvent.\n- **(C)** Water dissolves sugar, so water is the solvent and sugar the solute—the roles are reversed here.\n- **(D)** Water serves as the solvent, so both cannot be solutes."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1600,14 +1600,14 @@
           "question": {
             "stem": "A patient's calcium and phosphate levels are being evaluated because these ions are being drawn from a mineral reserve. Which role of ions in the body does this scenario most directly illustrate?",
             "options": [
-              "Transmitting electrical impulses in neurons",
-              "Stabilizing protein structures in enzymes",
-              "Strengthening bones and teeth",
               "Triggering hormone release from endocrine glands",
-              "Controlling water movement through osmosis"
+              "Controlling water movement through osmosis",
+              "Strengthening bones and teeth",
+              "Transmitting electrical impulses in neurons",
+              "Stabilizing protein structures in enzymes"
             ],
             "correct_index": 2,
-            "explanation": "**Why (C) is correct:** Calcium and phosphate are incorporated into bones and teeth, with bone serving as a mineral reserve, illustrating their structural strengthening role.\n\n**Why the other options are wrong:**\n- **(A)** Electrical signalling is chiefly a role of sodium and potassium, not the bone-reserve function described.\n- **(B)** Enzyme stabilization is a separate role and does not involve bone mineral reserves.\n- **(D)** Hormone release is another ion function unrelated to mineralizing bone.\n- **(E)** Osmotic water control does not describe drawing minerals from bone reserves."
+            "explanation": "**Why (C) is correct:** Calcium and phosphate are incorporated into bones and teeth, with bone serving as a mineral reserve, illustrating their structural strengthening role.\n\n**Why the other options are wrong:**\n- **(A)** Hormone release is another ion function unrelated to mineralizing bone.\n- **(B)** Osmotic water control does not describe drawing minerals from bone reserves.\n- **(D)** Electrical signalling is chiefly a role of sodium and potassium, not the bone-reserve function described.\n- **(E)** Enzyme stabilization is a separate role and does not involve bone mineral reserves."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1617,14 +1617,14 @@
           "question": {
             "stem": "A cell membrane's sodium-potassium pumps suddenly stop working due to a lack of ATP. Predict the direct consequence for ion distribution across the membrane.",
             "options": [
-              "Intracellular potassium will rise while extracellular sodium rises",
               "The high intracellular potassium and high extracellular sodium gradients will gradually be lost",
-              "Sodium and potassium concentrations will remain perfectly stable indefinitely",
               "Chloride will replace sodium as the dominant intracellular cation",
-              "Extracellular fluid will become identical to intracellular fluid in protein content"
+              "Intracellular potassium will rise while extracellular sodium rises",
+              "Extracellular fluid will become identical to intracellular fluid in protein content",
+              "Sodium and potassium concentrations will remain perfectly stable indefinitely"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** The pumps use ATP to maintain high intracellular K+ and high extracellular Na+ against leakage; without them, ions leak until the gradients dissipate.\n\n**Why the other options are wrong:**\n- **(A)** Without the pump, potassium leaks out and sodium leaks in, so intracellular K+ would fall, not rise.\n- **(C)** Stability depends on the active pump, so concentrations cannot remain stable once it fails.\n- **(D)** Chloride is an anion, not a cation, and does not replace intracellular sodium.\n- **(E)** Protein differences are not caused by the sodium-potassium pump and would not equalize."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** The pumps use ATP to maintain high intracellular K+ and high extracellular Na+ against leakage; without them, ions leak until the gradients dissipate.\n\n**Why the other options are wrong:**\n- **(B)** Chloride is an anion, not a cation, and does not replace intracellular sodium.\n- **(C)** Without the pump, potassium leaks out and sodium leaks in, so intracellular K+ would fall, not rise.\n- **(D)** Protein differences are not caused by the sodium-potassium pump and would not equalize.\n- **(E)** Stability depends on the active pump, so concentrations cannot remain stable once it fails."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1634,14 +1634,14 @@
           "question": {
             "stem": "A student needs to correctly define terms for this unit. Which pairing of a key term with its meaning is accurate?",
             "options": [
-              "Cytosol: the fluid found in the space between cells",
               "Interstitial fluid: the fluid portion of the blood",
+              "Cytosol: the fluid found in the space between cells",
+              "Solvent: the substance that is dissolved within a mixture",
               "Plasma: the fluid within cells",
-              "Lymph: excess interstitial fluid returning to the blood via lymphatic vessels",
-              "Solvent: the substance that is dissolved within a mixture"
+              "Lymph: excess interstitial fluid returning to the blood via lymphatic vessels"
             ],
-            "correct_index": 3,
-            "explanation": "**Why (D) is correct:** Lymph is precisely defined as excess interstitial fluid that has drained from the bloodstream and is being returned to the blood through lymphatic vessels.\n\n**Why the other options are wrong:**\n- **(A)** Cytosol is the fluid inside cells, not between them.\n- **(B)** Interstitial fluid surrounds cells; plasma is the fluid portion of blood.\n- **(C)** Plasma is extracellular (in blood); intracellular fluid is inside cells.\n- **(E)** The solvent dissolves the solute, so the dissolved substance is the solute, not the solvent."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Lymph is precisely defined as excess interstitial fluid that has drained from the bloodstream and is being returned to the blood through lymphatic vessels.\n\n**Why the other options are wrong:**\n- **(A)** Interstitial fluid surrounds cells; plasma is the fluid portion of blood.\n- **(B)** Cytosol is the fluid inside cells, not between them.\n- **(C)** The solvent dissolves the solute, so the dissolved substance is the solute, not the solvent.\n- **(D)** Plasma is extracellular (in blood); intracellular fluid is inside cells."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1651,14 +1651,14 @@
           "question": {
             "stem": "Hydrochloric acid (HCl) and acetic acid (vinegar) are both acids, yet HCl is classified as strong and acetic acid as weak. What is the basis for this distinction?",
             "options": [
-              "HCl accepts protons while acetic acid releases them",
               "HCl ionizes completely, releasing all its H+, while acetic acid only partially ionizes",
-              "HCl has a higher pH than acetic acid",
+              "HCl is a base and acetic acid is an acid",
+              "HCl accepts protons while acetic acid releases them",
               "Acetic acid releases hydroxyl ions while HCl releases hydrogen ions",
-              "HCl is a base and acetic acid is an acid"
+              "HCl has a higher pH than acetic acid"
             ],
-            "correct_index": 1,
-            "explanation": "**Why (B) is correct:** A strong acid like HCl dissociates completely, releasing all its H+, whereas a weak acid like acetic acid only partially ionizes, leaving some hydrogen bonded within the compound.\n\n**Why the other options are wrong:**\n- **(A)** Both are acids that release protons; accepting protons defines a base.\n- **(C)** A stronger acid produces a lower pH, not a higher one.\n- **(D)** Acetic acid releases H+, not hydroxyl ions; it is an acid, not a base.\n- **(E)** Both HCl and acetic acid are acids, not one being a base."
+            "correct_index": 0,
+            "explanation": "**Why (A) is correct:** A strong acid like HCl dissociates completely, releasing all its H+, whereas a weak acid like acetic acid only partially ionizes, leaving some hydrogen bonded within the compound.\n\n**Why the other options are wrong:**\n- **(B)** Both HCl and acetic acid are acids, not one being a base.\n- **(C)** Both are acids that release protons; accepting protons defines a base.\n- **(D)** Acetic acid releases H+, not hydroxyl ions; it is an acid, not a base.\n- **(E)** A stronger acid produces a lower pH, not a higher one."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1668,14 +1668,14 @@
           "question": {
             "stem": "A patient's blood pH drops slightly to 7.32 following an increase in metabolic acid production. Which best describes how a bicarbonate-carbonic acid buffer responds to restore normal pH?",
             "options": [
-              "The bicarbonate acts as a weak base and binds the excess hydrogen ions",
-              "The carbonic acid dissociates further to release additional hydrogen ions",
-              "The buffer permanently converts all carbonic acid into a strong acid",
+              "The buffer has no effect because pH regulation is handled only by the lungs",
               "The buffer raises the pH by generating hydroxyl ions from water molecules directly",
-              "The buffer has no effect because pH regulation is handled only by the lungs"
+              "The buffer permanently converts all carbonic acid into a strong acid",
+              "The bicarbonate acts as a weak base and binds the excess hydrogen ions",
+              "The carbonic acid dissociates further to release additional hydrogen ions"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** When pH falls below the normal range (7.35–7.45), the buffer acts as a weak base, binding the excess H⁺ to resist the drop in pH.\n\n**Why the other options are wrong:**\n- **(B)** Releasing more H⁺ would lower pH further, worsening the acidosis.\n- **(C)** A buffer is a weak acid/conjugate base pair and does not convert into a strong acid.\n- **(D)** The buffer minimizes H⁺ change by binding H⁺, not by spontaneously producing hydroxyl ions from water.\n- **(E)** Chemical buffers act within seconds and work alongside the respiratory and renal systems."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** When pH falls below the normal range (7.35–7.45), the buffer acts as a weak base, binding the excess H⁺ to resist the drop in pH.\n\n**Why the other options are wrong:**\n- **(A)** Chemical buffers act within seconds and work alongside the respiratory and renal systems.\n- **(B)** The buffer minimizes H⁺ change by binding H⁺, not by spontaneously producing hydroxyl ions from water.\n- **(C)** A buffer is a weak acid/conjugate base pair and does not convert into a strong acid.\n- **(E)** Releasing more H⁺ would lower pH further, worsening the acidosis."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1685,14 +1685,14 @@
           "question": {
             "stem": "Compared with extracellular fluid, intracellular fluid is characterized by which ionic profile, and how is this difference maintained?",
             "options": [
-              "High K⁺ and phosphate; maintained by sodium-potassium pumps using ATP",
-              "High Na⁺ and Cl⁻; maintained by sodium-potassium pumps using ATP",
-              "High K⁺ and Cl⁻; maintained by passive leaking alone with no energy input",
+              "Identical ion concentrations to plasma; maintained by simple diffusion",
               "High Na⁺ and phosphate; maintained by hydrolysis of interstitial fluid",
-              "Identical ion concentrations to plasma; maintained by simple diffusion"
+              "High K⁺ and phosphate; maintained by sodium-potassium pumps using ATP",
+              "High K⁺ and Cl⁻; maintained by passive leaking alone with no energy input",
+              "High Na⁺ and Cl⁻; maintained by sodium-potassium pumps using ATP"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Intracellular fluid has elevated K⁺ and phosphate, and these gradients are maintained by sodium-potassium pumps that use ATP to pump K⁺ in and Na⁺ out.\n\n**Why the other options are wrong:**\n- **(B)** High Na⁺ and Cl⁻ describe the extracellular fluid, not the intracellular fluid.\n- **(C)** Leaking alone would dissipate the gradients; ATP-powered pumps are required.\n- **(D)** Intracellular fluid is not high in Na⁺, and hydrolysis is not a compartment-regulation mechanism.\n- **(E)** Intracellular fluid composition differs markedly from plasma."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Intracellular fluid has elevated K⁺ and phosphate, and these gradients are maintained by sodium-potassium pumps that use ATP to pump K⁺ in and Na⁺ out.\n\n**Why the other options are wrong:**\n- **(A)** Intracellular fluid composition differs markedly from plasma.\n- **(B)** Intracellular fluid is not high in Na⁺, and hydrolysis is not a compartment-regulation mechanism.\n- **(D)** Leaking alone would dissipate the gradients; ATP-powered pumps are required.\n- **(E)** High Na⁺ and Cl⁻ describe the extracellular fluid, not the intracellular fluid."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1704,12 +1704,12 @@
             "options": [
               "It serves multiple roles including lubricant, cushion, heat sink, and solvent for solutions",
               "It provides the majority of the body's energy through combustion",
+              "It functions only as a lubricant and has no other biological role",
               "It is chemically bonded into every new compound the body synthesizes",
-              "It is the primary structural molecule of bones and teeth",
-              "It functions only as a lubricant and has no other biological role"
+              "It is the primary structural molecule of bones and teeth"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The unit emphasizes that water is indispensable because of its several roles: lubrication, cushioning, acting as a heat sink, and serving as the solvent in body solutions.\n\n**Why the other options are wrong:**\n- **(B)** Energy is released by breaking bonds in nutrients and ATP, not by burning water.\n- **(C)** In mixtures water remains chemically distinct rather than bonded into a new compound.\n- **(D)** Calcium and phosphate, not water, are the primary structural minerals of bone and teeth.\n- **(E)** Water has many roles beyond lubrication."
+            "explanation": "**Why (A) is correct:** The unit emphasizes that water is indispensable because of its several roles: lubrication, cushioning, acting as a heat sink, and serving as the solvent in body solutions.\n\n**Why the other options are wrong:**\n- **(B)** Energy is released by breaking bonds in nutrients and ATP, not by burning water.\n- **(C)** Water has many roles beyond lubrication.\n- **(D)** In mixtures water remains chemically distinct rather than bonded into a new compound.\n- **(E)** Calcium and phosphate, not water, are the primary structural minerals of bone and teeth."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1719,14 +1719,14 @@
           "question": {
             "stem": "During intense exercise on a hot day, a person sweats heavily and blood is diverted to skin capillaries. Which function of water best explains how this cools the body?",
             "options": [
-              "Water acts as a heat sink, carrying heat to the periphery where it is lost by radiation and evaporation",
-              "Water acts as a solvent, dissolving heat into a homogeneous solution",
               "Water participates in dehydration synthesis to release heat as a byproduct",
               "Water cushions the cells so they cannot generate additional heat",
-              "Water lubricates the skin so heat slides off more easily"
+              "Water acts as a heat sink, carrying heat to the periphery where it is lost by radiation and evaporation",
+              "Water lubricates the skin so heat slides off more easily",
+              "Water acts as a solvent, dissolving heat into a homogeneous solution"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Water in blood absorbs core heat and transports it to peripheral capillaries and skin, where radiant heat loss and evaporation of sweat cool the body.\n\n**Why the other options are wrong:**\n- **(B)** Dissolving solutes is unrelated to how water dissipates heat.\n- **(C)** Dehydration synthesis produces water; it is not the cooling mechanism described.\n- **(D)** Cushioning protects from trauma and does not stop heat generation.\n- **(E)** Lubrication does not account for evaporative or radiant cooling."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Water in blood absorbs core heat and transports it to peripheral capillaries and skin, where radiant heat loss and evaporation of sweat cool the body.\n\n**Why the other options are wrong:**\n- **(A)** Dehydration synthesis produces water; it is not the cooling mechanism described.\n- **(B)** Cushioning protects from trauma and does not stop heat generation.\n- **(D)** Lubrication does not account for evaporative or radiant cooling.\n- **(E)** Dissolving solutes is unrelated to how water dissipates heat."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1736,14 +1736,14 @@
           "question": {
             "stem": "Hydrochloric acid (HCl) and acetic acid (vinegar) both release hydrogen ions in solution. What distinguishes HCl as a strong acid from acetic acid as a weak acid?",
             "options": [
-              "HCl ionizes completely, releasing all its H⁺, whereas acetic acid ionizes only partially",
+              "HCl is neutral while acetic acid is basic",
               "HCl has a higher pH than acetic acid because it releases fewer H⁺",
-              "HCl accepts protons from solution while acetic acid donates them",
               "HCl releases hydroxyl ions while acetic acid releases hydrogen ions",
-              "HCl is neutral while acetic acid is basic"
+              "HCl ionizes completely, releasing all its H⁺, whereas acetic acid ionizes only partially",
+              "HCl accepts protons from solution while acetic acid donates them"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A strong acid like HCl dissociates completely, releasing all of its H⁺, while a weak acid like acetic acid only partially ionizes, leaving some H⁺ bonded.\n\n**Why the other options are wrong:**\n- **(B)** A stronger acid produces more H⁺ and therefore a lower, not higher, pH.\n- **(C)** Both are acids that donate protons; accepting protons defines a base.\n- **(D)** Acids release H⁺; releasing OH⁻ describes a base.\n- **(E)** HCl is acidic, and acetic acid is a weak acid, not basic."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** A strong acid like HCl dissociates completely, releasing all of its H⁺, while a weak acid like acetic acid only partially ionizes, leaving some H⁺ bonded.\n\n**Why the other options are wrong:**\n- **(A)** HCl is acidic, and acetic acid is a weak acid, not basic.\n- **(B)** A stronger acid produces more H⁺ and therefore a lower, not higher, pH.\n- **(C)** Acids release H⁺; releasing OH⁻ describes a base.\n- **(E)** Both are acids that donate protons; accepting protons defines a base."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1753,14 +1753,14 @@
           "question": {
             "stem": "A solution of acetic acid is only partially ionized, meaning some hydrogen ions remain bonded within the molecules. What term is applied to acetic acid after it gives up a proton, and what category does this behavior place acetic acid in?",
             "options": [
+              "It becomes a buffer; acetic acid is a strong base",
               "It becomes acetate; acetic acid is a weak acid",
               "It becomes acetate; acetic acid is a strong acid",
               "It becomes hydroxide; acetic acid is a strong base",
-              "It becomes a proton donor; acetic acid is a neutral salt",
-              "It becomes a buffer; acetic acid is a strong base"
+              "It becomes a proton donor; acetic acid is a neutral salt"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Acetic acid does not ionize completely, making it a weak acid, and it is called acetate after it gives up a proton.\n\n**Why the other options are wrong:**\n- **(B)** Incomplete ionization means acetic acid is weak, not strong.\n- **(C)** Losing a proton does not form hydroxide, and acetic acid is not a base.\n- **(D)** Acetic acid is a weak acid, not a neutral salt.\n- **(E)** The deprotonated form is acetate, and acetic acid is not a base."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Acetic acid does not ionize completely, making it a weak acid, and it is called acetate after it gives up a proton.\n\n**Why the other options are wrong:**\n- **(A)** The deprotonated form is acetate, and acetic acid is not a base.\n- **(C)** Incomplete ionization means acetic acid is weak, not strong.\n- **(D)** Losing a proton does not form hydroxide, and acetic acid is not a base.\n- **(E)** Acetic acid is a weak acid, not a neutral salt."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1770,14 +1770,14 @@
           "question": {
             "stem": "Ranking the body's fluid compartments by volume, which sequence correctly orders them from largest to smallest?",
             "options": [
-              "Intracellular fluid > interstitial fluid > plasma",
-              "Interstitial fluid > intracellular fluid > plasma",
-              "Plasma > intracellular fluid > interstitial fluid",
               "Extracellular fluid > intracellular fluid > interstitial fluid",
-              "Plasma > interstitial fluid > intracellular fluid"
+              "Plasma > intracellular fluid > interstitial fluid",
+              "Interstitial fluid > intracellular fluid > plasma",
+              "Plasma > interstitial fluid > intracellular fluid",
+              "Intracellular fluid > interstitial fluid > plasma"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Intracellular fluid (~55%) is largest, followed by interstitial fluid (~80% of ECF, ~36% of body water), then plasma (~16% of ECF, ~7% of body water).\n\n**Why the other options are wrong:**\n- **(B)** Intracellular fluid is larger than interstitial fluid.\n- **(C)** Plasma is the smallest of the three, not the largest.\n- **(D)** Intracellular fluid is larger than the entire extracellular fluid, and interstitial is part of the ECF, making this comparison invalid.\n- **(E)** Plasma is the smallest, so it cannot be first."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Intracellular fluid (~55%) is largest, followed by interstitial fluid (~80% of ECF, ~36% of body water), then plasma (~16% of ECF, ~7% of body water).\n\n**Why the other options are wrong:**\n- **(A)** Intracellular fluid is larger than the entire extracellular fluid, and interstitial is part of the ECF, making this comparison invalid.\n- **(B)** Plasma is the smallest of the three, not the largest.\n- **(C)** Intracellular fluid is larger than interstitial fluid.\n- **(D)** Plasma is the smallest, so it cannot be first."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1787,14 +1787,14 @@
           "question": {
             "stem": "When table salt is stirred into a glass of water and distributed evenly throughout, which pairing correctly identifies the components of the resulting solution?",
             "options": [
-              "Water is the solvent, salt is the solute, and the mixture is a homogeneous solution",
               "Salt is the solvent, water is the solute, and the mixture is heterogeneous",
-              "Water is the solute, salt is the solvent, and the mixture is a compound",
+              "Water is the solvent, salt is the solute, and the mixture is a homogeneous solution",
+              "Salt is the solution and water is the solvent, forming a solute",
               "Both water and salt are solvents in a chemically bonded new compound",
-              "Salt is the solution and water is the solvent, forming a solute"
+              "Water is the solute, salt is the solvent, and the mixture is a compound"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** In a solution the solvent (water) dissolves the solute (salt), and even distribution makes it homogeneous.\n\n**Why the other options are wrong:**\n- **(B)** The dissolving substance (water) is the solvent, and even distribution makes it homogeneous, not heterogeneous.\n- **(C)** A mixture is not a chemically bonded compound, and the roles are reversed.\n- **(D)** The two substances stay distinct rather than forming a new compound.\n- **(E)** The solution is the whole mixture; salt is the solute, not the solution."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** In a solution the solvent (water) dissolves the solute (salt), and even distribution makes it homogeneous.\n\n**Why the other options are wrong:**\n- **(A)** The dissolving substance (water) is the solvent, and even distribution makes it homogeneous, not heterogeneous.\n- **(C)** The solution is the whole mixture; salt is the solute, not the solution.\n- **(D)** The two substances stay distinct rather than forming a new compound.\n- **(E)** A mixture is not a chemically bonded compound, and the roles are reversed."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1804,14 +1804,14 @@
           "question": {
             "stem": "A student needs to match unit terms to the correct fluid location. Which of the following pairings is correct?",
             "options": [
+              "Plasma is the fluid within cells; lymph is the fluid of the joints",
               "Cytosol is the fluid portion of intracellular fluid; interstitial fluid surrounds cells outside the blood",
               "Cytosol is the fluid portion of plasma; interstitial fluid is found inside cells",
-              "Plasma is the fluid within cells; lymph is the fluid of the joints",
-              "Synovial fluid fills the pleural cavities; pericardial fluid lubricates joints",
-              "Interstitial fluid is the fluid portion of blood; plasma surrounds tissue cells"
+              "Interstitial fluid is the fluid portion of blood; plasma surrounds tissue cells",
+              "Synovial fluid fills the pleural cavities; pericardial fluid lubricates joints"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Cytosol is the fluid component of intracellular fluid, and interstitial fluid is the extracellular fluid that surrounds cells not in the blood.\n\n**Why the other options are wrong:**\n- **(B)** Cytosol is intracellular, and interstitial fluid is extracellular (outside cells).\n- **(C)** Plasma is the fluid portion of blood, not intracellular; lymph is drained interstitial fluid, not joint fluid.\n- **(D)** Synovial fluid lubricates joints and pericardial fluid surrounds the heart, so the pairings are swapped.\n- **(E)** Plasma is the fluid portion of blood, and interstitial fluid surrounds tissue cells, so these are reversed."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Cytosol is the fluid component of intracellular fluid, and interstitial fluid is the extracellular fluid that surrounds cells not in the blood.\n\n**Why the other options are wrong:**\n- **(A)** Plasma is the fluid portion of blood, not intracellular; lymph is drained interstitial fluid, not joint fluid.\n- **(C)** Cytosol is intracellular, and interstitial fluid is extracellular (outside cells).\n- **(D)** Plasma is the fluid portion of blood, and interstitial fluid surrounds tissue cells, so these are reversed.\n- **(E)** Synovial fluid lubricates joints and pericardial fluid surrounds the heart, so the pairings are swapped."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1821,14 +1821,14 @@
           "question": {
             "stem": "Which statement correctly matches an ion with one of its physiological roles as described in this unit?",
             "options": [
-              "Sodium and potassium ions assist in transmitting electrical impulses in neurons and muscles",
+              "Potassium ions are incorporated into bones and teeth for strength",
               "Calcium and phosphate ions primarily transmit hormones through the bloodstream",
               "Chloride ions are the main structural components of enzymes",
-              "Potassium ions are incorporated into bones and teeth for strength",
-              "All ions function only to lower body pH and have no other role"
+              "All ions function only to lower body pH and have no other role",
+              "Sodium and potassium ions assist in transmitting electrical impulses in neurons and muscles"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Sodium and potassium ions are especially involved in electrical signalling along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(B)** Calcium and phosphate are incorporated into bone and teeth; ions do not directly transmit hormones.\n- **(C)** Ions stabilize protein/enzyme structures rather than serving as structural components of enzymes.\n- **(D)** Calcium and phosphate, not potassium, are incorporated into bones and teeth.\n- **(E)** Ions perform many roles, including electrical signalling, osmosis, and protein stabilization."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** Sodium and potassium ions are especially involved in electrical signalling along cell membranes in neurons and muscles.\n\n**Why the other options are wrong:**\n- **(A)** Calcium and phosphate, not potassium, are incorporated into bones and teeth.\n- **(B)** Calcium and phosphate are incorporated into bone and teeth; ions do not directly transmit hormones.\n- **(C)** Ions stabilize protein/enzyme structures rather than serving as structural components of enzymes.\n- **(D)** Ions perform many roles, including electrical signalling, osmosis, and protein stabilization."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1838,14 +1838,14 @@
           "question": {
             "stem": "A researcher measures the total water volume in each of a person's fluid compartments. Which ranking correctly orders these compartments from LARGEST to smallest water volume?",
             "options": [
+              "Interstitial fluid > plasma > intracellular fluid",
+              "Intracellular fluid > plasma > interstitial fluid",
               "Intracellular fluid > interstitial fluid > plasma",
               "Interstitial fluid > intracellular fluid > plasma",
-              "Plasma > interstitial fluid > intracellular fluid",
-              "Intracellular fluid > plasma > interstitial fluid",
-              "Interstitial fluid > plasma > intracellular fluid"
+              "Plasma > interstitial fluid > intracellular fluid"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Intracellular fluid holds about 55% of body water (the largest), interstitial fluid is the largest portion of extracellular fluid (~80% of ECF), and plasma is the smallest of the three (~16% of ECF).\n\n**Why the other options are wrong:**\n- **(B)** Intracellular fluid, not interstitial fluid, is the single largest compartment.\n- **(C)** Plasma is the smallest, not the largest, of these compartments.\n- **(D)** Interstitial fluid is larger than plasma, so plasma cannot rank second.\n- **(E)** Intracellular fluid is the largest compartment and cannot rank last."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** Intracellular fluid holds about 55% of body water (the largest), interstitial fluid is the largest portion of extracellular fluid (~80% of ECF), and plasma is the smallest of the three (~16% of ECF).\n\n**Why the other options are wrong:**\n- **(A)** Intracellular fluid is the largest compartment and cannot rank last.\n- **(B)** Interstitial fluid is larger than plasma, so plasma cannot rank second.\n- **(D)** Intracellular fluid, not interstitial fluid, is the single largest compartment.\n- **(E)** Plasma is the smallest, not the largest, of these compartments."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1855,14 +1855,14 @@
           "question": {
             "stem": "A cell membrane's sodium-potassium pumps suddenly stop working due to a lack of ATP. Which change in ion distribution would you predict over time?",
             "options": [
+              "No change would occur because these gradients are maintained without energy",
               "Sodium would accumulate inside the cell while potassium leaks out, reducing the normal gradients",
-              "Potassium would accumulate inside the cell while sodium is pumped out faster",
-              "Both sodium and potassium would become more concentrated inside the cell",
               "Chloride would replace potassium as the main intracellular cation",
-              "No change would occur because these gradients are maintained without energy"
+              "Both sodium and potassium would become more concentrated inside the cell",
+              "Potassium would accumulate inside the cell while sodium is pumped out faster"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The pump normally uses ATP to move sodium out and potassium in against their gradients; without it, sodium leaks in and potassium leaks out, degrading the high-extracellular-Na⁺/high-intracellular-K⁺ arrangement.\n\n**Why the other options are wrong:**\n- **(B)** Without ATP the pump cannot move ions against gradients, so this active accumulation cannot happen.\n- **(C)** Sodium naturally leaks inward but potassium leaks outward, so both do not increase inside.\n- **(D)** Chloride is an extracellular anion, not an intracellular cation replacement.\n- **(E)** The gradients require constant ATP-driven pumping to maintain."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** The pump normally uses ATP to move sodium out and potassium in against their gradients; without it, sodium leaks in and potassium leaks out, degrading the high-extracellular-Na⁺/high-intracellular-K⁺ arrangement.\n\n**Why the other options are wrong:**\n- **(A)** The gradients require constant ATP-driven pumping to maintain.\n- **(C)** Chloride is an extracellular anion, not an intracellular cation replacement.\n- **(D)** Sodium naturally leaks inward but potassium leaks outward, so both do not increase inside.\n- **(E)** Without ATP the pump cannot move ions against gradients, so this active accumulation cannot happen."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1872,14 +1872,14 @@
           "question": {
             "stem": "Solution X contains hydrochloric acid (HCl) and solution Y contains acetic acid, both at the same starting concentration. Which statement best explains why solution X is a stronger acid?",
             "options": [
-              "Solution X dissociates completely, releasing all of its H⁺ into solution",
               "Solution X releases hydroxyl ions while solution Y releases H⁺",
+              "Solution X dissociates completely, releasing all of its H⁺ into solution",
               "Solution X has a higher pH than solution Y",
               "Solution X only partially ionizes, keeping some H⁺ bonded",
               "Solution X accepts protons rather than donating them"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** A strong acid such as HCl ionizes completely, releasing all its H⁺, whereas a weak acid like acetic acid retains some H⁺ bonded within the molecule.\n\n**Why the other options are wrong:**\n- **(B)** Acids release H⁺, not hydroxyl ions; that describes a base.\n- **(C)** A stronger acid has a LOWER pH (more H⁺), not higher.\n- **(D)** Partial ionization describes the weak acid (Y), not the strong acid.\n- **(E)** Accepting protons describes a base, not an acid."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** A strong acid such as HCl ionizes completely, releasing all its H⁺, whereas a weak acid like acetic acid retains some H⁺ bonded within the molecule.\n\n**Why the other options are wrong:**\n- **(A)** Acids release H⁺, not hydroxyl ions; that describes a base.\n- **(C)** A stronger acid has a LOWER pH (more H⁺), not higher.\n- **(D)** Partial ionization describes the weak acid (Y), not the strong acid.\n- **(E)** Accepting protons describes a base, not an acid."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1889,14 +1889,14 @@
           "question": {
             "stem": "Two glucose monomers are joined into a larger molecule with the release of a water molecule. How does this reaction differ from hydrolysis in terms of the covalent bond involved?",
             "options": [
-              "This dehydration synthesis forms a new covalent bond, while hydrolysis breaks a covalent bond using water",
               "This hydrolysis breaks a covalent bond, while dehydration synthesis consumes water",
-              "Both reactions break covalent bonds but only hydrolysis releases water",
               "This dehydration synthesis breaks a covalent bond and consumes water",
+              "Both reactions break covalent bonds but only hydrolysis releases water",
+              "This dehydration synthesis forms a new covalent bond, while hydrolysis breaks a covalent bond using water",
               "Both reactions form covalent bonds and release water"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Dehydration synthesis creates a covalent bond between monomers and releases water, whereas hydrolysis uses a water molecule to split (break) a covalent bond.\n\n**Why the other options are wrong:**\n- **(B)** The described reaction releases water and forms a bond, so it is dehydration synthesis, not hydrolysis.\n- **(C)** Dehydration synthesis forms a bond; it does not break one.\n- **(D)** Dehydration synthesis forms a bond and releases (not consumes) water.\n- **(E)** Hydrolysis breaks bonds and consumes water; only dehydration synthesis releases water."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** Dehydration synthesis creates a covalent bond between monomers and releases water, whereas hydrolysis uses a water molecule to split (break) a covalent bond.\n\n**Why the other options are wrong:**\n- **(A)** The described reaction releases water and forms a bond, so it is dehydration synthesis, not hydrolysis.\n- **(B)** Dehydration synthesis forms a bond and releases (not consumes) water.\n- **(C)** Dehydration synthesis forms a bond; it does not break one.\n- **(E)** Hydrolysis breaks bonds and consumes water; only dehydration synthesis releases water."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1906,14 +1906,14 @@
           "question": {
             "stem": "A patient's calcium and phosphate intake is being evaluated. Which function is MOST directly associated with these two ions in the body?",
             "options": [
+              "Breaking hydrogen bonds during evaporative cooling",
               "Being incorporated into bones and teeth as structural mineral",
               "Generating electrical impulses along neuron membranes",
               "Serving as the primary solvent for body fluids",
-              "Breaking hydrogen bonds during evaporative cooling",
               "Accepting protons to raise blood pH"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Calcium and phosphate that enter the body are largely incorporated into bones and teeth, strengthening these structures.\n\n**Why the other options are wrong:**\n- **(B)** Sodium and potassium ions are the primary players in electrical signalling, not calcium/phosphate specifically for this role.\n- **(C)** Water, not ions, is the solvent of body fluids.\n- **(D)** Evaporative cooling is a property of water, not of calcium or phosphate ions.\n- **(E)** Accepting protons is a buffer/base function, not the defining role of calcium and phosphate."
+            "correct_index": 1,
+            "explanation": "**Why (B) is correct:** Calcium and phosphate that enter the body are largely incorporated into bones and teeth, strengthening these structures.\n\n**Why the other options are wrong:**\n- **(A)** Evaporative cooling is a property of water, not of calcium or phosphate ions.\n- **(C)** Sodium and potassium ions are the primary players in electrical signalling, not calcium/phosphate specifically for this role.\n- **(D)** Water, not ions, is the solvent of body fluids.\n- **(E)** Accepting protons is a buffer/base function, not the defining role of calcium and phosphate."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1923,14 +1923,14 @@
           "question": {
             "stem": "You stir a spoonful of table salt into a glass of water until it fully dissolves and is evenly distributed. Which statement correctly describes this system?",
             "options": [
-              "It is a homogeneous solution where water is the solvent and the ions are solutes",
-              "It is a homogeneous solution where the salt is the solvent and water is the solute",
               "The salt and water chemically bond to form a new compound",
+              "The dissolved ions lose their chemical identity within the water",
+              "It is a homogeneous solution where water is the solvent and the ions are solutes",
               "It is a mixture in which the solute is unevenly concentrated on one side",
-              "The dissolved ions lose their chemical identity within the water"
+              "It is a homogeneous solution where the salt is the solvent and water is the solute"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** In this solution the water is the solvent, the dissolved sodium and chloride ions are solutes, and even distribution makes it homogeneous.\n\n**Why the other options are wrong:**\n- **(B)** The solvent is the substance doing the dissolving (water), not the salt.\n- **(C)** In a mixture the components do not chemically bond into a new compound.\n- **(D)** A homogeneous solution is evenly distributed, not concentrated on one side.\n- **(E)** In a mixture each substance retains its own chemical identity."
+            "correct_index": 2,
+            "explanation": "**Why (C) is correct:** In this solution the water is the solvent, the dissolved sodium and chloride ions are solutes, and even distribution makes it homogeneous.\n\n**Why the other options are wrong:**\n- **(A)** In a mixture the components do not chemically bond into a new compound.\n- **(B)** In a mixture each substance retains its own chemical identity.\n- **(D)** A homogeneous solution is evenly distributed, not concentrated on one side.\n- **(E)** The solvent is the substance doing the dissolving (water), not the salt."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1941,13 +1941,13 @@
             "stem": "Which pairing of a body fluid with its correct location is accurate based on the unit's terminology?",
             "options": [
               "Cerebrospinal fluid — within and surrounding the central nervous system",
-              "Synovial fluid — the fluid portion of blood",
-              "Pleural fluid — inside the cardiac sac around the heart",
+              "Cytosol — the fluid between adjacent tissue cells",
               "Interstitial fluid — the fluid enclosed within cells",
-              "Cytosol — the fluid between adjacent tissue cells"
+              "Pleural fluid — inside the cardiac sac around the heart",
+              "Synovial fluid — the fluid portion of blood"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Cerebrospinal fluid is found within the openings of the central nervous system and surrounding the brain and spinal cord.\n\n**Why the other options are wrong:**\n- **(B)** The fluid portion of blood is plasma, not synovial fluid, which lubricates joints.\n- **(C)** Pericardial (not pleural) fluid is in the cardiac sac; pleural fluid is around the lungs.\n- **(D)** Interstitial fluid surrounds cells; intracellular fluid is enclosed within cells.\n- **(E)** Cytosol is the intracellular fluid inside cells, not the fluid between cells."
+            "explanation": "**Why (A) is correct:** Cerebrospinal fluid is found within the openings of the central nervous system and surrounding the brain and spinal cord.\n\n**Why the other options are wrong:**\n- **(B)** Cytosol is the intracellular fluid inside cells, not the fluid between cells.\n- **(C)** Interstitial fluid surrounds cells; intracellular fluid is enclosed within cells.\n- **(D)** Pericardial (not pleural) fluid is in the cardiac sac; pleural fluid is around the lungs.\n- **(E)** The fluid portion of blood is plasma, not synovial fluid, which lubricates joints."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1957,14 +1957,14 @@
           "question": {
             "stem": "When sugar is dissolved in hot tea, the tea becomes a solution. Which combination correctly identifies the roles of each component?",
             "options": [
-              "Sugar is the solute, water is the solvent, and the sweetened tea is the solution",
-              "Sugar is the solvent, water is the solute, and the tea is the solution",
+              "Sugar is the solution, water is the solute, and tea is the solvent",
               "Water is the solute, sugar is the solution, and tea is the solvent",
-              "Sugar and water are both solvents, and the tea is the solute",
-              "Sugar is the solution, water is the solute, and tea is the solvent"
+              "Sugar is the solvent, water is the solute, and the tea is the solution",
+              "Sugar is the solute, water is the solvent, and the sweetened tea is the solution",
+              "Sugar and water are both solvents, and the tea is the solute"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** The solute is the substance that dissolves (sugar), the solvent is the substance doing the dissolving (water), and the resulting homogeneous mixture is the solution.\n\n**Why the other options are wrong:**\n- **(B)** The solvent is water, not sugar; sugar is the solute.\n- **(C)** These role assignments are scrambled and incorrect.\n- **(D)** Water is the solvent but sugar is the solute, not a second solvent.\n- **(E)** Sugar is the solute, not the solution, and water is the solvent, not the solute."
+            "correct_index": 3,
+            "explanation": "**Why (D) is correct:** The solute is the substance that dissolves (sugar), the solvent is the substance doing the dissolving (water), and the resulting homogeneous mixture is the solution.\n\n**Why the other options are wrong:**\n- **(A)** Sugar is the solute, not the solution, and water is the solvent, not the solute.\n- **(B)** These role assignments are scrambled and incorrect.\n- **(C)** The solvent is water, not sugar; sugar is the solute.\n- **(E)** Water is the solvent but sugar is the solute, not a second solvent."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1975,13 +1975,13 @@
             "stem": "A positively charged hydrogen ion (H⁺) is often simply called a \"proton.\" Which explanation best justifies this label?",
             "options": [
               "A hydrogen atom's most common isotope has one proton and one electron, so losing the electron leaves just the proton",
-              "Hydrogen ions carry an extra neutron that behaves like a proton",
               "The hydrogen ion gains an electron, converting it into a proton",
               "A proton and a hydroxyl ion are chemically identical",
+              "Hydrogen ions carry an extra neutron that behaves like a proton",
               "Hydrogen ions release hydroxyl groups that act as protons"
             ],
             "correct_index": 0,
-            "explanation": "**Why (A) is correct:** Hydrogen's most common isotope has one proton and one electron and no neutrons, so when it loses its single electron to become H⁺, only the proton remains.\n\n**Why the other options are wrong:**\n- **(B)** The common hydrogen isotope has no neutrons, so no extra neutron is involved.\n- **(C)** Forming H⁺ involves losing, not gaining, an electron.\n- **(D)** A proton and a hydroxyl ion (OH⁻) are entirely different species.\n- **(E)** Acids release H⁺, not hydroxyl groups, and hydroxyl groups are not protons."
+            "explanation": "**Why (A) is correct:** Hydrogen's most common isotope has one proton and one electron and no neutrons, so when it loses its single electron to become H⁺, only the proton remains.\n\n**Why the other options are wrong:**\n- **(B)** Forming H⁺ involves losing, not gaining, an electron.\n- **(C)** A proton and a hydroxyl ion (OH⁻) are entirely different species.\n- **(D)** The common hydrogen isotope has no neutrons, so no extra neutron is involved.\n- **(E)** Acids release H⁺, not hydroxyl groups, and hydroxyl groups are not protons."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
@@ -1991,14 +1991,14 @@
           "question": {
             "stem": "Blood pH begins to drop slightly below 7.35. How does a carbonic acid/bicarbonate buffer respond to help restore normal pH?",
             "options": [
-              "The bicarbonate acts as a weak base and binds the excess hydrogen ions",
-              "The carbonic acid dissociates further to release more hydrogen ions",
-              "The buffer permanently eliminates all hydrogen ions from the fluid",
               "The buffer raises pH by releasing additional H⁺ into solution",
-              "The buffer acts as a strong acid to neutralize the added base"
+              "The buffer permanently eliminates all hydrogen ions from the fluid",
+              "The carbonic acid dissociates further to release more hydrogen ions",
+              "The buffer acts as a strong acid to neutralize the added base",
+              "The bicarbonate acts as a weak base and binds the excess hydrogen ions"
             ],
-            "correct_index": 0,
-            "explanation": "**Why (A) is correct:** When pH falls, the conjugate base component (bicarbonate) acts as a weak base and binds the excess H⁺, resisting the drop in pH; body fluids are normally maintained at pH 7.35–7.45.\n\n**Why the other options are wrong:**\n- **(B)** Releasing more H⁺ would worsen the acidity, not correct it.\n- **(C)** Buffers moderate changes but do not permanently remove all H⁺.\n- **(D)** Releasing H⁺ would lower pH further, the opposite of what is needed.\n- **(E)** The problem is falling pH (excess acid), and buffers use weak, not strong, components."
+            "correct_index": 4,
+            "explanation": "**Why (E) is correct:** When pH falls, the conjugate base component (bicarbonate) acts as a weak base and binds the excess H⁺, resisting the drop in pH; body fluids are normally maintained at pH 7.35–7.45.\n\n**Why the other options are wrong:**\n- **(A)** Releasing H⁺ would lower pH further, the opposite of what is needed.\n- **(B)** Buffers moderate changes but do not permanently remove all H⁺.\n- **(C)** Releasing more H⁺ would worsen the acidity, not correct it.\n- **(D)** The problem is falling pH (excess acid), and buffers use weak, not strong, components."
           },
           "gen_model": "claude-opus-4-8",
           "verified": "pass"
