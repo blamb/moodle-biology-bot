@@ -158,7 +158,16 @@ lti.onConnect(async (token: IdToken, req, res) => {
 
   const ctxTitle = token.platformContext.context?.title || '';
   const role = isTeacher(token) ? 'teacher' : 'student';
+  // LTI launch_presentation.return_url — where the platform wants us to send
+  // the user "back to course" (Moodle: mod/lti/return.php?...). Only trust
+  // http(s) URLs; anything else renders as no button.
+  const lp = token.platformContext.launchPresentation as
+    | Record<string, unknown>
+    | undefined;
+  const rawReturnUrl = typeof lp?.return_url === 'string' ? lp.return_url : '';
+  const returnUrl = /^https?:\/\//i.test(rawReturnUrl) ? rawReturnUrl : '';
   const html = loadLaunchHtml()
+    .replace('{{RETURN_URL}}', escapeHtml(returnUrl))
     .replace('{{DISPLAY_NAME}}', escapeHtml(student.display_name))
     .replace('{{PLATFORM_NAME}}', escapeHtml(token.platformInfo.name || 'Unknown platform'))
     .replace('{{CONTEXT_TITLE_SEP}}', ctxTitle ? ' — ' : '')
