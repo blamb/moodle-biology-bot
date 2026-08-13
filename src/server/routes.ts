@@ -374,7 +374,15 @@ lti.app.post('/api/quiz/generate', async (req: Request, res: Response) => {
       [student.id, sessionKind, unitNo, JSON.stringify({ difficulty, questions })]
     );
     const sessionId = sessions[0]!.id;
-    res.json({ session_id: sessionId, kind, unit_no: unitNo, difficulty, questions });
+    // Answers stay server-side (in the session summary, used by /api/quiz/answer).
+    // The browser only ever needs the display view of each question.
+    res.json({
+      session_id: sessionId,
+      kind,
+      unit_no: unitNo,
+      difficulty,
+      questions: questions.map((q) => publicQuestion(kind, q)),
+    });
   } catch (e) {
     console.error('POST /api/quiz/generate failed:', e);
     res.status(500).json({ error: (e as Error).message });
@@ -804,7 +812,20 @@ lti.app.post('/api/exam/generate', async (req: Request, res: Response) => {
       [student.id, JSON.stringify({ difficulty, items, counts })]
     );
     const sessionId = rows[0]!.id;
-    res.json({ session_id: sessionId, items, difficulty, counts });
+    // The online exam grades server-side (/api/exam/answer reads the session
+    // summary), so by default the browser gets answer-stripped items — a
+    // student can't lift the key from devtools mid-exam. The printable flow
+    // passes include_key: the whole point there is a self-study paper whose
+    // answer key the student can choose to reveal.
+    const includeKey = req.body?.include_key === true;
+    const outItems = includeKey
+      ? items
+      : items.map((it) => ({
+          unit_no: it.unit_no,
+          kind: it.kind,
+          question: publicQuestion(it.kind, it.question),
+        }));
+    res.json({ session_id: sessionId, items: outItems, difficulty, counts });
   } catch (e) {
     console.error('POST /api/exam/generate failed:', e);
     res.status(500).json({ error: (e as Error).message });

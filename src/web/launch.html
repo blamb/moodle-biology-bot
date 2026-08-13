@@ -2691,7 +2691,9 @@
       const resp = await fetch(apiUrl('/api/exam/generate'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ unit_nos, counts, difficulty }),
+        // include_key: the printable paper offers an answer-key toggle, so this
+        // flow (and only this flow) needs the answers client-side.
+        body: JSON.stringify({ unit_nos, counts, difficulty, include_key: true }),
       });
       if (!resp.ok) {
         const body = await resp.json().catch(() => ({}));
