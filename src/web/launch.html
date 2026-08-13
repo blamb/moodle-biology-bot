@@ -3070,7 +3070,7 @@
     }
     const exp = document.createElement('p');
     exp.className = 'quiz-explanation';
-    exp.textContent = data.explanation;
+    setMd(exp, data.explanation);
     result.appendChild(exp);
     box.appendChild(result);
   }
@@ -3246,7 +3246,7 @@
           }
           const exp = document.createElement('p');
           exp.className = 'quiz-explanation';
-          exp.textContent = r.data.explanation;
+          setMd(exp, r.data.explanation);
           result.appendChild(exp);
           card.appendChild(result);
         }
@@ -3327,7 +3327,8 @@
     const conceptLines = missed.map((r) => {
       const q = r.question;
       const stem = (kind === 'fitb' ? q.stem.replace(/_{2,}/g, '___') : q.stem);
-      const exp = r.data.explanation || '';
+      // Plain-text context line, so strip the markdown bold markers.
+      const exp = (r.data.explanation || '').replace(/\*\*/g, '');
       // Truncate aggressively — students don't need the full stem here.
       const shortStem = stem.length > 110 ? stem.slice(0, 107) + '…' : stem;
       return `${shortStem}  →  ${exp}`;
