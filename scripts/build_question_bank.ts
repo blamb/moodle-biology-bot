@@ -27,7 +27,7 @@
 import 'dotenv/config';
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { GEN_MODEL } from '../src/server/anthropic.js';
 import {
   generateMC,
@@ -282,6 +282,67 @@ async function buildUnit(
   return { bank: { unit_no: unitNo, generated_at: new Date().toISOString(), levels }, flagged };
 }
 
+// ─── Distribution / sanity audit ─────────────────────────────────────────────
+// The all-answers-at-"A" bug (instructor feedback, Aug 2026) was measurable at
+// build time but nothing measured it. This gate does: it fails the build when
+// the generated artifacts show systematic bias, instead of waiting for a human
+// to eyeball 30 questions. Checks are per (unit, level) set.
+
+export function auditBank(bank: UnitBank): string[] {
+  const problems: string[] = [];
+  for (const [level, lb] of Object.entries(bank.levels)) {
+    const where = `u${bank.unit_no} ${level}`;
+
+    // MC: no single answer position may hold >40% of the set (uniform shuffle
+    // makes that astronomically unlikely; hitting it means the shuffle broke).
+    const mc = lb.mc;
+    if (mc.length >= 10) {
+      const hist = new Map<number, number>();
+      for (const it of mc) {
+        const ci = (it.question as McQuestion).correct_index;
+        hist.set(ci, (hist.get(ci) ?? 0) + 1);
+      }
+      for (const [pos, n] of hist) {
+        if (n / mc.length > 0.4) {
+          problems.push(
+            `${where} MC: ${n}/${mc.length} correct answers at position ${String.fromCharCode(65 + pos)} — answer-position bias`
+          );
+        }
+      }
+    }
+    // MC: the explanation's "Why (X) is correct" must match correct_index
+    // (guards the letter-remap logic in shuffleMcOptions).
+    for (const it of mc) {
+      const q = it.question as McQuestion;
+      const m = /\*\*Why \(([A-E])\) is correct/.exec(q.explanation);
+      if (m && m[1]!.charCodeAt(0) - 65 !== q.correct_index) {
+        problems.push(`${where} MC ${it.id}: explanation says (${m[1]}) but correct_index is ${q.correct_index}`);
+      }
+    }
+
+    // TF: a set that's (nearly) all-true or all-false teaches test-taking, not
+    // biology — and suggests generator drift.
+    const tf = lb.tf;
+    if (tf.length >= 10) {
+      const trues = tf.filter((it) => (it.question as TfQuestion).correct).length;
+      const frac = trues / tf.length;
+      if (frac > 0.8 || frac < 0.2) {
+        problems.push(`${where} TF: ${trues}/${tf.length} answers are True — true/false imbalance`);
+      }
+    }
+
+    // FR: rubric marks must sum to total_marks (grader trusts this).
+    for (const it of lb.fr) {
+      const q = it.question as FrQuestion;
+      const sum = q.rubric.reduce((a, r) => a + r.points, 0);
+      if (sum !== q.total_marks) {
+        problems.push(`${where} FR ${it.id}: rubric sums to ${sum} but total_marks is ${q.total_marks}`);
+      }
+    }
+  }
+  return problems;
+}
+
 // ─── Report + main ───────────────────────────────────────────────────────────
 
 function writeFlaggedReport(flagged: Flagged[]): void {
@@ -314,10 +375,14 @@ async function main(): Promise<number> {
   console.log(`Accuracy pass: ${verify ? 'ON' : 'OFF (--no-verify)'}\n`);
 
   const allFlagged: Flagged[] = [];
+  const allProblems: string[] = [];
   for (const unitNo of units) {
     console.log(`Unit ${unitNo}:`);
     const { bank, flagged } = await buildUnit(unitNo, targets, verify);
     allFlagged.push(...flagged);
+    const problems = auditBank(bank);
+    allProblems.push(...problems);
+    for (const p of problems) console.log(`    ⚠ AUDIT: ${p}`);
     const out = join(BANK_DIR, `unit-${String(unitNo).padStart(2, '0')}.json`);
     writeFileSync(out, JSON.stringify(bank, null, 2), 'utf8');
     console.log(`  → wrote ${out}\n`);
@@ -327,8 +392,18 @@ async function main(): Promise<number> {
     writeFlaggedReport(allFlagged);
     console.log(`Accuracy pass left ${allFlagged.length} question(s) flagged. See content/question-bank/_flagged-report.md`);
   }
+  if (allProblems.length > 0) {
+    // Files are still written (the run isn't wasted) but the build fails loudly:
+    // do not ship a bank that failed the distribution audit.
+    console.error(`\nAUDIT FAILED: ${allProblems.length} problem(s) found — fix before committing this bank.`);
+    return 1;
+  }
   console.log('Done.');
   return 0;
 }
 
-main().then((code) => process.exit(code));
+// Only run when executed directly (auditBank is importable without triggering
+// a full bank build).
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().then((code) => process.exit(code));
+}
