@@ -11,6 +11,7 @@
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { randomBytes } from 'node:crypto';
 import ltijs, { type IdToken } from 'ltijs';
 import Database from 'ltijs-sequelize';
 
@@ -24,6 +25,38 @@ import { renderAdminCostsHtml } from './admin.js';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const LAUNCH_HTML_PATH = join(HERE, '..', 'web', 'launch.html');
+
+// ─── Full-screen session handoff ─────────────────────────────────────────────
+// Firefox (Total Cookie Protection) — and progressively other browsers —
+// partitions cookies set inside a cross-site iframe, keyed to the embedding
+// site. The session cookie issued during the embedded Moodle launch is
+// therefore invisible after a top-level navigation to this domain, and the
+// Full screen button 401s with "Session not found". Fix: a one-time handoff.
+// An authenticated in-iframe call mints a nonce bound to the current session
+// cookies + ltik; the top-level GET /fullscreen redeems it, re-issues those
+// cookies first-party, and redirects into the app.
+
+// Nonces are pre-minted (the click must navigate synchronously to keep its
+// user activation), so the TTL covers a realistic load-to-click gap. Still
+// single-use and 192 bits of entropy.
+const FULLSCREEN_NONCE_TTL_MS = 10 * 60_000;
+const fullscreenNonces = new Map<
+  string,
+  { cookieHeader: string; ltik: string; expires: number }
+>();
+
+/** Mint a single-use, short-lived nonce for the full-screen breakout. */
+export function mintFullscreenNonce(cookieHeader: string, ltik: string): string {
+  const now = Date.now();
+  for (const [k, v] of fullscreenNonces) if (v.expires < now) fullscreenNonces.delete(k);
+  const nonce = randomBytes(24).toString('base64url');
+  fullscreenNonces.set(nonce, {
+    cookieHeader,
+    ltik,
+    expires: now + FULLSCREEN_NONCE_TTL_MS,
+  });
+  return nonce;
+}
 
 // In dev we re-read on every launch so HTML edits show up without restarting
 // the Node server. In prod we'd cache.
@@ -96,6 +129,33 @@ lti.setup(
           env: process.env.NODE_ENV || 'development',
           uptime_s: Math.round(process.uptime()),
         });
+      });
+
+      // Redeem a full-screen handoff nonce: re-issue the launch's session
+      // cookies as first-party cookies, then enter the app with the same ltik.
+      // Mounted before the LTI session validator on purpose — at this point
+      // the browser has no (visible) session yet; the nonce IS the auth.
+      server.get('/fullscreen', (req, res) => {
+        const nonce = String(req.query.n ?? '');
+        const entry = fullscreenNonces.get(nonce);
+        fullscreenNonces.delete(nonce); // single use, even on failure paths
+        if (!entry || entry.expires < Date.now()) {
+          return res
+            .status(410)
+            .type('html')
+            .send(
+              '<p>This full-screen link has expired. Go back to your Moodle course, open the Biology Bot, and click “Full screen” again.</p>'
+            );
+        }
+        const cookies = entry.cookieHeader
+          .split(';')
+          .map((c) => c.trim())
+          .filter(Boolean);
+        res.setHeader(
+          'Set-Cookie',
+          cookies.map((c) => `${c}; Path=/; HttpOnly; Secure; SameSite=None; Max-Age=86400`)
+        );
+        res.redirect(`/?ltik=${encodeURIComponent(entry.ltik)}`);
       });
 
       server.get('/admin/costs', async (req, res) => {

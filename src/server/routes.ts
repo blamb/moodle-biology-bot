@@ -11,7 +11,7 @@
 import express from 'express';
 import type { Request, Response } from 'express';
 import type { IdToken } from 'ltijs';
-import { lti } from './lti.js';
+import { lti, mintFullscreenNonce } from './lti.js';
 import { query } from './db.js';
 import { listUnits } from './content.js';
 import { findOrCreateStudent } from './students.js';
@@ -111,6 +111,30 @@ function attr(
 
 lti.app.get('/api/units', (req: Request, res: Response) => {
   res.json({ units: listUnits() });
+});
+
+/**
+ * Start a full-screen breakout. Runs inside the iframe (so the request carries
+ * the — possibly partitioned — session cookies and a valid ltik; ltijs's
+ * middleware has already validated the session before we get here). Returns a
+ * single-use /fullscreen URL that re-issues those cookies first-party, which
+ * is what cookie-partitioning browsers (Firefox TCP) need to keep the session
+ * across the top-level navigation.
+ */
+lti.app.post('/api/fullscreen-init', (req: Request, res: Response) => {
+  try {
+    tokenOf(res);
+    const ltik = String(req.query.ltik ?? '');
+    const cookieHeader = req.headers.cookie ?? '';
+    if (!ltik || !cookieHeader) {
+      return res.status(400).json({ error: 'no session context to hand off' });
+    }
+    const nonce = mintFullscreenNonce(cookieHeader, ltik);
+    res.json({ url: `/fullscreen?n=${encodeURIComponent(nonce)}` });
+  } catch (e) {
+    console.error('POST /api/fullscreen-init failed:', e);
+    res.status(500).json({ error: (e as Error).message });
+  }
 });
 
 // ─── Teacher / instructor endpoints ─────────────────────────────────────────
