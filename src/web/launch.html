@@ -972,19 +972,33 @@
   if (inIframe) {
     const fs = $('#nav-fullscreen');
     fs.hidden = false;
-    fs.addEventListener('click', async () => {
-      // Preferred path: one-time session handoff. Cookie-partitioning browsers
-      // (Firefox with Total Cookie Protection) hide the iframe's session
-      // cookie from top-level requests, so /fullscreen re-issues it
-      // first-party before entering the app.
-      let target = window.location.href;
+    // Cookie-partitioning browsers (Firefox with Total Cookie Protection) hide
+    // the iframe's session cookie from top-level requests, so a bare top
+    // navigation 401s with "Session not found". The /fullscreen handoff
+    // re-issues the session first-party — but the navigation itself must run
+    // SYNCHRONOUSLY in the click handler (browsers void the iframe's user
+    // activation across an await), so the handoff URL is minted ahead of time
+    // and refreshed whenever the pointer reaches the button.
+    let fsTarget = null;
+    let fsMintedAt = 0;
+    async function mintFsTarget() {
+      if (Date.now() - fsMintedAt < 30000) return; // still fresh
+      fsMintedAt = Date.now();
       try {
         const resp = await fetch(apiUrl('/api/fullscreen-init'), { method: 'POST' });
         if (resp.ok) {
           const d = await resp.json();
-          if (d.url) target = window.location.origin + d.url;
+          if (d.url) fsTarget = window.location.origin + d.url;
         }
-      } catch { /* fall back to direct navigation */ }
+      } catch { /* fall back to direct navigation on click */ }
+    }
+    mintFsTarget();
+    fs.addEventListener('pointerenter', mintFsTarget);
+    fs.addEventListener('focus', mintFsTarget);
+    fs.addEventListener('click', () => {
+      const target = fsTarget || window.location.href;
+      fsTarget = null; // the nonce is single-use
+      fsMintedAt = 0;
       try {
         window.top.location.href = target;
       } catch {

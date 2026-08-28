@@ -36,7 +36,10 @@ const LAUNCH_HTML_PATH = join(HERE, '..', 'web', 'launch.html');
 // cookies + ltik; the top-level GET /fullscreen redeems it, re-issues those
 // cookies first-party, and redirects into the app.
 
-const FULLSCREEN_NONCE_TTL_MS = 60_000;
+// Nonces are pre-minted (the click must navigate synchronously to keep its
+// user activation), so the TTL covers a realistic load-to-click gap. Still
+// single-use and 192 bits of entropy.
+const FULLSCREEN_NONCE_TTL_MS = 10 * 60_000;
 const fullscreenNonces = new Map<
   string,
   { cookieHeader: string; ltik: string; expires: number }
