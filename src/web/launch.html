@@ -972,12 +972,24 @@
   if (inIframe) {
     const fs = $('#nav-fullscreen');
     fs.hidden = false;
-    fs.addEventListener('click', () => {
+    fs.addEventListener('click', async () => {
+      // Preferred path: one-time session handoff. Cookie-partitioning browsers
+      // (Firefox with Total Cookie Protection) hide the iframe's session
+      // cookie from top-level requests, so /fullscreen re-issues it
+      // first-party before entering the app.
+      let target = window.location.href;
       try {
-        window.top.location.href = window.location.href;
+        const resp = await fetch(apiUrl('/api/fullscreen-init'), { method: 'POST' });
+        if (resp.ok) {
+          const d = await resp.json();
+          if (d.url) target = window.location.origin + d.url;
+        }
+      } catch { /* fall back to direct navigation */ }
+      try {
+        window.top.location.href = target;
       } catch {
         // Sandboxed iframe without top-navigation permission — open a new tab.
-        window.open(window.location.href, '_blank', 'noopener');
+        window.open(target, '_blank', 'noopener');
       }
     });
   } else if (returnUrl) {
