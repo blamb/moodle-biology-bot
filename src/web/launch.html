@@ -222,6 +222,34 @@
   .quiz-result.incorrect .label { color: var(--bad); }
   .quiz-explanation { margin: .35rem 0 0; color: var(--fg); }
 
+  /* Question rating strip (shown after a bank question is answered) */
+  .qfb {
+    margin-top: .9rem; padding-top: .75rem; border-top: 1px dashed var(--border);
+    font-size: .85rem; color: var(--muted);
+  }
+  .qfb .qfb-ask { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+  .qfb-thumb {
+    border: 1px solid var(--border); background: var(--card); border-radius: 6px;
+    padding: .2rem .55rem; cursor: pointer; font-size: .95rem; line-height: 1.4;
+  }
+  .qfb-thumb:hover { border-color: var(--accent); }
+  .qfb-thumb[aria-pressed="true"] { border-color: var(--accent); background: #eaf3fc; }
+  .qfb-detail { margin-top: .6rem; }
+  .qfb-chips { display: flex; gap: .4rem; flex-wrap: wrap; margin: .35rem 0 .5rem; }
+  .qfb-chip {
+    border: 1px solid var(--border); background: var(--card); border-radius: 999px;
+    padding: .2rem .7rem; cursor: pointer; font-size: .8rem; color: var(--fg);
+  }
+  .qfb-chip:hover { border-color: var(--accent); }
+  .qfb-chip[aria-pressed="true"] { border-color: var(--accent); background: #eaf3fc; color: var(--accent); }
+  .qfb-note { display: flex; gap: .4rem; align-items: flex-start; flex-wrap: wrap; }
+  .qfb-note textarea {
+    flex: 1 1 260px; min-height: 2.4rem; padding: .35rem .5rem; font: inherit;
+    font-size: .85rem; border: 1px solid var(--border); border-radius: 6px; resize: vertical;
+  }
+  .qfb-thanks { color: var(--good); }
+  .qfb-err { color: var(--bad); }
+
   .quiz-summary { padding: 1rem 0; }
   .quiz-summary .score {
     font-size: 1.5rem; font-weight: 600; margin: .5rem 0;
@@ -452,6 +480,32 @@
   }
   .weak-list li:hover::after { color: var(--accent-deep); }
 
+  /* Instructor question-quality report */
+  .qfb-card {
+    border: 1px solid var(--border); border-left: 3px solid var(--bad);
+    border-radius: 6px; padding: .7rem .9rem; margin: .5rem 0; background: var(--card);
+  }
+  .qfb-card .qfb-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: .5rem; flex-wrap: wrap; font-size: .8rem; color: var(--muted);
+  }
+  .qfb-card .qfb-why { font-weight: 600; color: var(--bad); margin: .3rem 0; font-size: .9rem; }
+  .qfb-card .qfb-stem { margin: .35rem 0; }
+  .qfb-card .qfb-key { font-size: .87rem; color: var(--fg); margin: .25rem 0; }
+  .qfb-card .qfb-key .k { color: var(--good); font-weight: 600; }
+  .qfb-card .qfb-counts { font-size: .82rem; color: var(--muted); margin-top: .45rem; }
+  .qfb-card ul.qfb-opts { list-style: none; padding-left: 0; margin: .3rem 0; font-size: .87rem; }
+  .qfb-card ul.qfb-opts li { padding: .1rem 0; }
+  .qfb-card ul.qfb-opts li.correct { color: var(--good); font-weight: 600; }
+  .qfb-card blockquote.qfb-quote {
+    margin: .3rem 0 .3rem .2rem; padding: .1rem 0 .1rem .6rem;
+    border-left: 2px solid var(--border); color: var(--fg); font-size: .87rem;
+  }
+  .qfb-badge {
+    display: inline-block; background: #fcf3f3; border: 1px solid #f1c4c4;
+    color: var(--bad); border-radius: 999px; padding: 0 .5rem; font-size: .78rem;
+  }
+
   /* Role-conditional visibility */
   body[data-role="student"] .teacher-only { display: none !important; }
 
@@ -680,12 +734,60 @@
       </div>
       <div id="teacher-concepts-output"></div>
 
+      <h3 style="margin: 1.25rem 0 .25rem; font-size: .95rem;">Question quality</h3>
+      <div style="color:var(--muted);font-size:.85rem;margin-bottom:.4rem">
+        Students rate each practice question 👍/👎 after answering. This report ranks the questions
+        worth your review — weighted so that a thumbs-down from a student who answered
+        <em>correctly</em> counts double, and "just found it hard" counts for almost nothing.
+      </div>
+      <button class="btn" id="teacher-qfb-open" type="button">Open question quality report</button>
+
       <h3 style="margin: 1.25rem 0 .25rem; font-size: .95rem;">Exam builder</h3>
       <div style="color:var(--muted);font-size:.85rem;margin-bottom:.4rem">
         Generate fresh exam questions (never drawn from the students' practice bank) with full answer
         keys, review and prune them, then export as Moodle XML or a Word document.
       </div>
       <button class="btn" id="teacher-examgen-open" type="button">Open exam builder</button>
+    </div>
+
+    <div class="teacher-state" data-state="qfb" hidden>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem">
+        <h3 style="margin:0;font-size:1rem">Question quality</h3>
+        <button class="back-btn" id="qfb-back" type="button">← Back to overview</button>
+      </div>
+      <p style="color:var(--muted);font-size:.85rem;margin:.25rem 0 1rem">
+        Ratings are aggregated and unattributed — you see the counts and the notes, not who left
+        them. Covers the unit practice bank only; practice-exam questions are generated fresh each
+        time and have no stable identity to accumulate against.
+      </p>
+      <div class="tot-cards" id="qfb-totals"></div>
+
+      <h4 style="margin:1.25rem 0 .25rem;font-size:.9rem">Needs review</h4>
+      <div style="color:var(--muted);font-size:.85rem;margin-bottom:.4rem">
+        Questions whose ratings suggest a real problem rather than a hard question.
+      </div>
+      <div id="qfb-flagged"></div>
+
+      <h4 style="margin:1.5rem 0 .25rem;font-size:.9rem">All rated questions</h4>
+      <div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:.4rem">
+        <button class="btn btn-ghost" id="qfb-csv" type="button">Download CSV</button>
+        <span style="color:var(--muted);font-size:.85rem">For scanning offline at the end of term.</span>
+      </div>
+      <div style="overflow-x: auto">
+        <table class="progress-table" id="qfb-table">
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th class="num">👍</th>
+              <th class="num">👎</th>
+              <th class="num">👎 despite correct</th>
+              <th class="num">Class accuracy</th>
+              <th class="num">Concern</th>
+            </tr>
+          </thead>
+          <tbody id="qfb-tbody"></tbody>
+        </table>
+      </div>
     </div>
 
     <div class="teacher-state" data-state="examgen" hidden>
@@ -1063,6 +1165,15 @@
       wrap.appendChild(label);
     });
     wrap.dataset.populated = '1';
+  }
+
+  if ($('#teacher-qfb-open')) {
+    $('#teacher-qfb-open').addEventListener('click', () => {
+      teacherShowState('qfb');
+      loadQuestionFeedback();
+    });
+    $('#qfb-back').addEventListener('click', () => teacherShowState('overview'));
+    $('#qfb-csv').addEventListener('click', downloadQfbCsv);
   }
 
   if ($('#teacher-examgen-open')) {
@@ -2076,6 +2187,165 @@
     if (inputEl) inputEl.focus();
   }
 
+  // ───── Question rating (👍/👎) ─────
+  // Crowd-sources question quality: the instructor scans the aggregate at the
+  // end of term instead of re-reading every generated question. A 👎 is stored
+  // the instant it's clicked and the reason patched in afterwards, so a student
+  // who navigates away mid-way still leaves the signal behind.
+  const QFB_REASONS = [
+    { key: 'wrong_answer', label: 'Answer looks wrong' },
+    { key: 'confusing', label: 'Confusing wording' },
+    { key: 'off_syllabus', label: 'Not covered in our course' },
+    { key: 'too_hard', label: 'Just found it hard' },
+  ];
+
+  async function postQuestionFeedback(kind, item, payload) {
+    const resp = await fetch(apiUrl('/api/bank/feedback'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        unit_no: currentUnit.no,
+        level: bankState[kind].level,
+        type: kind,
+        id: item.id,
+        ...payload,
+      }),
+    });
+    const data = await resp.json();
+    if (!resp.ok) throw new Error(data.error || `Server returned ${resp.status}`);
+    item.feedback = data.feedback; // so reopening the question shows the rating
+    return data.feedback;
+  }
+
+  function buildFeedbackStrip(kind, item) {
+    const wrap = document.createElement('div');
+    wrap.className = 'qfb';
+
+    // Local mirror of the stored row; chips/note patch it and re-send.
+    const state = {
+      rating: item.feedback?.rating ?? 0,
+      reason: item.feedback?.reason ?? null,
+      note: item.feedback?.note ?? '',
+    };
+
+    const ask = document.createElement('div');
+    ask.className = 'qfb-ask';
+    const label = document.createElement('span');
+    label.textContent = 'Was this question useful?';
+    ask.appendChild(label);
+
+    const up = document.createElement('button');
+    up.type = 'button';
+    up.className = 'qfb-thumb';
+    up.title = 'Yes, this was a good question';
+    up.textContent = '👍';
+    const down = document.createElement('button');
+    down.type = 'button';
+    down.className = 'qfb-thumb';
+    down.title = 'Something was wrong with this question';
+    down.textContent = '👎';
+    ask.appendChild(up);
+    ask.appendChild(down);
+
+    const status = document.createElement('span');
+    ask.appendChild(status);
+    wrap.appendChild(ask);
+
+    const detail = document.createElement('div');
+    detail.className = 'qfb-detail';
+    detail.hidden = true;
+    wrap.appendChild(detail);
+
+    const detailLabel = document.createElement('div');
+    detailLabel.textContent = 'What was the problem? (optional — helps your instructor triage)';
+    detail.appendChild(detailLabel);
+
+    const chips = document.createElement('div');
+    chips.className = 'qfb-chips';
+    const chipEls = new Map();
+    for (const r of QFB_REASONS) {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'qfb-chip';
+      chip.textContent = r.label;
+      chip.addEventListener('click', () => {
+        // Clicking the selected chip clears it.
+        state.reason = state.reason === r.key ? null : r.key;
+        paint();
+        send();
+      });
+      chips.appendChild(chip);
+      chipEls.set(r.key, chip);
+    }
+    detail.appendChild(chips);
+
+    const noteRow = document.createElement('div');
+    noteRow.className = 'qfb-note';
+    const noteInput = document.createElement('textarea');
+    noteInput.maxLength = 400;
+    noteInput.rows = 2;
+    noteInput.placeholder = 'Anything else? One line is plenty — e.g. "the key says B but the slides say D".';
+    const noteBtn = document.createElement('button');
+    noteBtn.type = 'button';
+    noteBtn.className = 'btn btn-ghost';
+    noteBtn.textContent = 'Send note';
+    noteBtn.addEventListener('click', () => {
+      state.note = noteInput.value;
+      send();
+    });
+    noteRow.appendChild(noteInput);
+    noteRow.appendChild(noteBtn);
+    detail.appendChild(noteRow);
+
+    /** Reflect `state` in the controls. */
+    function paint() {
+      up.setAttribute('aria-pressed', String(state.rating === 1));
+      down.setAttribute('aria-pressed', String(state.rating === -1));
+      detail.hidden = state.rating !== -1;
+      for (const [key, el] of chipEls) {
+        el.setAttribute('aria-pressed', String(state.reason === key));
+      }
+    }
+
+    async function send() {
+      status.className = '';
+      status.textContent = 'Saving…';
+      const payload = { rating: state.rating, reason: state.reason, note: state.note || null };
+      try {
+        await postQuestionFeedback(kind, item, payload);
+        status.className = 'qfb-thanks';
+        if (state.rating === 0) status.textContent = 'Rating removed.';
+        else if (state.rating === 1) status.textContent = 'Thanks!';
+        else status.textContent = 'Thanks — flagged for your instructor.';
+      } catch (e) {
+        status.className = 'qfb-err';
+        status.textContent = friendlyError(e);
+      }
+    }
+
+    up.addEventListener('click', () => {
+      // Clicking the pressed thumb withdraws the rating, so a misclick isn't permanent.
+      state.rating = state.rating === 1 ? 0 : 1;
+      if (state.rating !== -1) { state.reason = null; state.note = ''; }
+      paint();
+      send();
+    });
+    down.addEventListener('click', () => {
+      state.rating = state.rating === -1 ? 0 : -1;
+      paint();
+      send();
+    });
+
+    noteInput.value = state.note;
+    paint();
+    // A rating restored from a previous visit shouldn't shout "Saving…" at nobody.
+    if (state.rating !== 0) {
+      status.className = 'qfb-thanks';
+      status.textContent = state.rating === 1 ? 'Thanks!' : 'Thanks — flagged for your instructor.';
+    }
+    return wrap;
+  }
+
   function renderBankResult(kind, panel, box, q, response, data, item) {
     // Lock the inputs and drop the Submit button.
     box.querySelectorAll('input, textarea').forEach((el) => { el.disabled = true; el.readOnly = true; });
@@ -2142,6 +2412,10 @@
     back.addEventListener('click', () => renderBankPanel(kind, panel));
     actions.appendChild(back);
     box.appendChild(actions);
+
+    // Crowd-sourced quality signal — only for bank questions, which have the
+    // stable ids the instructor's end-of-term report aggregates against.
+    if (item) box.appendChild(buildFeedbackStrip(kind, item));
   }
 
   // Share context with the tutor WITHOUT auto-sending a student message: the
@@ -2417,6 +2691,257 @@
 
   // Initial progress pull on page load.
   refreshProgress();
+
+  // ───── Teacher: question-quality report ─────
+  const QFB_REASON_LABELS = {
+    wrong_answer: 'answer looks wrong',
+    confusing: 'confusing wording',
+    off_syllabus: 'not covered in course',
+    too_hard: 'just found it hard',
+    unspecified: 'no reason given',
+  };
+  let qfbReport = null; // last loaded report, for the CSV export
+
+  async function loadQuestionFeedback() {
+    const totals = $('#qfb-totals');
+    const flagged = $('#qfb-flagged');
+    const tbody = $('#qfb-tbody');
+    totals.innerHTML = '<div class="empty-state">Loading…</div>';
+    flagged.innerHTML = '';
+    tbody.innerHTML = '';
+    try {
+      const resp = await fetch(apiUrl('/api/teacher/question-feedback'));
+      if (!resp.ok) {
+        if (resp.status === 403) throw new Error('Instructor role required.');
+        throw new Error('Server returned ' + resp.status);
+      }
+      qfbReport = await resp.json();
+      renderQfbTotals(qfbReport.totals);
+      renderQfbFlagged(qfbReport.questions.filter((q) => q.flagged));
+      renderQfbTable(qfbReport.questions);
+    } catch (e) {
+      totals.innerHTML = `<div class="err">${friendlyError(e)}</div>`;
+    }
+  }
+
+  function renderQfbTotals(t) {
+    const totals = $('#qfb-totals');
+    totals.innerHTML = '';
+    const cards = [
+      { lbl: 'Questions rated', num: t.rated_questions },
+      { lbl: 'Needs review', num: t.flagged_questions },
+      { lbl: 'Ratings', num: t.ratings },
+      { lbl: 'Thumbs up', num: t.up },
+      { lbl: 'Thumbs down', num: t.down },
+      { lbl: 'Students rating', num: t.students_rating },
+    ];
+    for (const c of cards) {
+      const div = document.createElement('div');
+      div.className = 'card-tot';
+      div.innerHTML = `<div class="num">${c.num}</div><div class="lbl">${c.lbl}</div>`;
+      totals.appendChild(div);
+    }
+  }
+
+  const QFB_KIND_LABELS = { mc: 'Multiple choice', tf: 'True / false', fitb: 'Fill in the blank', fr: 'Free response' };
+
+  /** Reason counts as "3 × answer looks wrong, 1 × confusing wording". */
+  function qfbReasonSummary(reasons) {
+    return Object.entries(reasons)
+      .filter(([, n]) => n > 0)
+      .map(([k, n]) => `${n} × ${QFB_REASON_LABELS[k] || k}`)
+      .join(', ');
+  }
+
+  function renderQfbFlagged(rows) {
+    const flagged = $('#qfb-flagged');
+    flagged.innerHTML = '';
+    if (!rows.length) {
+      flagged.innerHTML =
+        '<div style="color:var(--muted);font-size:.9rem">Nothing flagged. Either the questions are holding up, or students haven\'t rated enough of them yet.</div>';
+      return;
+    }
+    for (const r of rows) flagged.appendChild(buildQfbCard(r));
+  }
+
+  /** One flagged question, with its answer key, so it can be judged in place. */
+  function buildQfbCard(r) {
+    const card = document.createElement('div');
+    card.className = 'qfb-card';
+
+    const head = document.createElement('div');
+    head.className = 'qfb-head';
+    const left = document.createElement('span');
+    left.innerHTML =
+      `<strong>Unit ${r.unit_no}: ${escapeHtml(r.unit_title)}</strong> · ` +
+      `${r.level === 'advanced' ? 'Advanced' : 'Basic'} · ${QFB_KIND_LABELS[r.kind] || r.kind} · ` +
+      `<code>${escapeHtml(r.bank_question_id)}</code>`;
+    const badge = document.createElement('span');
+    badge.className = 'qfb-badge';
+    badge.textContent = `concern ${r.concern}`;
+    head.appendChild(left);
+    head.appendChild(badge);
+    card.appendChild(head);
+
+    const why = document.createElement('div');
+    why.className = 'qfb-why';
+    why.textContent = r.flag_reason;
+    card.appendChild(why);
+
+    const q = r.question;
+    if (!q) {
+      const gone = document.createElement('div');
+      gone.style.cssText = 'color:var(--muted);font-size:.87rem';
+      gone.textContent = 'This question is no longer in the bank (rebuilt since it was rated).';
+      card.appendChild(gone);
+    } else {
+      const stem = document.createElement('div');
+      stem.className = 'qfb-stem';
+      stem.textContent = r.kind === 'fr' ? q.prompt : q.stem;
+      card.appendChild(stem);
+
+      if (r.kind === 'mc') {
+        const ul = document.createElement('ul');
+        ul.className = 'qfb-opts';
+        (q.options || []).forEach((opt, i) => {
+          const li = document.createElement('li');
+          if (i === q.correct_index) li.classList.add('correct');
+          li.textContent = `${String.fromCharCode(65 + i)}. ${opt}` + (i === q.correct_index ? '  ← key' : '');
+          ul.appendChild(li);
+        });
+        card.appendChild(ul);
+      } else if (r.kind === 'tf') {
+        card.appendChild(qfbKeyLine('Key', q.correct ? 'True' : 'False'));
+      } else if (r.kind === 'fitb') {
+        const accepted = (q.accepted_synonyms || []).length
+          ? `${q.answer} (also accepts: ${q.accepted_synonyms.join(', ')})`
+          : q.answer;
+        card.appendChild(qfbKeyLine('Key', accepted));
+      } else {
+        card.appendChild(qfbKeyLine('Model answer', q.model_answer, true));
+      }
+
+      if (q.explanation) card.appendChild(qfbKeyLine('Explanation', q.explanation, true));
+    }
+
+    if (r.notes.length) {
+      const nHead = document.createElement('div');
+      nHead.style.cssText = 'font-size:.82rem;color:var(--muted);margin-top:.5rem';
+      nHead.textContent = r.notes.length === 1 ? 'Student note:' : 'Student notes:';
+      card.appendChild(nHead);
+      for (const note of r.notes) {
+        const bq = document.createElement('blockquote');
+        bq.className = 'qfb-quote';
+        bq.textContent = note;
+        card.appendChild(bq);
+      }
+    }
+
+    const counts = document.createElement('div');
+    counts.className = 'qfb-counts';
+    const bits = [`👍 ${r.up} · 👎 ${r.down}`];
+    if (r.down_from_correct) bits.push(`${r.down_from_correct} of those answered it correctly`);
+    const reasons = qfbReasonSummary(r.reasons);
+    if (reasons) bits.push(reasons);
+    if (r.accuracy_pct !== null) bits.push(`class accuracy ${r.accuracy_pct}% over ${r.attempts} attempts`);
+    counts.textContent = bits.join(' · ');
+    card.appendChild(counts);
+
+    return card;
+  }
+
+  /** `md: true` for generated prose (explanations, model answers) — the bank
+      stores markdown, and raw asterisks read as noise. */
+  function qfbKeyLine(label, value, md = false) {
+    const div = document.createElement('div');
+    div.className = 'qfb-key';
+    const b = document.createElement('span');
+    b.className = 'k';
+    b.textContent = label + ': ';
+    div.appendChild(b);
+    if (md) {
+      const body = document.createElement('span');
+      setMd(body, value);
+      div.appendChild(body);
+    } else {
+      div.appendChild(document.createTextNode(value));
+    }
+    return div;
+  }
+
+  function renderQfbTable(rows) {
+    const tbody = $('#qfb-tbody');
+    tbody.innerHTML = '';
+    if (!rows.length) {
+      const tr = document.createElement('tr');
+      tr.innerHTML =
+        '<td colspan="6" style="color:var(--muted);text-align:center">No ratings yet.</td>';
+      tbody.appendChild(tr);
+      return;
+    }
+    for (const r of rows) {
+      const tr = document.createElement('tr');
+      const stem = r.question ? (r.kind === 'fr' ? r.question.prompt : r.question.stem) : '(no longer in the bank)';
+      const tdQ = document.createElement('td');
+      tdQ.innerHTML =
+        `<div style="font-size:.8rem;color:var(--muted)">Unit ${r.unit_no} · ` +
+        `${r.level === 'advanced' ? 'Advanced' : 'Basic'} · ${escapeHtml(r.kind.toUpperCase())} · ` +
+        `<code>${escapeHtml(r.bank_question_id)}</code></div>` +
+        `<div>${escapeHtml(truncate(stem, 120))}</div>`;
+      const tdUp = numCell(r.up);
+      const tdDown = numCell(r.down);
+      const tdDc = numCell(r.down_from_correct || '—');
+      const tdAcc = numCell(r.accuracy_pct === null ? '—' : r.accuracy_pct + '%');
+      const tdC = numCell(r.concern);
+      if (r.flagged) tdC.innerHTML = `<span class="qfb-badge">${r.concern}</span>`;
+      for (const td of [tdQ, tdUp, tdDown, tdDc, tdAcc, tdC]) tr.appendChild(td);
+      tbody.appendChild(tr);
+    }
+  }
+
+  function numCell(value) {
+    const td = document.createElement('td');
+    td.className = 'num';
+    td.textContent = String(value);
+    return td;
+  }
+
+  function truncate(str, n) {
+    const s = String(str || '');
+    return s.length > n ? s.slice(0, n - 1) + '…' : s;
+  }
+
+  /** Flat CSV of every rated question — for scanning offline at end of term. */
+  function downloadQfbCsv() {
+    if (!qfbReport || !qfbReport.questions.length) return;
+    const cols = [
+      'question_id', 'unit_no', 'unit_title', 'level', 'kind', 'stem',
+      'thumbs_up', 'thumbs_down', 'thumbs_down_from_correct',
+      'reason_wrong_answer', 'reason_confusing', 'reason_off_syllabus', 'reason_too_hard', 'reason_unspecified',
+      'class_attempts', 'class_accuracy_pct', 'concern', 'needs_review', 'flag_reason', 'student_notes',
+    ];
+    const esc = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`;
+    const lines = [cols.join(',')];
+    for (const r of qfbReport.questions) {
+      const stem = r.question ? (r.kind === 'fr' ? r.question.prompt : r.question.stem) : '';
+      lines.push([
+        r.bank_question_id, r.unit_no, r.unit_title, r.level, r.kind, stem,
+        r.up, r.down, r.down_from_correct,
+        r.reasons.wrong_answer, r.reasons.confusing, r.reasons.off_syllabus, r.reasons.too_hard, r.reasons.unspecified,
+        r.attempts, r.accuracy_pct === null ? '' : r.accuracy_pct,
+        r.concern, r.flagged ? 'yes' : 'no', r.flag_reason, r.notes.join(' | '),
+      ].map(esc).join(','));
+    }
+    const blob = new Blob(['﻿' + lines.join('\r\n')], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'question-quality.csv';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
 
   // ───── Teacher: dashboard fetch + render ─────
   async function loadTeacherDashboard() {
