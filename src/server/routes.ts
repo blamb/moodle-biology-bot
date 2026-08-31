@@ -47,6 +47,14 @@ import {
   type BankLevel,
   type BankType,
 } from './questionBank.js';
+import {
+  recordFeedback,
+  getStudentFeedback,
+  getCourseQuestionFeedback,
+  FEEDBACK_REASONS,
+  MAX_NOTE_LEN,
+  type FeedbackReason,
+} from './questionFeedback.js';
 import { getStudentProgress } from './progress.js';
 import {
   synthesizeQuiz,
@@ -185,6 +193,29 @@ lti.app.get('/api/teacher/student/:id', async (req: Request, res: Response) => {
     res.json({ student: rows[0], progress });
   } catch (e) {
     console.error('GET /api/teacher/student/:id failed:', e);
+    res.status(500).json({ error: (e as Error).message });
+  }
+});
+
+/**
+ * Question-quality report: every bank question this course's students have
+ * rated, worst-first, with the answer key attached so the instructor can judge
+ * a disputed question without leaving the page.
+ *
+ * Aggregate and unattributed by design — the instructor sees counts and notes,
+ * never who left them.
+ */
+lti.app.get('/api/teacher/question-feedback', async (req: Request, res: Response) => {
+  try {
+    const g = gateTeacher(res);
+    if (!g) return;
+    const report = await getCourseQuestionFeedback({
+      iss: g.token.iss,
+      contextId: g.token.platformContext.context?.id ?? g.token.platformContext.contextId,
+    });
+    res.json(report);
+  } catch (e) {
+    console.error('GET /api/teacher/question-feedback failed:', e);
     res.status(500).json({ error: (e as Error).message });
   }
 });
@@ -619,6 +650,10 @@ lti.app.post('/api/bank/list', async (req: Request, res: Response) => {
     );
     const lastById = new Map(lastRows.map((r) => [r.bank_question_id, r]));
 
+    // This student's own 👍/👎 per question, so reopening a rated question
+    // shows their rating rather than asking again.
+    const feedbackById = await getStudentFeedback(student.id, ids);
+
     /** Rebuild the same {response, result} the answer route returned. */
     function lastAttemptView(
       item: (typeof items)[number],
@@ -672,6 +707,7 @@ lti.app.post('/api/bank/list', async (req: Request, res: Response) => {
         attempts: r?.attempts ?? 0,
         ever_correct: r?.ever_correct ?? false,
         last: lr ? lastAttemptView(it, lr) : null,
+        feedback: feedbackById.get(it.id) ?? null,
       };
     });
     res.json({ available: true, unit_no: unitNo, level, type, questions });
@@ -786,6 +822,63 @@ lti.app.post('/api/bank/answer', async (req: Request, res: Response) => {
     }
   } catch (e) {
     console.error('POST /api/bank/answer failed:', e);
+    res.status(500).json({ error: (e as Error).message });
+  }
+});
+
+/**
+ * Rate one bank question (👍/👎, with an optional reason + note on a 👎).
+ *
+ * Recorded per (student, question) — re-rating updates in place. rating: 0
+ * withdraws a rating, so a misclick isn't permanent. The 👎 is stored the
+ * moment it's clicked and the reason patched in after, so a student who closes
+ * the panel mid-way still leaves the signal behind.
+ */
+lti.app.post('/api/bank/feedback', async (req: Request, res: Response) => {
+  try {
+    const token = tokenOf(res);
+    const student = await studentFromToken(token);
+    const unitNo = parseInt(String(req.body?.unit_no ?? ''), 10);
+    const level = String(req.body?.level ?? '') as BankLevel;
+    const type = String(req.body?.type ?? '') as BankType;
+    const id = String(req.body?.id ?? '');
+    const rating = parseInt(String(req.body?.rating ?? ''), 10);
+
+    if (
+      !Number.isInteger(unitNo) ||
+      !VALID_LEVELS.includes(level) ||
+      !VALID_BANK_TYPES.includes(type) ||
+      !id
+    ) {
+      return res.status(400).json({ error: 'unit_no, level, type, id required' });
+    }
+    if (rating !== 1 && rating !== -1 && rating !== 0) {
+      return res.status(400).json({ error: 'rating must be 1, -1 or 0' });
+    }
+    // Only rate a question that actually exists in the bank.
+    if (!getBankItem(unitNo, level, type, id)) {
+      return res.status(404).json({ error: 'question not found' });
+    }
+
+    const rawReason = req.body?.reason == null ? null : String(req.body.reason);
+    if (rawReason !== null && !(FEEDBACK_REASONS as readonly string[]).includes(rawReason)) {
+      return res.status(400).json({ error: `reason must be one of: ${FEEDBACK_REASONS.join(', ')}` });
+    }
+    const note = req.body?.note == null ? null : String(req.body.note).slice(0, MAX_NOTE_LEN);
+
+    const stored = await recordFeedback({
+      studentId: student.id,
+      bankQuestionId: id,
+      unitNo,
+      level,
+      kind: type,
+      rating: rating as 1 | -1 | 0,
+      reason: rawReason as FeedbackReason | null,
+      note,
+    });
+    res.json({ feedback: stored });
+  } catch (e) {
+    console.error('POST /api/bank/feedback failed:', e);
     res.status(500).json({ error: (e as Error).message });
   }
 });
