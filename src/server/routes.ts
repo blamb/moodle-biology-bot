@@ -261,7 +261,7 @@ lti.app.post('/api/teacher/examgen/export', async (req: Request, res: Response) 
     const g = gateTeacher(res);
     if (!g) return;
     const format = String(req.body?.format ?? '');
-    const title = String(req.body?.title ?? '').trim().slice(0, 120) || 'Biology Bot Exam';
+    const title = String(req.body?.title ?? '').trim().slice(0, 120) || 'Human Anatomy Study Companion Exam';
     const rawItems = Array.isArray(req.body?.items) ? req.body.items : [];
     if (rawItems.length === 0 || rawItems.length > 100) {
       return res.status(400).json({ error: 'items must contain 1–100 questions' });

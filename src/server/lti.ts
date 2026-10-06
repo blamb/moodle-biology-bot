@@ -103,7 +103,7 @@ lti.setup(
     // dynRegRoute='/register'.
     dynReg: {
       url: env.LTI_TOOL_URL,
-      name: 'Biology Bot',
+      name: 'Human Anatomy Study Companion',
       description:
         'AI tutor and practice-question generator for Human A&P (BIOL 1592 / 1692)',
       redirectUris: [env.LTI_TOOL_URL],
@@ -144,7 +144,7 @@ lti.setup(
             .status(410)
             .type('html')
             .send(
-              '<p>This full-screen link has expired. Go back to your Moodle course, open the Biology Bot, and click “Full screen” again.</p>'
+              '<p>This full-screen link has expired. Go back to your Moodle course, open the Study Companion, and click “Full screen” again.</p>'
             );
         }
         const cookies = entry.cookieHeader

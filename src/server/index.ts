@@ -32,7 +32,7 @@ async function main(): Promise<void> {
     `  NODE_ENV=${env.NODE_ENV}`
   );
 
-  console.log(`\nMoodle Biology Bot is live`);
+  console.log(`\nHuman Anatomy Study Companion is live`);
   console.log(`  Local:   http://localhost:${env.PORT}`);
   console.log(`  Public:  ${env.LTI_TOOL_URL}`);
   console.log(`  Login:   ${env.LTI_TOOL_URL}/login`);

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Biology Bot</title>
+<title>Human Anatomy Study Companion</title>
 <script src="https://cdn.jsdelivr.net/npm/marked@14/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
 <style>
@@ -563,15 +563,15 @@
 <div class="wrap">
   <header class="header-row">
     <div>
-      <h1>Biology Bot</h1>
+      <h1>Human Anatomy Study Companion</h1>
       <div class="sub">Hi <strong>{{DISPLAY_NAME}}</strong> — launched from {{PLATFORM_NAME}}{{CONTEXT_TITLE_SEP}}{{CONTEXT_TITLE}}.</div>
     </div>
     <div class="header-actions">
       <button class="link-btn teacher-only" id="nav-teacher" type="button">👩‍🏫 Instructor view</button>
       <button class="link-btn" id="nav-exam" type="button">📝 Practice exam</button>
       <button class="link-btn" id="nav-progress" type="button">📊 Your progress</button>
-      <button class="link-btn" id="nav-fullscreen" type="button" hidden title="Open the Biology Bot in the full browser window">⛶ Full screen</button>
-      <button class="link-btn" id="nav-return" type="button" hidden title="Leave the Biology Bot and return to the Moodle course">↩ Back to course</button>
+      <button class="link-btn" id="nav-fullscreen" type="button" hidden title="Open the Study Companion in the full browser window">⛶ Full screen</button>
+      <button class="link-btn" id="nav-return" type="button" hidden title="Leave the Study Companion and return to the Moodle course">↩ Back to course</button>
     </div>
   </header>
 
@@ -1331,7 +1331,7 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           format,
-          title: $('#examgen-title').value.trim() || 'Biology Bot Exam',
+          title: $('#examgen-title').value.trim() || 'Human Anatomy Study Companion Exam',
           items: examgenState.items,
         }),
       });

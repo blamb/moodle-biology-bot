@@ -101,7 +101,7 @@ export async function renderAdminCostsHtml(): Promise<string> {
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Biology Bot — Admin: Cost Dashboard</title>
+<title>Study Companion — Admin: Cost Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   :root { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; }
@@ -125,7 +125,7 @@ export async function renderAdminCostsHtml(): Promise<string> {
 <body>
 <div class="wrap">
   <div class="admin-tag">Admin only</div>
-  <h1>Biology Bot — Anthropic Cost Dashboard</h1>
+  <h1>Study Companion — Anthropic Cost Dashboard</h1>
   <div class="sub">Generated ${new Date().toISOString()}</div>
 
   <h2>Totals (all courses, all time)</h2>

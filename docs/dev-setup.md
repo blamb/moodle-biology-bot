@@ -1,6 +1,6 @@
 # Dev setup
 
-End-to-end instructions to bring the Moodle Biology Bot up locally and launch it from a local Moodle.
+End-to-end instructions to bring the Human Anatomy Study Companion up locally and launch it from a local Moodle.
 
 Time budget: 15–20 minutes for the first run (Moodle takes a few minutes to initialize on first boot).
 
@@ -79,7 +79,7 @@ npm run dev
 
 Should print:
 ```
-Moodle Biology Bot is live
+Human Anatomy Study Companion is live
   Local:   http://localhost:3000
   Public:  https://flashcard-rebuilt-junction.ngrok-free.dev
   Login:   https://flashcard-rebuilt-junction.ngrok-free.dev/login
@@ -109,10 +109,10 @@ Confirm it's working by visiting `https://flashcard-rebuilt-junction.ngrok-free.
    ```
    https://flashcard-rebuilt-junction.ngrok-free.dev/register
    ```
-   And click **Add LTI Advantage**. This uses **Dynamic Registration** — Moodle and our tool exchange config automatically. If it succeeds you'll see "Biology Bot" appear as a registered tool.
+   And click **Add LTI Advantage**. This uses **Dynamic Registration** — Moodle and our tool exchange config automatically. If it succeeds you'll see "Human Anatomy Study Companion" appear as a registered tool.
 
 4. If dynamic registration doesn't work (older Moodle versions or network quirks), use manual registration instead — click "Configure a tool manually" and fill in:
-   - **Tool name:** Biology Bot
+   - **Tool name:** Human Anatomy Study Companion
    - **Tool URL:** `https://flashcard-rebuilt-junction.ngrok-free.dev/`
    - **LTI version:** LTI 1.3
    - **Public key type:** Keyset URL
@@ -155,7 +155,7 @@ import('./dist/server/lti.js').then(async ({ lti }) => {
 
 1. From Moodle's front page, create a test course: **Site administration** → **Courses** → **Add a new course**.
 2. Inside the course: **Turn editing on** → **Add an activity or resource** → **External tool**.
-3. Select **Biology Bot** from the preconfigured tool dropdown.
+3. Select **Human Anatomy Study Companion** from the preconfigured tool dropdown.
 4. Save.
 5. Click the activity to launch. You should see the landing page with your name and the unit list.
 

@@ -1,5 +1,5 @@
 /**
- * Builds the static question bank for the Biology Bot.
+ * Builds the static question bank for the Human Anatomy Study Companion.
  *
  * For each unit × display level × type, generate N distinct questions once,
  * using the SAME tuned generators the live bot uses (slide anchoring, FR

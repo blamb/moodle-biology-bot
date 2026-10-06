@@ -1,8 +1,10 @@
-# Moodle Biology Bot
+# Human Anatomy Study Companion
 
 > An LTI 1.3 tool that pairs a Socratic tutor with AI-generated practice questions for Human Anatomy & Physiology, grounded in the instructor's own materials.
 
-**Status:** Deployed to production on Railway and integrated with the TRU Moodle sandbox. End-to-end pipeline verified with test students.
+*(Formerly "Moodle Biology Bot" — the repo, package and deployment URLs keep the old name.)*
+
+**Status:** Deployed to production on Railway and registered on production TRU Moodle and the sandbox. Students work from a pre-generated, accuracy-checked bank of 3,400 questions (17 units × Basic/Advanced).
 
 Built for [BIOL 1592 / 1692](https://human-anatomy-i.pressbooks.tru.ca/) at Thompson Rivers University.
 
