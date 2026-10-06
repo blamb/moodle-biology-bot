@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Biology Bot — How to use</title>
-<meta name="description" content="An LTI 1.3 tool for Human Anatomy & Physiology at TRU. Pairs a Socratic tutor with AI-generated practice questions, grounded in the instructor's own materials. This page is a usage guide for students and instructors.">
+<title>Human Anatomy Study Companion</title>
+<meta name="description" content="Human Anatomy Study Companion: an LTI 1.3 study tool for Human Anatomy & Physiology at TRU. Pairs a Socratic tutor with a verified practice-question bank, grounded in the instructor's own materials. Usage guide for students and instructors.">
 <style>
   :root {
     --bg: #fafafa;
@@ -151,14 +151,27 @@
     .hero h1 { font-size: 1.55rem; }
     section > h2 { font-size: 1.1rem; }
   }
+  .news { list-style: none; padding-left: 0; margin: .75rem 0; }
+  .news li {
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: .6rem .9rem; margin: .5rem 0;
+  }
+  .news .when { color: var(--muted-2); font-size: .8rem; display: block; }
+  .status-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: .6rem; margin: 1rem 0; }
+  .status-grid div {
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: .6rem .8rem; font-size: .9rem;
+  }
+  .status-grid strong { display: block; font-size: 1.15rem; color: var(--accent-deep); }
 </style>
 </head>
 <body>
 
 <header class="topbar">
   <div class="topbar-inner">
-    <div class="brand"><span class="dot">●</span>Biology Bot</div>
+    <div class="brand"><span class="dot">●</span>Human Anatomy Study Companion</div>
     <nav>
+      <a href="#status">Status</a>
       <a href="#students">For students</a>
       <a href="#instructors">For instructors</a>
       <a href="#grounding">What it knows</a>
@@ -170,16 +183,19 @@
 <div class="hero">
   <div class="hero-inner">
     <div class="label">A study tool for BIOL 1592 / 1692 at TRU</div>
-    <h1>How to use Biology Bot</h1>
+    <h1>Human Anatomy Study Companion</h1>
     <p>
-      A Moodle-integrated AI study tool for Human Anatomy & Physiology. Provides
-      a Socratic tutor, multiple kinds of practice questions, a personal progress
-      view, and (for instructors) a class dashboard. Grounded in the instructor's
-      own course materials and the TRU Pressbooks open textbooks — not generic
-      web sources.
+      A Moodle-integrated AI study tool for Human Anatomy &amp; Physiology. Students
+      get a Socratic tutor, a bank of 3,400 pre-generated and fact-checked
+      practice questions, practice exams, and a personal progress view.
+      Instructors get a class dashboard, a question-quality report driven by
+      student ratings, and an exam builder that exports to Moodle or Word.
+      Everything is grounded in the instructor's own course materials and the
+      TRU Pressbooks open textbooks, not generic web sources.
     </p>
     <p>
-      <span class="pill live">● Live</span>
+      <span class="pill live">● Live on TRU Moodle</span>
+      <span class="pill">Updated October 2026</span>
       <span class="pill">Open source on <a href="https://github.com/blamb/moodle-biology-bot">GitHub</a></span>
     </p>
   </div>
@@ -187,167 +203,194 @@
 
 <main>
 
+<section id="status">
+  <h2>Where things stand</h2>
+
+  <div class="status-grid">
+    <div><strong>17 units</strong>BIOL 1592 lecture content, atoms → neuronal signalling</div>
+    <div><strong>3,400 questions</strong>Pre-generated bank, every one checked against the course material</div>
+    <div><strong>2 levels</strong>Basic and Advanced sets for each question type in every unit</div>
+    <div><strong>Live</strong>Registered on production TRU Moodle and the sandbox</div>
+  </div>
+
+  <h3>What's changed since the spring prototype</h3>
+  <ul class="news">
+    <li><span class="when">October 2026</span><strong>New name.</strong> "Biology Bot" is now the <em>Human Anatomy Study Companion</em>.</li>
+    <li><span class="when">August 2026</span><strong>Student question ratings and an instructor quality report.</strong> Students can give 👍/👎 on any bank question, and the instructor sees a ranked list of the questions most worth reviewing.</li>
+    <li><span class="when">August 2026</span><strong>Instructor exam builder.</strong> Generates new exam questions with full answer keys and exports them as Moodle XML or Word.</li>
+    <li><span class="when">August 2026</span><strong>Full screen and Back to course buttons</strong>, plus a fix that makes full-screen mode work in Firefox.</li>
+    <li><span class="when">August 2026</span><strong>Changes from instructor testing.</strong> Students now lead the tutor handoff, answered questions keep their results when reopened, correct answers are spread evenly across MC positions, and answer keys are never sent to the browser.</li>
+    <li><span class="when">July 2026</span><strong>The question bank.</strong> Students now work through a fixed, pre-checked bank instead of questions generated on the spot.</li>
+    <li><span class="when">June–July 2026</span><strong>Fairer free-response grading.</strong> Half-marks, credit for answers that are correct but worded differently, and rubrics that only score what the question actually asks.</li>
+  </ul>
+</section>
+
 <section id="students">
   <h2>For students 👩‍🎓</h2>
 
   <h3>Getting in</h3>
   <ol class="steps">
     <li><strong>Open your Moodle course</strong> in the usual way.</li>
-    <li><strong>Click the "Biology Bot" activity</strong> wherever your instructor has placed it. The tool will open inside Moodle.</li>
-    <li><strong>You'll see a list of units</strong>. Click any unit to start working.</li>
+    <li><strong>Click the Study Companion activity</strong> wherever your instructor has placed it. It opens inside Moodle. Click <strong>⛶ Full screen</strong> in the header if you want more room, then <strong>↩ Back to course</strong> to return to Moodle.</li>
+    <li><strong>You'll see a list of all 17 units.</strong> Click a unit to start a tutor conversation, or click one of its MC / TF / FITB / FR badges to go straight to that type of practice question.</li>
   </ol>
 
   <figure class="screenshot">
-    <img src="screenshots/1-unit-picker.png" alt="The Biology Bot launch page showing 17 units with per-kind progress badges and a 'continue where you left off' card">
-    <figcaption>The launch page. Each unit shows your accuracy badges so far; a "continue where you left off" card resumes your last session.</figcaption>
+    <img src="screenshots/1-unit-picker.png" alt="The launch page showing 17 units with per-kind progress badges and a 'continue where you left off' card">
+    <figcaption>The launch page. Each unit's badges show your accuracy so far, and clicking a badge takes you to those questions. The "continue where you left off" card resumes your last session.</figcaption>
   </figure>
 
-  <h3>What each tab does</h3>
-  <p>Once you're inside a unit, you'll see five tabs across the top:</p>
+  <h3>The practice question bank</h3>
+  <p>
+    Each unit has four practice tabs: <strong>MC</strong> (multiple choice),
+    <strong>TF</strong> (true/false), <strong>FITB</strong> (fill in the blank) and
+    <strong>FR</strong> (free response). Every tab has a fixed set of questions
+    written ahead of time and fact-checked against your instructor's lecture
+    slides and textbook chapter.
+  </p>
+  <ol class="steps">
+    <li><strong>Pick a level.</strong> Use the <em>Basic / Advanced</em> toggle. Each level has 30 MC, 30 TF, 30 FITB and 10 free-response questions per unit.</li>
+    <li><strong>Pick a question from the grid.</strong> Tiles are numbered and colour-coded: <span style="color:var(--good)">green ✓</span> means answered correctly, amber means attempted but not yet right, and plain means not tried yet.</li>
+    <li><strong>Answer it and see the answer key right away.</strong> For MC you'll see why each wrong option was tempting. For FITB, close spellings, plurals and hyphen variants are accepted. For FR, an AI grades your answer against a rubric (half-marks are possible) and shows what you got, what was missing, and a model answer.</li>
+    <li><strong>Come back any time.</strong> If you reopen a question you've answered, it shows your last attempt and its marking, with a <em>Try again</em> button.</li>
+  </ol>
 
   <div class="tab-list">
     <dl>
-      <dt><span class="emoji">💬</span> Tutor</dt>
-      <dd>A Socratic chat — the tutor asks questions rather than lecturing. Type what you're trying to understand, and it'll probe your thinking. Click "↻ New conversation" anytime to clear context and start fresh.</dd>
+      <dt><span class="emoji">💬</span> Discuss with tutor</dt>
+      <dd>After any answer, right or wrong, click <strong>Discuss with tutor</strong>. The tutor gets the question, your answer and (for FR) the full marking, and you start the conversation with your own question. If you think the grading was wrong, say so: the tutor is told to admit it when you have a fair point.</dd>
 
-      <dt><span class="emoji">✅</span> MC quiz</dt>
-      <dd>Multiple choice with five options, ranging from introductory to advanced difficulty. After each answer, you'll see why the right answer is right and why the wrong ones were tempting.</dd>
+      <dt><span class="emoji">👍</span> Rate the question</dt>
+      <dd>After answering, you can give the question a 👍 or 👎. If you choose 👎, pick a reason (<em>answer looks wrong</em>, <em>confusing wording</em>, <em>not covered in our course</em>, or <em>just found it hard</em>) and add a note if you like. Ratings go to your instructor anonymously. Click the thumb again to take a rating back.</dd>
 
-      <dt><span class="emoji">🔘</span> TF quiz</dt>
-      <dd>True / false statements with explanations of <em>why</em> — particularly important for the false ones.</dd>
-
-      <dt><span class="emoji">📝</span> FITB quiz</dt>
-      <dd>Fill in the blank. Drawn from your unit's terms list. Don't worry about plural vs singular or hyphen vs no-hyphen — those variations are accepted.</dd>
-
-      <dt><span class="emoji">✍️</span> Free response</dt>
-      <dd>Longer-answer questions worth several marks each. The AI grades against a rubric and tells you what you got right, what was missing, and what wasn't needed — followed by a model answer.</dd>
+      <dt><span class="emoji">🔍</span> Want to know more?</dt>
+      <dd>Gives a fuller plain-English walkthrough of the question, with references to the relevant lecture or textbook section.</dd>
     </dl>
   </div>
 
   <figure class="screenshot">
-    <img src="screenshots/2-tutor-chat.png" alt="The Tutor tab mid-conversation. Student asked about interstitial fluid; tutor responds by building intuition from a concrete capillary scenario.">
-    <figcaption>The Tutor tab probes the student's understanding rather than handing over an answer. The "↻ New conversation" button (top right) resets context anytime.</figcaption>
+    <img src="screenshots/3-mc-question.png" alt="An MC question after submitting an incorrect answer. The chosen option is marked red, the correct answer is green, and a detailed explanation covers why each distractor is wrong.">
+    <figcaption>An answered MC question: your choice, the correct answer, and why each distractor is wrong. Bank questions also show the Discuss with tutor button and the 👍/👎 rating strip underneath.</figcaption>
   </figure>
+
+  <h3>The tutor</h3>
+  <p>
+    A Socratic chat. The tutor asks you questions instead of lecturing, to find
+    out what you already understand and build from there. It sticks to your
+    course's slides, terms and textbook. Click <strong>↻ New conversation</strong>
+    any time to clear the context and start over.
+  </p>
 
   <figure class="screenshot">
-    <img src="screenshots/3-mc-question.png" alt="An MC question after submitting an incorrect answer. The chosen option is marked red, the correct answer is green, and a detailed explanation covers why each distractor is wrong.">
-    <figcaption>After every quiz answer you see whether you were right plus a detailed explanation — for MC, why each distractor was wrong. Click "Want to know more?" for an even richer walkthrough with slide citations.</figcaption>
+    <img src="screenshots/2-tutor-chat.png" alt="The Tutor tab mid-conversation. Student asked about interstitial fluid; tutor responds by building intuition from a concrete capillary scenario.">
+    <figcaption>The tutor tests the student's understanding instead of just giving the answer.</figcaption>
   </figure>
-
-  <h3>While you're answering</h3>
-  <ul>
-    <li><strong>"Want to know more?"</strong> button on any result gives a deeper plain-English walkthrough with citations to specific slides or textbook sections.</li>
-    <li><strong>"Discuss with tutor"</strong> at the end of a quiz drops your wrong answers into the Tutor tab as conversation context — the tutor will probe the specific concepts you missed.</li>
-    <li><strong>Pattern synthesis</strong> shows up at the end of each quiz: a short summary of what you're solid on and what to revisit, with concrete next steps.</li>
-  </ul>
 
   <h3>Practice exam mode</h3>
   <ol>
-    <li>Click <strong>📝 Practice exam</strong> in the top-right header.</li>
-    <li>Choose how many of each question type (MC, TF, FITB, free-response), pick difficulty, and pick which units to draw from.</li>
-    <li>Two output paths:
+    <li>Click <strong>📝 Practice exam</strong> in the header.</li>
+    <li>Choose how many of each question type you want, a difficulty, and which units to draw from. Practice exam questions are generated new each time, so you won't see the same exam twice.</li>
+    <li>Then choose one of two options:
       <ul>
-        <li><strong>Generate exam (online)</strong> — take the exam interactively in the browser. Optional toggle to hide feedback during (exam-realistic mode).</li>
-        <li><strong>📄 Generate printable</strong> — produces a print-friendly page. Use your browser's "Print / save as PDF" to get a paper version. Toggle to include or exclude the answer key.</li>
+        <li><strong>Generate exam (online)</strong>: take it in the browser. Turn feedback off to simulate real exam conditions. At the end you get a <em>pattern synthesis</em>: what you're solid on, what to revisit, and suggested next steps.</li>
+        <li><strong>📄 Generate printable</strong>: a print-friendly page you can save as a PDF, with or without the answer key.</li>
       </ul>
     </li>
   </ol>
 
   <figure class="screenshot">
     <img src="screenshots/4-practice-exam-config.png" alt="Practice exam configuration: difficulty dropdown, count inputs for MC/TF/FITB/FR, feedback-during toggle, and a per-unit checklist with All/None shortcuts.">
-    <figcaption>Practice exam configuration. Uncheck "Show feedback after each question" to simulate real exam conditions.</figcaption>
+    <figcaption>Practice exam setup. Uncheck "Show feedback after each question" for exam-realistic mode.</figcaption>
   </figure>
 
   <h3>Tracking your progress</h3>
   <p>
-    Click <strong>📊 Your progress</strong> in the header. You'll see your
-    overall accuracy, units you're weak on, and a per-unit-per-kind breakdown.
-    Each unit in the picker also shows small badges with your accuracy so far.
-  </p>
-  <p>
-    The picker also shows a <strong>"Continue where you left off"</strong>
-    card when you've used the tool before — one click resumes the unit and
-    activity you were last using.
+    Click <strong>📊 Your progress</strong> in the header to see your overall
+    accuracy, the units you're weakest on, and a breakdown by unit and
+    question type. The colour-coded tiles in each question bank show where you
+    are within that unit at a glance.
   </p>
 
   <figure class="screenshot">
     <img src="screenshots/5-student-progress.png" alt="Your progress view with overall accuracy, three weak-spot rows highlighted in pink, and a per-unit breakdown table showing MC, TF, FITB, FR, and Tutor activity per unit.">
-    <figcaption>Your progress: overall accuracy, weak spots automatically flagged, and a per-unit-per-kind breakdown showing exactly where you're solid and where you need more work.</figcaption>
+    <figcaption>Your progress: overall accuracy, weak spots flagged automatically, and a breakdown by unit and question type.</figcaption>
   </figure>
 </section>
 
 <section id="instructors">
   <h2>For instructors 👩‍🏫</h2>
 
-  <h3>Adding Biology Bot to a course</h3>
+  <h3>Adding the Study Companion to a course</h3>
   <ol class="steps">
-    <li><strong>Confirm the tool is registered with your Moodle.</strong> If "Biology Bot" already appears as a preconfigured tool when you go to <em>Add an activity or resource</em>, skip to step 3. If not, your Moodle admin needs to register it once site-wide using dynamic registration with URL <code>https://moodle-biology-bot-production.up.railway.app/register</code>.</li>
-    <li><strong>If the tool is registered but not appearing in the activity chooser</strong>, an admin needs to edit it under <em>Site administration → Plugins → External tool → Manage tools</em> and set <em>Tool configuration usage</em> to "Show in activity chooser and as a preconfigured tool".</li>
-    <li><strong>In your course</strong>, turn editing on, then <em>Add an activity or resource</em> → <em>Biology Bot</em>. Save.</li>
-    <li><strong>That's it.</strong> Enrolled students will see and use it. Your launch (as instructor) shows you a different view than students see.</li>
+    <li><strong>Check that the tool is registered with your Moodle.</strong> It is already registered on TRU's production Moodle and the sandbox. If it isn't in <em>Add an activity or resource</em> on another Moodle site, an admin needs to register it once for the whole site using dynamic registration with the URL <code>https://moodle-biology-bot-production.up.railway.app/register</code>.</li>
+    <li><strong>If the tool is registered but doesn't show up in the activity chooser</strong>, an admin needs to edit it under <em>Site administration → Plugins → External tool → Manage tools</em> and set <em>Tool configuration usage</em> to "Show in activity chooser and as a preconfigured tool".</li>
+    <li><strong>In your course</strong>, turn editing on, then choose <em>Add an activity or resource</em> and pick the tool. Save.</li>
+    <li><strong>That's it.</strong> Enrolled students can now use it. When you launch it as an instructor, you also get a <strong>👩‍🏫 Instructor view</strong> button.</li>
   </ol>
 
-  <h3>What the instructor dashboard shows</h3>
+  <h3>The instructor view</h3>
   <p>
-    When you launch Biology Bot as an instructor (anyone with the Instructor,
-    Administrator, or Teaching Assistant role in the course), you'll see a
-    <strong>👩‍🏫 Instructor view</strong> button in the header alongside the
-    student-facing options. Clicking it opens the class dashboard.
+    Anyone with the Instructor, Administrator or Teaching Assistant role in the
+    course sees the <strong>👩‍🏫 Instructor view</strong> button. It contains:
   </p>
 
-  <h3>Sections of the dashboard</h3>
-
-  <h4>Class totals</h4>
-  <p>Headline cards: how many students have used the tool, how many quiz attempts, class-wide accuracy, total tutor turns, tutor sessions. A first-glance pulse check on engagement.</p>
-
-  <h4>Class weak spots</h4>
-  <p>Lists the units where the class as a whole is under 70% accuracy across at least 4 attempts. Sorted worst-first. Use this to flag content that may need a re-explanation in lecture.</p>
-
-  <h4>Per-unit performance</h4>
-  <p>For every unit: how many students have engaged, total attempts, class accuracy. Helps spot units that are either consistently easy or consistently hard, vs. units no one is touching.</p>
+  <h4>Class totals, weak spots and per-unit performance</h4>
+  <p>Summary cards (students, quiz attempts, class accuracy, tutor activity), then the units where the class as a whole is under 70% accuracy, then a table showing which units are easy, hard, or not being used.</p>
 
   <figure class="screenshot">
-    <img src="screenshots/6-instructor-overview.png" alt="The top of the instructor dashboard: class total cards (students, quiz attempts, class accuracy, tutor turns, tutor sessions), three class weak-spot rows, and the beginning of the per-unit performance table.">
-    <figcaption>Top of the instructor dashboard. Class totals at a glance, then class-wide weak spots — units where the cohort is under 70% across enough attempts to be meaningful.</figcaption>
+    <img src="screenshots/6-instructor-overview.png" alt="The top of the instructor dashboard: class total cards, three class weak-spot rows, and the beginning of the per-unit performance table.">
+    <figcaption>The top of the instructor view: class totals, then weak spots for the whole class.</figcaption>
   </figure>
 
-  <h4>Roster</h4>
-  <p>One row per student in the course: total attempts, accuracy, tutor turn count, flagged weak units, and time since last seen. Click any student to drill into their per-unit-per-kind breakdown — same view they see for themselves.</p>
-
-  <h4>Concept-gap analysis (AI-generated)</h4>
-  <p>
-    Click <strong>Run analysis (class-wide)</strong>. Takes 15–30 seconds. The AI
-    samples the wrong answers across all your students and writes a short
-    summary of recurring concept gaps, with citations to specific slides or
-    textbook sections, plus suggested instructor actions ("re-explain in
-    lecture", "share a worked example", "direct students to the textbook section
-    on X").
-  </p>
-  <p>
-    This is most useful after a meaningful amount of student activity has
-    accumulated. Empty courses produce empty analyses.
-  </p>
+  <h4>Roster and concept-gap analysis</h4>
+  <p>The roster has one row per student, and you can click a student to see their full progress. <strong>Run analysis (class-wide)</strong> has the AI read wrong answers from across the class and summarize the concept gaps that keep coming up, with lecture references and suggested teaching actions. It is most useful once students have built up some activity.</p>
 
   <figure class="screenshot">
-    <img src="screenshots/7-instructor-roster-concepts.png" alt="The instructor view roster (students with attempts, accuracy, weak unit pills, last-seen time) followed by the AI-generated concept-gap analysis flagging specific misunderstandings with slide citations and suggested instructor actions.">
-    <figcaption>The roster (top) lets you drill into any student. Below it, the AI-generated concept-gap analysis names specific misunderstandings ("smooth ER function: structural feature vs. mechanistic explanation"), cites the slide where it lives, and suggests an instructor action.</figcaption>
+    <img src="screenshots/7-instructor-roster-concepts.png" alt="The instructor view roster followed by the AI-generated concept-gap analysis flagging specific misunderstandings with slide citations and suggested instructor actions.">
+    <figcaption>The roster (top), then the concept-gap analysis, which names specific misunderstandings and suggests what to do about them.</figcaption>
   </figure>
+
+  <h4>Question quality report</h4>
+  <p>
+    Nobody has time to read all 3,400 bank questions before term starts, so
+    students point out the bad ones as they go. The report ranks the questions
+    most worth your review. A 👎 from a student who got the question
+    <em>right</em> counts double, because that usually points to a real problem
+    with the question rather than frustration. "Just found it hard" counts for
+    very little, so a question that is merely difficult won't send you
+    looking for a fault. Ratings are aggregated and anonymous. Each flagged
+    question shows its answer key so you can judge it on the spot, and you can
+    download everything as a CSV at the end of term.
+  </p>
+
+  <h4>Exam builder</h4>
+  <p>
+    Pick units, how many of each question type, and a difficulty. The tool
+    generates <strong>new</strong> questions, never taken from the student
+    practice bank, so students won't have seen them. Each one comes with its
+    full answer key: the correct MC option, TF/FITB answers with accepted
+    synonyms, and the rubric and model answer for free-response questions.
+    Remove any you don't want, then export:
+  </p>
+  <ul>
+    <li><strong>Moodle XML</strong>: import it through <em>Question bank → Import</em> (multichoice, true/false, short answer, and essay with the rubric in the grader info).</li>
+    <li><strong>Word (.docx)</strong>: an exam paper with a name line, then the answer key on separate pages.</li>
+  </ul>
 
   <div class="callout note">
-    <strong>What's <em>not</em> in the instructor dashboard:</strong>
-    AI API costs, raw conversation logs, or anything operational. Those are
-    handled separately by the project operator and aren't surfaced to the
-    instructor or student UI.
+    <strong>What's <em>not</em> in the instructor view:</strong>
+    AI usage costs, raw conversation logs, or who left which rating. Costs and
+    operations are handled separately by the project operator.
   </div>
 </section>
 
 <section id="grounding">
-  <h2>What Biology Bot knows about 📚</h2>
+  <h2>What the Study Companion knows about 📚</h2>
 
   <p>
-    The AI's responses, questions, and grading are grounded in the instructor's
-    actual course materials — not the model's general knowledge of biology.
-    Specifically:
+    The tutor, the questions and the grading are all grounded in the
+    instructor's actual course materials, not the AI model's general knowledge of
+    biology:
   </p>
 
   <table class="grounding-table">
@@ -356,28 +399,38 @@
     </thead>
     <tbody>
       <tr>
+        <td><strong>Instructor study guides</strong><br><span style="color:var(--muted);font-size:.85em">Per-unit</span></td>
+        <td>Weighted most heavily in question generation (about three quarters of questions), so practice matches what the instructor stresses.</td>
+      </tr>
+      <tr>
         <td><strong>Lecture PPTs</strong><br><span style="color:var(--muted);font-size:.85em">17 unit decks, slides + speaker notes</span></td>
-        <td>Primary grounding for tutor dialogue, question generation, and citations. The bot references "Unit N, slide M" when pointing students to a source.</td>
+        <td>Main source for the tutor, question generation and fact-checking. Students are pointed to the relevant lecture topic.</td>
       </tr>
       <tr>
         <td><strong>Course terms list</strong><br><span style="color:var(--muted);font-size:.85em">Per-unit key terms</span></td>
-        <td>Drives fill-in-the-blank questions and informs vocabulary the tutor expects students to know per unit.</td>
+        <td>The basis for fill-in-the-blank questions and the vocabulary the tutor expects in each unit.</td>
       </tr>
       <tr>
         <td><strong>Example exam</strong><br><span style="color:var(--muted);font-size:.85em">Worked exam with answer key</span></td>
-        <td>Style anchor — generated questions match the instructor's voice and difficulty calibration.</td>
+        <td>A style guide, so generated questions match the instructor's voice and level of difficulty.</td>
       </tr>
       <tr>
-        <td><strong>Open textbooks</strong><br><span style="color:var(--muted);font-size:.85em">TRU Pressbooks A&P I &amp; II, CC BY 4.0</span></td>
-        <td>Matched chapter per unit. Cited as "(Unit N textbook)" when the bot points students to the textbook.</td>
+        <td><strong>Open textbooks</strong><br><span style="color:var(--muted);font-size:.85em">TRU Pressbooks A&amp;P I &amp; II, CC BY 4.0</span></td>
+        <td>The matching chapter for each unit, cited when students are pointed to the textbook.</td>
       </tr>
     </tbody>
   </table>
 
-  <p style="margin-top: 1rem">
-    All source-material grounding is loaded once at deploy time. To update,
-    the instructor shares new files and the operator re-runs the ingestion
-    pipeline.
+  <h3>How the question bank is checked</h3>
+  <p>
+    Every bank question went through an automated accuracy check before
+    release. A stronger AI model compared each question with the unit's
+    lecture and textbook material and flagged factual errors, answers that
+    contradict the course, and MC questions with two defensible answers.
+    Flagged questions were regenerated and checked again. All 3,400 passed.
+    The bank build also checks for balance: correct MC answers are spread
+    evenly across A–E, and true/false sets aren't lopsided. Student ratings
+    (above) are the last line of defence.
   </p>
 </section>
 
@@ -385,17 +438,21 @@
   <h2>Behind the scenes</h2>
 
   <p>
-    Biology Bot is an LTI 1.3 tool — the same standard Moodle uses to embed
-    other external activities. Built in TypeScript on Node, with Postgres for
-    student / session / progress data and Anthropic Claude for the AI calls.
-    Source on GitHub:
+    The Study Companion is an LTI 1.3 tool, the same standard Moodle uses to embed
+    other external activities. It is built in TypeScript on Node, uses Postgres for
+    student, session and progress data, and runs on Railway. The AI is Anthropic
+    Claude: the question bank was written and checked by a top-tier
+    model ahead of time, and the live tutoring, grading and feedback run on a
+    faster, cheaper model to keep costs reasonable for a class-sized pilot. Answer
+    keys stay on the server, and grading happens there too. Source on GitHub:
     <a href="https://github.com/blamb/moodle-biology-bot">github.com/blamb/moodle-biology-bot</a>.
   </p>
 
   <p>
     Built by <a href="https://github.com/blamb">Brian Lamb</a> at Thompson Rivers
-    University, in collaboration with the BIOL 1592 / 1692 instructor.
-    Borrows prompt patterns from the earlier
+    University, in collaboration with the BIOL 1592 / 1692 instructor, whose
+    testing and feedback shaped most of the summer's changes. Borrows prompt
+    patterns from the earlier
     <a href="https://github.com/blamb/open-margins">open-margins</a> project.
     Grounding includes the open
     <a href="https://human-anatomy-i.pressbooks.tru.ca/">A&amp;P I</a> and
