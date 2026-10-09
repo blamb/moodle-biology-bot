@@ -1,0 +1,6 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "provider": "node",
+  "buildCommand": "npm install && npm run build",
+  "startCommand": "npm start"
+}

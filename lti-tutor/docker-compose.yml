@@ -1,0 +1,76 @@
+# Local dev stack: a Moodle to launch from, and Postgres for the tool.
+#   moodle    → http://localhost:8080   (admin: user / bitnami)
+#   postgres  → localhost:5432          (postgres / postgres, db lti_tutor)
+# The tool itself runs on the host (npm run dev) and is exposed to Moodle via
+# an ngrok static domain (LTI_TOOL_URL in .env).
+#
+# Bring up:   docker compose up -d
+# Reset all:  docker compose down -v   # deletes Moodle + app data
+
+services:
+  moodle-db:
+    image: bitnamilegacy/mariadb:latest
+    environment:
+      MARIADB_ROOT_PASSWORD: bitnami
+      MARIADB_USER: bn_moodle
+      MARIADB_PASSWORD: bitnami
+      MARIADB_DATABASE: bitnami_moodle
+      MARIADB_CHARACTER_SET: utf8mb4
+      MARIADB_COLLATE: utf8mb4_unicode_ci
+    volumes:
+      - moodle_db_data:/bitnami/mariadb
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb-admin ping -h 127.0.0.1 --silent || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  moodle:
+    image: bitnamilegacy/moodle:latest
+    depends_on:
+      moodle-db:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+    environment:
+      MOODLE_DATABASE_TYPE: mariadb
+      MOODLE_DATABASE_HOST: moodle-db
+      MOODLE_DATABASE_PORT_NUMBER: 3306
+      MOODLE_DATABASE_USER: bn_moodle
+      MOODLE_DATABASE_PASSWORD: bitnami
+      MOODLE_DATABASE_NAME: bitnami_moodle
+      MOODLE_USERNAME: user
+      MOODLE_PASSWORD: bitnami
+      MOODLE_EMAIL: admin@example.com
+      MOODLE_SITE_NAME: "LTI Tutor Dev"
+      ALLOW_EMPTY_PASSWORD: "no"
+    volumes:
+      - moodle_data:/bitnami/moodle
+      - moodle_php_data:/bitnami/moodledata
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: lti_tutor
+    ports:
+      - "5432:5432"
+    volumes:
+      - app_db_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  moodle_db_data:
+  moodle_data:
+  moodle_php_data:
+  app_db_data:
